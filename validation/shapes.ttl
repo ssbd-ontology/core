@@ -1,7 +1,7 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix pink: <https://w3id.org/pink#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,36 +9,36 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-pink:AdvancedMaterialShape a sh:NodeShape ;
-    sh:targetClass pink:AdvancedMaterial .
+ssbd:AdvancedMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:AdvancedMaterial .
 
-pink:AttributionShape a sh:NodeShape ;
-    sh:node pink:AgentShape ;
+ssbd:AttributionShape a sh:NodeShape ;
+    sh:node ssbd:AgentShape ;
     sh:targetClass prov:Attribution .
 
-pink:BooleanDataShape a sh:NodeShape ;
-    sh:node pink:SymbolicDataShape ;
-    sh:targetClass pink:BooleanData .
+ssbd:BooleanDataShape a sh:NodeShape ;
+    sh:node ssbd:SymbolicDataShape ;
+    sh:targetClass ssbd:BooleanData .
 
-pink:ByteDataShape a sh:NodeShape ;
-    sh:node pink:ShortDataShape ;
-    sh:targetClass pink:ByteData .
+ssbd:ByteDataShape a sh:NodeShape ;
+    sh:node ssbd:ShortDataShape ;
+    sh:targetClass ssbd:ByteData .
 
-pink:ComputationShape a sh:NodeShape ;
-    sh:node pink:ProcessShape ;
-    sh:property [ sh:class pink:Software ;
-            sh:path pink:hasSoftware ] ;
-    sh:targetClass pink:Computation .
+ssbd:ComputationShape a sh:NodeShape ;
+    sh:node ssbd:ProcessShape ;
+    sh:property [ sh:class ssbd:Software ;
+            sh:path ssbd:hasSoftware ] ;
+    sh:targetClass ssbd:Computation .
 
-pink:ComputationalToolShape a sh:NodeShape ;
-    sh:node pink:SoftwareShape ;
-    sh:targetClass pink:ComputationalTool .
+ssbd:ComputationalToolShape a sh:NodeShape ;
+    sh:node ssbd:SoftwareShape ;
+    sh:targetClass ssbd:ComputationalTool .
 
-pink:ConceptShape a sh:NodeShape ;
+ssbd:ConceptShape a sh:NodeShape ;
     sh:targetClass skos:Concept .
 
-pink:DataServiceShape a sh:NodeShape ;
-    sh:node pink:ResourceShape ;
+ssbd:DataServiceShape a sh:NodeShape ;
+    sh:node ssbd:ResourceShape ;
     sh:property [ sh:class <https://w3id.org/emmo/domain/oteio#Parser> ;
             sh:path <https://w3id.org/emmo/domain/oteio#parser> ],
         [ sh:datatype xsd:anyURI ;
@@ -49,30 +49,30 @@ pink:DataServiceShape a sh:NodeShape ;
             sh:path dcat:endpointDescription ] ;
     sh:targetClass dcat:DataService .
 
-pink:DatasetSeriesShape a sh:NodeShape ;
-    sh:node pink:DatasetShape ;
+ssbd:DatasetSeriesShape a sh:NodeShape ;
+    sh:node ssbd:DatasetShape ;
     sh:targetClass dcat:DatasetSeries .
 
-pink:DateDataShape a sh:NodeShape ;
-    sh:node pink:SymbolicDataShape ;
-    sh:targetClass pink:DateData .
+ssbd:DateDataShape a sh:NodeShape ;
+    sh:node ssbd:SymbolicDataShape ;
+    sh:targetClass ssbd:DateData .
 
-pink:DateTimeDataShape a sh:NodeShape ;
-    sh:node pink:SymbolicDataShape ;
-    sh:targetClass pink:DateTimeData .
+ssbd:DateTimeDataShape a sh:NodeShape ;
+    sh:node ssbd:SymbolicDataShape ;
+    sh:targetClass ssbd:DateTimeData .
 
-pink:DatumShape a sh:NodeShape ;
-    sh:node pink:DataShape ;
-    sh:targetClass pink:Datum .
+ssbd:DatumShape a sh:NodeShape ;
+    sh:node ssbd:DataShape ;
+    sh:targetClass ssbd:Datum .
 
-pink:DescriptionShape a sh:NodeShape ;
-    sh:node pink:SignShape ;
+ssbd:DescriptionShape a sh:NodeShape ;
+    sh:node ssbd:SignShape ;
     sh:property [ sh:class prov:Entity ;
-            sh:path pink:isDescriptionOf ] ;
-    sh:targetClass pink:Description .
+            sh:path ssbd:isDescriptionOf ] ;
+    sh:targetClass ssbd:Description .
 
-pink:DistributionShape a sh:NodeShape ;
-    sh:node pink:ResourceShape ;
+ssbd:DistributionShape a sh:NodeShape ;
+    sh:node ssbd:ResourceShape ;
     sh:property [ sh:class dcterms:MediaType ;
             sh:path dcat:packageFormat ],
         [ sh:class skos:Concept ;
@@ -99,160 +99,160 @@ pink:DistributionShape a sh:NodeShape ;
             sh:path dcat:mediaType ] ;
     sh:targetClass dcat:Distribution .
 
-pink:DoubleDataShape a sh:NodeShape ;
-    sh:node pink:NumericalDataShape ;
-    sh:targetClass pink:DoubleData .
+ssbd:DoubleDataShape a sh:NodeShape ;
+    sh:node ssbd:NumericalDataShape ;
+    sh:targetClass ssbd:DoubleData .
 
-pink:FloatDataShape a sh:NodeShape ;
-    sh:node pink:NumericalDataShape ;
-    sh:targetClass pink:FloatData .
+ssbd:FloatDataShape a sh:NodeShape ;
+    sh:node ssbd:NumericalDataShape ;
+    sh:targetClass ssbd:FloatData .
 
-pink:IndicatorShape a sh:NodeShape ;
-    sh:node pink:PropertyShape ;
-    sh:targetClass pink:Indicator .
+ssbd:IndicatorShape a sh:NodeShape ;
+    sh:node ssbd:PropertyShape ;
+    sh:targetClass ssbd:Indicator .
 
-pink:InformationShape a sh:NodeShape ;
-    sh:node pink:DataShape,
-        pink:SignShape ;
-    sh:targetClass pink:Information .
+ssbd:InformationShape a sh:NodeShape ;
+    sh:node ssbd:DataShape,
+        ssbd:SignShape ;
+    sh:targetClass ssbd:Information .
 
-pink:InterpreterShape a sh:NodeShape ;
-    sh:node pink:AgentShape ;
-    sh:targetClass pink:Interpreter .
+ssbd:InterpreterShape a sh:NodeShape ;
+    sh:node ssbd:AgentShape ;
+    sh:targetClass ssbd:Interpreter .
 
-pink:LicenseDocumentShape a sh:NodeShape ;
-    sh:node pink:RightsStatementShape ;
+ssbd:LicenseDocumentShape a sh:NodeShape ;
+    sh:node ssbd:RightsStatementShape ;
     sh:targetClass dcterms:LicenseDocument .
 
-pink:LocationShape a sh:NodeShape ;
+ssbd:LocationShape a sh:NodeShape ;
     sh:property [ sh:class <http://www.w3.org/ns/locn#Geometry> ;
             sh:path <http://www.w3.org/ns/locn#geometry> ],
         [ sh:path dcat:centroid ],
         [ sh:path dcat:bbox ] ;
     sh:targetClass dcterms:Location .
 
-pink:MaterialProcessShape a sh:NodeShape ;
-    sh:node pink:ProcessShape ;
-    sh:targetClass pink:MaterialProcess .
+ssbd:MaterialProcessShape a sh:NodeShape ;
+    sh:node ssbd:ProcessShape ;
+    sh:targetClass ssbd:MaterialProcess .
 
-pink:MatterShape a sh:NodeShape ;
-    sh:node pink:EntityShape ;
-    sh:targetClass pink:Matter .
+ssbd:MatterShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
+    sh:targetClass ssbd:Matter .
 
-pink:MeasurementShape a sh:NodeShape ;
-    sh:node pink:ProcessShape ;
-    sh:targetClass pink:Measurement .
+ssbd:MeasurementShape a sh:NodeShape ;
+    sh:node ssbd:ProcessShape ;
+    sh:targetClass ssbd:Measurement .
 
-pink:MediaTypeShape a sh:NodeShape ;
+ssbd:MediaTypeShape a sh:NodeShape ;
     sh:targetClass dcterms:MediaType .
 
-pink:ModelShape a sh:NodeShape ;
-    sh:node pink:SignShape ;
-    sh:targetClass pink:Model .
+ssbd:ModelShape a sh:NodeShape ;
+    sh:node ssbd:SignShape ;
+    sh:targetClass ssbd:Model .
 
-pink:ParticipantShape a sh:NodeShape ;
-    sh:node pink:AgentShape,
-        pink:ObjectShape ;
-    sh:targetClass pink:Participant .
+ssbd:ParticipantShape a sh:NodeShape ;
+    sh:node ssbd:AgentShape,
+        ssbd:ObjectShape ;
+    sh:targetClass ssbd:Participant .
 
-pink:RelationshipShape a sh:NodeShape ;
+ssbd:RelationshipShape a sh:NodeShape ;
     sh:property [ sh:class rdfs:Resource ;
             sh:path dcterms:relation ],
         [ sh:class dcat:Role ;
             sh:path dcat:hasRole ] ;
     sh:targetClass dcat:Relationship .
 
-pink:ReliabilityDocumentShape a sh:NodeShape ;
-    sh:node pink:DocumentShape ;
-    sh:targetClass pink:ReliabilityDocument .
+ssbd:ReliabilityDocumentShape a sh:NodeShape ;
+    sh:node ssbd:DocumentShape ;
+    sh:targetClass ssbd:ReliabilityDocument .
 
-pink:SsbdDimensionShape a sh:NodeShape ;
-    sh:node pink:EntityShape ;
-    sh:targetClass pink:SsbdDimension .
+ssbd:SsbdDimensionShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
+    sh:targetClass ssbd:SsbdDimension .
 
-pink:StandardShape a sh:NodeShape ;
+ssbd:StandardShape a sh:NodeShape ;
     sh:targetClass dcterms:Standard .
 
-pink:TierLevelShape a sh:NodeShape ;
-    sh:node pink:EntityShape ;
-    sh:targetClass pink:TierLevel .
+ssbd:TierLevelShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
+    sh:targetClass ssbd:TierLevel .
 
-pink:TimeDataShape a sh:NodeShape ;
-    sh:node pink:SymbolicDataShape ;
-    sh:targetClass pink:TimeData .
+ssbd:TimeDataShape a sh:NodeShape ;
+    sh:node ssbd:SymbolicDataShape ;
+    sh:targetClass ssbd:TimeData .
 
-pink:ToxicityShape a sh:NodeShape ;
-    sh:node pink:SignShape ;
-    sh:targetClass pink:Toxicity .
+ssbd:ToxicityShape a sh:NodeShape ;
+    sh:node ssbd:SignShape ;
+    sh:targetClass ssbd:Toxicity .
 
-pink:ActivityShape a sh:NodeShape ;
+ssbd:ActivityShape a sh:NodeShape ;
     sh:property [ sh:class prov:Activity ;
-            sh:path pink:wasInformedBy ],
+            sh:path ssbd:wasInformedBy ],
         [ sh:class prov:Entity ;
-            sh:path pink:hasInput ],
+            sh:path ssbd:hasInput ],
         [ sh:class prov:Agent ;
             sh:path prov:wasAssociatedWith ],
         [ sh:class prov:Entity ;
-            sh:path pink:hasOutput ],
+            sh:path ssbd:hasOutput ],
         [ sh:class prov:Agent ;
-            sh:path pink:wasAssociatedWith ],
+            sh:path ssbd:wasAssociatedWith ],
         [ sh:class prov:Activity ;
             sh:path prov:wasInformedBy ],
         [ sh:class prov:Entity ;
-            sh:path pink:used ],
+            sh:path ssbd:used ],
         [ sh:class prov:Entity ;
             sh:path prov:used ] ;
     sh:targetClass prov:Activity .
 
-pink:IntDataShape a sh:NodeShape ;
-    sh:node pink:LongDataShape ;
-    sh:targetClass pink:IntData .
+ssbd:IntDataShape a sh:NodeShape ;
+    sh:node ssbd:LongDataShape ;
+    sh:targetClass ssbd:IntData .
 
-pink:IntegerDataShape a sh:NodeShape ;
-    sh:node pink:NumericalDataShape ;
-    sh:targetClass pink:IntegerData .
+ssbd:IntegerDataShape a sh:NodeShape ;
+    sh:node ssbd:NumericalDataShape ;
+    sh:targetClass ssbd:IntegerData .
 
-pink:LongDataShape a sh:NodeShape ;
-    sh:node pink:IntegerDataShape ;
-    sh:targetClass pink:LongData .
+ssbd:LongDataShape a sh:NodeShape ;
+    sh:node ssbd:IntegerDataShape ;
+    sh:targetClass ssbd:LongData .
 
-pink:ObjectShape a sh:NodeShape ;
-    sh:node pink:EntityShape ;
-    sh:targetClass pink:Object .
+ssbd:ObjectShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
+    sh:targetClass ssbd:Object .
 
-pink:PropertyShape a sh:NodeShape ;
-    sh:node pink:SignShape ;
-    sh:property [ sh:path pink:hasUnit ],
+ssbd:PropertyShape a sh:NodeShape ;
+    sh:node ssbd:SignShape ;
+    sh:property [ sh:path ssbd:hasUnit ],
         [ sh:class prov:Entity ;
-            sh:path pink:isPropertyOf ] ;
-    sh:targetClass pink:Property .
+            sh:path ssbd:isPropertyOf ] ;
+    sh:targetClass ssbd:Property .
 
-pink:RightsStatementShape a sh:NodeShape ;
-    sh:node pink:DocumentShape ;
+ssbd:RightsStatementShape a sh:NodeShape ;
+    sh:node ssbd:DocumentShape ;
     sh:targetClass dcterms:RightsStatement .
 
-pink:ShortDataShape a sh:NodeShape ;
-    sh:node pink:IntDataShape ;
-    sh:targetClass pink:ShortData .
+ssbd:ShortDataShape a sh:NodeShape ;
+    sh:node ssbd:IntDataShape ;
+    sh:targetClass ssbd:ShortData .
 
-pink:SoftwareShape a sh:NodeShape ;
-    sh:node pink:DataShape ;
+ssbd:SoftwareShape a sh:NodeShape ;
+    sh:node ssbd:DataShape ;
     sh:property [ sh:datatype xsd:boolean ;
-            sh:path pink:hasGUI ],
+            sh:path ssbd:hasGUI ],
         [ sh:datatype xsd:boolean ;
-            sh:path pink:hasAPI ],
-        [ sh:class pink:Model ;
-            sh:path pink:implementsModel ],
-        [ sh:class pink:Software ;
-            sh:path pink:priorRelease ] ;
-    sh:targetClass pink:Software .
+            sh:path ssbd:hasAPI ],
+        [ sh:class ssbd:Model ;
+            sh:path ssbd:implementsModel ],
+        [ sh:class ssbd:Software ;
+            sh:path ssbd:priorRelease ] ;
+    sh:targetClass ssbd:Software .
 
-pink:DatasetShape a sh:NodeShape ;
-    sh:node pink:DataShape,
-        pink:DatasetShape,
-        pink:ResourceShape ;
-    sh:property [ sh:class pink:Datum ;
-            sh:path pink:hasPart ],
+ssbd:DatasetShape a sh:NodeShape ;
+    sh:node ssbd:DataShape,
+        ssbd:DatasetShape,
+        ssbd:ResourceShape ;
+    sh:property [ sh:class ssbd:Datum ;
+            sh:path ssbd:hasPart ],
         [ sh:class dcat:Dataset ;
             sh:path dcterms:source ],
         [ sh:class <https://w3id.org/emmo/domain/oteio#Datamodel> ;
@@ -272,8 +272,8 @@ pink:DatasetShape a sh:NodeShape ;
             sh:path <https://w3id.org/emmo/domain/oteio#hasDatamodelStorage> ],
         [ sh:class prov:Activity ;
             sh:path prov:wasGeneratedBy ],
-        [ sh:class pink:Datum ;
-            sh:path pink:hasDatum ],
+        [ sh:class ssbd:Datum ;
+            sh:path ssbd:hasDatum ],
         [ sh:datatype xsd:duration ;
             sh:path dcat:temporalResolution ],
         [ sh:class dcat:Resource ;
@@ -289,29 +289,29 @@ pink:DatasetShape a sh:NodeShape ;
         [ sh:datatype xsd:decimal ;
             sh:path dcat:spatialResolutionInMeters ] ;
     sh:targetClass dcat:Dataset,
-        pink:Dataset .
+        ssbd:Dataset .
 
-pink:DocumentShape a sh:NodeShape ;
-    sh:node pink:DataShape ;
+ssbd:DocumentShape a sh:NodeShape ;
+    sh:node ssbd:DataShape ;
     sh:targetClass foaf:Document .
 
-pink:NumericalDataShape a sh:NodeShape ;
-    sh:node pink:SymbolicDataShape ;
-    sh:targetClass pink:NumericalData .
+ssbd:NumericalDataShape a sh:NodeShape ;
+    sh:node ssbd:SymbolicDataShape ;
+    sh:targetClass ssbd:NumericalData .
 
-pink:ProcessShape a sh:NodeShape ;
-    sh:node pink:ActivityShape ;
-    sh:targetClass pink:Process .
+ssbd:ProcessShape a sh:NodeShape ;
+    sh:node ssbd:ActivityShape ;
+    sh:targetClass ssbd:Process .
 
-pink:ResourceShape a sh:NodeShape ;
-    sh:node pink:EntityShape ;
+ssbd:ResourceShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
     sh:property [ sh:class <http://www.w3.org/2006/vcard/ns#Kind> ;
             sh:path dcat:contactPoint ],
         [ sh:path dcterms:bibliographicCitation ],
         [ sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
             sh:path <http://data.europa.eu/r5r/applicableLegislation> ],
         [ sh:class foaf:Document ;
-            sh:path pink:documentation ],
+            sh:path ssbd:documentation ],
         [ sh:class <https://w3id.org/emmo/application/datadoc#ConformanceLevel> ;
             sh:path <https://w3id.org/emmo/application/datadoc#conformance> ],
         [ sh:class dcterms:RightsStatement ;
@@ -365,52 +365,51 @@ pink:ResourceShape a sh:NodeShape ;
             sh:path <https://w3id.org/emmo/application/datadoc#unitSymbol> ] ;
     sh:targetClass dcat:Resource .
 
-pink:AgentShape a sh:NodeShape ;
-    sh:node pink:AgentShape ;
+ssbd:AgentShape a sh:NodeShape ;
+    sh:node ssbd:AgentShape ;
     sh:property [ sh:path dcterms:identifier ],
         [ sh:class prov:Entity ;
-            sh:path pink:attributed ],
+            sh:path ssbd:attributed ],
         [ sh:datatype xsd:string ;
             sh:path foaf:name ] ;
     sh:targetClass prov:Agent,
         foaf:Agent .
 
-pink:SignShape a sh:NodeShape ;
-    sh:node pink:EntityShape ;
+ssbd:SignShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
     sh:property [ sh:class prov:Entity ;
-            sh:path pink:standsFor ],
-        [ sh:class pink:Interpreter ;
-            sh:path pink:isInterpretedBy ] ;
-    sh:targetClass pink:Sign .
+            sh:path ssbd:standsFor ],
+        [ sh:class ssbd:Interpreter ;
+            sh:path ssbd:isInterpretedBy ] ;
+    sh:targetClass ssbd:Sign .
 
-pink:SymbolicDataShape a sh:NodeShape ;
-    sh:node pink:DataShape ;
-    sh:targetClass pink:SymbolicData .
+ssbd:SymbolicDataShape a sh:NodeShape ;
+    sh:node ssbd:DataShape ;
+    sh:targetClass ssbd:SymbolicData .
 
-pink:DataShape a sh:NodeShape ;
-    sh:node pink:EntityShape ;
-    sh:targetClass pink:Data .
+ssbd:DataShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
+    sh:targetClass ssbd:Data .
 
-pink:EntityShape a sh:NodeShape ;
+ssbd:EntityShape a sh:NodeShape ;
     sh:property [ sh:class prov:Activity ;
-            sh:path pink:wasGeneratedBy ],
-        [ sh:class pink:Description ;
-            sh:path pink:hasDescription ],
+            sh:path ssbd:wasGeneratedBy ],
+        [ sh:class ssbd:Description ;
+            sh:path ssbd:hasDescription ],
         [ sh:class prov:Entity ;
-            sh:path pink:wasDerivedBy ],
-        [ sh:class pink:TierLevel ;
-            sh:path pink:tierLevel ],
+            sh:path ssbd:wasDerivedBy ],
+        [ sh:class ssbd:TierLevel ;
+            sh:path ssbd:tierLevel ],
         [ sh:class prov:Agent ;
-            sh:path pink:wasAttributedTo ],
+            sh:path ssbd:wasAttributedTo ],
         [ sh:class prov:Activity ;
-            sh:path pink:participatesTo ],
-        [ sh:class pink:Sign ;
-            sh:path pink:isRepresentedBy ],
-        [ sh:class pink:Property ;
-            sh:path pink:hasProperty ],
-        [ sh:class pink:Matter ;
-            sh:path pink:chemicalClass ],
+            sh:path ssbd:participatesTo ],
+        [ sh:class ssbd:Sign ;
+            sh:path ssbd:isRepresentedBy ],
+        [ sh:class ssbd:Property ;
+            sh:path ssbd:hasProperty ],
+        [ sh:class ssbd:Matter ;
+            sh:path ssbd:chemicalClass ],
         [ sh:class prov:Agent ;
             sh:path prov:wasAttributedTo ] ;
     sh:targetClass prov:Entity .
-

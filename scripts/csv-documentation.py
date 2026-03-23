@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # pylint: disable=invalid-name
 """
-Generates csv documentation of all PINK concepts
+Generates csv documentation of all SSbD concepts
 """
 
 from pathlib import Path
@@ -14,13 +14,13 @@ rootdir = thisdir.parent
 
 
 ts = Triplestore("rdflib")
-ts.parse("pink_annotation_schema.ttl")
+ts.parse("core.ttl")
 
-# PINK = ts.namespaces["pink"]
-PINK = Namespace("https://w3id.org/pink#")
+# SSBD = ts.namespaces["ssbd"]
+SSBD = Namespace("https://w3id.org/ssbd/")
 
-pink_concepts = set(s for s in ts.subjects() if s.startswith(str(PINK)))
-dicts = [acquire(ts, iri) for iri in pink_concepts]
+ssbd_concepts = set(s for s in ts.subjects() if s.startswith(str(SSBD)))
+dicts = [acquire(ts, iri) for iri in ssbd_concepts]
 
 classes = [d for d in dicts if OWL.Class in d["@type"]]
 properties = [d for d in dicts if OWL.Class not in d["@type"]]
@@ -33,6 +33,6 @@ td_properties.write_csv("properties.csv")
 
 
 print("")
-print("PINK concepts:")
-for c in pink_concepts:
+print("SSbD concepts:")
+for c in ssbd_concepts:
     print("  -", c)

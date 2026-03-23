@@ -2,7 +2,7 @@ name: CI tests
 on: [push]
 
 env:
-  ONTOLOGY_NAME: pink_annotation_schema
+  ONTOLOGY_NAME: core
 
 jobs:
   ci_testing:

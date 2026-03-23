@@ -14,13 +14,13 @@
 @prefix accr: <http://publications.europa.eu/resource/authority/access-right/> .
 @prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
 @prefix dm: <https://w3id.org/emmo/domain/datamodel#> .
-@prefix pink: <https://w3id.org/pink#> .
+@prefix ssbd: <https://w3id.org/ssbd#> .
 
-<https://w3id.org/pink/reused-terms> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/pink/0.0.1/reused-terms> ;
+<https://w3id.org/ssbd/reused-terms> rdf:type owl:Ontology ;
+    owl:versionIRI <https://w3id.org/ssbd/0.0.1/reused-terms> ;
     #owl:imports <https://w3id.org/emmo/application/datadoc/0.0.1> ;
     dcterms:title "Reused terms"@en ;
-    dcterms:abstract "Terms from standard vocabularies reused by the PINK Annotation Schema. These are not changed in PINK. When additional semantics is desired, they are subclassed to new entities in the PINK Ontology."@en .
+    dcterms:abstract "Terms from standard vocabularies reused by the SSbD Core Ontology."@en .
 
 ### PROV-O annotations
 

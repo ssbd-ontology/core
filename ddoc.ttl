@@ -939,9 +939,9 @@ oteio:statement a owl:DatatypeProperty ;
     rdfs:range rdf:JSON ;
     dcat:theme ddoc:datadoc .
 
-<https://w3id.org/pink/ddoc> a owl:Ontology ;
+<https://w3id.org/ssbd/ddoc> a owl:Ontology ;
     dcterms:title "Concepts defined in the ddoc vocabulary."@en ;
-    owl:versionIRI <https://w3id.org/pink/0.0.1/ddoc> .
+    owl:versionIRI <https://w3id.org/ssbd/0.0.1/ddoc> .
 
 rdfs:Resource a owl:Class ;
     skos:definition "A generic resource defined by RDFS." .

@@ -1,5 +1,5 @@
-ONTOLOGY_NAME: pink_annotation_schema
-ONTOLOGY_PREFIX: pink
-ONTOLOGY_IRI: https://w3id.org/pink
-GITHUB_REPOSITORY: PINK-project/PINK-annotation-schema
+ONTOLOGY_NAME: core
+ONTOLOGY_PREFIX: ssbd
+ONTOLOGY_IRI: https://w3id.org/ssbd
+GITHUB_REPOSITORY: ssbd-ontology/core
 BUILD_DIR: build

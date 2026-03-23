@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # pylint: disable=invalid-name
 """
-A script that will add all CHEMINF descriptors to the PINK Annotation Schema.
+A script that will add all CHEMINF descriptors to the SSbD Core Ontology.
 
 Run cheminf-download.py before running this script.
 """
@@ -14,11 +14,11 @@ from tripper.utils import en
 from tripper.datadoc.utils import iriname
 
 # Ontology description
-ontology_iri = "https://w3id.org/pink/cheminf"
+ontology_iri = "https://w3id.org/ssbd/cheminf"
 ontology_descr = {
-    OWL.versionIRI: "https://w3id.org/pink/0.0.1/cheminf",
+    OWL.versionIRI: "https://w3id.org/ssbd/0.0.1/cheminf",
     DCTERMS.abstract: Literal(
-        "The CHEMINF module of PINK Annotation Schema "
+        "The CHEMINF module of SSbD Core Ontology "
         "providing a taxonomy for chemical descriptors.",
         lang="en",
     ),
@@ -27,8 +27,8 @@ ontology_descr = {
     ),
     "https://w3id.org/widoco/vocab#introduction": Literal(
         (
-            "This module is a part of the [PINK Annotation Schema]"
-            "(https://pink-project.github.io/PINK-annotation-schema/widoco/index-en.html)."
+            "This module is a part of the [SSbD Core Ontology]"
+            "(https://ssbd-ontology.github.io/core/widoco/index-en.html)."
             "A *descriptor* or *indicator* is a property that provides information about "
             "the state of a system. It simplifies complex realities into measurable values "
             "that can guide decisions."
@@ -55,7 +55,7 @@ mapped_terms = [
     "cheminf:CHEMINF_000012",  # has value
 ]
 
-# Terms we don't want to add to the PINK Annotation Schema
+# Terms we don't want to add to the SSbD Core Ontology
 ignored_terms = [
     ":CHEMINF_000017",  # information about a chemical entity
     ":CHEMINF_000047",  # conforms to

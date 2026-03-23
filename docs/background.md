@@ -1,9 +1,9 @@
 # Background
 
 ## Provenance
-The provenance description in PINK is based on [PROV-O].
+The provenance description in SSbD Core Ontology is based on [PROV-O].
 
-For more accurate descriptions of complex workflows involving spatial and temporal parts, PINK suggests an enhanced formalism.
+For more accurate descriptions of complex workflows involving spatial and temporal parts, an enhanced formalism is suggested.
 
 A textual description of the provenance can be provided with `dcterms:provenance`.
 However, for a semantic provenance description [PROV-O] should be used (since `dcterms:provenance` has no agreed semantics as discussed by [DCAT-AP][dcatap-provenance]).
@@ -35,22 +35,22 @@ The material process is driven by an agent (`a`), who's temporal part (`a1`) is 
 ![Material process](figs/material-process.png)
 
 
-Concepts belonging to the PINK namespace in the figure above have been written in cursive.
+Concepts belonging to the SSbD namespace in the figure above have been written in cursive.
 
 Given the network of `:used` and `:wasInformedBy` relations, it is possible to infer `:wasInformedBy` and `:wasDerivedFrom` relations.
-This is done by the reasoner (using [SWRL] rules that are added in [pink_annotation_schema.ttl]).
+This is done by the reasoner (using [SWRL] rules that are added in [core.ttl]).
 
 
 
 ## Taxonomy
-The taxonomy below shows a basic categorisation of the main concepts (OWL classes) in the PINK Annotation Schema.
+The taxonomy below shows a basic categorisation of the main concepts (OWL classes) in the SSbD Core Ontology.
 It unifies concepts from common vocabularies, like [Dublin Core], [PROV-O], [DCAT] and [FOAF].
 This gives the adapted terms additional context.
 However, the taxonomy is intentionally weekly axiomated in order to facilitate alignment to different popular top-level ontologies, like [EMMO], [DOLCE] and [BFO].
 
 ![Taxonomy](figs/taxonomy.svg)
 
-At the top-level, the PINK Annotation Schema has the three root concepts from [PROV-O]:
+At the top-level, the SSbD Core Ontology has the three root concepts from [PROV-O]:
 
 - **`prov:Entity`**: A physical, digital, conceptual, or other kind of thing with some fixed aspects.
   [PROV-O] lacks the accuracy of nominalism and allows both real and imaginary entities.
@@ -68,13 +68,13 @@ See the [reference documentation], for a description of all the other concepts.
 
 
 ## Relations
-The PINK Annotation Schema includes three types of relations: parthood relations, causal relations and semiotic relations.
+The SSbD Core Ontology includes three types of relations: parthood relations, causal relations and semiotic relations.
 
-The The PINK Annotation Schema incorporate parthood and causal relations from [PROV-O] and  [Dublin Core] and give them enhanced semantic meaning.
-This is based on the mereocausal theory by [Zaccarini *et. al.*], but is simplified and adapted to the needs of PINK.
+The The SSbD Core Ontology incorporate parthood and causal relations from [PROV-O] and  [Dublin Core] and give them enhanced semantic meaning.
+This is based on the mereocausal theory by [Zaccarini *et. al.*], but is simplified and adapted to the needs of SSbD.
 
-For improved semantic expressiveness and to support logical validation, the PINK Annotation Schema adds characteristics to the standard [PROV-O] object properties.
-According to the [guiding principles], the characteristics is added to PINK-specific subproperties of the [PROV-O] object properties.
+For improved semantic expressiveness and to support logical validation, the SSbD Core Ontology adds characteristics to the standard [PROV-O] object properties.
+According to the [guiding principles], the characteristics is added to SSbD-specific subproperties of the [PROV-O] object properties.
 Such semantically enhanced subclass relations of corresponding [PROV-O] and [Dublin Core] relations are written in *cursive* in the figure above.
 
 > [!TIP]
@@ -95,8 +95,8 @@ The arrow illustrates the direction of the relation.
 ### Causal relations
 Causal relations focuses on whether an individual is influenced by another.
 In [PROV-O] this is described by the fundamental relation `prov:wasInfluencedBy`.
-In PINK we introduce the toplevel subclass `:causedBy` as a subclass of `prov:wasInfluencedBy`.
-The causal relations currently included in the PINK Annotation Schema are shown in the figure below.
+In the SSbD Core Ontology we introduce the toplevel subclass `:causedBy` as a subclass of `prov:wasInfluencedBy`.
+The causal relations currently included in the SSbD Core Ontology are shown in the figure below.
 Most of these relations are indirect causations mediated by an activity.
 These chains of causations have been expressed using [SWRL] rules.
 The relations starting with ":was" are subclasses of the corresponding relations in [PROV-O].
@@ -107,7 +107,7 @@ The `:attributed` and `:wasAttributedTo` are the inverse of each other.
 
 ### Semiotic relations
 Semiotic relations take part in a triadic [semiotic] meaning-making process, where an 'interpreter' connects a 'sign' (e.g. a property) to an entity (called 'referent').
-The semiotic relations in the PINK Annotation Scheme are inspirred by EMMO, which in turn is based on the semiotic theory by Charles Sanders Peirce (1839-1914).
+The semiotic relations in the SSbD Core Ontology are inspirred by EMMO, which in turn is based on the semiotic theory by Charles Sanders Peirce (1839-1914).
 Semiotic relations can be seen as shortcuts that replaces a series of complex causal interactions with a single relation.
 
 ![Semiotic relations](figs/semiotic-relations.svg)
@@ -119,7 +119,7 @@ For example, to determine the toxicity of a chemical substance you have to measu
 
 ## Class-level documentation
 Provenance is about what has happened. [PROV-O] is intended to describe provenance information.
-In PINK we also want to describe general workflows before they are executed.
+In SSbD we also want to describe general workflows before they are executed.
 That is, to describe something that can happen.
 
 Since we don't know whether the workflow actually will be executed, we can't create individuals for it.
@@ -130,37 +130,37 @@ Thus, specific subclasses of prov:Activity are made.
 In Manchester syntax, this may be expressed as follows
 
     Class: uob:SpecificToxicityComputation
-        subClassOf: pink:Computation
-        subClassOf: pink:hasInput some uob:ToxicityComputationInput
-        subClassOf: pink:hasOutput some uob:ToxicityComputationOutput
-        subClassOf: pink:hasSoftware some uob:ToxicitySoftware
+        subClassOf: ssbd:Computation
+        subClassOf: ssbd:hasInput some uob:ToxicityComputationInput
+        subClassOf: ssbd:hasOutput some uob:ToxicityComputationOutput
+        subClassOf: ssbd:hasSoftware some uob:ToxicitySoftware
 
 where `uob` is the prefix of the application ontology defining the computation.
 
-PINK provides tooling (based on [Tripper]) to help providing class-level documentation.
+The SSbD ontological framework provides tooling (based on [Tripper]) to help providing class-level documentation.
 This is done the normal way using spreadsheets, but with the `@type` keyword replaced by `subClassOf` (`@type` is implicit and would always be `owl:Class`).
 For example, the above declaration of a computation could provided as follows:
 
 | @id                             | @type     | subClassOf        | description | hasSoftware          | hasInput                     | hasOutput                     |
 |---------------------------------|-----------|-------------------|-------------|----------------------|------------------------------|-------------------------------|
-| uob:SpecificToxicityComputation | owl:Class | pink:Computiation | ...         | uob:ToxicitySoftware | uob:ToxicityComputationInput | uob:ToxicityComputationOutput |
+| uob:SpecificToxicityComputation | owl:Class | ssbd:Computiation | ...         | uob:ToxicitySoftware | uob:ToxicityComputationInput | uob:ToxicityComputationOutput |
 
 where the entries under `hasInput` and `hasOutput` refer to dataset subclasses.
 These dataset classes can be documented in a similar way.
 
 | @id                           | @type     | subClassOf   | description | ... |
 |-------------------------------|-----------|--------------|-------------|-----|
-| uob:ToxicityComputationInput  | owl:Class | pink:Dataset | ...         | ... |
-| uob:ToxicityComputationOutput | owl:Class | pink:Dataset | ...         | ... |
+| uob:ToxicityComputationInput  | owl:Class | ssbd:Dataset | ...         | ... |
+| uob:ToxicityComputationOutput | owl:Class | ssbd:Dataset | ...         | ... |
 
 
 
 
 
-[reference documentation]: https://pink-project.github.io/PINK-annotation-schema/widoco/index-en.html
+[reference documentation]: https://ssbd-ontology.github.io/core/widoco/index-en.html
 [Guiding principles]: ./guiding-principles.md
-[PINK Annotation Schema]: https://pink-project.github.io/PINK-annotation-schema/widoco/index-en.html
-[reused terms]: https://pink-project.github.io/PINK-annotation-schema/widoco-reused-terms/index-en.html
+[SSbD Core Ontology]: https://ssbd-ontology.github.io/core/widoco/index-en.html
+[reused terms]: https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html
 
 [Zaccarini *et. al.*]: https://ebooks.iospress.nl/doi/10.3233/FAIA231120
 [semiotic]: https://plato.stanford.edu/entries/peirce-semiotics/
