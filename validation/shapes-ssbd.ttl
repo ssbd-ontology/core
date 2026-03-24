@@ -1,38 +1,38 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix pink: <https://w3id.org/pink#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-# PINK Project specific SHACL constraints
+# SSbD Core Ontology SHACL constraints
 # This file contains validation rules specific to the PINK project,
 # separate from the auto-generated shapes.ttl derived from the ontology.
 
 # Dataset constraints
-pink:PinkDatasetShape a sh:NodeShape ;
-    sh:targetClass pink:Dataset ;
+ssbd:SsbdDatasetShape a sh:NodeShape ;
+    sh:targetClass ssbd:Dataset ;
     sh:property [
         sh:path dcterms:title ;
         sh:minCount 1 ;
-        sh:message "A PINK Dataset must have at least one dcterms:title"
+        sh:message "A SSbD Dataset must have at least one dcterms:title"
     ] ;
     sh:property [
         sh:path dcterms:description ;
         sh:minCount 1 ;
-        sh:message "A PINK Dataset must have at least one dcterms:description"
+        sh:message "A SSbD Dataset must have at least one dcterms:description"
     ] .
 
 # Software constraints
-pink:PinkSoftwareShape a sh:NodeShape ;
-    sh:targetClass pink:Software ;
+ssbd:SsbdSoftwareShape a sh:NodeShape ;
+    sh:targetClass ssbd:Software ;
     sh:property [
         sh:path dcterms:title ;
         sh:minCount 1 ;
-        sh:message "A PINK Software must have at least one dcterms:title"
+        sh:message "A SSbD Software must have at least one dcterms:title"
     ] ;
     sh:property [
         sh:path dcterms:description ;
         sh:minCount 1 ;
-        sh:message "A PINK Software must have at least one dcterms:description"
+        sh:message "A SSbD Software must have at least one dcterms:description"
     ] .

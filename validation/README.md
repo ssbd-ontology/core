@@ -1,6 +1,6 @@
-# PINK Annotation Schema Validation
+# SSbD Validation
 
-This directory contains SHACL-based validation tools for JSON-LD data conforming to the PINK annotation schema.
+This directory contains SHACL-based validation tools for JSON-LD data conforming to the SSbD Core Ontology.
 
 ## Approach
 
@@ -10,7 +10,7 @@ The validation system uses a **two-tier validation approach**:
 
 1. **Auto-generated Shapes** (`shapes.ttl`): Ontology files (`.ttl`) in the parent directory are parsed to automatically extract class definitions, property constraints (datatypes, ranges), and inheritance hierarchies. These shapes mirror the ontology structure and are regenerated whenever the ontology changes.
 
-2. **Project-specific Constraints** (`shapes-pink.ttl`): Additional validation rules specific to the PINK project that go beyond the ontology definitions, such as cardinality requirements (e.g., mandatory properties like `dcterms:title`).
+2. **Project-specific Constraints** (`shapes-ssbd.ttl`): Additional validation rules specific to the SSbD Core Ontology that go beyond the ontology definitions, such as cardinality requirements (e.g., mandatory properties like `dcterms:title`).
 
 3. **Validation**: JSON-LD data files are validated against **both** shape files using `pyshacl`. The validator automatically merges both constraint sets.
 
@@ -50,7 +50,7 @@ If you provide a plain string without `@language`, validation will report a **da
 
 - **`generate_shacl.py`**: Automatically generates SHACL shapes from ontology files. Discovers all classes dynamically, extracts property constraints (datatypes, ranges, OWL restrictions), and outputs validation rules to `shapes.ttl`.
 
-- **`validate.py`**: Validation script that loads JSON-LD data and validates it against both `shapes.ttl` and `shapes-pink.ttl`. Automatically merges both constraint sets and runs validation using `pyshacl`, returning conformance results with detailed error reports.
+- **`validate.py`**: Validation script that loads JSON-LD data and validates it against both `shapes.ttl` and `shapes-ssbd.ttl`. Automatically merges both constraint sets and runs validation using `pyshacl`, returning conformance results with detailed error reports.
 
 - **`test.py`**: Test script that orchestrates shape generation and runs validation tests on example files. Includes both valid and invalid test cases to verify the validation system works correctly.
 
@@ -58,8 +58,8 @@ If you provide a plain string without `@language`, validation will report a **da
 
 - **`shapes.ttl`**: **Auto-generated** SHACL shapes created by `generate_shacl.py`. Contains datatype and range constraints extracted directly from the ontology (e.g., `dcterms:title` must be `rdf:langString`). **Do not edit manually** - regenerate by running `generate_shacl.py` whenever the ontology changes.
 
-- **`shapes-pink.ttl`**: **Manually maintained** project-specific SHACL constraints that extend the auto-generated shapes. Defines PINK-specific requirements such as:
-  - Mandatory properties (e.g., `pink:Dataset` must have `dcterms:title` and `dcterms:description`)
+- **`shapes-ssbd.ttl`**: **Manually maintained** project-specific SHACL constraints that extend the auto-generated shapes. Defines SSbD-specific requirements such as:
+  - Mandatory properties (e.g., `ssbd:Dataset` must have `dcterms:title` and `dcterms:description`)
   - Cardinality constraints (`sh:minCount`, `sh:maxCount`)
   - Custom validation messages
 
@@ -74,7 +74,7 @@ cd validation
 python generate_shacl.py
 ```
 
-This reads all `.ttl` ontology files from the parent directory and generates `shapes.ttl`. The project-specific constraints in `shapes-pink.ttl` are maintained separately and do not need regeneration.
+This reads all `.ttl` ontology files from the parent directory and generates `shapes.ttl`. The project-specific constraints in `shapes-ssbd.ttl` are maintained separately and do not need regeneration.
 
 ### Validate a JSON-LD File
 
@@ -94,7 +94,7 @@ python test.py
 
 This will:
 1. Generate fresh SHACL shapes from the ontology (`shapes.ttl`)
-2. Validate test cases against both `shapes.ttl` and `shapes-pink.ttl`
+2. Validate test cases against both `shapes.ttl` and `shapes-ssbd.ttl`
 3. Report results and verify expected outcomes
 
 Test cases cover various scenarios including missing properties, wrong datatypes, and plain strings instead of language-tagged strings.

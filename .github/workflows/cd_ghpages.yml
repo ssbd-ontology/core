@@ -83,9 +83,9 @@ jobs:
         cp README.md build/.
         ontoconvert \
             -saw \
-            --base-iri="${ONTOLOGY_IRI}#" \
+            --base-iri="${ONTOLOGY_IRI}/" \
             --iri="${ONTOLOGY_IRI}" \
-            --namespace="pink:${ONTOLOGY_IRI}#" \
+            --namespace="ssbd:${ONTOLOGY_IRI}/" \
             --namespace="ddoc:https://w3id.org/emmo/application/datadoc#" \
             --namespace="widoco:https://w3id.org/widoco/vocab#" \
             --namespace="dcatap:http://data.europa.eu/r5r/" \
@@ -104,10 +104,10 @@ jobs:
           --output build/${ONTOLOGY_NAME}-inferred.ttl
         ontoconvert --iri=${ONTOLOGY_IRI}/inferred build/${ONTOLOGY_NAME}-inferred.ttl build/${ONTOLOGY_NAME}-inferred.ttl
 
-    - name: Generate Widoco documentation for PINK Annotation Schema
+    - name: Generate Widoco documentation for SSbD Core Ontology
       run: |
         java -jar widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-            -ontFile pink_annotation_schema.ttl \
+            -ontFile core.ttl \
             -outFolder build/widoco \
             -getOntologyMetadata \
             -oops \
@@ -190,8 +190,8 @@ jobs:
             --redefine=allow \
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
-            --set-prefix=pink:https://w3id.org/pink#
-            #--namespace-filter=pink
+            --set-prefix=ssbd:https://w3id.org/ssbd/
+            #--namespace-filter=ssbd
 
     - name: Generate keywords file
       run: |
@@ -202,11 +202,11 @@ jobs:
             --redefine=allow \
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
-            --set-prefix=pink:https://w3id.org/pink#
-            #--namespace-filter=pink
+            --set-prefix=ssbd:https://w3id.org/ssbd/
+            #--namespace-filter=ssbd
 
     - name: Generate Ontokit documentation to public
-      run: ontokit docs --imported --recursive --ontology-file=pink_annotation_schema.ttl --docs-dir=docs . && touch public/.nojekyll
+      run: ontokit docs --imported --recursive --ontology-file=core.ttl --docs-dir=docs . && touch public/.nojekyll
 
     # Copy turtle files from build to public
     - name: Copy ontologies to public
@@ -220,9 +220,9 @@ jobs:
     # - name: Create markdown documentation of keywords
     #   run: |
     #     keywords \
-    #         --input=pink_annotation_schema.ttl \
+    #         --input=core.ttl \
     #         --keywords=build/keywords.md \
-    #         --namespace-filter=pink \
+    #         --namespace-filter=ssbd \
     #         --redefine=allow \
     #        --set-prefix=emmo:https://w3id.org/emmo/hume#
 

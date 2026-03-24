@@ -1,5 +1,5 @@
 """
-Generate SHACL shapes from PINK ontology for validation.
+Generate SHACL shapes from SSbD Core Ontology for validation.
 
 This script loads ontology files, discovers all classes dynamically,
 extracts class hierarchy and property constraints, and generates
@@ -16,7 +16,7 @@ from rdflib.namespace import split_uri
 
 
 # Namespace definitions
-PINK = Namespace("https://w3id.org/pink#")
+SSBD = Namespace("https://w3id.org/ssbd/")
 DCAT = Namespace("http://www.w3.org/ns/dcat#")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
@@ -28,7 +28,7 @@ EMMO = Namespace("https://w3id.org/emmo#")
 # Namespaces to include for shape generation
 # Classes from these namespaces will have shapes generated
 TARGET_NAMESPACES = [
-    str(PINK),
+    str(SSBD),
     str(EMMO),
     str(PROV),
     str(DCAT),
@@ -52,16 +52,16 @@ def generate_shape_uri(class_uri: URIRef) -> URIRef:
     """
     Generate a shape URI for a given class.
 
-    Uses PINK namespace for all shapes with format: ClassNameShape
+    Uses SSbD namespace for all shapes with format: ClassNameShape
 
     Parameters:
         class_uri: The class URI to generate a shape for.
 
     Returns:
-        Shape URI in PINK namespace.
+        Shape URI in SSbD namespace.
     """
     local_name = get_local_name(class_uri)
-    return PINK[f"{local_name}Shape"]
+    return SSBD[f"{local_name}Shape"]
 
 
 def load_ontology(onto_dir: Path) -> Graph:
@@ -382,7 +382,7 @@ def generate_shapes(onto_dir: Path, output_path: Path) -> None:
 
     # Bind namespaces for readable output
     shapes.bind("sh", SH)
-    shapes.bind("pink", PINK)
+    shapes.bind("ssbd", SSBD)
     shapes.bind("dcat", DCAT)
     shapes.bind("dcterms", DCTERMS)
     shapes.bind("xsd", XSD)
