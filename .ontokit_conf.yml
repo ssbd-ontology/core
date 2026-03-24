@@ -8,7 +8,7 @@ BUILD_DIR: build
 # Default is "all".
 # REFERENCE_SUBSECTIONS: all
 # Example subset:
-# REFERENCE_SUBSECTIONS: classes,annotation_properties,data_properties,object_properties,individuals
+REFERENCE_SUBSECTIONS: all
 #
 # Optional: additional reference indices for `ontokit docs`.
 REFERENCE_INDICES:
