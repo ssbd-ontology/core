@@ -12,7 +12,7 @@ REFERENCE_SUBSECTIONS: all
 #
 # Optional: additional reference indices for `ontokit docs`.
 REFERENCE_INDICES:
-  - ontology_file: build/core-squashed.ttl
+  - ontology_file: build/core.ttl
     title: Properties Index
     docfile: properties.rst
     # iri_regex: https://example.org/other
@@ -22,14 +22,12 @@ REFERENCE_INDICES:
   - ontology_file: ssbd-taxonomy.ttl
     title: SSbDAssessments Index
     docfile: ssbdtaxonomy.rst
-    # iri_regex: https://example.org/other
     imported: false
     recursive: false
     subsections: classes 
   - ontology_file: models.ttl
     title: Models Index
     docfile: models.rst
-    # iri_regex: https://example.org/other
     imported: false
     recursive: false
     subsections: classes
