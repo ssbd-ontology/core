@@ -411,7 +411,8 @@ ssbd:YoungsModulusAssessment a owl:Class ;
     skos:prefLabel "YoungsModulusAssessment"@en .
 
 ssbd:ssbd-taxonomy a owl:Ontology ;
-    dcterms:title "Taxonomy useful categorizing activities and outputs of activities within the SSbD framework."@en ;
+    dcterms:title "SSbD taxonomy" ; 
+    dcterms:abstract "Ontology useful for categorizing activities and outputs of activities within the SSbD framework."@en ;
     owl:versionIRI <https://w3id.org/ssbd/0.0.1/ssbd-taxonomy> .
 
 ssbd:EconomicSustainabilityAssessment a owl:Class ;
