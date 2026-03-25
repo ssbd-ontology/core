@@ -316,12 +316,12 @@ dcat:keyword a owl:AnnotationProperty ;
     skos:definition "A keyword or tag describing the resource."@en ;
     rdfs:range rdf:langString .
 
-rdfs:label a owl:AnnotationProperty ;
-        rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
-        rdfs:label "label" ;
-        rdfs:comment "A human-readable name for the subject." ;
-        rdfs:domain rdfs:Resource ;
-        rdfs:range rdf:langString .
+#rdfs:label a owl:AnnotationProperty ;
+#        rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+#        rdfs:label "label" ;
+#        rdfs:comment "A human-readable name for the subject." ;
+#        rdfs:domain rdfs:Resource ;
+#        rdfs:range rdf:langString .
 
 dcterms:license a owl:ObjectProperty ;
     skos:prefLabel "license"@en ;
