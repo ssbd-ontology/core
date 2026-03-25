@@ -16,8 +16,8 @@
 @prefix dm: <https://w3id.org/emmo/domain/datamodel#> .
 @prefix ssbd: <https://w3id.org/ssbd#> .
 
-<https://w3id.org/ssbd/reused-terms> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/ssbd/0.0.1/reused-terms> ;
+<https://w3id.org/ssbd/core/reused-terms> rdf:type owl:Ontology ;
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/reused-terms> ;
     #owl:imports <https://w3id.org/emmo/application/datadoc/0.0.1> ;
     dcterms:title "Reused terms"@en ;
     dcterms:abstract "Terms from standard vocabularies reused by the SSbD Core Ontology."@en .

@@ -10,9 +10,9 @@
 @prefix semonto: <http://www.semanticweb.org/ontologies/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
-<https://w3id.org/ssbd/cheminf-mappings> a owl:Ontology ;
-    owl:versionIRI <https://w3id.org/ssbd/0.0.1/cheminf-mappings> ;
-    owl:imports <https://w3id.org/ssbd/0.0.1/cheminf> ;
+<https://w3id.org/ssbd/core/cheminf-mappings> a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings> ;
+    owl:imports <https://w3id.org/ssbd/core/0.0.1/cheminf> ;
     dcterms:abstract "Mapping CHEMINF to the SSbD Core Ontology."@en ;
     dcterms:title "CHEMINF mappings"@en .
 
