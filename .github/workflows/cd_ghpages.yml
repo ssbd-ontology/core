@@ -10,6 +10,7 @@ on:
       - master
       - main
       - ontokit_dev
+      - label_langstring
 
 permissions:
   contents: write
