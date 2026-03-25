@@ -208,7 +208,7 @@ jobs:
     - name: Generate Ontokit documentation to public
       run: ontokit docs --imported --recursive --ontology-file=core.ttl --docs-dir=docs . && touch public/.nojekyll
 
-    # Copy turtle and context files from build to publme: Copy ontologies to public
+    - name: Copy ontologies and context to public
       run: |
         ls public/
         cp build/*ttl public/
