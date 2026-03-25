@@ -1,119 +1,650 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix ssbd: <https://w3id.org/ssbd/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
 
 ssbd:BulkModulusAssessment a owl:Class ;
-    rdfs:label "Bulk Modulus Assessment" ;
-    dcterms:description "Assessment of bulk modulus of materials." ;
+    rdfs:label "Bulk Modulus Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of bulk modulus of materials."@en ;
     rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
-    skos:prefLabel "BulkModulusAssessment" .
+    skos:prefLabel "BulkModulusAssessment"@en .
 
 ssbd:DensityAssessment a owl:Class ;
-    rdfs:label "Density Assessment" ;
-    dcterms:description "Assessment of density of chemicals and materials." ;
+    rdfs:label "Density Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of density of chemicals and materials."@en ;
     rdfs:subClassOf ssbd:PhysicalPropertiesAssessment ;
-    skos:prefLabel "DensityAssessment" .
+    skos:prefLabel "DensityAssessment"@en .
 
 ssbd:EconomicDimension a owl:Class ;
-    rdfs:label "Economic Dimension" ;
-    dcterms:description "The dimension of economic impact in the context of SSbD assessments." ;
+    rdfs:label "Economic Dimension"^^rdfs:Literal ;
+    dcterms:description "The dimension of economic impact in the context of SSbD assessments."@en ;
     rdfs:subClassOf ssbd:SsbdDimension ;
-    skos:prefLabel "EconomicDimension" .
+    skos:prefLabel "EconomicDimension"@en .
 
 ssbd:EnvironmentalDimension a owl:Class ;
-    dcterms:description "The dimension of environmental impact in the context of SSbD assessments." ;
+    dcterms:description "The dimension of environmental impact in the context of SSbD assessments."@en ;
     rdfs:subClassOf ssbd:SsbdDimension ;
-    skos:prefLabel "EnvironmentalDimension" .
-
-ssbd:FunctionalityDimension a owl:Class ;
-    dcterms:description "The dimension of functionality in the context of SSbD assessments." ;
-    rdfs:subClassOf ssbd:SsbdDimension ;
-    skos:prefLabel "FunctionalityDimension" .
+    skos:prefLabel "EnvironmentalDimension"@en .
 
 ssbd:GlassTransitionTemperatureAssessment a owl:Class ;
-    rdfs:label "Glass Transition Temperature Assessment" ;
-    dcterms:description "Assessment of glass transition temperature of materials." ;
+    rdfs:label "Glass Transition Temperature Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of glass transition temperature of materials."@en ;
     rdfs:subClassOf ssbd:ThermalPropertiesAssessment ;
-    skos:prefLabel "GlassTransitionTemperatureAssessment" .
+    skos:prefLabel "GlassTransitionTemperatureAssessment"@en .
 
 ssbd:PoissonsRatioAssessment a owl:Class ;
-    rdfs:label "Poisson's Ratio Assessment" ;
-    dcterms:description "Assessment of Poisson's ratio of materials." ;
+    rdfs:label "Poisson's Ratio Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of Poisson's ratio of materials."@en ;
     rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
-    skos:prefLabel "PoissonsRatioAssessment" .
+    skos:prefLabel "PoissonsRatioAssessment"@en .
 
 ssbd:SafetyDimension a owl:Class ;
-    rdfs:label "Safety Dimension" ;
-    dcterms:description "The dimension of safety in the context of SSbD assessments." ;
+    rdfs:label "Safety Dimension"^^rdfs:Literal ;
+    dcterms:description "The dimension of safety in the context of SSbD assessments."@en ;
     rdfs:subClassOf ssbd:SsbdDimension ;
-    skos:prefLabel "SafetyDimension" .
+    skos:prefLabel "SafetyDimension"@en .
 
 ssbd:SocialDimension a owl:Class ;
-    dcterms:description "The dimension of social impact in the context of SSbD assessments." ;
+    dcterms:description "The dimension of social impact in the context of SSbD assessments."@en ;
     rdfs:subClassOf ssbd:SsbdDimension ;
-    skos:prefLabel "SocialDimension" .
+    skos:prefLabel "SocialDimension"@en .
 
 ssbd:YoungsModulusAssessment a owl:Class ;
-    rdfs:label "Young's Modulus Assessment" ;
-    dcterms:description "Assessment of Young's modulus of materials." ;
+    rdfs:label "Young's Modulus Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of Young's modulus of materials."@en ;
     rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
-    skos:prefLabel "YoungsModulusAssessment" .
+    skos:prefLabel "YoungsModulusAssessment"@en .
 
-<https://w3id.org/ssbd/ssbd-taxonomy> a owl:Ontology ;
-    dcterms:title "SSbD Taxonomy"@en ;
-    dcterms:abstract "Taxonomy useful categorizing activities and outputs of activities within the SSbD framework."@en ;
+ssbd:ssbd-taxonomy a owl:Ontology ;
+    dcterms:title "Taxonomy useful categorizing activities and outputs of activities within the SSbD framework."@en ;
     owl:versionIRI <https://w3id.org/ssbd/0.0.1/ssbd-taxonomy> .
 
-ssbd:Assessment a owl:Class ;
-    rdfs:label "Assessment" ;
-    dcterms:description "The process of evaluating the quality, performance, or impact of a substance, product, or process." ;
-    rdfs:subClassOf prov:Activity ;
-    skos:prefLabel "Assessment" .
+<pink:AcidificationImpactAssessment> a owl:Class ;
+    rdfs:label "Acidification"^^rdfs:Literal ;
+    dcterms:description "Assesses the potential for emissions like SO? and NOx to form acid rain, thereby harming soil, water, and ecosystems"@en ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "AcidificationImpactCategory"@en .
+
+<pink:AcuteToxicity?Assessment> a owl:Class ;
+    rdfs:label "Acute Toxicity ?Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of toxicity from acute exposure (acute  refers to studies where dosing is either single or limited to one day although the total study duration may extend to two weeks to permit appearance of toxicity in susceptible organ systems)"@en ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "AcuteToxicity?Assessment"@en .
+
+<pink:AmbientAirQualityAssessment> a owl:Class ;
+    rdfs:label "Ambient Air Quality Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessing the concentration of air pollutants"@en ;
+    rdfs:subClassOf <pink:ExposureAssessmentEnvironment> ;
+    skos:prefLabel "AmbientAirQualityAssessment"@en .
+
+<pink:AquaticToxicityFreshwater> a owl:Class ;
+    rdfs:label "Aquatic Toxicity Freshwater"^^rdfs:Literal ;
+    dcterms:description "Risks to freshwater organisms"@en ;
+    rdfs:subClassOf <pink:EnvironmentalRiskAssessment> ;
+    skos:prefLabel "AquaticToxicityFreshwater"@en .
+
+<pink:AquaticToxicityMarine> a owl:Class ;
+    rdfs:label "Aquatic Toxicity Marine"^^rdfs:Literal ;
+    dcterms:description "Risks to marine organisms"@en ;
+    rdfs:subClassOf <pink:EnvironmentalRiskAssessment> ;
+    skos:prefLabel "AquaticToxicityMarine"@en .
+
+<pink:BehaviouralImmunotoxicityAssessment> a owl:Class ;
+    rdfs:label "Behavioural Immunotoxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "BehaviouralImmunotoxicityAssessment"@en .
+
+<pink:BioaccumulationAssessment> a owl:Class ;
+    rdfs:label "Bioaccumulation Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessing the bioaccumulation potential"@en ;
+    rdfs:subClassOf <pink:ExposureAssessmentEnvironment> ;
+    skos:prefLabel "BioaccumulationAssessment"@en ;
+    skos:scopeNote "Bioaccumulation refers to the accumulation of persistent hydrophobic chemicals in aquatic organisms through mechanisms such as direct uptake from water via gills or skin (bioconcentration), ingestion of suspended particles, or consumption of contaminated food (biomagnification).  It is the progressive increase in the amount of a substance in an organism or part of an organism that occurs because the rate of intake from all contributing sources and by all possible routes exceeds the organism’s ability to eliminate the substance from its body" .
+
+<pink:BiodegradabilityAssessment> a owl:Class ;
+    rdfs:label "Biodegradability Assessment"^^rdfs:Literal ;
+    dcterms:description "Tests to assess biodegradability."@en ;
+    rdfs:subClassOf <pink:ExposureAssessmentEnvironment> ;
+    skos:prefLabel "BiodegradabilityAssessment"@en ;
+    skos:scopeNote "Biodegradation is the breakdown of matter into smaller parts and eventual conversion into substances that are reused in biological cycles or accumulate in the environment" .
+
+<pink:BiodiversityAssessment> a owl:Class ;
+    rdfs:label "Biodiversity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:EnvironmentalSustainabilityAssessment> ;
+    skos:prefLabel "BiodiversityAssessment"@en .
+
+<pink:BulkModulusAssessment> a owl:Class ;
+    rdfs:label "Bulk Modulus Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of bulk modulus of materials."@en ;
+    rdfs:subClassOf <pink:MechanicalPropertiesAssessment> ;
+    skos:prefLabel "BulkModulusAssessment"@en .
+
+<pink:CarcinogenicityAssessment> a owl:Class ;
+    rdfs:label "Carcinogenicity Assessment"^^rdfs:Literal ;
+    dcterms:description """Test(s) carried out over a sufficient time to detect any possible carcinogenic effect of a
+test substance"""@en ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "CarcinogenicityAssessment"@en .
+
+<pink:DensityAssessment> a owl:Class ;
+    rdfs:label "Density Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of density of chemicals and materials."@en ;
+    rdfs:subClassOf <pink:PhysicalPropertiesAssessment> ;
+    skos:prefLabel "DensityAssessment"@en .
+
+<pink:DevelopmentalNeurotoxicityAssessment> a owl:Class ;
+    rdfs:label "Developmental Neurotoxicity Assessment"^^rdfs:Literal ;
+    dcterms:description "Any examination that allows detection of substance-induced changes in the structural or functional integrity of the nervous system of a developing organism."@en ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "DevelopmentalNeurotoxicityAssessment"@en .
+
+<pink:EndocrineToxicityAssessment> a owl:Class ;
+    rdfs:label "Endocrine Toxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "EndocrineToxicityAssessment"@en .
+
+<pink:EnvironmentalExternalitiesAssessment> a owl:Class ;
+    rdfs:label "Environmental Externalities Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of enviornmental externalities."@en ;
+    rdfs:subClassOf <pink:ExternalitiesAssessment> ;
+    skos:prefLabel "EnvironmentalExternalitiesAssessment"@en .
+
+<pink:ExposureAssessmentHumanHealth> a owl:Class ;
+    rdfs:label "Exposure Assessment Human Health"^^rdfs:Literal ;
+    dcterms:description "Estimates the magnitude, frequency, duration, and route of exposure to the chemical for humans or environment for the relevant exposure pattern (population, route, and duration of exposure) and each relevant health effect (local and systemic effects) under realistic or worst-case scenarios."@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> ;
+    skos:prefLabel "ExposureAssessmentHumanHealth"@en .
+
+<pink:FairRenumerationAssessment> a owl:Class ;
+    rdfs:label "Fair Renumeration"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:WorkerSocialResponsibilityAssessment> ;
+    skos:prefLabel "FairRenumerationAssessment"@en .
+
+<pink:FlammabiityAssessment> a owl:Class ;
+    rdfs:label "Flammabiity Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of Flammability of chemicals and substances"@en ;
+    rdfs:subClassOf <pink:IntrinsicChemicalHazardAssessment> ;
+    skos:prefLabel "FlammabiityAssessment"@en .
+
+<pink:FossilFuelEnergyConsumptionAssessment> a owl:Class ;
+    rdfs:label "Fossil Fuel Energy Consumption Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessing the non-renewable energy consumption during production of chemicals and materials"@en ;
+    rdfs:subClassOf <pink:EnergyConsumptionAssessment> ;
+    skos:prefLabel "FossilFuelEnergyConsumptionAssessment"@en .
+
+<pink:FreshwaterAquaticEcotoxicityImpactAssessment> a owl:Class ;
+    rdfs:label "Freshwater Aquatic Ecotoxicity"^^rdfs:Literal ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "FreshwaterAquaticEcotoxicityImpactCategory"@en .
+
+<pink:FreshwaterEutrophicationImpactAssessment> a owl:Class ;
+    rdfs:label "Freshwater Eutrophication"^^rdfs:Literal ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "FreshwaterEutrophicationImpactCategory"@en .
+
+<pink:GlassTransitionTemperatureAssessment> a owl:Class ;
+    rdfs:label "Glass Transition Temperature Assessmen"^^rdfs:Literal ;
+    dcterms:description "Assessment of glass transition temperature of materials."@en ;
+    rdfs:subClassOf <pink:ThermalPropertiesAssessment> ;
+    skos:prefLabel "GlassTransitionTemperatureAssessment"@en .
+
+<pink:GlobalWarmingAssessment> a owl:Class ;
+    rdfs:label "Global warming (GWP 100)"^^rdfs:Literal ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "GlobalWarmingPotenial100"@en .
+
+<pink:HHRAAirPollution> a owl:Class ;
+    rdfs:label "HHRA Air Pollution"^^rdfs:Literal ;
+    dcterms:description "Assessment of human health Risks from Air pollutants"@en ;
+    rdfs:subClassOf <pink:HumanHealthRiskAssessment> ;
+    skos:prefLabel "HHRAAir pollution"@en .
+
+<pink:HHRAChemicalSubstances> a owl:Class ;
+    rdfs:label "HHRA ChemicalSubstances"^^rdfs:Literal ;
+    dcterms:description "Assessment of Human Health Risks from pesticides, cosmetics, chemicals in flame retardants, etc. This can include dermal exposures, in addition to inhalation and ingestion exposure routes."@en ;
+    rdfs:subClassOf <pink:HumanHealthRiskAssessment> ;
+    skos:prefLabel "HHRAChemicalSubstances"@en .
+
+<pink:HHRAIndoorAirPollution> a owl:Class ;
+    rdfs:label "HHRA Indoor air pollution"^^rdfs:Literal ;
+    dcterms:description "Assessment of human health Risks from indoor air pollutants"@en ;
+    rdfs:subClassOf <pink:HumanHealthRiskAssessment> ;
+    skos:prefLabel "HHRAIndoor air pollution"@en .
+
+<pink:HHRASoilPollution> a owl:Class ;
+    rdfs:label "HHRA  Soil pollution"^^rdfs:Literal ;
+    dcterms:description "Assessment of human health Risks from pollutants in soil"@en ;
+    rdfs:subClassOf <pink:HumanHealthRiskAssessment> ;
+    skos:prefLabel "HHRA Soil pollution"@en .
+
+<pink:HHRAWaterPollution> a owl:Class ;
+    rdfs:label "HHRA Water Pollution"^^rdfs:Literal ;
+    dcterms:description "Assessment of human health Risks from pollutants in drinking water"@en ;
+    rdfs:subClassOf <pink:HumanHealthRiskAssessment> ;
+    skos:prefLabel "HHRAWaterPollution"@en .
+
+<pink:HazardCharacterisationEnvironment> a owl:Class ;
+    rdfs:label "Hazard Characterisation Environment"^^rdfs:Literal ;
+    dcterms:description "Component of risk assessment concerned with quantifying the manner in which the frequency and intensity of effects increase with increasing exposure of environmental organisms  to a contaminant or other source of stress."@en ;
+    rdfs:subClassOf <pink:HazardAssessmentEnvironment> ;
+    skos:prefLabel "HazardCharacterisationEnvironment"@en ;
+    skos:scopeNote "Can also be labelled as dose-response assessment;" .
+
+<pink:HazardCharacterisationHumanHealth> a owl:Class ;
+    dcterms:description "Establishes the relationship between the dose or concentration of a chemical and the severity or probability of adverse effects. This includes identifying critical effects and determining reference tolerable exposure limit."@en ;
+    rdfs:subClassOf <pink:HazardAssessmentHumanHealth> ;
+    skos:scopeNote "Qualitative and,wherever possible, quantitative description of the nature of the hazard associatedwith the agent of concern." .
+
+<pink:HazardIdentificationEnvironment> a owl:Class ;
+    rdfs:label "Hazard Identification Environment"^^rdfs:Literal ;
+    dcterms:description "Hazard identification is the process of determining whether exposure to a substance can cause a specific adverse effect on organisms in the environment"@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> ;
+    skos:prefLabel "HazardIdentificationEnvironment"@en .
+
+<pink:HepatotoxicityAssessment> a owl:Class ;
+    rdfs:label "Hepatotoxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "HepatotoxicityAssessment"@en .
+
+<pink:HumanToxicityCancerImpactAssessment> a owl:Class ;
+    rdfs:label "Human carcinogenic toxicity"^^rdfs:Literal ;
+    dcterms:description "Evaluating cancer risks caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil)"@en ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "HumanToxicityCancerImpactCategory"@en .
+
+<pink:HumanToxicityNonCancerImpactAssessment> a owl:Class ;
+    rdfs:label "Human noncarcinogenic toxicity"^^rdfs:Literal ;
+    dcterms:description "Evaluating the adverse health effects on human, excluding cancer, caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil)"@en ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "HumanToxicityNonCancerImpactCategory"@en .
+
+<pink:Immunotoxicity?Assessment> a owl:Class ;
+    rdfs:label "Immunotoxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "Immunotoxicity?Assessment"@en .
+
+<pink:IrritationAndCorrosion> a owl:Class ;
+    rdfs:label "Irritation and Corrosion"^^rdfs:Literal ;
+    dcterms:description "Irritation and corrosion refers local effects on the skin, in the eyes or in respiratory system."@en ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "Irritation And Corrosion"@en .
+
+<pink:LifeCycleImpactAssessmentCategory> a owl:Class ;
+    rdfs:label "Life Cycle Assessment Impact Category"^^rdfs:Literal ;
+    dcterms:description "A LCA impact category groups different emissions into one effect on the environment"@en ;
+    rdfs:subClassOf <pink:EnvironmentalSustainabilityAssessment> ;
+    skos:prefLabel "LifeCycleAssessmentImpactCategory"@en .
+
+<pink:LongTermToxicityBirds> a owl:Class ;
+    rdfs:label "Long Term Toxicity Birds"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:EnvironmentalRiskAssessment> ;
+    skos:prefLabel "LongTermToxicityBirds"@en .
+
+<pink:MarineAquaticEcotoxicityImpactAssessment> a owl:Class ;
+    rdfs:label "Marine Aquatic Ecotoxicity"^^rdfs:Literal ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "MarineAquaticEcotoxicityImpactCategory"@en .
+
+<pink:MarineEutrophicationImpactAssessment> a owl:Class ;
+    rdfs:label "Marine Eutrophication"^^rdfs:Literal ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "MarineEutrophicationImpactCategory"@en .
+
+<pink:MutagenicityAssessment> a owl:Class ;
+    rdfs:label "Mutagenicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "MutagenicityAssessment"@en .
+
+<pink:NeurotoxicityAssessment> a owl:Class ;
+    rdfs:label "Neurotoxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "NeurotoxicityAssessment"@en .
+
+<pink:NonGenotoxicCarcinogenicityAssessment> a owl:Class ;
+    rdfs:label "Non-genotoxic Carcinogenicity  Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "Non-genotoxicCarcinogenicity Assessment"@en .
+
+<pink:OccupationalNonfatalInjuriesRate> a owl:Class ;
+    rdfs:label "Occupational Non-fatal Injuries Rate"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:SafeWorkingConditionsAssessment> ;
+    skos:prefLabel "OccupationalNonfatalInjuriesRate"@en .
+
+<pink:OxidisingPropetiesAssessment> a owl:Class ;
+    rdfs:label "Oxidising Propeties Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of oxidising properties of chemicals"@en ;
+    rdfs:subClassOf <pink:IntrinsicChemicalHazardAssessment> ;
+    skos:prefLabel "OxidisingPropetiesAssessment"@en .
+
+<pink:PhotochemicalOzoneFormationAssessment> a owl:Class ;
+    rdfs:label "Photochemical ozone formation"^^rdfs:Literal ;
+    dcterms:description "This measures the potential of emissions like volatile organic compounds (VOCs) to form ground-level ozone, impacting human health and vegetation"@en ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "PhotochemicalOzoneFormationImpactCategory"@en .
+
+<pink:PoissonsRatioAssessment> a owl:Class ;
+    rdfs:label "Poisson's Ratio Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of Poisson's ratio of materials."@en ;
+    rdfs:subClassOf <pink:MechanicalPropertiesAssessment> ;
+    skos:prefLabel "PoissonsRatioAssessment"@en ;
+    skos:scopeNote "Poisson's ratio offers the fundamental metric by which to compare the performance of any material's resistance to distort under mechanical load rather than to alter in volume" .
+
+<pink:PrenatalDevelopmentalToxicityAssessment> a owl:Class ;
+    rdfs:label "Prenatal Developmental Toxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "PrenatalDevelopmentalToxicityAssessment"@en .
+
+<pink:RenalToxicityAssessment> a owl:Class ;
+    rdfs:label "Renal Toxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "RenalToxicityAssessment"@en .
+
+<pink:RenewableEnergyConsumptionAssessment> a owl:Class ;
+    rdfs:label "Renewable Energy Consumption Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessing the renewable energy consumption during production of chemicals and materials"@en ;
+    rdfs:subClassOf <pink:EnergyConsumptionAssessment> ;
+    skos:prefLabel "RenewableEnergyConsumptionAssessment"@en .
+
+<pink:ReproductiveToxicityAssessment> a owl:Class ;
+    rdfs:label "Reproductive Toxicity Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "ReproductiveToxicity Assessment"@en .
+
+<pink:ResourceAssessmentFossilFuel> a owl:Class ;
+    rdfs:label "Fossil Fuel Resource  Scarcity"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:EnvironmentalSustainabilityAssessment> ;
+    skos:prefLabel "ResourceAssessment FossilFuel"@en .
+
+<pink:ResourceAssessmentLand> a owl:Class ;
+    rdfs:label "Land Use"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:EnvironmentalSustainabilityAssessment> ;
+    skos:prefLabel "ResourceAssessment Land"@en .
+
+<pink:ResourceAssessmentMinerals> a owl:Class ;
+    rdfs:label "Minerals Resource Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:EnvironmentalSustainabilityAssessment> ;
+    skos:prefLabel "ResourceAssessmentMinerals"@en .
+
+<pink:ResourceAssessmentWater> a owl:Class ;
+    rdfs:label "Water Resource Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:EnvironmentalSustainabilityAssessment> ;
+    skos:prefLabel "ResourceAssessmentWater"@en .
+
+<pink:SedimentToxicity> a owl:Class ;
+    rdfs:label "Sediment Toxicity"^^rdfs:Literal ;
+    dcterms:description "Risks to sediment-dwelling organisms (benthic)"@en ;
+    rdfs:subClassOf <pink:EnvironmentalRiskAssessment> ;
+    skos:prefLabel "SedimentToxicity"@en .
+
+<pink:SkinAndRespiratorySensitisation> a owl:Class ;
+    rdfs:label "Skin and Respiratory Sensitisation"^^rdfs:Literal ;
+    dcterms:description """Skin sensitisation is caused by agents that can activate the immune system, which leads to allergic 
+response."""@en ;
+    rdfs:subClassOf <pink:HazardIdentificationHumanHealth> ;
+    skos:prefLabel "SkinAndRespiratorySensitisation"@en .
+
+<pink:SocialExternalitiesAssessment> a owl:Class ;
+    rdfs:label "Social Externalities Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of social externalities."@en ;
+    rdfs:subClassOf <pink:ExternalitiesAssessment> ;
+    skos:prefLabel "SocialExternalitiesAssessment"@en ;
+    skos:scopeNote "Social externalities are the unintended social consequences of economic activities, the hidden costs and benefits that are not reflected in market prices." .
+
+<pink:SoilQualityAssessment> a owl:Class ;
+    rdfs:label "Soil Quality Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessing the concentration of soil pollutants"@en ;
+    rdfs:subClassOf <pink:ExposureAssessmentEnvironment> ;
+    skos:prefLabel "SoilQualityAssessment"@en .
+
+<pink:StratosphericOzoneLayerDepletionAssessment> a owl:Class ;
+    rdfs:label "Stratospheric Ozone Layer Depletion Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "StratosphericOzoneLayerDepletionImpactCategory"@en .
+
+<pink:SustainabilityDimension> a owl:Class ;
+    rdfs:label "Sustainability Dimension"^^rdfs:Literal ;
+    dcterms:description "Sustaina"@en ;
+    rdfs:subClassOf <pink:SsbdDimension> ;
+    skos:prefLabel "SustainabilityDimension"@en .
+
+<pink:TerrestrialEutrophicationImpactAssessment> a owl:Class ;
+    rdfs:label "Terrestrial Eutrophication"^^rdfs:Literal ;
+    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
+    skos:prefLabel "TerrestrialEutrophicationImpactCategory"@en .
+
+<pink:TerrestrialToxicity> a owl:Class ;
+    rdfs:label "TerrestrialToxicity"^^rdfs:Literal ;
+    dcterms:description "Risks to terrestrial organisms (earthworms, bees, etc.)"@en ;
+    rdfs:subClassOf <pink:EnvironmentalRiskAssessment> ;
+    skos:prefLabel "TerrestrialToxicity"@en .
+
+<pink:WaterQualityAssessment> a owl:Class ;
+    rdfs:label "Water Quality Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessing the concentration of water pollutants"@en ;
+    rdfs:subClassOf <pink:ExposureAssessmentEnvironment> ;
+    skos:prefLabel "WaterQualityAssessment"@en .
+
+<pink:WorkingHoursAssessment> a owl:Class ;
+    rdfs:label "Working Hours"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:WorkerSocialResponsibilityAssessment> ;
+    skos:prefLabel "WorkingHoursAssessment"@en .
+
+<pink:YoungsModulusAssessment> a owl:Class ;
+    rdfs:label "Young's Modulus Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of Young's modulus of materials."@en ;
+    rdfs:subClassOf <pink:MechanicalPropertiesAssessment> ;
+    skos:prefLabel "YoungsModulusAssessment"@en .
+
+ssbd:FunctionalityDimension a owl:Class ;
+    dcterms:description "The dimension of functionality in the context of SSbD assessments."@en ;
+    rdfs:subClassOf ssbd:SsbdDimension ;
+    skos:prefLabel "FunctionalityDimension"@en .
 
 ssbd:PhysicalPropertiesAssessment a owl:Class ;
-    rdfs:label "Physical Properties Assessment" ;
-    dcterms:description "Assessment of physical properties of chemicals and materials." ;
+    rdfs:label "Physical Properties Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of physical properties of chemicals and materials."@en ;
     rdfs:subClassOf ssbd:FunctionalityAssessment ;
-    skos:prefLabel "PhysicalPropertiesAssessment" .
-
-ssbd:SSbDAssessment a owl:Class ;
-    rdfs:label "SSbD Assessment" ;
-    dcterms:description "An assessment of the safety and sustainability of chemicals and materials across their life cycle. May include hazard, safety, environmental, and functionality assessments." ;
-    rdfs:subClassOf ssbd:Assessment ;
-    skos:prefLabel "SSbDAssessment" .
-
-ssbd:SpecifiedAssessment a owl:Class ;
-    rdfs:label "Specified Assessment" ;
-    dcterms:description "An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact." ;
-    rdfs:subClassOf ssbd:SSbDAssessment ;
-    skos:prefLabel "SpecifiedAssessment" .
+    skos:prefLabel "PhysicalPropertiesAssessment"@en .
 
 ssbd:ThermalPropertiesAssessment a owl:Class ;
-    rdfs:label "Thermal Properties Assessment" ;
-    dcterms:description "Assessment of thermal properties of chemicals and materials." ;
+    rdfs:label "Thermal Properties Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of thermal properties of chemicals and materials."@en ;
     rdfs:subClassOf ssbd:FunctionalityAssessment ;
-    skos:prefLabel "ThermalPropertiesAssessment" .
+    skos:prefLabel "ThermalPropertiesAssessment"@en .
+
+<pink:EconomicSustainabilityAssessment> a owl:Class ;
+    rdfs:label "Economic Sustainability Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of economic sustainability aspects of chemicals and materials during production, use, and disposal"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <pink:EconomicSustainabilityDimension> ;
+            owl:onProperty ssbd:assesses ],
+        <pink:SpecifiedAssessment> ;
+    skos:prefLabel "EconomicSustainabilityAssessment"@en ;
+    skos:scopeNote "The superclass of all SSbD Assessments within the dimension economic sustainability" .
+
+<pink:EconomicSustainabilityDimension> a owl:Class ;
+    rdfs:label "Economic Sustainability Dimension"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:SsbdDimension> ;
+    skos:prefLabel "EconomicSustainabilityDimension"@en .
+
+<pink:EnvironmentalSustainabilityDimension> a owl:Class ;
+    rdfs:label "Environmental Sustainability Dimension"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:SsbdDimension> ;
+    skos:prefLabel "EnvironmentalSustainabilityDimension"@en .
+
+<pink:FunctionalityDimension> a owl:Class ;
+    rdfs:label "Functionality Dimension"^^rdfs:Literal ;
+    dcterms:description """The term functionality is defined as the quality of being useful, practical, and fit-for- purpose for which something was made. It is neither a property nor an application itself. It is rather the relationship between the use-oriented (functional) properties and the practical use of a chemical or material in such a way that the use of the chemical or material has a positive influence on a task or a potential application.
+Suggested definition from :https://www.oecd.org/en/publications/safe-and-sustainable-by-design-tools-integrative-systems-and-platforms-for-nanomaterials-and-nano-enabled-products_e411a4b7-en.html"""@en ;
+    rdfs:subClassOf <pink:SsbdDimension> ;
+    skos:prefLabel "FunctionalityDimension"@en .
+
+<pink:HazardAssessmentEnvironment> a owl:Class ;
+    rdfs:label "Hazard Assessment Environment"^^rdfs:Literal ;
+    dcterms:description "Determination of factors controlling the likely effects of a hazard, such as the dose–effect and dose–response relationships, variations in target susceptibility, bioaccumulation potential, persistence, and mechanism of toxicity."@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> ;
+    skos:prefLabel "HazardAssessmentEnvironment"@en .
+
+<pink:OccupationalHealthandSafetyAssessment> a owl:Class ;
+    rdfs:label "OHS assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:SocialSustainabilityAssessment> ;
+    skos:prefLabel "OccupationalHealthandSafetyAssessment"@en .
+
+<pink:PhysicalPropertiesAssessment> a owl:Class ;
+    rdfs:label "Physical Properties Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of physical properties of chemicals and materials."@en ;
+    rdfs:subClassOf <pink:FunctionalityAssessment> ;
+    skos:prefLabel "PhysicalPropertiesAssessment"@en .
+
+<pink:SafeWorkingConditionsAssessment> a owl:Class ;
+    rdfs:label "Safe Working Conditions Assessment"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:OccupationalHealthandSafetyAssessment> ;
+    skos:prefLabel "SafeWorkingConditionsAssessment"@en .
+
+<pink:SafetyDimension> a owl:Class ;
+    rdfs:label "Safety Dimension"^^rdfs:Literal ;
+    dcterms:description "Assessing hazards, exposure, and risks from  chemicals and materials throughout their life cycle."@en ;
+    rdfs:subClassOf <pink:SsbdDimension> ;
+    skos:prefLabel "SafetyDimension"@en .
+
+<pink:SocialSustainabilityDimension> a owl:Class ;
+    rdfs:label "Social Sustainability Dimension"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:SsbdDimension> ;
+    skos:prefLabel "SocialSustainabilityDimension"@en .
+
+<pink:ThermalPropertiesAssessment> a owl:Class ;
+    rdfs:label "Thermal Properties Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of thermal properties of chemicals and materials."@en ;
+    rdfs:subClassOf <pink:FunctionalityAssessment> ;
+    skos:prefLabel "ThermalPropertiesAssessment"@en .
+
+<pink:EnergyConsumptionAssessment> a owl:Class ;
+    rdfs:label "Energy Consumption Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessing the energy consumption during production of chemicals and materials"@en ;
+    rdfs:subClassOf <pink:EnvironmentalSustainabilityAssessment> ;
+    skos:prefLabel "EnergyConsumptionAssessment"@en .
+
+<pink:ExternalitiesAssessment> a owl:Class ;
+    rdfs:label "Externalities Assessment"^^rdfs:Literal ;
+    dcterms:description "Externalities assessment is the process of identifying, quantifying, and valuing the indirect costs or benefits of economic activities imposed on third parties—such as environmental damage, pollution, health impacts, cultural heritage loss, loss of traditional livelihoods—that are not reflected in market prices"@en ;
+    rdfs:subClassOf <pink:EconomicSustainabilityAssessment> ;
+    skos:prefLabel "ExternalitiesAssessment"@en ;
+    skos:scopeNote "Activity by one party causes a cost or benefit to another party" .
+
+<pink:HazardAssessmentHumanHealth> a owl:Class ;
+    rdfs:label "Hazard Assessment Human Health"^^rdfs:Literal ;
+    dcterms:description "Determination of factors controlling the likely effects of a hazard, such as the dose–effect and dose–response relationships, variations in target susceptibility, bioaccumulation potential, persistence, and mechanism of toxicity."@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> ;
+    skos:prefLabel "HazardAssessmentHumanHealth"@en .
+
+<pink:IntrinsicChemicalHazardAssessment> a owl:Class ;
+    rdfs:label "Intrinsic Chemical Hazard Assessment"^^rdfs:Literal ;
+    dcterms:description "Intrinsic Chemical Hazard Assessment is the systematic process of identifying and characterizing the inherent harmful properties of a chemical substance, independent of exposure scenarios. This assessment focuses on the substance’s capacity to cause adverse effects on human health or the environment under any circumstances."@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> ;
+    skos:prefLabel "IntrinsicChemicalHazardAssessment"@en .
+
+<pink:SocialSustainabilityAssessment> a owl:Class ;
+    rdfs:label "Social Sustainability Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of social sustainability aspects of chemicals and materials during production, use, and disposal"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <pink:SocialSustainabilityDimension> ;
+            owl:onProperty ssbd:assesses ],
+        <pink:SpecifiedAssessment> ;
+    skos:prefLabel "SocialSustainabilityAssessment"@en ;
+    skos:scopeNote "The superclass of all SSbD Assessments within the dimension social sustainability" .
+
+<pink:WorkerSocialResponsibilityAssessment> a owl:Class ;
+    rdfs:label "Worker Social Responsibility"^^rdfs:Literal ;
+    rdfs:subClassOf <pink:SocialSustainabilityAssessment> ;
+    skos:prefLabel "WorkerSocialResponsibilityAssessment"@en .
 
 ssbd:FunctionalityAssessment a owl:Class ;
-    rdfs:label "Functionality Assessment" ;
-    dcterms:description "The superclass of all SSbD Assessments within the dimenstion functionality." ;
+    rdfs:label "Functionality Assessment"^^rdfs:Literal ;
+    dcterms:description "The superclass of all SSbD Assessments within the dimenstion functionality."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:someValuesFrom ssbd:FunctionalityDimension ;
-            owl:onProperty ssbd:assesses ],
+            owl:onProperty ssbd:assesses ;
+            owl:someValuesFrom ssbd:FunctionalityDimension ],
         ssbd:SpecifiedAssessment ;
-    skos:prefLabel "FunctionalityAssessment" .
+    skos:prefLabel "FunctionalityAssessment"@en .
 
 ssbd:MechanicalPropertiesAssessment a owl:Class ;
-    rdfs:label "Mechanical Properties Assessment" ;
-    dcterms:description "Assessment of mechanical properties of chemicals and materials." ;
+    rdfs:label "Mechanical Properties Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of mechanical properties of chemicals and materials."@en ;
     rdfs:subClassOf ssbd:FunctionalityAssessment ;
-    skos:prefLabel "MechanicalPropertiesAssessment" .
+    skos:prefLabel "MechanicalPropertiesAssessment"@en .
+
+<pink:FunctionalityAssessment> a owl:Class ;
+    rdfs:label "Functionality Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of functionality of chemicals and materials"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <pink:FunctionalityDimension> ;
+            owl:onProperty ssbd:assesses ],
+        <pink:SpecifiedAssessment> ;
+    skos:prefLabel "FunctionalityAssessment"@en ;
+    skos:scopeNote "The superclass of all SSbD Assessments within the dimenstion functionality" .
+
+<pink:MechanicalPropertiesAssessment> a owl:Class ;
+    rdfs:label "Mechanical Properties Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of mechanical properties of materials"@en ;
+    rdfs:subClassOf <pink:FunctionalityAssessment> ;
+    skos:prefLabel "MechanicalPropertiesAssessment"@en ;
+    skos:scopeNote "Such as assessment of stress and strain (elasticity, plasticity) strength, stiffness, hardness, ductility, brittleness, fatigue, malleability, creep resilience (see https://en.wikipedia.org/wiki/List_of_materials_properties)" .
 
 ssbd:SsbdDimension a owl:Class ;
-    rdfs:label "SSbD Dimension" ;
-    dcterms:description "The superclass of all dimensions relevant for SSbD assessments." ;
+    rdfs:label "SSbD Dimension"^^rdfs:Literal ;
+    dcterms:description "The superclass of all dimensions relevant for SSbD assessments."@en ;
     rdfs:subClassOf prov:Entity ;
-    skos:prefLabel "SsbdDimension" .
+    skos:prefLabel "SsbdDimension"@en .
+
+<pink:EnvironmentalRiskAssessment> a owl:Class ;
+    rdfs:label "Environmental Risk Assessment"^^rdfs:Literal ;
+    dcterms:description "ERA focuses on the risks chemicals pose to ecological organisms like fish, birds, and forests."@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> ;
+    skos:prefLabel "EnvironmentalRiskAssessment"@en .
+
+<pink:ExposureAssessmentEnvironment> a owl:Class ;
+    dcterms:description "Description of the presence and characteristics of contact between a contaminant and an ecological entity of concern, and a summary of this information in an exposure profile."@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> .
+
+<pink:HumanHealthRiskAssessment> a owl:Class ;
+    rdfs:label "Human Health Risk Assessment"^^rdfs:Literal ;
+    dcterms:description "Integrates hazard and exposure information to estimate the likelihood and severity of harm to human health under specific use conditions."@en ;
+    rdfs:subClassOf <pink:SafetyAssessment> ;
+    skos:prefLabel "HumanHealthRiskAssessment"@en .
+
+<pink:SsbdDimension> a owl:Class ;
+    rdfs:label "Safe and Sustainable by Design Dimension"^^rdfs:Literal ;
+    dcterms:description "Safe and sustainable by design (SSbD) can be described as an approach that focuses on providing a function (or service), while avoiding onerous environmental footprints and chemical properties that may be harmful to human health or the environment.  In essence, the SSbD approach aims to identifying and minimizing, at an early phase of the innovation process, the impacts concerning safety for humans and the environment and for sustainability, minimizing the environmental footprint, in particular regarding climate change and resource use and, protecting ecosystems and biodiversity, taking a lifecycle perspective. The SSbD approach addresses the safety and sustainability of the material/ chemical/ product and associated processes along the whole life cycle, including all the steps of the research and development (R&D) phase, production, use, recycling, and disposal. Ref: https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf"@en ;
+    rdfs:subClassOf prov:Entity ;
+    skos:prefLabel "SsbdDimension"@en ;
+    skos:scopeNote "The superclass of all dimensions relevant for SSbD assessments." .
+
+<pink:EnvironmentalSustainabilityAssessment> a owl:Class ;
+    rdfs:label "Environmental Sustainability Assessment"^^rdfs:Literal ;
+    dcterms:description "Assessment of environmental sustainability aspects of chemicals and materials during production, use, and disposal"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <pink:EnvironmentalSustainabilityDimension> ;
+            owl:onProperty ssbd:assesses ],
+        <pink:SpecifiedAssessment> ;
+    skos:prefLabel "EnvironmentalSustainabilityAssessment"@en ;
+    skos:scopeNote "The superclass of all SSbD Assessments within the dimension environmental sustainability" .
+
+<pink:SafetyAssessment> a owl:Class ;
+    rdfs:label "Safety Dimension"^^rdfs:Literal ;
+    dcterms:description "Assessment of safety of chemicals and materials."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue <pink:SafetyDimension> ;
+            owl:onProperty ssbd:assesses ],
+        <pink:SpecifiedAssessment> ;
+    skos:prefLabel "Safety Assessment"@en ;
+    skos:scopeNote "The superclass of all SSbD Assessments within the dimenstion safety." .
+
+<pink:HazardIdentificationHumanHealth> a owl:Class ;
+    rdfs:label "Hazard Identification Human Health"^^rdfs:Literal ;
+    dcterms:description "Hazard identification is the process of determining whether exposure to a substance can cause a specific adverse effect on human health. Adverse effect is defined as change in morphology, physiology, growth, reproduction, development, or lifespan of an organism which results in impairment of functional capacity or impairment of capacity to compensate for additional stress or increased susceptibility to the harmful effects of other environmental influences."@en ;
+    rdfs:subClassOf <pink:HazardAssessmentHumanHealth> ;
+    skos:prefLabel "HazardIdentificationHumanHealth"@en ;
+    skos:scopeNote "Determination of whether the intrinsic properties of a chemical may cause harm (e.g. carcinogenicity, reproductive toxicity, ecotoxicity Ref: Bracalente, Giulio, et al. Safe and Sustainable by Design Chemicals and Materials. Publications Office of the European Union, 2025. EUR. Publications Office of the European Union, https://data.europa.eu/doi/10.2760/5103785." .
+

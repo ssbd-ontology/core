@@ -38,6 +38,17 @@ td = TableDoc.parse_csv(
 )
 td.save(ts)
 
+td = TableDoc.parse_csv(
+    rootdir / "sources" / "ssbd_dimension_taxonomy.csv",
+    type=None,
+    prefixes={"ssbd": "https://w3id.org/ssbd/"},
+    keywords=kw,
+    baseiri="https://w3id.org/ssbd/",
+)
+td.save(ts)
+
+
+
 # Add Ontology
 ts.add_triples(
     [
