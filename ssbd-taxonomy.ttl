@@ -5,6 +5,24 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ssbd: <https://w3id.org/ssbd/> .
 
+ssbd:SpecifiedAssessment a owl:Class ;
+    rdfs:label "Specified Assessment" ;
+    dcterms:description "An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact." ;
+    rdfs:subClassOf ssbd:SSbDAssessment ;
+    skos:prefLabel "SpecifiedAssessment" .
+
+ssbd:Assessment a owl:Class ;
+    rdfs:label "Assessment" ;
+    dcterms:description "The process of evaluating the quality, performance, or impact of a substance, product, or process." ;
+    rdfs:subClassOf prov:Activity ;
+    skos:prefLabel "Assessment" .
+
+ssbd:SSbDAssessment a owl:Class ;
+    rdfs:label "SSbD Assessment" ;
+    dcterms:description "An assessment of the safety and sustainability of chemicals and materials across their life cycle. May include hazard, safety, environmental, and functionality assessments." ;
+    rdfs:subClassOf ssbd:Assessment ;
+    skos:prefLabel "SSbDAssessment" .
+
 ssbd:AcidificationImpactAssessment a owl:Class ;
     rdfs:label "Acidification"^^rdfs:Literal ;
     dcterms:description "Assesses the potential for emissions like SO? and NOx to form acid rain, thereby harming soil, water, and ecosystems"@en ;
@@ -393,7 +411,8 @@ ssbd:YoungsModulusAssessment a owl:Class ;
     skos:prefLabel "YoungsModulusAssessment"@en .
 
 ssbd:ssbd-taxonomy a owl:Ontology ;
-    dcterms:title "Taxonomy useful categorizing activities and outputs of activities within the SSbD framework."@en ;
+    dcterms:title "SSbD Taxonomy"@en ;
+    dcterms:abstract "Taxonomy useful categorizing activities and outputs of activities within the SSbD framework."@en ;
     owl:versionIRI <https://w3id.org/ssbd/0.0.1/ssbd-taxonomy> .
 
 ssbd:EconomicSustainabilityAssessment a owl:Class ;
