@@ -1,9 +1,15 @@
+@prefix : <https://w3id.org/ssbd/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ssbd: <https://w3id.org/ssbd/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 #################################################################
 #    Annotation properties
@@ -55,7 +61,7 @@ ssbd:SSbDAssessment a owl:Class ;
     rdfs:label "SSbD Assessment" ;
     dcterms:description "An assessment of the safety and sustainability of chemicals and materials across their life cycle. May include hazard, safety, environmental, and functionality assessments." ;
     rdfs:subClassOf ssbd:Assessment ;
-
+    skos:prefLabel "SSbDAssessment" .
 
 ssbd:AcidificationImpactAssessment a owl:Class ;
     dcterms:description "Assesses the potential for emissions like SO? and NOx to form acid rain, thereby harming soil, water, and ecosystems"@en ;
