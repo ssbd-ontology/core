@@ -321,7 +321,7 @@ rdfs:label a owl:AnnotationProperty ;
         rdfs:label "label" ;
         rdfs:comment "A human-readable name for the subject." ;
         rdfs:domain rdfs:Resource ;
-        rdfs:range rdfs:Literal .
+        rdfs:range rdf:langString .
 
 dcterms:license a owl:ObjectProperty ;
     skos:prefLabel "license"@en ;
