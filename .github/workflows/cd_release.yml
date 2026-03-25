@@ -46,7 +46,7 @@ jobs:
 
       - name: Push to gh-pages
         run: |
-          git config --global user.email "${ONTOLOGY_NAME}@emmc.eu"
+          git config --global user.email "${ONTOLOGY_NAME}@ssbd.eu" # does not go anywhere yet
           git config --global user.name "${ONTOLOGY_NAME}"
           git add versions/${TAG#v}
           git commit -m "Release version ${TAG#v}"
