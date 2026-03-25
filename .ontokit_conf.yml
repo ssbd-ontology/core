@@ -3,3 +3,31 @@ ONTOLOGY_PREFIX: ssbd
 ONTOLOGY_IRI: https://w3id.org/ssbd
 GITHUB_REPOSITORY: ssbd-ontology/core
 BUILD_DIR: build
+
+# Optional: select subsections for the primary reference index.
+# Default is "all".
+# REFERENCE_SUBSECTIONS: all
+# Example subset:
+REFERENCE_SUBSECTIONS: all
+#
+# Optional: additional reference indices for `ontokit docs`.
+REFERENCE_INDICES:
+  - ontology_file: build/core.ttl
+    title: Properties Index
+    docfile: properties.rst
+    # iri_regex: https://example.org/other
+    imported: false
+    recursive: false
+    subsections: annotation_properties,object_properties,data_properties
+  - ontology_file: ssbd-taxonomy.ttl
+    title: SSbDAssessments Index
+    docfile: ssbdtaxonomy.rst
+    imported: false
+    recursive: false
+    subsections: classes 
+  - ontology_file: models.ttl
+    title: Models Index
+    docfile: models.rst
+    imported: false
+    recursive: false
+    subsections: classes
