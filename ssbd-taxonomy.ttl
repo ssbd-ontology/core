@@ -62,10 +62,10 @@ ssbd:YoungsModulusAssessment a owl:Class ;
     rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
     skos:prefLabel "YoungsModulusAssessment" .
 
-<https://w3id.org/ssbd/ssbd-taxonomy> a owl:Ontology ;
+<https://w3id.org/ssbd/core/ssbd-taxonomy> a owl:Ontology ;
     dcterms:title "SSbD Taxonomy"@en ;
     dcterms:abstract "Taxonomy useful categorizing activities and outputs of activities within the SSbD framework."@en ;
-    owl:versionIRI <https://w3id.org/ssbd/0.0.1/ssbd-taxonomy> .
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy> .
 
 ssbd:Assessment a owl:Class ;
     rdfs:label "Assessment" ;
