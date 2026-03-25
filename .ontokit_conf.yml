@@ -19,6 +19,13 @@ REFERENCE_INDICES:
     imported: false
     recursive: false
     subsections: annotation_properties,object_properties,data_properties
+  - ontology_file: ssbd-taxonomy.ttl
+    title: SSbDAssessments Index
+    docfile: ssbdtaxonomy.rst
+    # iri_regex: https://example.org/other
+    imported: false
+    recursive: false
+    subsections: classes 
   - ontology_file: models.ttl
     title: Models Index
     docfile: models.rst
