@@ -38,7 +38,7 @@ pink:EnvironmentalRiskAssessment,owl:Class,pink:SafetyAssessment,,EnvironmentalR
 pink:IrritationAndCorrosion,owl:Class,pink:HazardIdentificationHumanHealth,,Irritation And Corrosion,Irritation and Corrosion,,"Irritation and corrosion refers local effects on the skin, in the eyes or in respiratory system. ",,,,,,
 pink:SkinAndRespiratorySensitisation,owl:Class,pink:HazardIdentificationHumanHealth,,SkinAndRespiratorySensitisation,Skin and Respiratory Sensitisation,,"Skin sensitisation is caused by agents that can activate the immune system, which leads to allergic 
 response. ",,,,,,
-pink:AcuteToxicity?Assessment,owl:Class,pink:HazardIdentificationHumanHealth,,AcuteToxicity?Assessment,Acute Toxicity ?Assessment,,Assessment of toxicity from acute exposure (acute  refers to studies where dosing is either single or limited to one day although the total study duration may extend to two weeks to permit appearance of toxicity in susceptible organ systems),,,,,,
+pink:AcuteToxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,AcuteToxicity?Assessment,Acute Toxicity ?Assessment,,Assessment of toxicity from acute exposure (acute  refers to studies where dosing is either single or limited to one day although the total study duration may extend to two weeks to permit appearance of toxicity in susceptible organ systems),,,,,,
 pink:CarcinogenicityAssessment ,owl:Class,pink:HazardIdentificationHumanHealth,,CarcinogenicityAssessment ,Carcinogenicity Assessment ,,"Test(s) carried out over a sufficient time to detect any possible carcinogenic effect of a
 test substance",,,,,,
 pink:NonGenotoxicCarcinogenicityAssessment ,owl:Class,pink:HazardIdentificationHumanHealth,,Non-genotoxicCarcinogenicity Assessment ,Non-genotoxic Carcinogenicity  Assessment ,,,,,,,,
@@ -46,7 +46,7 @@ pink:MutagenicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,Muta
 pink:HepatotoxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,HepatotoxicityAssessment,Hepatotoxicity Assessment,,,,,,,,
 pink:RenalToxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,RenalToxicityAssessment,Renal Toxicity Assessment,,,,,,,,
 pink:NeurotoxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,NeurotoxicityAssessment,Neurotoxicity Assessment,,,,,,,,
-pink:Immunotoxicity?Assessment,owl:Class,pink:HazardIdentificationHumanHealth,,Immunotoxicity?Assessment,Immunotoxicity Assessment,,,,,,,,
+pink:ImmunotoxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,Immunotoxicity?Assessment,Immunotoxicity Assessment,,,,,,,,
 pink:ReproductiveToxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,ReproductiveToxicity Assessment,Reproductive Toxicity Assessment,,,,,,,,
 pink:EndocrineToxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,EndocrineToxicityAssessment,Endocrine Toxicity Assessment,,,,,,,,
 pink:BehaviouralImmunotoxicityAssessment,owl:Class,pink:HazardIdentificationHumanHealth,,BehaviouralImmunotoxicityAssessment,Behavioural Immunotoxicity Assessment,,,,,,,,

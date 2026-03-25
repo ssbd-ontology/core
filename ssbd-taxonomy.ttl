@@ -29,7 +29,7 @@ ssbd:AcidificationImpactAssessment a owl:Class ;
     rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
     skos:prefLabel "AcidificationImpactCategory"@en .
 
-<https://w3id.org/ssbd/AcuteToxicity?Assessment> a owl:Class ;
+ssbd:AcuteToxicityAssessment> a owl:Class ;
     rdfs:label "Acute Toxicity ?Assessment"^^rdfs:Literal ;
     dcterms:description "Assessment of toxicity from acute exposure (acute  refers to studies where dosing is either single or limited to one day although the total study duration may extend to two weeks to permit appearance of toxicity in susceptible organ systems)"@en ;
     rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
@@ -234,7 +234,7 @@ ssbd:HumanToxicityNonCancerImpactAssessment a owl:Class ;
     rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
     skos:prefLabel "HumanToxicityNonCancerImpactCategory"@en .
 
-<https://w3id.org/ssbd/Immunotoxicity?Assessment> a owl:Class ;
+ssbd:ImmunotoxicityAssessment a owl:Class ;
     rdfs:label "Immunotoxicity Assessment"^^rdfs:Literal ;
     rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
     skos:prefLabel "Immunotoxicity?Assessment"@en .
