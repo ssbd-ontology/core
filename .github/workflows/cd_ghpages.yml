@@ -191,6 +191,7 @@ jobs:
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
             --set-prefix=ssbd:https://w3id.org/ssbd/
+            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel# \
             #--namespace-filter=ssbd
 
     - name: Generate keywords file
@@ -203,6 +204,7 @@ jobs:
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
             --set-prefix=ssbd:https://w3id.org/ssbd/
+            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel# \
             #--namespace-filter=ssbd
 
     - name: Generate Ontokit documentation to public
