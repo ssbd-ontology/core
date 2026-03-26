@@ -37,4 +37,9 @@ jobs:
 
     - name: Test
       run: |
+        # Run emmocheck on all modules
+        # NB, not on reused terms, which does not conform to emmo
         emmocheck --configfile=.github/emmocheck_conf.yml ${ONTOLOGY_NAME}.ttl
+        emmocheck --configfile=.github/emmocheck_conf.yml models.ttl
+        emmocheck --configfile=.github/emmocheck_conf.yml matter.ttl
+
