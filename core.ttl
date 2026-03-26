@@ -20,15 +20,15 @@
 
 @base <https://w3id.org/ssbd/> .
 
-<https://w3id.org/ssbd>
+<https://w3id.org/ssbd/core/core>
     rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/ssbd/0.0.1> ;
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/core> ;
     owl:imports
-        <https://w3id.org/ssbd/0.0.1/reused-terms> ,
-        <https://w3id.org/ssbd/0.0.1/matter> ,
-        <https://w3id.org/ssbd/0.0.1/models> ,
-        <https://w3id.org/ssbd/0.0.1/cheminf-mappings> ,
-        <https://w3id.org/ssbd/0.0.1/ssbd-taxonomy> ;
+        <https://w3id.org/ssbd/core/0.0.1/reused-terms> ,
+        <https://w3id.org/ssbd/core/0.0.1/matter> ,
+        <https://w3id.org/ssbd/core/0.0.1/models> ,
+        <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings> ,
+        <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy> ;
     dcatap:status "Under Development" ;
     dcterms:abstract """The SSbD Core Ontology provides the semantic basis for safe and sustainability by design.
 

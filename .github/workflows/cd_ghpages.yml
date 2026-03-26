@@ -186,7 +186,7 @@ jobs:
         mkdir -p build/context
         keywords \
             --input=build/${ONTOLOGY_NAME}.ttl \
-            --write-context=build/context/${ONTOLOGY_NAME}.jsonld \
+            --write-context=build/context/context.json \
             --redefine=allow \
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
