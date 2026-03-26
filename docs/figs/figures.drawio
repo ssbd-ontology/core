@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" compressed="false" version="29.3.6" pages="7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" compressed="false" version="29.6.6" pages="7">
   <diagram id="c_qGwFVzFrKK_DlR2sme" name="taxonomy">
     <mxGraphModel dx="2032" dy="1588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -8396,7 +8396,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_OCRwagMH5A2hcCDkKDy" name="ssbd">
-    <mxGraphModel dx="2374" dy="-268" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3611" dy="-61" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8460,7 +8460,7 @@
         <mxCell id="2bkzuM_EdiQffJoM7AnR-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:SSbDAssessment" vertex="1">
           <mxGeometry height="30" width="190" x="-790" y="2070" as="geometry" />
         </mxCell>
-        <mxCell id="2bkzuM_EdiQffJoM7AnR-22" edge="1" parent="1" source="2bkzuM_EdiQffJoM7AnR-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#33FF33;" target="2bkzuM_EdiQffJoM7AnR-42" value="hasSubProcess some">
+        <mxCell id="2bkzuM_EdiQffJoM7AnR-22" edge="1" parent="1" source="2bkzuM_EdiQffJoM7AnR-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#33FF33;" target="2bkzuM_EdiQffJoM7AnR-42" value="hasPart some">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-22" y="2910" as="sourcePoint" />
             <mxPoint x="353" y="2740" as="targetPoint" />
@@ -8546,8 +8546,8 @@
             <mxPoint x="617" y="2891" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2bkzuM_EdiQffJoM7AnR-42" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:SpecifiedAssessment" vertex="1">
-          <mxGeometry height="30" width="158" x="-512" y="2160" as="geometry" />
+        <mxCell id="2bkzuM_EdiQffJoM7AnR-42" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:SSbDSpecifiedAssessment" vertex="1">
+          <mxGeometry height="30" width="222" x="-512" y="2160" as="geometry" />
         </mxCell>
         <mxCell id="2bkzuM_EdiQffJoM7AnR-43" edge="1" parent="1" source="2bkzuM_EdiQffJoM7AnR-42" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="2bkzuM_EdiQffJoM7AnR-7" value="subClassOf">
           <mxGeometry relative="1" as="geometry">
@@ -8565,6 +8565,12 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-244" y="2032" as="sourcePoint" />
             <mxPoint x="-549" y="1985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvGFdcHkE6puzTVc2hBh-2" edge="1" parent="1" source="2bkzuM_EdiQffJoM7AnR-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3333FF;fillColor=#FF0080;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="2bkzuM_EdiQffJoM7AnR-20" value="assesses">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-420" y="1880" as="sourcePoint" />
+            <mxPoint x="-416" y="2000" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
