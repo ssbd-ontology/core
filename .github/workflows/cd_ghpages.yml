@@ -215,7 +215,7 @@ jobs:
         ls public/
         cp build/*ttl public/
         cp -r build/context public/
-        cp -r widoco* public/
+        cp -r build/widoco* public/
         echo "copied files"
         ls public/
 
