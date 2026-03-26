@@ -29,6 +29,7 @@ kw.add(
 
 # Create triplestore and load the SSbD taxonomy into it
 ts = Triplestore("rdflib")
+
 td = TableDoc.parse_csv(
     rootdir / "sources" / "ssbd_dimension_functionality_taxonomy.csv",
     type=None,
@@ -54,11 +55,12 @@ ts.add_triples(
     [
         (SSBD, RDF.type, OWL.Ontology),
         (SSBD, OWL.versionIRI, f"https://w3id.org/ssbd/{VER}/ssbd-taxonomy"),
+        (SSBD, DCTERMS.title, en("SSbD Taxonomy")),
         (
             SSBD,
-            DCTERMS.title,
+            DCTERMS.abstract,
             en(
-                "Taxonomy useful categorizing activities and outputs"
+                "Taxonomy useful for categorizing activities and outputs"
                 " of activities within the SSbD framework."
             ),
         ),
