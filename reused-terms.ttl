@@ -227,6 +227,19 @@ dcat:Resource a owl:Class ;
 dcterms:LicenseDocument a owl:Class ;
     rdfs:comment "A legal document giving official permission to do something with a resource." .
 
+dcat:Resource a owl:Class ;
+    skos:prefLabel "Resource"@en ;
+    skos:definition "Resource published or curated by a single agent."@en .
+
+dcat:Distribution a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    skos:prefLabel "Distribution"@en ;
+    skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ;
+    vann:usageNote "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en .
+
+dm:DataModel a owl:Class ;
+    skos:prefLabel "DataModel"@en ;
+    skos:definition "A data model describing the datum/properties of a dataset."@en .
 
 ### Properties
 
@@ -383,22 +396,6 @@ dcat:version a owl:AnnotationProperty ;
     vann:usageNote "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]'s Best Practice 7: Provide a version indicator."@en ;
     rdfs:domain dcat:Resource .
 
-
-### Classes
-
-dcat:Resource a owl:Class ;
-    skos:prefLabel "Resource"@en ;
-    skos:definition "Resource published or curated by a single agent."@en .
-
-dcat:Distribution a owl:Class ;
-    rdfs:subClassOf dcat:Resource ;
-    skos:prefLabel "Distribution"@en ;
-    skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ;
-    vann:usageNote "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en .
-
-dm:DataModel a owl:Class ;
-    skos:prefLabel "DataModel"@en ;
-    skos:definition "A data model describing the datum/properties of a dataset."@en .
 
 
 ### Individuals
