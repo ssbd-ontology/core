@@ -22,6 +22,12 @@
     dcterms:title "Reused terms"@en ;
     dcterms:abstract "Terms from standard vocabularies reused by the SSbD Core Ontology."@en .
 
+#
+# Datatypes
+#
+rdf:JSON a rdfs:Datatype .
+
+
 ### PROV-O annotations
 
 # prov:category
@@ -121,6 +127,9 @@ prov:wasInformedBy
     prov:inverse "informed" ;
     prov:qualifiedForm prov:Communication, prov:qualifiedCommunication .
 
+
+### Other Annotations
+
 dcterms:description a owl:AnnotationProperty ;
     dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
     dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -218,6 +227,19 @@ dcat:Resource a owl:Class ;
 dcterms:LicenseDocument a owl:Class ;
     rdfs:comment "A legal document giving official permission to do something with a resource." .
 
+dcat:Resource a owl:Class ;
+    skos:prefLabel "Resource"@en ;
+    skos:definition "Resource published or curated by a single agent."@en .
+
+dcat:Distribution a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    skos:prefLabel "Distribution"@en ;
+    skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ;
+    vann:usageNote "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en .
+
+dm:DataModel a owl:Class ;
+    skos:prefLabel "DataModel"@en ;
+    skos:definition "A data model describing the datum/properties of a dataset."@en .
 
 ### Properties
 
@@ -232,8 +254,7 @@ dcat:accessURL a owl:ObjectProperty ;
     skos:prefLabel "accessURL"@en ;
     skos:definition "A URL that gives access to a Distribution of the Dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred."@en ;
     vann:usageNote "The resource at the access URL may contain information about how to get the Dataset."@en ;
-    rdfs:domain dcat:Distribution ;
-    rdfs:range rdfs:Resource .
+    rdfs:domain dcat:Distribution .
 
 dcterms:creator a owl:ObjectProperty ;
     skos:prefLabel "creator"@en ;
@@ -298,12 +319,14 @@ dcat:downloadURL a owl:DatatypeProperty ;
     rdfs:domain dcat:Distribution ;
     rdfs:range xsd:anyURI .
 
+# Commented out the range, since we do not define dcterms:MediaTypeOrExtent
+# In practice we use dcat:mediaType if the format is defined in IANA, otherwise we use dcterms:format with a free-text format string.
 dcterms:format a owl:ObjectProperty ;
     skos:prefLabel "format"@en ;
     skos:definition "The file format of the Distribution."@en ;
     vann:usageNote "dcat:mediaType SHOULD be used if the type of the distribution is defined by [IANA](https://www.w3.org/TR/vocab-dcat-3/#bib-iana-media-types)."@en ;
-    rdfs:domain dcat:Distribution ;
-    rdfs:range dcterms:MediaTypeOrExtent .
+    rdfs:domain dcat:Distribution .
+    #rdfs:range dcterms:MediaTypeOrExtent .
 
 dcterms:identifier a owl:AnnotationProperty ;
     skos:prefLabel "identifier"@en ;
@@ -338,22 +361,23 @@ skos:scopeNote a owl:AnnotationProperty ;
 rdfs:seeAlso a owl:ObjectProperty ;
         rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
         rdfs:label "seeAlso" ;
-        rdfs:comment "Further information about the subject resource." ;
-        rdfs:range rdfs:Resource ;
-        rdfs:domain rdfs:Resource .
+        rdfs:comment "Further information about the subject resource." .
 
+# Commented out domain and range. Referring to rdfs:Class doesn't say anything, but may create trouble for the toolings.
 rdfs:subClassOf a owl:ObjectProperty ;
         rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
         rdfs:label "subClassOf" ;
-        rdfs:comment "The subject is a subclass of a class." ;
-        rdfs:range rdfs:Class ;
-        rdfs:domain rdfs:Class .
+        rdfs:comment "The subject is a subclass of a class." .
+        #rdfs:range rdfs:Class ;
+        #rdfs:domain rdfs:Class .
 
+# Commented out range. skos:Concept is very general and can in principle be anything.
+# We don't loose any meaning by removing the range, but avoid having skos:Concept in the root of the taxonomy.
 dcat:theme a owl:ObjectProperty ;
   rdfs:comment "A main category of the resource. A resource can have multiple themes."@en ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
   rdfs:label "theme"@en ;
-  rdfs:range skos:Concept ;
+  #rdfs:range skos:Concept ;
   rdfs:subPropertyOf dcterms:subject ;
   skos:definition "A main category of the resource. A resource can have multiple themes."@en ;
   skos:editorialNote "Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending."@en ;
@@ -371,6 +395,7 @@ dcat:version a owl:AnnotationProperty ;
     skos:definition "Version indicator (name or identifier) of a resource."@en ;
     vann:usageNote "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]'s Best Practice 7: Provide a version indicator."@en ;
     rdfs:domain dcat:Resource .
+
 
 
 ### Individuals
