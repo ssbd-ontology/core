@@ -537,7 +537,7 @@ vann:usageNote rdf:type owl:AnnotationProperty .
         owl:someValuesFrom :SSbDDimension
     ] ;
      skos:definition "An assessment of the safety and sustainability of chemicals and materials across their life cycle. Assesses one or more ssbd dimension, through one ore more SSbDSpecifiedAssessments" ;
-     rdfs:label "SSbD Assessment" ;
+     rdfs:altLabel "SSbD Assessment" ;
      skos:prefLabel "SSbDAssessment" .
 
 
