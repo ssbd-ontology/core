@@ -98,17 +98,10 @@ emmo:AnalogicalIcon rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#ArtificialIntelligenceModel
 emmo:ArtificialIntelligenceModel rdf:type owl:Class ;
-<<<<<<< Updated upstream
-                                 rdfs:subClassOf emmo:DataBasedModel ;
-                                 rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
-                                 skos:altLabel "ArtificialIntelligence"@en ;
-                                 skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.
-=======
                             rdfs:subClassOf emmo:MathematicalModel ;
                             rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
                             skos:altLabel "ArtificialIntelligence"@en ;
                             skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.
->>>>>>> Stashed changes
 ."""@en ;
                                  skos:prefLabel "ArtificialIntelligenceModel"@en .
 
