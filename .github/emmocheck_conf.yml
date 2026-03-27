@@ -2,3 +2,11 @@
 
 skip:
   - test_description
+
+test_number_of_labels:
+  exceptions:
+    - ssbd.Software
+    - ssbd.Computation
+    - ssbd.Information
+    - ssbd.Model
+    

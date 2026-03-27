@@ -264,7 +264,8 @@ emmo:Liquid rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#ManufacturedMaterial
 emmo:ManufacturedMaterial rdf:type owl:Class ;
-                          rdfs:subClassOf emmo:ArtificialMaterial .
+                          rdfs:subClassOf emmo:ArtificialMaterial ;
+                          skos:prefLabel "ManufacturedMaterial"@en .
 
 
 ###  https://w3id.org/emmo/hume#Material
@@ -279,7 +280,9 @@ emmo:Material rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience
 emmo:MaterialByClassicalMaterialsScience rdf:type owl:Class ;
-                                         rdfs:subClassOf emmo:Material .
+                                         rdfs:subClassOf emmo:Material ; 
+                                         skos:prefLabel "MaterialByClassicalMaterialsScience"@en .
+
 
 
 ###  https://w3id.org/emmo/hume#MaterialByCompactness
@@ -290,12 +293,16 @@ emmo:MaterialByCompactness rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MaterialByForceResponse
 emmo:MaterialByForceResponse rdf:type owl:Class ;
-                             rdfs:subClassOf emmo:Material .
+                             rdfs:subClassOf emmo:Material  ;
+                             skos:prefLabel "MaterialByForceResponse"@en .
+
 
 
 ###  https://w3id.org/emmo/hume#MaterialByFunction
 emmo:MaterialByFunction rdf:type owl:Class ;
-                        rdfs:subClassOf emmo:Material .
+                        rdfs:subClassOf emmo:Material ; 
+                        skos:prefLabel "MaterialByFunction"@en .
+
 
 
 ###  https://w3id.org/emmo/hume#MaterialByOrigin
@@ -319,7 +326,9 @@ emmo:MaterialByStructure rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#MaterialByType
 emmo:MaterialByType rdf:type owl:Class ;
                     rdfs:subClassOf emmo:MaterialByClassicalMaterialsScience ;
-                    skos:definition "Categorisation of matter by its type."@en .
+                    skos:definition "Categorisation of matter by its type."@en ; 
+                    skos:prefLabel "MaterialByType"@en .
+
 
 
 ###  https://w3id.org/emmo/hume#MesoscopicSubstance
@@ -417,10 +426,11 @@ emmo:Plasma rdf:type owl:Class ;
     skos:definition "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en .
 
 
-###  https://w3id.org/emmo/hume#PolymericEntity
+###  https://w3id.org/emmo/hume#PolyAtomicEntity
 emmo:PolyAtomicEntity rdf:type owl:Class ;
     rdfs:subClassOf emmo:MolecularEntity ;
-    skos:definition "An entity made of two or more bonded atoms."@en .
+    skos:definition "An entity made of two or more bonded atoms."@en ;
+    skos:prefLabel "PolyAtomicEntity"@en .
 
 
 ###  https://w3id.org/emmo/hume#PolymericMaterial
