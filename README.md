@@ -15,6 +15,7 @@ It is constructed to be easily aligned with [EMMO].
   - Documentation of sub-modules:
     - [Matter module]
     - [Models module]
+    - [SSbD Assessments module]
   - [Class-level] documentation
 - Reference documentation with interlinked definitions of classes and properties for:
   - [SSbD Core Ontology].
@@ -51,6 +52,7 @@ The example below shows how one can document a toxicity computation using the SS
 [Guiding principles]: https://ssbd-ontology.github.io/core/docs/guiding-principles.html
 [Matter module]: https://ssbd-ontology.github.io/core/docs/matter.html
 [Models module]: https://ssbd-ontology.github.io/core/docs/models.html
+[SSbD Assessments module]: https://ssbd-ontology.github.io/core/docs/assessments.html
 
 [SSbD Core Ontology]: https://ssbd-ontology.github.io/core/widoco/index-en.html
 [Reused terms]: https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html
