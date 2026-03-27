@@ -358,7 +358,7 @@ skos:scopeNote a owl:AnnotationProperty ;
     rdfs:subPropertyOf skos:note ;
     skos:definition "A note that helps to clarify the meaning and/or the use of a concept."@en .
 
-rdfs:seeAlso a owl:ObjectProperty ;
+rdfs:seeAlso a owl:AnnotationProperty ;
         rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
         rdfs:label "seeAlso" ;
         rdfs:comment "Further information about the subject resource." .
