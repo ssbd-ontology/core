@@ -7,7 +7,7 @@ The choice to cateogrize SSbD primarily as an assessment process rather than a p
 
 The diagram below summarizes the upper structure of the SSbD assessments branch:
 
-![SSbD assessments model](figs/ssbd-assessments.png)
+![SSbD assessments model](https://ssbd-ontology.github.io/core/docs/figs/ssbd-assessments.png)
 
 
 The `ssbd:SSbDAssessment` class represents the overall assessment process, which can be broken down into specific dimensions of assessment (e.g., hazard, exposure, lifecycle) using the `ssbd:hasPart` relation.
@@ -17,3 +17,4 @@ It is important to make this distinction in the ontology because one such specif
 For instance, assessing the functionality is not a full `ssbd:SSbDAssessment`, but a part of it.
 Introducing the `ssbd:SSbDSpecifiedAssessment` class allows for easy expansion of types of assessments that are
 relevant for SSbD.
+
