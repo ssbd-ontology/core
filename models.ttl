@@ -98,10 +98,17 @@ emmo:AnalogicalIcon rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#ArtificialIntelligenceModel
 emmo:ArtificialIntelligenceModel rdf:type owl:Class ;
+<<<<<<< Updated upstream
                                  rdfs:subClassOf emmo:DataBasedModel ;
                                  rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
                                  skos:altLabel "ArtificialIntelligence"@en ;
                                  skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.
+=======
+                            rdfs:subClassOf emmo:MathematicalModel ;
+                            rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
+                            skos:altLabel "ArtificialIntelligence"@en ;
+                            skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.
+>>>>>>> Stashed changes
 ."""@en ;
                                  skos:prefLabel "ArtificialIntelligenceModel"@en .
 
@@ -202,10 +209,11 @@ emmo:GenerativeAIModel rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MachineLearningModel
 emmo:MachineLearningModel rdf:type owl:Class ;
-                          rdfs:subClassOf ssbd:CognitionAndLearningModel ;
-                          rdfs:seeAlso "Hutter F, Kotthoff L, Vanschoren J (2019) Automated Machine Learning. Springer, New York." ;
-                          skos:definition "AI model that learns progressively by discovering implicit patterns and performing an intellectual task without explicit instructions in advance."@en ;
-                          skos:prefLabel "MachineLearningModel"@en .
+                     rdfs:subClassOf ssbd:CognitionAndLearningModel ,
+                                     ssbd:DataBasedModel ;
+                     rdfs:seeAlso "Hutter F, Kotthoff L, Vanschoren J (2019) Automated Machine Learning. Springer, New York." ;
+                     skos:definition "AI model that learns progressively by discovering implicit patterns and performing an intellectual task without explicit instructions in advance."@en ;
+                     skos:prefLabel "MachineLearningModel"@en .
 
 
 ###  https://w3id.org/emmo/hume#MaterialsModel
