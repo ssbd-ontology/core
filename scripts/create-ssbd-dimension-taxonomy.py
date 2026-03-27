@@ -10,7 +10,7 @@ from tripper.datadoc.keywords import Keywords
 from tripper.utils import en
 
 # Set constants
-SSBD = "https://w3id.org/ssbd/ssbd-taxonomy"
+SSBD = "https://w3id.org/ssbd/core/ssbd-taxonomy"
 VER = "0.0.1"
 
 thisdir = Path(__file__).resolve().parent
