@@ -13,7 +13,7 @@ The diagram below summarizes the upper structure of the SSbD assessments branch:
 The `ssbd:SSbDAssessment` class represents the overall assessment process, which can be broken down into specific dimensions of assessment (e.g., hazard, exposure, lifecycle) using the `ssbd:hasPart` relation.
 This means that an `ssbd:SSbDAssessment` can have multiple parts, targeting different dimensions of SSbD.
 The various dimensions of SSbD are then considered by `ssbd:SSbDSpecifiedAssessment` subclasses.
-It is important to make this distinction in the ontology because one such specified assessment is not by itself an `ssbd:SSbDAssessment`. 
-For instance, assessing the functionality is not an `ssbd:SSbDAssessment`, but a part of it. 
+It is important to make this distinction in the ontology because one such specified assessment is not by itself an `ssbd:SSbDAssessment`.
+For instance, assessing the functionality is not a full `ssbd:SSbDAssessment`, but a part of it.
 Introducing the `ssbd:SSbDSpecifiedAssessment` class allows for easy expansion of types of assessments that are
 relevant for SSbD.
