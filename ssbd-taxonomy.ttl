@@ -628,14 +628,14 @@ ssbd:ReproductiveToxicityAssessment rdf:type owl:Class ;
 ssbd:ResourceAssessmentFossilFuel rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
                                   skos:altLabel "Fossil Fuel Resource  Scarcity" ;
-                                  skos:prefLabel "ResourceAssessment FossilFuel"@en .
+                                  skos:prefLabel "ResourceAssessmentFossilFuel"@en .
 
 
 ###  https://w3id.org/ssbd/ResourceAssessmentLand
 ssbd:ResourceAssessmentLand rdf:type owl:Class ;
                             rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
                             skos:altLabel "Land Use" ;
-                            skos:prefLabel "ResourceAssessment Land"@en .
+                            skos:prefLabel "ResourceAssessmentLand"@en .
 
 
 ###  https://w3id.org/ssbd/ResourceAssessmentMinerals
@@ -670,9 +670,9 @@ ssbd:SafetyAssessment rdf:type owl:Class ;
                                         owl:onProperty ssbd:assesses ;
                                         owl:someValuesFrom ssbd:SafetyDimension
                                       ] ;
-                      skos:altLabel "Safety Dimension" ;
+                      skos:altLabel "Safety Assessment" ;
                       skos:definition "Assessment of safety of chemicals and materials."@en ;
-                      skos:prefLabel "Safety Assessment"@en ;
+                      skos:prefLabel "SafetyAssessment"@en ;
                       skos:scopeNote "The superclass of all SSbD Assessments within the dimenstion safety." .
 
 
