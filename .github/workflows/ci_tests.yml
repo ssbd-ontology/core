@@ -37,4 +37,6 @@ jobs:
 
     - name: Test
       run: |
-        emmocheck --configfile=.github/emmocheck_conf.yml ${ONTOLOGY_NAME}.ttl
+        emmocheck --configfile=.github/emmocheck_conf.yml ${ONTOLOGY_NAME}.ttl       
+        emmocheck --configfile=.github/emmocheck_conf.yml matter.ttl
+        emmocheck --configfile=.github/emmocheck_conf.yml models.ttl

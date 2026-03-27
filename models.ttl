@@ -99,11 +99,10 @@ emmo:AnalogicalIcon rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#ArtificialIntelligenceModel
 emmo:ArtificialIntelligenceModel rdf:type owl:Class ;
-                            rdfs:subClassOf emmo:DataBasedModel ;
+                            rdfs:subClassOf emmo:MathematicalModel ;
                             rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
                             skos:altLabel "ArtificialIntelligence"@en ;
-                            skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.
-."""@en ;
+                            skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.."""@en ;
                             skos:prefLabel "ArtificialIntelligenceModel"@en .
 
 
@@ -203,7 +202,8 @@ emmo:GenerativeAIModel rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MachineLearningModel
 emmo:MachineLearningModel rdf:type owl:Class ;
-                     rdfs:subClassOf ssbd:CognitionAndLearningModel ;
+                     rdfs:subClassOf ssbd:CognitionAndLearningModel ,
+                                     ssbd:DataBasedModel ;
                      rdfs:seeAlso "Hutter F, Kotthoff L, Vanschoren J (2019) Automated Machine Learning. Springer, New York." ;
                      skos:definition "AI model that learns progressively by discovering implicit patterns and performing an intellectual task without explicit instructions in advance."@en ;
                      skos:prefLabel "MachineLearningModel"@en .
@@ -393,7 +393,8 @@ ssbd:CollaborativeFiltering rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ssbd/Computation
-ssbd:Computation rdf:type owl:Class .
+ssbd:Computation rdf:type owl:Class ;
+	         skos:prefLabel "Computation"@en .
 
 
 ###  https://w3id.org/ssbd/ComputerVision
@@ -527,14 +528,16 @@ ssbd:ImageSegmentation rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ssbd/Information
-ssbd:Information rdf:type owl:Class .
+ssbd:Information rdf:type owl:Class ;
+	         skos:prefLabel "Information"@en .
 
 
 ###  https://w3id.org/ssbd/KnowledgeRepresentation
 ssbd:KnowledgeRepresentation rdf:type owl:Class ;
                              rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                              rdfs:seeAlso "Liu HC, You JX, Li Z, Tian G (2017) Fuzzy Petri nets for knowledge representation and reasoning: A literature review. Eng Appl Artif Intell 60:45–56." ;
-                             skos:definition "Represent facts in the format of reusable knowledge. It combines a series of rules to simulate how a human brain functions through artificial means. It can make inferences and judgments based on knowledge provided by one or more experts and simulate human experts' decision-making process."@en .
+                             skos:definition "Represent facts in the format of reusable knowledge. It combines a series of rules to simulate how a human brain functions through artificial means. It can make inferences and judgments based on knowledge provided by one or more experts and simulate human experts' decision-making process."@en ; 
+                             skos:prefLabel "KnowledgeRepresentation"@en .
 
 
 ###  https://w3id.org/ssbd/LargeLanguageModel
@@ -584,15 +587,16 @@ ssbd:MachineTranslation rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ssbd/Model
-ssbd:Model rdf:type owl:Class .
+ssbd:Model rdf:type owl:Class ;
+           skos:prefLabel "Model"@en .
 
 
 ###  https://w3id.org/ssbd/ModernGenerativeAIModel
 ssbd:ModernGenerativeAIModel rdf:type owl:Class ;
                         rdfs:subClassOf emmo:GenerativeAIModel ,
                                         ssbd:TransformerAI ;
-                        skos:definition "Generative AI based on the transformer architecture."@en ,
-                                        "ModernGenerativeAIModel"@en .
+                        skos:definition "Generative AI based on the transformer architecture."@en ;
+                        skos:prefLabel  "ModernGenerativeAIModel"@en .
 
 
 ###  https://w3id.org/ssbd/MonteCarloLearningModel
@@ -673,9 +677,10 @@ ssbd:PrincipalComponentAnalysis rdf:type owl:Class ;
 ssbd:ProbabilityModel rdf:type owl:Class ;
                       rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                       rdfs:seeAlso "Anastasopoulos A, Chiang D, Duong L (2016) An unsupervised probability model for speech-to-translation alignment of low-resource languages. arXiv preprint arXiv:1609.08139." ;
-                      skos:altLabel "InductiveReasining"@en ;
+                      skos:altLabel "InductiveReasoning"@en ;
                       skos:definition "AI system based on the probabilistic relationships between variables based on mathematical models."@en ;
-                      skos:scopeNote "Generalizes from specific observations, identifying patterns to predict outcomes (probabilistic)."@en .
+                      skos:scopeNote "Generalizes from specific observations, identifying patterns to predict outcomes (probabilistic)."@en ;
+                      skos:prefLabel "ProbabilityModel"@en .
 
 
 ###  https://w3id.org/ssbd/QuestionAnswering
@@ -744,7 +749,8 @@ ssbd:SiameseNeuralNetwork rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ssbd/Software
-ssbd:Software rdf:type owl:Class .
+ssbd:Software rdf:type owl:Class ;
+              skos:prefLabel "Software"@en .
 
 
 ###  https://w3id.org/ssbd/StepwiseRegressionModel
