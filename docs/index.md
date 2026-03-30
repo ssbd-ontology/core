@@ -17,7 +17,6 @@ Welcome to the **SSbD Core Ontology**, a semantic resource with essential terms 
 	"dcterms:publisher": "https://orcid.org/0000-0000-0000-0001"
 }
 ```
-```
 
 ```{tab-item} Context link
 Use the published JSON-LD context directly:
@@ -68,28 +67,3 @@ Browse all ontology terms, properties, and formal definitions.
 ```
 
 ````
-
-## Documentation pages
-
-```{toctree}
-:maxdepth: 1
-:caption: Contents
-
-overview
-background
-guiding-principles
-matter
-models
-assessments
-classes
-taxonomy
-tools
-repository_guide
-document-your-data
-```
-
-## Additional links
-
-- [Main reference documentation](https://ssbd-ontology.github.io/core/core.html)
-- [Property reference index](https://ssbd-ontology.github.io/core/properties.html)
-- [WIDOCO core module terms](https://ssbd-ontology.github.io/core/widoco/index-en.html)
