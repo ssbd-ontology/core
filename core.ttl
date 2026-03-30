@@ -545,7 +545,7 @@ vann:usageNote rdf:type owl:AnnotationProperty .
 :SSbDSpecifiedAssessment rdf:type owl:Class ;
      rdfs:subClassOf ssbd:Assessment ;
      skos:definition "An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact." ;
-     skos:prefLabel "SpecifiedAssessment" .
+     skos:prefLabel "SSbDSpecifiedAssessment" .
 
 
 

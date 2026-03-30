@@ -211,12 +211,13 @@ jobs:
     - name: Generate Ontokit documentation to public
       run: ontokit docs --imported --recursive --ontology-file=core.ttl --docs-dir=docs . && touch public/.nojekyll
 
-    - name: Copy ontologies and context to public
+    - name: Copy ontologies, figures and context to public
       run: |
         ls public/
         cp build/*ttl public/
         cp -r build/context public/
         cp -r build/widoco* public/
+        cp -r docs/figs public/docs/
         echo "copied files"
         ls public/
 
