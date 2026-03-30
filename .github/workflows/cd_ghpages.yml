@@ -9,8 +9,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+-*'
       - master
       - main
-      - ontokit_dev
-      - label_langstring
+      - ssb-taxonomy
 
 permissions:
   contents: write
@@ -191,7 +190,8 @@ jobs:
             --redefine=allow \
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
-            --set-prefix=ssbd:https://w3id.org/ssbd/
+            --set-prefix=ssbd:https://w3id.org/ssbd/ \
+            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel# 
             #--namespace-filter=ssbd
 
     - name: Generate keywords file
@@ -203,7 +203,8 @@ jobs:
             --redefine=allow \
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
-            --set-prefix=ssbd:https://w3id.org/ssbd/
+            --set-prefix=ssbd:https://w3id.org/ssbd/ \
+            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel# 
             #--namespace-filter=ssbd
 
     - name: Generate Ontokit documentation to public
@@ -214,6 +215,7 @@ jobs:
         ls public/
         cp build/*ttl public/
         cp -r build/context public/
+        cp -r build/widoco* public/
         echo "copied files"
         ls public/
 

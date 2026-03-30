@@ -172,22 +172,6 @@ vann:usageNote rdf:type owl:AnnotationProperty .
 #    Object properties
 #################################################################
 
-### SSbD relations
-
-# TODO: Add rdfs:subPropertyOf
-:ssbdDimension rdf:type owl:ObjectProperty ;
-    rdfs:range :SsbdDimension ;
-    skos:prefLabel "ssbdDimension"@en ;
-    skos:definition "Note this class redefined in PR https://github.com/PINK-project/PINK-annotation-schema/pull/15"@en ;
-    vann:usageNote "One of `ssbd:functionality`, `ssbd:safety`, `ssbd:environmental_sustainability`, `ssbd:social_sustainability`"@en .
-
-:ssbdSubDimension rdf:type owl:DatatypeProperty ;
-    rdfs:range xsd:string ;
-    skos:prefLabel "ssbdSubDimension"@en ;
-    skos:definition "Note this class redefined in PR https://github.com/PINK-project/PINK-annotation-schema/pull/15"@en .
-
-
-
 ### Parthood relations
 
 :parthood rdf:type owl:ObjectProperty ;
@@ -330,7 +314,7 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     rdfs:subPropertyOf :isOvercrossedBy ;
     skos:prefLabel "assesses"@en ;
     rdfs:domain :Assessment ;
-    rdfs:range :SsbdDimension ;
+    rdfs:range :SSbDDimension ;
     skos:definition "Relates an assessment to a SSbD dimension."@en .
 
 :isSubmoduleOf rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
@@ -534,6 +518,37 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     skos:definition "A process that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language)."@en .
 
 
+###  https://w3id.org/ssbd/Assessment
+:Assessment rdf:type owl:Class ;
+    rdfs:subClassOf :Process ;
+    skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process." ;
+    skos:prefLabel "Assessment" .
+
+
+###  https://w3id.org/ssbd/SSbDAssessment
+:SSbDAssessment rdf:type owl:Class ;
+     rdfs:subClassOf :Assessment ,[
+        a owl:Restriction ;
+        owl:onProperty :hasPart ; # Should we change to subProperty (proper part)
+        owl:someValuesFrom :SSbDSpecifiedAssessment
+    ]  ,[
+        a owl:Restriction ;
+        owl:onProperty :assesses ;
+        owl:someValuesFrom :SSbDDimension
+    ] ;
+     skos:definition "An assessment of the safety and sustainability of chemicals and materials across their life cycle. Assesses one or more ssbd dimension, through one ore more SSbDSpecifiedAssessments" ;
+     rdfs:altLabel "SSbD Assessment" ;
+     skos:prefLabel "SSbDAssessment" .
+
+
+###  https://w3id.org/ssbd/SSbDSpecifiedAssessment
+:SSbDSpecifiedAssessment rdf:type owl:Class ;
+     rdfs:subClassOf ssbd:Assessment ;
+     skos:definition "An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact." ;
+     skos:prefLabel "SpecifiedAssessment" .
+
+
+
 ### Entity subclasses
 :Matter rdf:type owl:Class ;
     rdfs:subClassOf prov:Entity ;
@@ -546,6 +561,17 @@ A more fundamental approach taken here, considers matter as entities that are ma
 
 emmo:Substance rdfs:subClassOf :Matter .
 emmo:ChemicalEntity rdfs:subClassOf :Matter .
+
+
+###  https://w3id.org/ssbd/SsbdDimension
+:SSbDDimension rdf:type owl:Class ;
+                   rdfs:subClassOf prov:Entity ;
+                   skos:definition "Safe and sustainable by design (SSbD) can be described as an approach that focuses on providing a function (or service), while avoiding onerous environmental footprints and chemical properties that may be harmful to human health or the environment.  In essence, the SSbD approach aims to identifying and minimizing, at an early phase of the innovation process, the impacts concerning safety for humans and the environment and for sustainability, minimizing the environmental footprint, in particular regarding climate change and resource use and, protecting ecosystems and biodiversity, taking a lifecycle perspective. The SSbD approach addresses the safety and sustainability of the material/ chemical/ product and associated processes along the whole life cycle, including all the steps of the research and development (R&D) phase, production, use, recycling, and disposal. Ref: https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf"@en ,
+                                       "The superclass of all dimensions relevant for SSbD assessments."@en ;
+                   skos:altLabel "Safe and Sustainable by Design Dimension" ;
+                   skos:prefLabel "SsbdDimension"@en ;
+                   skos:scopeNote "The superclass of all dimensions relevant for SSbD assessments." .
+
 
 
 ## Data
@@ -789,7 +815,6 @@ foaf:Organization rdfs:subClassOf :Object .
 foaf:Person rdfs:subClassOf :Object .
 foaf:Project rdfs:subClassOf prov:Entity .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
-:SsbdDimension rdfs:subClassOf prov:Entity .
 
 dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 #prov:wasInfluencedBy rdfs:subPropertyOf :causal .
