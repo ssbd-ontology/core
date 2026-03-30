@@ -9,24 +9,37 @@ It is constructed to be easily aligned with [EMMO].
 > It is not intended for production at the current stage.
 
 
-## Resources
-- Theoretical background.
-  - [Background], including handling of [provenance] and categorisation of relations into [parthood], [causal] and [semiotic] relations.
-  - Documentation of sub-modules:
-    - [Matter module]
-    - [Models module]
-    - [SSbD Assessments module]
-  - [Class-level] documentation
-- Reference documentation with interlinked definitions of classes and properties for:
-  - [SSbD Core Ontology].
-  - [Reused terms], i.e. terms reused from existing vocabularies (e.g. [PROV-O], [DCAT-AP 3.0.1]).
-  - [Matter], including categorisation of substances, materials, molecules, etc...
-  - [Models], including categorisation of statistical, physics and data-based (AI) models.
-  - [CHEMINF descriptors], a taxonomy of descriptors from mainly the chemistry domain.
+## The SSbD Core Ontology documentation
+
+### Theoretical background
+- [Background], including handling of [provenance] and categorisation of relations into [parthood], [causal] and [semiotic] relations.
+- Documentation of sub-modules:
+  - [Matter module]
+  - [Models module]
+  - [SSbD Assessments module]
+- [Class-level] documentation
 - [Guiding principles] for the implementation of the SSbD Core Ontology.
 - [Turtle file] including all imported concepts (source of truth).
 - [Inferred turtle file] reasoned with HermiT.
 
+### Reference documentation
+
+The generated reference indices include interlinked definitions of classes and properties, and include all annotations and relations included in the
+ontology.
+- [Main reference documentation] contains all classes and properties.
+- [Property reference index] contains all properties, including their domains and ranges. These are all the terms that are used to document a resource, 
+- and include reused terms from other vocabularies (e.g. PROV-O, DCAT-AP 3.0.1).
+- [Models reference index], a sub-module of the ontology including categorisation of statistical, physics and data-based (AI) models.
+- [Matter reference index], a sub-module of the ontology including categorisation of substances, materials, molecules, etc...
+- [SSbD taxonomy reference index] contains classes within the SSbD Assessments module.
+- [CHEMINF descriptors reference index] contains the taxonomy of descriptors from mainly the chemistry domain.
+
+In addition widoco generated documenation is provided for most modules:
+  - [Core module terms].
+  - [Reused terms]
+  - [Matter]
+  - [Models]
+  - [CHEMINF descriptors]
 
 ## Top level taxonomy
 The taxonomy below shows a basic categorisation of the main concepts (OWL classes) in the SSbD Core Ontology.
@@ -34,13 +47,17 @@ It unifies concepts from common vocabularies, like [Dublin Core], [PROV-O], [DCA
 This gives the adapted terms additional context.
 However, the taxonomy is intentionally weekly axiomated in order to facilitate alignment to different popular top-level ontologies, like [EMMO], [DOLCE] and [BFO].
 
-![Taxonomy](docs/figs/taxonomy.svg)
+![Taxonomy](https://ssbd-ontology.github.io/core/docs/figs/taxonomy.svg)
 
 
 ## Usage example
 The example below shows how one can document a toxicity computation using the SSbD Core Ontology.
 
-![Paracetamol-example](docs/figs/paracetamol-example.svg)
+![Paracetamol-example](https://ssbd-ontology.github.io/core/docs/figs/paracetamol-example.svg)
+
+## Quick intro to documenting sources with tables
+The documentation of a resource with the SSbD Core Ontology can be done with any editor that allows you to create tables and save them as csv files.
+This process is explained in more detail in the [tutorial on documenting your data using tables].
 
 
 [Background]: https://ssbd-ontology.github.io/core/docs/background.html
@@ -53,8 +70,18 @@ The example below shows how one can document a toxicity computation using the SS
 [Matter module]: https://ssbd-ontology.github.io/core/docs/matter.html
 [Models module]: https://ssbd-ontology.github.io/core/docs/models.html
 [SSbD Assessments module]: https://ssbd-ontology.github.io/core/docs/assessments.html
+[CHEMINF descriptors module]: https://ssbd-ontology.github.io/core/docs/cheminf.html
+[tutorial on documenting your data using tables]: https://ssbd-ontology.github.io/core/docs/document-your-data.html
 
-[SSbD Core Ontology]: https://ssbd-ontology.github.io/core/widoco/index-en.html
+
+[Main reference documentation]: https://ssbd-ontology.github.io/core/core.html
+[Property reference index]: https://ssbd-ontology.github.io/core/properties.html
+[Matter reference index]: https://ssbd-ontology.github.io/core/matter.html
+[Models reference index]: https://ssbd-ontology.github.io/core/models.html
+[CHEMINF descriptors reference index]: https://ssbd-ontology.github.io/core/cheminf.html
+[SSbD taxonomy reference index]: https://ssbd-ontology.github.io/core/ssbd-taxonomy.html
+
+[Core module terms]: https://ssbd-ontology.github.io/core/widoco/index-en.html
 [Reused terms]: https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html
 [Matter]: https://ssbd-ontology.github.io/core/widoco-matter/index-en.html
 [Models]: https://ssbd-ontology.github.io/core/widoco-models/index-en.html
@@ -62,7 +89,7 @@ The example below shows how one can document a toxicity computation using the SS
 [Turtle file]: https://ssbd-ontology.github.io/core/core.ttl
 [Inferred turtle file]: https://ssbd-ontology.github.io/core/core-inferred.ttl
 
-[core classes]: https://ssbd-ontology.github.io/core/docs/classes.md
+
 [core.ttl]: https://ssbd-ontology.github.io/core/core.ttl
 [Zaccarini *et. al.*]: https://ebooks.iospress.nl/doi/10.3233/FAIA231120
 [semiotic]: https://plato.stanford.edu/entries/peirce-semiotics/
