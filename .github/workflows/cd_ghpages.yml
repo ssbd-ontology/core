@@ -10,6 +10,7 @@ on:
       - master
       - main
       - ssb-taxonomy
+      - simple_intro
 
 permissions:
   contents: write
