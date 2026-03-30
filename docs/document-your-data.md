@@ -22,7 +22,7 @@ Figure 1. Cartoon illustrating a request for a pen (concept) and the return of a
 Similarly, we can ask for a specific type of experiment or a type of dataset. 
 However, this requires that the concepts of these types are well documented so that both machines and humans can help us find the right resources. 
 In Figure 2 below, examples of resources, both classes (concepts) and individuals, related to running and experiment/instrument, are shown.
-<a href="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png" alt="Cartoon illustrating the concept and individuals related to an experiment." width="400"/></a>  
+<a href="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png" alt="Cartoon illustrating the concept and individuals related to an experiment."/></a>  
 Figure 2. Cartoon illustrating some concepts and individuals related to of experiment. Image created partly with ChatGPT (OpenAI), 2026.
 
 The various concepts and individuals are connected together with properties, which can be used to describe the relationships between them. 
@@ -33,7 +33,7 @@ This means that the operator can ask many different questions that connect the v
 or "I want a dataset of type Y, how should I proceed?". Even better we can connect various concepts together and for instance create
 workflows that connects datasets and simulations. This is more generally shown below.
 
-<a href="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png" alt="Concepts of datasets and simulations can be connected together in a workflow because we have documented what the inputs and outputs of the various simulations are." width="400"/></a>
+<a href="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png" alt="Concepts of datasets and simulations can be connected together in a workflow because we have documented what the inputs and outputs of the various simulations are."/></a>
 Figure 3. Concepts of datasets and simulations can be connected together in a workflow because
 we have documented what the inputs and outputs of the various simulations are.  
 
@@ -45,7 +45,7 @@ The tables can then be used to generate RDF data that can be queried and integra
 
 In Figure 4 below some examples of tables and how they are related are shown.
 
-<a href="https://ssbd-ontology.github.io/core/docs/figs/tables.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/tables.png" alt="Examples of tables for documenting resources and how they are related." width="400"/></a>
+<a href="https://ssbd-ontology.github.io/core/docs/figs/tables.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/tables.png" alt="Examples of tables for documenting resources and how they are related."/></a>
 
 How to construct the tables:
 - There is a column @id, which is the unique identifier for the resource.
