@@ -47,13 +47,13 @@ It unifies concepts from common vocabularies, like [Dublin Core], [PROV-O], [DCA
 This gives the adapted terms additional context.
 However, the taxonomy is intentionally weekly axiomated in order to facilitate alignment to different popular top-level ontologies, like [EMMO], [DOLCE] and [BFO].
 
-![Taxonomy](https://ssbd-ontology.github.io/core/docs/figs/taxonomy.svg)
+[![Taxonomy](https://ssbd-ontology.github.io/core/docs/figs/taxonomy.svg)](https://ssbd-ontology.github.io/core/docs/figs/taxonomy.svg)
 
 
 ## Usage example
 The example below shows how one can document a toxicity computation using the SSbD Core Ontology.
 
-![Paracetamol-example](https://ssbd-ontology.github.io/core/docs/figs/paracetamol-example.svg)
+[![Paracetamol-example](https://ssbd-ontology.github.io/core/docs/figs/paracetamol-example.svg)](https://ssbd-ontology.github.io/core/docs/figs/paracetamol-example.svg)
 
 ## Quick intro to documenting sources with tables
 The documentation of a resource with the SSbD Core Ontology can be done with any editor that allows you to create tables and save them as csv files.

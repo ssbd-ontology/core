@@ -10,18 +10,18 @@ However, for a semantic provenance description [PROV-O] should be used (since `d
 
 The basic building block of a provenance description is a `prov:Activity` with `prov:Entity` as input and output:
 
-![General activity](figs/general-activity.png)
+[![General activity](figs/general-activity.png)](figs/general-activity.png)
 
 As shown in the taxonomy, this general process can be sub-categorised according to its input and output:
 
-![Categorised activities](figs/categorised-activities.png)
+[![Categorised activities](figs/categorised-activities.png)](figs/categorised-activities.png)
 
 Traceability can be achieved by connecting a series (or network) of these basic building blocks.
 <!-- When two or more intentionally planned processes are connected this way, we call it a *workflow*. -->
 By providing additional knowledge to the various process steps we get *provenance*.
 The figure below shows an example of a simple provenance graph, that combines three processes with some additional annotations.
 
-![Provenance](figs/provenance.png)
+[![Provenance](figs/provenance.png)](figs/provenance.png)
 
 
 ### Complex workflows with spatial and temporal parts
@@ -32,7 +32,7 @@ The figure below shows a material process (`p`) that changes a material (`m`).
 The input and output of the material process are the temporal parts (`m1` and `m2`) of the material, respectively.
 The material process is driven by an agent (`a`), who's temporal part (`a1`) is a participant (i.e. has an active role) in the process.
 
-![Material process](figs/material-process.png)
+[![Material process](figs/material-process.png)](figs/material-process.png)
 
 
 Concepts belonging to the SSbD namespace in the figure above have been written in cursive.
@@ -48,7 +48,7 @@ It unifies concepts from common vocabularies, like [Dublin Core], [PROV-O], [DCA
 This gives the adapted terms additional context.
 However, the taxonomy is intentionally weekly axiomated in order to facilitate alignment to different popular top-level ontologies, like [EMMO], [DOLCE] and [BFO].
 
-![Taxonomy](figs/taxonomy.svg)
+[![Taxonomy](figs/taxonomy.svg)](figs/taxonomy.svg)
 
 At the top-level, the SSbD Core Ontology has the three root concepts from [PROV-O]:
 
@@ -85,7 +85,7 @@ Such semantically enhanced subclass relations of corresponding [PROV-O] and [Dub
 
 
 ### Parthood relations
-![Parthood relations](figs/parthood-relations.png)
+[![Parthood relations](figs/parthood-relations.png)](figs/parthood-relations.png)
 
 The above figure includes graphical illustrations of the parthood relations.
 The colour scheme in these illustrations represents activities in red, entities in blue, agents in green and unspecified nature (activity/entity/agent) in gray.
@@ -102,7 +102,7 @@ These chains of causations have been expressed using [SWRL] rules.
 The relations starting with ":was" are subclasses of the corresponding relations in [PROV-O].
 The `:attributed` and `:wasAttributedTo` are the inverse of each other.
 
-![Causal relations](figs/causal-relations.png)
+[![Causal relations](figs/causal-relations.png)](figs/causal-relations.png)
 
 
 ### Semiotic relations
@@ -110,7 +110,7 @@ Semiotic relations take part in a triadic [semiotic] meaning-making process, whe
 The semiotic relations in the SSbD Core Ontology are inspirred by EMMO, which in turn is based on the semiotic theory by Charles Sanders Peirce (1839-1914).
 Semiotic relations can be seen as shortcuts that replaces a series of complex causal interactions with a single relation.
 
-![Semiotic relations](figs/semiotic-relations.svg)
+[![Semiotic relations](figs/semiotic-relations.svg)](figs/semiotic-relations.svg)
 
 An important use of semiotics is to support the scientific view that a property is not an intrinsic quality of an entity, but something that is measured or determined by an interpreter.
 
