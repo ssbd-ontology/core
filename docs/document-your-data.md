@@ -45,7 +45,7 @@ The tables can then be used to generate RDF data that can be queried and integra
 
 In Figure 4 below some examples of tables and how they are related are shown.
 
-<a href="https://ssbd-ontology.github.io/core/docs/figs/tables.png"><img src="https://ssbd-ontology.github.io/core /docs/figs/tables.png" alt="Examples of tables for documenting resources and how they are related." width="400"/></a>
+<a href="https://ssbd-ontology.github.io/core/docs/figs/tables.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/tables.png" alt="Examples of tables for documenting resources and how they are related." width="400"/></a>
 
 How to construct the tables:
 - There is a column @id, which is the unique identifier for the resource.
