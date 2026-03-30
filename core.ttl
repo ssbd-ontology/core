@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/pink#> .
+@prefix : <https://w3id.org/ssbd/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -15,26 +15,27 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix widoco: <https://w3id.org/widoco/vocab#> .
 @prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
+@prefix dm: <https://w3id.org/emmo/domain/datamodel#> .
 @prefix emmo: <https://w3id.org/emmo/hume#> .
-@prefix pink: <https://w3id.org/pink#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
 
-@base <https://w3id.org/pink#> .
+@base <https://w3id.org/ssbd/> .
 
-<https://w3id.org/pink>
+<https://w3id.org/ssbd/core/core>
     rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/pink/0.0.1> ;
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/core> ;
     owl:imports
-        <https://w3id.org/pink/0.0.1/reused-terms> ,
-        <https://w3id.org/pink/0.0.1/matter> ,
-        <https://w3id.org/pink/0.0.1/models> ,
-        <https://w3id.org/pink/0.0.1/cheminf-mappings> ,
-        <https://w3id.org/pink/0.0.1/ssbd-taxonomy> ;
+        <https://w3id.org/ssbd/core/0.0.1/reused-terms> ,
+        <https://w3id.org/ssbd/core/0.0.1/matter> ,
+        <https://w3id.org/ssbd/core/0.0.1/models> ,
+        <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings> ,
+        <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy> ;
     dcatap:status "Under Development" ;
-    dcterms:abstract """The PINK Annotation Schema provides the semantic basis for SSbD.
+    dcterms:abstract """The SSbD Core Ontology provides the semantic basis for safe and sustainability by design.
 
-The PINK Annotation Schema expands on the annotation schema provided by tripper, which again expands on the DCAT-AP.
+The SSbD Core Ontology expands on the annotation schema provided by tripper, which again expands on the DCAT-AP.
 
-A reference documentation of terms reused from standard W3C vocabularies can be found https://pink-project.github.io/PINK-annotation-schema/widoco-reused-terms/index-en.html.
+A reference documentation of terms reused from standard W3C vocabularies can be found https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html.
 """@en ;
     dcterms:bibliographicCitation "xxx" ;
     dcterms:contributor <https://orcid.org/0000-0003-4250-4584> ;
@@ -49,37 +50,37 @@ A reference documentation of terms reused from standard W3C vocabularies can be 
     #dcterms:modified "xxxx-xx-xxT00:00:00"^^xsd:dateTime ;
     dcterms:publisher <https://pink-project.eu/> ;
     #dcterms:source "Relevant PINK deliverable" ;
-    dcterms:title "PINK Annotation Schema"@en ;
+    dcterms:title "SSbD Core Ontology"@en ;
     bibo:doi "tbd" ;
     bibo:status <http://purl.org/ontology/bibo/status/forthcoming> ;
-    vann:preferredNamespacePrefix "pink" ;
-    vann:preferredNamespaceUri "https://w3id.org/pink" ;
+    vann:preferredNamespacePrefix "ssbd" ;
+    vann:preferredNamespaceUri "https://w3id.org/ssbd" ;
     owl:priorVersion "0.0.0" ;
     owl:versionInfo "0.0.1" ;
-    foaf:homepage <https://github.com/PINK-project/PINK-annotation-schema> ;
+    foaf:homepage <https://ssbd-ontology.github.io/core/> ;
     foaf:logo <https://tess.elixir-europe.org/system/content_providers/images/000/000/777/original/pink-logo-orange-colorB-500.png> ;
     widoco:introduction """
-The PINK Annotation Schema has a modular structure and aims to cover the following features:
+The SSbD Core Ontology has a modular structure and aims to cover the following features:
 
 * Allow to categorise resources (datasets, models, software, etc) according to their SSbD dimensions and categories/sub-categories.
-* Provenance, based on the [PROV-O](https://www.w3.org/TR/prov-o/) ontology. PROV-O is fully adapted by the PINK Annotation Schema, having the three top-level PROV-O classes, *Activity*, *Entity* and *Agent* in root.
+* Provenance, based on the [PROV-O](https://www.w3.org/TR/prov-o/) ontology. PROV-O is fully adapted by the SSbD Core Ontology, having the three top-level PROV-O classes, *Activity*, *Entity* and *Agent* in root.
 * Extension of the basic PROV-O provenance to complex scientific workflows with spatial and temporal parts.
 * Allow documentation of workflows that have not (yet) been executed. Such documentation is done at class-level. When executed individuals should be created for the evaluated activities and their input and output providing a full PROV-O provenance graph.
 * Top-level taxonomy for (advanced) materials and chemicals based on [EMMO](https://emmc.eu/emmo/) with mappings to [ChEBI](https://www.ebi.ac.uk/chebi/) for chemicals.
 * Categorisation models.
 * Strong taxonomy for relations, which are grouped into:
-  - [parthood relations](https://pink-project.github.io/PINK-annotation-schema/docs/background.html#parthood-relations), based on mereology
-  - [causal relations](https://pink-project.github.io/PINK-annotation-schema/docs/background.html#causal-relations), based on causality
-  - [semiotic relations](https://pink-project.github.io/PINK-annotation-schema/docs/background.html#semiotic-relations), based on [Pierse semiotics](https://plato.stanford.edu/entries/peirce-semiotics/)
+  - [parthood relations](https://ssbd-ontology.github.io/core/docs/background.html#parthood-relations), based on mereology
+  - [causal relations](https://ssbd-ontology.github.io/core/docs/background.html#causal-relations), based on causality
+  - [semiotic relations](https://ssbd-ontology.github.io/core/docs/background.html#semiotic-relations), based on [Pierse semiotics](https://plato.stanford.edu/entries/peirce-semiotics/)
 
 Separate reference documentations exists for the following sub-modules:
 
-* [ddoc](https://pink-project.github.io/PINK-annotation-schema/widoco-ddoc/index-en.html): The Tripper data documentation vocabulary, with terms reused from other ontologies and vocabularies. Mainly [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), [FOAF](http://xmlns.com/foaf/spec/) and similar basic vocabularies.
-* [reused-terms](https://pink-project.github.io/PINK-annotation-schema/widoco-reused-terms/index-en.html): Additional reused terms by the PINK Annotation Schema ([DCAT](https://www.w3.org/TR/vocab-dcat-3/), [PROV-O](https://www.w3.org/TR/prov-o/), etc).
-* [matter](https://pink-project.github.io/PINK-annotation-schema/widoco-matter/index-en.html): Taxonomy for (advanced) materials and chemicals
-* [models](https://pink-project.github.io/PINK-annotation-schema/widoco-models/index-en.html): Taxonomy for models.
+* [ddoc](https://ssbd-ontology.github.io/core/widoco-ddoc/index-en.html): The Tripper data documentation vocabulary, with terms reused from other ontologies and vocabularies. Mainly [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), [FOAF](http://xmlns.com/foaf/spec/) and similar basic vocabularies.
+* [reused-terms](https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html): Additional reused terms by the SSbD Core Ontology ([DCAT](https://www.w3.org/TR/vocab-dcat-3/), [PROV-O](https://www.w3.org/TR/prov-o/), etc).
+* [matter](https://ssbd-ontology.github.io/core/widoco-matter/index-en.html): Taxonomy for (advanced) materials and chemicals
+* [models](https://ssbd-ontology.github.io/core/widoco-models/index-en.html): Taxonomy for models.
 
-The root of the PINK Annotation Schema is shown below. More information can be found in the [background](https://pink-project.github.io/PINK-annotation-schema/docs/background.html) section.
+The root of the SSbD Core Ontology is shown below. More information can be found in the [background](https://ssbd-ontology.github.io/core/docs/background.html) section.
 
 """@en .
 
@@ -178,7 +179,7 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     rdfs:range :SsbdDimension ;
     skos:prefLabel "ssbdDimension"@en ;
     skos:definition "Note this class redefined in PR https://github.com/PINK-project/PINK-annotation-schema/pull/15"@en ;
-    vann:usageNote "One of `pink:functionality`, `pink:safety`, `pink:environmental_sustainability`, `pink:social_sustainability`"@en .
+    vann:usageNote "One of `ssbd:functionality`, `ssbd:safety`, `ssbd:environmental_sustainability`, `ssbd:social_sustainability`"@en .
 
 :ssbdSubDimension rdf:type owl:DatatypeProperty ;
     rdfs:range xsd:string ;
@@ -411,7 +412,7 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     skos:prefLabel "semiotical"@en ;
     skos:definition "The base of all semiotic relations."@en ;
     skos:scopeNote "Semiotic relations take part in a triadic semiotic meaning-making process, where an 'interpreter' connects a 'sign' (e.g. a property) to an entity (called 'referent')."@en ;
-    skos:scopeNote "The semiotic relations in the PINK Annotation Scheme are inspirred by EMMO, which in turn is based on the semiotic theory by Charles Sanders Peirce (1839-1914)."@en ;
+    skos:scopeNote "The semiotic relations in the SSbD Core Ontology are inspirred by EMMO, which in turn is based on the semiotic theory by Charles Sanders Peirce (1839-1914)."@en ;
     skos:scopeNote "Semiotic relations can be seen as shortcuts that replaces a series of complex causal relations with a single relation."@en .
 
 :isInterpretedBy rdf:type owl:ObjectProperty ;
@@ -445,7 +446,7 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     rdfs:subPropertyOf :hasDescription ;
     skos:prefLabel "hasUnit"@en ;
     skos:definition "Connects a property to its unit."@en ;
-    skos:scopeNote "`pink:hasMeasurementUnit` is intended to refer to a unit in an existing unit ontology, like QUDT or EMMO."@en ;
+    skos:scopeNote "`ssbd:hasMeasurementUnit` is intended to refer to a unit in an existing unit ontology, like QUDT or EMMO."@en ;
     rdfs:domain :Property .
 
 :standsFor rdf:type owl:ObjectProperty ;
@@ -486,15 +487,15 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     rdfs:domain prov:Entity ;
     rdfs:range :TierLevel ;
     skos:definition "Relate an entity to an SSbD tier level."@en ;
-    vann:usageNote "Should be one of: pink:tierlevel1 (ideation/design), pink:tierlevel2 (lab phase/development), pink:tierlevel3 (up-scaling/production)"@en .
+    vann:usageNote "Should be one of: ssbd:tierlevel1 (ideation/design), ssbd:tierlevel2 (lab phase/development), ssbd:tierlevel3 (up-scaling/production)"@en .
 
 :chemicalClass rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
     rdfs:domain prov:Entity ;
-    rdfs:range pink:Matter ;
+    rdfs:range :Matter ;
     skos:prefLabel "chemicalClass"@en ;
     skos:definition "Relates an entity to a chemical class that the entity is relevant for."@en ;
-    vann:usageNote "Choose one of subclasses of pink:Matter."@en .
+    vann:usageNote "Choose one of subclasses of ssbd:Matter."@en .
 
 :documentation a owl:ObjectProperty ;
     rdfs:subPropertyOf foaf:page, :isRepresentedBy ;
@@ -740,7 +741,7 @@ An architectural floor plan is a model of a house.
     rdfs:subClassOf :Property ;
     skos:prefLabel "DomainOfApplicabilityStatus"@en ;
     skos:definition "A result of a model or software indicating whether an input is within the applicability domain of the model or software. Applicability domain refers to the range of conditions and limitations within which a model can be reliably applied. It is a critical factor in determining the accuracy and validity of a model, as it defines the scope of its predictions and identifies potential sources of uncertainty. The process of defining the applicability domain involves assessing the model's performance under different conditions and establishing the boundaries of its predictive capabilities."@en ;
-    skos:scopeNote "It should take one of the following values: pink:undefined; pink:outOfDomain; pink:inDomain."@en .
+    skos:scopeNote "It should take one of the following values: ssbd:undefined; ssbd:outOfDomain; ssbd:inDomain."@en .
 
 
 ## Object
@@ -778,8 +779,9 @@ An architectural floor plan is a model of a house.
 
 
 ### Mappings
-### Include standard concepts into the PINK taxonomy
+### Include standard concepts into the SSbD taxonomy
 ### Question: should we duplicate these classes instead?
+dm:DataModel rdfs:subClassOf :Data .
 foaf:Document rdfs:subClassOf :Data .
 prov:Agent rdfs:subClassOf foaf:Agent .
 dcat:Resource rdfs:subClassOf prov:Entity .
@@ -836,13 +838,13 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:used ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:used ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:wasGeneratedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:wasGeneratedBy ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                                 ] ;
@@ -851,7 +853,7 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:wasInformedBy ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:wasInformedBy ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                      ] ;
@@ -862,13 +864,13 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:wasAssociatedWith ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:wasAssociatedWith ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#x>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:used ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:used ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                                 ] ;
@@ -877,7 +879,7 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:attributed ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:attributed ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                      ] ;
@@ -888,13 +890,13 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:wasGeneratedBy ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:wasGeneratedBy ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:used ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:used ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                                 ] ;
@@ -903,7 +905,7 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:processedFrom ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:processedFrom ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                      ] ;
@@ -914,13 +916,13 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:wasGeneratedBy ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:wasGeneratedBy ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:wasAssociatedWith ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:wasAssociatedWith ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                                 ] ;
@@ -929,7 +931,7 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:wasAttributedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:wasAttributedTo ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                      ] ;
@@ -940,13 +942,13 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
    <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:hasPart ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:hasPart ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:hasPart ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:hasPart ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                                 ] ;
@@ -955,7 +957,7 @@ dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pink:hasPart ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> ssbd:hasPart ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#z>
                                                      ] ;

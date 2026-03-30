@@ -10,7 +10,7 @@ from tripper.datadoc.keywords import Keywords
 from tripper.utils import en
 
 # Set constants
-SSBD = "https://w3id.org/pink/ssbd-taxonomy"
+SSBD = "https://w3id.org/ssbd/ssbd-taxonomy"
 VER = "0.0.1"
 
 thisdir = Path(__file__).resolve().parent
@@ -19,7 +19,7 @@ rootdir = thisdir.parent
 kw = Keywords(theme=None)
 kw.add(
     (
-        "https://raw.githubusercontent.com/PINK-project/PINK-annotation-schema"
+        "https://raw.githubusercontent.com/ssbd-ontology/core"
         "/refs/heads/gh-pages/context/keywords.yaml"
     ),
     "yaml",
@@ -32,9 +32,9 @@ ts = Triplestore("rdflib")
 td = TableDoc.parse_csv(
     rootdir / "sources" / "ssbd_dimension_functionality_taxonomy.csv",
     type=None,
-    prefixes={"pink": "https://w3id.org/pink#"},
+    prefixes={"ssbd": "https://w3id.org/ssbd/"},
     keywords=kw,
-    baseiri="https://w3id.org/pink#",
+    baseiri="https://w3id.org/ssbd/",
 )
 td.save(ts)
 
@@ -42,7 +42,7 @@ td.save(ts)
 ts.add_triples(
     [
         (SSBD, RDF.type, OWL.Ontology),
-        (SSBD, OWL.versionIRI, f"https://w3id.org/pink/{VER}/ssbd-taxonomy"),
+        (SSBD, OWL.versionIRI, f"https://w3id.org/ssbd/{VER}/ssbd-taxonomy"),
         (
             SSBD,
             DCTERMS.title,

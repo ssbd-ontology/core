@@ -1,11 +1,11 @@
-# The PINK Annotation Schema
-The PINK Annotation Schema provides semantic annotations for the Safe and Sustainable by Design (SSbD) approach to guide the innovation process for chemicals and materials.
+# The SSbD Core Ontology
+The SSbD Core Ontology provides semantic annotations for the Safe and Sustainable by Design (SSbD) approach to guide the innovation process for chemicals and materials.
 It adhears to the recommendations specified by [DCAT-AP 3.0.1] as implemented in [Tripper],
 and builds on [PROV-O] for provenance.
 It is constructed to be easily aligned with [EMMO].
 
 > [!WARNING]
-> The PINK Annotation Schema is still under development and may change without notice.
+> The SSbD Core Ontology is still under development and may change without notice.
 > It is not intended for production at the current stage.
 
 
@@ -17,18 +17,18 @@ It is constructed to be easily aligned with [EMMO].
     - [Models module]
   - [Class-level] documentation
 - Reference documentation with interlinked definitions of classes and properties for:
-  - [PINK Annotation Schema].
+  - [SSbD Core Ontology].
   - [Reused terms], i.e. terms reused from existing vocabularies (e.g. [PROV-O], [DCAT-AP 3.0.1]).
   - [Matter], including categorisation of substances, materials, molecules, etc...
   - [Models], including categorisation of statistical, physics and data-based (AI) models.
-  - [CHEMINF descriptors], a taxonomy of descriptors from mainly the chemistry domain
-- [Guiding principles] for the implementation of the PINK Annotation Schema
+  - [CHEMINF descriptors], a taxonomy of descriptors from mainly the chemistry domain.
+- [Guiding principles] for the implementation of the SSbD Core Ontology.
 - [Turtle file] including all imported concepts (source of truth).
 - [Inferred turtle file] reasoned with HermiT.
 
 
 ## Top level taxonomy
-The taxonomy below shows a basic categorisation of the main concepts (OWL classes) in the PINK Annotation Schema.
+The taxonomy below shows a basic categorisation of the main concepts (OWL classes) in the SSbD Core Ontology.
 It unifies concepts from common vocabularies, like [Dublin Core], [PROV-O], [DCAT] and [FOAF].
 This gives the adapted terms additional context.
 However, the taxonomy is intentionally weekly axiomated in order to facilitate alignment to different popular top-level ontologies, like [EMMO], [DOLCE] and [BFO].
@@ -37,31 +37,31 @@ However, the taxonomy is intentionally weekly axiomated in order to facilitate a
 
 
 ## Usage example
-The example below shows how one can document a toxicity computation using the PINK Annotation Schema.
+The example below shows how one can document a toxicity computation using the SSbD Core Ontology.
 
 ![Paracetamol-example](docs/figs/paracetamol-example.svg)
 
 
-[Background]: https://pink-project.github.io/PINK-annotation-schema/docs/background.html
-[provenance]: https://pink-project.github.io/PINK-annotation-schema/docs/background.html#provenance
-[parthood]: https://pink-project.github.io/PINK-annotation-schema/docs/background.html#parthood-relations
-[causal]: https://pink-project.github.io/PINK-annotation-schema/docs/background.html#causal-relations
-[semiotic]: https://pink-project.github.io/PINK-annotation-schema/docs/background.html#semiotic-relations
-[Class-level]: https://pink-project.github.io/PINK-annotation-schema/docs/background.html#class-level-documentation
-[Guiding principles]: https://pink-project.github.io/PINK-annotation-schema/docs/guiding-principles.html
-[Matter module]: https://pink-project.github.io/PINK-annotation-schema/docs/matter.html
-[Models module]: https://pink-project.github.io/PINK-annotation-schema/docs/models.html
+[Background]: https://ssbd-ontology.github.io/core/docs/background.html
+[provenance]: https://ssbd-ontology.github.io/core/docs/background.html#provenance
+[parthood]: https://ssbd-ontology.github.io/core/docs/background.html#parthood-relations
+[causal]: https://ssbd-ontology.github.io/core/docs/background.html#causal-relations
+[semiotic]: https://ssbd-ontology.github.io/core/docs/background.html#semiotic-relations
+[Class-level]: https://ssbd-ontology.github.io/core/docs/background.html#class-level-documentation
+[Guiding principles]: https://ssbd-ontology.github.io/core/docs/guiding-principles.html
+[Matter module]: https://ssbd-ontology.github.io/core/docs/matter.html
+[Models module]: https://ssbd-ontology.github.io/core/docs/models.html
 
-[PINK Annotation Schema]: https://pink-project.github.io/PINK-annotation-schema/widoco/index-en.html
-[Reused terms]: https://pink-project.github.io/PINK-annotation-schema/widoco-reused-terms/index-en.html
-[Matter]: https://pink-project.github.io/PINK-annotation-schema/widoco-matter/index-en.html
-[Models]: https://pink-project.github.io/PINK-annotation-schema/widoco-models/index-en.html
-[CHEMINF descriptors]: https://pink-project.github.io/PINK-annotation-schema/widoco-cheminf/index-en.html
-[Turtle file]: https://pink-project.github.io/PINK-annotation-schema/pink_annotation_schema.ttl
-[Inferred turtle file]: https://pink-project.github.io/PINK-annotation-schema/pink_annotation_schema-inferred.ttl
+[SSbD Core Ontology]: https://ssbd-ontology.github.io/core/widoco/index-en.html
+[Reused terms]: https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html
+[Matter]: https://ssbd-ontology.github.io/core/widoco-matter/index-en.html
+[Models]: https://ssbd-ontology.github.io/core/widoco-models/index-en.html
+[CHEMINF descriptors]: https://ssbd-ontology.github.io/core/widoco-cheminf/index-en.html
+[Turtle file]: https://ssbd-ontology.github.io/core/core.ttl
+[Inferred turtle file]: https://ssbd-ontology.github.io/core/core-inferred.ttl
 
-[PINK classes]: https://pink-project.github.io/PINK-annotation-schema/docs/classes.md
-[pink_annotation_schema.ttl]: https://pink-project.github.io/PINK-annotation-schema/pink_annotation_schema.ttl
+[core classes]: https://ssbd-ontology.github.io/core/docs/classes.md
+[core.ttl]: https://ssbd-ontology.github.io/core/core.ttl
 [Zaccarini *et. al.*]: https://ebooks.iospress.nl/doi/10.3233/FAIA231120
 [semiotic]: https://plato.stanford.edu/entries/peirce-semiotics/
 [DCAT-AP 3.0.1]: https://semiceu.github.io/DCAT-AP/releases/3.0.1/

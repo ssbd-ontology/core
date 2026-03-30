@@ -7,4 +7,4 @@ __pycache__/
 pdm.lock
 widoco-*/
 widoco-1.4.25-jar-with-dependencies_JDK-17.jar
-
+old/

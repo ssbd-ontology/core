@@ -3,7 +3,7 @@
 ## Documentation setup ##
 
 The `ontokit` tool avilable from EMMOntoPy was used to generate the standard documentation and workflows.
-Note that the documentation and workflows are further refined according to the needs of the PINK-annotation-schema.
+Note that the documentation and workflows are further refined according to the needs of the SSbD Core Ontology.
 
 
 To generate the documentation locally please write the command

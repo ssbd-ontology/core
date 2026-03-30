@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/pink/models#> .
+@prefix : <https://w3id.org/ssbd/models#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,7 +10,7 @@
 @prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
 @prefix emmo: <https://w3id.org/emmo/hume#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix pink: <https://w3id.org/pink#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -18,17 +18,17 @@
 @prefix dcatap: <http://data.europa.eu/r5r/> .
 @prefix widoco: <https://w3id.org/widoco/vocab#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/pink/models#> .
+@base <https://w3id.org/ssbd/models#> .
 
-<https://w3id.org/pink/models> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://w3id.org/pink/0.0.1/models> ;
-                                dcterms:abstract "The Models module of PINK Annotation Schema providing a taxonomy for models."@en ;
+<https://w3id.org/ssbd/core/models> rdf:type owl:Ontology ;
+                                owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/models> ;
+                                dcterms:abstract "The Models module of SSbD Core Ontology providing a taxonomy for models."@en ;
                                 dcterms:title "Models"@en ;
                                 widoco:introduction """
-This module is a part of the [PINK Annotation Schema](https://pink-project.github.io/PINK-annotation-schema/widoco/index-en.html).
+This module is a part of the [SSbD Core Ontology](https://ssbd-ontology.github.io/core/widoco/index-en.html).
 A model is a useful simplified description of a selected part of the world.
 
-A figure showing how the PINK Annotation Schema categorise models can be found [here](https://pink-project.github.io/PINK-annotation-schema/docs/models.html).
+A figure showing how the SSbD Core Ontology categorise models can be found [here](https://ssbd-ontology.github.io/core/docs/models.html).
 """@en .
 
 #################################################################
@@ -71,12 +71,12 @@ widoco:introduction rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/pink#hasParticipant
-pink:hasParticipant rdf:type owl:ObjectProperty .
+###  https://w3id.org/ssbd/hasParticipant
+ssbd:hasParticipant rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/pink#implementsModel
-pink:implementsModel rdf:type owl:ObjectProperty .
+###  https://w3id.org/ssbd/implementsModel
+ssbd:implementsModel rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -86,7 +86,7 @@ pink:implementsModel rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/emmo/hume#AnalogicalIcon
 emmo:AnalogicalIcon rdf:type owl:Class ;
-                    rdfs:subClassOf pink:Model ;
+                    rdfs:subClassOf ssbd:Model ;
                     skos:altLabel "AnalogicalIcon"@en ;
                     skos:definition "A model that represents the internal logical structure of the object."@en ;
                     skos:example "A physics equation is replicating the mechanisms internal to the object."@en ,
@@ -99,11 +99,10 @@ emmo:AnalogicalIcon rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#ArtificialIntelligenceModel
 emmo:ArtificialIntelligenceModel rdf:type owl:Class ;
-                            rdfs:subClassOf emmo:DataBasedModel ;
+                            rdfs:subClassOf emmo:MathematicalModel ;
                             rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
                             skos:altLabel "ArtificialIntelligence"@en ;
-                            skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.
-."""@en ;
+                            skos:definition """A machine-based system that perceives its environment, pursues goals, adapts to feedback/change and provides information/takes action."""@en ;
                             skos:prefLabel "ArtificialIntelligenceModel"@en .
 
 
@@ -151,9 +150,9 @@ emmo:DataBasedModel rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#DataProcessing
 emmo:DataProcessing rdf:type owl:Class ;
-                    rdfs:subClassOf pink:Computation ,
+                    rdfs:subClassOf ssbd:Computation ,
                                     [ rdf:type owl:Restriction ;
-                                      owl:onProperty pink:hasParticipant ;
+                                      owl:onProperty ssbd:hasParticipant ;
                                       owl:someValuesFrom emmo:DataProcessingSoftware
                                     ] ;
                     skos:definition "A computation that provides a data output following the elaboration of some input data, using a data processing application."@en ;
@@ -162,9 +161,9 @@ emmo:DataProcessing rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#DataProcessingSoftware
 emmo:DataProcessingSoftware rdf:type owl:Class ;
-                            rdfs:subClassOf pink:Software ,
+                            rdfs:subClassOf ssbd:Software ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty pink:implementsModel ;
+                                              owl:onProperty ssbd:implementsModel ;
                                               owl:someValuesFrom emmo:MathematicalModel
                                             ] ;
                             skos:altLabel "DataProcessingApplication"@en ;
@@ -183,7 +182,7 @@ Hartree-Fock."""@en ;
 
 ###  https://w3id.org/emmo/hume#FunctionalIcon
 emmo:FunctionalIcon rdf:type owl:Class ;
-                    rdfs:subClassOf pink:Model ;
+                    rdfs:subClassOf ssbd:Model ;
                     skos:altLabel "FunctionalIcon"@en ;
                     skos:definition "A model that imitates one representative character of the object. It share external similarities with the object, but not necessarily the same internal logical structure."@en ;
                     skos:example "A data based model is only a functional model, since it provide the same relations between the properties of the object (e.g., it can predict some properties as function of others) but is not considering the internal mechanisms (i.e., it can ignore the physics)."@en ;
@@ -194,7 +193,7 @@ emmo:FunctionalIcon rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#GenerativeAIModel
 emmo:GenerativeAIModel rdf:type owl:Class ;
-                  rdfs:subClassOf pink:DeepLearningModel ;
+                  rdfs:subClassOf ssbd:DeepLearningModel ;
                   skos:altLabel "GenerativeArtificialIntelligenceModel"@en ;
                   skos:definition "An AI model that can generate new content, like text, images or code."@en ;
                   skos:example "Chatbots"@en ;
@@ -203,7 +202,8 @@ emmo:GenerativeAIModel rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MachineLearningModel
 emmo:MachineLearningModel rdf:type owl:Class ;
-                     rdfs:subClassOf pink:CognitionAndLearningModel ;
+                     rdfs:subClassOf ssbd:CognitionAndLearningModel ,
+                                     ssbd:DataBasedModel ;
                      rdfs:seeAlso "Hutter F, Kotthoff L, Vanschoren J (2019) Automated Machine Learning. Springer, New York." ;
                      skos:definition "AI model that learns progressively by discovering implicit patterns and performing an intellectual task without explicit instructions in advance."@en ;
                      skos:prefLabel "MachineLearningModel"@en .
@@ -219,7 +219,7 @@ emmo:MaterialsModel rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#MathematicalModel
 emmo:MathematicalModel rdf:type owl:Class ;
                        rdfs:subClassOf emmo:AnalogicalIcon ,
-                                       pink:Information ;
+                                       ssbd:Information ;
                        skos:definition "An analogical model expressed in mathematical language."@en ;
                        skos:prefLabel "MathematicalModel"@en ;
                        skos:scopeNote """A mathematical model can be defined as a description of a system using mathematical concepts and language to facilitate proper explanation of a system or to study the effects of different components and to make predictions on patterns of behaviour.
@@ -236,7 +236,7 @@ emmo:MesoscopicModel rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#NaturalLanguageProcessingModel
 emmo:NaturalLanguageProcessingModel rdf:type owl:Class ;
-                               rdfs:subClassOf pink:PerceptionModel ;
+                               rdfs:subClassOf ssbd:PerceptionModel ;
                                skos:definition "An AI model that understands and generates human language."@en ;
                                skos:example "Chatbots"@en ;
                                skos:prefLabel "NaturalLanguageProcessingModel"@en .
@@ -272,7 +272,7 @@ emmo:Replica rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#ResemblanceIcon
 emmo:ResemblanceIcon rdf:type owl:Class ;
-                     rdfs:subClassOf pink:Model ;
+                     rdfs:subClassOf ssbd:Model ;
                      skos:altLabel "ResemblanceIcon"@en ;
                      skos:definition "A model that mimics the spatial or temporal shape of the object."@en ;
                      skos:example "A geographical map that imitates the shape of the landscape and its properties at a specific historical time."@en ;
@@ -302,30 +302,30 @@ emmo:StructureManipulationModel rdf:type owl:Class ;
                                 skos:prefLabel "StructureManipulationModel"@en .
 
 
-###  https://w3id.org/pink#AbductiveReasoningModel
-pink:AbductiveReasoningModel rdf:type owl:Class ;
-                        rdfs:subClassOf pink:CognitionAndLearningModel ;
+###  https://w3id.org/ssbd/AbductiveReasoningModel
+ssbd:AbductiveReasoningModel rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                         skos:definition """Identifies the most plausible explanation for incomplete observations.
 Analogical Reasoning"""@en ;
                         skos:prefLabel "AbductiveReasoningModel"@en .
 
 
-###  https://w3id.org/pink#Adaboost
-pink:Adaboost rdf:type owl:Class ;
-              rdfs:subClassOf pink:Classification ;
+###  https://w3id.org/ssbd/Adaboost
+ssbd:Adaboost rdf:type owl:Class ;
+              rdfs:subClassOf ssbd:Classification ;
               skos:definition "A supervised ensemble learning algorithm primarily used for classification and, less commonly, regression tasks."@en ;
               skos:prefLabel "Adaboost"@en .
 
 
-###  https://w3id.org/pink#AnalogicalReasoningModel
-pink:AnalogicalReasoningModel rdf:type owl:Class ;
-                         rdfs:subClassOf pink:CognitionAndLearningModel ;
+###  https://w3id.org/ssbd/AnalogicalReasoningModel
+ssbd:AnalogicalReasoningModel rdf:type owl:Class ;
+                         rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                          skos:definition "Solves new problems by drawing parallels to known scenarios."@en ;
                          skos:prefLabel "AnalogicalReasoningModel"@en .
 
 
-###  https://w3id.org/pink#ArtificialNeuralNetwork
-pink:ArtificialNeuralNetwork rdf:type owl:Class ;
+###  https://w3id.org/ssbd/ArtificialNeuralNetwork
+ssbd:ArtificialNeuralNetwork rdf:type owl:Class ;
                              rdfs:subClassOf emmo:MachineLearningModel ;
                              skos:altLabel "NeuralNetwork"@en ;
                              skos:definition "AI model inspired by the human brain, featuring interconnected layers of artificial neurons that process data to recognize complex patterns, make predictions, and drive machine learning, especially in tasks like computer vision and natural language processing."@en ,
@@ -333,178 +333,179 @@ pink:ArtificialNeuralNetwork rdf:type owl:Class ;
                              skos:prefLabel "ArtificialNeuralNetwork"@en .
 
 
-###  https://w3id.org/pink#Autoencoder
-pink:Autoencoder rdf:type owl:Class ;
-                 rdfs:subClassOf pink:ArtificialNeuralNetwork ,
-                                 pink:DimensionalityReduction ;
+###  https://w3id.org/ssbd/Autoencoder
+ssbd:Autoencoder rdf:type owl:Class ;
+                 rdfs:subClassOf ssbd:ArtificialNeuralNetwork ,
+                                 ssbd:DimensionalityReduction ;
                  skos:definition "Neural networks designed to compress input data into a lower-dimensional bottleneck layer and then reconstruct it, effectively learning efficient, non-linear representations."@en ;
                  skos:prefLabel "Autoencoder"@en .
 
 
-###  https://w3id.org/pink#Bagging
-pink:Bagging rdf:type owl:Class ;
-             rdfs:subClassOf pink:PredictionLearningModel ;
+###  https://w3id.org/ssbd/Bagging
+ssbd:Bagging rdf:type owl:Class ;
+             rdfs:subClassOf ssbd:PredictionLearningModel ;
              skos:definition "A prediction learning meta-algorithm designed to improve the stability and accuracy of predictive models, specifically by reducing variance and helping to avoid overfitting."@en ;
              skos:prefLabel "Bagging"@en .
 
 
-###  https://w3id.org/pink#BehaviorModel
-pink:BehaviorModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/BehaviorModel
+ssbd:BehaviorModel rdf:type owl:Class ;
                    rdfs:subClassOf emmo:ArtificialIntelligenceModel ;
                    skos:definition "AI systems trained on vast, multimodal datasets—including video, sensor data, and action logs—to understand, predict, and simulate human-like actions and complex decision-making processes."@en ;
                    skos:prefLabel "BehaviorModel"@en ;
                    skos:scopeNote "Unlike LLMs that process text, LBMs focus on \"what people do,\" utilizing reinforcement learning to adapt to dynamic environments."@en .
 
 
-###  https://w3id.org/pink#Boosting
-pink:Boosting rdf:type owl:Class ;
-              rdfs:subClassOf pink:PredictionLearningModel ;
+###  https://w3id.org/ssbd/Boosting
+ssbd:Boosting rdf:type owl:Class ;
+              rdfs:subClassOf ssbd:PredictionLearningModel ;
               skos:definition "A prediction learning ensemble model designed to improve the predictive performance of models by converting multiple \"weak learners\" (models with low predictive power, often simple decision trees) into a single \"strong learner\"."@en ;
               skos:prefLabel "Boosting"@en .
 
 
-###  https://w3id.org/pink#Classification
-pink:Classification rdf:type owl:Class ;
-                    rdfs:subClassOf pink:SupervisedLearningModel ;
+###  https://w3id.org/ssbd/Classification
+ssbd:Classification rdf:type owl:Class ;
+                    rdfs:subClassOf ssbd:SupervisedLearningModel ;
                     skos:definition "A supervised learning model that trains models using labeled data to categorize new, unseen data into predefined classes."@en ;
                     skos:prefLabel "Classification"@en .
 
 
-###  https://w3id.org/pink#Clustering
-pink:Clustering rdf:type owl:Class ;
-                rdfs:subClassOf pink:UnsupervicedLearningModel ;
+###  https://w3id.org/ssbd/Clustering
+ssbd:Clustering rdf:type owl:Class ;
+                rdfs:subClassOf ssbd:UnsupervicedLearningModel ;
                 skos:definition "An unsupervised learning model that automatically groups unlabeled data into clusters based on similarities in their features."@en ;
                 skos:prefLabel "Clustering"@en .
 
 
-###  https://w3id.org/pink#CognitionAndLearningModel
-pink:CognitionAndLearningModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/CognitionAndLearningModel
+ssbd:CognitionAndLearningModel rdf:type owl:Class ;
                                rdfs:subClassOf emmo:ArtificialIntelligenceModel ;
                                skos:altLabel "Blends artificial intelligence with cognitive science to simulate human thought processes (sensing, reasoning, and learning) rather than just executing predefined rules."@en ,
                                              "CognitiveAI"@en ;
                                skos:prefLabel "CognitionAndLearningModel"@en .
 
 
-###  https://w3id.org/pink#CollaborativeFiltering
-pink:CollaborativeFiltering rdf:type owl:Class ;
-                            rdfs:subClassOf pink:RecommenderSystem ;
+###  https://w3id.org/ssbd/CollaborativeFiltering
+ssbd:CollaborativeFiltering rdf:type owl:Class ;
+                            rdfs:subClassOf ssbd:RecommenderSystem ;
                             skos:definition "A widely used recommender system model that primarily operates by leveraging similarities between users and items based on past interactions (like ratings or purchases)." ;
                             skos:prefLabel "CollaborativeFiltering"@en .
 
 
-###  https://w3id.org/pink#Computation
-pink:Computation rdf:type owl:Class .
+###  https://w3id.org/ssbd/Computation
+ssbd:Computation rdf:type owl:Class ;
+	         skos:prefLabel "Computation"@en .
 
 
-###  https://w3id.org/pink#ComputerVision
-pink:ComputerVision rdf:type owl:Class ;
-                    rdfs:subClassOf pink:PerceptionModel ;
+###  https://w3id.org/ssbd/ComputerVision
+ssbd:ComputerVision rdf:type owl:Class ;
+                    rdfs:subClassOf ssbd:PerceptionModel ;
                     skos:altLabel "MachineVision"@en ;
                     skos:definition "AI system that is able to acquire, understand and use digital images to recognize activities, objects, and images."@en ;
                     skos:prefLabel "ComputerVision"@en ;
                     skos:scopeNote ""@en .
 
 
-###  https://w3id.org/pink#ContentExtraction
-pink:ContentExtraction rdf:type owl:Class ;
-                       rdfs:subClassOf pink:NaturalLanguageUnderstanding ;
+###  https://w3id.org/ssbd/ContentExtraction
+ssbd:ContentExtraction rdf:type owl:Class ;
+                       rdfs:subClassOf ssbd:NaturalLanguageUnderstanding ;
                        skos:definition "A natural language model tha tinvolves analyzing text to move beyond keyword matching, identifying the \"who, what, and why\" behind user input by extracting entities, themes, and semantic relationships."@en ;
                        skos:prefLabel "ContentExtraction"@en .
 
 
-###  https://w3id.org/pink#ConvolutionNeuralNetwork
-pink:ConvolutionNeuralNetwork rdf:type owl:Class ;
-                              rdfs:subClassOf pink:DeepLearningModel ;
+###  https://w3id.org/ssbd/ConvolutionNeuralNetwork
+ssbd:ConvolutionNeuralNetwork rdf:type owl:Class ;
+                              rdfs:subClassOf ssbd:DeepLearningModel ;
                               skos:definition "A type of deep learning based on feedforward neural network that learns features via filter (or kernel) optimization."@en ;
                               skos:prefLabel "ConvolutionNeuralNetwork"@en .
 
 
-###  https://w3id.org/pink#DecisionTree
-pink:DecisionTree rdf:type owl:Class ;
-                  rdfs:subClassOf pink:Classification ;
+###  https://w3id.org/ssbd/DecisionTree
+ssbd:DecisionTree rdf:type owl:Class ;
+                  rdfs:subClassOf ssbd:Classification ;
                   skos:definition "A non-parametric, supervised learning algorithm used for both classification and regression tasks."@en ;
                   skos:prefLabel "DecisionTree"@en .
 
 
-###  https://w3id.org/pink#DeepFeedForwardNetwork
-pink:DeepFeedForwardNetwork rdf:type owl:Class ;
-                            rdfs:subClassOf pink:DeepLearningModel ;
+###  https://w3id.org/ssbd/DeepFeedForwardNetwork
+ssbd:DeepFeedForwardNetwork rdf:type owl:Class ;
+                            rdfs:subClassOf ssbd:DeepLearningModel ;
                             skos:definition "Foundational deep learning model that approximate complex functions by mapping inputs to outputs through multiple, unidirectional hidden layers."@en ;
                             skos:prefLabel "DeepFeedForwardNetwork"@en .
 
 
-###  https://w3id.org/pink#DeepLearningModel
-pink:DeepLearningModel rdf:type owl:Class ;
-                  rdfs:subClassOf pink:ArtificialNeuralNetwork ;
+###  https://w3id.org/ssbd/DeepLearningModel
+ssbd:DeepLearningModel rdf:type owl:Class ;
+                  rdfs:subClassOf ssbd:ArtificialNeuralNetwork ;
                   skos:definition "Machine learning based on artificial neural networks with multiple layers (often hundreds) that simulate the human brain's structure to learn complex, non-linear patterns from vast datasets."@en ;
                   skos:prefLabel "DeepLearningModel"@en ;
                   skos:scopeNote "Deep learning powers modern AI in image recognition, NLP, and generative models, outperforming traditional algorithms."@en .
 
 
-###  https://w3id.org/pink#DimensionalityReduction
-pink:DimensionalityReduction rdf:type owl:Class ;
+###  https://w3id.org/ssbd/DimensionalityReduction
+ssbd:DimensionalityReduction rdf:type owl:Class ;
                              rdfs:subClassOf emmo:MachineLearningModel ;
                              skos:definition "AI model that transforms high-dimensional datasets into lower-dimensional representations while preserving essential information, mitigating the \"curse of dimensionality."@en ;
                              skos:prefLabel "DimensionalityReduction"@en ;
                              skos:scopeNote ""@en .
 
 
-###  https://w3id.org/pink#DynamicProgramming
-pink:DynamicProgramming rdf:type owl:Class ;
-                        rdfs:subClassOf pink:ReinforcedLearningModel ;
+###  https://w3id.org/ssbd/DynamicProgramming
+ssbd:DynamicProgramming rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:ReinforcedLearningModel ;
                         skos:definition ""@en ,
                                         "A reinforced learning model for solving complex problems by breaking them down into smaller, simpler subproblems and storing the results to avoid redundant calculations."@en ;
                         skos:prefLabel "DynamicProgramming"@en .
 
 
-###  https://w3id.org/pink#EnsembleLearningModel
-pink:EnsembleLearningModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/EnsembleLearningModel
+ssbd:EnsembleLearningModel rdf:type owl:Class ;
                       rdfs:subClassOf emmo:MachineLearningModel ;
                       skos:definition "A machine learning model that combines multiple individual models (often called base learners or weak learners) to produce a single, more accurate, and robust predictive model."@en ;
                       skos:prefLabel "EnsembleLearningModel"@en .
 
 
-###  https://w3id.org/pink#ExpertSystem
-pink:ExpertSystem rdf:type owl:Class ;
-                  rdfs:subClassOf pink:KnowledgeRepresentation ;
+###  https://w3id.org/ssbd/ExpertSystem
+ssbd:ExpertSystem rdf:type owl:Class ;
+                  rdfs:subClassOf ssbd:KnowledgeRepresentation ;
                   skos:definition "AI system that contains manually inputted rules and data to copy human decision-making abilities."@en ;
                   skos:prefLabel "ExpertSystem"@en ;
                   skos:scopeNote ""@en .
 
 
-###  https://w3id.org/pink#ExtraTreesClassifier
-pink:ExtraTreesClassifier rdf:type owl:Class ;
-                          rdfs:subClassOf pink:Classification ,
-                                          pink:EnsembleLearningModel ;
+###  https://w3id.org/ssbd/ExtraTreesClassifier
+ssbd:ExtraTreesClassifier rdf:type owl:Class ;
+                          rdfs:subClassOf ssbd:Classification ,
+                                          ssbd:EnsembleLearningModel ;
                           skos:definition "An ensemble learning model that builds multiple decision trees by choosing random splits for each node, rather than searching for the most discriminative threshold like Random Forest."@en ;
                           skos:prefLabel "ExtraTreesClassifier"@en .
 
 
-###  https://w3id.org/pink#GenerativeAdversarialNetwork
-pink:GenerativeAdversarialNetwork rdf:type owl:Class ;
-                                  rdfs:subClassOf pink:DeepLearningModel ;
+###  https://w3id.org/ssbd/GenerativeAdversarialNetwork
+ssbd:GenerativeAdversarialNetwork rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:DeepLearningModel ;
                                   skos:definition "A deep learning framework where two neural networks, the generator and discriminator, compete against each other to create new, synthetic instances of data (images, music, text) that resemble training data."@en ;
                                   skos:prefLabel "GenerativeAdversarialNetwork"@en .
 
 
-###  https://w3id.org/pink#GraphBasedLearningModel
-pink:GraphBasedLearningModel rdf:type owl:Class ;
-                        rdfs:subClassOf pink:SemiSupervicedLearningModel ;
+###  https://w3id.org/ssbd/GraphBasedLearningModel
+ssbd:GraphBasedLearningModel rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:SemiSupervicedLearningModel ;
                         skos:altLabel "GraphBasedAlgorithm"@en ;
                         skos:definition "A semi-superviced machine learning paradigm that analyzes data structured as nodes and edges, exploiting topological relationships rather than treating data points as independent."@en ;
                         skos:prefLabel "GraphBasedLearningModel"@en .
 
 
-###  https://w3id.org/pink#GraphNeuralNetwork
-pink:GraphNeuralNetwork rdf:type owl:Class ;
-                        rdfs:subClassOf pink:DeepLearningModel ;
+###  https://w3id.org/ssbd/GraphNeuralNetwork
+ssbd:GraphNeuralNetwork rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:DeepLearningModel ;
                         skos:definition "Deep learning model designed to analyze data represented as graphs with nodes (entities) and edges (relationships)."@en ;
                         skos:prefLabel "GraphNeuralNetwork"@en .
 
 
-###  https://w3id.org/pink#HeuristicLearningModel
-pink:HeuristicLearningModel rdf:type owl:Class ;
-                       rdfs:subClassOf pink:ReinforcedLearningModel ;
+###  https://w3id.org/ssbd/HeuristicLearningModel
+ssbd:HeuristicLearningModel rdf:type owl:Class ;
+                       rdfs:subClassOf ssbd:ReinforcedLearningModel ;
                        skos:altLabel "HeuristicMethod"@en ;
                        skos:definition ""@en ,
                                        "An experience-based, discovery-oriented reinforced learning model to problem-solving that uses \"rules of thumb,\" intuition, and mental shortcuts to find satisfactory solutions quickly when optimal ones are impractical."@en ;
@@ -512,309 +513,314 @@ pink:HeuristicLearningModel rdf:type owl:Class ;
                        skos:scopeNote ""@en .
 
 
-###  https://w3id.org/pink#ImageClassification
-pink:ImageClassification rdf:type owl:Class ;
-                         rdfs:subClassOf pink:ComputerVision ;
+###  https://w3id.org/ssbd/ImageClassification
+ssbd:ImageClassification rdf:type owl:Class ;
+                         rdfs:subClassOf ssbd:ComputerVision ;
                          skos:definition "A core computer vision task that assigns a predefined label or category to an entire image based on its visual content."@en ;
                          skos:prefLabel "ImageClassification"@en .
 
 
-###  https://w3id.org/pink#ImageSegmentation
-pink:ImageSegmentation rdf:type owl:Class ;
-                       rdfs:subClassOf pink:ComputerVision ;
+###  https://w3id.org/ssbd/ImageSegmentation
+ssbd:ImageSegmentation rdf:type owl:Class ;
+                       rdfs:subClassOf ssbd:ComputerVision ;
                        skos:definition "Computer vision algorithm for partitioning a digital image into distinct, meaningful regions at the pixel level to identify object boundaries and simplify image analysis."@en ;
                        skos:prefLabel "ImageSegmentation"@en .
 
 
-###  https://w3id.org/pink#Information
-pink:Information rdf:type owl:Class .
+###  https://w3id.org/ssbd/Information
+ssbd:Information rdf:type owl:Class ;
+	         skos:prefLabel "Information"@en .
 
 
-###  https://w3id.org/pink#KnowledgeRepresentation
-pink:KnowledgeRepresentation rdf:type owl:Class ;
-                             rdfs:subClassOf pink:CognitionAndLearningModel ;
+###  https://w3id.org/ssbd/KnowledgeRepresentation
+ssbd:KnowledgeRepresentation rdf:type owl:Class ;
+                             rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                              rdfs:seeAlso "Liu HC, You JX, Li Z, Tian G (2017) Fuzzy Petri nets for knowledge representation and reasoning: A literature review. Eng Appl Artif Intell 60:45–56." ;
-                             skos:definition "Represent facts in the format of reusable knowledge. It combines a series of rules to simulate how a human brain functions through artificial means. It can make inferences and judgments based on knowledge provided by one or more experts and simulate human experts' decision-making process."@en .
+                             skos:definition "Represent facts in the format of reusable knowledge. It combines a series of rules to simulate how a human brain functions through artificial means. It can make inferences and judgments based on knowledge provided by one or more experts and simulate human experts' decision-making process."@en ; 
+                             skos:prefLabel "KnowledgeRepresentation"@en .
 
 
-###  https://w3id.org/pink#LargeLanguageModel
-pink:LargeLanguageModel rdf:type owl:Class ;
-                        rdfs:subClassOf pink:ModernGenerativeAIModel ,
-                                        pink:TextGeneration ;
+###  https://w3id.org/ssbd/LargeLanguageModel
+ssbd:LargeLanguageModel rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:ModernGenerativeAIModel ,
+                                        ssbd:TextGeneration ;
                         skos:altLabel "LLM"@en ;
                         skos:definition "A specialized subset of Generative Artificial Intelligence that is fundamentally defined by its use of transformer architecture (specifically encoders, decoders, or both) to process and generate human-like text by predicting the next token in a sequence."@en ;
                         skos:prefLabel "LargeLanguageModel"@en .
 
 
-###  https://w3id.org/pink#LinearDiscriminantAnalysis
-pink:LinearDiscriminantAnalysis rdf:type owl:Class ;
-                                rdfs:subClassOf pink:DimensionalityReduction ;
+###  https://w3id.org/ssbd/LinearDiscriminantAnalysis
+ssbd:LinearDiscriminantAnalysis rdf:type owl:Class ;
+                                rdfs:subClassOf ssbd:DimensionalityReduction ;
                                 skos:definition "A dimensionality reduction model used in classification tasks to find a feature subspace that maximizes class separability."@en ;
                                 skos:prefLabel "LinearDiscriminantAnalysis"@en .
 
 
-###  https://w3id.org/pink#Logic
-pink:Logic rdf:type owl:Class ;
-           rdfs:subClassOf pink:CognitionAndLearningModel ;
+###  https://w3id.org/ssbd/Logic
+ssbd:Logic rdf:type owl:Class ;
+           rdfs:subClassOf ssbd:CognitionAndLearningModel ;
            skos:altLabel "DeductiveReasoning"@en ;
            skos:definition "A AI system based on generic rules of the reasoning behind different cases of problem-solving."@en ;
            skos:example "If A=B and B=C, then A=C"@en ;
            skos:prefLabel "Logic"@en .
 
 
-###  https://w3id.org/pink#LogisticRegressionModel
-pink:LogisticRegressionModel rdf:type owl:Class ;
-                        rdfs:subClassOf pink:RegressionModel ;
+###  https://w3id.org/ssbd/LogisticRegressionModel
+ssbd:LogisticRegressionModel rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:RegressionModel ;
                         skos:definition "A fundamental supervised machine learning algorithm used for classification, predicting the probability of a categorical dependent variable."@en ;
                         skos:prefLabel "LogisticRegressionModel"@en .
 
 
-###  https://w3id.org/pink#LowDensitySeparationModel
-pink:LowDensitySeparationModel rdf:type owl:Class ;
-                               rdfs:subClassOf pink:SemiSupervicedLearningModel ;
+###  https://w3id.org/ssbd/LowDensitySeparationModel
+ssbd:LowDensitySeparationModel rdf:type owl:Class ;
+                               rdfs:subClassOf ssbd:SemiSupervicedLearningModel ;
                                skos:definition "A semi-supervised model where the decision boundary between classes is placed in a low-density region of the data distribution."@en ;
                                skos:prefLabel "LowDensitySeparationModel"@en .
 
 
-###  https://w3id.org/pink#MachineTranslation
-pink:MachineTranslation rdf:type owl:Class ;
-                        rdfs:subClassOf pink:NaturalLanguageUnderstanding ;
+###  https://w3id.org/ssbd/MachineTranslation
+ssbd:MachineTranslation rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:NaturalLanguageUnderstanding ;
                         skos:definition "A natural language understanding model that enables machine translation to move beyond word-for-word substitution by analyzing intent, context, and semantic meaning."@en ;
                         skos:prefLabel "MachineTranslation"@en .
 
 
-###  https://w3id.org/pink#Model
-pink:Model rdf:type owl:Class .
+###  https://w3id.org/ssbd/Model
+ssbd:Model rdf:type owl:Class ;
+           skos:prefLabel "Model"@en .
 
 
-###  https://w3id.org/pink#ModernGenerativeAIModel
-pink:ModernGenerativeAIModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/ModernGenerativeAIModel
+ssbd:ModernGenerativeAIModel rdf:type owl:Class ;
                         rdfs:subClassOf emmo:GenerativeAIModel ,
-                                        pink:TransformerAI ;
-                        skos:definition "Generative AI based on the transformer architecture."@en ,
-                                        "ModernGenerativeAIModel"@en .
+                                        ssbd:TransformerAI ;
+                        skos:definition "Generative AI based on the transformer architecture."@en ;
+                        skos:prefLabel  "ModernGenerativeAIModel"@en .
 
 
-###  https://w3id.org/pink#MonteCarloLearningModel
-pink:MonteCarloLearningModel rdf:type owl:Class ;
-                        rdfs:subClassOf pink:ReinforcedLearningModel ;
+###  https://w3id.org/ssbd/MonteCarloLearningModel
+ssbd:MonteCarloLearningModel rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:ReinforcedLearningModel ;
                         skos:altLabel "MonteCarloMethod"@en ;
                         skos:definition "A model-free reinforcement learning model that estimates value functions by averaging total returns from complete episodes of experience."@en ;
                         skos:prefLabel "MonteCarloLearningModel"@en .
 
 
-###  https://w3id.org/pink#NaiveBayes
-pink:NaiveBayes rdf:type owl:Class ;
-                rdfs:subClassOf pink:Classification ;
+###  https://w3id.org/ssbd/NaiveBayes
+ssbd:NaiveBayes rdf:type owl:Class ;
+                rdfs:subClassOf ssbd:Classification ;
                 skos:definition "A family of supervised learning algorithms used for classification problems, such as spam detection and sentiment analysis."@en ;
                 skos:prefLabel "NaiveBayes"@en .
 
 
-###  https://w3id.org/pink#NaturalLanguageClassification
-pink:NaturalLanguageClassification rdf:type owl:Class ;
-                                   rdfs:subClassOf pink:NaturalLanguageUnderstanding ;
+###  https://w3id.org/ssbd/NaturalLanguageClassification
+ssbd:NaturalLanguageClassification rdf:type owl:Class ;
+                                   rdfs:subClassOf ssbd:NaturalLanguageUnderstanding ;
                                    skos:definition "A natural language understandig model that automatically assigns predefined categories, tags, or labels to unstructured text."@en ;
                                    skos:prefLabel "NaturalLanguageClassification"@en .
 
 
-###  https://w3id.org/pink#NaturalLanguageGeneration
-pink:NaturalLanguageGeneration rdf:type owl:Class ;
+###  https://w3id.org/ssbd/NaturalLanguageGeneration
+ssbd:NaturalLanguageGeneration rdf:type owl:Class ;
                                rdfs:subClassOf emmo:NaturalLanguageProcessingModel ;
                                skos:definition "A subfield of natural language processing (NLP) that automatically converts structured data or input into human-like written or spoken text."@en ;
                                skos:prefLabel "NaturalLanguageGeneration"@en .
 
 
-###  https://w3id.org/pink#NaturalLanguageUnderstanding
-pink:NaturalLanguageUnderstanding rdf:type owl:Class ;
+###  https://w3id.org/ssbd/NaturalLanguageUnderstanding
+ssbd:NaturalLanguageUnderstanding rdf:type owl:Class ;
                                   rdfs:subClassOf emmo:NaturalLanguageProcessingModel ;
                                   skos:definition "A subfield natural language processing (NLP) that enables machines to comprehend the intent, sentiment, and context behind human language."@en ;
                                   skos:prefLabel "NaturalLanguageUnderstanding"@en .
 
 
-###  https://w3id.org/pink#ObjectDetection
-pink:ObjectDetection rdf:type owl:Class ;
-                     rdfs:subClassOf pink:ComputerVision ;
+###  https://w3id.org/ssbd/ObjectDetection
+ssbd:ObjectDetection rdf:type owl:Class ;
+                     rdfs:subClassOf ssbd:ComputerVision ;
                      skos:definition "A computer vision model that combines image classification and localization to identify, label, and locate multiple objects within images or videos."@en ;
                      skos:prefLabel "ObjectDetection"@en .
 
 
-###  https://w3id.org/pink#PerceptionModel
-pink:PerceptionModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/PerceptionModel
+ssbd:PerceptionModel rdf:type owl:Class ;
                      rdfs:subClassOf emmo:ArtificialIntelligenceModel ;
                      skos:altLabel "KnowledgeBasedInferenceEngine"@en ;
                      skos:definition "AI model that interact with the external world and process sensory information."@en ;
                      skos:prefLabel "PerceptionModel"@en .
 
 
-###  https://w3id.org/pink#PlanningModel
-pink:PlanningModel rdf:type owl:Class ;
-                   rdfs:subClassOf pink:CognitionAndLearningModel ;
+###  https://w3id.org/ssbd/PlanningModel
+ssbd:PlanningModel rdf:type owl:Class ;
+                   rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                    skos:altLabel "Planning"@en ;
                    skos:definition "System for intelligent planning and scheduling of tasks."@en ;
                    skos:prefLabel "PlanningModel"@en .
 
 
-###  https://w3id.org/pink#PredictionLearningModel
-pink:PredictionLearningModel rdf:type owl:Class ;
-                        rdfs:subClassOf pink:SupervisedLearningModel ;
+###  https://w3id.org/ssbd/PredictionLearningModel
+ssbd:PredictionLearningModel rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:SupervisedLearningModel ;
                         skos:altLabel "PredictiveModelling"@en ;
                         skos:definition "A branch of supervised learning that uses historical data, statistical algorithms, and data mining techniques to identify patterns and forecast future outcomes."@en ;
                         skos:prefLabel "PredictionLearningModel"@en .
 
 
-###  https://w3id.org/pink#PrincipalComponentAnalysis
-pink:PrincipalComponentAnalysis rdf:type owl:Class ;
-                                rdfs:subClassOf pink:DimensionalityReduction ;
+###  https://w3id.org/ssbd/PrincipalComponentAnalysis
+ssbd:PrincipalComponentAnalysis rdf:type owl:Class ;
+                                rdfs:subClassOf ssbd:DimensionalityReduction ;
                                 skos:definition "linear feature extraction model that transforms data into a new set of variables (principal components) that maximize variance."@en ;
                                 skos:prefLabel "PrincipalComponentAnalysis"@en .
 
 
-###  https://w3id.org/pink#ProbabilityModel
-pink:ProbabilityModel rdf:type owl:Class ;
-                      rdfs:subClassOf pink:CognitionAndLearningModel ;
+###  https://w3id.org/ssbd/ProbabilityModel
+ssbd:ProbabilityModel rdf:type owl:Class ;
+                      rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                       rdfs:seeAlso "Anastasopoulos A, Chiang D, Duong L (2016) An unsupervised probability model for speech-to-translation alignment of low-resource languages. arXiv preprint arXiv:1609.08139." ;
-                      skos:altLabel "InductiveReasining"@en ;
+                      skos:altLabel "InductiveReasoning"@en ;
                       skos:definition "AI system based on the probabilistic relationships between variables based on mathematical models."@en ;
-                      skos:scopeNote "Generalizes from specific observations, identifying patterns to predict outcomes (probabilistic)."@en .
+                      skos:scopeNote "Generalizes from specific observations, identifying patterns to predict outcomes (probabilistic)."@en ;
+                      skos:prefLabel "ProbabilityModel"@en .
 
 
-###  https://w3id.org/pink#QuestionAnswering
-pink:QuestionAnswering rdf:type owl:Class ;
-                       rdfs:subClassOf pink:NaturalLanguageUnderstanding ;
+###  https://w3id.org/ssbd/QuestionAnswering
+ssbd:QuestionAnswering rdf:type owl:Class ;
+                       rdfs:subClassOf ssbd:NaturalLanguageUnderstanding ;
                        skos:definition "A subfield of natural language processing and information retrieval that focuses on building systems capable of automatically answering questions posed by humans in natural language."@en ;
                        skos:prefLabel "QuestionAnswering"@en .
 
 
-###  https://w3id.org/pink#RandomForest
-pink:RandomForest rdf:type owl:Class ;
-                  rdfs:subClassOf pink:PredictionLearningModel ;
+###  https://w3id.org/ssbd/RandomForest
+ssbd:RandomForest rdf:type owl:Class ;
+                  rdfs:subClassOf ssbd:PredictionLearningModel ;
                   skos:definition "A prediction learning model for classification and regression that builds multiple decision trees during training."@en ;
                   skos:prefLabel "RandomForest"@en .
 
 
-###  https://w3id.org/pink#RecommenderSystem
-pink:RecommenderSystem rdf:type owl:Class ;
-                       rdfs:subClassOf pink:SupervisedLearningModel ;
+###  https://w3id.org/ssbd/RecommenderSystem
+ssbd:RecommenderSystem rdf:type owl:Class ;
+                       rdfs:subClassOf ssbd:SupervisedLearningModel ;
                        skos:altLabel "Recommendation"@en ;
                        skos:definition "A information filtering system using supervised learning to suggest items most relevant to a particular user."@en ;
                        skos:prefLabel "RemommenderSystem"@en .
 
 
-###  https://w3id.org/pink#RecurrentNeuralNetwork
-pink:RecurrentNeuralNetwork rdf:type owl:Class ;
-                            rdfs:subClassOf pink:DeepLearningModel ;
+###  https://w3id.org/ssbd/RecurrentNeuralNetwork
+ssbd:RecurrentNeuralNetwork rdf:type owl:Class ;
+                            rdfs:subClassOf ssbd:DeepLearningModel ;
                             skos:definition "Neural network designed for sequential or time-series data, featuring feedback connections that allow information to persist."@en ;
                             skos:prefLabel "RecurrentNeuralNetwork"@en .
 
 
-###  https://w3id.org/pink#RegressionModel
-pink:RegressionModel rdf:type owl:Class ;
-                rdfs:subClassOf pink:SupervisedLearningModel ;
+###  https://w3id.org/ssbd/RegressionModel
+ssbd:RegressionModel rdf:type owl:Class ;
+                rdfs:subClassOf ssbd:SupervisedLearningModel ;
                 skos:definition "A supervised learning model used to predict continuous, numerical output values based on labeled training data."@en ;
                 skos:prefLabel "RegressionModel"@en .
 
 
-###  https://w3id.org/pink#ReinforcedLearningModel
-pink:ReinforcedLearningModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/ReinforcedLearningModel
+ssbd:ReinforcedLearningModel rdf:type owl:Class ;
                         rdfs:subClassOf emmo:MachineLearningModel ;
                         skos:altLabel "ReinforcementLearning"@en ;
                         skos:definition "A machine learning model where an intelligent \"agent\" learns to make optimal, sequential decisions by interacting with an environment, using trial-and-error to maximize cumulative rewards."@en ;
                         skos:prefLabel "ReinforcedLearningModel"@en .
 
 
-###  https://w3id.org/pink#SelfTrainingModel
-pink:SelfTrainingModel rdf:type owl:Class ;
-                  rdfs:subClassOf pink:SemiSupervicedLearningModel ;
+###  https://w3id.org/ssbd/SelfTrainingModel
+ssbd:SelfTrainingModel rdf:type owl:Class ;
+                  rdfs:subClassOf ssbd:SemiSupervicedLearningModel ;
                   skos:definition "A semi-supervised machine learning model that improves model performance by iteratively labeling unlabeled data."@en ;
                   skos:prefLabel "SelfTrainingModel"@en .
 
 
-###  https://w3id.org/pink#SemiSupervicedLearningModel
-pink:SemiSupervicedLearningModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/SemiSupervicedLearningModel
+ssbd:SemiSupervicedLearningModel rdf:type owl:Class ;
                             rdfs:subClassOf emmo:MachineLearningModel ;
                             skos:definition "A machine learning paradigm that trains models using a small amount of labeled data combined with a large volume of unlabeled data."@en ;
                             skos:prefLabel "SemiSupervicedLearningModel"@en .
 
 
-###  https://w3id.org/pink#SiameseNeuralNetwork
-pink:SiameseNeuralNetwork rdf:type owl:Class ;
-                          rdfs:subClassOf pink:DeepLearningModel ;
+###  https://w3id.org/ssbd/SiameseNeuralNetwork
+ssbd:SiameseNeuralNetwork rdf:type owl:Class ;
+                          rdfs:subClassOf ssbd:DeepLearningModel ;
                           skos:definition "Class of neural network architectures containing two or more identical subnetworks with shared weights."@en ;
                           skos:prefLabel "SiameseNeuralNetwork"@en .
 
 
-###  https://w3id.org/pink#Software
-pink:Software rdf:type owl:Class .
+###  https://w3id.org/ssbd/Software
+ssbd:Software rdf:type owl:Class ;
+              skos:prefLabel "Software"@en .
 
 
-###  https://w3id.org/pink#StepwiseRegressionModel
-pink:StepwiseRegressionModel rdf:type owl:Class ;
-                        rdfs:subClassOf pink:RegressionModel ;
+###  https://w3id.org/ssbd/StepwiseRegressionModel
+ssbd:StepwiseRegressionModel rdf:type owl:Class ;
+                        rdfs:subClassOf ssbd:RegressionModel ;
                         skos:definition "A regression model of fitting regression models in which the choice of predictive variables is carried out by an automatic procedure."@en ;
                         skos:prefLabel "StepwiseRegressionModel"@en .
 
 
-###  https://w3id.org/pink#SupervisedLearningModel
-pink:SupervisedLearningModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/SupervisedLearningModel
+ssbd:SupervisedLearningModel rdf:type owl:Class ;
                         rdfs:subClassOf emmo:MachineLearningModel ;
                         skos:definition "A machine learning paradigm where models are trained using labeled data (input data paired with the correct output) to learn mapping functions that predict outcomes for new, unseen data."@en ;
                         skos:prefLabel "SupervisedLearningModel"@en .
 
 
-###  https://w3id.org/pink#SupportVectorMachine
-pink:SupportVectorMachine rdf:type owl:Class ;
-                          rdfs:subClassOf pink:Classification ;
+###  https://w3id.org/ssbd/SupportVectorMachine
+ssbd:SupportVectorMachine rdf:type owl:Class ;
+                          rdfs:subClassOf ssbd:Classification ;
                           skos:altLabel "SVM"@en ;
                           skos:definition "Supervised machine learning algorithms used for classification, regression, and outlier detection."@en ;
                           skos:prefLabel "SupportVectorMachine"@en .
 
 
-###  https://w3id.org/pink#TDistributedStochasticNeighborEmbedding
-pink:TDistributedStochasticNeighborEmbedding rdf:type owl:Class ;
-                                             rdfs:subClassOf pink:DimensionalityReduction ;
+###  https://w3id.org/ssbd/TDistributedStochasticNeighborEmbedding
+ssbd:TDistributedStochasticNeighborEmbedding rdf:type owl:Class ;
+                                             rdfs:subClassOf ssbd:DimensionalityReduction ;
                                              skos:altLabel "t-SNE"@en ;
                                              skos:definition "A non-linear dimensionality reduction model excellent for visualizing high-dimensional data in 2D or 3D."@en ;
                                              skos:prefLabel "TDistributedStochasticNeighborEmbedding"@en .
 
 
-###  https://w3id.org/pink#TargetTracking
-pink:TargetTracking rdf:type owl:Class ;
-                    rdfs:subClassOf pink:ComputerVision ;
+###  https://w3id.org/ssbd/TargetTracking
+ssbd:TargetTracking rdf:type owl:Class ;
+                    rdfs:subClassOf ssbd:ComputerVision ;
                     skos:definition "A computer vision model for automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy."@en ;
                     skos:prefLabel "TargetTracking"@en .
 
 
-###  https://w3id.org/pink#TextGeneration
-pink:TextGeneration rdf:type owl:Class ;
-                    rdfs:subClassOf pink:NaturalLanguageGeneration ;
+###  https://w3id.org/ssbd/TextGeneration
+ssbd:TextGeneration rdf:type owl:Class ;
+                    rdfs:subClassOf ssbd:NaturalLanguageGeneration ;
                     skos:definition "Natural language subfield that focuses on automatically producing human-like, coherent, and contextually relevant text or speech from structured or unstructured data."@en ;
                     skos:prefLabel "TextGeneration"@en .
 
 
-###  https://w3id.org/pink#TransformerAI
-pink:TransformerAI rdf:type owl:Class ;
-                   rdfs:subClassOf pink:DeepLearningModel ;
+###  https://w3id.org/ssbd/TransformerAI
+ssbd:TransformerAI rdf:type owl:Class ;
+                   rdfs:subClassOf ssbd:DeepLearningModel ;
                    skos:definition "Deep-learning architecture introduced by Google in 2017 that power modern generative AI like ChatGPT and Gemini."@en ;
                    skos:prefLabel "TransformerAI"@en ;
                    skos:scopeNote ""@en .
 
 
-###  https://w3id.org/pink#UnsupervicedLearningModel
-pink:UnsupervicedLearningModel rdf:type owl:Class ;
+###  https://w3id.org/ssbd/UnsupervicedLearningModel
+ssbd:UnsupervicedLearningModel rdf:type owl:Class ;
                           rdfs:subClassOf emmo:MachineLearningModel ;
                           skos:definition "A type of machine learning that analyzes and clusters unlabeled datasets to discover hidden patterns, structures, or relationships without human intervention."@en ;
                           skos:prefLabel "UnsupervicedLearningModel"@en .
 
 
-###  https://w3id.org/pink#XGBoostRegessor
-pink:XGBoostRegessor rdf:type owl:Class ;
-                     rdfs:subClassOf pink:PredictionLearningModel ;
+###  https://w3id.org/ssbd/XGBoostRegessor
+ssbd:XGBoostRegessor rdf:type owl:Class ;
+                     rdfs:subClassOf ssbd:PredictionLearningModel ;
                      skos:definition "An optimized machine learning algorithm that uses an ensemble of decision trees within a gradient boosting framework to predict continuous numerical values."@en ;
                      skos:prefLabel "XGBoostRegressor"@en ;
                      skos:scopeNote "XGBoost Regressor is widely used in data science competitions and real-world applications due to its speed, performance, and features like built-in regularization and automatic handling of missing values."@en .
 
 
-pink:QSARModel a owl:Class ;
+ssbd:QSARModel a owl:Class ;
     rdfs:subClassOf emmo:MathematicalModel ;
     skos:definition "A mathematical model (often a statistical correlation) relating one or more quantitative parameters derived from chemical structure to a quantitative measure of a property or activity (e.g. related to physical-chemical properties, ecotoxicology, environmental fate and transport, and human health hazards). QSARs are quantitative models yielding a continuous or categorical result."@en ;
     skos:prefLabel "QSARModel"@en ;
@@ -829,9 +835,9 @@ pink:QSARModel a owl:Class ;
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( pink:Bagging
-                pink:Boosting
-                pink:RandomForest
+  owl:members ( ssbd:Bagging
+                ssbd:Boosting
+                ssbd:RandomForest
               )
 ] .
 
