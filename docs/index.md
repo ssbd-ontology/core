@@ -31,39 +31,32 @@ Use the published JSON-LD context directly:
 ````{grid} 1 1 2 2
 :gutter: 3
 
-```{grid-item-card} User guide
-:link: document-your-data.html
-:link-type: url
-
-Start with a practical workflow for documenting your resources with table-based templates.
-```
-
-```{grid-item-card} Project overview
-:link: overview.html
-:link-type: url
-
-Read the complete project overview, documentation map, and reference links.
-```
-
-```{grid-item-card} Background
-:link: background.html
+```{grid-item-card} Theoretical Background
+:link: docs/background.html
 :link-type: url
 
 Read the conceptual foundations, including provenance and relation patterns used in the ontology.
 ```
 
-```{grid-item-card} Module pages
-:link: models.html
+```{grid-item-card} Project overview
+:link: docs/overview.html
 :link-type: url
 
-Explore domain branches such as Models, Matter, and Assessments.
+Overview of all the resources in documentation.
 ```
 
-```{grid-item-card} Reference index
-:link: https://ssbd-ontology.github.io/core/core.html
+```{grid-item-card} Detailed description of the modules
+:link: docs/modules.html
 :link-type: url
 
-Browse all ontology terms, properties, and formal definitions.
+The starting page for the individual modules, describing their content and interconnections.
+```
+
+```{grid-item-card} User guide
+:link: docs/document-your-data.html
+:link-type: url
+
+Practical introduction to documenting your resources with table-based templates.
 ```
 
 ````
