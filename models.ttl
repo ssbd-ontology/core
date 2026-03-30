@@ -102,7 +102,7 @@ emmo:ArtificialIntelligenceModel rdf:type owl:Class ;
                             rdfs:subClassOf emmo:MathematicalModel ;
                             rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
                             skos:altLabel "ArtificialIntelligence"@en ;
-                            skos:definition """A machine-based system that preceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.."""@en ;
+                            skos:definition """A machine-based system that perceives its environment, pursues goals, adapts to feedback/change and provides information/takes action."""@en ;
                             skos:prefLabel "ArtificialIntelligenceModel"@en .
 
 
