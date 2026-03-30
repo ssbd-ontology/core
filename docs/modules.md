@@ -36,27 +36,14 @@ These mapping modules are useful for interoperability and integration workflows.
 
 Use the pages below for human-readable descriptions of each module area:
 
-- [Background and design principles](background.html)
-- [Matter module](matter.html)
-- [Models module](models.html)
-- [SSbD assessments module](assessments.html)
-- [Taxonomy page](taxonomy.html)
+- [Background and design principles](background.md)
+- [Matter module](matter.md)
+- [Models module](models.md)
+- [SSbD assessments module](assessments.md)
+- [Taxonomy page](taxonomy.md)
 
 ## Other documentation resources
-- [Classes page](classes.html)
-- [Tools page](tools.html)
-- [Guiding principles](guiding-principles.html)
-- [Project overview](overview.html)
-
-## Ontology source files
-
-If you want the source-of-truth ontology files directly:
-
-- [core.ttl](../core.ttl)
-- [reused-terms.ttl](../reused-terms.ttl)
-- [matter.ttl](../matter.ttl)
-- [models.ttl](../models.ttl)
-- [ssbd-taxonomy.ttl](../ssbd-taxonomy.ttl)
-- [cheminf-mappings.ttl](../cheminf-mappings.ttl)
-- [chebi-mappings.ttl](../chebi-mappings.ttl)
-- [dcat-mappings.ttl](../dcat-mappings.ttl)
+- [Classes page](classes.md)
+- [Tools page](tools.md)
+- [Guiding principles](guiding-principles.md)
+- [Project overview](overview.md)
