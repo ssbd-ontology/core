@@ -11,20 +11,20 @@ At the top it categorise matter into molecular entities (discrete atoms or molec
 Chemical entities are the union of molecular entities and chemical substances (specified composition).
 They comprises the two different ways to represents matter: as single recognizable particle entity (molecular entity) and as a composition of particle entities (substance).
 
-![Top-level of matter branch](https://ssbd-ontology.github.io/core/docs/figs/matter.png)
+[![Top-level of matter branch](https://ssbd-ontology.github.io/core/docs/figs/matter.png)](https://ssbd-ontology.github.io/core/docs/figs/matter.png)
 
 The following two figures shows the categorisation of molecular entities and substances, respectively.
 
-![Molecular entities.](https://ssbd-ontology.github.io/core/docs/figs/molecular-entity.png)
-![Substances.](https://ssbd-ontology.github.io/core/docs/figs/substances.png)
+[![Molecular entities.](https://ssbd-ontology.github.io/core/docs/figs/molecular-entity.png)](https://ssbd-ontology.github.io/core/docs/figs/molecular-entity.png)
+[![Substances.](https://ssbd-ontology.github.io/core/docs/figs/substances.png)](https://ssbd-ontology.github.io/core/docs/figs/substances.png)
 
 Under substances we find materials
 
-![Materials.](https://ssbd-ontology.github.io/core/docs/figs/material.png)
+[![Materials.](https://ssbd-ontology.github.io/core/docs/figs/material.png)](https://ssbd-ontology.github.io/core/docs/figs/material.png)
 
 and the different aggregation states of matter
 
-![State of matter.](https://ssbd-ontology.github.io/core/docs/figs/state-of-matter.png)
+[![State of matter.](https://ssbd-ontology.github.io/core/docs/figs/state-of-matter.png)](https://ssbd-ontology.github.io/core/docs/figs/state-of-matter.png)
 
 ---
 
