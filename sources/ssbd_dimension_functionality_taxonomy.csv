@@ -1,4 +1,4 @@
-@id,@type,subClassOf,subClassOf,prefLabel,label,assesses,description
+@id,@type,subClassOf,subClassOf,prefLabel,altLabel,assesses,definition
 ssbd:FunctionalityAssessment,owl:Class,ssbd:SpecifiedAssessment,,FunctionalityAssessment,Functionality Assessment,ssbd:FunctionalityDimension,The superclass of all SSbD Assessments within the dimenstion functionality.
 ssbd:MechanicalPropertiesAssessment,owl:Class,ssbd:FunctionalityAssessment,,MechanicalPropertiesAssessment,Mechanical Properties Assessment,,Assessment of mechanical properties of chemicals and materials.
 ssbd:ThermalPropertiesAssessment,owl:Class,ssbd:FunctionalityAssessment,,ThermalPropertiesAssessment,Thermal Properties Assessment,,Assessment of thermal properties of chemicals and materials.
@@ -8,9 +8,8 @@ ssbd:BulkModulusAssessment,owl:Class,ssbd:MechanicalPropertiesAssessment,,BulkMo
 ssbd:PoissonsRatioAssessment,owl:Class,ssbd:MechanicalPropertiesAssessment,,PoissonsRatioAssessment,Poisson's Ratio Assessment,,Assessment of Poisson's ratio of materials.
 ssbd:GlassTransitionTemperatureAssessment,owl:Class,ssbd:ThermalPropertiesAssessment,,GlassTransitionTemperatureAssessment,Glass Transition Temperature Assessment,,Assessment of glass transition temperature of materials.
 ssbd:DensityAssessment,owl:Class,ssbd:PhysicalPropertiesAssessment,,DensityAssessment,Density Assessment,,Assessment of density of chemicals and materials.
-ssbd:SsbdDimension,owl:Class,prov:Entity,,SsbdDimension,SSbD Dimension,,"The superclass of all dimensions relevant for SSbD assessments."
-ssbd:FunctionalityDimension,owl:Class,ssbd:SsbdDimension,,FunctionalityDimension,,,The dimension of functionality in the context of SSbD assessments.
-ssbd:SafetyDimension,owl:Class,ssbd:SsbdDimension,,SafetyDimension,Safety Dimension,,The dimension of safety in the context of SSbD assessments.
-ssbd:EnvironmentalDimension,owl:Class,ssbd:SsbdDimension,,EnvironmentalDimension,,,The dimension of environmental impact in the context of SSbD assessments.
-ssbd:SocialDimension,owl:Class,ssbd:SsbdDimension,,SocialDimension,,,The dimension of social impact in the context of SSbD assessments.
-ssbd:EconomicDimension,owl:Class,ssbd:SsbdDimension,,EconomicDimension,Economic Dimension,,The dimension of economic impact in the context of SSbD assessments.
+ssbd:FunctionalityDimension,owl:Class,ssbd:SSbDDimension,,FunctionalityDimension,,,The dimension of functionality in the context of SSbD assessments.
+ssbd:SafetyDimension,owl:Class,ssbd:SSbDDimension,,SafetyDimension,Safety Dimension,,The dimension of safety in the context of SSbD assessments.
+ssbd:EnvironmentalDimension,owl:Class,ssbd:SSbDDimension,,EnvironmentalDimension,,,The dimension of environmental impact in the context of SSbD assessments.
+ssbd:SocialDimension,owl:Class,ssbd:SSbDDimension,,SocialDimension,,,The dimension of social impact in the context of SSbD assessments.
+ssbd:EconomicDimension,owl:Class,ssbd:SSbDDimension,,EconomicDimension,Economic Dimension,,The dimension of economic impact in the context of SSbD assessments.
