@@ -203,7 +203,7 @@ emmo:GenerativeAIModel rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#MachineLearningModel
 emmo:MachineLearningModel rdf:type owl:Class ;
                      rdfs:subClassOf ssbd:CognitionAndLearningModel ,
-                                     ssbd:DataBasedModel ;
+                                     emmo:DataBasedModel ;
                      rdfs:seeAlso "Hutter F, Kotthoff L, Vanschoren J (2019) Automated Machine Learning. Springer, New York." ;
                      skos:definition "AI model that learns progressively by discovering implicit patterns and performing an intellectual task without explicit instructions in advance."@en ;
                      skos:prefLabel "MachineLearningModel"@en .
@@ -536,7 +536,7 @@ ssbd:Information rdf:type owl:Class ;
 ssbd:KnowledgeRepresentation rdf:type owl:Class ;
                              rdfs:subClassOf ssbd:CognitionAndLearningModel ;
                              rdfs:seeAlso "Liu HC, You JX, Li Z, Tian G (2017) Fuzzy Petri nets for knowledge representation and reasoning: A literature review. Eng Appl Artif Intell 60:45–56." ;
-                             skos:definition "Represent facts in the format of reusable knowledge. It combines a series of rules to simulate how a human brain functions through artificial means. It can make inferences and judgments based on knowledge provided by one or more experts and simulate human experts' decision-making process."@en ; 
+                             skos:definition "Represent facts in the format of reusable knowledge. It combines a series of rules to simulate how a human brain functions through artificial means. It can make inferences and judgments based on knowledge provided by one or more experts and simulate human experts' decision-making process."@en ;
                              skos:prefLabel "KnowledgeRepresentation"@en .
 
 
