@@ -70,13 +70,11 @@ prov:used a owl:ObjectProperty ;
     rdfs:label "used" ;
     rdfs:range prov:Entity ;
     rdfs:subPropertyOf prov:wasInfluencedBy ;
-    owl:propertyChainAxiom (prov:qualifiedUsage
-        prov:entity
-    ) ;
+    #owl:propertyChainAxiom (prov:qualifiedUsage prov:entity) ;
+    #prov:qualifiedForm prov:Usage, prov:qualifiedUsage ;
     prov:category "starting-point" ;
     prov:component "entities-activities" ;
-    prov:inverse "wasUsedBy" ;
-    prov:qualifiedForm prov:Usage, prov:qualifiedUsage .
+    prov:inverse "wasUsedBy" .
 
 prov:wasAssociatedWith
     a owl:ObjectProperty ;
@@ -86,13 +84,11 @@ prov:wasAssociatedWith
     rdfs:label "wasAssociatedWith" ;
     rdfs:range prov:Agent ;
     rdfs:subPropertyOf prov:wasInfluencedBy ;
-    owl:propertyChainAxiom (prov:qualifiedAssociation
-        prov:agent
-    ) ;
+    #owl:propertyChainAxiom (prov:qualifiedAssociation prov:agent) ;
+    #prov:qualifiedForm prov:Association, prov:qualifiedAssociation ;
     prov:category "starting-point" ;
     prov:component "agents-responsibility" ;
-    prov:inverse "wasAssociateFor" ;
-    prov:qualifiedForm prov:Association, prov:qualifiedAssociation .
+    prov:inverse "wasAssociateFor" .
 
 prov:wasAttributedTo
     a owl:ObjectProperty ;
@@ -102,14 +98,12 @@ prov:wasAttributedTo
     rdfs:label "wasAttributedTo" ;
     rdfs:range prov:Agent ;
     rdfs:subPropertyOf prov:wasInfluencedBy ;
-    owl:propertyChainAxiom (prov:qualifiedAttribution
-        prov:agent
-    ) ;
+    #owl:propertyChainAxiom (prov:qualifiedAttribution prov:agent) ;
+    #prov:qualifiedForm prov:Attribution, prov:qualifiedAttribution ;
     prov:category "starting-point" ;
     prov:component "agents-responsibility" ;
     prov:definition "Attribution is the ascribing of an entity to an agent."@en ;
-    prov:inverse "contributed" ;
-    prov:qualifiedForm prov:Attribution, prov:qualifiedAttribution .
+    prov:inverse "contributed" .
 
 prov:wasInformedBy
     a owl:ObjectProperty ;
@@ -119,13 +113,11 @@ prov:wasInformedBy
     rdfs:label "wasInformedBy" ;
     rdfs:range prov:Activity ;
     rdfs:subPropertyOf prov:wasInfluencedBy ;
-    owl:propertyChainAxiom (prov:qualifiedCommunication
-        prov:activity
-    ) ;
+    #owl:propertyChainAxiom (prov:qualifiedCommunication prov:activity) ;
+    #prov:qualifiedForm prov:Communication, prov:qualifiedCommunication ;
     prov:category "starting-point" ;
     prov:component "entities-activities" ;
-    prov:inverse "informed" ;
-    prov:qualifiedForm prov:Communication, prov:qualifiedCommunication .
+    prov:inverse "informed" .
 
 
 ### Other Annotations
@@ -250,11 +242,12 @@ dcterms:accessRights a owl:ObjectProperty ;
     rdfs:domain dcat:Resource ;
     rdfs:range dcterms:RightsStatement .
 
-dcat:accessURL a owl:ObjectProperty ;
+dcat:accessURL a owl:AnnotationProperty ;
     skos:prefLabel "accessURL"@en ;
     skos:definition "A URL that gives access to a Distribution of the Dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred."@en ;
     vann:usageNote "The resource at the access URL may contain information about how to get the Dataset."@en ;
-    rdfs:domain dcat:Distribution .
+    rdfs:domain dcat:Distribution ;
+    rdfs:range xsd:anyURI .
 
 dcterms:creator a owl:ObjectProperty ;
     skos:prefLabel "creator"@en ;
@@ -321,7 +314,7 @@ dcat:downloadURL a owl:DatatypeProperty ;
 
 # Commented out the range, since we do not define dcterms:MediaTypeOrExtent
 # In practice we use dcat:mediaType if the format is defined in IANA, otherwise we use dcterms:format with a free-text format string.
-dcterms:format a owl:ObjectProperty ;
+dcterms:format a owl:AnnotationProperty ;
     skos:prefLabel "format"@en ;
     skos:definition "The file format of the Distribution."@en ;
     vann:usageNote "dcat:mediaType SHOULD be used if the type of the distribution is defined by [IANA](https://www.w3.org/TR/vocab-dcat-3/#bib-iana-media-types)."@en ;
@@ -363,22 +356,14 @@ rdfs:seeAlso a owl:AnnotationProperty ;
         rdfs:label "seeAlso" ;
         rdfs:comment "Further information about the subject resource." .
 
-# Commented out domain and range. Referring to rdfs:Class doesn't say anything, but may create trouble for the toolings.
-rdfs:subClassOf a owl:ObjectProperty ;
-        rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
-        rdfs:label "subClassOf" ;
-        rdfs:comment "The subject is a subclass of a class." .
-        #rdfs:range rdfs:Class ;
-        #rdfs:domain rdfs:Class .
-
 # Commented out range. skos:Concept is very general and can in principle be anything.
 # We don't loose any meaning by removing the range, but avoid having skos:Concept in the root of the taxonomy.
-dcat:theme a owl:ObjectProperty ;
+dcat:theme a owl:AnnotationProperty ;
   rdfs:comment "A main category of the resource. A resource can have multiple themes."@en ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
   rdfs:label "theme"@en ;
   #rdfs:range skos:Concept ;
-  rdfs:subPropertyOf dcterms:subject ;
+  #rdfs:subPropertyOf dcterms:subject ;
   skos:definition "A main category of the resource. A resource can have multiple themes."@en ;
   skos:editorialNote "Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending."@en ;
   skos:scopeNote "The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog."@en .

@@ -793,6 +793,12 @@ dcterms:RightsStatement rdfs:subClassOf foaf:Document .
 
 dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 #prov:wasInfluencedBy rdfs:subPropertyOf :causal .
+dcterms:creator rdfs:subPropertyOf :wasAttributedTo .
+ddoc:curator rdfs:subPropertyOf :wasAttributedTo .
+dm:datamodel rdfs:subPropertyOf :hasDescription .
+dcterms:accessRights rdfs:subPropertyOf :hasProperty .
+dcterms:license rdfs:subPropertyOf :hasProperty .
+
 
 
 #################################################################
