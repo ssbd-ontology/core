@@ -14,6 +14,7 @@
 @prefix accr: <http://publications.europa.eu/resource/authority/access-right/> .
 @prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
 @prefix dm: <https://w3id.org/emmo/domain/datamodel#> .
+@prefix emmo: <https://w3id.org/emmo/hume#> .
 @prefix ssbd: <https://w3id.org/ssbd#> .
 
 <https://w3id.org/ssbd/core/reused-terms> rdf:type owl:Ontology ;
@@ -241,6 +242,19 @@ dm:DataModel a owl:Class ;
     skos:prefLabel "DataModel"@en ;
     skos:definition "A data model describing the datum/properties of a dataset."@en .
 
+emmo:IntentionalAgent a owl:Class ;
+    rdfs:subClassOf prov:Agent ;
+    skos:prefLabel "IntentionalAgent"@en ;
+    skos:definition "An agent that is driven by the intention to reach a defined objective in driving a process."@en .
+    skos:scopeNote "Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation."@en .
+
+emmo:UnntentionalAgent a owl:Class ;
+    rdfs:subClassOf prov:Agent ;
+    skos:prefLabel "UnintentionalAgent"@en ;
+    skos:definition "An agent that is driven by the law of physics rather than the intention to reach a defined objective."@en ;
+    skos:example "A catalyst."@en .
+
+
 ### Properties
 
 dcterms:accessRights a owl:ObjectProperty ;
@@ -395,7 +409,6 @@ dcat:version a owl:AnnotationProperty ;
     skos:definition "Version indicator (name or identifier) of a resource."@en ;
     vann:usageNote "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]'s Best Practice 7: Provide a version indicator."@en ;
     rdfs:domain dcat:Resource .
-
 
 
 ### Individuals
