@@ -248,7 +248,7 @@ emmo:IntentionalAgent a owl:Class ;
     skos:definition "An agent that is driven by the intention to reach a defined objective in driving a process."@en .
     skos:scopeNote "Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation."@en .
 
-emmo:UnntentionalAgent a owl:Class ;
+emmo:UnintentionalAgent a owl:Class ;
     rdfs:subClassOf prov:Agent ;
     skos:prefLabel "UnintentionalAgent"@en ;
     skos:definition "An agent that is driven by the law of physics rather than the intention to reach a defined objective."@en ;
