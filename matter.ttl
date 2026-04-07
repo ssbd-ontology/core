@@ -4,7 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix accr: <http://publications.europa.eu/resource/authority/access-right/> .
+@prefix rights: <http://publications.europa.eu/resource/authority/access-right/> .
 @prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix ddoc: <https://w3id.org/emmo/application/datadoc#> .
@@ -280,7 +280,7 @@ emmo:Material rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience
 emmo:MaterialByClassicalMaterialsScience rdf:type owl:Class ;
-                                         rdfs:subClassOf emmo:Material ; 
+                                         rdfs:subClassOf emmo:Material ;
                                          skos:prefLabel "MaterialByClassicalMaterialsScience"@en .
 
 
@@ -300,7 +300,7 @@ emmo:MaterialByForceResponse rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MaterialByFunction
 emmo:MaterialByFunction rdf:type owl:Class ;
-                        rdfs:subClassOf emmo:Material ; 
+                        rdfs:subClassOf emmo:Material ;
                         skos:prefLabel "MaterialByFunction"@en .
 
 
@@ -326,7 +326,7 @@ emmo:MaterialByStructure rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#MaterialByType
 emmo:MaterialByType rdf:type owl:Class ;
                     rdfs:subClassOf emmo:MaterialByClassicalMaterialsScience ;
-                    skos:definition "Categorisation of matter by its type."@en ; 
+                    skos:definition "Categorisation of matter by its type."@en ;
                     skos:prefLabel "MaterialByType"@en .
 
 
