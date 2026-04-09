@@ -21,7 +21,7 @@ Figure 1. Cartoon illustrating a request for a pen (concept) and the return of a
 
 Similarly, we can ask for a specific type of experiment or a type of dataset. 
 However, this requires that the concepts of these types are well documented so that both machines and humans can help us find the right resources. 
-In Figure 2 below, examples of resources, both classes (concepts) and individuals, related to running and experiment/instrument, are shown.
+In Figure 2 below, examples of resources, both classes (concepts) and individuals, related to running and experiment/instrument are shown.
 
 <a href="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png" alt="Cartoon illustrating the concept and individuals related to an experiment."/></a>  
 Figure 2. Cartoon illustrating some concepts and individuals related to of experiment. Image created partly with ChatGPT (OpenAI), 2026.
@@ -57,7 +57,7 @@ In Figure 4 below some examples of tables and how they are related are shown.
   (NB: in the Google spreadsheets this column is called identifier, but it is the same as @id. Please use @id in your own spreadsheets.).
 - There are one (or more) @type columns, that indicate whether the resource is a class or an individual, and
   also what kind of class an individual is a member of (for example, a dataset type, a software tool, etc.).
-  For classes, only one @type column is allowed with value `owl:Class`. Individuals can have more than ont type.
+  For classes, only one @type column is allowed with value `owl:Class`. Individuals can have more than one type.
 - For classes, there is a column subClassOf, which indicates the parent class that this class is a
   subclass of. Several `subClassOf` columns are permitted.
   For individuals, there is no subClassOf column because individuals are not subclasses of anything.
