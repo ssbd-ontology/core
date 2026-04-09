@@ -9,7 +9,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+-*'
       - master
       - main
-      - restructure_docs
+      - fix_failing_wf
 
 permissions:
   contents: write
@@ -214,8 +214,8 @@ jobs:
       # We also add .nojekyll file to public/ to avoid running jekyll on
       # GitHub Pages.
       run: |
-        cat core.ttl docs/docterms.ttl > build/core.ttl
-        ontokit docs --imported --recursive --ontology-file=build/core.ttl --docs-dir=docs .
+        cat core.ttl docs/docterms.ttl > core_w_docterms.ttl
+        ontokit docs --imported --recursive --ontology-file=core_w_docterms.ttl --docs-dir=docs .
         touch public/.nojekyll
 
     - name: Copy ontologies, figures and context to public
