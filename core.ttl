@@ -803,6 +803,7 @@ ddoc:curator rdfs:subPropertyOf :wasAttributedTo .
 dm:datamodel rdfs:subPropertyOf :hasDescription .
 dcterms:accessRights rdfs:subPropertyOf :hasProperty .
 dcterms:license rdfs:subPropertyOf :hasProperty .
+dcat:theme rdfs:subPropertyOf :hasProperty .
 
 
 

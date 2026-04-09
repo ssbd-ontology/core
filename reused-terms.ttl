@@ -358,7 +358,7 @@ rdfs:seeAlso a owl:AnnotationProperty ;
 
 # Commented out range. skos:Concept is very general and can in principle be anything.
 # We don't loose any meaning by removing the range, but avoid having skos:Concept in the root of the taxonomy.
-dcat:theme a owl:AnnotationProperty ;
+dcat:theme a owl:ObjectProperty ;
   rdfs:comment "A main category of the resource. A resource can have multiple themes."@en ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
   rdfs:label "theme"@en ;
