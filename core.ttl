@@ -815,6 +815,13 @@ emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
 
 dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 #prov:wasInfluencedBy rdfs:subPropertyOf :causal .
+dcterms:creator rdfs:subPropertyOf :wasAttributedTo .
+ddoc:curator rdfs:subPropertyOf :wasAttributedTo .
+dm:datamodel rdfs:subPropertyOf :hasDescription .
+dcterms:accessRights rdfs:subPropertyOf :hasProperty .
+dcterms:license rdfs:subPropertyOf :hasProperty .
+dcat:theme rdfs:subPropertyOf :hasProperty .
+
 
 
 #################################################################
