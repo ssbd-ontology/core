@@ -246,7 +246,7 @@ emmo:IntentionalAgent a owl:Class ;
     rdfs:subClassOf prov:Agent ;
     skos:prefLabel "IntentionalAgent"@en ;
     skos:definition "An agent that is driven by the intention to reach a defined objective in driving a process."@en ;
-    skos:scopeNote "Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation."@en .
+    skos:scopeNote "Intentionality applies in general to all agents that have the capacity to decide to act in driving a process according to a motivation. However, as today, this applies normally to humans, including human-based organisations."@en .
 
 emmo:UnintentionalAgent a owl:Class ;
     rdfs:subClassOf prov:Agent ;
