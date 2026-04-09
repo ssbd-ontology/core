@@ -31,3 +31,15 @@ REFERENCE_INDICES:
     imported: false
     recursive: false
     subsections: classes
+  - ontology_file: matter.ttl
+    title: Matter Index
+    docfile: matter.rst
+    imported: false
+    recursive: false
+    subsections: classes
+  - ontology_file: cheminf.ttl
+    title: CHEMINF descriptors Index
+    docfile: cheminf.rst
+    imported: false
+    recursive: false
+    subsections: classes

@@ -26,6 +26,7 @@
     owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/core> ;
     owl:imports
         <https://w3id.org/ssbd/core/0.0.1/reused-terms> ,
+        <https://w3id.org/ssbd/core/0.0.1/contributors> ,
         <https://w3id.org/ssbd/core/0.0.1/matter> ,
         <https://w3id.org/ssbd/core/0.0.1/models> ,
         <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings> ,
@@ -38,12 +39,16 @@ The SSbD Core Ontology expands on the annotation schema provided by tripper, whi
 A reference documentation of terms reused from standard W3C vocabularies can be found https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html.
 """@en ;
     dcterms:bibliographicCitation "xxx" ;
-    dcterms:contributor <https://orcid.org/0000-0003-4250-4584> ;
     dcterms:created "2025-09-08" ;
     dcterms:creator <https://orcid.org/0000-0002-1560-809X> ,
                     <https://orcid.org/0000-0001-8869-3718> ,
                     <https://orcid.org/0000-0002-1849-5246> ,
-                    <https://orcid.org/0000-0002-8053-8198> ;
+                    <https://orcid.org/0000-0002-8053-8198> ,
+                    <https://orcid.org/0000-0002-2705-2068> ,
+                    <https://orcid.org/0000-0002-0719-4907> ,
+                    <https://orcid.org/0000-0002-6396-0848> ,
+                    <https://orcid.org/0000-0002-3372-4801> ;
+    dcterms:contributor <https://orcid.org/0000-0003-4250-4584> ;
     dcterms:hasFormat <https://www.w3.org/TR/turtle/> ;
     #dcterms:issued "xxxx-xx-xxT00:00:00"^^xsd:dateTime ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
