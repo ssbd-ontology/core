@@ -317,9 +317,24 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     skos:scopeNote "The activity is through overlapped by the agent."@en ;
     skos:definition "Relates an activity to an agent that had some (unspecified) responsibility for the occurence of this activity."@en .
 
-:hasSoftware rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+:performedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf [ owl:inverseOf :participatesTo ], :wasAssociatedWith ;
+    skos:prefLabel "performedBy"@en ;
+    skos:altLabel "hasIntentionalAgent"@en ;
+    rdfs:range emmo:IntentionalAgent ;
+    skos:definition "Relates an activity to an intentional agent that drives the process."@en .
+
+:performedWith rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+    rdfs:subPropertyOf [ owl:inverseOf :participatesTo ], :wasAssociatedWith ;
+    skos:prefLabel "performedWith"@en ;
+    skos:altLabel "hasUnintentionalAgent"@en ;
+    rdfs:range emmo:UnintentionalAgent ;
+    skos:definition "Relates an activity to an unintentional agent that drives the process."@en .
+
+:hasSoftware rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+    rdfs:subPropertyOf :performedBy ;
     skos:prefLabel "hasSoftware"@en ;
+    skos:altLabel "hasSoftwareAgent"@en ;
     rdfs:domain :Computation ;
     rdfs:range :Software ;
     skos:definition "Relates a computation to the software used to perform the computation."@en .
@@ -794,6 +809,8 @@ foaf:Organization rdfs:subClassOf :Object .
 foaf:Person rdfs:subClassOf :Object .
 foaf:Project rdfs:subClassOf prov:Entity .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
+emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
+emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
 :SsbdDimension rdfs:subClassOf prov:Entity .
 
 dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
