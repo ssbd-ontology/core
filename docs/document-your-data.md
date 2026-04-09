@@ -7,7 +7,7 @@ This is a step-by-step guide to help you document your resource with the SSbD on
 A resource is the thing you want to describe and share in a structured way.
 In practice, a resource can be a dataset, a software tool, a workflow, a model, or another documented digital object. Note that a resource can be either a class (a concept) or an individual (a specific instance of a concept). That means that you can document a type of experiment or
 simulation (a class) as well as a specific experiment or simulation (an individual).
-Documenting your resource means capturing the key metadata about it in a clear and reusable format. This is important so that existin datasets, sodtware tools and other resources can be easily discovered, understood, and reused by others. It also allows you to connect your resource to other related resources, which can enable new insights and applications.  
+Documenting your resource means capturing the key metadata about it in a clear and reusable format. This is important so that existing datasets, sodtware tools and other resources can be easily discovered, understood, and reused by others. It also allows you to connect your resource to other related resources, which can enable new insights and applications.  
 The goal of this guide is to help you capture the key metadata for that resource in a clear and reusable format.
 
 ## Quick introduction to classes and individuals
@@ -16,12 +16,13 @@ When documenting data, we need to describe both classes (concepts of things) and
 For example, there is a difference between the concept of a pen and one specific pen.
 If I ask my child to bring me a pen, I do not care which pen she brings, but she understands the concept and brings an actual individual pen.
 
-<a href="https://ssbd-ontology.github.io/core/docs/figs/concept_pen_cartoon.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/concept_pen_cartoon.png" alt="Cartoon illustrating a request for a pen and the return of an individual pen" width="400"/></a>
+<a href="https://ssbd-ontology.github.io/core/docs/figs/concept_pen_cartoon.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/concept_pen_cartoon.png" alt="Cartoon illustrating a request for a pen and the return of an individual pen" width="400"/></a><br>
 Figure 1. Cartoon illustrating a request for a pen (concept) and the return of an individual pen. Image created partly with ChatGPT (OpenAI), 2026.
 
 Similarly, we can ask for a specific type of experiment or a type of dataset. 
 However, this requires that the concepts of these types are well documented so that both machines and humans can help us find the right resources. 
 In Figure 2 below, examples of resources, both classes (concepts) and individuals, related to running and experiment/instrument, are shown.
+
 <a href="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png" alt="Cartoon illustrating the concept and individuals related to an experiment."/></a>  
 Figure 2. Cartoon illustrating some concepts and individuals related to of experiment. Image created partly with ChatGPT (OpenAI), 2026.
 
@@ -40,18 +41,20 @@ we have documented what the inputs and outputs of the various simulations are.
 ## Documenting your resources in practice
 
 It is important to realise that we often want to document both existing datasets and concepts (such as activities) that generate datasets, as well as types of datasets that do not yet exist.
-We are here presenting examples of how to document dataset types (as concepts), computation software (as individuals), indicators (as concepts), and computations (as concepts) with tables.
-The tables can then be used to generate RDF data that can be queried and integrated with other resources.
+We are here presenting examples of how to document dataset types (as concepts), computation software (as individuals), indicators (as concepts), and computations (as concepts) in tables, where each row documents a class or individual.
+The tables can then be used to generate a knowledge graph (expressed with RDF)  that can be queried and integrated with other resources.
 
 In Figure 4 below some examples of tables and how they are related are shown.
 
 <a href="https://ssbd-ontology.github.io/core/docs/figs/tables.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/tables.png" alt="Examples of tables for documenting resources and how they are related."/></a>
 
-How to construct the tables:
+### How to construct the tables
+- Each row in the table documents a resource. 
+- The column labels in the header row are mapped to properties in an ontology (and belong therefore to a controlled vocabulary).
 - There is a column @id, which is the unique identifier for the resource.
-  For classes, this is a URI that identifies the concept.
-  For individuals, this is a URI that identifies the specific instance.
-  (NB: in the google spread sheets this column is callsed identifier, but it is the same as @id. Please use @id in your own spreadsheets.).
+  For classes, this is an IRI ([Internationalized Resource Identifier]) that uniquely identifies the concept in an ontology.
+  For individuals, this is an IRI that identifies the specific instance.
+  (NB: in the Google spreadsheets this column is called identifier, but it is the same as @id. Please use @id in your own spreadsheets.).
 - There is a column @type, which indicates whether the resource is a class or an individual, and
   also what kind of class or individual it is (for example, a dataset type, a software tool, etc.).
   If it is a class, the @type column should have the value owl:Class. If it is an individual, the @type column should have the concept that this individual is an instance of (for example, pink:Dataset, pink:Software, etc.).
@@ -60,12 +63,12 @@ How to construct the tables:
   For individuals, there is no subClassOf column because individuals are not subclasses of anything.
 - For both classes and individuals, there are columns for the properties that we want to document (for example, label, description, hasInput, hasOutput, etc.).
   The properties that we want to document depend on the type of resource we are documenting and the use case we have in mind.
-  The Object Properties, Annotation Properties and Data Properties in the ssbd core ontology are a good starting point for deciding which properties to document for each resource.
+  The Object Properties, Annotation Properties and Data Properties in the SSbD Core Ontology are a good starting point for deciding which properties to document for each resource.
   They can be found in the [Reference Documentation].
   (In the google spread sheets, the columns are filled with chosen properties.)
-- The values in the table should be filled according to the definitions of the properties in the ssbd core ontology.
+- The values in the table should be filled according to the definitions of the properties in the SSbD Core Ontology.
     - All annotation properties should be filled with a literal value (for example, a string or a number).
-    - All object properties should be filled with a URI that identifies another resource (for example, a dataset type, a software tool, etc.). Here it is important to make sure that you refer to something within the correct range.
+    - All object properties should be filled with a IRI that identifies another resource (for example, a dataset type, a software tool, etc.). Here it is important to make sure that you refer to something within the correct range.
 
 ## Table templates
 
@@ -73,8 +76,10 @@ Below are some example templates that are used for documenting ssbd related reso
 Note that these are just examples and that you can create your own templates based on the properties that are relevant for your use case. 
 The important thing is to make sure that the columns are named according to the specifications above and that the values are filled according to the definitions of the properties in the ssbd core ontology.
 
-Another point: here prefixes (the term before the colon) are set to 'pink', because these tables are examples within the pink project. 
-Typically, each provider, even wihtin a project has their own prefix (which is short for their own namespace).
+
+> [!NOTE]
+> Another point: here prefixes (the term before the colon) are set to 'pink', because these tables are examples within the pink project. 
+> Typically, each provider, even wihtin a project has their own prefix (which is short for their own namespace).
 
 ### 1. Dataset type table (class-level documentation)
 
@@ -113,3 +118,4 @@ Typically, each provider, even wihtin a project has their own prefix (which is s
 
 
 [Reference Documentation]: https://ssbd-ontology.github.io/core/docs/reference-documentation.html
+[Internationalized Resource Identifier]: https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier
