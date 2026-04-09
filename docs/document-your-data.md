@@ -36,7 +36,8 @@ workflows that connects datasets and simulations. This is more generally shown b
 
 <a href="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png" alt="Concepts of datasets and simulations can be connected together in a workflow because we have documented what the inputs and outputs of the various simulations are."/></a><br>
 Figure 3. Concepts of datasets and simulations can be connected together in a workflow because
-we have documented what the inputs and outputs of the various simulations are.  
+we have documented what the inputs and outputs of the various simulations are. Note that the relations between classes, i.e. the concepts, must be implemented as
+restrictions and each `hasInput` and `hasOutput` should actually include a qualifier e.g. `hasInput some`. 
 
 ## Documenting your resources in practice
 
