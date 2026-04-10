@@ -215,7 +215,7 @@ jobs:
       # We also add .nojekyll file to public/ to avoid running jekyll on
       # GitHub Pages.
       run: |
-        cat core.ttl docs/docterms.ttl > core.ttl
+        cat core.ttl docs/docterms.ttl >> core.ttl
         ontokit docs --imported --recursive --ontology-file=core.ttl --docs-dir=docs .
         touch public/.nojekyll
 
