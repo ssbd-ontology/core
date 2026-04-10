@@ -26,6 +26,7 @@
     owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/core> ;
     owl:imports
         <https://w3id.org/ssbd/core/0.0.1/reused-terms> ,
+        <https://w3id.org/ssbd/core/0.0.1/contributors> ,
         <https://w3id.org/ssbd/core/0.0.1/matter> ,
         <https://w3id.org/ssbd/core/0.0.1/models> ,
         <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings> ,
@@ -38,12 +39,16 @@ The SSbD Core Ontology expands on the annotation schema provided by tripper, whi
 A reference documentation of terms reused from standard W3C vocabularies can be found https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html.
 """@en ;
     dcterms:bibliographicCitation "xxx" ;
-    dcterms:contributor <https://orcid.org/0000-0003-4250-4584> ;
     dcterms:created "2025-09-08" ;
     dcterms:creator <https://orcid.org/0000-0002-1560-809X> ,
                     <https://orcid.org/0000-0001-8869-3718> ,
                     <https://orcid.org/0000-0002-1849-5246> ,
-                    <https://orcid.org/0000-0002-8053-8198> ;
+                    <https://orcid.org/0000-0002-8053-8198> ,
+                    <https://orcid.org/0000-0002-2705-2068> ,
+                    <https://orcid.org/0000-0002-0719-4907> ,
+                    <https://orcid.org/0000-0002-6396-0848> ,
+                    <https://orcid.org/0000-0002-3372-4801> ;
+    dcterms:contributor <https://orcid.org/0000-0003-4250-4584> ;
     dcterms:hasFormat <https://www.w3.org/TR/turtle/> ;
     #dcterms:issued "xxxx-xx-xxT00:00:00"^^xsd:dateTime ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
@@ -296,9 +301,24 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     skos:scopeNote "The activity is through overlapped by the agent."@en ;
     skos:definition "Relates an activity to an agent that had some (unspecified) responsibility for the occurence of this activity."@en .
 
-:hasSoftware rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+:performedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf [ owl:inverseOf :participatesTo ], :wasAssociatedWith ;
+    skos:prefLabel "performedBy"@en ;
+    skos:altLabel "hasIntentionalAgent"@en ;
+    rdfs:range emmo:IntentionalAgent ;
+    skos:definition "Relates an activity to an intentional agent that drives the process."@en .
+
+:performedWith rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+    rdfs:subPropertyOf [ owl:inverseOf :participatesTo ], :wasAssociatedWith ;
+    skos:prefLabel "performedWith"@en ;
+    skos:altLabel "hasUnintentionalAgent"@en ;
+    rdfs:range emmo:UnintentionalAgent ;
+    skos:definition "Relates an activity to an unintentional agent that drives the process."@en .
+
+:hasSoftware rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+    rdfs:subPropertyOf :performedBy ;
     skos:prefLabel "hasSoftware"@en ;
+    skos:altLabel "hasSoftwareAgent"@en ;
     rdfs:domain :Computation ;
     rdfs:range :Software ;
     skos:definition "Relates a computation to the software used to perform the computation."@en .
@@ -815,9 +835,19 @@ foaf:Organization rdfs:subClassOf :Object .
 foaf:Person rdfs:subClassOf :Object .
 foaf:Project rdfs:subClassOf prov:Entity .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
+emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
+emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
+:SsbdDimension rdfs:subClassOf prov:Entity .
 
 dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 #prov:wasInfluencedBy rdfs:subPropertyOf :causal .
+dcterms:creator rdfs:subPropertyOf :wasAttributedTo .
+ddoc:curator rdfs:subPropertyOf :wasAttributedTo .
+dm:datamodel rdfs:subPropertyOf :hasDescription .
+dcterms:accessRights rdfs:subPropertyOf :hasProperty .
+dcterms:license rdfs:subPropertyOf :hasProperty .
+dcat:theme rdfs:subPropertyOf :hasProperty .
+
 
 
 #################################################################

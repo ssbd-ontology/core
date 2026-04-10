@@ -208,7 +208,16 @@ jobs:
             #--namespace-filter=ssbd
 
     - name: Generate Ontokit documentation to public
-      run: ontokit docs --imported --recursive --ontology-file=core.ttl --docs-dir=docs . && touch public/.nojekyll
+      # We concatenate the core ontology with docterms.ttl to include terms
+      # in the documentation that we don't want in the ontology.
+      # Note that this change to core.ttl is only local.
+      #
+      # We also add .nojekyll file to public/ to avoid running jekyll on
+      # GitHub Pages.
+      run: |
+        cat core.ttl docs/docterms.ttl > core.ttl
+        ontokit docs --imported --recursive --ontology-file=core.ttl --docs-dir=docs .
+        touch public/.nojekyll
 
     - name: Copy ontologies, figures and context to public
       run: |

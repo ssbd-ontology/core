@@ -1,0 +1,10 @@
+
+# This file will be concatinated to core.ttl to add additional terms
+# we don't want to include in the ontology to the documentation.
+
+rdfs:subClassOf a owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+    rdfs:label "subClassOf" ;
+    rdfs:comment "The subject is a subclass of a class." ;
+    rdfs:range rdfs:Class ;
+    rdfs:domain rdfs:Class .
