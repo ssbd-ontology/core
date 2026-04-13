@@ -841,7 +841,7 @@ foaf:Project rdfs:subClassOf prov:Entity .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
 emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
 emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
-:SsbdDimension rdfs:subClassOf prov:Entity .
+:SSbDDimension rdfs:subClassOf prov:Entity .
 
 dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .
 #prov:wasInfluencedBy rdfs:subPropertyOf :causal .
