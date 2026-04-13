@@ -539,11 +539,11 @@ vann:usageNote rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/ssbd/Assessment
-:Assessment rdf:type owl:Class , [
-        a owl:Restriction ;
-        owl:onProperty :assesses ;
-        owl:someValuesFrom :Property
-    ] ;
+:Assessment rdf:type owl:Class ;#[
+    #    a owl:Restriction ;
+    #    owl:onProperty :assesses ;
+    #    owl:someValuesFrom :Property
+    #] ;
     rdfs:subClassOf :Process ;
     skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process." ;
     skos:prefLabel "Assessment" .
