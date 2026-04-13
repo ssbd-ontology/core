@@ -58,7 +58,7 @@ td.save(ts)
 ts.add_triples(
     [
         (SSBD, RDF.type, OWL.Ontology),
-        (SSBD, OWL.versionIRI, f"https://w3id.org/ssbd/{VER}/ssbd-taxonomy"),
+        (SSBD, OWL.versionIRI, f"https://w3id.org/ssbd/core/{VER}/ssbd-taxonomy"),
         (SSBD, DCTERMS.title, en("SSbD Taxonomy")),
         (
             SSBD,

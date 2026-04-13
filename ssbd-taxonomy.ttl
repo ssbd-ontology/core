@@ -473,7 +473,7 @@ ssbd:YoungsModulusAssessment a owl:Class ;
 <https://w3id.org/ssbd/core/ssbd-taxonomy> a owl:Ontology ;
     dcterms:abstract "Taxonomy useful for categorizing activities and outputs of activities within the SSbD framework."@en ;
     dcterms:title "SSbD Taxonomy"@en ;
-    owl:versionIRI <https://w3id.org/ssbd/0.0.1/ssbd-taxonomy> .
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy> .
 
 ssbd:EconomicSustainabilityAssessment a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
