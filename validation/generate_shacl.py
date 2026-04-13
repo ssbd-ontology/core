@@ -13,6 +13,7 @@ from typing import Dict, List, Optional, Tuple, Set
 from rdflib import Graph, Namespace, URIRef, Literal, BNode
 from rdflib import RDF, RDFS, OWL, XSD
 from rdflib.namespace import split_uri
+from rdflib.collection import Collection
 
 
 # Namespace definitions
@@ -25,17 +26,18 @@ FOAF = Namespace("http://xmlns.com/foaf/0.1/")
 PROV = Namespace("http://www.w3.org/ns/prov#")
 EMMO = Namespace("https://w3id.org/emmo#")
 
-# Namespaces to include for shape generation
-# Classes from these namespaces will have shapes generated
-TARGET_NAMESPACES = [
-    str(SSBD),
-    str(EMMO),
-    str(PROV),
-    str(DCAT),
-    str(FOAF),
-    str(DCTERMS),
-    str(SKOS),
-]
+# Namespaces to include for shape generation.
+# The string values are shape-name prefixes used to disambiguate shape classes
+# from different vocabularies that share the same local name (e.g. dcat:Dataset vs ssbd:Dataset).
+TARGET_NAMESPACES = {
+    str(SSBD): "Ssbd",
+    str(EMMO): "Emmo",
+    str(PROV): "Prov",
+    str(DCAT): "Dcat",
+    str(FOAF): "Foaf",
+    str(DCTERMS): "Dcterms",
+    str(SKOS): "Skos",
+}
 
 
 def get_namespace(uri: URIRef) -> str:
@@ -52,7 +54,9 @@ def generate_shape_uri(class_uri: URIRef) -> URIRef:
     """
     Generate a shape URI for a given class.
 
-    Uses SSbD namespace for all shapes with format: ClassNameShape
+    Uses SSbD namespace for all shapes with format: PrefixClassNameShape.
+    The namespace prefix is included to avoid collisions between classes
+    from different vocabularies that share the same local name.
 
     Parameters:
         class_uri: The class URI to generate a shape for.
@@ -60,8 +64,13 @@ def generate_shape_uri(class_uri: URIRef) -> URIRef:
     Returns:
         Shape URI in SSbD namespace.
     """
+    namespace = get_namespace(class_uri)
     local_name = get_local_name(class_uri)
-    return SSBD[f"{local_name}Shape"]
+    shape_prefix = TARGET_NAMESPACES.get(namespace)
+    if shape_prefix is None:
+        raise ValueError(f"No shape prefix configured for namespace: {namespace}")
+
+    return SSBD[f"{shape_prefix}{local_name}Shape"]
 
 
 def load_ontology(onto_dir: Path) -> Graph:
@@ -358,7 +367,14 @@ def create_property_shape(
         if is_datatype(constraints.range_uri):
             shapes_graph.add((prop_shape, SH.datatype, constraints.range_uri))
         else:
-            shapes_graph.add((prop_shape, SH["class"], constraints.range_uri))
+            # For object properties allow either a typed instance or a typed or untyped IRI reference
+            class_constraint = BNode()
+            shapes_graph.add((class_constraint, SH["class"], constraints.range_uri))
+            iri_constraint = BNode()
+            shapes_graph.add((iri_constraint, SH.nodeKind, SH.IRI))
+            or_list = BNode()
+            Collection(shapes_graph, or_list, [class_constraint, iri_constraint])
+            shapes_graph.add((prop_shape, SH["or"], or_list))
 
     return prop_shape
 

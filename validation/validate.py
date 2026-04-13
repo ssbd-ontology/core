@@ -6,7 +6,7 @@ Provides functions to validate JSON-LD data representing SSbD resources
 """
 import json
 from pathlib import Path
-from typing import Optional, Tuple, Union
+from typing import Optional, Tuple, Union, cast
 
 from pyshacl import validate as shacl_validate
 from rdflib import Graph
@@ -81,12 +81,16 @@ def validate(
     if ssbd_shapes_file.exists():
         shapes_graph.parse(ssbd_shapes_file, format="turtle")
 
-    conforms, _results_graph, results_text = shacl_validate(
-        data_graph,
-        shacl_graph=shapes_graph,
-        inference="rdfs",
-        abort_on_first=False,
+    conforms, _results_graph, results_text = cast(
+        Tuple[bool, object, str],
+        shacl_validate(
+            data_graph,
+            shacl_graph=shapes_graph,
+            inference="rdfs",
+            abort_on_first=False,
+        ),
     )
+
     return conforms, results_text
 
 
