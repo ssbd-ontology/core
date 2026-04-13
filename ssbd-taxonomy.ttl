@@ -13,10 +13,8 @@ ssbd:AcidificationImpactAssessment a owl:Class ;
     skos:scopeNote "This is a LCA impact category." .
 
 ssbd:AcuteToxicityAssessment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/alternative-methods-toxicity-testing/validated-test-methods-health-effects/acute-toxicity_en> ;
-            owl:onProperty dcterms:source ],
-        ssbd:HazardIdentificationHumanHealth ;
+    rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/alternative-methods-toxicity-testing/validated-test-methods-health-effects/acute-toxicity_en" ;
     skos:altLabel "Acute Toxicity Assessment"@en ;
     skos:definition "Assessment of the general toxic effects of a single dose or multiple doses of a chemical or product, within 24 hours by a particular route (oral, dermal, inhalation), and that occur during a subsequent 21-day observation period (to permit appearance of toxicity in susceptible organ system)."@en ;
     skos:prefLabel "AcuteToxicityAssessment"@en .
@@ -28,10 +26,8 @@ ssbd:AmbientAirQualityAssessment a owl:Class ;
     skos:prefLabel "AmbientAirQualityAssessment"@en .
 
 ssbd:AquaticToxicityFreshwater a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/alternative-methods-toxicity-testing/validated-test-methods-health-effects/aquatic-toxicity_en> ;
-            owl:onProperty dcterms:source ],
-        ssbd:EnvironmentalRiskAssessment ;
+    rdfs:subClassOf ssbd:EnvironmentalRiskAssessment ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/projects-and-activities/reference-and-measurement/european-union-reference-laboratories/eu-reference-laboratory-alternatives-animal-testing-eurl-ecvam/alternative-methods-toxicity-testing/validated-test-methods-health-effects/aquatic-toxicity_en" ;
     skos:altLabel "Aquatic Toxicity Freshwater"@en ;
     skos:definition "Assessment of effects of a chemical on organisms living in freshwater; generally determined with organisms representing the three trophic levels: 1) Algae or plants, representing \"primary producers\"; 2) Invertebrates (e.g. crustaceans such as Daphnia spp.), representing \"primary consumers/secondary producers\"; 3) Vertebrates (usually fish), representing \"secondary consumers\"."@en ;
     skos:prefLabel "AquaticToxicityFreshwater"@en .
@@ -57,10 +53,8 @@ ssbd:BiodegradabilityAssessment a owl:Class ;
     skos:prefLabel "BiodegradabilityAssessment"@en .
 
 ssbd:BiodiversityAssessment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://doi.org/10.3732/ajb.1000296> ;
-            owl:onProperty dcterms:source ],
-        ssbd:EnvironmentalSustainabilityAssessment ;
+    rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
+    dcterms:source "https://doi.org/10.3732/ajb.1000296" ;
     skos:altLabel "Biodiversity Assessment"@en ;
     skos:definition "Biodiversity assessments typically consist of identifying species and evaluating one or more metrics: (1) species richness (number of species), (2) evenness (ratio of various species), and/or (3) character diversity (phenotypic difference)."@en ;
     skos:prefLabel "BiodiversityAssessment"@en .
@@ -72,10 +66,8 @@ ssbd:BulkModulusAssessment a owl:Class ;
     skos:prefLabel "BulkModulusAssessment"@en .
 
 ssbd:CarcinogenicityAssessment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://doi.org/10.1039/9781782623724> ;
-            owl:onProperty dcterms:source ],
-        ssbd:HazardIdentificationHumanHealth ;
+    rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
+    dcterms:source "https://doi.org/10.1039/9781782623724" ;
     skos:altLabel "Carcinogenicity Assessment"@en ;
     skos:definition """Test(s) carried out over a sufficient time to detect any possible carcinogenic effect of a
 test substance."""@en ;
@@ -216,10 +208,8 @@ ssbd:HazardCharacterisationEnvironment a owl:Class ;
     skos:scopeNote "Can also be labelled as dose-response assessment." .
 
 ssbd:HazardCharacterisationHumanHealth a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://doi.org/10.1039/9781782623724> ;
-            owl:onProperty dcterms:source ],
-        ssbd:HazardAssessmentHumanHealth ;
+    rdfs:subClassOf ssbd:HazardAssessmentHumanHealth ;
+    dcterms:source "https://doi.org/10.1039/9781782623724" ;
     skos:altLabel "Hazard Characterisation Human Health"@en ;
     skos:definition "Hazard characterisation establishes the relationship between the dose or concentration of a chemical and the severity or probability of adverse effects. This includes identifying critical effects and determining reference tolerable exposure limit."@en ;
     skos:prefLabel "HazardCharacterisationHumanHealth"@en ;
@@ -281,19 +271,15 @@ ssbd:MarineEutrophicationImpactAssessment a owl:Class ;
     skos:scopeNote "This is a LCA impact category." .
 
 ssbd:MutagenicityAssessment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://doi.org/10.1039/9781782623724> ;
-            owl:onProperty dcterms:source ],
-        ssbd:HazardIdentificationHumanHealth ;
+    rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
+    dcterms:source "https://doi.org/10.1039/9781782623724" ;
     skos:altLabel "Mutagenicity Assessment"@en ;
     skos:definition "Evaluating chemicals for mutagenic activity, i.e., chemicals which can induce (or generate) heritable changes (mutations) in the genotype in a cell as a consequence of alterations or loss of genes or chromosomes (or parts thereof)."@en ;
     skos:prefLabel "MutagenicityAssessment"@en .
 
 ssbd:NeurotoxicityAssessment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://www.oecd.org/en/publications/guidance-document-for-neurotoxicity-testing_16d23a96-en.html> ;
-            owl:onProperty dcterms:source ],
-        ssbd:HazardIdentificationHumanHealth ;
+    rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
+    dcterms:source "https://www.oecd.org/en/publications/guidance-document-for-neurotoxicity-testing_16d23a96-en.html" ;
     skos:altLabel "Neurotoxicity Assessment"@en ;
     skos:definition "Assessing the adverse effects of chemicals or substances on the structure and function of the nervous system."@en ;
     skos:prefLabel "NeurotoxicityAssessment"@en ;
@@ -348,10 +334,8 @@ ssbd:RenewableEnergyConsumptionAssessment a owl:Class ;
     skos:prefLabel "RenewableEnergyConsumptionAssessment"@en .
 
 ssbd:ReproductiveToxicityAssessment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://www.oecd.org/en/publications/guidance-document-on-mammalian-reproductive-toxicity-testing-and-assessment_d2631d22-en.html> ;
-            owl:onProperty dcterms:source ],
-        ssbd:HazardIdentificationHumanHealth ;
+    rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
+    dcterms:source "https://www.oecd.org/en/publications/guidance-document-on-mammalian-reproductive-toxicity-testing-and-assessment_d2631d22-en.html" ;
     skos:altLabel "Reproductive Toxicity Assessment"@en ;
     skos:definition "Assessing if a chemical or substance interferes with reproductive function, including  fertility, and development of the foetus and embryo."@en ;
     skos:prefLabel "ReproductiveToxicityAssessment"@en ;
@@ -387,10 +371,8 @@ ssbd:ResourceAssessmentWater a owl:Class ;
     skos:scopeNote "This is a LCA impact category." .
 
 ssbd:SedimentToxicity a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://www.sciencedirect.com/topics/earth-and-planetary-sciences/sediment-toxicity> ;
-            owl:onProperty dcterms:source ],
-        ssbd:EnvironmentalRiskAssessment ;
+    rdfs:subClassOf ssbd:EnvironmentalRiskAssessment ;
+    dcterms:source "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/sediment-toxicity" ;
     skos:altLabel "Sediment Toxicity"@en ;
     skos:definition "Assessment of effects of pollutants present in sediments on benthic aquatic organisms."@en ;
     skos:prefLabel "SedimentToxicity"@en .
@@ -437,10 +419,8 @@ ssbd:TerrestrialEutrophicationImpactAssessment a owl:Class ;
     skos:scopeNote "This is a LCA impact category." .
 
 ssbd:TerrestrialToxicity a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://www.sciencedirect.com/science/chapter/edited-volume/pii/B9780128137246000293> ;
-            owl:onProperty dcterms:source ],
-        ssbd:EnvironmentalRiskAssessment ;
+    rdfs:subClassOf ssbd:EnvironmentalRiskAssessment ;
+    dcterms:source "https://www.sciencedirect.com/science/chapter/edited-volume/pii/B9780128137246000293" ;
     skos:altLabel "Terrestrial Toxicity"@en ;
     skos:definition "Assessment of effects of a chemical on ecological compartments (soil, sediment) and biological receptors that spend a significant amount of time in a terrestrial environment (invertebrates, reptiles, mammals, birds, plants)."@en ;
     skos:prefLabel "TerrestrialToxicity"@en .
@@ -623,20 +603,16 @@ ssbd:SustainabilityAssessment a owl:Class ;
     skos:scopeNote "The superclass of all SSbD Assessments within sustainability dimension." .
 
 ssbd:EnvironmentalRiskAssessment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://doi.org/10.1039/9781782623724> ;
-            owl:onProperty dcterms:source ],
-        ssbd:SafetyAssessment ;
+    rdfs:subClassOf ssbd:SafetyAssessment ;
+    dcterms:source "https://doi.org/10.1039/9781782623724" ;
     skos:altLabel "Environmental Risk Assessment"@en ;
     skos:definition "Estimate of the probability that harm will result from a defined exposure to a substance in an environmental medium."@en ;
     skos:prefLabel "EnvironmentalRiskAssessment"@en ;
     skos:scopeNote "Environmental Risk Assessment (ERA) focuses on the risks that chemicals pose to ecological organisms, including plants and forests." .
 
 ssbd:ExposureAssessmentEnvironment a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://doi.org/10.1351/PAC-REC-08-07-09> ;
-            owl:onProperty dcterms:source ],
-        ssbd:SafetyAssessment ;
+    rdfs:subClassOf ssbd:SafetyAssessment ;
+    dcterms:source "https://doi.org/10.1351/PAC-REC-08-07-09" ;
     skos:altLabel "Exposure Assessment Environment"@en ;
     skos:definition "Description of the presence and characteristics of contact between a contaminant and an ecological entity of concern, and a summary of this information in an exposure profile."@en ;
     skos:prefLabel "ExposureAssessmentEnvironment"@en .
@@ -668,19 +644,15 @@ ssbd:SafetyAssessment a owl:Class ;
     skos:scopeNote "The superclass of all SSbD Assessments within the safety dimension." .
 
 ssbd:LifeCycleImpactAssessmentCategory a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://www.iso.org/obp/ui/en/#iso:std:iso:14040:ed-2:v1:en> ;
-            owl:onProperty dcterms:source ],
-        ssbd:EnvironmentalSustainabilityAssessment ;
+    rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
+    dcterms:source "https://www.iso.org/obp/ui/en/#iso:std:iso:14040:ed-2:v1:en" ;
     skos:altLabel "Life Cycle Assessment Impact Category"@en ;
     skos:definition "A LCA impact category is a class representing environmental issues of concern (including resource use) to which life cycle inventory analysis results may be assigned based on some common quality or qualities."@en ;
     skos:prefLabel "LifeCycleAssessmentImpactCategory"@en .
 
 ssbd:HazardIdentificationHumanHealth a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue <https://www.kemi.se/en/publications/guidance-on-national-chemicals-control-for-other-countries/hazard-and-risk-assessment-of-chemicals---an-introduction> ;
-            owl:onProperty dcterms:source ],
-        ssbd:HazardAssessmentHumanHealth ;
+    rdfs:subClassOf ssbd:HazardAssessmentHumanHealth ;
+    dcterms:source "https://www.kemi.se/en/publications/guidance-on-national-chemicals-control-for-other-countries/hazard-and-risk-assessment-of-chemicals---an-introduction" ;
     skos:altLabel "Hazard Identification Human Health"@en ;
     skos:definition "Hazard identification is the process of determining whether exposure to a substance can cause a specific adverse effect on human health. Adverse effect is defined as change in morphology, physiology, growth, reproduction, development, or lifespan of an organism which results in impairment of functional capacity or impairment of capacity to compensate for additional stress or increased susceptibility to the harmful effects of other environmental influences."@en ;
     skos:prefLabel "HazardIdentificationHumanHealth"@en .
