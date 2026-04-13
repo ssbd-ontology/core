@@ -93,7 +93,7 @@ jobs:
         cp *ttl build/ 
         cp catalog-v001.xml build/
         cat core.ttl docs/docterms.ttl > build/core.ttl
-        ontokit docs --imported --recursive --ontology-file=core.ttl --docs-dir=docs .
+        ontokit docs --imported --recursive --ontology-file=build/core.ttl --docs-dir=docs .
         touch public/.nojekyll
 
 
