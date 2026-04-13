@@ -10,6 +10,7 @@ on:
       - master
       - main
       - ssb-taxonomy
+      - ssb-taxonomy-*
 
 permissions:
   contents: write
@@ -90,7 +91,7 @@ jobs:
       #
       # Documentation is generated from build into public
       run: |
-        cp *ttl build/ 
+        cp *ttl build/
         cp catalog-v001.xml build/
         cat core.ttl docs/docterms.ttl > build/core.ttl
         ontokit docs --imported --recursive --ontology-file=build/core.ttl --docs-dir=docs .
@@ -110,7 +111,7 @@ jobs:
             --namespace="dcatap:http://data.europa.eu/r5r/" \
             ${ONTOLOGY_NAME}.ttl \
             public/${ONTOLOGY_NAME}.ttl
-            
+
     - name: Create inferred ontology
       run: |
         bin/robot reason \
@@ -207,7 +208,7 @@ jobs:
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
             --set-prefix=ssbd:https://w3id.org/ssbd/ \
-            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel# 
+            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel#
             #--namespace-filter=ssbd
 
     - name: Generate keywords file
@@ -219,7 +220,7 @@ jobs:
             --set-prefix=emmo:https://w3id.org/emmo/hume# \
             --set-prefix=cheminf:http://semanticscience.org/resource/ \
             --set-prefix=ssbd:https://w3id.org/ssbd/ \
-            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel# 
+            --set-prefix=dm:https://w3id.org/emmo/domain/datamodel#
             #--namespace-filter=ssbd
 
     - name: Copy ontologies, figures and context to public
