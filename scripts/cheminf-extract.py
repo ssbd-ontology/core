@@ -12,6 +12,7 @@ from pathlib import Path
 from tripper import DCTERMS, OWL, RDF, RDFS, SKOS, Literal, Triplestore
 from tripper.utils import en
 from tripper.datadoc.utils import iriname
+from tripper.errors import UniquenessError
 
 # Ontology description
 ontology_iri = "https://w3id.org/ssbd/cheminf"
@@ -121,6 +122,23 @@ ignored_terms = [
     "obo:RO_0000057",   #
     "semonto:is_output_of",  # is output of
 ]
+
+
+# Annotations mappings for consistent use of Dublin Core and SKOS
+annotation_mappings = {
+    "http://purl.org/dc/elements/1.1/creator": DCTERMS.creator,
+    "http://purl.org/dc/elements/1.1/date": DCTERMS.date,
+    "http://purl.org/dc/elements/1.1/description": SKOS.definition,
+    DCTERMS.description: SKOS.definition,  # The SSbD ontology elucidate classes with skos.definition
+    "http://purl.org/dc/elements/1.1/source": DCTERMS.source,
+    "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/source": DCTERMS.source,
+}
+lang_mappings = [
+    SKOS.definition,
+    SKOS.prefLabel,
+    SKOS.altLabel,
+]
+
 
 
 rootdir = Path(__file__).resolve().parent.parent
@@ -246,6 +264,32 @@ for s, p, o in ts.triples(predicate=RDFS.label):
         isclass = ts.has(s, RDF.type, OWL.Class)
         triples.append((s, SKOS.prefLabel, en(mklabel(label, isclass))))
 ts.add_triples(triples)
+
+
+# Update class annotations for consistent use of Dublin Core and SKOS
+triples_remove = []
+triples_add = []
+for pred_from, pred_to in annotation_mappings.items():
+    triples_remove.extend(ts.triples(predicate=pred_from))
+    triples_add.extend(ts.triples(predicate=pred_to))
+for s, p, o in triples_remove:
+    ts.remove(s, p, o)
+ts.add_triples(triples_add)
+
+
+# Add skos:definition to classes that only has an rdfs:label
+triples = []
+for s, p, o in ts.triples(predicate=RDF.type, object=OWL.Class):
+    if not ts.has(s, SKOS.definition) and ts.has(s, RDFS.label):
+        try:
+            definition = ts.value(s, RDFS.label)
+        except UniquenessError:
+            pass
+        else:
+            if " " in definition
+            definition = definition[0].upper() + definition[1:]
+            ts.add(s, SKOS.definition = en(definition)
+
 
 
 # Write cheminf.ttl
