@@ -404,13 +404,6 @@ ssbd:SoilQualityAssessment a owl:Class ;
     skos:definition "Assessing the concentration of pollutants in soil."@en ;
     skos:prefLabel "SoilQualityAssessment"@en .
 
-ssbd:SSbDDimension a owl:Class ;
-    rdfs:subClassOf prov:Entity ;
-    skos:altLabel "Safe and Sustainable by Design Dimension"@en ;
-    skos:definition "Safe and sustainable by design (SSbD) can be described as an approach that focuses on providing a function (or service), while avoiding onerous environmental footprints and chemical properties that may be harmful to human health or the environment.  In essence, the SSbD approach aims to identifying and minimizing, at an early phase of the innovation process, the impacts concerning safety for humans and the environment and for sustainability, minimizing the environmental footprint, in particular regarding climate change and resource use and, protecting ecosystems and biodiversity, taking a lifecycle perspective. The SSbD approach addresses the safety and sustainability of the material/ chemical/ product and associated processes along the whole life cycle, including all the steps of the research and development (R&D) phase, production, use, recycling, and disposal."@en ;
-    skos:prefLabel "SsbdDimension"@en ;
-    skos:scopeNote "https://www.oecd.org/en/publications/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_a9a80171-en.html" .
-
 ssbd:StratosphericOzoneLayerDepletionAssessment a owl:Class ;
     rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
     skos:altLabel "Stratospheric Ozone Layer Depletion Impact Category"@en ;
