@@ -360,8 +360,14 @@ dcterms:license a owl:ObjectProperty ;
     rdfs:domain dcat:Resource ;
     rdfs:range dcterms:LicenseDocument .
 
+dcterms:source a owl:AnnotationProperty ;
+    skos:prefLabel "source" ;
+    skos:definition "A related resource from which the described resource is derived."@en ;
+    rdfs:comment "This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system."@en . 
+
 skos:scopeNote a owl:AnnotationProperty ;
-    rdfs:label "scope note"@en ;
+    skos:altLabel "scope note"@en ;
+    skos:prefLabel "scopeNote"@en ;
     rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
     rdfs:subPropertyOf skos:note ;
     skos:definition "A note that helps to clarify the meaning and/or the use of a concept."@en .

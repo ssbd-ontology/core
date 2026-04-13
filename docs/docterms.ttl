@@ -1,5 +1,5 @@
 
-# This file will be concatinated to core.ttl to add additional terms
+# This file will be concatenated to core.ttl to add additional terms
 # we don't want to include in the ontology to the documentation.
 
 rdfs:subClassOf a owl:ObjectProperty ;
