@@ -37,28 +37,28 @@ Welcome to the **SSbD Core Ontology**, a semantic resource with essential terms 
 :gutter: 3
 
 ```{grid-item-card} Theoretical Background
-:link: background.html
+:link: docs/background.html
 :link-type: url
 
 Read the conceptual foundations, including provenance and relation patterns used in the ontology.
 ```
 
 ```{grid-item-card} Project overview
-:link: overview.html
+:link: docs/overview.html
 :link-type: url
 
 Overview of all the resources in documentation.
 ```
 
 ```{grid-item-card} Detailed description of the modules
-:link: modules.html
+:link: docs/modules.html
 :link-type: url
 
 The starting page for the individual modules, describing their content and interconnections.
 ```
 
 ```{grid-item-card} User guide
-:link: document-your-data.html
+:link: docs/document-your-data.html
 :link-type: url
 
 Practical introduction to documenting your resources with table-based templates.
