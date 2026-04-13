@@ -1,32 +1,75 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ssbd: <https://w3id.org/ssbd/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ssbd:AbductiveReasoningModelShape a sh:NodeShape ;
+    sh:node ssbd:CognitionAndLearningModelShape ;
+    sh:targetClass ssbd:AbductiveReasoningModel .
+
+ssbd:AdaboostShape a sh:NodeShape ;
+    sh:node ssbd:ClassificationShape ;
+    sh:targetClass ssbd:Adaboost .
 
 ssbd:AdvancedMaterialShape a sh:NodeShape ;
     sh:targetClass ssbd:AdvancedMaterial .
+
+ssbd:AnalogicalReasoningModelShape a sh:NodeShape ;
+    sh:node ssbd:CognitionAndLearningModelShape ;
+    sh:targetClass ssbd:AnalogicalReasoningModel .
 
 ssbd:AttributionShape a sh:NodeShape ;
     sh:node ssbd:AgentShape ;
     sh:targetClass prov:Attribution .
 
+ssbd:AutoencoderShape a sh:NodeShape ;
+    sh:node ssbd:ArtificialNeuralNetworkShape,
+        ssbd:DimensionalityReductionShape ;
+    sh:targetClass ssbd:Autoencoder .
+
+ssbd:BaggingShape a sh:NodeShape ;
+    sh:node ssbd:PredictionLearningModelShape ;
+    sh:targetClass ssbd:Bagging .
+
+ssbd:BehaviorModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:BehaviorModel .
+
+ssbd:BiocompatibleMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:BiocompatibleMaterial .
+
 ssbd:BooleanDataShape a sh:NodeShape ;
     sh:node ssbd:SymbolicDataShape ;
     sh:targetClass ssbd:BooleanData .
+
+ssbd:BoostingShape a sh:NodeShape ;
+    sh:node ssbd:PredictionLearningModelShape ;
+    sh:targetClass ssbd:Boosting .
+
+ssbd:BulkModulusAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:MechanicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:BulkModulusAssessment .
 
 ssbd:ByteDataShape a sh:NodeShape ;
     sh:node ssbd:ShortDataShape ;
     sh:targetClass ssbd:ByteData .
 
+ssbd:ClusteringShape a sh:NodeShape ;
+    sh:node ssbd:UnsupervicedLearningModelShape ;
+    sh:targetClass ssbd:Clustering .
+
+ssbd:CollaborativeFilteringShape a sh:NodeShape ;
+    sh:node ssbd:RecommenderSystemShape ;
+    sh:targetClass ssbd:CollaborativeFiltering .
+
 ssbd:ComputationShape a sh:NodeShape ;
     sh:node ssbd:ProcessShape ;
-    sh:property [ sh:class ssbd:Software ;
+    sh:property [ sh:or ( [ sh:class ssbd:Software ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path ssbd:hasSoftware ] ;
     sh:targetClass ssbd:Computation .
 
@@ -37,15 +80,23 @@ ssbd:ComputationalToolShape a sh:NodeShape ;
 ssbd:ConceptShape a sh:NodeShape ;
     sh:targetClass skos:Concept .
 
+ssbd:ContentExtractionShape a sh:NodeShape ;
+    sh:node ssbd:NaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:ContentExtraction .
+
+ssbd:ConvolutionNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:DeepLearningModelShape ;
+    sh:targetClass ssbd:ConvolutionNeuralNetwork .
+
 ssbd:DataServiceShape a sh:NodeShape ;
     sh:node ssbd:ResourceShape ;
-    sh:property [ sh:class <https://w3id.org/emmo/domain/oteio#Parser> ;
+    sh:property [ sh:or ( [ sh:class dcat:Dataset ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:servesDataset ],
+        [ sh:or ( [ sh:class <https://w3id.org/emmo/domain/oteio#Parser> ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path <https://w3id.org/emmo/domain/oteio#parser> ],
         [ sh:datatype xsd:anyURI ;
             sh:path dcat:endpointURL ],
-        [ sh:class dcat:Dataset ;
-            sh:path dcat:servesDataset ],
-        [ sh:class rdfs:Resource ;
+        [ sh:or ( [ sh:class rdfs:Resource ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path dcat:endpointDescription ] ;
     sh:targetClass dcat:DataService .
 
@@ -65,51 +116,122 @@ ssbd:DatumShape a sh:NodeShape ;
     sh:node ssbd:DataShape ;
     sh:targetClass ssbd:Datum .
 
+ssbd:DecisionTreeShape a sh:NodeShape ;
+    sh:node ssbd:ClassificationShape ;
+    sh:targetClass ssbd:DecisionTree .
+
+ssbd:DeepFeedForwardNetworkShape a sh:NodeShape ;
+    sh:node ssbd:DeepLearningModelShape ;
+    sh:targetClass ssbd:DeepFeedForwardNetwork .
+
+ssbd:DensityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:PhysicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:DensityAssessment .
+
 ssbd:DescriptionShape a sh:NodeShape ;
     sh:node ssbd:SignShape ;
-    sh:property [ sh:class prov:Entity ;
+    sh:property [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path ssbd:isDescriptionOf ] ;
     sh:targetClass ssbd:Description .
 
 ssbd:DistributionShape a sh:NodeShape ;
     sh:node ssbd:ResourceShape ;
-    sh:property [ sh:class dcterms:MediaType ;
-            sh:path dcat:packageFormat ],
-        [ sh:class skos:Concept ;
-            sh:path <http://data.europa.eu/r5r/status> ],
-        [ sh:datatype xsd:datetime ;
+    sh:property [ sh:or ( [ sh:class <https://w3id.org/emmo/domain/oteio#Generator> ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <https://w3id.org/emmo/domain/oteio#generator> ],
+        [ sh:or ( [ sh:class dcterms:MediaTypeOrExtent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:format ],
+        [ sh:datatype xsd:dateTime ;
             sh:path <http://data.europa.eu/r5r/availability> ],
-        [ sh:class dcat:DataService ;
+        [ sh:datatype xsd:anyURI ;
+            sh:path dcat:accessURL ],
+        [ sh:or ( [ sh:class dcat:DataService ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path dcat:accessService ],
+        [ sh:or ( [ sh:class dcterms:MediaType ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:compressFormat ],
+        [ sh:or ( [ sh:class skos:Concept ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <http://data.europa.eu/r5r/status> ],
+        [ sh:or ( [ sh:class dcterms:MediaType ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:mediaType ],
         [ sh:datatype xsd:nonNegativeInteger ;
             sh:path dcat:byteSize ],
-        [ sh:class rdfs:Resource ;
-            sh:path dcat:accessURL ],
-        [ sh:class <https://w3id.org/emmo/domain/oteio#Generator> ;
-            sh:path <https://w3id.org/emmo/domain/oteio#generator> ],
-        [ sh:class dcterms:MediaType ;
-            sh:path dcat:compressFormat ],
-        [ sh:class <http://spdx.org/rdf/terms#Checksum> ;
+        [ sh:or ( [ sh:class <http://spdx.org/rdf/terms#Checksum> ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path <http://spdx.org/rdf/terms#checksum> ],
-        [ sh:class dcterms:MediaTypeOrExtent ;
-            sh:path dcterms:format ],
+        [ sh:or ( [ sh:class dcterms:MediaType ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:packageFormat ],
         [ sh:datatype xsd:anyURI ;
-            sh:path dcat:downloadURL ],
-        [ sh:class dcterms:MediaType ;
-            sh:path dcat:mediaType ] ;
+            sh:path dcat:downloadURL ] ;
     sh:targetClass dcat:Distribution .
+
+ssbd:DomainOfApplicabilityStatusShape a sh:NodeShape ;
+    sh:node ssbd:PropertyShape ;
+    sh:targetClass ssbd:DomainOfApplicabilityStatus .
 
 ssbd:DoubleDataShape a sh:NodeShape ;
     sh:node ssbd:NumericalDataShape ;
     sh:targetClass ssbd:DoubleData .
 
+ssbd:DynamicProgrammingShape a sh:NodeShape ;
+    sh:node ssbd:ReinforcedLearningModelShape ;
+    sh:targetClass ssbd:DynamicProgramming .
+
+ssbd:EconomicDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionShape ;
+    sh:targetClass ssbd:EconomicDimension .
+
+ssbd:ElectronicMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:ElectronicMaterial .
+
+ssbd:EnergyMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:EnergyMaterial .
+
+ssbd:EnvironmentalDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionShape ;
+    sh:targetClass ssbd:EnvironmentalDimension .
+
+ssbd:ExpertSystemShape a sh:NodeShape ;
+    sh:node ssbd:KnowledgeRepresentationShape ;
+    sh:targetClass ssbd:ExpertSystem .
+
+ssbd:ExtraTreesClassifierShape a sh:NodeShape ;
+    sh:node ssbd:ClassificationShape,
+        ssbd:EnsembleLearningModelShape ;
+    sh:targetClass ssbd:ExtraTreesClassifier .
+
 ssbd:FloatDataShape a sh:NodeShape ;
     sh:node ssbd:NumericalDataShape ;
     sh:targetClass ssbd:FloatData .
 
-ssbd:IndicatorShape a sh:NodeShape ;
-    sh:node ssbd:PropertyShape ;
-    sh:targetClass ssbd:Indicator .
+ssbd:FunctionalityDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionShape ;
+    sh:targetClass ssbd:FunctionalityDimension .
+
+ssbd:GenerativeAdversarialNetworkShape a sh:NodeShape ;
+    sh:node ssbd:DeepLearningModelShape ;
+    sh:targetClass ssbd:GenerativeAdversarialNetwork .
+
+ssbd:GlassTransitionTemperatureAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:ThermalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:GlassTransitionTemperatureAssessment .
+
+ssbd:GraphBasedLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:SemiSupervicedLearningModelShape ;
+    sh:targetClass ssbd:GraphBasedLearningModel .
+
+ssbd:GraphNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:DeepLearningModelShape ;
+    sh:targetClass ssbd:GraphNeuralNetwork .
+
+ssbd:HeuristicLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:ReinforcedLearningModelShape ;
+    sh:targetClass ssbd:HeuristicLearningModel .
+
+ssbd:ImageClassificationShape a sh:NodeShape ;
+    sh:node ssbd:ComputerVisionShape ;
+    sh:targetClass ssbd:ImageClassification .
+
+ssbd:ImageSegmentationShape a sh:NodeShape ;
+    sh:node ssbd:ComputerVisionShape ;
+    sh:targetClass ssbd:ImageSegmentation .
 
 ssbd:InformationShape a sh:NodeShape ;
     sh:node ssbd:DataShape,
@@ -120,16 +242,47 @@ ssbd:InterpreterShape a sh:NodeShape ;
     sh:node ssbd:AgentShape ;
     sh:targetClass ssbd:Interpreter .
 
+ssbd:LargeLanguageModelShape a sh:NodeShape ;
+    sh:node ssbd:ModernGenerativeAIModelShape,
+        ssbd:TextGenerationShape ;
+    sh:targetClass ssbd:LargeLanguageModel .
+
 ssbd:LicenseDocumentShape a sh:NodeShape ;
     sh:node ssbd:RightsStatementShape ;
     sh:targetClass dcterms:LicenseDocument .
 
+ssbd:LinearDiscriminantAnalysisShape a sh:NodeShape ;
+    sh:node ssbd:DimensionalityReductionShape ;
+    sh:targetClass ssbd:LinearDiscriminantAnalysis .
+
 ssbd:LocationShape a sh:NodeShape ;
-    sh:property [ sh:class <http://www.w3.org/ns/locn#Geometry> ;
+    sh:property [ sh:or ( [ sh:class <http://www.w3.org/ns/locn#Geometry> ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path <http://www.w3.org/ns/locn#geometry> ],
         [ sh:path dcat:centroid ],
         [ sh:path dcat:bbox ] ;
     sh:targetClass dcterms:Location .
+
+ssbd:LogicShape a sh:NodeShape ;
+    sh:node ssbd:CognitionAndLearningModelShape ;
+    sh:targetClass ssbd:Logic .
+
+ssbd:LogisticRegressionModelShape a sh:NodeShape ;
+    sh:node ssbd:RegressionModelShape ;
+    sh:targetClass ssbd:LogisticRegressionModel .
+
+ssbd:LowDensitySeparationModelShape a sh:NodeShape ;
+    sh:node ssbd:SemiSupervicedLearningModelShape ;
+    sh:targetClass ssbd:LowDensitySeparationModel .
+
+ssbd:MachineTranslationShape a sh:NodeShape ;
+    sh:node ssbd:NaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:MachineTranslation .
+
+ssbd:MacroMoleculeShape a sh:NodeShape ;
+    sh:targetClass ssbd:MacroMolecule .
+
+ssbd:MagneticMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:MagneticMaterial .
 
 ssbd:MaterialProcessShape a sh:NodeShape ;
     sh:node ssbd:ProcessShape ;
@@ -146,19 +299,105 @@ ssbd:MeasurementShape a sh:NodeShape ;
 ssbd:MediaTypeShape a sh:NodeShape ;
     sh:targetClass dcterms:MediaType .
 
+ssbd:MicroMoleculeShape a sh:NodeShape ;
+    sh:targetClass ssbd:MicroMolecule .
+
 ssbd:ModelShape a sh:NodeShape ;
     sh:node ssbd:SignShape ;
     sh:targetClass ssbd:Model .
+
+ssbd:MonteCarloLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:ReinforcedLearningModelShape ;
+    sh:targetClass ssbd:MonteCarloLearningModel .
+
+ssbd:NaiveBayesShape a sh:NodeShape ;
+    sh:node ssbd:ClassificationShape ;
+    sh:targetClass ssbd:NaiveBayes .
+
+ssbd:NanoCompositeShape a sh:NodeShape ;
+    sh:node ssbd:NanoStructuredMaterialShape ;
+    sh:targetClass ssbd:NanoComposite .
+
+ssbd:NanoParticleShape a sh:NodeShape ;
+    sh:node ssbd:NanoObjectShape ;
+    sh:targetClass ssbd:NanoParticle .
+
+ssbd:NanoPlateShape a sh:NodeShape ;
+    sh:node ssbd:NanoObjectShape ;
+    sh:targetClass ssbd:NanoPlate .
+
+ssbd:NanoRodShape a sh:NodeShape ;
+    sh:node ssbd:NanoFiberShape ;
+    sh:targetClass ssbd:NanoRod .
+
+ssbd:NanoTubeShape a sh:NodeShape ;
+    sh:node ssbd:NanoFiberShape ;
+    sh:targetClass ssbd:NanoTube .
+
+ssbd:NaturalLanguageClassificationShape a sh:NodeShape ;
+    sh:node ssbd:NaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:NaturalLanguageClassification .
+
+ssbd:ObjectDetectionShape a sh:NodeShape ;
+    sh:node ssbd:ComputerVisionShape ;
+    sh:targetClass ssbd:ObjectDetection .
+
+ssbd:OpticalMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:OpticalMaterial .
 
 ssbd:ParticipantShape a sh:NodeShape ;
     sh:node ssbd:AgentShape,
         ssbd:ObjectShape ;
     sh:targetClass ssbd:Participant .
 
+ssbd:PlanningModelShape a sh:NodeShape ;
+    sh:node ssbd:CognitionAndLearningModelShape ;
+    sh:targetClass ssbd:PlanningModel .
+
+ssbd:PoissonsRatioAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:MechanicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:PoissonsRatioAssessment .
+
+ssbd:PrincipalComponentAnalysisShape a sh:NodeShape ;
+    sh:node ssbd:DimensionalityReductionShape ;
+    sh:targetClass ssbd:PrincipalComponentAnalysis .
+
+ssbd:ProbabilityModelShape a sh:NodeShape ;
+    sh:node ssbd:CognitionAndLearningModelShape ;
+    sh:targetClass ssbd:ProbabilityModel .
+
+ssbd:ProfilerShape a sh:NodeShape ;
+    sh:node ssbd:SoftwareShape ;
+    sh:targetClass ssbd:Profiler .
+
+ssbd:ProteinShape a sh:NodeShape ;
+    sh:targetClass ssbd:Protein .
+
+ssbd:QSARModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:QSARModel .
+
+ssbd:QSARSoftwareShape a sh:NodeShape ;
+    sh:node ssbd:SoftwareShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:QSARModel ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:implementsModel ] ;
+    sh:targetClass ssbd:QSARSoftware .
+
+ssbd:QuestionAnsweringShape a sh:NodeShape ;
+    sh:node ssbd:NaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:QuestionAnswering .
+
+ssbd:RandomForestShape a sh:NodeShape ;
+    sh:node ssbd:PredictionLearningModelShape ;
+    sh:targetClass ssbd:RandomForest .
+
+ssbd:RecurrentNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:DeepLearningModelShape ;
+    sh:targetClass ssbd:RecurrentNeuralNetwork .
+
 ssbd:RelationshipShape a sh:NodeShape ;
-    sh:property [ sh:class rdfs:Resource ;
+    sh:property [ sh:or ( [ sh:class rdfs:Resource ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path dcterms:relation ],
-        [ sh:class dcat:Role ;
+        [ sh:or ( [ sh:class dcat:Role ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path dcat:hasRole ] ;
     sh:targetClass dcat:Relationship .
 
@@ -166,12 +405,43 @@ ssbd:ReliabilityDocumentShape a sh:NodeShape ;
     sh:node ssbd:DocumentShape ;
     sh:targetClass ssbd:ReliabilityDocument .
 
-ssbd:SsbdDimensionShape a sh:NodeShape ;
-    sh:node ssbd:EntityShape ;
-    sh:targetClass ssbd:SsbdDimension .
+ssbd:SafetyDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionShape ;
+    sh:targetClass ssbd:SafetyDimension .
+
+ssbd:SelfTrainingModelShape a sh:NodeShape ;
+    sh:node ssbd:SemiSupervicedLearningModelShape ;
+    sh:targetClass ssbd:SelfTrainingModel .
+
+ssbd:SiameseNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:DeepLearningModelShape ;
+    sh:targetClass ssbd:SiameseNeuralNetwork .
+
+ssbd:SocialDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionShape ;
+    sh:targetClass ssbd:SocialDimension .
 
 ssbd:StandardShape a sh:NodeShape ;
     sh:targetClass dcterms:Standard .
+
+ssbd:StepwiseRegressionModelShape a sh:NodeShape ;
+    sh:node ssbd:RegressionModelShape ;
+    sh:targetClass ssbd:StepwiseRegressionModel .
+
+ssbd:StructuralMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:StructuralMaterial .
+
+ssbd:SupportVectorMachineShape a sh:NodeShape ;
+    sh:node ssbd:ClassificationShape ;
+    sh:targetClass ssbd:SupportVectorMachine .
+
+ssbd:TDistributedStochasticNeighborEmbeddingShape a sh:NodeShape ;
+    sh:node ssbd:DimensionalityReductionShape ;
+    sh:targetClass ssbd:TDistributedStochasticNeighborEmbedding .
+
+ssbd:TargetTrackingShape a sh:NodeShape ;
+    sh:node ssbd:ComputerVisionShape ;
+    sh:targetClass ssbd:TargetTracking .
 
 ssbd:TierLevelShape a sh:NodeShape ;
     sh:node ssbd:EntityShape ;
@@ -182,27 +452,29 @@ ssbd:TimeDataShape a sh:NodeShape ;
     sh:targetClass ssbd:TimeData .
 
 ssbd:ToxicityShape a sh:NodeShape ;
-    sh:node ssbd:SignShape ;
+    sh:node ssbd:IndicatorShape ;
     sh:targetClass ssbd:Toxicity .
 
-ssbd:ActivityShape a sh:NodeShape ;
-    sh:property [ sh:class prov:Activity ;
-            sh:path ssbd:wasInformedBy ],
-        [ sh:class prov:Entity ;
-            sh:path ssbd:hasInput ],
-        [ sh:class prov:Agent ;
-            sh:path prov:wasAssociatedWith ],
-        [ sh:class prov:Entity ;
-            sh:path ssbd:hasOutput ],
-        [ sh:class prov:Agent ;
-            sh:path ssbd:wasAssociatedWith ],
-        [ sh:class prov:Activity ;
-            sh:path prov:wasInformedBy ],
-        [ sh:class prov:Entity ;
-            sh:path ssbd:used ],
-        [ sh:class prov:Entity ;
-            sh:path prov:used ] ;
-    sh:targetClass prov:Activity .
+ssbd:XGBoostRegessorShape a sh:NodeShape ;
+    sh:node ssbd:PredictionLearningModelShape ;
+    sh:targetClass ssbd:XGBoostRegessor .
+
+ssbd:YoungsModulusAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:MechanicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:YoungsModulusAssessment .
+
+ssbd:AssessmentShape a sh:NodeShape ;
+    sh:node ssbd:ActivityShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:SsbdDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:Assessment .
+
+ssbd:EnsembleLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:EnsembleLearningModel .
+
+ssbd:IndicatorShape a sh:NodeShape ;
+    sh:node ssbd:PropertyShape ;
+    sh:targetClass ssbd:Indicator .
 
 ssbd:IntDataShape a sh:NodeShape ;
     sh:node ssbd:LongDataShape ;
@@ -212,82 +484,133 @@ ssbd:IntegerDataShape a sh:NodeShape ;
     sh:node ssbd:NumericalDataShape ;
     sh:targetClass ssbd:IntegerData .
 
+ssbd:KnowledgeRepresentationShape a sh:NodeShape ;
+    sh:node ssbd:CognitionAndLearningModelShape ;
+    sh:targetClass ssbd:KnowledgeRepresentation .
+
 ssbd:LongDataShape a sh:NodeShape ;
     sh:node ssbd:IntegerDataShape ;
     sh:targetClass ssbd:LongData .
+
+ssbd:ModernGenerativeAIModelShape a sh:NodeShape ;
+    sh:node ssbd:TransformerAIShape ;
+    sh:targetClass ssbd:ModernGenerativeAIModel .
+
+ssbd:NanoStructuredMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:NanoStructuredMaterial .
+
+ssbd:NaturalLanguageGenerationShape a sh:NodeShape ;
+    sh:targetClass ssbd:NaturalLanguageGeneration .
 
 ssbd:ObjectShape a sh:NodeShape ;
     sh:node ssbd:EntityShape ;
     sh:targetClass ssbd:Object .
 
-ssbd:PropertyShape a sh:NodeShape ;
-    sh:node ssbd:SignShape ;
-    sh:property [ sh:path ssbd:hasUnit ],
-        [ sh:class prov:Entity ;
-            sh:path ssbd:isPropertyOf ] ;
-    sh:targetClass ssbd:Property .
+ssbd:PerceptionModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:PerceptionModel .
+
+ssbd:PhysicalPropertiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:FunctionalityAssessmentShape ;
+    sh:targetClass ssbd:PhysicalPropertiesAssessment .
+
+ssbd:RecommenderSystemShape a sh:NodeShape ;
+    sh:node ssbd:SupervisedLearningModelShape ;
+    sh:targetClass ssbd:RecommenderSystem .
 
 ssbd:RightsStatementShape a sh:NodeShape ;
     sh:node ssbd:DocumentShape ;
     sh:targetClass dcterms:RightsStatement .
 
+ssbd:SSbDAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:AssessmentShape ;
+    sh:targetClass ssbd:SSbDAssessment .
+
 ssbd:ShortDataShape a sh:NodeShape ;
     sh:node ssbd:IntDataShape ;
     sh:targetClass ssbd:ShortData .
 
-ssbd:SoftwareShape a sh:NodeShape ;
-    sh:node ssbd:DataShape ;
-    sh:property [ sh:datatype xsd:boolean ;
-            sh:path ssbd:hasGUI ],
-        [ sh:datatype xsd:boolean ;
-            sh:path ssbd:hasAPI ],
-        [ sh:class ssbd:Model ;
-            sh:path ssbd:implementsModel ],
-        [ sh:class ssbd:Software ;
-            sh:path ssbd:priorRelease ] ;
-    sh:targetClass ssbd:Software .
+ssbd:SpecifiedAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SSbDAssessmentShape ;
+    sh:targetClass ssbd:SpecifiedAssessment .
+
+ssbd:TextGenerationShape a sh:NodeShape ;
+    sh:node ssbd:NaturalLanguageGenerationShape ;
+    sh:targetClass ssbd:TextGeneration .
+
+ssbd:ThermalPropertiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:FunctionalityAssessmentShape ;
+    sh:targetClass ssbd:ThermalPropertiesAssessment .
+
+ssbd:TransformerAIShape a sh:NodeShape ;
+    sh:node ssbd:DeepLearningModelShape ;
+    sh:targetClass ssbd:TransformerAI .
+
+ssbd:UnsupervicedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:UnsupervicedLearningModel .
+
+ssbd:ActivityShape a sh:NodeShape ;
+    sh:property [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:used ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:used ],
+        [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:wasInformedBy ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasInput ],
+        [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasAssociatedWith ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasOutput ],
+        [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:wasAssociatedWith ],
+        [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasInformedBy ] ;
+    sh:targetClass prov:Activity .
+
+ssbd:ArtificialNeuralNetworkShape a sh:NodeShape ;
+    sh:targetClass ssbd:ArtificialNeuralNetwork .
 
 ssbd:DatasetShape a sh:NodeShape ;
     sh:node ssbd:DataShape,
         ssbd:DatasetShape,
         ssbd:ResourceShape ;
-    sh:property [ sh:class ssbd:Datum ;
+    sh:property [ sh:or ( [ sh:class ssbd:Datum ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path ssbd:hasPart ],
-        [ sh:class dcat:Dataset ;
-            sh:path dcterms:source ],
-        [ sh:class <https://w3id.org/emmo/domain/oteio#Datamodel> ;
-            sh:path <https://w3id.org/emmo/domain/oteio#hasDatamodel> ],
-        [ sh:class dcterms:PeriodOfTime ;
-            sh:path dcterms:temporal ],
-        [ sh:path <https://w3id.org/emmo/domain/oteio#mappingFormat> ],
-        [ sh:class <http://www.w3.org/ns/adms#Identifier> ;
-            sh:path <http://www.w3.org/ns/adms#identifier> ],
-        [ sh:class dcat:Distribution ;
-            sh:path dcat:distribution ],
-        [ sh:class dcat:DatasetSeries ;
-            sh:path dcat:inSeries ],
-        [ sh:class dcat:Distribution ;
-            sh:path <http://www.w3.org/ns/adms#sample> ],
-        [ sh:datatype xsd:anyURI ;
-            sh:path <https://w3id.org/emmo/domain/oteio#hasDatamodelStorage> ],
-        [ sh:class prov:Activity ;
+        [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path prov:wasGeneratedBy ],
-        [ sh:class ssbd:Datum ;
-            sh:path ssbd:hasDatum ],
-        [ sh:datatype xsd:duration ;
-            sh:path dcat:temporalResolution ],
-        [ sh:class dcat:Resource ;
-            sh:path prov:wasDerivedFrom ],
-        [ sh:class dcterms:Frequency ;
+        [ sh:or ( [ sh:class dcterms:Frequency ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path dcterms:accrualPeriodicity ],
         [ sh:datatype xsd:anyURI ;
+            sh:path <https://w3id.org/emmo/domain/oteio#hasDatamodelStorage> ],
+        [ sh:or ( [ sh:class dcat:Distribution ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:distribution ],
+        [ sh:datatype xsd:anyURI ;
             sh:path <https://w3id.org/emmo/domain/oteio#mappingURL> ],
-        [ sh:class dcterms:Location ;
+        [ sh:or ( [ sh:class dcat:Resource ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:wasDerivedFrom ],
+        [ sh:or ( [ sh:class dcterms:PeriodOfTime ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:temporal ],
+        [ sh:path <https://w3id.org/emmo/domain/oteio#mappingFormat> ],
+        [ sh:or ( [ sh:class dcat:Distribution ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <http://www.w3.org/ns/adms#sample> ],
+        [ sh:datatype xsd:duration ;
+            sh:path dcat:temporalResolution ],
+        [ sh:or ( [ sh:class dcterms:Location ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path dcterms:spatial ],
-        [ sh:class rdf:JSON ;
-            sh:path <https://w3id.org/emmo/domain/oteio#mapping> ],
+        [ sh:or ( [ sh:class ssbd:Datum ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasDatum ],
+        [ sh:or ( [ sh:class dcat:DatasetSeries ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:inSeries ],
         [ sh:datatype xsd:decimal ;
-            sh:path dcat:spatialResolutionInMeters ] ;
+            sh:path dcat:spatialResolutionInMeters ],
+        [ sh:or ( [ sh:class <http://www.w3.org/ns/adms#Identifier> ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <http://www.w3.org/ns/adms#identifier> ],
+        [ sh:or ( [ sh:class dcat:Dataset ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:source ],
+        [ sh:or ( [ sh:class <https://w3id.org/emmo/domain/oteio#Datamodel> ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <https://w3id.org/emmo/domain/oteio#hasDatamodel> ],
+        [ sh:or ( [ sh:class rdf:JSON ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <https://w3id.org/emmo/domain/oteio#mapping> ] ;
     sh:targetClass dcat:Dataset,
         ssbd:Dataset .
 
@@ -295,121 +618,199 @@ ssbd:DocumentShape a sh:NodeShape ;
     sh:node ssbd:DataShape ;
     sh:targetClass foaf:Document .
 
+ssbd:NanoFiberShape a sh:NodeShape ;
+    sh:node ssbd:NanoObjectShape ;
+    sh:targetClass ssbd:NanoFiber .
+
+ssbd:PropertyShape a sh:NodeShape ;
+    sh:node ssbd:SignShape ;
+    sh:property [ sh:path ssbd:hasMeasurementUnit ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isPropertyOf ] ;
+    sh:targetClass ssbd:Property .
+
+ssbd:RegressionModelShape a sh:NodeShape ;
+    sh:node ssbd:SupervisedLearningModelShape ;
+    sh:targetClass ssbd:RegressionModel .
+
+ssbd:FunctionalityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SpecifiedAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:FunctionalityDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:FunctionalityAssessment .
+
+ssbd:MechanicalPropertiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:FunctionalityAssessmentShape ;
+    sh:targetClass ssbd:MechanicalPropertiesAssessment .
+
+ssbd:NanoObjectShape a sh:NodeShape ;
+    sh:targetClass ssbd:NanoObject .
+
 ssbd:NumericalDataShape a sh:NodeShape ;
     sh:node ssbd:SymbolicDataShape ;
     sh:targetClass ssbd:NumericalData .
 
 ssbd:ProcessShape a sh:NodeShape ;
     sh:node ssbd:ActivityShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:Process ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasSubProcess ] ;
     sh:targetClass ssbd:Process .
+
+ssbd:ReinforcedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:ReinforcedLearningModel .
 
 ssbd:ResourceShape a sh:NodeShape ;
     sh:node ssbd:EntityShape ;
-    sh:property [ sh:class <http://www.w3.org/2006/vcard/ns#Kind> ;
-            sh:path dcat:contactPoint ],
-        [ sh:path dcterms:bibliographicCitation ],
-        [ sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
-            sh:path <http://data.europa.eu/r5r/applicableLegislation> ],
-        [ sh:class foaf:Document ;
-            sh:path ssbd:documentation ],
-        [ sh:class <https://w3id.org/emmo/application/datadoc#ConformanceLevel> ;
-            sh:path <https://w3id.org/emmo/application/datadoc#conformance> ],
-        [ sh:class dcterms:RightsStatement ;
-            sh:path dcterms:accessRights ],
-        [ sh:class rdfs:Resource ;
-            sh:path dcterms:isReferencedBy ],
-        [ sh:class foaf:Document ;
-            sh:path dcat:landingPage ],
-        [ sh:class skos:Concept ;
-            sh:path dcat:theme ],
+    sh:property [ sh:or ( [ sh:class foaf:Document ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path foaf:page ],
+        [ sh:or ( [ sh:class rdfs:Resource ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:hasVersion ],
         [ sh:datatype rdf:langString ;
             sh:path dcterms:abstract ],
-        [ sh:class foaf:Agent ;
-            sh:path <https://w3id.org/emmo/application/datadoc#curator> ],
-        [ sh:datatype rdf:langString ;
-            sh:path dcat:keyword ],
-        [ sh:class foaf:Document ;
-            sh:path foaf:page ],
-        [ sh:datatype xsd:datetime ;
+        [ sh:datatype xsd:dateTime ;
             sh:path dcterms:modified ],
-        [ sh:class prov:Attribution ;
+        [ sh:or ( [ sh:class prov:Attribution ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path prov:qualifiedAttribution ],
-        [ sh:class rdf:JSON ;
+        [ sh:or ( [ sh:class rdf:JSON ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path <https://w3id.org/emmo/domain/oteio#statement> ],
-        [ sh:class foaf:Agent ;
-            sh:path dcterms:publisher ],
-        [ sh:datatype xsd:string ;
-            sh:path dcterms:language ],
-        [ sh:class dcat:Relationship ;
-            sh:path dcat:qualifiedRelation ],
-        [ sh:class rdfs:Resource ;
-            sh:path dcat:hasVersion ],
-        [ sh:class dcterms:LicenseDocument ;
-            sh:path dcterms:license ],
-        [ sh:class dcterms:Standard ;
-            sh:path dcterms:conformsTo ],
-        [ sh:datatype xsd:datetime ;
-            sh:path <https://w3id.org/emmo/application/datadoc#curationDate> ],
-        [ sh:datatype rdf:langString ;
-            sh:path dcterms:title ],
-        [ sh:class foaf:Agent ;
-            sh:path dcterms:creator ],
-        [ sh:path dcat:version ],
-        [ sh:datatype rdf:langString ;
-            sh:path skos:definition ],
         [ sh:datatype xsd:dateTime ;
             sh:path dcterms:issued ],
-        [ sh:class foaf:Agent ;
+        [ sh:or ( [ sh:class foaf:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <https://w3id.org/emmo/application/datadoc#curator> ],
+        [ sh:or ( [ sh:class dcterms:LicenseDocument ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:license ],
+        [ sh:or ( [ sh:class <http://data.europa.eu/eli/ontology#LegalResource> ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <http://data.europa.eu/r5r/applicableLegislation> ],
+        [ sh:or ( [ sh:class dcterms:RightsStatement ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:accessRights ],
+        [ sh:path dcterms:bibliographicCitation ],
+        [ sh:or ( [ sh:class dcat:Relationship ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:qualifiedRelation ],
+        [ sh:or ( [ sh:class foaf:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:creator ],
+        [ sh:or ( [ sh:class foaf:Agent ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path dcterms:contributor ],
         [ sh:datatype xsd:string ;
-            sh:path <https://w3id.org/emmo/application/datadoc#unitSymbol> ] ;
+            sh:path <https://w3id.org/emmo/application/datadoc#unitSymbol> ],
+        [ sh:or ( [ sh:class skos:Concept ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:theme ],
+        [ sh:or ( [ sh:class foaf:Document ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:landingPage ],
+        [ sh:or ( [ sh:class rdfs:Resource ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:isReferencedBy ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:definition ],
+        [ sh:datatype xsd:string ;
+            sh:path dcterms:language ],
+        [ sh:datatype rdf:langString ;
+            sh:path dcterms:title ],
+        [ sh:path dcat:version ],
+        [ sh:or ( [ sh:class foaf:Document ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:documentation ],
+        [ sh:or ( [ sh:class <http://www.w3.org/2006/vcard/ns#Kind> ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcat:contactPoint ],
+        [ sh:or ( [ sh:class <https://w3id.org/emmo/application/datadoc#ConformanceLevel> ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <https://w3id.org/emmo/application/datadoc#conformance> ],
+        [ sh:or ( [ sh:class foaf:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:publisher ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path <https://w3id.org/emmo/application/datadoc#curationDate> ],
+        [ sh:or ( [ sh:class dcterms:Standard ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:conformsTo ] ;
     sh:targetClass dcat:Resource .
+
+ssbd:SemiSupervicedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:SemiSupervicedLearningModel .
+
+ssbd:SoftwareShape a sh:NodeShape ;
+    sh:node ssbd:DataShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:Model ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:implementsModel ],
+        [ sh:datatype xsd:boolean ;
+            sh:path ssbd:hasAPI ],
+        [ sh:or ( [ sh:class ssbd:Software ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isSubmoduleOf ],
+        [ sh:datatype xsd:boolean ;
+            sh:path ssbd:hasGUI ],
+        [ sh:or ( [ sh:class ssbd:Software ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:priorRelease ] ;
+    sh:targetClass ssbd:Software .
 
 ssbd:AgentShape a sh:NodeShape ;
     sh:node ssbd:AgentShape ;
-    sh:property [ sh:path dcterms:identifier ],
-        [ sh:class prov:Entity ;
+    sh:property [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path ssbd:attributed ],
+        [ sh:path dcterms:identifier ],
         [ sh:datatype xsd:string ;
             sh:path foaf:name ] ;
     sh:targetClass prov:Agent,
         foaf:Agent .
 
+ssbd:ComputerVisionShape a sh:NodeShape ;
+    sh:node ssbd:PerceptionModelShape ;
+    sh:targetClass ssbd:ComputerVision .
+
+ssbd:DimensionalityReductionShape a sh:NodeShape ;
+    sh:targetClass ssbd:DimensionalityReduction .
+
+ssbd:NaturalLanguageUnderstandingShape a sh:NodeShape ;
+    sh:targetClass ssbd:NaturalLanguageUnderstanding .
+
+ssbd:PredictionLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:SupervisedLearningModelShape ;
+    sh:targetClass ssbd:PredictionLearningModel .
+
 ssbd:SignShape a sh:NodeShape ;
     sh:node ssbd:EntityShape ;
-    sh:property [ sh:class prov:Entity ;
-            sh:path ssbd:standsFor ],
-        [ sh:class ssbd:Interpreter ;
-            sh:path ssbd:isInterpretedBy ] ;
+    sh:property [ sh:or ( [ sh:class ssbd:Interpreter ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isInterpretedBy ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:standsFor ] ;
     sh:targetClass ssbd:Sign .
+
+ssbd:SupervisedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:SupervisedLearningModel .
+
+ssbd:ClassificationShape a sh:NodeShape ;
+    sh:node ssbd:SupervisedLearningModelShape ;
+    sh:targetClass ssbd:Classification .
+
+ssbd:SsbdDimensionShape a sh:NodeShape ;
+    sh:node ssbd:EntityShape ;
+    sh:targetClass ssbd:SsbdDimension .
 
 ssbd:SymbolicDataShape a sh:NodeShape ;
     sh:node ssbd:DataShape ;
     sh:targetClass ssbd:SymbolicData .
 
+ssbd:CognitionAndLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:CognitionAndLearningModel .
+
 ssbd:DataShape a sh:NodeShape ;
     sh:node ssbd:EntityShape ;
+    sh:property [ sh:path ssbd:hasDataValue ] ;
     sh:targetClass ssbd:Data .
 
+ssbd:DeepLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:ArtificialNeuralNetworkShape ;
+    sh:targetClass ssbd:DeepLearningModel .
+
 ssbd:EntityShape a sh:NodeShape ;
-    sh:property [ sh:class prov:Activity ;
-            sh:path ssbd:wasGeneratedBy ],
-        [ sh:class ssbd:Description ;
-            sh:path ssbd:hasDescription ],
-        [ sh:class prov:Entity ;
-            sh:path ssbd:wasDerivedBy ],
-        [ sh:class ssbd:TierLevel ;
-            sh:path ssbd:tierLevel ],
-        [ sh:class prov:Agent ;
-            sh:path ssbd:wasAttributedTo ],
-        [ sh:class prov:Activity ;
+    sh:property [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path ssbd:participatesTo ],
-        [ sh:class ssbd:Sign ;
-            sh:path ssbd:isRepresentedBy ],
-        [ sh:class ssbd:Property ;
-            sh:path ssbd:hasProperty ],
-        [ sh:class ssbd:Matter ;
+        [ sh:or ( [ sh:class ssbd:Matter ] [ sh:nodeKind sh:IRI ] ) ;
             sh:path ssbd:chemicalClass ],
-        [ sh:class prov:Agent ;
-            sh:path prov:wasAttributedTo ] ;
+        [ sh:or ( [ sh:class ssbd:TierLevel ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:tierLevel ],
+        [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:wasAttributedTo ],
+        [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasAttributedTo ],
+        [ sh:or ( [ sh:class ssbd:Sign ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isRepresentedBy ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasDerivedBy ],
+        [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasGeneratedBy ] ;
     sh:targetClass prov:Entity .
+

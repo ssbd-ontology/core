@@ -15,9 +15,12 @@ The validation system uses a **two-tier validation approach**:
 3. **Validation**: JSON-LD data files are validated against **both** shape files using `pyshacl`. The validator automatically merges both constraint sets.
 
 This two-tier approach ensures that:
+
 - Datatype and range constraints stay synchronized with the ontology (via auto-generation)
 - Project-specific requirements can be added without modifying the ontology
 - Separation of concerns between ontology structure and usage requirements
+
+For object properties, the auto-generated shapes accept either a typed node matching the expected class or an untyped IRI reference. This allows JSON-LD data to link to external resources without requiring the referenced resource to be fully described inline.
 
 ### Language-Tagged Strings (rdf:langString)
 
@@ -30,6 +33,7 @@ In compliance with [DCAT-AP 3.0.1](https://semiceu.github.io/DCAT-AP/releases/3.
 - `skos:definition`
 
 **Correct usage** (with language tag):
+
 ```json
 "dcterms:title": {
   "@value": "Nanomaterial Toxicity Study 2025",
@@ -38,6 +42,7 @@ In compliance with [DCAT-AP 3.0.1](https://semiceu.github.io/DCAT-AP/releases/3.
 ```
 
 **Incorrect usage** (plain string):
+
 ```json
 "dcterms:title": "Nanomaterial Toxicity Study 2025"
 ```
@@ -56,7 +61,7 @@ If you provide a plain string without `@language`, validation will report a **da
 
 ### SHACL Shape Files
 
-- **`shapes.ttl`**: **Auto-generated** SHACL shapes created by `generate_shacl.py`. Contains datatype and range constraints extracted directly from the ontology (e.g., `dcterms:title` must be `rdf:langString`). **Do not edit manually** - regenerate by running `generate_shacl.py` whenever the ontology changes.
+- **`shapes.ttl`**: **Auto-generated** SHACL shapes created by `generate_shacl.py`. Contains datatype and range constraints extracted directly from the ontology (e.g., `dcterms:title` must be `rdf:langString`). For object properties, these shapes accept either a typed node of the expected class or an untyped IRI reference. **Do not edit manually** - regenerate by running `generate_shacl.py` whenever the ontology changes.
 
 - **`shapes-ssbd.ttl`**: **Manually maintained** project-specific SHACL constraints that extend the auto-generated shapes. Defines SSbD-specific requirements such as:
   - Mandatory properties (e.g., `ssbd:Dataset` must have `dcterms:title` and `dcterms:description`)
@@ -93,6 +98,7 @@ python test.py
 ```
 
 This will:
+
 1. Generate fresh SHACL shapes from the ontology (`shapes.ttl`)
 2. Validate test cases against both `shapes.ttl` and `shapes-ssbd.ttl`
 3. Report results and verify expected outcomes
