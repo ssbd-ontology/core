@@ -35,7 +35,6 @@
 
 The SSbD Core Ontology expands on the annotation schema provided by tripper, which again expands on the DCAT-AP.
 
-A reference documentation of terms reused from standard W3C vocabularies can be found https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html.
 """@en ;
     dcterms:bibliographicCitation "xxx" ;
     dcterms:created "2025-09-08" ;
@@ -530,7 +529,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
 :SSbDDimension rdf:type owl:Class ;
                    rdfs:subClassOf prov:Entity ;
                    skos:definition "Safe and sustainable by design (SSbD) can be described as an approach that focuses on providing a function (or service), while avoiding onerous environmental footprints and chemical properties that may be harmful to human health or the environment.  In essence, the SSbD approach aims to identifying and minimizing, at an early phase of the innovation process, the impacts concerning safety for humans and the environment and for sustainability, minimizing the environmental footprint, in particular regarding climate change and resource use and, protecting ecosystems and biodiversity, taking a lifecycle perspective. The SSbD approach addresses the safety and sustainability of the material/ chemical/ product and associated processes along the whole life cycle, including all the steps of the research and development (R&D) phase, production, use, recycling, and disposal."@en ;
-                   dcterms:source "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf" ; 
+                   dcterms:source "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf" ;
                    skos:altLabel "Safe and Sustainable by Design Dimension" ;
                    skos:prefLabel "SSbDDimension"@en ;
                    skos:scopeNote "The superclass of all dimensions relevant for SSbD assessments." .

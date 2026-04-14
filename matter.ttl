@@ -249,7 +249,7 @@ emmo:Material rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience
 emmo:MaterialByClassicalMaterialsScience rdf:type owl:Class ;
-                                         rdfs:subClassOf emmo:Material ; 
+                                         rdfs:subClassOf emmo:Material ;
                                          skos:prefLabel "MaterialByClassicalMaterialsScience"@en .
 
 
@@ -269,7 +269,7 @@ emmo:MaterialByForceResponse rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#MaterialByFunction
 emmo:MaterialByFunction rdf:type owl:Class ;
-                        rdfs:subClassOf emmo:Material ; 
+                        rdfs:subClassOf emmo:Material ;
                         skos:prefLabel "MaterialByFunction"@en .
 
 
@@ -295,7 +295,7 @@ emmo:MaterialByStructure rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#MaterialByType
 emmo:MaterialByType rdf:type owl:Class ;
                     rdfs:subClassOf emmo:MaterialByClassicalMaterialsScience ;
-                    skos:definition "Categorisation of matter by its type."@en ; 
+                    skos:definition "Categorisation of matter by its type."@en ;
                     skos:prefLabel "MaterialByType"@en .
 
 
