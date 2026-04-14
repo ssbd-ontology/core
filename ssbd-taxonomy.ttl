@@ -558,7 +558,7 @@ ssbd:NonGenotoxicCarcinogenicityAssessment rdf:type owl:Class ;
                                            rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
                                            skos:altLabel "Non-genotoxic Carcinogenicity  Assessment"@en ;
                                            skos:definition "Non-genotoxic carcinogenicity (NGTxC) assessment identifies cancer-causing agents that act through non-DNA-damaging mechanisms, such as hormonal effects, chronic inflammation, or epigenetic changes rather than direct mutation."@en ;
-                                           skos:prefLabel "Non-genotoxicCarcinogenicityAssessment"@en .
+                                           skos:prefLabel "NonGenotoxicCarcinogenicityAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/OccupationalHealthandSafetyAssessment
@@ -636,7 +636,7 @@ ssbd:RenewableEnergyConsumptionAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/ReproductiveToxicityAssessment
 ssbd:ReproductiveToxicityAssessment rdf:type owl:Class ;
                                     rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
-                                    dcterms:source "https://www.oecd.org/en/publications/guidance-document-on-mammalian-reproductive-toxicity-testing-and-assessment_d2631d22-en.html" ;
+                                    dcterms:source <https://www.oecd.org/en/publications/guidance-document-on-mammalian-reproductive-toxicity-testing-and-assessment_d2631d22-en.html> ;
                                     skos:altLabel "Reproductive Toxicity Assessment"@en ;
                                     skos:definition "Assessing if a chemical or substance interferes with reproductive function, including  fertility, and development of the foetus and embryo."@en ;
                                     skos:prefLabel "ReproductiveToxicityAssessment"@en ;
