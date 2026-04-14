@@ -11,40 +11,10 @@
 @base <https://w3id.org/ssbd/core/ssbd-taxonomy> .
 
 <https://w3id.org/ssbd/core/ssbd-taxonomy> rdf:type owl:Ontology ;
+                                            owl:imports <https://w3id.org/ssbd/core/0.0.1/reused-terms> ;
                                             owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy> ;
                                             dcterms:abstract "Taxonomy useful for categorizing activities and outputs of activities within the SSbD framework."@en ;
                                             dcterms:title "SSbD Taxonomy"@en .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/abstract
-dcterms:abstract rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/source
-dcterms:source rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#altLabel
-skos:altLabel rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#definition
-skos:definition rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-skos:prefLabel rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#scopeNote
-skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
 #################################################################
