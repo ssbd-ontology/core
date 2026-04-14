@@ -133,10 +133,15 @@ annotation_mappings = {
     "http://purl.org/dc/elements/1.1/source": DCTERMS.source,
     "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/source": DCTERMS.source,
 }
-lang_mappings = [
+
+# Annotations that should be language strings
+lang_annotations = [
     SKOS.definition,
     SKOS.prefLabel,
     SKOS.altLabel,
+    RDFS.label,
+    RDFS.comment,
+    #CHEMOWL.short_name,
 ]
 
 
@@ -147,6 +152,7 @@ rootdir = Path(__file__).resolve().parent.parent
 ts1 = Triplestore(backend="rdflib")
 ts1.parse(rootdir / "sources" / "cheminf.ttl")
 CHEMINF = ts1.namespaces["cheminf"]
+CHEMCORE = ts1.namespaces["chemcore"]
 query = f"""
 PREFIX rdfs: <{RDFS}>
 PREFIX cheminf: <{CHEMINF}>
@@ -248,7 +254,10 @@ for term in ignored_terms:
 
 
 # Add ontology to triplestore
-triples = [(ontology_iri, RDF.type, OWL.Ontology)]
+triples = [
+    (ontology_iri, RDF.type, OWL.Ontology),
+    (ontology_iri, OWL.imports, "https://w3id.org/ssbd/core/0.0.1/reused-terms"),
+]
 for p, o in ontology_descr.items():
     triples.append((ontology_iri, p, o))
 ts.add_triples(triples)
@@ -286,10 +295,24 @@ for s, p, o in ts.triples(predicate=RDF.type, object=OWL.Class):
         except UniquenessError:
             pass
         else:
-            if " " in definition
-            definition = definition[0].upper() + definition[1:]
-            ts.add(s, SKOS.definition = en(definition)
+            if " " in definition:
+                definition = definition[0].upper() + definition[1:]
+                ts.add((s, SKOS.definition, en(definition)))
 
+# Convert chemcore:short_name to skos:altLabel if it isn't equal to prefLabel
+triples = list(ts.triples(predicate=CHEMCORE.short_name))
+for s, p, o in triples:
+    prefLabel = ts.value(s, SKOS.prefLabel)
+    if prefLabel != o:
+        ts.remove(s, p, o)
+        ts.add((s, SKOS.altLabel, en(o)))
+
+
+# Ensure that language annotations are English
+for annotation in lang_annotations:
+    triples = list(ts.triples(predicate=annotation))
+    ts.remove(predicate=annotation)
+    ts.add_triples([(s, p, en(o)) for s, p, o in triples])
 
 
 # Write cheminf.ttl
