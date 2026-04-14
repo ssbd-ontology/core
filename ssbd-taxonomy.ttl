@@ -265,7 +265,7 @@ ssbd:FlammabiityAssessment rdf:type owl:Class ;
                            rdfs:subClassOf ssbd:IntrinsicChemicalHazardAssessment ;
                            skos:altLabel "Flammability  Assessment"@en ;
                            skos:definition "Assessment of flammability of chemicals and materials."@en ;
-                           skos:prefLabel "Flammability Assessment"@en .
+                           skos:prefLabel "FlammabilityAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/FossilFuelEnergyConsumptionAssessment
@@ -366,7 +366,7 @@ ssbd:HHRAIndoorAirPollution rdf:type owl:Class ;
                             rdfs:subClassOf ssbd:HumanHealthRiskAssessment ;
                             skos:altLabel "HHRA Indoor Air Pollution"@en ;
                             skos:definition "Assessment of human health risks from indoor air pollutants."@en ;
-                            skos:prefLabel "HHRAIndoorAir Pollution"@en .
+                            skos:prefLabel "HHRAIndoorAirPollution"@en .
 
 
 ###  https://w3id.org/ssbd/HHRASoilPollution
@@ -492,7 +492,7 @@ ssbd:IrritationAndCorrosion rdf:type owl:Class ;
                             rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
                             skos:altLabel "Irritation and Corrosion"@en ;
                             skos:definition "Assessing irritation and corrosive effects, i.e., surface-destructive effect on contact of chemicals on the skin, in the eyes or in respiratory system."@en ;
-                            skos:prefLabel "Irritation And Corrosion"@en ;
+                            skos:prefLabel "IrritationAndCorrosion"@en ;
                             skos:scopeNote """Skin corrosion refers to the production of irreversible damage to the skin; namely, visible necrosis  through the epidermis and into the dermis occurring after exposure to a substance or mixture.
 Skin irritation refers to the production of reversible damage to the skin occurring after exposure to a  substance or mixture.
 https://unece.org/transport/dangerous-goods/ghs-rev11-2025"""@en .
@@ -558,7 +558,7 @@ ssbd:NonGenotoxicCarcinogenicityAssessment rdf:type owl:Class ;
                                            rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
                                            skos:altLabel "Non-genotoxic Carcinogenicity  Assessment"@en ;
                                            skos:definition "Non-genotoxic carcinogenicity (NGTxC) assessment identifies cancer-causing agents that act through non-DNA-damaging mechanisms, such as hormonal effects, chronic inflammation, or epigenetic changes rather than direct mutation."@en ;
-                                           skos:prefLabel "Non-genotoxicCarcinogenicity Assessment"@en .
+                                           skos:prefLabel "Non-genotoxicCarcinogenicityAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/OccupationalHealthandSafetyAssessment
@@ -680,9 +680,6 @@ ssbd:ResourceAssessmentWater rdf:type owl:Class ;
                              skos:scopeNote "This is a LCA impact category."@en .
 
 
-###  https://w3id.org/ssbd/SSbDDimension
-ssbd:SSbDDimension rdf:type owl:Class .
-
 
 ###  https://w3id.org/ssbd/SafeWorkingConditionsAssessment
 ssbd:SafeWorkingConditionsAssessment rdf:type owl:Class ;
@@ -777,10 +774,6 @@ ssbd:SoilQualityAssessment rdf:type owl:Class ;
                            skos:altLabel "Soil Quality Assessment"@en ;
                            skos:definition "Assessing the concentration of pollutants in soil."@en ;
                            skos:prefLabel "SoilQualityAssessment"@en .
-
-
-###  https://w3id.org/ssbd/SpecifiedAssessment
-ssbd:SpecifiedAssessment rdf:type owl:Class .
 
 
 ###  https://w3id.org/ssbd/StratosphericOzoneLayerDepletionAssessment
