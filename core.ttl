@@ -543,7 +543,7 @@ vann:usageNote rdf:type owl:AnnotationProperty .
     rdfs:subClassOf :Process , [
         a owl:Restriction ;
         owl:onProperty :assesses ;
-        owl:someValuesFrom :Property
+        owl:someValuesFrom :Indicator
     ] ;
     skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process." ;
     skos:prefLabel "Assessment" .
