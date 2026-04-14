@@ -31,6 +31,16 @@ TEST_CASES = [
         "description": "Invalid Dataset (plain string instead of langString for title)",
         "should_conform": False,
     },
+    {
+        "filename": "tests/dataset-untyped-iri.jsonld",
+        "description": "Valid Dataset (untyped IRI references for object properties)",
+        "should_conform": True,
+    },
+    {
+        "filename": "tests/dataset-literal-for-object-prop.jsonld",
+        "description": "Invalid Dataset (literal string for object property)",
+        "should_conform": False,
+    },
 ]
 
 
@@ -82,7 +92,7 @@ def run_tests() -> bool:
         else:
             status = "✗"
             outcome = "passed" if conforms else "failed"
-            print(f"{status} {test_case['description']} {outcome} validation (unexpected!)")
+            print(f"{status} {test_case['description']} {outcome} validation (unexpected)")
 
     all_passed = all(passed for _, _, passed in test_results)
     print("\n" + ("All tests passed!" if all_passed else "Some tests failed!"))
