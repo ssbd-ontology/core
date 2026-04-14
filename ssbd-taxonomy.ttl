@@ -78,7 +78,7 @@ ssbd:BioaccumulationAssessment rdf:type owl:Class ;
                                skos:altLabel "Bioaccumulation Assessment"@en ;
                                skos:definition "Assessing the bioaccumulation potential of a chemical."@en ;
                                skos:prefLabel "BioaccumulationAssessment"@en ;
-                               skos:scopeNote """Bioaccumulation refers to the accumulation of persistent hydrophobic chemicals in aquatic organisms through mechanisms such as direct uptake from water via gills or skin (bioconcentration), ingestion of suspended particles, or consumption of contaminated food (biomagnification). 
+                               skos:scopeNote """Bioaccumulation refers to the accumulation of persistent hydrophobic chemicals in aquatic organisms through mechanisms such as direct uptake from water via gills or skin (bioconcentration), ingestion of suspended particles, or consumption of contaminated food (biomagnification).
 Bioaccumulation the progressive increase in the amount of a substance in an organism or part of an organism that occurs because the rate of intake from all contributing sources and by all possible routes exceeds the organism'ss ability to eliminate the substance from its body. https://doi.org/10.1351/PAC-REC-08-07-09""" .
 
 
@@ -494,7 +494,7 @@ ssbd:IrritationAndCorrosion rdf:type owl:Class ;
                             skos:definition "Assessing irritation and corrosive effects, i.e., surface-destructive effect on contact of chemicals on the skin, in the eyes or in respiratory system."@en ;
                             skos:prefLabel "Irritation And Corrosion"@en ;
                             skos:scopeNote """Skin corrosion refers to the production of irreversible damage to the skin; namely, visible necrosis  through the epidermis and into the dermis occurring after exposure to a substance or mixture.
-Skin irritation refers to the production of reversible damage to the skin occurring after exposure to a  substance or mixture. 
+Skin irritation refers to the production of reversible damage to the skin occurring after exposure to a  substance or mixture.
 https://unece.org/transport/dangerous-goods/ghs-rev11-2025""" .
 
 
@@ -729,8 +729,8 @@ ssbd:SkinAndRespiratorySensitisation rdf:type owl:Class ;
                                      skos:altLabel "Skin and Respiratory Sensitisation"@en ;
                                      skos:definition "Assessing skin and respiratory sensitisation"@en ;
                                      skos:prefLabel "SkinAndRespiratorySensitisation"@en ;
-                                     skos:scopeNote """Respiratory sensitisation refers to hypersensitivity of the airways occurring after inhalation of a substance or a mixture. 
-Skin sensitisation refers to an allergic response occurring after skin contact with a substance or a mixture. 
+                                     skos:scopeNote """Respiratory sensitisation refers to hypersensitivity of the airways occurring after inhalation of a substance or a mixture.
+Skin sensitisation refers to an allergic response occurring after skin contact with a substance or a mixture.
 https://unece.org/transport/dangerous-goods/ghs-rev11-2025""" .
 
 
@@ -811,10 +811,8 @@ ssbd:SustainabilityDimension rdf:type owl:Class ;
                              skos:altLabel "Sustainability Dimension"@en ;
                              skos:definition "The dimension of sustainability in the context of SSbD assessments of chemicals and materials."@en ;
                              skos:prefLabel "SustainabilityDimension"@en ;
-                             skos:scopeNote """Sustainability is the state of the global system, including environmental, social and economic aspects, in which the needs of the present are met without compromising the ability of future generations to meet their own need. 
-Note 1 to entry:The environmental, social and economic aspects interact, are interdependent and are often referred to as the three dimensions of sustainability.
-Note 2 to entry: Sustainability is the goal of sustainable development.
-https://www.iso.org/obp/ui/en/#iso:std:iso:guide:82:ed-2:v1:en""" .
+                             skos:scopeNote """Sustainability is the state of the global system, including environmental, social and economic aspects, in which the needs of the present are met without compromising the ability of future generations to meet their own need. Note 1 to entry:The environmental, social and economic aspects interact, are interdependent and are often referred to as the three dimensions of sustainability.
+Note 2 to entry: Sustainability is the goal of sustainable development. https://www.iso.org/obp/ui/en/#iso:std:iso:guide:82:ed-2:v1:en""" .
 
 
 ###  https://w3id.org/ssbd/TerrestrialEutrophicationImpactAssessment
