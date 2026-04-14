@@ -198,7 +198,7 @@ def mklabel(s: str, isclass: bool) -> str:
     else:
         first = first.lower()
 
-    return "".join([first] + [e[0].upper() + e[1:] for e in lst[1:]])
+    return "".join([first] + [e[0].upper() + e[1:] for e in lst[1:]]).replace("'", "")
 
 
 # Create new triplestore
@@ -270,8 +270,9 @@ for s, p, o in ts.triples(predicate=RDFS.label):
     label = str(o)
     if label not in labels:
         labels.add(label)
-        isclass = ts.has(s, RDF.type, OWL.Class)
-        triples.append((s, SKOS.prefLabel, en(mklabel(label, isclass))))
+        if not ts.has(s, SKOS.prefLabel):
+            isclass = ts.has(s, RDF.type, OWL.Class)
+            triples.append((s, SKOS.prefLabel, en(mklabel(label, isclass))))
 ts.add_triples(triples)
 
 
@@ -286,25 +287,30 @@ for s, p, o in triples_remove:
 ts.add_triples(triples_add)
 
 
-# Add skos:definition to classes that only has an rdfs:label
-triples = []
-for s, p, o in ts.triples(predicate=RDF.type, object=OWL.Class):
-    if not ts.has(s, SKOS.definition) and ts.has(s, RDFS.label):
-        try:
-            definition = ts.value(s, RDFS.label)
-        except UniquenessError:
-            pass
-        else:
-            if " " in definition:
-                definition = definition[0].upper() + definition[1:]
-                ts.add((s, SKOS.definition, en(definition)))
+# If a class lack skos:definition, use rdfs:comment or rdfs:label as fallback
+triples = list(ts.triples(predicate=RDF.type, object=OWL.Class))
+for s, p, o in triples:
+    if not ts.has(s, SKOS.definition):
+        for a in (RDFS.comment, RDFS.label):
+            if ts.has(s, a):
+                try:
+                    definition = ts.value(s, a)
+                except UniquenessError:
+                    pass
+                else:
+                    if definition and (a != RDFS.label or " " in definition):
+                        ts.remove(s, a, definition)
+                        definition = definition[0].upper() + definition[1:]
+                        ts.add((s, SKOS.definition, en(definition)))
 
-# Convert chemcore:short_name to skos:altLabel if it isn't equal to prefLabel
+
+# Remove chemcore:short_name. Readd it as skos:altLabel if it isn't
+# equal to skos:prefLabel
 triples = list(ts.triples(predicate=CHEMCORE.short_name))
 for s, p, o in triples:
     prefLabel = ts.value(s, SKOS.prefLabel)
+    ts.remove(s, p, o)
     if prefLabel != o:
-        ts.remove(s, p, o)
         ts.add((s, SKOS.altLabel, en(o)))
 
 
