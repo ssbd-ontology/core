@@ -12,11 +12,12 @@ from pathlib import Path
 from tripper import DCTERMS, OWL, RDF, RDFS, SKOS, Literal, Triplestore
 from tripper.utils import en
 from tripper.datadoc.utils import iriname
+from tripper.errors import UniquenessError
 
 # Ontology description
-ontology_iri = "https://w3id.org/ssbd/cheminf"
+ontology_iri = "https://w3id.org/ssbd/core/cheminf"
 ontology_descr = {
-    OWL.versionIRI: "https://w3id.org/ssbd/0.0.1/cheminf",
+    OWL.versionIRI: "https://w3id.org/ssbd/core/0.0.1/cheminf",
     DCTERMS.abstract: Literal(
         "The CHEMINF module of SSbD Core Ontology "
         "providing a taxonomy for chemical descriptors.",
@@ -123,12 +124,35 @@ ignored_terms = [
 ]
 
 
+# Annotations mappings for consistent use of Dublin Core and SKOS
+annotation_mappings = {
+    "http://purl.org/dc/elements/1.1/creator": DCTERMS.creator,
+    "http://purl.org/dc/elements/1.1/date": DCTERMS.date,
+    "http://purl.org/dc/elements/1.1/description": SKOS.definition,
+    DCTERMS.description: SKOS.definition,  # The SSbD ontology elucidate classes with skos.definition
+    "http://purl.org/dc/elements/1.1/source": DCTERMS.source,
+    "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/source": DCTERMS.source,
+}
+
+# Annotations that should be language strings
+lang_annotations = [
+    SKOS.definition,
+    SKOS.prefLabel,
+    SKOS.altLabel,
+    RDFS.label,
+    RDFS.comment,
+    #CHEMOWL.short_name,
+]
+
+
+
 rootdir = Path(__file__).resolve().parent.parent
 
 # Load local squashed cheminf
 ts1 = Triplestore(backend="rdflib")
 ts1.parse(rootdir / "sources" / "cheminf.ttl")
 CHEMINF = ts1.namespaces["cheminf"]
+CHEMCORE = ts1.namespaces["chemcore"]
 query = f"""
 PREFIX rdfs: <{RDFS}>
 PREFIX cheminf: <{CHEMINF}>
@@ -174,7 +198,7 @@ def mklabel(s: str, isclass: bool) -> str:
     else:
         first = first.lower()
 
-    return "".join([first] + [e[0].upper() + e[1:] for e in lst[1:]])
+    return "".join([first] + [e[0].upper() + e[1:] for e in lst[1:]]).replace("'", "")
 
 
 # Create new triplestore
@@ -230,7 +254,10 @@ for term in ignored_terms:
 
 
 # Add ontology to triplestore
-triples = [(ontology_iri, RDF.type, OWL.Ontology)]
+triples = [
+    (ontology_iri, RDF.type, OWL.Ontology),
+    (ontology_iri, OWL.imports, "https://w3id.org/ssbd/core/0.0.1/reused-terms"),
+]
 for p, o in ontology_descr.items():
     triples.append((ontology_iri, p, o))
 ts.add_triples(triples)
@@ -243,9 +270,56 @@ for s, p, o in ts.triples(predicate=RDFS.label):
     label = str(o)
     if label not in labels:
         labels.add(label)
-        isclass = ts.has(s, RDF.type, OWL.Class)
-        triples.append((s, SKOS.prefLabel, en(mklabel(label, isclass))))
+        if not ts.has(s, SKOS.prefLabel):
+            isclass = ts.has(s, RDF.type, OWL.Class)
+            triples.append((s, SKOS.prefLabel, en(mklabel(label, isclass))))
 ts.add_triples(triples)
+
+
+# Update class annotations for consistent use of Dublin Core and SKOS
+triples_remove = []
+triples_add = []
+for pred_from, pred_to in annotation_mappings.items():
+    triples = list(ts.triples(predicate=pred_from))
+    triples_remove.extend(triples)
+    triples_add.extend((s, pred_to, o) for s, p, o in triples)
+for s, p, o in triples_remove:
+    ts.remove(s, p, o)
+ts.add_triples(triples_add)
+
+
+# If a class lack skos:definition, use rdfs:comment or rdfs:label as fallback
+triples = list(ts.triples(predicate=RDF.type, object=OWL.Class))
+for s, p, o in triples:
+    if not ts.has(s, SKOS.definition):
+        for a in (RDFS.comment, RDFS.label):
+            if ts.has(s, a):
+                try:
+                    definition = ts.value(s, a)
+                except UniquenessError:
+                    pass
+                else:
+                    if definition and (a != RDFS.label or " " in definition):
+                        ts.remove(s, a, definition)
+                        definition = definition[0].upper() + definition[1:]
+                        ts.add((s, SKOS.definition, en(definition)))
+
+
+# Remove chemcore:short_name. Readd it as skos:altLabel if it isn't
+# equal to skos:prefLabel
+triples = list(ts.triples(predicate=CHEMCORE.short_name))
+for s, p, o in triples:
+    prefLabel = ts.value(s, SKOS.prefLabel)
+    ts.remove(s, p, o)
+    if prefLabel != o:
+        ts.add((s, SKOS.altLabel, en(o)))
+
+
+# Ensure that language annotations are English
+for annotation in lang_annotations:
+    triples = list(ts.triples(predicate=annotation))
+    ts.remove(predicate=annotation)
+    ts.add_triples([(s, p, en(o)) for s, p, o in triples])
 
 
 # Write cheminf.ttl
