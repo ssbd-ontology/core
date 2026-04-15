@@ -236,7 +236,15 @@ jobs:
             --set-prefix=ssbd:https://w3id.org/ssbd/ \
             --set-prefix=dm:https://w3id.org/emmo/domain/datamodel# 
             #--namespace-filter=ssbd
+  
 
+    - name: Generate shacl shapes and publish
+      run: |
+        pip install .
+        python3 validation/generate_shacl.py
+        mkdir -p static/shacl
+        cp validation/shapes*.ttl static/shacl/
+ 
     - name: Copy ontologies, figures and context to public
       run: |
         ls public/
