@@ -94,7 +94,7 @@ jobs:
             --namespace="dcatap:http://data.europa.eu/r5r/" \
             ${ONTOLOGY_NAME}.ttl \
             build/${ONTOLOGY_NAME}-s.ttl
-        cat build/{ONTOLOGY_NAME}-s.ttl docs/docterms.ttl > build/{ONTOLOGY_NAME}-squashed.ttl
+        cat build/${ONTOLOGY_NAME}-s.ttl docs/docterms.ttl > build/${ONTOLOGY_NAME}-squashed.ttl
  
     - name: Generate Ontokit documentation to public
       # We concatenate the core ontology with docterms.ttl to include terms
