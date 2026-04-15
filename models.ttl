@@ -23,6 +23,7 @@
 <https://w3id.org/ssbd/core/models> rdf:type owl:Ontology ;
                                 owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/models> ;
                                 dcterms:abstract "The Models module of SSbD Core Ontology providing a taxonomy for models."@en ;
+                                owl:imports <https://w3id.org/ssbd/core/0.0.1/reused-terms> ;
                                 dcterms:title "Models"@en ;
                                 widoco:introduction """
 This module is a part of the [SSbD Core Ontology](https://ssbd-ontology.github.io/core/widoco/index-en.html).
@@ -30,41 +31,6 @@ A model is a useful simplified description of a selected part of the world.
 
 A figure showing how the SSbD Core Ontology categorise models can be found [here](https://ssbd-ontology.github.io/core/docs/models.html).
 """@en .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/abstract
-dcterms:abstract rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-dcterms:title rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#altLabel
-skos:altLabel rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#definition
-skos:definition rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-skos:prefLabel rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#scopeNote
-skos:scopeNote rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/widoco/vocab#introduction
-widoco:introduction rdf:type owl:AnnotationProperty .
 
 
 #################################################################
