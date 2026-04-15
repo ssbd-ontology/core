@@ -17,7 +17,9 @@ from tripper.errors import UniquenessError
 # Ontology description
 ontology_iri = "https://w3id.org/ssbd/cheminf"
 ontology_descr = {
-    OWL.versionIRI: "https://w3id.org/ssbd/0.0.1/cheminf",
+ontology_iri = "https://w3id.org/ssbd/core/cheminf"
+ontology_descr = {
+OWL.versionIRI: "https://w3id.org/ssbd/core/0.0.1/cheminf",
     DCTERMS.abstract: Literal(
         "The CHEMINF module of SSbD Core Ontology "
         "providing a taxonomy for chemical descriptors.",
