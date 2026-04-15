@@ -32,8 +32,12 @@ def load_graph(source: Union[str, Path, dict]) -> Graph:
     graph = Graph()
     if isinstance(source, dict):
         graph.parse(data=json.dumps(source), format="json-ld")
+    
+    file_path = Path(source)
+    if file_path.suffix == '.ttl':
+        graph.parse(file_path, format="turtle")
     else:
-        graph.parse(source, format="json-ld")
+        graph.parse(file_path, format="json-ld")
     return graph
 
 
