@@ -16,8 +16,8 @@ REFERENCE_INDICES:
     title: Properties Index
     docfile: properties.rst
     # iri_regex: https://example.org/other
-    imported: false
-    recursive: false
+    imported: true
+    recursive: true
     subsections: annotation_properties,object_properties,data_properties
   - ontology_file: ssbd-taxonomy.ttl
     title: SSbDAssessments Index
