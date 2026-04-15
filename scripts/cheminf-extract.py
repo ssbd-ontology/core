@@ -15,11 +15,9 @@ from tripper.datadoc.utils import iriname
 from tripper.errors import UniquenessError
 
 # Ontology description
-ontology_iri = "https://w3id.org/ssbd/cheminf"
-ontology_descr = {
 ontology_iri = "https://w3id.org/ssbd/core/cheminf"
 ontology_descr = {
-OWL.versionIRI: "https://w3id.org/ssbd/core/0.0.1/cheminf",
+    OWL.versionIRI: "https://w3id.org/ssbd/core/0.0.1/cheminf",
     DCTERMS.abstract: Literal(
         "The CHEMINF module of SSbD Core Ontology "
         "providing a taxonomy for chemical descriptors.",
@@ -282,8 +280,9 @@ ts.add_triples(triples)
 triples_remove = []
 triples_add = []
 for pred_from, pred_to in annotation_mappings.items():
-    triples_remove.extend(ts.triples(predicate=pred_from))
-    triples_add.extend(ts.triples(predicate=pred_to))
+    triples = list(ts.triples(predicate=pred_from))
+    triples_remove.extend(triples)
+    triples_add.extend((s, pred_to, o) for s, p, o in triples)
 for s, p, o in triples_remove:
     ts.remove(s, p, o)
 ts.add_triples(triples_add)

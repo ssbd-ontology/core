@@ -25,20 +25,23 @@ obo:RO_0000056 a owl:ObjectProperty ;
     skos:prefLabel "participatesIn"@en .
 
 :CHEMINF_000002 a owl:Class ;
+    rdfs:label "atomic polarizability sum"@en ;
     rdfs:subClassOf :CHEMINF_000094 ;
-    skos:definition "Atomic polarizability sum"@en ;
+    skos:definition "atomic polarizability sum is the sum of the atomic polarizabilities (including implicit hydrogens)."@en ;
     skos:prefLabel "AtomicPolarizabilitySum"@en .
 
 :CHEMINF_000003 a owl:Class ;
+    rdfs:label "partial positive surface area"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "PPSA-1"@en ;
-    skos:definition "Partial positive surface area"@en ;
+    skos:definition "sum of surface area on positive parts of molecule"@en ;
     skos:prefLabel "PartialPositiveSurfaceArea"@en .
 
 :CHEMINF_000004 a owl:Class ;
     rdfs:label "PPSA-2"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "PPSA-2"@en ;
+    skos:definition "partial positive surface area * total positive charge on the molecule"@en ;
     skos:prefLabel "PPSAMinus2"@en .
 
 :CHEMINF_000006 a owl:Class ;
@@ -48,12 +51,14 @@ obo:RO_0000056 a owl:ObjectProperty ;
     skos:prefLabel "RStereochemicalDescriptor"@en .
 
 :CHEMINF_000008 a owl:Class ;
+    rdfs:label "charge weighted partial positive surface area"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "PPSA-3"@en ;
-    skos:definition "Charge weighted partial positive surface area"@en ;
+    skos:definition "charge weighted partial positive surface area"@en ;
     skos:prefLabel "ChargeWeightedPartialPositiveSurfaceArea"@en .
 
 :CHEMINF_000010 a owl:Class ;
+    rdfs:label "atomic order"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
@@ -61,32 +66,36 @@ obo:RO_0000056 a owl:ObjectProperty ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000041 ;
-    skos:definition "Atomic order"@en ;
+    skos:definition "Atomic order is an atomic descriptor that specifies the ordinal position of an atom."@en ;
     skos:prefLabel "AtomicOrder"@en .
 
 :CHEMINF_000011 a owl:Class ;
+    rdfs:label "partial negative surface area"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "PNSA-1"@en ;
-    skos:definition "Partial negative surface area"@en ;
+    skos:definition "sum of surface area on negative parts of molecule"@en ;
     skos:prefLabel "PartialNegativeSurfaceArea"@en .
 
 :CHEMINF_000015 a owl:Class ;
     rdfs:label "PNSA-2"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "PNSA-2"@en ;
+    skos:definition "partial negative surface area * total negative charge on the molecule"@en ;
     skos:prefLabel "PNSAMinus2"@en .
 
 :CHEMINF_000019 a owl:Class ;
+    rdfs:label "SMARTS descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000085 ;
-    skos:definition "SMARTS descriptor"@en ;
+    skos:definition "A SMARTS descriptor is a molecular structure descriptor that conforms to the SMARTS specification."@en ;
     skos:prefLabel "SMARTSDescriptor"@en .
 
 :CHEMINF_000046 a owl:Class ;
+    rdfs:label "zagreb index"@en ;
     rdfs:subClassOf :CHEMINF_000209 ;
-    skos:definition "Zagreb index"@en ;
+    skos:definition "The sum of the squared atom degrees of all heavy atoms."@en ;
     skos:prefLabel "ZagrebIndex"@en .
 
 :CHEMINF_000049 a owl:Class ;
@@ -102,45 +111,51 @@ obo:RO_0000056 a owl:ObjectProperty ;
     skos:prefLabel "DStereochemicalDescriptor"@en .
 
 :CHEMINF_000055 a owl:Class ;
+    rdfs:label "chemical connectivity table"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000085 ;
-    skos:definition "Chemical connectivity table"@en ;
+    skos:definition "A chemical connectivity table is a structure descriptor which consists of a connection table representing bonds between atoms in a molecular entity."@en ;
     skos:prefLabel "ChemicalConnectivityTable"@en .
 
 :CHEMINF_000058 a owl:Class ;
     rdfs:label "MOLfile"@en ;
     rdfs:subClassOf :CHEMINF_000057 ;
+    skos:definition "A MOLfile is a file which contains a MOLfile encoding of a chemical structure representation. It is the concretization of a MOLfile descriptor."@en ;
     skos:prefLabel "MOLfile"@en .
 
 :CHEMINF_000062 a owl:Class ;
+    rdfs:label "bond order descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000093 ;
-    skos:definition "Bond order descriptor"@en ;
+    skos:definition "A bond order descriptor is a descriptor associated with a bond in a chemical entity which indicates the order of the bond (single, double or triple)."@en ;
     skos:prefLabel "BondOrderDescriptor"@en .
 
 :CHEMINF_000068 a owl:Class ;
+    rdfs:label "functional group descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000085 ;
-    skos:definition "Functional group descriptor"@en ;
+    skos:definition "A functional group descriptor is a structural descriptor which describes specific groups of atoms within molecules that are responsible for the characteristic chemical reactions of those molecules."@en ;
     skos:prefLabel "FunctionalGroupDescriptor"@en .
 
 :CHEMINF_000078 a owl:Class ;
+    rdfs:label "neutron count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000209 ;
-    skos:definition "Neutron count"@en ;
+    skos:definition "The (integer) number of neutrons in the atoms nucleus."@en ;
     skos:prefLabel "NeutronCount"@en .
 
 :CHEMINF_000079 a owl:Class ;
+    rdfs:label "proton count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000209 ;
-    skos:definition "Proton count"@en ;
+    skos:definition "The (integer) number of protons in the atoms nucleus."@en ;
     skos:prefLabel "ProtonCount"@en .
 
 :CHEMINF_000081 a owl:Class ;
@@ -162,129 +177,148 @@ obo:RO_0000056 a owl:ObjectProperty ;
     skos:prefLabel "AtomicMassDescriptor"@en .
 
 :CHEMINF_000090 a owl:Class ;
+    rdfs:label "atomic degree"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000209 ;
-    skos:definition "Atomic degree"@en ;
+    skos:definition "The integer number of non-H substituents of an atom."@en ;
     skos:prefLabel "AtomicDegree"@en .
 
 :CHEMINF_000096 a owl:Class ;
+    rdfs:label "atomic valence"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000087 ;
-    skos:definition "Atomic valence"@en ;
+    skos:definition "Atomic valence is an atomic descriptor that specifies the maximum number of univalent atoms (originally hydrogen or chlorine atoms) which may combine with an atom of the element under consideration, or with a fragment, or for which an atom of this element can be substituted [source: IUPAC Gold Book - http://goldbook.iupac.org/V06588.html]"@en ;
     skos:prefLabel "AtomicValence"@en .
 
 :CHEMINF_000097 a owl:Class ;
+    rdfs:label "atomic hardness descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000094 ;
-    skos:definition "Atomic hardness descriptor"@en ;
+    skos:definition "An atomic hardness descriptor is an atomic descriptor that estimates the difference between the ionization potential and the electron affinity of a given atom."@en ;
     skos:prefLabel "AtomicHardnessDescriptor"@en .
 
 :CHEMINF_000099 a owl:Class ;
+    rdfs:label "atomic softness descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000094 ;
-    skos:definition "Atomic softness descriptor"@en ;
+    skos:definition "An atomic softness descriptor is an atomic descriptor which is about the charge delocalizing ability of a given atom."@en ;
     skos:prefLabel "AtomicSoftnessDescriptor"@en .
 
 :CHEMINF_000104 a owl:Class ;
+    rdfs:label "molecular QSAR descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000064 ;
-    skos:definition "Molecular QSAR descriptor"@en ;
+    skos:definition "A molecular QSAR descriptor is a OSAR descriptor which gives a quantitative value to some aspect of a molecular entity."@en ;
     skos:prefLabel "MolecularQSARDescriptor"@en .
 
 :CHEMINF_000105 a owl:Class ;
+    rdfs:label "cycle basis"@en ;
     rdfs:subClassOf :CHEMINF_000085 ;
-    skos:definition "Cycle basis"@en ;
+    skos:definition "The cycle basis of a molecular structure is the smallest set of cycles (closed paths) formed in the graph representation of the structure, from which all other cycles can be computed."@en ;
     skos:prefLabel "CycleBasis"@en .
 
 :CHEMINF_000109 a owl:Class ;
+    rdfs:label "trivial name"@en ;
     rdfs:subClassOf :CHEMINF_000043 ;
-    skos:definition "Trivial name"@en ;
+    skos:definition "A trivial name is a molecular entity name that is in common public use and may not be related to the structure of the molecular entity."@en ;
     skos:prefLabel "TrivialName"@en .
 
 :CHEMINF_000110 a owl:Class ;
+    rdfs:label "fused cycles"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000085 ;
-    skos:definition "Fused cycles"@en ;
+    skos:definition "The fused cycles in a molecular structure are those cycles from the cycle basis which share at least one bond."@en ;
     skos:prefLabel "FusedCycles"@en .
 
 :CHEMINF_000112 a owl:Class ;
+    rdfs:label "atomic QSAR descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000064 ;
-    skos:definition "Atomic QSAR descriptor"@en ;
+    skos:definition "An atomic QSAR descriptor is a QSAR descriptor which gives a quantitative value to some aspect of an atom which is part of a molecular entity."@en ;
     skos:prefLabel "AtomicQSARDescriptor"@en .
 
 :CHEMINF_000114 a owl:Class ;
+    rdfs:label "MOLfile descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000085 ;
-    skos:definition "MOLfile descriptor"@en ;
+    skos:definition "A MOLfile descriptor is a structure descriptor which conforms to the MOLfile format specification."@en ;
     skos:prefLabel "MOLfileDescriptor"@en .
 
 :CHEMINF_000116 a owl:Class ;
+    rdfs:label "atomic connectivity index"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000093 ;
-    skos:definition "Atomic connectivity index"@en ;
+    skos:definition "An atomic connectivity index is an atomic descriptor that is a measure of atomic connectivity, which can take various forms (e.g. zero-order, or first-order)."@en ;
     skos:prefLabel "AtomicConnectivityIndex"@en .
 
 :CHEMINF_000117 a owl:Class ;
+    rdfs:label "Wiener path number"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Wiener path number"@en ;
+    skos:definition "Half the sum of all the distance matrix entries, topological index of atom-atom distances."@en ;
     skos:prefLabel "WienerPathNumber"@en .
 
 :CHEMINF_000118 a owl:Class ;
+    rdfs:label "formal charge descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000131 ;
-    skos:definition "Formal charge descriptor"@en ;
+    skos:definition """The formal charge gives the charge assigned to an atom in a molecule, assuming that electrons in a chemical bond are shared equally between atoms, regardless of relative electronegativity.
+The formal charge of any atom in a molecule can be calculated by the following equation: FC = number of valence electrons of the atom in isolation (atom in ground state) - number of non-bonding electrons on this atom in the molecule - half the total number of electrons shared in covalent bonds with other atoms in the molecule. [source:wikipedia]"""@en ;
     skos:prefLabel "FormalChargeDescriptor"@en .
 
 :CHEMINF_000119 a owl:Class ;
+    rdfs:label "partial charge descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000131 ;
-    skos:definition "Partial charge descriptor"@en ;
+    skos:definition "A partial charge descriptor gives the charge with an absolute value of less than one elementary charge unit (that is, smaller than the charge of the electron). [source:wikipedia]"@en ;
     skos:prefLabel "PartialChargeDescriptor"@en .
 
 :CHEMINF_000122 a owl:Class ;
+    rdfs:label "electronegativity descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000087 ;
-    skos:definition "Electronegativity descriptor"@en ;
+    skos:definition "An electronegativity descriptor is a chemical descriptor that is about the electronegativity quality of an atom."@en ;
     skos:prefLabel "ElectronegativityDescriptor"@en .
 
 :CHEMINF_000130 a owl:Class ;
+    rdfs:label "bond multiplicity descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Bond multiplicity descriptor"@en ;
+    skos:definition "A bond multiplicity descriptor is a chemical descriptor that in primitive cases is defined as half of the difference between the number of bonding and antibonding electrons in a particular system, but may also be defined with relation to the strength of a single bond."@en ;
     skos:prefLabel "BondMultiplicityDescriptor"@en .
 
 :CHEMINF_000132 a owl:Class ;
+    rdfs:label "bond length descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000060 ;
-    skos:definition "Bond length descriptor"@en ;
+    skos:definition "A bond length descriptor is a dimensional extent descriptor which gives the measured or predicted (idealised) length of an atom to atom bond within a chemical entity."@en ;
     skos:prefLabel "BondLengthDescriptor"@en .
 
 :CHEMINF_000137 a owl:Class ;
+    rdfs:label "Wiener polarity number descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Wiener polarity number descriptor"@en ;
+    skos:definition "Half the sum of all the distance matrix entries with a value of 3"@en ;
     skos:prefLabel "WienerPolarityNumberDescriptor"@en .
 
 :CHEMINF_000141 a owl:Class ;
@@ -293,143 +327,167 @@ obo:RO_0000056 a owl:ObjectProperty ;
     skos:prefLabel "PubChemSubstanceIdentifier(SID)"@en .
 
 :CHEMINF_000149 a owl:Class ;
+    rdfs:label "generic SMILES descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000018 ;
-    skos:definition "Generic SMILES descriptor"@en ;
+    skos:definition "a generic SMILES descriptor is a SMILES descriptor that denotes only the labeled molecular graph (i.e. atoms and bonds, but no chiral or isotopic information)."@en ;
     skos:prefLabel "GenericSMILESDescriptor"@en .
 
 :CHEMINF_000153 a owl:Class ;
+    rdfs:label "charge weighted partial negative surface area"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "PNSA-3"@en ;
-    skos:definition "Charge weighted partial negative surface area"@en ;
+    skos:definition "charge weighted partial negative surface area"@en ;
     skos:prefLabel "ChargeWeightedPartialNegativeSurfaceArea"@en .
 
 :CHEMINF_000154 a owl:Class ;
     rdfs:label "DPSA-1"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "DPSA-1"@en ;
+    skos:definition "difference of PPSA-1 and PNSA-1"@en ;
     skos:prefLabel "DPSAMinus1"@en .
 
 :CHEMINF_000155 a owl:Class ;
     rdfs:label "DPSA-2"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "DPSA-2"@en ;
+    skos:definition "difference of FPSA-2 and PNSA-2"@en ;
     skos:prefLabel "DPSAMinus2"@en .
 
 :CHEMINF_000156 a owl:Class ;
     rdfs:label "DPSA-3"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "DPSA-3"@en ;
+    skos:definition "difference of PPSA-3 and PNSA-3"@en ;
     skos:prefLabel "DPSAMinus3"@en .
 
 :CHEMINF_000157 a owl:Class ;
     rdfs:label "FPSA-1"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "FPSA-1"@en ;
+    skos:definition "PPSA-1 / total molecular surface area"@en ;
     skos:prefLabel "FPSAMinus1"@en .
 
 :CHEMINF_000158 a owl:Class ;
     rdfs:label "FPSA-2"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "FPSA-2"@en ;
+    skos:definition "PPSA-2 / total molecular surface area"@en ;
     skos:prefLabel "FPSAMinus2"@en .
 
 :CHEMINF_000159 a owl:Class ;
     rdfs:label "FPSA-3"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "FPSA-3"@en ;
+    skos:definition "PPSA-3 / total molecular surface area"@en ;
     skos:prefLabel "FPSAMinus3"@en .
 
 :CHEMINF_000160 a owl:Class ;
     rdfs:label "FNSA-1"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "FNSA-1"@en ;
+    skos:definition "PNSA-1 / total molecular surface area"@en ;
     skos:prefLabel "FNSAMinus1"@en .
 
 :CHEMINF_000161 a owl:Class ;
     rdfs:label "FNSA-2"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "FNSA-2"@en ;
+    skos:definition "PNSA-2 / total molecular surface area"@en ;
     skos:prefLabel "FNSAMinus2"@en .
 
 :CHEMINF_000162 a owl:Class ;
     rdfs:label "FNSA-3"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "FNSA-3"@en ;
+    skos:definition "PNSA-3 / total molecular surface area"@en ;
     skos:prefLabel "FNSAMinus3"@en .
 
 :CHEMINF_000163 a owl:Class ;
     rdfs:label "WPSA-1"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "WPSA-1"@en ;
+    skos:definition "PPSA-1 * total molecular surface area / 1000"@en ;
     skos:prefLabel "WPSAMinus1"@en .
 
 :CHEMINF_000164 a owl:Class ;
     rdfs:label "WPSA-2"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "WPSA-2"@en ;
+    skos:definition "PPSA-2 * total molecular surface area /1000"@en ;
     skos:prefLabel "WPSAMinus2"@en .
 
 :CHEMINF_000165 a owl:Class ;
     rdfs:label "WPSA-3"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "WPSA-3"@en ;
+    skos:definition "PPSA-3 * total molecular surface area /1000"@en ;
     skos:prefLabel "WPSAMinus3"@en .
 
 :CHEMINF_000166 a owl:Class ;
     rdfs:label "WNSA-1"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "WNSA-1"@en ;
+    skos:definition "PNSA-1 * total molecular surface area /1000"@en ;
     skos:prefLabel "WNSAMinus1"@en .
 
 :CHEMINF_000167 a owl:Class ;
     rdfs:label "WNSA-2"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "WNSA-2"@en ;
+    skos:definition "PNSA-2 * total molecular surface area /1000"@en ;
     skos:prefLabel "WNSAMinus2"@en .
 
 :CHEMINF_000168 a owl:Class ;
     rdfs:label "WNSA-3"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "WNSA-3"@en ;
+    skos:definition "PNSA-3 * total molecular surface area /1000"@en ;
     skos:prefLabel "WNSAMinus3"@en .
 
 :CHEMINF_000169 a owl:Class ;
+    rdfs:label "relative positive charge"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "RPCG"@en ;
-    skos:definition "Relative positive charge"@en ;
+    skos:definition "most positive charge / total positive charge"@en ;
     skos:prefLabel "RelativePositiveCharge"@en .
 
 :CHEMINF_000170 a owl:Class ;
+    rdfs:label "relative negative charge"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "RNCG"@en ;
-    skos:definition "Relative negative charge"@en ;
+    skos:definition "most negative charge / total negative charge"@en ;
     skos:prefLabel "RelativeNegativeCharge"@en .
 
 :CHEMINF_000171 a owl:Class ;
+    rdfs:label "relative positive charge surface area"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "RPCS"@en ;
-    skos:definition "Relative positive charge surface area"@en ;
+    skos:definition "most positive surface area * RPCG"@en ;
     skos:prefLabel "RelativePositiveChargeSurfaceArea"@en .
 
 :CHEMINF_000172 a owl:Class ;
+    rdfs:label "relative negative charge surface area"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
     skos:altLabel "RNCS"@en ;
-    skos:definition "Relative negative charge surface area"@en ;
+    skos:definition "most negative surface area * RNCG"@en ;
     skos:prefLabel "RelativeNegativeChargeSurfaceArea"@en .
 
 :CHEMINF_000173 a owl:Class ;
     rdfs:label "THSA"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
+    skos:definition "sum of solvent accessible surface areas of atoms with absolute value of partial charges less than 0.2"@en ;
     skos:prefLabel "THSA"@en .
 
 :CHEMINF_000175 a owl:Class ;
     rdfs:label "RHSA"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
+    skos:definition "THSA / total molecular surface area"@en ;
     skos:prefLabel "RHSA"@en .
 
 :CHEMINF_000176 a owl:Class ;
     rdfs:label "RPSA"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
+    skos:definition "TPSA / total molecular surface area"@en ;
     skos:prefLabel "RPSA"@en .
 
 :CHEMINF_000178 a owl:Class ;
@@ -438,15 +496,17 @@ obo:RO_0000056 a owl:ObjectProperty ;
     skos:prefLabel "CollectionOf3DAtomicCoordinates"@en .
 
 :CHEMINF_000179 a owl:Class ;
+    rdfs:label "molecular polarizability"@en ;
     rdfs:subClassOf :CHEMINF_000094 ;
     skos:altLabel "BPol"@en ;
-    skos:definition "Molecular polarizability"@en ;
+    skos:definition "Sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens)"@en ;
     skos:prefLabel "MolecularPolarizability"@en .
 
 :CHEMINF_000180 a owl:Class ;
+    rdfs:label "fragment complexity descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000219 ;
     skos:altLabel "FragmentComplexity"@en ;
-    skos:definition "Fragment complexity descriptor"@en ;
+    skos:definition "defined as @cdk.cite{Nilakantan06}"@en ;
     skos:prefLabel "FragmentComplexityDescriptor"@en .
 
 :CHEMINF_000181 a owl:Class ;
@@ -458,25 +518,29 @@ obo:RO_0000056 a owl:ObjectProperty ;
     skos:prefLabel "VertexAdjacencyMatrixDescriptor"@en .
 
 :CHEMINF_000182 a owl:Class ;
+    rdfs:label "Petitjean Topological Shape Index"@en ;
     rdfs:subClassOf :CHEMINF_000185 ;
-    skos:definition "Petitjean Topological Shape Index"@en ;
+    skos:definition "A measure of the anisotropy in a molecule (as per Petitjean et al)"@en ;
     skos:prefLabel "PetitjeanTopologicalShapeIndex"@en .
 
 :CHEMINF_000183 a owl:Class ;
+    rdfs:label "Petitjean Geometric Shape Index"@en ;
     rdfs:subClassOf :CHEMINF_000185 ;
-    skos:definition "Petitjean Geometric Shape Index"@en ;
+    skos:definition "A measure of the anisotropy in a molecule (as per Bath et al)"@en ;
     skos:prefLabel "PetitjeanGeometricShapeIndex"@en .
 
 :CHEMINF_000184 a owl:Class ;
+    rdfs:label "Petitjean number"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
     skos:altLabel "petitjeanNumber"@en ;
-    skos:definition "Petitjean number"@en ;
+    skos:definition "the eccentricity of a vertex corresponds to the distance from that vertex to the most remote vertex in the graph. The distance is obtained from the distance matrix as the count of edges between the two vertices. If r i is the largest matrix entry in row i of the distance matrix D, then the radius is defined as the smallest of the r i . The graph diameter D is defined as the largest vertex eccentricity in the graph. Petitjean Number is the value of ( diameter - radius ) diameter ."@en ;
     skos:prefLabel "PetitjeanNumber"@en .
 
 :CHEMINF_000187 a owl:Class ;
+    rdfs:label "MLogP descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000251 ;
     skos:altLabel "MannholdLogP"@en ;
-    skos:definition "MLogP descriptor"@en ;
+    skos:definition "A LogP descriptor based on a simple equation using the number of carbons and hetero atoms."@en ;
     skos:prefLabel "MLogPDescriptor"@en .
 
 :CHEMINF_000188 a owl:Class ;
@@ -509,9 +573,10 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "EccentricConnectivityIndexDescriptor"@en .
 
 :CHEMINF_000194 a owl:Class ;
+    rdfs:label "acid dissociation constant"@en ;
     rdfs:subClassOf :CHEMINF_000193 ;
     skos:altLabel "Ka"@en ;
-    skos:definition "Acid dissociation constant"@en ;
+    skos:definition "the acid dissociation constant, Ka, is quantitative measure of the strength of an acid in solution. It is the equilibrium constant for a chemical reaction known as dissociation in the context of acid-base reactions."@en ;
     skos:prefLabel "AcidDissociationConstant"@en .
 
 :CHEMINF_000198 a owl:Class ;
@@ -521,11 +586,13 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "MolecularWeightCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000199 a owl:Class ;
+    rdfs:label "absolute SMILES descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000032 ;
-    skos:definition "Absolute SMILES descriptor"@en ;
+    skos:definition "An absolute SMILES descriptor is an isomeric SMILES descriptor that is produced using a canonicalization algorithm. "@en ;
     skos:prefLabel "AbsoluteSMILESDescriptor"@en .
 
 :CHEMINF_000223 a owl:Class ;
+    rdfs:label "pi-system size"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
@@ -534,20 +601,22 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000209 ;
     skos:altLabel "LargestPiSystem"@en ;
-    skos:definition "Pi-system size"@en ;
+    skos:definition "The integer number of atoms in a pi-orbital system."@en ;
     skos:prefLabel "PiMinussystemSize"@en .
 
 :CHEMINF_000224 a owl:Class ;
+    rdfs:label "bond dissociation Gibbs energy descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000210 ;
-    skos:definition "Bond dissociation Gibbs energy descriptor"@en ;
+    skos:definition "Bond dissociation Gibbs energy descriptor captures the Gibbs energy associated with the process of breaking the bond in question. This could be measured or calculated in vacuo or in a specific Solvent, at a given temperature and pressure. Depends on molecular conformation."@en ;
     skos:prefLabel "BondDissociationGibbsEnergyDescriptor"@en .
 
 :CHEMINF_000225 a owl:Class ;
+    rdfs:label "solvation Gibbs energy descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000208 ;
-    skos:definition "Solvation Gibbs energy descriptor"@en ;
+    skos:definition "The molecular entity solvation Gibbs energy descriptor reflects the Gibbs energy associated with the solvation of the molecular entity in question. This could be measured or calculated in vacuo or in a specific solvent, at a particular temperature and pressure. Depends on molecular conformation when computed."@en ;
     skos:prefLabel "SolvationGibbsEnergyDescriptor"@en .
 
 :CHEMINF_000226 a owl:Class ;
@@ -556,6 +625,7 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "BondChargeDensityDescriptor"@en .
 
 :CHEMINF_000232 a owl:Class ;
+    rdfs:label "aromatic atom count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
@@ -563,7 +633,7 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
         :CHEMINF_000263 ;
-    skos:definition "Aromatic atom count"@en ;
+    skos:definition "A descriptor that provides the integer count of aromatic atoms in a given molecular entity."@en ;
     skos:prefLabel "AromaticAtomCount"@en .
 
 :CHEMINF_000234 a owl:Class ;
@@ -572,22 +642,25 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "PubChemConformerIdentifier"@en .
 
 :CHEMINF_000237 a owl:Class ;
+    rdfs:label "bond aromaticity descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:boolean ],
         :CHEMINF_000056 ;
-    skos:definition "Bond aromaticity descriptor"@en ;
+    skos:definition "A bond aromaticity descriptor is an aromaticity descriptor associated with a bond within a chemical entity which indicates whether that  bond belongs to an aromatic system."@en ;
     skos:prefLabel "BondAromaticityDescriptor"@en .
 
 :CHEMINF_000239 a owl:Class ;
+    rdfs:label "formation Gibbs energy descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000207 ;
-    skos:definition "Formation Gibbs energy descriptor"@en ;
+    skos:definition "The formation Gibbs energy descriptor captures the Gibbs energy associated with the formation of a molecular entity, relative to the standard state of constituent atoms. This can be measured, calculated in vacuo, or calculated with respect to a specific solvent, at a particular temperature and pressure. When calculated, the formation Gibbs energy value depends on the molecular conformation."@en ;
     skos:prefLabel "FormationGibbsEnergyDescriptor"@en .
 
 :CHEMINF_000240 a owl:Class ;
+    rdfs:label "size of largest aliphatic chain"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
@@ -595,20 +668,22 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
         :CHEMINF_000246 ;
-    skos:definition "Size of largest aliphatic chain"@en ;
+    skos:definition "The largest aliphatic chain size descriptor is a count descriptor that gives the integer length (number of atoms) in the largest unbranched chain of atoms that does not contain aromatic atoms, within a given molecular entity."@en ;
     skos:prefLabel "SizeOfLargestAliphaticChain"@en .
 
 :CHEMINF_000241 a owl:Class ;
+    rdfs:label "formation enthalpy descriptor"@en ;
     obo:IAO_0000118 "enthalpy of formation"^^xsd:string,
         "heat of formation"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000207 ;
-    skos:definition "Formation enthalpy descriptor"@en ;
+    skos:definition "Molecular entity formation enthaply descriptor captures the enthalpy associated with the formation of the molecular entity in question, relative to the standard state of constituent atoms. This could be measured or calculated in vacuo or in a specific Solvent, at a particular temperature and pressure. Depends on molecular conformation when computed."@en ;
     skos:prefLabel "FormationEnthalpyDescriptor"@en .
 
 :CHEMINF_000243 a owl:Class ;
+    rdfs:label "aromatic bond count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
@@ -616,28 +691,31 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
         :CHEMINF_000233 ;
-    skos:definition "Aromatic bond count"@en ;
+    skos:definition "A descriptor that provides the integer count of aromatic bonds in a given molecular entity."@en ;
     skos:prefLabel "AromaticBondCount"@en .
 
 :CHEMINF_000249 a owl:Class ;
+    rdfs:label "solvation entropy descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000208 ;
-    skos:definition "Solvation entropy descriptor"@en ;
+    skos:definition "The molecular entity solvation entropy descriptor reflects the entropy associated with the solvation of the molecular entity in question. This could be measured or calculated in vacuo or in a specific solvent, at a particular temperature and pressure. Depends on molecular conformation when computed."@en ;
     skos:prefLabel "SolvationEntropyDescriptor"@en .
 
 :CHEMINF_000250 a owl:Class ;
+    rdfs:label "solvation enthalpy descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000208 ;
-    skos:definition "Solvation enthalpy descriptor"@en ;
+    skos:definition "The molecular entity solvation enthalpy descriptor reflects the enthalpy associated with the solvation of the molecular entity in question. This could be measured or calculated in vacuo or in a specific solvent, at a particular temperature and pressure. Depends on molecular conformation when computed."@en ;
     skos:prefLabel "SolvationEnthalpyDescriptor"@en .
 
 :CHEMINF_000252 a owl:Class ;
+    rdfs:label "bond dissociation enthalpy descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000210 ;
-    skos:definition "Bond dissociation enthalpy descriptor"@en ;
+    skos:definition "Bond dissociation enthalpy descriptor captures the enthalpy associated with the process of breaking the bond in question. This could be measured or calculated in vacuo or in a specific Solvent, at a given temperature and pressure. Depends on molecular conformation."@en ;
     skos:prefLabel "BondDissociationEnthalpyDescriptor"@en .
 
 :CHEMINF_000256 a owl:Class ;
@@ -650,19 +728,21 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "MeltingPointDescriptor"@en .
 
 :CHEMINF_000260 a owl:Class ;
+    rdfs:label "formation entropy descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000207 ;
-    skos:definition "Formation entropy descriptor"@en ;
+    skos:definition "Molecular entity formaiton entropy descriptor captures the entropy associated with the formation of the molecular entity in question, relative to the standard state of constituent atoms. This could be measured or calculated in vacuo or in a specific Solvent, at a particular temperature and pressure. Depends on molecular conformation when computed."@en ;
     skos:prefLabel "FormationEntropyDescriptor"@en .
 
 :CHEMINF_000261 a owl:Class ;
+    rdfs:label "relative permittivity descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000087 ;
-    skos:definition "Relative permittivity descriptor"@en ;
+    skos:definition "The relative permittivity descriptor specifies the ratio of the electric field strength in vacuum to that in a given medium. It was formerly called the dielectric constant. [IUPAC Gold Book: http://goldbook.iupac.org/R05273.html ]"@en ;
     skos:prefLabel "RelativePermittivityDescriptor"@en .
 
 :CHEMINF_000264 a owl:Class ;
@@ -674,13 +754,15 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "AtomicChargeDensityDescriptor"@en .
 
 :CHEMINF_000265 a owl:Class ;
+    rdfs:label "bond dissociation entropy descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000210 ;
-    skos:definition "Bond dissociation entropy descriptor"@en ;
+    skos:definition "Bond dissociation entropy descriptor captures the entropy associated with the process of breaking the bond in question. This could be measured or calculated in vacuo or in a specific Solvent, at a given temperature and pressure. Depends on molecular conformation."@en ;
     skos:prefLabel "BondDissociationEntropyDescriptor"@en .
 
 :CHEMINF_000267 a owl:Class ;
+    rdfs:label "effective rotor count"@en ;
     rdfs:subClassOf :CHEMINF_000209 ;
-    skos:definition "Effective rotor count"@en ;
+    skos:definition "A count descriptor that takes into account flexibility of rings and rotatable bonds."@en ;
     skos:prefLabel "EffectiveRotorCount"@en .
 
 :CHEMINF_000269 a owl:Class ;
@@ -784,22 +866,25 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "TryptophanCount"@en .
 
 :CHEMINF_000291 a owl:Class ;
+    rdfs:label "Highest Occupied Molecular Orbital Energy"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000000 ],
         :CHEMINF_000087 ;
-    skos:definition "Highest Occupied Molecular Orbital Energy"@en ;
+    skos:definition "A descriptor that the energy of the highest occupied 'molecular' orbital of the chemical entity."@en ;
     skos:prefLabel "HighestOccupiedMolecularOrbitalEnergy"@en .
 
 :CHEMINF_000292 a owl:Class ;
+    rdfs:label "Lowest Unoccupied Molecular Orbital Energy"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000000 ],
         :CHEMINF_000087 ;
-    skos:definition "Lowest Unoccupied Molecular Orbital Energy"@en ;
+    skos:definition "A descriptor that the energy of the lowest unoccupied 'molecular' orbital of the chemical entity."@en ;
     skos:prefLabel "LowestUnoccupiedMolecularOrbitalEnergy"@en .
 
 :CHEMINF_000293 a owl:Class ;
+    rdfs:label "acidic group count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
@@ -807,10 +892,11 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000209 ;
-    skos:definition "Acidic group count"@en ;
+    skos:definition "A descriptor that specifies the integer count of acidic groups in a given molecular entity."@en ;
     skos:prefLabel "AcidicGroupCount"@en .
 
 :CHEMINF_000294 a owl:Class ;
+    rdfs:label "basic group count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
@@ -818,7 +904,7 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000209 ;
-    skos:definition "Basic group count"@en ;
+    skos:definition "A descriptor that specifies the integer count of basic groups in a given molecular entity."@en ;
     skos:prefLabel "BasicGroupCount"@en .
 
 :CHEMINF_000296 a owl:Class ;
@@ -960,103 +1046,123 @@ Zwitterion (ZW)	ACD_MOST_ApKa <6.5 and ACD_MOST_BpKa>8.5
     skos:prefLabel "PubchemDepositorMinussuppliedMolecularEntityName"@en .
 
 :CHEMINF_000344 a owl:Class ;
+    rdfs:label "logD calculated at pH 5.5 by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000322 ;
-    skos:definition "LogD calculated at pH 5.5 by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Octanol-water distribution coefficient calculated at pH 5.5 by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "LogDCalculatedAtPH5.5ByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000345 a owl:Class ;
+    rdfs:label "hydrogen bond acceptor count calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000245 ;
-    skos:definition "Hydrogen bond acceptor count calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Hydrogen bond acceptor count that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "HydrogenBondAcceptorCountCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000346 a owl:Class ;
+    rdfs:label "hydrogen bond donor count calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000244 ;
-    skos:definition "Hydrogen bond donor count calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Hydrogen bond donor count that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "HydrogenBondDonorCountCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000347 a owl:Class ;
+    rdfs:label "Boiling point at 760 mmHg pressure calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000257 ;
-    skos:definition "Boiling point at 760 mmHg pressure calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "The boiling point of a substance at 760 mmHg pressure that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "BoilingPointAt760MmHgPressureCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000348 a owl:Class ;
+    rdfs:label "number of freely rotating bonds calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000254 ;
-    skos:definition "Number of freely rotating bonds calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Number of freely rotating bonds that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "NumberOfFreelyRotatingBondsCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000349 a owl:Class ;
+    rdfs:label "polar surface area calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000307 ;
-    skos:definition "Polar surface area calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Polar surface area that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "PolarSurfaceAreaCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000350 a owl:Class ;
+    rdfs:label "molecular weight of the corresponding free base"@en ;
     rdfs:subClassOf :CHEMINF_000216 ;
-    skos:definition "Molecular weight of the corresponding free base"@en ;
+    skos:definition "The molecular weight for the free base chemical structure matching this chemical structure."@en ;
     skos:prefLabel "MolecularWeightOfTheCorrespondingFreeBase"@en .
 
 :CHEMINF_000351 a owl:Class ;
+    rdfs:label "molar refractivity calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000001 ;
-    skos:definition "Molar refractivity calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Molar refractivity that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "MolarRefractivityCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000352 a owl:Class ;
+    rdfs:label "index of refraction calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000253 ;
-    skos:definition "Index of refraction calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Index of refraction that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "IndexOfRefractionCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000358 a owl:Class ;
+    rdfs:label "molar volume calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000415 ;
-    skos:definition "Molar volume calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Molar volume that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "MolarVolumeCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000359 a owl:Class ;
+    rdfs:label "density calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000416 ;
-    skos:definition "Density calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Density that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "DensityCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000360 a owl:Class ;
+    rdfs:label "flash point calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000417 ;
-    skos:definition "Flash point calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Flash point that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "FlashPointCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000361 a owl:Class ;
+    rdfs:label "enthalpy of vaporization calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000418 ;
-    skos:definition "Enthalpy of vaporization calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Enthalpy of vaporization that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "EnthalpyOfVaporizationCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000362 a owl:Class ;
+    rdfs:label "vapour pressure calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000419 ;
-    skos:definition "Vapour pressure calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Vapour pressure that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "VapourPressureCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000363 a owl:Class ;
+    rdfs:label "organic carbon adsorption coefficient at pH 5.5 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000413 ;
-    skos:definition "Organic carbon adsorption coefficient at pH 5.5 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Organic carbon adsorption coefficient at pH 5.5 that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "OrganicCarbonAdsorptionCoefficientAtPH5.5CalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000364 a owl:Class ;
+    rdfs:label "organic carbon adsorption coefficient at pH 7.4 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000413 ;
-    skos:definition "Organic carbon adsorption coefficient at pH 7.4 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Organic carbon adsorption coefficient at pH 7.4 that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "OrganicCarbonAdsorptionCoefficientAtPH7.4CalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000365 a owl:Class ;
+    rdfs:label "bioconcentration factor at pH 5.5 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000414 ;
-    skos:definition "Bioconcentration factor at pH 5.5 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Bioconcentration factor at pH 7.4 that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "BioconcentrationFactorAtPH5.5CalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000366 a owl:Class ;
+    rdfs:label "bioconcentration factor at pH 7.4 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000414 ;
-    skos:definition "Bioconcentration factor at pH 7.4 calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Bioconcentration factor at pH 7.4 that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "BioconcentrationFactorAtPH7.4CalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000367 a owl:Class ;
+    rdfs:label "number of rule of five violations calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000312 ;
-    skos:definition "Number of rule of five violations calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Number of rule of five violations for a chemical structure that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "NumberOfRuleOfFiveViolationsCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000368 a owl:Class ;
+    rdfs:label "surface tension calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000420 ;
-    skos:definition "Surface tension calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Surface tension, in dyne per centimetre, that has been calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "SurfaceTensionCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000369 a owl:Class ;
@@ -1162,43 +1268,51 @@ Zwitterion (ZW)	ACD_MOST_ApKa <6.5 and ACD_MOST_BpKa>8.5
     skos:prefLabel "InChIKeyGeneratedBySoftwareVersion1.0.4"@en .
 
 :CHEMINF_000400 a owl:Class ;
+    rdfs:label "chemical graph"@en ;
     rdfs:subClassOf :CHEMINF_000085 ;
-    skos:definition "Chemical graph"@en ;
+    skos:definition "A chemical graph is a structural descriptor in which the connectivity and constitution of the chemical entity are described in terms of a mathematical graph, usually with atoms as vertices and bonds as edges, but other variants exist."@en ;
     skos:prefLabel "ChemicalGraph"@en .
 
 :CHEMINF_000405 a owl:Class ;
+    rdfs:label "ChemSpider identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "ChemSpider identifier"@en ;
+    skos:definition "Database identifier used by ChemSpider."@en ;
     skos:prefLabel "ChemSpiderIdentifier"@en .
 
 :CHEMINF_000406 a owl:Class ;
+    rdfs:label "DrugBank identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "DrugBank identifier"@en ;
+    skos:definition "Database identifier used by DrugBank."@en ;
     skos:prefLabel "DrugBankIdentifier"@en .
 
 :CHEMINF_000407 a owl:Class ;
+    rdfs:label "ChEBI identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "ChEBI identifier"@en ;
+    skos:definition "Database identifier used by ChEBI."@en ;
     skos:prefLabel "ChEBIIdentifier"@en .
 
 :CHEMINF_000408 a owl:Class ;
+    rdfs:label "HMDB identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "HMDB identifier"@en ;
+    skos:definition "Database identifier used by Human Metabolome Database."@en ;
     skos:prefLabel "HMDBIdentifier"@en .
 
 :CHEMINF_000409 a owl:Class ;
+    rdfs:label "KEGG identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "KEGG identifier"@en ;
+    skos:definition "Database identifier used by KEGG."@en ;
     skos:prefLabel "KEGGIdentifier"@en .
 
 :CHEMINF_000411 a owl:Class ;
+    rdfs:label "Reactome identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "Reactome identifier"@en ;
+    skos:definition "Database identifier used by Reactome."@en ;
     skos:prefLabel "ReactomeIdentifier"@en .
 
 :CHEMINF_000412 a owl:Class ;
+    rdfs:label "ChEMBL identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "ChEMBL identifier"@en ;
+    skos:definition "Identifier used by the ChEMBL database for compounds, assays, target, etc."@en ;
     skos:prefLabel "ChEMBLIdentifier"@en .
 
 :CHEMINF_000430 a owl:Class ;
@@ -1221,121 +1335,138 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
     skos:prefLabel "WeightedQuantitativeEstimateOfDrugMinuslikeness"@en .
 
 :CHEMINF_000432 a owl:Class ;
+    rdfs:label "freezing point descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Freezing point descriptor"@en ;
+    skos:definition "A descriptor that indicates the temperature at which a chemical substance undergoes a state transition from gas or liquid to solid, under standard conditions."@en ;
     skos:prefLabel "FreezingPointDescriptor"@en .
 
 :CHEMINF_000433 a owl:Class ;
+    rdfs:label "Henry's Law constant"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Henry's Law constant"@en ;
+    skos:definition """Henry's law, formulated by William Henry in 1803, states "At a constant temperature, the amount of a given gas that dissolves in a given type and volume of liquid is directly proportional to the partial pressure of that gas in equilibrium with that liquid." Henry's law can be put into mathematical terms (at constant temperature) as
+    p = kHc
+where p is the partial pressure of the solute in the gas above the solution, c is the concentration of the solute and kH is a constant with the dimensions of pressure divided by concentration. The constant, known as the Henry's law constant, depends on the solute, the solvent and the temperature."""@en ;
     skos:prefLabel "HenrysLawConstant"@en .
 
 :CHEMINF_000434 a owl:Class ;
+    rdfs:label "atmospheric OH rate constant"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Atmospheric OH rate constant"@en ;
+    skos:definition "A physical descriptor for the rate constant of a reaction of a chemical entity with OH. This is used to describe the atmospheric behaviour (i.e. stability) of the entity. "@en ;
     skos:prefLabel "AtmosphericOHRateConstant"@en .
 
 :CHEMINF_000435 a owl:Class ;
+    rdfs:label "upper explosive limit descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Upper explosive limit descriptor"@en ;
+    skos:definition "A physical descriptor for the upper explosive limit of the entity in air as a percentage by volume at room temperature. "@en ;
     skos:prefLabel "UpperExplosiveLimitDescriptor"@en .
 
 :CHEMINF_000436 a owl:Class ;
+    rdfs:label "lower explosive limit descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Lower explosive limit descriptor"@en ;
+    skos:definition "A physical descriptor for the lower explosive limit in air as a percentage by volume at room temperature"@en ;
     skos:prefLabel "LowerExplosiveLimitDescriptor"@en .
 
 :CHEMINF_000437 a owl:Class ;
+    rdfs:label "minimum explosive concentration descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Minimum explosive concentration descriptor"@en ;
+    skos:definition "A physical descriptor for the minimum explosive concentration. "@en ;
     skos:prefLabel "MinimumExplosiveConcentrationDescriptor"@en .
 
 :CHEMINF_000438 a owl:Class ;
+    rdfs:label "specific gravity descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Specific gravity descriptor"@en ;
+    skos:definition "A physical descriptor of the ratio of the density of chemical substance to the density of a reference substance. The reference substance is usually water for liquids or air for gases. "@en ;
     skos:prefLabel "SpecificGravityDescriptor"@en .
 
 :CHEMINF_000439 a owl:Class ;
+    rdfs:label "relative density descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Relative density descriptor"@en ;
+    skos:definition "A descriptor of the relative density of gases referenced to air as 1, which indicates how many times a gas is heavier than air at the same temperature. "@en ;
     skos:prefLabel "RelativeDensityDescriptor"@en .
 
 :CHEMINF_000440 a owl:Class ;
+    rdfs:label "vapor density descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Vapor density descriptor"@en ;
+    skos:definition "A descriptor of the density of a vapour in relation in that of hydrogen, defined as the mass of a certain volume of the given substance divided by the mass of the same volume of hydrogen. "@en ;
     skos:prefLabel "VaporDensityDescriptor"@en .
 
 :CHEMINF_000441 a owl:Class ;
+    rdfs:label "odor detection threshold descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Odor detection threshold descriptor"@en ;
+    skos:definition "A physical descriptor for the lowest concentration of an odorant chemical entity that is perceivable by the human sense of smell. "@en ;
     skos:prefLabel "OdorDetectionThresholdDescriptor"@en .
 
 :CHEMINF_000442 a owl:Class ;
+    rdfs:label "pH descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "PH descriptor"@en ;
+    skos:definition "A physical descriptor which gives a measure of the acidity or basicity of an aqueous solution, defined as the decimal logarithm of the reciprocal of the hydrogen ion activity in a solution. "@en ;
     skos:prefLabel "PHDescriptor"@en .
 
 :CHEMINF_000443 a owl:Class ;
+    rdfs:label "evaporation rate descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Evaporation rate descriptor"@en ;
+    skos:definition "A physical descriptor of the rate of evaporation of a liquid under standard conditions. "@en ;
     skos:prefLabel "EvaporationRateDescriptor"@en .
 
 :CHEMINF_000444 a owl:Class ;
+    rdfs:label "autoignition temperature descriptor"@en ;
     obo:IAO_0000118 "kindling point"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Autoignition temperature descriptor"@en ;
+    skos:definition "A physical descriptor of the lowest temperature at a substance will spontaneously ignite in a normal atmosphere without an external source of ignition. "@en ;
     skos:prefLabel "AutoignitionTemperatureDescriptor"@en .
 
 :CHEMINF_000445 a owl:Class ;
+    rdfs:label "soil half-life descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Soil half-life descriptor"@en ;
+    skos:definition "A physical descriptor for the time it takes for half of a portion of substance of a given type to decompose in soil under standard conditions. "@en ;
     skos:prefLabel "SoilHalfMinuslifeDescriptor"@en .
 
 :CHEMINF_000446 a owl:Class ;
+    rdfs:label "CAS registry number"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "CAS registry number"@en ;
+    skos:definition "Identifier used by the Chemical Abstracts Service database."@en ;
     skos:prefLabel "CASRegistryNumber"@en .
 
 :CHEMINF_000447 a owl:Class ;
@@ -1343,6 +1474,7 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
         "EINECS No"@en,
         "European Community number"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
+    skos:definition "A seven-digit identifier for chemical substances for regulatory purposes within the European Union."@en ;
     skos:prefLabel "ECNumber"@en,
         "EINECSNo"@en,
         "EuropeanCommunityNumber"@en .
@@ -1407,8 +1539,9 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
     skos:prefLabel "MetalElementMassDescriptor"@en .
 
 :CHEMINF_000490 a owl:Class ;
+    rdfs:label "molecular formula calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     rdfs:subClassOf :CHEMINF_000042 ;
-    skos:definition "Molecular formula calculated by ACD/Labs PhysChem software library version 12.01"@en ;
+    skos:definition "Molecular formula for a chemical structure as calculated by ACD/Labs PhysChem software library version 12.01."@en ;
     skos:prefLabel "MolecularFormulaCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000496 a owl:Class ;
@@ -1433,36 +1566,47 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
     skos:prefLabel "ChemicalSubstanceDescriptor"@en .
 
 :CHEMINF_000516 a owl:Class ;
+    rdfs:label "group of an atom"@en ;
     rdfs:subClassOf :CHEMINF_000136 ;
-    skos:definition "Group of an atom"@en ;
+    skos:definition "Descriptor that returns the group in the periodic table of a given atom."@en ;
     skos:prefLabel "GroupOfAnAtom"@en .
 
 :CHEMINF_000517 a owl:Class ;
+    rdfs:label "NInChI descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000085 ;
-    skos:definition "NInChI descriptor"@en ;
+    skos:definition "An InChI-like descriptor for nanomaterials."@en ;
     skos:prefLabel "NInChIDescriptor"@en .
 
 :CHEMINF_000518 a owl:Class ;
+    rdfs:label "TUCAN descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_36357 ],
         :CHEMINF_000061,
         :CHEMINF_000085 ;
-    skos:definition "TUCAN descriptor"@en ;
+    skos:definition "TUCAN is an identifier based on a canonicalization and serialization algorithm that is independent of domain-specific concepts of structure and bonding."@en ;
     skos:prefLabel "TUCANDescriptor"@en .
 
 :CHEMINF_000523 a owl:Class ;
+    rdfs:label "ACD/Labs index name"@en ;
     obo:IAO_0000118 "index name"^^xsd:string ;
+    dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
+    dcterms:date "2022-07-11T08:20:10+00:00"^^xsd:dateTime ;
+    dcterms:source "https://www.acdlabs.com/products/name/"^^xsd:anyURI ;
     rdfs:subClassOf :CHEMINF_000043 ;
-    skos:definition "ACD/Labs index name"@en ;
+    skos:definition "A molecular entity name that represents the name of a molecular structure determined by the naming algorithms developed by ACD/Labs."@en ;
     skos:prefLabel "ACDLabsIndexName"@en .
 
 :CHEMINF_000524 a owl:Class ;
+    rdfs:label "InChI with fixedH layer"@en ;
+    dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
+    dcterms:date "2022-07-11T08:22:02+00:00"^^xsd:dateTime ;
+    dcterms:source "https://doi.org/10.1186%2Fs13321-015-0068-4"^^xsd:anyURI ;
     rdfs:subClassOf :CHEMINF_000113 ;
-    skos:definition "InChI with fixedH layer"@en ;
+    skos:definition "An InChI descriptor that is not the standard and that is created with the fixedH layer option. The fixedH layer is appended to the standard InChI and lists the exact position of the tautomeric hydrogen atoms. It is useful when one wants to represent a specific tautomer of a given structure, because if the InChIs for the tautomers were created without the fixedH layer option, the normalization performed by the InChI generation program would result in these InChIs being identical."@en ;
     skos:prefLabel "InChIWithFixedHLayer"@en .
 
 :CHEMINF_000550 a owl:Class ;
@@ -1485,30 +1629,35 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
     skos:prefLabel "InternationalNonMinusproprietaryName"@en .
 
 :CHEMINF_000563 a owl:Class ;
+    rdfs:label "Unique Ingredient Identifier"@en ;
     chemowl:short_name "UNII"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "Unique Ingredient Identifier"@en ;
+    skos:definition "Identifier used by the USA Food and Drug Administration."@en ;
     skos:prefLabel "UniqueIngredientIdentifier"@en .
 
 :CHEMINF_000564 a owl:Class ;
+    rdfs:label "LipidMaps identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "LipidMaps identifier"@en ;
+    skos:definition "Identifier used by the LipidMaps database, http://www.lipidmaps.org/."@en ;
     skos:prefLabel "LipidMapsIdentifier"@en .
 
 :CHEMINF_000565 a owl:Class ;
+    rdfs:label "National Service Center number"@en ;
     chemowl:short_name "NSC number"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "National Service Center number"@en ;
+    skos:definition "Identifier used by the Cancer Chemotherapy National Service Center."@en ;
     skos:prefLabel "NationalServiceCenterNumber"@en .
 
 :CHEMINF_000566 a owl:Class ;
+    rdfs:label "RTECS identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "RTECS identifier"@en ;
+    skos:definition "Identifier used by the RTECS database (http://www.cdc.gov/niosh/rtecs/)."@en ;
     skos:prefLabel "RTECSIdentifier"@en .
 
 :CHEMINF_000569 a owl:Class ;
+    rdfs:label "European Registry of Materials identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
-    skos:definition "European Registry of Materials identifier"@en ;
+    skos:definition "Identifier used by the European Registry of Materials (https://nanocommons.github.io/identifiers/)."@en ;
     skos:prefLabel "EuropeanRegistryOfMaterialsIdentifier"@en .
 
 :CHEMINF_000570 a owl:Class ;
@@ -1568,25 +1717,29 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
     skos:prefLabel "TotalPolarSurfaceAreaCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
 
 :CHEMINF_001100 a owl:Class ;
+    rdfs:label "Bond Polarizabilities"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000087 ;
-    skos:definition "Bond Polarizabilities"@en ;
+    skos:definition "Descriptor that calculates the sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens)."@en ;
     skos:prefLabel "BondPolarizabilities"@en .
 
 :CHEMINF_001101 a owl:Class ;
+    rdfs:label "oxidation state"@en ;
+    dcterms:source "https://doi.org/10.1351/goldbook.O04365"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000087,
         <http://www.blueobelisk.org/ontologies/chemoinformatics-algorithms/#AtomicDescriptor> ;
-    skos:definition "Oxidation state"@en ;
+    skos:definition "Oxidation state is an atomic descriptor that gives the degree of oxidation of an atom in terms of counting electrons. The higher the oxidation state (OS) of a given atom, the greater is its degree of oxidation. [source: IUPAC Gold Book - https://doi.org/10.1351/goldbook.O04365]"@en ;
     skos:prefLabel "OxidationState"@en .
 
 :CHEMINF_001104 a owl:Class ;
+    rdfs:label "connectivity SMILES descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000018 ;
-    skos:definition "Connectivity SMILES descriptor"@en ;
+    skos:definition "A connectivity SMILES descriptor is a SMILES descriptor that does not include any stereochemical or isotopic information."@en ;
     skos:prefLabel "ConnectivitySMILESDescriptor"@en .
 
 :CHEMINF_001500 a owl:Class ;
@@ -1594,308 +1747,354 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
     bibo:doi " http://dx.doi.org/10.1021/ci980137x"^^xsd:string ;
     chemowl:short_name "BCUT"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
+    skos:definition "Eigenvalue based descriptor noted for its utility in chemical diversity."@en ;
     skos:prefLabel "BCUT"@en .
 
 :CHEMINF_001501 a owl:Class ;
+    rdfs:label "bond partial pi charge"@en ;
     chemowl:short_name "bondPartialPiCharge"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Bond partial pi charge"@en ;
+    skos:definition "Descriptor that calculates bond-pi Partial charge of a bond by determining the difference the Partial Pi Charge on atoms A and B of a bond (based in Gasteiger Charge)."@en ;
     skos:prefLabel "BondPartialPiCharge"@en .
 
 :CHEMINF_001502 a owl:Class ;
+    rdfs:label "bond partial sigma charge"@en ;
     chemowl:short_name "bondPartialSigmaCharge"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Bond partial sigma charge"@en ;
+    skos:definition "Descriptor that calculates bond-sigma Partial charge of a bond."@en ;
     skos:prefLabel "BondPartialSigmaCharge"@en .
 
 :CHEMINF_001503 a owl:Class ;
+    rdfs:label "bond partial total charge"@en ;
     chemowl:short_name "bondPartialTCharge"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Bond partial total charge"@en ;
+    skos:definition "Descriptor that calculates bond-total Partial charge of a bond."@en ;
     skos:prefLabel "BondPartialTotalCharge"@en .
 
 :CHEMINF_001504 a owl:Class ;
+    rdfs:label "bond sigma electronegativity"@en ;
     chemowl:short_name "bondSigmaElectronegativity"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Bond sigma electronegativity"@en ;
+    skos:definition "Descriptor that calculates of bond-Polarizability of a bond by determining the difference the Sigma electronegativity on atoms A and B of a bond."@en ;
     skos:prefLabel "BondSigmaElectronegativity"@en .
 
 :CHEMINF_001505 a owl:Class ;
+    rdfs:label "bonds to Atom"@en ;
     chemowl:short_name "bondsToAtom"^^xsd:string ;
+    rdfs:comment "This is the shortest distance between a pair of atoms in a graph, defined as the number of edges in the shortest path between the atom pair in the molecular graph."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Bonds to Atom"@en,
-        "This is the shortest distance between a pair of atoms in a graph, defined as the number of edges in the shortest path between the atom pair in the molecular graph."@en ;
+    skos:definition "Descriptor based on the number of bonds on the shortest path between two atoms (topological distance)."@en ;
     skos:prefLabel "BondsToAtom"@en .
 
 :CHEMINF_001506 a owl:Class ;
+    rdfs:label "chi chain indices"@en ;
     chemowl:short_name "chiChain"^^xsd:string ;
+    rdfs:comment "It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Chi chain indices"@en,
-        "It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en ;
+    skos:definition "Evluates the simple and valence chi chain descriptors (Kier and Hall) of orders 3, 4, 5, 6 and 7. "@en ;
     skos:prefLabel "ChiChainIndices"@en .
 
 :CHEMINF_001507 a owl:Class ;
+    rdfs:label "chi cluster indices"@en ;
     chemowl:short_name "chiCluster"^^xsd:string ;
+    rdfs:comment " It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition " It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en,
-        "Chi cluster indices"@en ;
+    skos:definition "Evluates the simple and valence chi cluster descriptors (Kier and Hall) of orders 3, 4,5 and 6."@en ;
     skos:prefLabel "ChiClusterIndices"@en .
 
 :CHEMINF_001508 a owl:Class ;
+    rdfs:label "chi path indices"@en ;
     chemowl:short_name "chiPath"^^xsd:string ;
+    rdfs:comment "It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Chi path indices"@en,
-        "It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en ;
+    skos:definition "Evaluates the Kier and Hall Chi path indices of orders 0,1,2,3,4,5,6 and 7.  "@en ;
     skos:prefLabel "ChiPathIndices"@en .
 
 :CHEMINF_001509 a owl:Class ;
+    rdfs:label "chi path-cluster indices"@en ;
     chemowl:short_name "chiPathCluster"^^xsd:string ;
+    rdfs:comment "It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Chi path-cluster indices"@en,
-        "It utilizes the graph isomorphism code of the CDK to find fragments matching SMILES strings representing the fragments corresponding to each type of chain."@en ;
+    skos:definition "Evaluates the Kier and Hall Chi path cluster indices of orders 4,5 and 6."@en ;
     skos:prefLabel "ChiPathMinusclusterIndices"@en .
 
 :CHEMINF_001511 a owl:Class ;
+    rdfs:label "gravitational index (square and cube roots)"@en ;
     bibo:doi "http://dx.doi.org/10.1021/ci980029a"^^xsd:string ;
     chemowl:short_name "gravitationalIndex_SquareAndCubeRoots"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_001510 ;
-    skos:definition "Gravitational index (square and cube roots)"@en ;
+    skos:definition "Descriptor characterizing the mass distribution of the molecule as the square or cube root of the gravitational index."@en ;
     skos:prefLabel "GravitationalIndex(squareAndCubeRoots)"@en .
 
 :CHEMINF_001512 a owl:Class ;
+    rdfs:label "acceptor field atoms (Boehm,Klebe)"@en ;
     bibo:doi "http://dx.doi.org/10.1021/jm011039x"^^xsd:string ;
     chemowl:short_name "hBondAcceptorsBoehmKlebe"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Acceptor field atoms (Boehm,Klebe)"@en ;
+    skos:definition "Counts the number of acceptor field atoms for a carbonyl oxygen probe using force field based definition."@en ;
     skos:prefLabel "AcceptorFieldAtoms(Boehm,Klebe)"@en .
 
 :CHEMINF_001513 a owl:Class ;
+    rdfs:label "hydrogen bond acceptors (Daylight)"@en ;
     chemowl:short_name "hBondacceptorsDaylight"^^xsd:string ;
+    rdfs:comment "SMILES on-line tutorial, http://www.daylight.com/dayhtml_tutorials/languages/smarts/smarts_examples.html)"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Hydrogen bond acceptors (Daylight)"@en,
-        "SMILES on-line tutorial, http://www.daylight.com/dayhtml_tutorials/languages/smarts/smarts_examples.html)"@en ;
+    skos:definition "Descriptor that calculates the number of hydrogen bond acceptors (by Daylight)."@en ;
     skos:prefLabel "HydrogenBondAcceptors(Daylight)"@en .
 
 :CHEMINF_001514 a owl:Class ;
+    rdfs:label "acceptors or donors field atoms (Boehm,Klebe)"@en ;
     bibo:doi "http://dx.doi.org/10.1021/jm011039x"^^xsd:string ;
     chemowl:short_name "hBondAcceptorsDonorsBoehmKlebe"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Acceptors or donors field atoms (Boehm,Klebe)"@en ;
+    skos:definition "Counts the number of acceptor/donor field atoms for a carbonyl oxygen or amino hydrogen probe. "@en ;
     skos:prefLabel "AcceptorsOrDonorsFieldAtoms(Boehm,Klebe)"@en .
 
 :CHEMINF_001515 a owl:Class ;
+    rdfs:label "donor field atoms (Boehm,Klebe)"@en ;
     bibo:doi "http://dx.doi.org/10.1021/jm011039x"^^xsd:string ;
     chemowl:short_name "hBondDonorsBoehmKlebe"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Donor field atoms (Boehm,Klebe)"@en ;
+    skos:definition "Counts the number of donor field atoms for an amino hydrogen probe."@en ;
     skos:prefLabel "DonorFieldAtoms(Boehm,Klebe)"@en .
 
 :CHEMINF_001516 a owl:Class ;
+    rdfs:label "hydrogen bond donors (Daylight)"@en ;
     chemowl:short_name "hBondDonorsDaylight"^^xsd:string ;
+    rdfs:comment "SMILES on-line tutorial, http://www.daylight.com/dayhtml_tutorials/languages/smarts/smarts_examples.html)"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Hydrogen bond donors (Daylight)"@en,
-        "SMILES on-line tutorial, http://www.daylight.com/dayhtml_tutorials/languages/smarts/smarts_examples.html)"@en ;
+    skos:definition "Descriptor that calculates the number of hydrogen bond donors (by Daylight)."@en ;
     skos:prefLabel "HydrogenBondDonors(Daylight)"@en .
 
 :CHEMINF_001517 a owl:Class ;
+    rdfs:label "proton belonging to an aromatic system"@en ;
     chemowl:short_name "isProtonInAromaticSystem"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000136 ;
-    skos:definition "Proton belonging to an aromatic system"@en ;
+    skos:definition "Descriptor returns 1 if the protons is directly bonded to an aromatic system, it returns 2 if the distance between aromatic system and proton is 2 bonds, and it return 0 for other positions."@en ;
     skos:prefLabel "ProtonBelongingToAnAromaticSystem"@en .
 
 :CHEMINF_001518 a owl:Class ;
+    rdfs:label "proton belonging to a pi-system"@en ;
     chemowl:short_name "isProtonInConjugatedPiSystem"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000136 ;
-    skos:definition "Proton belonging to a pi-system"@en ;
+    skos:definition "Descriptor returns true if the protons is directly bonded to a pi system."@en ;
     skos:prefLabel "ProtonBelongingToAPiMinussystem"@en .
 
 :CHEMINF_001519 a owl:Class ;
+    rdfs:label "Kier Hall SMARTS"@en ;
     bibo:doi "http://dx.doi.org/10.3390/91201004"^^xsd:string ;
     chemowl:short_name "kierHallSmarts"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Kier Hall SMARTS"@en ;
+    skos:definition "Counts the number of occurrences of the E-state fragments."@en ;
     skos:prefLabel "KierHallSMARTS"@en .
 
 :CHEMINF_001520 a owl:Class ;
+    rdfs:label "molecular distance edge"@en ;
     bibo:doi "http://dx.doi.org/10.1021/ci970109z"^^xsd:string ;
     chemowl:short_name "mde"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Molecular distance edge"@en ;
+    skos:definition "Evaluate molecular distance edge descriptors for C, N and O."@en ;
     skos:prefLabel "MolecularDistanceEdge"@en .
 
 :CHEMINF_001521 a owl:Class ;
+    rdfs:label "moments of inertia"@en ;
     chemowl:short_name "momentOfInertia"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000093 ;
-    skos:definition "Moments of inertia"@en ;
+    skos:definition "Descriptor that calculates the principal moments of inertia and ratios of the principal moments. Als calculates the radius of gyration."@en ;
     skos:prefLabel "MomentsOfInertia"@en .
 
 :CHEMINF_001522 a owl:Class ;
+    rdfs:label "partial total charge (MMFF94)"@en ;
     chemowl:short_name "partialTChargeMMFF94"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Partial total charge (MMFF94)"@en ;
+    skos:definition "Descriptor that calculates total partial charges of an heavy atom."@en ;
     skos:prefLabel "PartialTotalCharge(MMFF94)"@en .
 
 :CHEMINF_001523 a owl:Class ;
+    rdfs:label "period of an atom"@en ;
     chemowl:short_name "period"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000136 ;
-    skos:definition "Period of an atom"@en ;
+    skos:definition "Descriptor that returns the period in the periodic table of an atom belonging to an atom container."@en ;
     skos:prefLabel "PeriodOfAnAtom"@en .
 
 :CHEMINF_001524 a owl:Class ;
+    rdfs:label "pi-contact of two atoms"@en ;
     chemowl:short_name "piContact"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000136 ;
-    skos:definition "Pi-contact of two atoms"@en ;
+    skos:definition "Descriptor that check if two atoms have pi-contact (this is true when there is one and the same conjugated pi-system which contains both atoms, or directly linked neighboors of the atoms)."@en ;
     skos:prefLabel "PiMinuscontactOfTwoAtoms"@en .
 
 :CHEMINF_001525 a owl:Class ;
+    rdfs:label "proton total partial charge"@en ;
     chemowl:short_name "protonPartialCharge"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Proton total partial charge"@en ;
+    skos:definition "Descriptor that calculates partial charges of an heavy atom and its protons based on Gasteiger Marsili (PEOE)."@en ;
     skos:prefLabel "ProtonTotalPartialCharge"@en .
 
 :CHEMINF_001526 a owl:Class ;
+    rdfs:label "RDF proton descriptor"@en ;
     bibo:doi "http://dx.doi.org/10.1021/ac010737m"^^xsd:string ;
     chemowl:short_name "rdfProtonCalculatedValues"^^xsd:string ;
+    rdfs:comment "This is a mixed descriptor: topological, geometrical and electronic descriptor."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "RDF proton descriptor"@en,
-        "This is a mixed descriptor: topological, geometrical and electronic descriptor."@en ;
+    skos:definition "Calculation of RDF proton descriptor."@en ;
     skos:prefLabel "RDFProtonDescriptor"@en .
 
 :CHEMINF_001527 a owl:Class ;
+    rdfs:label "TAE RECON descriptors for amino acid sequences"@en ;
     bibo:doi "http://dx.doi.org/10.1016/0097-8485(94)00052-G"^^xsd:string ;
     chemowl:short_name "taeAminoAcid"^^xsd:string ;
+    rdfs:comment "{@cdk.cite BREN1995} {@cdk.cite BREN1997} {@cdk.cite WHITE2003}"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "TAE RECON descriptors for amino acid sequences"@en,
-        "{@cdk.cite BREN1995} {@cdk.cite BREN1997} {@cdk.cite WHITE2003}"@en ;
+    skos:definition "Descriptors are derived from pre-calculated quantum mechanical parameters by using the paramaters for amino acids and evaluating a set of 147 descriptors for peptide sequences."@en ;
     skos:prefLabel "TAERECONDescriptorsForAminoAcidSequences"@en .
 
 :CHEMINF_001528 a owl:Class ;
+    rdfs:label "weighted path"@en ;
     chemowl:short_name "weightedPath"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Weighted path"@en ;
+    skos:definition "The weighted path (molecular ID) descriptors were described by Randic and they characterize molecular branching."@en ;
     skos:prefLabel "WeightedPath"@en .
 
 :CHEMINF_001529 a owl:Class ;
     rdfs:label "WHIM"@en ;
     chemowl:short_name "WHIM"^^xsd:string ;
+    rdfs:comment "Todeschini, R. and Gramatica, P.. New 3D Molecular Descriptors: The WHIM theory and QAR Applications, Persepectives in Drug Discovery and Design. 1998, pp. 355-380. Mixed descriptors: molecular size, shape, symmetry, and atom distribution and density. Uses 3D coordinates, PCA and it calculates 10 descriptors."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Todeschini, R. and Gramatica, P.. New 3D Molecular Descriptors: The WHIM theory and QAR Applications, Persepectives in Drug Discovery and Design. 1998, pp. 355-380. Mixed descriptors: molecular size, shape, symmetry, and atom distribution and density. Uses 3D coordinates, PCA and it calculates 10 descriptors."@en ;
+    skos:definition "Holistic descriptors described by Todeschini et al."@en ;
     skos:prefLabel "WHIM"@en .
 
 :CHEMINF_001530 a owl:Class ;
+    rdfs:label "Moreau-Broto Autocorrelation (charge) descriptors"@en ;
     chemowl:short_name "autoCorrelationCharge"^^xsd:string ;
+    rdfs:comment "ATSc1 - ATSc5"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "ATSc1 - ATSc5"@en,
-        "Moreau-Broto Autocorrelation (charge) descriptors"@en ;
+    skos:definition "The Moreau-Broto autocorrelation descriptors using partial charges."@en ;
     skos:prefLabel "MoreauMinusBrotoAutocorrelation(charge)Descriptors"@en .
 
 :CHEMINF_001531 a owl:Class ;
+    rdfs:label "Moreau-Broto autocorrelation (mass) descriptors"@en ;
     chemowl:short_name "autoCorrelationMass"^^xsd:string ;
+    rdfs:comment "ATSm1 - ATSm5"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "ATSm1 - ATSm5"@en,
-        "Moreau-Broto autocorrelation (mass) descriptors"@en ;
+    skos:definition "The Moreau-Broto autocorrelation descriptors using atomic weight."@en ;
     skos:prefLabel "MoreauMinusBrotoAutocorrelation(mass)Descriptors"@en .
 
 :CHEMINF_001532 a owl:Class ;
+    rdfs:label "Moreau-Broto autocorrelation (polarizability) descriptors"@en ;
     chemowl:short_name "autoCorrelationPolarizability"^^xsd:string ;
+    rdfs:comment "ATSp1 - ATSp5"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "ATSp1 - ATSp5"@en,
-        "Moreau-Broto autocorrelation (polarizability) descriptors"@en ;
+    skos:definition "The Moreau-Broto autocorrelation descriptors using polarizability."@en ;
     skos:prefLabel "MoreauMinusBrotoAutocorrelation(polarizability)Descriptors"@en .
 
 :CHEMINF_001533 a owl:Class ;
+    rdfs:label "carbon types"@en ;
     chemowl:short_name "carbonTypes"^^xsd:string ;
+    rdfs:comment "C1SP1, C2SP1, C1SP2, C2SP2, C3SP2, C1SP3, C2SP3, C3SP3, C4SP3"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "C1SP1, C2SP1, C1SP2, C2SP2, C3SP2, C1SP3, C2SP3, C3SP3, C4SP3"@en,
-        "Carbon types"@en ;
+    skos:definition "Characterizes the carbon connectivity in terms of hybridization"@en ;
     skos:prefLabel "CarbonTypes"@en .
 
 :CHEMINF_001534 a owl:Class ;
+    rdfs:label "carbon connectivity index (order 0)"@en ;
     chemowl:short_name "chi0C"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Carbon connectivity index (order 0)"@en ;
+    skos:definition "Descriptor that calculates the carbon connectivity index (order 0). "@en ;
     skos:prefLabel "CarbonConnectivityIndex(order0)"@en .
 
 :CHEMINF_001535 a owl:Class ;
+    rdfs:label "valence connectivity index (order 0)"@en ;
     chemowl:short_name "chi0v"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Valence connectivity index (order 0)"@en ;
+    skos:definition "Descriptor that calculates atomic valence connectivity index (order 0). "@en ;
     skos:prefLabel "ValenceConnectivityIndex(order0)"@en .
 
 :CHEMINF_001536 a owl:Class ;
+    rdfs:label "valence carbon connectivity index (order 0)"@en ;
     chemowl:short_name "chi0vC"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Valence carbon connectivity index (order 0)"@en ;
+    skos:definition "Descriptor that calculates carbon valence connectivity index (order 0)."@en ;
     skos:prefLabel "ValenceCarbonConnectivityIndex(order0)"@en .
 
 :CHEMINF_001537 a owl:Class ;
+    rdfs:label "carbon connectivity index (order 1)"@en ;
     chemowl:short_name "chi1C"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Carbon connectivity index (order 1)"@en ;
+    skos:definition "Descriptor that calculates carbon connectivity index (order 1). "@en ;
     skos:prefLabel "CarbonConnectivityIndex(order1)"@en .
 
 :CHEMINF_001538 a owl:Class ;
+    rdfs:label "valence connectivity index (order 1)"@en ;
     chemowl:short_name "chi1v"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Valence connectivity index (order 1)"@en ;
+    skos:definition "Descriptor that calculates atomic valence connectivity index (order 1). "@en ;
     skos:prefLabel "ValenceConnectivityIndex(order1)"@en .
 
 :CHEMINF_001539 a owl:Class ;
+    rdfs:label "valence carbon connectivity index (order 1)"@en ;
     chemowl:short_name "chi1vC"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Valence carbon connectivity index (order 1)"@en ;
+    skos:definition "Descriptor that calculates carbon valence connectivity index (order 1). "@en ;
     skos:prefLabel "ValenceCarbonConnectivityIndex(order1)"@en .
 
 :CHEMINF_001540 a owl:Class ;
+    rdfs:label "distance to atom"@en ;
     chemowl:short_name "distanceToAtom"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000093 ;
-    skos:definition "Distance to atom"@en ;
+    skos:definition "Descriptor that calculates the 3D distance between two atoms."@en ;
     skos:prefLabel "DistanceToAtom"@en .
 
 :CHEMINF_001541 a owl:Class ;
+    rdfs:label "effective polarizability"@en ;
     chemowl:short_name "effectivePolarizability"^^xsd:string ;
+    rdfs:comment "EffectiveAtomPolarizabilityDescriptor, effAtomPol"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Effective polarizability"@en,
-        "EffectiveAtomPolarizabilityDescriptor, effAtomPol"@en ;
+    skos:definition "Descriptor that calculates the effective polarizability of a given heavy atom."@en ;
     skos:prefLabel "EffectivePolarizability"@en .
 
 :CHEMINF_001542 a owl:Class ;
+    rdfs:label "hybridization ratio"@en ;
     chemowl:short_name "hybratio"^^xsd:string ;
+    rdfs:comment "It reports the fraction of sp3 carbons to sp2 carbons as Nsp3/ (Nsp3 + Nsp2). The original form of the descriptor (i.e., simple ratio) has been used to characterize molecular complexity, especially in the are of natural products , which usually have a high value of the sp3 to sp2 ratio. Other short names: HybridizationRatio, HybRatio."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Hybridization ratio"@en,
-        "It reports the fraction of sp3 carbons to sp2 carbons as Nsp3/ (Nsp3 + Nsp2). The original form of the descriptor (i.e., simple ratio) has been used to characterize molecular complexity, especially in the are of natural products , which usually have a high value of the sp3 to sp2 ratio. Other short names: HybridizationRatio, HybRatio."@en ;
+    skos:definition "Characterizes molecular complexity in terms of carbon hybridization states."@en ;
     skos:prefLabel "HybridizationRatio"@en .
 
 :CHEMINF_001543 a owl:Class ;
+    rdfs:label "Kier and Hall kappa molecular shape indices"@en ;
     chemowl:short_name "kierValues"^^xsd:string ;
+    rdfs:comment "Kier and Hall kappa molecular shape indices compare the molecular graph with minimal and maximal molecular graphs. First kappa shape index is given by n ( n - 1 ) 2 m 2 , second kappa shape index is given by ( n - 1 ) ( n - 2 ) 2 p 2 2 and third kappa shape index is given by ( n - 1 ) ( n - 3 ) 2 p 3 2 for odd n and ( n - 3 ) ( n - 2 ) 2 p 3 2 for enev n, where n denotes the number of atoms in the hydrogen suppressed graph, m is the number of bonds in the hydrogen suppressed graph. Also, let p2 denote the number of paths of length 2 and let p3 denote the number of paths of length 3. Other short names: KappaShapeIndices, Kier1, Kier2, Kier3."@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
-    skos:definition "Kier and Hall kappa molecular shape indices"@en,
-        "Kier and Hall kappa molecular shape indices compare the molecular graph with minimal and maximal molecular graphs. First kappa shape index is given by n ( n - 1 ) 2 m 2 , second kappa shape index is given by ( n - 1 ) ( n - 2 ) 2 p 2 2 and third kappa shape index is given by ( n - 1 ) ( n - 3 ) 2 p 3 2 for odd n and ( n - 3 ) ( n - 2 ) 2 p 3 2 for enev n, where n denotes the number of atoms in the hydrogen suppressed graph, m is the number of bonds in the hydrogen suppressed graph. Also, let p2 denote the number of paths of length 2 and let p3 denote the number of paths of length 3. Other short names: KappaShapeIndices, Kier1, Kier2, Kier3."@en ;
+    skos:definition "Descriptor that calculates Kier and Hall kappa molecular shape indices."@en ;
     skos:prefLabel "KierAndHallKappaMolecularShapeIndices"@en .
 
 :CHEMINF_001544 a owl:Class ;
+    rdfs:label "partial pi charge"@en ;
     bibo:doi "http://dx.doi.org/10.1002/ange.19850970818"^^xsd:string ;
     chemowl:short_name "partialPiCharge"^^xsd:string ;
+    rdfs:comment "Other short_name: pepe."@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Other short_name: pepe."@en,
-        "Partial pi charge"@en ;
+    skos:definition "Descriptor that calculates pi partial charges in pi-bonded systems of an heavy atom based on based on Gasteiger H.Saller (PEPE)."@en ;
     skos:prefLabel "PartialPiCharge"@en .
 
 :CHEMINF_001545 a owl:Class ;
+    rdfs:label "partial sigma charge"@en ;
     bibo:doi "http://dx.doi.org/10.1016/0040-4020(80)80168-2"^^xsd:string ;
     chemowl:short_name "partialSigmaCharge"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Partial sigma charge"@en ;
+    skos:definition "Descriptor that calculates sigma partial charges in sigma-bonded systems (PEOE) of an heavy atom based on Gasteiger Marsili."@en ;
     skos:prefLabel "PartialSigmaCharge"@en .
 
 :CHEMINF_001546 a owl:Class ;
+    rdfs:label "pi electronegativity"@en ;
     chemowl:short_name "piElectronegativity"^^xsd:string ;
+    rdfs:comment "Pi electronegativity is given by X = a + b q + c ( q 2 ) , where a, b and c are Gasteiger Marsili parameters, and q is the sigma charge. Other short_name: elecPiA."@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
-    skos:definition "Pi electronegativity"@en,
-        "Pi electronegativity is given by X = a + b q + c ( q 2 ) , where a, b and c are Gasteiger Marsili parameters, and q is the sigma charge. Other short_name: elecPiA."@en ;
+    skos:definition "Descriptor that returns the pi electronegativity for a given atom."@en ;
     skos:prefLabel "PiElectronegativity"@en .
 
-<https://w3id.org/ssbd/cheminf> a owl:Ontology ;
+<https://w3id.org/ssbd/core/cheminf> a owl:Ontology ;
     dcterms:abstract "The CHEMINF module of SSbD Core Ontology providing a taxonomy for chemical descriptors."@en ;
     dcterms:title "CHEMINF terms"@en ;
     owl:imports <https://w3id.org/ssbd/core/0.0.1/reused-terms> ;
@@ -1905,13 +2104,15 @@ Bickerton GR, Paolini GV, Besnard J, Muresan S, Hopkins AL."""^^xsd:string ;
 A service for browsing and searching CHEMINF can be found [here](https://ontobee.org/ontology/CHEMINF?iri=http://semanticscience.org/resource/CHEMINF_000123)."""@en .
 
 :CHEMINF_000001 a owl:Class ;
+    rdfs:label "molar refractivity"@en ;
     rdfs:subClassOf :CHEMINF_000094 ;
-    skos:definition "Molar refractivity"@en ;
+    skos:definition "Molar refractviity is a measure of the total polarizability of a mole of a substance and is dependent on the temperature, the index of refraction, and the pressure."@en ;
     skos:prefLabel "MolarRefractivity"@en .
 
 :CHEMINF_000007 a owl:Class ;
+    rdfs:label "canonical SMILES descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000018 ;
-    skos:definition "Canonical SMILES descriptor"@en ;
+    skos:definition "A canonical SMILES descriptor is a SMILES descriptor that is produced using a canonicalization algorithm which results in one special generic SMILES among all valid possibilities."@en ;
     skos:prefLabel "CanonicalSMILESDescriptor"@en .
 
 :CHEMINF_000034 a owl:Class ;
@@ -1920,8 +2121,9 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
     skos:prefLabel "SStereochemicalDescriptor"@en .
 
 :CHEMINF_000041 a owl:Class ;
+    rdfs:label "positional descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Positional descriptor"@en ;
+    skos:definition "A positional descriptor is a chemical descriptor which describes some aspect of the position, or location of a chemical entity, or of the relative parts of a chemical entity with respct to one another."@en ;
     skos:prefLabel "PositionalDescriptor"@en .
 
 :CHEMINF_000050 a owl:Class ;
@@ -1935,16 +2137,19 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
     skos:prefLabel "LStereochemicalDescriptor"@en .
 
 :CHEMINF_000056 a owl:Class ;
+    rdfs:label "aromaticity descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000087 ;
-    skos:definition "Aromaticity descriptor"@en ;
+    skos:definition "An aromaticity descriptor is a chemical descriptor which indicates the aromaticity of a molecular entity."@en ;
     skos:prefLabel "AromaticityDescriptor"@en .
 
 :CHEMINF_000057 a owl:Class ;
     rdfs:label "file"@en,
         "melt mass flow rate"@en ;
+    dcterms:creator <http://orcid.org/0000-0003-3465-8786> ;
+    dcterms:date "2017-02-09T14:29:12+00:00"^^xsd:dateTime ;
     rdfs:subClassOf :CHEMINF_000025 ;
     skos:prefLabel "File"@en,
         "MeltMassFlowRate"@en .
@@ -1958,21 +2163,24 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
     skos:prefLabel "InChIKey"@en .
 
 :CHEMINF_000095 a owl:Class ;
+    rdfs:label "hybridization descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000087 ;
-    skos:definition "Hybridization descriptor"@en ;
+    skos:definition "A hybridization descriptor is a chemical descriptor that is about the hybridization of atomic orbitals in a molecular entity."@en ;
     skos:prefLabel "HybridizationDescriptor"@en .
 
 :CHEMINF_000106 a owl:Class ;
+    rdfs:label "systematic name"@en ;
     rdfs:subClassOf :CHEMINF_000043 ;
-    skos:definition "Systematic name"@en ;
+    skos:definition "A systematic name is a molecular entity name which is formulated systematically from the structure of the molecular entity."@en ;
     skos:prefLabel "SystematicName"@en .
 
 :CHEMINF_000107 a owl:Class ;
+    rdfs:label "IUPAC name"@en ;
     rdfs:subClassOf :CHEMINF_000106 ;
-    skos:definition "IUPAC name"@en ;
+    skos:definition "An IUPAC name is a systematic name which is formulated according to the rules and recommendations for chemical nomenclature set out by the International Union of Pure and Applied Chemistry (IUPAC)."@en ;
     skos:prefLabel "IUPACName"@en .
 
 :CHEMINF_000140 a owl:Class ;
@@ -1993,6 +2201,7 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
 :CHEMINF_000174 a owl:Class ;
     rdfs:label "TPSA"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
+    skos:definition "sum of solvent accessible surface areas of atoms with absolute value of partial charges greater than or equal 0.2"@en ;
     skos:prefLabel "TPSA"@en .
 
 :CHEMINF_000177 a owl:Class ;
@@ -2001,14 +2210,16 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
     skos:prefLabel "CollectionOf3DCoordinates"@en .
 
 :CHEMINF_000186 a owl:Class ;
+    rdfs:label "XLogP descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000251 ;
     skos:altLabel "XLogP"@en ;
-    skos:definition "XLogP descriptor"@en ;
+    skos:definition "A LogP descriptor based on the atom-type method described in Wang, R., Fu, Y., and Lai, L.. A New Atom-Additive Method for Calculating Partition Coefficients, Journal of Chemical Information and Computer Sciences. vol. 37. 1997, pp. 615-621."@en ;
     skos:prefLabel "XLogPDescriptor"@en .
 
 :CHEMINF_000202 a owl:Class ;
+    rdfs:label "tautomer count"@en ;
     rdfs:subClassOf :CHEMINF_000209 ;
-    skos:definition "Tautomer count"@en ;
+    skos:definition "a count descriptor that denotes the number of tautomers."@en ;
     skos:prefLabel "TautomerCount"@en .
 
 :CHEMINF_000206 a owl:Class ;
@@ -2032,11 +2243,13 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
     skos:prefLabel "UndefinedBondStereocenterCount"@en .
 
 :CHEMINF_000217 a owl:Class ;
+    rdfs:label "exact mass descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000088 ;
-    skos:definition "Exact mass descriptor"@en ;
+    skos:definition "an exact mass descriptor corresponds to the mass of the most intense molecule/ion peak in an MS spec, and when calculated denotes the mass of an ion or a molecule containing most likely isotopic composition for a single random molecule."@en ;
     skos:prefLabel "ExactMassDescriptor"@en .
 
 :CHEMINF_000246 a owl:Class ;
+    rdfs:label "size of largest chain"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
@@ -2044,15 +2257,16 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000209 ;
-    skos:definition "Size of largest chain"@en ;
+    skos:definition "The largest chain size descriptor is a count descriptor that gives the integer length (number of atoms) in the largest chain in a molecular entity."@en ;
     skos:prefLabel "SizeOfLargestChain"@en .
 
 :CHEMINF_000253 a owl:Class ;
+    rdfs:label "refractive index descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Refractive index descriptor"@en ;
+    skos:definition "Chemical substance refractive index descriptor is a unitless descriptor that specifies the ratio of the speed of light in vacuum to that in a given chemical substance. [IUPAC: http://goldbook.iupac.org/R05240.html]"@en ;
     skos:prefLabel "RefractiveIndexDescriptor"@en .
 
 :CHEMINF_000257 a owl:Class ;
@@ -2065,11 +2279,12 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
     skos:prefLabel "BoilingPointDescriptor"@en .
 
 :CHEMINF_000268 a owl:Class ;
+    rdfs:label "total formal charge descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000131 ;
-    skos:definition "Total formal charge descriptor"@en ;
+    skos:definition "A charge descriptor that gives the total charge for a molecule"@en ;
     skos:prefLabel "TotalFormalChargeDescriptor"@en .
 
 :CHEMINF_000280 a owl:Class ;
@@ -2077,23 +2292,27 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
         "histidine count"@en ;
     rdfs:subClassOf :CHEMINF_000209,
         :CHEMINF_000270 ;
+    skos:definition "The number of covalent units (molecule / ion) in a chemical structure"@en ;
     skos:prefLabel "CovalentUnitCount"@en,
         "HistidineCount"@en .
 
 :CHEMINF_000295 a owl:Class ;
+    rdfs:label "ALogP descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000251 ;
     skos:altLabel "ALogP"@en ;
-    skos:definition "ALogP descriptor"@en ;
+    skos:definition "The ALogP descriptor described by Ghose and Crippen in 1986 and 1987."@en ;
     skos:prefLabel "ALogPDescriptor"@en .
 
 :CHEMINF_000300 a owl:Class ;
+    rdfs:label "heavy atom count"@en ;
     rdfs:subClassOf :CHEMINF_000263 ;
-    skos:definition "Heavy atom count"@en ;
+    skos:definition "The number of non-hydrogen atoms"@en ;
     skos:prefLabel "HeavyAtomCount"@en .
 
 :CHEMINF_000301 a owl:Class ;
+    rdfs:label "isotope atom count"@en ;
     rdfs:subClassOf :CHEMINF_000263 ;
-    skos:definition "Isotope atom count"@en ;
+    skos:definition "The sum of all atoms enriched with respect to a particular atom isotope"@en ;
     skos:prefLabel "IsotopeAtomCount"@en .
 
 :CHEMINF_000315 a owl:Class ;
@@ -2151,45 +2370,52 @@ SC#N
     skos:prefLabel "CycleCount"@en .
 
 :CHEMINF_000415 a owl:Class ;
+    rdfs:label "molar volume descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
-    skos:definition "Molar volume descriptor"@en ;
+    skos:definition "A descriptor of the volume occupied by one mole of the given substance at a given temperature and pressure."@en ;
     skos:prefLabel "MolarVolumeDescriptor"@en .
 
 :CHEMINF_000416 a owl:Class ;
+    rdfs:label "density descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Density descriptor"@en ;
+    skos:definition "A descriptor of the density of a given substance at a given temperature and pressure."@en ;
     skos:prefLabel "DensityDescriptor"@en .
 
 :CHEMINF_000417 a owl:Class ;
+    rdfs:label "flash point descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Flash point descriptor"@en ;
+    skos:definition """A descriptor of the flash point of a substance at a given pressure.
+    The flash point is the minimum temperature at which a mixture of the substance with air can be ignited, within its explosive range."""@en ;
     skos:prefLabel "FlashPointDescriptor"@en .
 
 :CHEMINF_000418 a owl:Class ;
+    rdfs:label "enthalpy of vaporization descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
-    skos:definition "Enthalpy of vaporization descriptor"@en ;
+    skos:definition "A descriptor of the energy taken in by a chemical substance on vaporization at a given temperature and pressure."@en ;
     skos:prefLabel "EnthalpyOfVaporizationDescriptor"@en .
 
 :CHEMINF_000419 a owl:Class ;
+    rdfs:label "vapour pressure descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
-    skos:definition "Vapour pressure descriptor"@en ;
+    skos:definition "A descriptor of the pressure exerted by the vapour phase of a chemical substance on its condensed phase at a given temperature and pressure."@en ;
     skos:prefLabel "VapourPressureDescriptor"@en .
 
 :CHEMINF_000420 a owl:Class ;
+    rdfs:label "surface tension descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
-    skos:definition "Surface tension descriptor"@en ;
+    skos:definition "A descriptor of the disposition of a portion of liquid to resist a force."@en ;
     skos:prefLabel "SurfaceTensionDescriptor"@en .
 
 :CHEMINF_000465 a owl:Class ;
@@ -2200,15 +2426,20 @@ SC#N
     skos:prefLabel "ChemSpiderValidatedSynonym"@en .
 
 :CHEMINF_000519 a owl:Class ;
+    rdfs:label "absolute configuration stereochemical descriptor"@en ;
+    dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
+    dcterms:date "2022-07-11T08:01:45+00:00"^^xsd:dateTime ;
+    dcterms:source "https://doi.org/10.1351/goldbook.A00020"^^xsd:anyURI ;
     rdfs:subClassOf :CHEMINF_000027 ;
-    skos:definition "Absolute configuration stereochemical descriptor"@en ;
+    skos:definition "The spatial arrangement of the atoms of a chiral molecular entity (or group) and its stereochemical description e.g. R or S."@en ;
     skos:prefLabel "AbsoluteConfigurationStereochemicalDescriptor"@en .
 
 :CHEMINF_001510 a owl:Class ;
+    rdfs:label "gravitational index"@en ;
     bibo:doi "http://dx.doi.org/10.1021/jp953224q"^^xsd:string ;
     chemowl:short_name "gravitationalIndex"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000093 ;
-    skos:definition "Gravitational index"@en ;
+    skos:definition "Descriptor characterizing the mass distribution of the molecule."@en ;
     skos:prefLabel "GravitationalIndex"@en .
 
 :CHEMINF_000005 a owl:Class ;
@@ -2217,18 +2448,21 @@ SC#N
     skos:prefLabel "RSStereochemicalDescriptor"@en .
 
 :CHEMINF_000027 a owl:Class ;
+    rdfs:label "stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Stereochemical descriptor"@en ;
+    skos:definition "A stereochemical descriptor is a chemical descriptor which describes some aspect of the three dimensional structure of a chemical entity."@en ;
     skos:prefLabel "StereochemicalDescriptor"@en .
 
 :CHEMINF_000032 a owl:Class ;
+    rdfs:label "isomeric SMILES descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000018 ;
-    skos:definition "Isomeric SMILES descriptor"@en ;
+    skos:definition "an isomeric SMILES descriptor is a SMILES descriptor that written with isotopic and chiral specifications."@en ;
     skos:prefLabel "IsomericSMILESDescriptor"@en .
 
 :CHEMINF_000044 a owl:Class ;
+    rdfs:label "preferred name"@en ;
     rdfs:subClassOf :CHEMINF_000043 ;
-    skos:definition "Preferred name"@en ;
+    skos:definition "A preferred name is a molecular entity name which is preferred, or recommended, for usage in textual annotations referring to that molecular entity."@en ;
     skos:prefLabel "PreferredName"@en .
 
 :CHEMINF_000048 a owl:Class ;
@@ -2248,10 +2482,11 @@ SC#N
     skos:prefLabel "DLStereochemicalDescriptor"@en .
 
 :CHEMINF_000064 a owl:Class ;
+    rdfs:label "QSAR descriptor"@en ;
     oboowl:hasAlternativeId "BODO:Descriptor"^^xsd:string ;
+    rdfs:comment "NOTE: QSAR descriptors are often just called 'chemical descriptor' or 'molecular descriptor' in the cheminformatics community."@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "NOTE: QSAR descriptors are often just called 'chemical descriptor' or 'molecular descriptor' in the cheminformatics community."@en,
-        "QSAR descriptor"@en ;
+    skos:definition "A Quantitative Structure Activity Relationship (QSAR) descriptor is a chemical descriptor which gives a numeric, quantitative value which is believed to be associated with some aspect of the chemical or biological activity of the chemical entity."@en ;
     skos:prefLabel "QSARDescriptor"@en .
 
 :CHEMINF_000080 a owl:Class ;
@@ -2261,17 +2496,19 @@ SC#N
     skos:prefLabel "CisMinustransStereochemicalDescriptor"@en .
 
 :CHEMINF_000113 a owl:Class ;
+    rdfs:label "InChI descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000085 ;
-    skos:definition "InChI descriptor"@en ;
+    skos:definition "An InChI descriptor is a structure descriptor which conforms to the InChI format specification."@en ;
     skos:prefLabel "InChIDescriptor"@en .
 
 :CHEMINF_000185 a owl:Class ;
+    rdfs:label "Petitjean Shape Index"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
     skos:altLabel "petitjeanShapeIndex"@en ;
-    skos:definition "Petitjean Shape Index"@en ;
+    skos:definition "A measure of the anisotropy in a molecule"@en ;
     skos:prefLabel "PetitjeanShapeIndex"@en .
 
 :CHEMINF_000189 a owl:Class ;
@@ -2289,6 +2526,7 @@ SC#N
     rdfs:label "pKa"@en ;
     rdfs:subClassOf :CHEMINF_000193 ;
     skos:altLabel "pKa"@en ;
+    skos:definition "the logarithmic measure of the acid dissociation constant (Ka)"@en ;
     skos:prefLabel "PKa"@en .
 
 :CHEMINF_000203 a owl:Class ;
@@ -2303,24 +2541,28 @@ SC#N
     skos:prefLabel "AtomStereocenterCount"@en .
 
 :CHEMINF_000218 a owl:Class ;
+    rdfs:label "monoisotopic mass descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000088 ;
-    skos:definition "Monoisotopic mass descriptor"@en ;
+    skos:definition "The mass of a molecule calculated using the mass of the most abundant isotope of each element. E.g., Carbon has a monoisotopic mass of 12.000 g/mol."@en ;
     skos:prefLabel "MonoisotopicMassDescriptor"@en .
 
 :CHEMINF_000219 a owl:Class ;
+    rdfs:label "complexity descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000085 ;
-    skos:definition "Complexity descriptor"@en ;
+    skos:definition "A complexity descriptor denotes the how complicated a structure is, seen from both the point of view of the elements contained and its structural features ."@en ;
     skos:prefLabel "ComplexityDescriptor"@en .
 
 :CHEMINF_000231 a owl:Class ;
+    rdfs:label "charge density descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000087 ;
-    skos:definition "Charge density descriptor"@en ;
+    skos:definition "A charge density descriptor is a chemical entity descriptor which indicates the distribution of the electric charge over the volume of the chemical entity."@en ;
     skos:prefLabel "ChargeDensityDescriptor"@en .
 
 :CHEMINF_000233 a owl:Class ;
+    rdfs:label "bond count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
@@ -2328,15 +2570,16 @@ SC#N
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000209 ;
-    skos:definition "Bond count"@en ;
+    skos:definition "A descriptor that specifies the integer count of bonds in a given molecular entity."@en ;
     skos:prefLabel "BondCount"@en .
 
 :CHEMINF_000242 a owl:Class ;
+    rdfs:label "volume descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000060 ;
-    skos:definition "Volume descriptor"@en ;
+    skos:definition "A volume descriptor is a descriptor which describes a measure or calculation of the volume of a chemical entity."@en ;
     skos:prefLabel "VolumeDescriptor"@en .
 
 :CHEMINF_000302 a owl:Class ;
@@ -2351,18 +2594,23 @@ SC#N
     skos:prefLabel "LogDDescriptor"@en .
 
 :CHEMINF_000413 a owl:Class ;
+    rdfs:label "organic carbon adsorption descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
-    skos:definition "Organic carbon adsorption descriptor"@en ;
+    skos:definition """A descriptor of the ratio of the amount of a given chemical substance
+    adsorbed per unit weight of organic carbon in soil or sediment to the concentration
+    of the chemical substance in solution at equilibrium.
+    """@en ;
     skos:prefLabel "OrganicCarbonAdsorptionDescriptor"@en .
 
 :CHEMINF_000414 a owl:Class ;
+    rdfs:label "bioconcentration factor descriptor"@en ;
     obo:IAO_0000117 "Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Bioconcentration factor descriptor"@en ;
+    skos:definition "A descriptor of the ratio of the concentration of a chemical substance in an organism immersed in water to that in the surrounding water at equilibrium."@en ;
     skos:prefLabel "BioconcentrationFactorDescriptor"@en .
 
 obo:CHEBI_36357 a owl:Class ;
@@ -2372,16 +2620,18 @@ obo:CHEBI_36357 a owl:Class ;
     skos:prefLabel "PolyatomicEntity"@en .
 
 :CHEMINF_000042 a owl:Class ;
+    rdfs:label "molecular formula"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000136 ;
-    skos:definition "Molecular formula"@en ;
+    skos:definition "A molecular formula is a structure descriptor which identifies each constituent element by its chemical symbol and indicates the number of atoms of each element found in each discrete molecule of that compound."@en ;
     skos:prefLabel "MolecularFormula"@en .
 
 :CHEMINF_000060 a owl:Class ;
+    rdfs:label "dimensional extent descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000093 ;
-    skos:definition "Dimensional extent descriptor"@en ;
+    skos:definition "A dimensional extent descriptor is a physical property descriptor which describes some measurable length, area or volume aspect of a chemical entity."@en ;
     skos:prefLabel "DimensionalExtentDescriptor"@en .
 
 :CHEMINF_000083 a owl:Class ;
@@ -2403,26 +2653,30 @@ obo:CHEBI_36357 a owl:Class ;
     skos:prefLabel "MolecularMassDescriptor"@en .
 
 :CHEMINF_000131 a owl:Class ;
+    rdfs:label "charge descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000087 ;
-    skos:definition "Charge descriptor"@en ;
+    skos:definition "A charge descriptor is a chemical descriptor which indicates the charge of a chemical entity."@en ;
     skos:prefLabel "ChargeDescriptor"@en .
 
 :CHEMINF_000207 a owl:Class ;
+    rdfs:label "formation energy descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000016 ;
-    skos:definition "Formation energy descriptor"@en ;
+    skos:definition "A formation energy descriptor is an energetic descriptor which gives the value for the energy of formation of a chemical entity."@en ;
     skos:prefLabel "FormationEnergyDescriptor"@en .
 
 :CHEMINF_000208 a owl:Class ;
+    rdfs:label "solvation energy descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000016 ;
-    skos:definition "Solvation energy descriptor"@en ;
+    skos:definition "A solvation energy descriptor is a chemical descriptor which gives the value for the energy of dissolving a particular chemical entity in a solvent."@en ;
     skos:prefLabel "SolvationEnergyDescriptor"@en .
 
 :CHEMINF_000210 a owl:Class ;
+    rdfs:label "dissociation energy descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000016 ;
-    skos:definition "Dissociation energy descriptor"@en ;
+    skos:definition "A dissociation energy descriptor is an energetic descriptor which gives a value for the dissociation energy for a chemical entity."@en ;
     skos:prefLabel "DissociationEnergyDescriptor"@en .
 
 :CHEMINF_000213 a owl:Class ;
@@ -2431,6 +2685,7 @@ obo:CHEBI_36357 a owl:Class ;
     skos:prefLabel "BondStereocenterCount"@en .
 
 :CHEMINF_000254 a owl:Class ;
+    rdfs:label "rotatable bond count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
@@ -2439,7 +2694,7 @@ obo:CHEBI_36357 a owl:Class ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000233 ;
     skos:altLabel "RotatableBondsCount"@en ;
-    skos:definition "Rotatable bond count"@en ;
+    skos:definition "a bond count that denotes the integer number of rotors in the molecule, generally single bonds torsion around which produces non-identical geometric molecular configurations."@en ;
     skos:prefLabel "RotatableBondCount"@en .
 
 :CHEMINF_000307 a owl:Class ;
@@ -2459,29 +2714,37 @@ HBA>=10
     skos:prefLabel "RuleOfFiveViolationsDescriptor"@en .
 
 :CHEMINF_000520 a owl:Class ;
+    rdfs:label "relative configuration stereochemical descriptor"@en ;
+    dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
+    dcterms:date "2022-07-11T08:04:08+00:00"^^xsd:dateTime ;
+    dcterms:source "https://doi.org/10.1351/goldbook.R05260"^^xsd:anyURI ;
     rdfs:subClassOf :CHEMINF_000027 ;
-    skos:definition "Relative configuration stereochemical descriptor"@en ;
+    skos:definition "The configuration of any stereogenic (asymmetric) centre with respect to any other stereogenic centre contained within the same molecular entity. Unlike absolute configuration, relative configuration is reflection-invariant. Relative configuration, distinguishing diastereoisomers, may be denoted by the configurational descriptors R*, R* (or l) and R*, S* (or u) meaning, respectively, that the two centres have identical or opposite configurations. For molecules with more than two asymmetric centres the prefix rel- may be used in front of the name of one enantiomer where R and S have been used. If any centres have known absolute configuration then only R* and S* can be used for the relative configuration."@en ;
     skos:prefLabel "RelativeConfigurationStereochemicalDescriptor"@en .
 
 :CHEMINF_000016 a owl:Class ;
+    rdfs:label "energetic descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Energetic descriptor"@en ;
+    skos:definition "An energetic descriptor is a chemical descriptor which captures information about some aspect of the energetic behaviour of a chemical entity."@en ;
     skos:prefLabel "EnergeticDescriptor"@en .
 
 :CHEMINF_000018 a owl:Class ;
+    rdfs:label "SMILES descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000085 ;
-    skos:definition "SMILES descriptor"@en ;
+    skos:definition "A SMILES descriptor is a structure descriptor that denotes a molecular structure as a graph."@en ;
     skos:prefLabel "SMILESDescriptor"@en .
 
 :CHEMINF_000061 a owl:Class ;
+    rdfs:label "identifying descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Identifying descriptor"@en ;
+    skos:definition "An identifying descriptor is a chemical descriptor which provides an identifier for the chemical entity it is about, which in most cases should aim to be unique and easy to use as an unambiguous reference for the chemical entity."@en ;
     skos:prefLabel "IdentifyingDescriptor"@en .
 
 :CHEMINF_000244 a owl:Class ;
+    rdfs:label "hydrogen bond donor count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
@@ -2489,10 +2752,11 @@ HBA>=10
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
         :CHEMINF_000209 ;
-    skos:definition "Hydrogen bond donor count"@en ;
+    skos:definition "A descriptor that reflects the integer number of hydrogen bond donors in a given molecular entity, as determined by a given method. In highly simplified terms, this is usually the count of all negatively or partially negatively charged heteroatoms (e.g. alcohol oxygen) that have covalently attached to them partially positively charged hydrogen atoms that are capable of participating in a hydrogen bond."@en ;
     skos:prefLabel "HydrogenBondDonorCount"@en .
 
 :CHEMINF_000245 a owl:Class ;
+    rdfs:label "hydrogen bond acceptor count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
@@ -2500,23 +2764,26 @@ HBA>=10
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
         :CHEMINF_000209 ;
-    skos:definition "Hydrogen bond acceptor count"@en ;
+    skos:definition "A descriptor that reflects the integer number of hydrogen bond acceptors in a given molecular entity, as determined by a given method. In highly simplified terms, this is usually the count of all negatively or partially negatively charged heteroatoms (e.g. alcohol oxygen) capable of accepting a hydrogen bond."@en ;
     skos:prefLabel "HydrogenBondAcceptorCount"@en .
 
 :CHEMINF_000216 a owl:Class ;
+    rdfs:label "average molecular weight descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000088 ;
-    skos:definition "Average molecular weight descriptor"@en ;
+    skos:definition "The mass of a molecule calculated using the average mass of each element weighted for its natural isotopic abundance. E.g., Carbon has two natural isotopes 12 and 13 with relative abundances of 98.9% and 1.1% to yield an average mass of 12.011 g/mol"@en ;
     skos:prefLabel "AverageMolecularWeightDescriptor"@en .
 
 :CHEMINF_000251 a owl:Class ;
+    rdfs:label "logP descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "LogP descriptor"@en ;
+    skos:definition "The logarithm of octanol-water partition coefficient, which is the ratio of the molecules dissolved in octanol to those dissolved in pure un-ionized water upon mixture equilibration. This can be measured or predicted. The value is dimensionless. May depend on molecular conformation when computed."@en ;
     skos:prefLabel "LogPDescriptor"@en .
 
 :CHEMINF_000263 a owl:Class ;
+    rdfs:label "atom count"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
@@ -2524,13 +2791,14 @@ HBA>=10
             owl:onProperty :CHEMINF_000012 ;
             owl:someValuesFrom xsd:int ],
         :CHEMINF_000209 ;
-    skos:definition "Atom count"@en ;
+    skos:definition "A descriptor that specifies the integer count of atoms in a given molecular entity."@en ;
     skos:prefLabel "AtomCount"@en .
 
 :CHEMINF_000000 a owl:Class ;
+    rdfs:label "chemical entity"@en ;
     oboowl:hasAlternativeId "CHEBI:24431"^^xsd:string,
         "obo:24431"^^xsd:string ;
-    skos:definition "Chemical entity"@en ;
+    skos:definition "A chemical entity is any molecular entity or chemical substance."@en ;
     skos:prefLabel "ChemicalEntity"@en .
 
 :CHEMINF_000094 a owl:Class ;
@@ -2544,21 +2812,24 @@ HBA>=10
     skos:prefLabel "ConstitutionalDescriptor"@en .
 
 :CHEMINF_000043 a owl:Class ;
+    rdfs:label "molecular entity name"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000061 ;
-    skos:definition "Molecular entity name"@en ;
+    skos:definition "An information entity about a molecular entity which serves to name that molecular entity."@en ;
     skos:prefLabel "MolecularEntityName"@en .
 
 :CHEMINF_000093 a owl:Class ;
+    rdfs:label "geometric descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Geometric descriptor"@en ;
+    skos:definition "A geometric descriptor is a descriptor that concerns information about size, shape, and relative position."@en ;
     skos:prefLabel "GeometricDescriptor"@en .
 
 :CHEMINF_000085 a owl:Class ;
+    rdfs:label "structural descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Structural descriptor"@en ;
+    skos:definition "A structural descriptor is a chemical descriptor which is about some aspect of the molecular structure (composition) of a chemical entity."@en ;
     skos:prefLabel "StructuralDescriptor"@en .
 
 :CHEMINF_000012 a owl:DatatypeProperty ;
@@ -2566,10 +2837,11 @@ HBA>=10
     skos:prefLabel "hasValue"@en .
 
 :CHEMINF_000123 a owl:Class ;
+    rdfs:label "chemical descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000000 ] ;
-    skos:definition "Chemical descriptor"@en ;
+    skos:definition "A chemical descriptor is a data item (quantity or value) about a chemical entity that conforms to a specification for how it is calculated, measured or recorded."@en ;
     skos:prefLabel "ChemicalDescriptor"@en .
 
 obo:CHEBI_33250 a owl:Class ;
@@ -2579,13 +2851,15 @@ obo:CHEBI_33250 a owl:Class ;
     skos:prefLabel "Atom"@en .
 
 :CHEMINF_000209 a owl:Class ;
+    rdfs:label "count descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000136 ;
-    skos:definition "Count descriptor"@en ;
+    skos:definition "A count descriptor is a chemical descriptor which is calculated by counting the number of features of a certain kind which are present in the chemical entity."@en ;
     skos:prefLabel "CountDescriptor"@en .
 
 :CHEMINF_000270 a owl:Class ;
+    rdfs:label "amino acid count"@en ;
     rdfs:subClassOf :CHEMINF_000209 ;
-    skos:definition "Amino acid count"@en ;
+    skos:definition "a count of the number of amino acid residues."@en ;
     skos:prefLabel "AminoAcidCount"@en .
 
 :CHEMINF_000464 a owl:Class ;
@@ -2602,8 +2876,9 @@ obo:CHEBI_33250 a owl:Class ;
     skos:prefLabel "ChemicalSubstance"@en .
 
 :CHEMINF_000092 a owl:Class ;
+    rdfs:label "topological descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Topological descriptor"@en ;
+    skos:definition "A topological descriptor is a chemical descriptor which pertains to spatial properties of a geometric object that are preserved under continuous deformations of objects, for example, deformations that involve stretching."@en ;
     skos:prefLabel "TopologicalDescriptor"@en .
 
 :CHEMINF_000087 a owl:Class ;
@@ -2612,16 +2887,18 @@ obo:CHEBI_33250 a owl:Class ;
     skos:prefLabel "ElectronicDescriptor"@en .
 
 :CHEMINF_000229 a owl:Class ;
+    rdfs:label "surface area descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000060 ;
-    skos:definition "Surface area descriptor"@en ;
+    skos:definition "A surface area descriptor is a descriptor which describes a measure or calculation of the surface area of a chemical entity."@en ;
     skos:prefLabel "SurfaceAreaDescriptor"@en .
 
 :CHEMINF_000025 a owl:Class ;
+    rdfs:label "physical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
-    skos:definition "Physical descriptor"@en ;
+    skos:definition "A physical descriptor is a chemical descriptor which describes some physical property (quality or disposition) of a chemical entity."@en ;
     skos:prefLabel "PhysicalDescriptor"@en .
 
 obo:CHEBI_23367 a owl:Class ;
