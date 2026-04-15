@@ -241,8 +241,8 @@ jobs:
     - name: Generate shacl shapes and publish
       run: |
         python3 validation/generate_shacl.py
-        mkdir -p static/shacl
-        cp validation/shapes*.ttl static/shacl/
+        mkdir -p public/shacl
+        cp validation/shapes*.ttl public/shacl/
  
     - name: Copy ontologies, figures and context to public
       run: |
