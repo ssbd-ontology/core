@@ -354,12 +354,13 @@ ssbd:CognitionAndLearningModel rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/CollaborativeFiltering
 ssbd:CollaborativeFiltering rdf:type owl:Class ;
                             rdfs:subClassOf ssbd:RecommenderSystem ;
-                            skos:definition "A widely used recommender system model that primarily operates by leveraging similarities between users and items based on past interactions (like ratings or purchases)." ;
+                            skos:definition "A widely used recommender system model that primarily operates by leveraging similarities between users and items based on past interactions (like ratings or purchases)."@en ;
                             skos:prefLabel "CollaborativeFiltering"@en .
 
 
 ###  https://w3id.org/ssbd/Computation
 ssbd:Computation rdf:type owl:Class ;
+             skos:definition "Copmutation"@en ;
 	         skos:prefLabel "Computation"@en .
 
 

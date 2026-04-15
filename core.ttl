@@ -180,7 +180,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 :hasTemporalPart rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasProperPart ;
     skos:prefLabel "hasTemporalPart"@en ;
-    skos:definition "A relation that identify a proper item part of the whole, whose parts always cover the full spatial extension of the whole within a time interval." ;
+    skos:definition "A relation that identify a proper item part of the whole, whose parts always cover the full spatial extension of the whole within a time interval."@en ;
     skos:scopeNote "A temporal part of an item cannot both cause and be caused by any other proper part of the item."@en .
 
 :hasJunctionPart rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
