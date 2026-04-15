@@ -102,13 +102,13 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:domain :Software ;
     rdfs:range xsd:boolean ;
     skos:prefLabel "hasAPI"@en ;
-    skos:definition "Whether the software has an API." .
+    skos:definition "Whether the software has an API."@en .
 
 :hasGUI a owl:DatatypeProperty ;
     rdfs:domain :Software ;
     rdfs:range xsd:boolean ;
     skos:prefLabel "hasGUI"@en ;
-    skos:definition "Whether the software has a GUI." .
+    skos:definition "Whether the software has a GUI."@en .
 
 
 #################################################################
@@ -444,7 +444,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:domain dcat:Resource ;
     rdfs:range foaf:Document ;
     skos:prefLabel "documentation"@en ;
-    skos:definition "Relates a resource to a page or document documenting this resource." .
+    skos:definition "Relates a resource to a page or document documenting this resource."@en .
 
 
 #################################################################
@@ -483,8 +483,8 @@ The root of the SSbD Core Ontology is shown below. More information can be found
         owl:onProperty :assesses ;
         owl:someValuesFrom :Indicator
     ] ;
-    skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process." ;
-    skos:prefLabel "Assessment" .
+    skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process."@en ;
+    skos:prefLabel "Assessment"@en .
 
 
 ###  https://w3id.org/ssbd/SSbDAssessment
@@ -498,16 +498,16 @@ The root of the SSbD Core Ontology is shown below. More information can be found
         owl:onProperty :assesses ;
         owl:someValuesFrom :SSbDDimension
     ] ;
-     skos:definition "An assessment of the safety and sustainability of chemicals and materials across their life cycle. Assesses one or more ssbd dimension, through one ore more SSbDSpecifiedAssessments" ;
-     rdfs:altLabel "SSbD Assessment" ;
-     skos:prefLabel "SSbDAssessment" .
+     skos:definition "An assessment of the safety and sustainability of chemicals and materials across their life cycle. Assesses one or more ssbd dimension, through one ore more SSbDSpecifiedAssessments"@en ;
+     rdfs:altLabel "SSbD Assessment"@en ;
+     skos:prefLabel "SSbDAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/SpecifiedAssessment
 :SpecifiedAssessment rdf:type owl:Class ;
      rdfs:subClassOf ssbd:Assessment ;
-     skos:definition "An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact." ;
-     skos:prefLabel "SpecifiedAssessment" .
+     skos:definition "An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact."@en ;
+     skos:prefLabel "SpecifiedAssessment"@en .
 
 
 
