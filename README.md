@@ -36,6 +36,16 @@ If you want to describe metadata for SSbD resources using the SSbD Core Ontology
 
 https://ssbd-ontology.github.io/core/context/context.json
 
+## Validation
+
+For validation of RDF data against the SSbD Core Ontology, a set of generated [SHACL](https://www.w3.org/TR/shacl/) shapes are provided. These shapes are derived from the ontology's class and property definitions, and they capture the constraints and structure defined by the ontology. By using these SHACL shapes, you can validate your RDF data to ensure that it adheres to the expected structure and semantics defined by the SSbD Core Ontology.
+
+The latest version of generated SHACL shapes is available at:
+
+https://github.com/ssbd-ontology/core/tree/gh-pages/shacl
+
+To see how the SHACL shapes are generated and to learn how to use them for validation, please refer to the [validation/README.md](validation/README.md), which provides detailed instructions and examples on how to perform validation using these shapes.
+
 ## Contact
 
 For questions, suggestions, or contributions, please contact [Thomas Exner](mailto:thomas.exner@sevenpastnine.com).
