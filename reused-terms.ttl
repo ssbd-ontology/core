@@ -182,14 +182,12 @@ prov:wasInformedBy
 
 dcterms:description a owl:AnnotationProperty ;
     dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
-    dcterms:issued "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
     rdfs:comment "An account of the resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "description"@en .
 
 dcterms:rightsHolder a owl:ObjectProperty ;
     rdfs:range foaf:Agent ;
-    dcterms:issued "2004-06-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
     dcterms:description "A person or organization owning or managing rights over the resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "rightsHolder"@en .
