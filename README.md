@@ -30,6 +30,12 @@ Reference documentation:
 - `scripts/` contains utility scripts used to extract data, generate documentation artifacts, and build taxonomy resources from source material.
 - `catalog-v001.xml` maps the project's ontology IRIs to local Turtle files, allowing ontology tools to resolve them locally.
 
+## JSON-LD context
+
+If you want to describe metadata for SSbD resources using the SSbD Core Ontology in `JSON` format, you can use the provided `JSON-LD` context, which is available at:
+
+https://ssbd-ontology.github.io/core/context/context.json
+
 ## Contact
 
 For questions, suggestions, or contributions, please contact [Thomas Exner](mailto:thomas.exner@sevenpastnine.com).
