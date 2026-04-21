@@ -34,7 +34,7 @@ Reference documentation:
 
 If you want to describe metadata for SSbD resources using the SSbD Core Ontology in `JSON` format, you can use the provided `JSON-LD` context, which is available at:
 
-https://ssbd-ontology.github.io/core/context/context.json
+https://w3id.org/ssbd/context/
 
 ## Validation
 
