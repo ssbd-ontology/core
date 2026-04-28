@@ -1,0 +1,28 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/ssbd/core/0.0.1/core> a prov:Entity;
+	 dc:title "SSbD Core Ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-4250-4584>;
+	 dc:contributor <https://orcid.org/0000-0003-4250-4584>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <0.0.0>;
+	 prov:wasGeneratedAt "2025-09-08";
+.
+:agent0 a prov:Agent; foaf:name "https://orcid.org/0000-0002-6396-0848".
+:agent1 a prov:Agent; foaf:name "https://orcid.org/0000-0002-1849-5246".
+:agent2 a prov:Agent; foaf:name "https://orcid.org/0000-0002-8053-8198".
+:agent3 a prov:Agent; foaf:name "https://orcid.org/0000-0002-0719-4907".
+:agent4 a prov:Agent; foaf:name "https://orcid.org/0000-0001-8869-3718".
+:agent5 a prov:Agent; foaf:name "https://orcid.org/0000-0002-3372-4801".
+:agent6 a prov:Agent; foaf:name "https://orcid.org/0000-0002-1560-809X".
+:agent7 a prov:Agent; foaf:name "https://orcid.org/0000-0002-2705-2068".

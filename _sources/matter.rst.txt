@@ -1,0 +1,2905 @@
+:orphan:
+
+
+============
+Matter Index
+============
+
+
+
+Matter
+======
+
+
+
+.. _matter-classes:
+
+Classes
+-------
+
+.. raw:: html
+
+   <div id="AdvancedMaterial"></div>
+
+
+AdvancedMaterial
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AdvancedMaterial' onclick="if(!document.getElementById('AdvancedMaterial')){window.location.href='https://w3id.org/ssbd/AdvancedMaterial'; return false;}">https://w3id.org/ssbd/AdvancedMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AdvancedMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A designed material tailored to simultaneously meet two or more pre-defined criteria.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ArtificialMaterial' onclick="if(!document.getElementById('ArtificialMaterial')){window.location.href='https://w3id.org/emmo/hume#ArtificialMaterial'; return false;}">ArtificialMaterial</a>, <a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="AmorphousMaterial"></div>
+
+
+AmorphousMaterial
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AmorphousMaterial' onclick="if(!document.getElementById('AmorphousMaterial')){window.location.href='https://w3id.org/emmo/hume#AmorphousMaterial'; return false;}">https://w3id.org/emmo/hume#AmorphousMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AmorphousMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">NonCrystallineMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A amorphous material resembles a frozen liquid with atoms arranged randomly, unlike crystalline solids with periodic patterns, leading to properties like no sharp melting point, irregular shapes, and isotropic characteristics (uniform properties in all directions).</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A solid lacking a repeating, ordered atomic structure (long-range order).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByStructure' onclick="if(!document.getElementById('MaterialByStructure')){window.location.href='https://w3id.org/emmo/hume#MaterialByStructure'; return false;}">MaterialByStructure</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ArtificialMaterial"></div>
+
+
+ArtificialMaterial
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ArtificialMaterial' onclick="if(!document.getElementById('ArtificialMaterial')){window.location.href='https://w3id.org/emmo/hume#ArtificialMaterial'; return false;}">https://w3id.org/emmo/hume#ArtificialMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ArtificialMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Artificial materials are typically engineered through chemical synthesis from natural raw materials like oil or coal, resulting in polymers such as plastics, nylon, or polyester, designed for specific, enhanced properties like strength, durability, or moldability not found in nature.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Any substance engineered or created by humans, often to mimic or improve upon natural materials.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByOrigin' onclick="if(!document.getElementById('MaterialByOrigin')){window.location.href='https://w3id.org/emmo/hume#MaterialByOrigin'; return false;}">MaterialByOrigin</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#AdvancedMaterial' onclick="if(!document.getElementById('AdvancedMaterial')){window.location.href='https://w3id.org/ssbd/AdvancedMaterial'; return false;}">AdvancedMaterial</a>, <a href='#ManufacturedMaterial' onclick="if(!document.getElementById('ManufacturedMaterial')){window.location.href='https://w3id.org/emmo/hume#ManufacturedMaterial'; return false;}">ManufacturedMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Atom"></div>
+
+
+Atom
+^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Atom' onclick="if(!document.getElementById('Atom')){window.location.href='https://w3id.org/emmo/hume#Atom'; return false;}">https://w3id.org/emmo/hume#Atom</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Atom</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">ChemicalElement</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">An 'atom' is a 'nucleus' surrounded by an 'electron_cloud', i.e. a quantum system made of one or more bounded electrons.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A standalone atom has direct part one 'nucleus' and one 'electron_cloud'.<br><br>An O 'atom' within an O₂ 'molecule' is an 'e-bonded_atom'.<br><br>In this material branch, H atom is a particular case, with respect to higher atomic number atoms, since as soon as it shares its electron it has no nucleus entangled electron cloud.<br><br>We cannot say that H₂ molecule has direct part two H atoms, but has direct part two H nucleus.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MolecularEntity' onclick="if(!document.getElementById('MolecularEntity')){window.location.href='https://w3id.org/emmo/hume#MolecularEntity'; return false;}">MolecularEntity</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#BondedAtom' onclick="if(!document.getElementById('BondedAtom')){window.location.href='https://w3id.org/emmo/hume#BondedAtom'; return false;}">BondedAtom</a>, <a href='#StandaloneAtom' onclick="if(!document.getElementById('StandaloneAtom')){window.location.href='https://w3id.org/emmo/hume#StandaloneAtom'; return false;}">StandaloneAtom</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="BiocompatibleMaterial"></div>
+
+
+BiocompatibleMaterial
+^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#BiocompatibleMaterial' onclick="if(!document.getElementById('BiocompatibleMaterial')){window.location.href='https://w3id.org/ssbd/BiocompatibleMaterial'; return false;}">https://w3id.org/ssbd/BiocompatibleMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">BiocompatibleMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Material designed to be biocompatible for implantation in the body, such as artificial joints or tissue scaffolds.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="BondedAtom"></div>
+
+
+BondedAtom
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#BondedAtom' onclick="if(!document.getElementById('BondedAtom')){window.location.href='https://w3id.org/emmo/hume#BondedAtom'; return false;}">https://w3id.org/emmo/hume#BondedAtom</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">BondedAtom</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A real bond between atoms is always something hybrid between covalent, metallic and ionic.<br><br>In general, metallic and ionic bonds have atoms sharing electrons., The bond types that are covered by this definition are the strong electronic bonds: covalent, metallic and ionic., This class can be used to represent molecules as simplified quantum systems, in which outer molecule shared electrons are un-entangled with the inner shells of the atoms composing the molecule.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A bonded atom that shares at least one electron to the atom-based entity of which is part of.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Atom' onclick="if(!document.getElementById('Atom')){window.location.href='https://w3id.org/emmo/hume#Atom'; return false;}">Atom</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CeramicMaterial"></div>
+
+
+CeramicMaterial
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CeramicMaterial' onclick="if(!document.getElementById('CeramicMaterial')){window.location.href='https://w3id.org/emmo/hume#CeramicMaterial'; return false;}">https://w3id.org/emmo/hume#CeramicMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CeramicMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">Ceramic</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Ceramic materials are hardened by intense heat and typically used from pottery and tiles to advanced electronics and aerospace parts.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An inorganic non-metallic solid made from elements (metals, non-metals, semi-metals like silicon) combined into compounds (oxides, carbides, nitrides) that are typically hard, strong, brittle, corrosion-resistant, and good insulators.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByType' onclick="if(!document.getElementById('MaterialByType')){window.location.href='https://w3id.org/emmo/hume#MaterialByType'; return false;}">MaterialByType</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ChemicalCompound"></div>
+
+
+ChemicalCompound
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ChemicalCompound' onclick="if(!document.getElementById('ChemicalCompound')){window.location.href='https://w3id.org/emmo/hume#ChemicalCompound'; return false;}">https://w3id.org/emmo/hume#ChemicalCompound</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ChemicalCompound</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Chemical_compound'>https://en.wikipedia.org/wiki/Chemical_compound</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A chemical substance composed of many identical molecules (or molecular entities) composed of atoms from more than one element held together by chemical bonds.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ChemicalSubstance' onclick="if(!document.getElementById('ChemicalSubstance')){window.location.href='https://w3id.org/emmo/hume#ChemicalSubstance'; return false;}">ChemicalSubstance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#OrganicCompound' onclick="if(!document.getElementById('OrganicCompound')){window.location.href='https://w3id.org/emmo/hume#OrganicCompound'; return false;}">OrganicCompound</a>, <a href='#InorganicCompound' onclick="if(!document.getElementById('InorganicCompound')){window.location.href='https://w3id.org/emmo/hume#InorganicCompound'; return false;}">InorganicCompound</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ChemicalEntity"></div>
+
+
+ChemicalEntity
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ChemicalEntity' onclick="if(!document.getElementById('ChemicalEntity')){window.location.href='https://w3id.org/emmo/hume#ChemicalEntity'; return false;}">https://w3id.org/emmo/hume#ChemicalEntity</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ChemicalEntity</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A chemical entity comprises the two different ways to represents matter: as single recognizable particle entity (molecular entity) and as a composition of particle entities (substance).<br><br>This distinction is not well assessed in actual chemical nomenclature, in which an element name refers to both the pure elemental substance or the atom.<br><br>In the EMMO we force the adoption of a more strict categorization based on mereotopology.<br><br>The class Material hosts the subclasses for which a substance can be identified without necessarily considering its nature of molecule/atom or substance (e.g. hydrocarbon is the class of both hydrocarbon molecules or gases).</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">The union of ChemicalSubstance and MolecularEntity.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#Thing'>Thing</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MolecularEntity' onclick="if(!document.getElementById('MolecularEntity')){window.location.href='https://w3id.org/emmo/hume#MolecularEntity'; return false;}">MolecularEntity</a>, <a href='#ChemicalSubstance' onclick="if(!document.getElementById('ChemicalSubstance')){window.location.href='https://w3id.org/emmo/hume#ChemicalSubstance'; return false;}">ChemicalSubstance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ChemicalSubstance"></div>
+
+
+ChemicalSubstance
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ChemicalSubstance' onclick="if(!document.getElementById('ChemicalSubstance')){window.location.href='https://w3id.org/emmo/hume#ChemicalSubstance'; return false;}">https://w3id.org/emmo/hume#ChemicalSubstance</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ChemicalSubstance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value"><a href='https://doi.org/10.1351/goldbook.C01039'>https://doi.org/10.1351/goldbook.C01039</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A chemical substance is always composed of more than one molecular entity. It lays in the continuum or mesoscopic domain.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ChemicalEntity' onclick="if(!document.getElementById('ChemicalEntity')){window.location.href='https://w3id.org/emmo/hume#ChemicalEntity'; return false;}">ChemicalEntity</a>, <a href='#Substance' onclick="if(!document.getElementById('Substance')){window.location.href='https://w3id.org/emmo/hume#Substance'; return false;}">Substance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ChemicalCompound' onclick="if(!document.getElementById('ChemicalCompound')){window.location.href='https://w3id.org/emmo/hume#ChemicalCompound'; return false;}">ChemicalCompound</a>, <a href='#ElementalSubstance' onclick="if(!document.getElementById('ElementalSubstance')){window.location.href='https://w3id.org/emmo/hume#ElementalSubstance'; return false;}">ElementalSubstance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CompactMaterial"></div>
+
+
+CompactMaterial
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CompactMaterial' onclick="if(!document.getElementById('CompactMaterial')){window.location.href='https://w3id.org/emmo/hume#CompactMaterial'; return false;}">https://w3id.org/emmo/hume#CompactMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CompactMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A solid material whose particles are closely and firmly packed together, resulting in a high density, solid structure without significant internal voids or cavities.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByCompactness' onclick="if(!document.getElementById('MaterialByCompactness')){window.location.href='https://w3id.org/emmo/hume#MaterialByCompactness'; return false;}">MaterialByCompactness</a>, <a href='#Solid' onclick="if(!document.getElementById('Solid')){window.location.href='https://w3id.org/emmo/hume#Solid'; return false;}">Solid</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CompositeMaterial"></div>
+
+
+CompositeMaterial
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CompositeMaterial' onclick="if(!document.getElementById('CompositeMaterial')){window.location.href='https://w3id.org/emmo/hume#CompositeMaterial'; return false;}">https://w3id.org/emmo/hume#CompositeMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CompositeMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">Composite</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material that contains two or more constituent materials.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByType' onclick="if(!document.getElementById('MaterialByType')){window.location.href='https://w3id.org/emmo/hume#MaterialByType'; return false;}">MaterialByType</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NanoComposite' onclick="if(!document.getElementById('NanoComposite')){window.location.href='https://w3id.org/ssbd/NanoComposite'; return false;}">NanoComposite</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CondensedMatter"></div>
+
+
+CondensedMatter
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CondensedMatter' onclick="if(!document.getElementById('CondensedMatter')){window.location.href='https://w3id.org/emmo/hume#CondensedMatter'; return false;}">https://w3id.org/emmo/hume#CondensedMatter</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CondensedMatter</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with "condensed" phases of matter: systems of many constituents with strong interactions between them.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Solid or liquid matter.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#StateOfMatter' onclick="if(!document.getElementById('StateOfMatter')){window.location.href='https://w3id.org/emmo/hume#StateOfMatter'; return false;}">StateOfMatter</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Solid' onclick="if(!document.getElementById('Solid')){window.location.href='https://w3id.org/emmo/hume#Solid'; return false;}">Solid</a>, <a href='#Liquid' onclick="if(!document.getElementById('Liquid')){window.location.href='https://w3id.org/emmo/hume#Liquid'; return false;}">Liquid</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ContinuumSubstance"></div>
+
+
+ContinuumSubstance
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ContinuumSubstance' onclick="if(!document.getElementById('ContinuumSubstance')){window.location.href='https://w3id.org/emmo/hume#ContinuumSubstance'; return false;}">https://w3id.org/emmo/hume#ContinuumSubstance</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ContinuumSubstance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A continuum is made of a sufficient number of parts that it continues to exists as continuum individual even after the loss of one of them i.e. a continuum is a redundant., A continuum is not necessarily small (i.e. composed by the minimum amount of sates to fulfill the definition).<br><br>A single continuum individual can be the whole fluid in a pipe., A continuum is the bearer of properties that are generated by the interactions of parts such as viscosity and thermal or electrical conductivity.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A state that is a collection of sufficiently large number of other parts such that:<br>- it is the bearer of qualities that can exists only by the fact that it is a sum of parts<br>- the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Substance' onclick="if(!document.getElementById('Substance')){window.location.href='https://w3id.org/emmo/hume#Substance'; return false;}">Substance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#StateOfMatter' onclick="if(!document.getElementById('StateOfMatter')){window.location.href='https://w3id.org/emmo/hume#StateOfMatter'; return false;}">StateOfMatter</a>, <a href='#PhaseOfMatter' onclick="if(!document.getElementById('PhaseOfMatter')){window.location.href='https://w3id.org/emmo/hume#PhaseOfMatter'; return false;}">PhaseOfMatter</a>, <a href='#Mixture' onclick="if(!document.getElementById('Mixture')){window.location.href='https://w3id.org/emmo/hume#Mixture'; return false;}">Mixture</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CrystallineMaterial"></div>
+
+
+CrystallineMaterial
+^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CrystallineMaterial' onclick="if(!document.getElementById('CrystallineMaterial')){window.location.href='https://w3id.org/emmo/hume#CrystallineMaterial'; return false;}">https://w3id.org/emmo/hume#CrystallineMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CrystallineMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A solid where atoms, ions, or molecules are arranged in a highly ordered, repeating, three-dimensional pattern, forming a crystal lattice that extends throughout the substance, giving it characteristic geometric shapes and distinct physical properties like sharp melting points, unlike amorphous solids with random structures.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByStructure' onclick="if(!document.getElementById('MaterialByStructure')){window.location.href='https://w3id.org/emmo/hume#MaterialByStructure'; return false;}">MaterialByStructure</a>, <a href='#Solid' onclick="if(!document.getElementById('Solid')){window.location.href='https://w3id.org/emmo/hume#Solid'; return false;}">Solid</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ElectronicMaterial"></div>
+
+
+ElectronicMaterial
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ElectronicMaterial' onclick="if(!document.getElementById('ElectronicMaterial')){window.location.href='https://w3id.org/ssbd/ElectronicMaterial'; return false;}">https://w3id.org/ssbd/ElectronicMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ElectronicMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material for electronic applications, like silicon used in computer chips, solar cells, and circuits.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ElementalSubstance"></div>
+
+
+ElementalSubstance
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ElementalSubstance' onclick="if(!document.getElementById('ElementalSubstance')){window.location.href='https://w3id.org/emmo/hume#ElementalSubstance'; return false;}">https://w3id.org/emmo/hume#ElementalSubstance</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ElementalSubstance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">PureSubstance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value"><a href='https://doi.org/10.1351/goldbook.C01022'>https://doi.org/10.1351/goldbook.C01022</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A chemical substance composed of atoms with the same number of protons in the atomic nucleus.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ChemicalSubstance' onclick="if(!document.getElementById('ChemicalSubstance')){window.location.href='https://w3id.org/emmo/hume#ChemicalSubstance'; return false;}">ChemicalSubstance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="EnergyMaterial"></div>
+
+
+EnergyMaterial
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#EnergyMaterial' onclick="if(!document.getElementById('EnergyMaterial')){window.location.href='https://w3id.org/ssbd/EnergyMaterial'; return false;}">https://w3id.org/ssbd/EnergyMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">EnergyMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material for energy applications, including energy generation, storage, and conversion, such as batteries, supercapacitors, and fuel cells.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Fluid"></div>
+
+
+Fluid
+^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Fluid' onclick="if(!document.getElementById('Fluid')){window.location.href='https://w3id.org/emmo/hume#Fluid'; return false;}">https://w3id.org/emmo/hume#Fluid</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Fluid</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A continuum that has no fixed shape and yields easily to external pressure.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#StateOfMatter' onclick="if(!document.getElementById('StateOfMatter')){window.location.href='https://w3id.org/emmo/hume#StateOfMatter'; return false;}">StateOfMatter</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Liquid' onclick="if(!document.getElementById('Liquid')){window.location.href='https://w3id.org/emmo/hume#Liquid'; return false;}">Liquid</a>, <a href='#Gas' onclick="if(!document.getElementById('Gas')){window.location.href='https://w3id.org/emmo/hume#Gas'; return false;}">Gas</a>, <a href='#Plasma' onclick="if(!document.getElementById('Plasma')){window.location.href='https://w3id.org/emmo/hume#Plasma'; return false;}">Plasma</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   Gas, liquid, plasma,
+
+
+
+.. raw:: html
+
+   <div id="Gas"></div>
+
+
+Gas
+^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Gas' onclick="if(!document.getElementById('Gas')){window.location.href='https://w3id.org/emmo/hume#Gas'; return false;}">https://w3id.org/emmo/hume#Gas</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Gas</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Fluid' onclick="if(!document.getElementById('Fluid')){window.location.href='https://w3id.org/emmo/hume#Fluid'; return false;}">Fluid</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="GranularMaterial"></div>
+
+
+GranularMaterial
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#GranularMaterial' onclick="if(!document.getElementById('GranularMaterial')){window.location.href='https://w3id.org/emmo/hume#GranularMaterial'; return false;}">https://w3id.org/emmo/hume#GranularMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">GranularMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A granular material is a conglomeration of discrete solid, macroscopic particles that are  large enough to avoid thermal motion fluctuations, and characterized by a loss of energy whenever the particles interact.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByCompactness' onclick="if(!document.getElementById('MaterialByCompactness')){window.location.href='https://w3id.org/emmo/hume#MaterialByCompactness'; return false;}">MaterialByCompactness</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Powder' onclick="if(!document.getElementById('Powder')){window.location.href='https://w3id.org/emmo/hume#Powder'; return false;}">Powder</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="InorganicCompound"></div>
+
+
+InorganicCompound
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#InorganicCompound' onclick="if(!document.getElementById('InorganicCompound')){window.location.href='https://w3id.org/emmo/hume#InorganicCompound'; return false;}">https://w3id.org/emmo/hume#InorganicCompound</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">InorganicCompound</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Inorganic_compound'>https://en.wikipedia.org/wiki/Inorganic_compound</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A chemical compound that is not organic.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ChemicalCompound' onclick="if(!document.getElementById('ChemicalCompound')){window.location.href='https://w3id.org/emmo/hume#ChemicalCompound'; return false;}">ChemicalCompound</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="IonAtom"></div>
+
+
+IonAtom
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#IonAtom' onclick="if(!document.getElementById('IonAtom')){window.location.href='https://w3id.org/emmo/hume#IonAtom'; return false;}">https://w3id.org/emmo/hume#IonAtom</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">IonAtom</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A standalone atom with an unbalanced number of electrons with respect to its atomic number.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#StandaloneAtom' onclick="if(!document.getElementById('StandaloneAtom')){window.location.href='https://w3id.org/emmo/hume#StandaloneAtom'; return false;}">StandaloneAtom</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Liquid"></div>
+
+
+Liquid
+^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Liquid' onclick="if(!document.getElementById('Liquid')){window.location.href='https://w3id.org/emmo/hume#Liquid'; return false;}">https://w3id.org/emmo/hume#Liquid</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Liquid</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CondensedMatter' onclick="if(!document.getElementById('CondensedMatter')){window.location.href='https://w3id.org/emmo/hume#CondensedMatter'; return false;}">CondensedMatter</a>, <a href='#Fluid' onclick="if(!document.getElementById('Fluid')){window.location.href='https://w3id.org/emmo/hume#Fluid'; return false;}">Fluid</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MacroMolecule"></div>
+
+
+MacroMolecule
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MacroMolecule' onclick="if(!document.getElementById('MacroMolecule')){window.location.href='https://w3id.org/ssbd/MacroMolecule'; return false;}">https://w3id.org/ssbd/MacroMolecule</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MacroMolecule</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A molecule with a specific weight larger than 5000 dalton.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Molecule' onclick="if(!document.getElementById('Molecule')){window.location.href='https://w3id.org/emmo/hume#Molecule'; return false;}">Molecule</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MagneticMaterial"></div>
+
+
+MagneticMaterial
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MagneticMaterial' onclick="if(!document.getElementById('MagneticMaterial')){window.location.href='https://w3id.org/ssbd/MagneticMaterial'; return false;}">https://w3id.org/ssbd/MagneticMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MagneticMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material for magnetic applications, like for data storage, motors, and transformers (e.g., iron, ferrite).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ManufacturedMaterial"></div>
+
+
+ManufacturedMaterial
+^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ManufacturedMaterial' onclick="if(!document.getElementById('ManufacturedMaterial')){window.location.href='https://w3id.org/emmo/hume#ManufacturedMaterial'; return false;}">https://w3id.org/emmo/hume#ManufacturedMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ManufacturedMaterial</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ArtificialMaterial' onclick="if(!document.getElementById('ArtificialMaterial')){window.location.href='https://w3id.org/emmo/hume#ArtificialMaterial'; return false;}">ArtificialMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Material"></div>
+
+
+Material
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">https://w3id.org/emmo/hume#Material</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Material</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A instance of a material (e.g. nitrogen) can represent any state of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found., A material may be either a mesoscopic or a continuum substance., Material usually means some definite kind, quality, or quantity of matter, especially as intended for use.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">The class of individuals standing for an amount of ordinary matter substance.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Substance' onclick="if(!document.getElementById('Substance')){window.location.href='https://w3id.org/emmo/hume#Substance'; return false;}">Substance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a>, <a href='#MaterialByOrigin' onclick="if(!document.getElementById('MaterialByOrigin')){window.location.href='https://w3id.org/emmo/hume#MaterialByOrigin'; return false;}">MaterialByOrigin</a>, <a href='#MaterialBySize' onclick="if(!document.getElementById('MaterialBySize')){window.location.href='https://w3id.org/emmo/hume#MaterialBySize'; return false;}">MaterialBySize</a>, <a href='#MaterialByClassicalMaterialsScience' onclick="if(!document.getElementById('MaterialByClassicalMaterialsScience')){window.location.href='https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience'; return false;}">MaterialByClassicalMaterialsScience</a>, <a href='#MaterialByCompactness' onclick="if(!document.getElementById('MaterialByCompactness')){window.location.href='https://w3id.org/emmo/hume#MaterialByCompactness'; return false;}">MaterialByCompactness</a>, <a href='#MaterialByForceResponse' onclick="if(!document.getElementById('MaterialByForceResponse')){window.location.href='https://w3id.org/emmo/hume#MaterialByForceResponse'; return false;}">MaterialByForceResponse</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialByClassicalMaterialsScience"></div>
+
+
+MaterialByClassicalMaterialsScience
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialByClassicalMaterialsScience' onclick="if(!document.getElementById('MaterialByClassicalMaterialsScience')){window.location.href='https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience'; return false;}">https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialByClassicalMaterialsScience</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">Material</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MaterialByStructure' onclick="if(!document.getElementById('MaterialByStructure')){window.location.href='https://w3id.org/emmo/hume#MaterialByStructure'; return false;}">MaterialByStructure</a>, <a href='#MaterialByType' onclick="if(!document.getElementById('MaterialByType')){window.location.href='https://w3id.org/emmo/hume#MaterialByType'; return false;}">MaterialByType</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialByCompactness"></div>
+
+
+MaterialByCompactness
+^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialByCompactness' onclick="if(!document.getElementById('MaterialByCompactness')){window.location.href='https://w3id.org/emmo/hume#MaterialByCompactness'; return false;}">https://w3id.org/emmo/hume#MaterialByCompactness</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialByCompactness</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">Material</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#GranularMaterial' onclick="if(!document.getElementById('GranularMaterial')){window.location.href='https://w3id.org/emmo/hume#GranularMaterial'; return false;}">GranularMaterial</a>, <a href='#CompactMaterial' onclick="if(!document.getElementById('CompactMaterial')){window.location.href='https://w3id.org/emmo/hume#CompactMaterial'; return false;}">CompactMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialByForceResponse"></div>
+
+
+MaterialByForceResponse
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialByForceResponse' onclick="if(!document.getElementById('MaterialByForceResponse')){window.location.href='https://w3id.org/emmo/hume#MaterialByForceResponse'; return false;}">https://w3id.org/emmo/hume#MaterialByForceResponse</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialByForceResponse</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">Material</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialByFunction"></div>
+
+
+MaterialByFunction
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">https://w3id.org/emmo/hume#MaterialByFunction</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialByFunction</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">Material</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#EnergyMaterial' onclick="if(!document.getElementById('EnergyMaterial')){window.location.href='https://w3id.org/ssbd/EnergyMaterial'; return false;}">EnergyMaterial</a>, <a href='#OpticalMaterial' onclick="if(!document.getElementById('OpticalMaterial')){window.location.href='https://w3id.org/ssbd/OpticalMaterial'; return false;}">OpticalMaterial</a>, <a href='#StructuralMaterial' onclick="if(!document.getElementById('StructuralMaterial')){window.location.href='https://w3id.org/ssbd/StructuralMaterial'; return false;}">StructuralMaterial</a>, <a href='#ElectronicMaterial' onclick="if(!document.getElementById('ElectronicMaterial')){window.location.href='https://w3id.org/ssbd/ElectronicMaterial'; return false;}">ElectronicMaterial</a>, <a href='#AdvancedMaterial' onclick="if(!document.getElementById('AdvancedMaterial')){window.location.href='https://w3id.org/ssbd/AdvancedMaterial'; return false;}">AdvancedMaterial</a>, <a href='#MagneticMaterial' onclick="if(!document.getElementById('MagneticMaterial')){window.location.href='https://w3id.org/ssbd/MagneticMaterial'; return false;}">MagneticMaterial</a>, <a href='#BiocompatibleMaterial' onclick="if(!document.getElementById('BiocompatibleMaterial')){window.location.href='https://w3id.org/ssbd/BiocompatibleMaterial'; return false;}">BiocompatibleMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialByOrigin"></div>
+
+
+MaterialByOrigin
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialByOrigin' onclick="if(!document.getElementById('MaterialByOrigin')){window.location.href='https://w3id.org/emmo/hume#MaterialByOrigin'; return false;}">https://w3id.org/emmo/hume#MaterialByOrigin</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialByOrigin</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">Material</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ArtificialMaterial' onclick="if(!document.getElementById('ArtificialMaterial')){window.location.href='https://w3id.org/emmo/hume#ArtificialMaterial'; return false;}">ArtificialMaterial</a>, <a href='#NaturalMaterial' onclick="if(!document.getElementById('NaturalMaterial')){window.location.href='https://w3id.org/emmo/hume#NaturalMaterial'; return false;}">NaturalMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialBySize"></div>
+
+
+MaterialBySize
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialBySize' onclick="if(!document.getElementById('MaterialBySize')){window.location.href='https://w3id.org/emmo/hume#MaterialBySize'; return false;}">https://w3id.org/emmo/hume#MaterialBySize</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialBySize</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">Material</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NanoMaterial' onclick="if(!document.getElementById('NanoMaterial')){window.location.href='https://w3id.org/emmo/hume#NanoMaterial'; return false;}">NanoMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialByStructure"></div>
+
+
+MaterialByStructure
+^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialByStructure' onclick="if(!document.getElementById('MaterialByStructure')){window.location.href='https://w3id.org/emmo/hume#MaterialByStructure'; return false;}">https://w3id.org/emmo/hume#MaterialByStructure</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialByStructure</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByClassicalMaterialsScience' onclick="if(!document.getElementById('MaterialByClassicalMaterialsScience')){window.location.href='https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience'; return false;}">MaterialByClassicalMaterialsScience</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#AmorphousMaterial' onclick="if(!document.getElementById('AmorphousMaterial')){window.location.href='https://w3id.org/emmo/hume#AmorphousMaterial'; return false;}">AmorphousMaterial</a>, <a href='#CrystallineMaterial' onclick="if(!document.getElementById('CrystallineMaterial')){window.location.href='https://w3id.org/emmo/hume#CrystallineMaterial'; return false;}">CrystallineMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialByType"></div>
+
+
+MaterialByType
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialByType' onclick="if(!document.getElementById('MaterialByType')){window.location.href='https://w3id.org/emmo/hume#MaterialByType'; return false;}">https://w3id.org/emmo/hume#MaterialByType</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialByType</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Categorisation of matter by its type.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByClassicalMaterialsScience' onclick="if(!document.getElementById('MaterialByClassicalMaterialsScience')){window.location.href='https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience'; return false;}">MaterialByClassicalMaterialsScience</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#CeramicMaterial' onclick="if(!document.getElementById('CeramicMaterial')){window.location.href='https://w3id.org/emmo/hume#CeramicMaterial'; return false;}">CeramicMaterial</a>, <a href='#CompositeMaterial' onclick="if(!document.getElementById('CompositeMaterial')){window.location.href='https://w3id.org/emmo/hume#CompositeMaterial'; return false;}">CompositeMaterial</a>, <a href='#MetallicMaterial' onclick="if(!document.getElementById('MetallicMaterial')){window.location.href='https://w3id.org/emmo/hume#MetallicMaterial'; return false;}">MetallicMaterial</a>, <a href='#PolymericMaterial' onclick="if(!document.getElementById('PolymericMaterial')){window.location.href='https://w3id.org/emmo/hume#PolymericMaterial'; return false;}">PolymericMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MesoscopicSubstance"></div>
+
+
+MesoscopicSubstance
+^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MesoscopicSubstance' onclick="if(!document.getElementById('MesoscopicSubstance')){window.location.href='https://w3id.org/emmo/hume#MesoscopicSubstance'; return false;}">https://w3id.org/emmo/hume#MesoscopicSubstance</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MesoscopicSubstance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Mesoscopic substances typically exist on a length scale between atoms and molecules and macroscopic (bulk) substances. They are typically in the range of some nanometers to about a micrometer and often exhibit unique physical properties due to their size and shape.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A matter that is not a particulate matter and that does not fullfill the criteria of being a continuum substance.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Substance' onclick="if(!document.getElementById('Substance')){window.location.href='https://w3id.org/emmo/hume#Substance'; return false;}">Substance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   nanoparticle,
+   quantum dot,
+   carbon nanotupe
+
+
+
+.. raw:: html
+
+   <div id="MetallicMaterial"></div>
+
+
+MetallicMaterial
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MetallicMaterial' onclick="if(!document.getElementById('MetallicMaterial')){window.location.href='https://w3id.org/emmo/hume#MetallicMaterial'; return false;}">https://w3id.org/emmo/hume#MetallicMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MetallicMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Metallic materials are known for their shiny luster, excellent electrical/thermal conductivity, malleability (shapable by hammering), and ductility (can be drawn into wires), due to metallic bonding (shared electrons); they often form alloys (like steel from iron/carbon) to enhance these properties for diverse applications.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Inorganic substance, consisting of one or more metallic elements.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByType' onclick="if(!document.getElementById('MaterialByType')){window.location.href='https://w3id.org/emmo/hume#MaterialByType'; return false;}">MaterialByType</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Mixture"></div>
+
+
+Mixture
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Mixture' onclick="if(!document.getElementById('Mixture')){window.location.href='https://w3id.org/emmo/hume#Mixture'; return false;}">https://w3id.org/emmo/hume#Mixture</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Mixture</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A continuum substance made up of two or more different substances which are physically (not chemically) combined.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ContinuumSubstance' onclick="if(!document.getElementById('ContinuumSubstance')){window.location.href='https://w3id.org/emmo/hume#ContinuumSubstance'; return false;}">ContinuumSubstance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MolecularEntity"></div>
+
+
+MolecularEntity
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MolecularEntity' onclick="if(!document.getElementById('MolecularEntity')){window.location.href='https://w3id.org/emmo/hume#MolecularEntity'; return false;}">https://w3id.org/emmo/hume#MolecularEntity</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MolecularEntity</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.<br><br>Note that the name of a compound may refer to the respective molecular entity or to the chemical species,</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity that can undergo a chemical reaction.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ChemicalEntity' onclick="if(!document.getElementById('ChemicalEntity')){window.location.href='https://w3id.org/emmo/hume#ChemicalEntity'; return false;}">ChemicalEntity</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Atom' onclick="if(!document.getElementById('Atom')){window.location.href='https://w3id.org/emmo/hume#Atom'; return false;}">Atom</a>, <a href='#Molecule' onclick="if(!document.getElementById('Molecule')){window.location.href='https://w3id.org/emmo/hume#Molecule'; return false;}">Molecule</a>, <a href='#PolyAtomicEntity' onclick="if(!document.getElementById('PolyAtomicEntity')){window.location.href='https://w3id.org/emmo/hume#PolyAtomicEntity'; return false;}">PolyAtomicEntity</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   Hydrogen molecule is an adequate definition of a certain molecular entity for some purposes, whereas for others it is necessary to distinguish the electronic state and/or vibrational state and/or nuclear spin, etc. of the hydrogen molecule.
+
+   Methane, may mean a single molecule of CH4 (molecular entity) or a molar amount, specified or not (chemical species), participating in a reaction. The degree of precision necessary to describe a molecular entity depends on the context.
+
+
+
+.. raw:: html
+
+   <div id="Molecule"></div>
+
+
+Molecule
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Molecule' onclick="if(!document.getElementById('Molecule')){window.location.href='https://w3id.org/emmo/hume#Molecule'; return false;}">https://w3id.org/emmo/hume#Molecule</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Molecule</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">An entity is called essential if removing one direct part will lead to a change in entity class.<br>An entity is called redundant if removing one direct part will not lead to a change in entity class., This definition states that this object is a non-periodic set of atoms or a set with a finite periodicity.<br>Removing an atom from the state will result in another type of atom_based state.<br>e.g. you cannot remove H from H₂0 without changing the molecule type (essential). However, you can remove a C from a nanotube (redundant). C60 fullerene is a molecule, since it has a finite periodicity and is made of a well defined number of atoms (essential). A C nanotube is not a molecule, since it has an infinite periodicity (redundant).</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An atom-based state defined by an exact number of e-bonded atomic species and an electron cloud made of the shared electrons.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MolecularEntity' onclick="if(!document.getElementById('MolecularEntity')){window.location.href='https://w3id.org/emmo/hume#MolecularEntity'; return false;}">MolecularEntity</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MacroMolecule' onclick="if(!document.getElementById('MacroMolecule')){window.location.href='https://w3id.org/ssbd/MacroMolecule'; return false;}">MacroMolecule</a>, <a href='#Protein' onclick="if(!document.getElementById('Protein')){window.location.href='https://w3id.org/ssbd/Protein'; return false;}">Protein</a>, <a href='#MicroMolecule' onclick="if(!document.getElementById('MicroMolecule')){window.location.href='https://w3id.org/ssbd/MicroMolecule'; return false;}">SmallMolecule</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   H₂0, C₆H₁₂O₆, CH₄
+
+
+
+.. raw:: html
+
+   <div id="NanoComposite"></div>
+
+
+NanoComposite
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoComposite' onclick="if(!document.getElementById('NanoComposite')){window.location.href='https://w3id.org/ssbd/NanoComposite'; return false;}">https://w3id.org/ssbd/NanoComposite</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoComposite</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A composite material with at least one physically or chemically distinct region or collection of regions having at least one dimension in the range of 1-100 nm.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoStructuredMaterial' onclick="if(!document.getElementById('NanoStructuredMaterial')){window.location.href='https://w3id.org/ssbd/NanoStructuredMaterial'; return false;}">NanoStructuredMaterial</a>, <a href='#CompositeMaterial' onclick="if(!document.getElementById('CompositeMaterial')){window.location.href='https://w3id.org/emmo/hume#CompositeMaterial'; return false;}">CompositeMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoFiber"></div>
+
+
+NanoFiber
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoFiber' onclick="if(!document.getElementById('NanoFiber')){window.location.href='https://w3id.org/ssbd/NanoFiber'; return false;}">https://w3id.org/ssbd/NanoFiber</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoFiber</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Nanofibers are often considered to be 1-dimensional nanomaterials.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material with two dimensions in the range of 1-100 nm.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoObject' onclick="if(!document.getElementById('NanoObject')){window.location.href='https://w3id.org/ssbd/NanoObject'; return false;}">NanoObject</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NanoRod' onclick="if(!document.getElementById('NanoRod')){window.location.href='https://w3id.org/ssbd/NanoRod'; return false;}">NanoRod</a>, <a href='#NanoTube' onclick="if(!document.getElementById('NanoTube')){window.location.href='https://w3id.org/ssbd/NanoTube'; return false;}">NanoTube</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoMaterial"></div>
+
+
+NanoMaterial
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoMaterial' onclick="if(!document.getElementById('NanoMaterial')){window.location.href='https://w3id.org/emmo/hume#NanoMaterial'; return false;}">https://w3id.org/emmo/hume#NanoMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">The above definition comes from ISO 80004-1:2023.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Material with any external dimension in the nanoscale or having internal structure or surface structure in the nanoscale, i.e. in the range of 1-100 nm.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialBySize' onclick="if(!document.getElementById('MaterialBySize')){window.location.href='https://w3id.org/emmo/hume#MaterialBySize'; return false;}">MaterialBySize</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NanoStructuredMaterial' onclick="if(!document.getElementById('NanoStructuredMaterial')){window.location.href='https://w3id.org/ssbd/NanoStructuredMaterial'; return false;}">NanoStructuredMaterial</a>, <a href='#NanoObject' onclick="if(!document.getElementById('NanoObject')){window.location.href='https://w3id.org/ssbd/NanoObject'; return false;}">NanoObject</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoObject"></div>
+
+
+NanoObject
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoObject' onclick="if(!document.getElementById('NanoObject')){window.location.href='https://w3id.org/ssbd/NanoObject'; return false;}">https://w3id.org/ssbd/NanoObject</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoObject</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Material with any external dimension in the nanoscale, i.e. in the range of 1-100 nm.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoMaterial' onclick="if(!document.getElementById('NanoMaterial')){window.location.href='https://w3id.org/emmo/hume#NanoMaterial'; return false;}">NanoMaterial</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NanoFiber' onclick="if(!document.getElementById('NanoFiber')){window.location.href='https://w3id.org/ssbd/NanoFiber'; return false;}">NanoFiber</a>, <a href='#NanoPlate' onclick="if(!document.getElementById('NanoPlate')){window.location.href='https://w3id.org/ssbd/NanoPlate'; return false;}">NanoPlate</a>, <a href='#NanoParticle' onclick="if(!document.getElementById('NanoParticle')){window.location.href='https://w3id.org/ssbd/NanoParticle'; return false;}">NanoParticle</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoParticle"></div>
+
+
+NanoParticle
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoParticle' onclick="if(!document.getElementById('NanoParticle')){window.location.href='https://w3id.org/ssbd/NanoParticle'; return false;}">https://w3id.org/ssbd/NanoParticle</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoParticle</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Nanoparticles are often considered to be 0-dimensional nanomaterials.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material with all dimensions in the range of 1-100 nm.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoObject' onclick="if(!document.getElementById('NanoObject')){window.location.href='https://w3id.org/ssbd/NanoObject'; return false;}">NanoObject</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoPlate"></div>
+
+
+NanoPlate
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoPlate' onclick="if(!document.getElementById('NanoPlate')){window.location.href='https://w3id.org/ssbd/NanoPlate'; return false;}">https://w3id.org/ssbd/NanoPlate</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoPlate</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Nanoplates are often considered to be 2-dimensional nanomaterials.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material with one dimension in the range of 1-100 nm.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoObject' onclick="if(!document.getElementById('NanoObject')){window.location.href='https://w3id.org/ssbd/NanoObject'; return false;}">NanoObject</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoRod"></div>
+
+
+NanoRod
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoRod' onclick="if(!document.getElementById('NanoRod')){window.location.href='https://w3id.org/ssbd/NanoRod'; return false;}">https://w3id.org/ssbd/NanoRod</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoRod</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A solid nanofiber.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoFiber' onclick="if(!document.getElementById('NanoFiber')){window.location.href='https://w3id.org/ssbd/NanoFiber'; return false;}">NanoFiber</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoStructuredMaterial"></div>
+
+
+NanoStructuredMaterial
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoStructuredMaterial' onclick="if(!document.getElementById('NanoStructuredMaterial')){window.location.href='https://w3id.org/ssbd/NanoStructuredMaterial'; return false;}">https://w3id.org/ssbd/NanoStructuredMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoStructuredMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Nanostructured materials are considered to be 3-dimensional nanomaterials.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material with at least one physically or chemically distinct region with at least one dimension in the range of 1-100 nm.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoMaterial' onclick="if(!document.getElementById('NanoMaterial')){window.location.href='https://w3id.org/emmo/hume#NanoMaterial'; return false;}">NanoMaterial</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NanoComposite' onclick="if(!document.getElementById('NanoComposite')){window.location.href='https://w3id.org/ssbd/NanoComposite'; return false;}">NanoComposite</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NanoTube"></div>
+
+
+NanoTube
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NanoTube' onclick="if(!document.getElementById('NanoTube')){window.location.href='https://w3id.org/ssbd/NanoTube'; return false;}">https://w3id.org/ssbd/NanoTube</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NanoTube</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A hollow nanofiber.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NanoFiber' onclick="if(!document.getElementById('NanoFiber')){window.location.href='https://w3id.org/ssbd/NanoFiber'; return false;}">NanoFiber</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NaturalMaterial"></div>
+
+
+NaturalMaterial
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NaturalMaterial' onclick="if(!document.getElementById('NaturalMaterial')){window.location.href='https://w3id.org/emmo/hume#NaturalMaterial'; return false;}">https://w3id.org/emmo/hume#NaturalMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NaturalMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A Material occurring in nature, without the need of human intervention.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByOrigin' onclick="if(!document.getElementById('MaterialByOrigin')){window.location.href='https://w3id.org/emmo/hume#MaterialByOrigin'; return false;}">MaterialByOrigin</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NeutralAtom"></div>
+
+
+NeutralAtom
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NeutralAtom' onclick="if(!document.getElementById('NeutralAtom')){window.location.href='https://w3id.org/emmo/hume#NeutralAtom'; return false;}">https://w3id.org/emmo/hume#NeutralAtom</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NeutralAtom</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A standalone atom that has no net charge.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#StandaloneAtom' onclick="if(!document.getElementById('StandaloneAtom')){window.location.href='https://w3id.org/emmo/hume#StandaloneAtom'; return false;}">StandaloneAtom</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="OpticalMaterial"></div>
+
+
+OpticalMaterial
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#OpticalMaterial' onclick="if(!document.getElementById('OpticalMaterial')){window.location.href='https://w3id.org/ssbd/OpticalMaterial'; return false;}">https://w3id.org/ssbd/OpticalMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">OpticalMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material for optical applications. Designed for specific interactions with light, such as fiber optics, lasers, or transparent coatings.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="OrganicCompound"></div>
+
+
+OrganicCompound
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#OrganicCompound' onclick="if(!document.getElementById('OrganicCompound')){window.location.href='https://w3id.org/emmo/hume#OrganicCompound'; return false;}">https://w3id.org/emmo/hume#OrganicCompound</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">OrganicCompound</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Organic_compound'>https://en.wikipedia.org/wiki/Organic_compound</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">The definition of organic compound is based on the IUPAC Gold Book. However, sometimes an organic compound is defined as a chemical compound that contains a carbon-hydrogen or carbon-carbon bond. Also, some carbon-containing compounds are typically not classified as organic, like carbides, carbonates, and cyanides.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A chemical compound containing carbon atoms.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ChemicalCompound' onclick="if(!document.getElementById('ChemicalCompound')){window.location.href='https://w3id.org/emmo/hume#ChemicalCompound'; return false;}">ChemicalCompound</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PhaseOfMatter"></div>
+
+
+PhaseOfMatter
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PhaseOfMatter' onclick="if(!document.getElementById('PhaseOfMatter')){window.location.href='https://w3id.org/emmo/hume#PhaseOfMatter'; return false;}">https://w3id.org/emmo/hume#PhaseOfMatter</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PhaseOfMatter</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">Phase</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.<br><br>The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A matter object throughout which all physical properties of a material are essentially uniform.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ContinuumSubstance' onclick="if(!document.getElementById('ContinuumSubstance')){window.location.href='https://w3id.org/emmo/hume#ContinuumSubstance'; return false;}">ContinuumSubstance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Plasma"></div>
+
+
+Plasma
+^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Plasma' onclick="if(!document.getElementById('Plasma')){window.location.href='https://w3id.org/emmo/hume#Plasma'; return false;}">https://w3id.org/emmo/hume#Plasma</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Plasma</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Fluid' onclick="if(!document.getElementById('Fluid')){window.location.href='https://w3id.org/emmo/hume#Fluid'; return false;}">Fluid</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PolyAtomicEntity"></div>
+
+
+PolyAtomicEntity
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PolyAtomicEntity' onclick="if(!document.getElementById('PolyAtomicEntity')){window.location.href='https://w3id.org/emmo/hume#PolyAtomicEntity'; return false;}">https://w3id.org/emmo/hume#PolyAtomicEntity</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PolyAtomicEntity</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An entity made of two or more bonded atoms.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MolecularEntity' onclick="if(!document.getElementById('MolecularEntity')){window.location.href='https://w3id.org/emmo/hume#MolecularEntity'; return false;}">MolecularEntity</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PolymericMaterial"></div>
+
+
+PolymericMaterial
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PolymericMaterial' onclick="if(!document.getElementById('PolymericMaterial')){window.location.href='https://w3id.org/emmo/hume#PolymericMaterial'; return false;}">https://w3id.org/emmo/hume#PolymericMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PolymericMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A substance made of macromolecules formed by linking many smaller, repeating chemical units called monomers into long chains or networks, resulting in unique properties like toughness, elasticity, or flexibility, found in both natural forms (like DNA, protein) and synthetic plastics, rubbers, and fibers.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByType' onclick="if(!document.getElementById('MaterialByType')){window.location.href='https://w3id.org/emmo/hume#MaterialByType'; return false;}">MaterialByType</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Powder"></div>
+
+
+Powder
+^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Powder' onclick="if(!document.getElementById('Powder')){window.location.href='https://w3id.org/emmo/hume#Powder'; return false;}">https://w3id.org/emmo/hume#Powder</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Powder</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A powder is a granular material composed of many very fine dry solid particles that may flow freely when shaken or tilted.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#GranularMaterial' onclick="if(!document.getElementById('GranularMaterial')){window.location.href='https://w3id.org/emmo/hume#GranularMaterial'; return false;}">GranularMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Protein"></div>
+
+
+Protein
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Protein' onclick="if(!document.getElementById('Protein')){window.location.href='https://w3id.org/ssbd/Protein'; return false;}">https://w3id.org/ssbd/Protein</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Protein</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A large molecule made of long chains of amino acids.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Molecule' onclick="if(!document.getElementById('Molecule')){window.location.href='https://w3id.org/emmo/hume#Molecule'; return false;}">Molecule</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MicroMolecule"></div>
+   <div id="SmallMolecule"></div>
+
+SmallMolecule
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MicroMolecule' onclick="if(!document.getElementById('MicroMolecule')){window.location.href='https://w3id.org/ssbd/MicroMolecule'; return false;}">https://w3id.org/ssbd/MicroMolecule</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">SmallMolecule</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">MicroMolecule</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A molecule with a specific weight smaller than 1000 dalton.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Molecule' onclick="if(!document.getElementById('Molecule')){window.location.href='https://w3id.org/emmo/hume#Molecule'; return false;}">Molecule</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Solid"></div>
+
+
+Solid
+^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Solid' onclick="if(!document.getElementById('Solid')){window.location.href='https://w3id.org/emmo/hume#Solid'; return false;}">https://w3id.org/emmo/hume#Solid</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Solid</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CondensedMatter' onclick="if(!document.getElementById('CondensedMatter')){window.location.href='https://w3id.org/emmo/hume#CondensedMatter'; return false;}">CondensedMatter</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#CompactMaterial' onclick="if(!document.getElementById('CompactMaterial')){window.location.href='https://w3id.org/emmo/hume#CompactMaterial'; return false;}">CompactMaterial</a>, <a href='#CrystallineMaterial' onclick="if(!document.getElementById('CrystallineMaterial')){window.location.href='https://w3id.org/emmo/hume#CrystallineMaterial'; return false;}">CrystallineMaterial</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="StandaloneAtom"></div>
+
+
+StandaloneAtom
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#StandaloneAtom' onclick="if(!document.getElementById('StandaloneAtom')){window.location.href='https://w3id.org/emmo/hume#StandaloneAtom'; return false;}">https://w3id.org/emmo/hume#StandaloneAtom</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">StandaloneAtom</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An atom that does not share electrons with other atoms.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Atom' onclick="if(!document.getElementById('Atom')){window.location.href='https://w3id.org/emmo/hume#Atom'; return false;}">Atom</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NeutralAtom' onclick="if(!document.getElementById('NeutralAtom')){window.location.href='https://w3id.org/emmo/hume#NeutralAtom'; return false;}">NeutralAtom</a>, <a href='#IonAtom' onclick="if(!document.getElementById('IonAtom')){window.location.href='https://w3id.org/emmo/hume#IonAtom'; return false;}">IonAtom</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="StateOfMatter"></div>
+
+
+StateOfMatter
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#StateOfMatter' onclick="if(!document.getElementById('StateOfMatter')){window.location.href='https://w3id.org/emmo/hume#StateOfMatter'; return false;}">https://w3id.org/emmo/hume#StateOfMatter</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">StateOfMatter</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A superclass made as the disjoint union of all the form under which matter can exist.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ContinuumSubstance' onclick="if(!document.getElementById('ContinuumSubstance')){window.location.href='https://w3id.org/emmo/hume#ContinuumSubstance'; return false;}">ContinuumSubstance</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Fluid' onclick="if(!document.getElementById('Fluid')){window.location.href='https://w3id.org/emmo/hume#Fluid'; return false;}">Fluid</a>, <a href='#CondensedMatter' onclick="if(!document.getElementById('CondensedMatter')){window.location.href='https://w3id.org/emmo/hume#CondensedMatter'; return false;}">CondensedMatter</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="StructuralMaterial"></div>
+
+
+StructuralMaterial
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#StructuralMaterial' onclick="if(!document.getElementById('StructuralMaterial')){window.location.href='https://w3id.org/ssbd/StructuralMaterial'; return false;}">https://w3id.org/ssbd/StructuralMaterial</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">StructuralMaterial</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A material Designed to bear loads and provide mechanical strength, stiffness, and durability (e.g., steel for bridges, concrete for buildings, aerospace alloys).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialByFunction' onclick="if(!document.getElementById('MaterialByFunction')){window.location.href='https://w3id.org/emmo/hume#MaterialByFunction'; return false;}">MaterialByFunction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Substance"></div>
+
+
+Substance
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Substance' onclick="if(!document.getElementById('Substance')){window.location.href='https://w3id.org/emmo/hume#Substance'; return false;}">https://w3id.org/emmo/hume#Substance</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Substance</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A matter entity characterised by the fact that it possesses some homogeneous properties or identification criteria.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#Thing'>Thing</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ContinuumSubstance' onclick="if(!document.getElementById('ContinuumSubstance')){window.location.href='https://w3id.org/emmo/hume#ContinuumSubstance'; return false;}">ContinuumSubstance</a>, <a href='#MesoscopicSubstance' onclick="if(!document.getElementById('MesoscopicSubstance')){window.location.href='https://w3id.org/emmo/hume#MesoscopicSubstance'; return false;}">MesoscopicSubstance</a>, <a href='#Material' onclick="if(!document.getElementById('Material')){window.location.href='https://w3id.org/emmo/hume#Material'; return false;}">Material</a>, <a href='#ChemicalSubstance' onclick="if(!document.getElementById('ChemicalSubstance')){window.location.href='https://w3id.org/emmo/hume#ChemicalSubstance'; return false;}">ChemicalSubstance</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A litre of water.
+
+   A pen can be classified as a substance (although it has parts with different properties) since it can be identified as being solid.
+
+

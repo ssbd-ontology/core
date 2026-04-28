@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tutorial on documenting your data using tables &#8212; Core Ontology</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=066159fd" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/document-your-data';</script>
+    <script src="../_static/toc-collapsible.js?v=608593b7"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Core Ontology</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../core.html">
+    Reference Index
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ssbd-ontology/core" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/ssbd/core/core" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://ssbd-ontology.github.io/core/widoco/index-en.html" title="WIDOCO Documentation" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-file-lines fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">WIDOCO Documentation</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../core.html">
+    Reference Index
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ssbd-ontology/core" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/ssbd/core/core" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://ssbd-ontology.github.io/core/widoco/index-en.html" title="WIDOCO Documentation" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-file-lines fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">WIDOCO Documentation</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+        <div class="sidebar-primary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-resource-and-why-document-it">What is a resource and why document it?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-introduction-to-classes-and-individuals">Quick introduction to classes and individuals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documenting-your-resources-in-practice">Documenting your resources in practice</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-construct-the-tables">How to construct the tables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-templates">Table templates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-type-table-class-level-documentation">1. Dataset type table (class-level documentation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computation-type-table-class-level-documentation">2. Computation type table (class-level documentation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-table-individual-documentation">3. Software table (individual documentation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agent-table-individual-documentation">4. Agent table (individual documentation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-table-individual-documentation">5. Dataset table (individual documentation)</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Tutorial on documenting your data using tables</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="tutorial-on-documenting-your-data-using-tables">
+<h1>Tutorial on documenting your data using tables<a class="headerlink" href="#tutorial-on-documenting-your-data-using-tables" title="Link to this heading">#</a></h1>
+<p>This is a step-by-step guide to help you document your resource with the SSbD ontology using table-based workflows (for example, Excel). Note that you are free to use which ever editor you like, as long as the resusling tables can be converted into csv-files and the columns are named according to the specifications below.</p>
+<section id="what-is-a-resource-and-why-document-it">
+<h2>What is a resource and why document it?<a class="headerlink" href="#what-is-a-resource-and-why-document-it" title="Link to this heading">#</a></h2>
+<p>A resource is the thing you want to describe and share in a structured way.
+In practice, a resource can be a dataset, a software tool, a workflow, a model, or another documented digital object. Note that a resource can be either a class (a concept) or an individual (a specific instance of a concept). That means that you can document a type of experiment or
+simulation (a class) as well as a specific experiment or simulation (an individual).
+Documenting your resource means capturing the key metadata about it in a clear and reusable format. This is important so that existing datasets, sodtware tools and other resources can be easily discovered, understood, and reused by others. It also allows you to connect your resource to other related resources, which can enable new insights and applications.<br />
+The goal of this guide is to help you capture the key metadata for that resource in a clear and reusable format.</p>
+</section>
+<section id="quick-introduction-to-classes-and-individuals">
+<h2>Quick introduction to classes and individuals<a class="headerlink" href="#quick-introduction-to-classes-and-individuals" title="Link to this heading">#</a></h2>
+<p>When documenting data, we need to describe both classes (concepts of things) and individuals (actual instances of things).
+For example, there is a difference between the concept of a pen and one specific pen.
+If I ask my child to bring me a pen, I do not care which pen she brings, but she understands the concept and brings an actual individual pen.</p>
+<p><a href="https://ssbd-ontology.github.io/core/docs/figs/concept_pen_cartoon.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/concept_pen_cartoon.png" alt="Cartoon illustrating a request for a pen and the return of an individual pen" width="400"/></a><br>
+Figure 1. Cartoon illustrating a request for a pen (concept) and the return of an individual pen. Image created partly with ChatGPT (OpenAI), 2026.</p>
+<p>Similarly, we can ask for a specific type of experiment or a type of dataset.
+However, this requires that the concepts of these types are well documented so that both machines and humans can help us find the right resources.
+In Figure 2 below, examples of resources, both classes (concepts) and individuals, related to running and experiment/instrument are shown.</p>
+<p><a href="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/resources_to_be_documented.png" alt="Cartoon illustrating the concept and individuals related to an experiment."/></a><br />
+Figure 2. Cartoon illustrating some concepts and individuals related to of experiment. Image created partly with ChatGPT (OpenAI), 2026.</p>
+<p>The various concepts and individuals are connected together with properties, which can be used to describe the relationships between them.
+For example, we can document that a specific dataset (an individual) is an instance of a specific dataset type (a class).
+This dataset is also generated by a specific experiment (another individual), which is an instance of a specific experiment type (a class).
+The relationship between the classes (concepts) is maintained at the individual level.
+This means that the operator can ask many different questions that connect the various resources together, such as “find me all datasets that were generated by experiments of type X”,
+or “I want a dataset of type Y, how should I proceed?”. Even better, we can connect various concepts together and for instance create
+workflows that connects datasets and simulations. This is more generally shown below.</p>
+<p><a href="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/connected_concepts.png" alt="Concepts of datasets and simulations can be connected together in a workflow because we have documented what the inputs and outputs of the various simulations are."/></a><br>
+Figure 3. Concepts of datasets and simulations can be connected together in a workflow because
+we have documented what the inputs and outputs of the various simulations are. Note that the relations between classes, i.e. the concepts, must be implemented as
+restrictions and each <code class="docutils literal notranslate"><span class="pre">hasInput</span></code> and <code class="docutils literal notranslate"><span class="pre">hasOutput</span></code> should actually include a qualifier e.g. <code class="docutils literal notranslate"><span class="pre">hasInput</span> <span class="pre">some</span></code>.</p>
+</section>
+<section id="documenting-your-resources-in-practice">
+<h2>Documenting your resources in practice<a class="headerlink" href="#documenting-your-resources-in-practice" title="Link to this heading">#</a></h2>
+<p>It is important to realise that we often want to document both existing datasets and concepts (such as activities) that generate datasets, as well as types of datasets that do not yet exist.
+We are here presenting examples of how to document dataset types (as concepts), computation software (as individuals), indicators (as concepts), and computations (as concepts) in tables, where each row documents a class or individual.
+The tables can then be used to generate a knowledge graph (expressed with RDF)  that can be queried and integrated with other resources.</p>
+<p>In Figure 4 below some examples of tables and how they are related are shown.</p>
+<p><a href="https://ssbd-ontology.github.io/core/docs/figs/tables.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/tables.png" alt="Examples of tables for documenting resources and how they are related."/></a></p>
+<section id="how-to-construct-the-tables">
+<h3>How to construct the tables<a class="headerlink" href="#how-to-construct-the-tables" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Each row in the table documents a resource.</p></li>
+<li><p>The column labels in the header row are mapped to properties in an ontology (and belong therefore to a controlled vocabulary).</p></li>
+<li><p>There is a column &#64;id, which is the unique identifier for the resource.
+For classes, this is an IRI (<a class="reference external" href="https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier">Internationalized Resource Identifier</a>) that uniquely identifies the concept in an ontology.
+For individuals, this is an IRI that identifies the specific instance.
+(NB: in the Google spreadsheets this column is called identifier, but it is the same as &#64;id. Please use &#64;id in your own spreadsheets.).</p></li>
+<li><p>There are one (or more) &#64;type columns, that indicate whether the resource is a class or an individual, and
+also what kind of class an individual is a member of (for example, a dataset type, a software tool, etc.).
+For classes, only one &#64;type column is allowed with value <code class="docutils literal notranslate"><span class="pre">owl:Class</span></code>. Individuals can have more than one type.</p></li>
+<li><p>For classes, there is a column subClassOf, which indicates the parent class that this class is a
+subclass of. Several <code class="docutils literal notranslate"><span class="pre">subClassOf</span></code> columns are permitted.
+For individuals, there is no subClassOf column because individuals are not subclasses of anything.</p></li>
+<li><p>For both classes and individuals, there are columns for the properties that we want to document (for example, label, description, hasInput, hasOutput, etc.).
+The properties that we want to document depend on the type of resource we are documenting and the use case we have in mind.
+The Object Properties, Annotation Properties and Data Properties in the SSbD Core Ontology are a good starting point for deciding which properties to document for each resource.
+They can be found in the <a class="reference external" href="https://ssbd-ontology.github.io/core/docs/reference-documentation.html">Reference Documentation</a>.
+(In the google spread sheets, the columns are filled with chosen properties.)</p></li>
+<li><p>The values in the table should be filled according to the definitions of the properties in the SSbD Core Ontology.</p>
+<ul>
+<li><p>All annotation properties should be filled with a literal value (for example, a string or a number).</p></li>
+<li><p>All object properties should be filled with a IRI that identifies another resource (for example, a dataset type, a software tool, etc.). Here it is important to make sure that you refer to something within the correct range.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="table-templates">
+<h2>Table templates<a class="headerlink" href="#table-templates" title="Link to this heading">#</a></h2>
+<p>Below are some example templates that are used for documenting ssbd related resource within the pink project.
+Note that these are just examples and that you can create your own templates based on the properties that are relevant for your use case.
+The important thing is to make sure that the columns are named according to the specifications above and that the values are filled according to the definitions of the properties in the ssbd core ontology.</p>
+<blockquote>
+<div><p>[!NOTE]
+Another point: here prefixes (the term before the colon) are set to ‘pink’, because these tables are examples within the pink project.
+Typically, each provider, even within a project has their own prefix (which is short for their own namespace).</p>
+</div></blockquote>
+<section id="dataset-type-table-class-level-documentation">
+<h3>1. Dataset type table (class-level documentation)<a class="headerlink" href="#dataset-type-table-class-level-documentation" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>&#64;id</p></th>
+<th class="head"><p>label</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>subClassOf</p></th>
+<th class="head"><p>theme</p></th>
+<th class="head"><p>&#64;type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pink:ToxicityDataset</p></td>
+<td><p>Toxicity dataset</p></td>
+<td><p>Dataset type for toxicity endpoints.</p></td>
+<td><p>pink:DatasetType</p></td>
+<td><p>pink:SafetyAndSustainability</p></td>
+<td><p>owl:Class</p></td>
+</tr>
+<tr class="row-odd"><td><p>pink:ExposureDataset</p></td>
+<td><p>Exposure dataset</p></td>
+<td><p>Dataset type for exposure-related data.</p></td>
+<td><p>pink:DatasetType</p></td>
+<td><p>pink:SafetyAndSustainability</p></td>
+<td><p>owl:Class</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="computation-type-table-class-level-documentation">
+<h3>2. Computation type table (class-level documentation)<a class="headerlink" href="#computation-type-table-class-level-documentation" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>&#64;id</p></th>
+<th class="head"><p>title</p></th>
+<th class="head"><p>hasInput</p></th>
+<th class="head"><p>hasOutput</p></th>
+<th class="head"><p>subClassOf</p></th>
+<th class="head"><p>&#64;type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pink:activity_qsar_prediction</p></td>
+<td><p>QSAR prediction</p></td>
+<td><p>pink:ToxicityDataset</p></td>
+<td><p>pink:ToxicityDataset</p></td>
+<td><p>pink:Computation</p></td>
+<td><p>owl:Class</p></td>
+</tr>
+<tr class="row-odd"><td><p>pink:activity_screening</p></td>
+<td><p>Activity Screening</p></td>
+<td><p>pink:ExposureDataset</p></td>
+<td><p>pink:ToxicityDataset</p></td>
+<td><p>pink:Computation</p></td>
+<td><p>owl:Class</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="software-table-individual-documentation">
+<h3>3. Software table (individual documentation)<a class="headerlink" href="#software-table-individual-documentation" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>&#64;id</p></th>
+<th class="head"><p>title</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>tierLevel</p></th>
+<th class="head"><p>implementsModel</p></th>
+<th class="head"><p>hasAPI</p></th>
+<th class="head"><p>accessRights</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pink:mytool-v1</p></td>
+<td><p>MyTool v1</p></td>
+<td><p>In-house software for endpoint prediction.</p></td>
+<td><p>pink:Tier3</p></td>
+<td><p>pink:QSARModel</p></td>
+<td><p>https://example.org/api/mytool</p></td>
+<td><p>rights:PUBLIC</p></td>
+</tr>
+<tr class="row-odd"><td><p>pink:mytool-v2</p></td>
+<td><p>MyTool v2</p></td>
+<td><p>Updated release with improved descriptors.</p></td>
+<td><p>pink:Tier3</p></td>
+<td><p>pink:QSARModel</p></td>
+<td><p>https://example.org/api/mytool/v2</p></td>
+<td><p>rights:RESTRICTED</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="agent-table-individual-documentation">
+<h3>4. Agent table (individual documentation)<a class="headerlink" href="#agent-table-individual-documentation" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>&#64;id</p></th>
+<th class="head"><p>name</p></th>
+<th class="head"><p>&#64;type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>https://orcid.org/0000-0000-0000-0001</p></td>
+<td><p>Example Researcher</p></td>
+<td><p>prov:Agent</p></td>
+</tr>
+<tr class="row-odd"><td><p>https://example.org/org/acme-lab</p></td>
+<td><p>Acme Lab</p></td>
+<td><p>prov:Agent</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="dataset-table-individual-documentation">
+<h3>5. Dataset table (individual documentation)<a class="headerlink" href="#dataset-table-individual-documentation" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>&#64;id</p></th>
+<th class="head"><p>&#64;type</p></th>
+<th class="head"><p>dcterms:title</p></th>
+<th class="head"><p>dcterms:description</p></th>
+<th class="head"><p>dcterms:publisher</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>https://example.org/dataset/tox-001</p></td>
+<td><p>pink:Dataset</p></td>
+<td><p>My toxicity dataset</p></td>
+<td><p>Measurements from in vitro assay campaign.</p></td>
+<td><p>https://orcid.org/0000-0000-0000-0001</p></td>
+</tr>
+<tr class="row-odd"><td><p>https://example.org/dataset/exposure-001</p></td>
+<td><p>pink:Dataset</p></td>
+<td><p>My exposure dataset</p></td>
+<td><p>Exposure observations collected in 2025.</p></td>
+<td><p>https://example.org/org/acme-lab</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div class="sidebar-secondary-item">
+  <div class="sidebar-secondary-item__title">Reference Indices</div>
+  <ul class="bd-sidenav">
+      <li><a href="../core.html">Reference Index</a></li>
+      <li><a href="../properties.html">Properties Index</a></li>
+      <li><a href="../ssbdtaxonomy.html">SSbDAssessments Index</a></li>
+      <li><a href="../models.html">Models Index</a></li>
+      <li><a href="../matter.html">Matter Index</a></li>
+      <li><a href="../cheminf.html">CHEMINF descriptors Index</a></li>
+  </ul>
+</div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright https://creativecommons.org/licenses/by/4.0/legalcode.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

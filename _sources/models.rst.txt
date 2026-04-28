@@ -1,0 +1,4227 @@
+:orphan:
+
+
+============
+Models Index
+============
+
+
+
+Models
+======
+
+
+
+.. _models-classes:
+
+Classes
+-------
+
+.. raw:: html
+
+   <div id="AbductiveReasoningModel"></div>
+
+
+AbductiveReasoningModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AbductiveReasoningModel' onclick="if(!document.getElementById('AbductiveReasoningModel')){window.location.href='https://w3id.org/ssbd/AbductiveReasoningModel'; return false;}">https://w3id.org/ssbd/AbductiveReasoningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AbductiveReasoningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Identifies the most plausible explanation for incomplete observations.<br>Analogical Reasoning</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Adaboost"></div>
+
+
+Adaboost
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Adaboost' onclick="if(!document.getElementById('Adaboost')){window.location.href='https://w3id.org/ssbd/Adaboost'; return false;}">https://w3id.org/ssbd/Adaboost</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Adaboost</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A supervised ensemble learning algorithm primarily used for classification and, less commonly, regression tasks.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Classification' onclick="if(!document.getElementById('Classification')){window.location.href='https://w3id.org/ssbd/Classification'; return false;}">Classification</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="AnalogicalIcon"></div>
+   <div id="AnalogicalModel"></div>
+
+AnalogicalModel
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AnalogicalIcon' onclick="if(!document.getElementById('AnalogicalIcon')){window.location.href='https://w3id.org/emmo/hume#AnalogicalIcon'; return false;}">https://w3id.org/emmo/hume#AnalogicalIcon</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AnalogicalModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">AnalogicalIcon</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A model that represents the internal logical structure of the object.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A model that focus on HOW the object works., The subclass of model inspired by Peirceian category (b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy (with the same logic) the relations in something (e.g. math formula, geometric flowchart).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Model' onclick="if(!document.getElementById('Model')){window.location.href='https://w3id.org/ssbd/Model'; return false;}">Model</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A physics equation is replicating the mechanisms internal to the object.
+
+   Electrical diagram is diagrammatic and resemblance
+
+   MODA and CHADA are diagrammatic representation of a simulation or a characterisation workflow.
+
+
+
+.. raw:: html
+
+   <div id="AnalogicalReasoningModel"></div>
+
+
+AnalogicalReasoningModel
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AnalogicalReasoningModel' onclick="if(!document.getElementById('AnalogicalReasoningModel')){window.location.href='https://w3id.org/ssbd/AnalogicalReasoningModel'; return false;}">https://w3id.org/ssbd/AnalogicalReasoningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AnalogicalReasoningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Solves new problems by drawing parallels to known scenarios.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ArtificialIntelligenceModel"></div>
+
+
+ArtificialIntelligenceModel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ArtificialIntelligenceModel' onclick="if(!document.getElementById('ArtificialIntelligenceModel')){window.location.href='https://w3id.org/emmo/hume#ArtificialIntelligenceModel'; return false;}">https://w3id.org/emmo/hume#ArtificialIntelligenceModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ArtificialIntelligenceModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">ArtificialIntelligence</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value"><a href="https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"><img src="https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png" alt="https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png" style="max-width:400px; max-height:300px;"/></a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A machine-based system that perceives its environment, pursues goals, adapts to feedback/change and provides information/takes action.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a>, <a href='#PerceptionModel' onclick="if(!document.getElementById('PerceptionModel')){window.location.href='https://w3id.org/ssbd/PerceptionModel'; return false;}">PerceptionModel</a>, <a href='#BehaviorModel' onclick="if(!document.getElementById('BehaviorModel')){window.location.href='https://w3id.org/ssbd/BehaviorModel'; return false;}">BehaviorModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ArtificialNeuralNetwork"></div>
+
+
+ArtificialNeuralNetwork
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ArtificialNeuralNetwork' onclick="if(!document.getElementById('ArtificialNeuralNetwork')){window.location.href='https://w3id.org/ssbd/ArtificialNeuralNetwork'; return false;}">https://w3id.org/ssbd/ArtificialNeuralNetwork</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ArtificialNeuralNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">NeuralNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI model inspired by the human brain, featuring interconnected layers of artificial neurons that process data to recognize complex patterns, make predictions, and drive machine learning, especially in tasks like computer vision and natural language processing., Neural networks learn by adjusting connection weights via training, with deep networks employing multiple layers for high-level abstraction.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a>, <a href='#Autoencoder' onclick="if(!document.getElementById('Autoencoder')){window.location.href='https://w3id.org/ssbd/Autoencoder'; return false;}">Autoencoder</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="AtomicInteractionModel"></div>
+
+
+AtomicInteractionModel
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AtomicInteractionModel' onclick="if(!document.getElementById('AtomicInteractionModel')){window.location.href='https://w3id.org/emmo/hume#AtomicInteractionModel'; return false;}">https://w3id.org/emmo/hume#AtomicInteractionModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AtomicInteractionModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A physics-based model based on a physics equation describing the interaction between atoms.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#AtomisticModel' onclick="if(!document.getElementById('AtomisticModel')){window.location.href='https://w3id.org/emmo/hume#AtomisticModel'; return false;}">AtomisticModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="AtomisticModel"></div>
+
+
+AtomisticModel
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AtomisticModel' onclick="if(!document.getElementById('AtomisticModel')){window.location.href='https://w3id.org/emmo/hume#AtomisticModel'; return false;}">https://w3id.org/emmo/hume#AtomisticModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AtomisticModel</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialsModel' onclick="if(!document.getElementById('MaterialsModel')){window.location.href='https://w3id.org/emmo/hume#MaterialsModel'; return false;}">MaterialsModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#AtomisticMolecularDynamics' onclick="if(!document.getElementById('AtomisticMolecularDynamics')){window.location.href='https://w3id.org/emmo/hume#AtomisticMolecularDynamics'; return false;}">AtomisticMolecularDynamics</a>, <a href='#StructureManipulationModel' onclick="if(!document.getElementById('StructureManipulationModel')){window.location.href='https://w3id.org/emmo/hume#StructureManipulationModel'; return false;}">StructureManipulationModel</a>, <a href='#AtomicInteractionModel' onclick="if(!document.getElementById('AtomicInteractionModel')){window.location.href='https://w3id.org/emmo/hume#AtomicInteractionModel'; return false;}">AtomicInteractionModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A physics-based model based on a physics equation describing the behaviour of atoms.
+
+
+
+.. raw:: html
+
+   <div id="AtomisticMolecularDynamics"></div>
+
+
+AtomisticMolecularDynamics
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#AtomisticMolecularDynamics' onclick="if(!document.getElementById('AtomisticMolecularDynamics')){window.location.href='https://w3id.org/emmo/hume#AtomisticMolecularDynamics'; return false;}">https://w3id.org/emmo/hume#AtomisticMolecularDynamics</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AtomisticMolecularDynamics</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Atomistic model that models the physical movements of atoms and molecules over time by numerically solving Newton’s equations of motion.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#AtomisticModel' onclick="if(!document.getElementById('AtomisticModel')){window.location.href='https://w3id.org/emmo/hume#AtomisticModel'; return false;}">AtomisticModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Autoencoder"></div>
+
+
+Autoencoder
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Autoencoder' onclick="if(!document.getElementById('Autoencoder')){window.location.href='https://w3id.org/ssbd/Autoencoder'; return false;}">https://w3id.org/ssbd/Autoencoder</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Autoencoder</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Neural networks designed to compress input data into a lower-dimensional bottleneck layer and then reconstruct it, effectively learning efficient, non-linear representations.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ArtificialNeuralNetwork' onclick="if(!document.getElementById('ArtificialNeuralNetwork')){window.location.href='https://w3id.org/ssbd/ArtificialNeuralNetwork'; return false;}">ArtificialNeuralNetwork</a>, <a href='#DimensionalityReduction' onclick="if(!document.getElementById('DimensionalityReduction')){window.location.href='https://w3id.org/ssbd/DimensionalityReduction'; return false;}">DimensionalityReduction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Bagging"></div>
+
+
+Bagging
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Bagging' onclick="if(!document.getElementById('Bagging')){window.location.href='https://w3id.org/ssbd/Bagging'; return false;}">https://w3id.org/ssbd/Bagging</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Bagging</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A prediction learning meta-algorithm designed to improve the stability and accuracy of predictive models, specifically by reducing variance and helping to avoid overfitting.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PredictionLearningModel' onclick="if(!document.getElementById('PredictionLearningModel')){window.location.href='https://w3id.org/ssbd/PredictionLearningModel'; return false;}">PredictionLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="BehaviorModel"></div>
+
+
+BehaviorModel
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#BehaviorModel' onclick="if(!document.getElementById('BehaviorModel')){window.location.href='https://w3id.org/ssbd/BehaviorModel'; return false;}">https://w3id.org/ssbd/BehaviorModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">BehaviorModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI systems trained on vast, multimodal datasets—including video, sensor data, and action logs—to understand, predict, and simulate human-like actions and complex decision-making processes.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Unlike LLMs that process text, LBMs focus on "what people do," utilizing reinforcement learning to adapt to dynamic environments.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ArtificialIntelligenceModel' onclick="if(!document.getElementById('ArtificialIntelligenceModel')){window.location.href='https://w3id.org/emmo/hume#ArtificialIntelligenceModel'; return false;}">ArtificialIntelligenceModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Boosting"></div>
+
+
+Boosting
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Boosting' onclick="if(!document.getElementById('Boosting')){window.location.href='https://w3id.org/ssbd/Boosting'; return false;}">https://w3id.org/ssbd/Boosting</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Boosting</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A prediction learning ensemble model designed to improve the predictive performance of models by converting multiple "weak learners" (models with low predictive power, often simple decision trees) into a single "strong learner".</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PredictionLearningModel' onclick="if(!document.getElementById('PredictionLearningModel')){window.location.href='https://w3id.org/ssbd/PredictionLearningModel'; return false;}">PredictionLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Classification"></div>
+
+
+Classification
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Classification' onclick="if(!document.getElementById('Classification')){window.location.href='https://w3id.org/ssbd/Classification'; return false;}">https://w3id.org/ssbd/Classification</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Classification</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A supervised learning model that trains models using labeled data to categorize new, unseen data into predefined classes.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#SupervisedLearningModel' onclick="if(!document.getElementById('SupervisedLearningModel')){window.location.href='https://w3id.org/ssbd/SupervisedLearningModel'; return false;}">SupervisedLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#SupportVectorMachine' onclick="if(!document.getElementById('SupportVectorMachine')){window.location.href='https://w3id.org/ssbd/SupportVectorMachine'; return false;}">SupportVectorMachine</a>, <a href='#ExtraTreesClassifier' onclick="if(!document.getElementById('ExtraTreesClassifier')){window.location.href='https://w3id.org/ssbd/ExtraTreesClassifier'; return false;}">ExtraTreesClassifier</a>, <a href='#DecisionTree' onclick="if(!document.getElementById('DecisionTree')){window.location.href='https://w3id.org/ssbd/DecisionTree'; return false;}">DecisionTree</a>, <a href='#Adaboost' onclick="if(!document.getElementById('Adaboost')){window.location.href='https://w3id.org/ssbd/Adaboost'; return false;}">Adaboost</a>, <a href='#NaiveBayes' onclick="if(!document.getElementById('NaiveBayes')){window.location.href='https://w3id.org/ssbd/NaiveBayes'; return false;}">NaiveBayes</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Clustering"></div>
+
+
+Clustering
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Clustering' onclick="if(!document.getElementById('Clustering')){window.location.href='https://w3id.org/ssbd/Clustering'; return false;}">https://w3id.org/ssbd/Clustering</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Clustering</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An unsupervised learning model that automatically groups unlabeled data into clusters based on similarities in their features.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#UnsupervicedLearningModel' onclick="if(!document.getElementById('UnsupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/UnsupervicedLearningModel'; return false;}">UnsupervicedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CognitionAndLearningModel"></div>
+
+
+CognitionAndLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">https://w3id.org/ssbd/CognitionAndLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CognitionAndLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">Blends artificial intelligence with cognitive science to simulate human thought processes (sensing, reasoning, and learning) rather than just executing predefined rules., CognitiveAI</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ArtificialIntelligenceModel' onclick="if(!document.getElementById('ArtificialIntelligenceModel')){window.location.href='https://w3id.org/emmo/hume#ArtificialIntelligenceModel'; return false;}">ArtificialIntelligenceModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a>, <a href='#Logic' onclick="if(!document.getElementById('Logic')){window.location.href='https://w3id.org/ssbd/Logic'; return false;}">Logic</a>, <a href='#AnalogicalReasoningModel' onclick="if(!document.getElementById('AnalogicalReasoningModel')){window.location.href='https://w3id.org/ssbd/AnalogicalReasoningModel'; return false;}">AnalogicalReasoningModel</a>, <a href='#PlanningModel' onclick="if(!document.getElementById('PlanningModel')){window.location.href='https://w3id.org/ssbd/PlanningModel'; return false;}">PlanningModel</a>, <a href='#AbductiveReasoningModel' onclick="if(!document.getElementById('AbductiveReasoningModel')){window.location.href='https://w3id.org/ssbd/AbductiveReasoningModel'; return false;}">AbductiveReasoningModel</a>, <a href='#KnowledgeRepresentation' onclick="if(!document.getElementById('KnowledgeRepresentation')){window.location.href='https://w3id.org/ssbd/KnowledgeRepresentation'; return false;}">KnowledgeRepresentation</a>, <a href='#ProbabilityModel' onclick="if(!document.getElementById('ProbabilityModel')){window.location.href='https://w3id.org/ssbd/ProbabilityModel'; return false;}">ProbabilityModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CollaborativeFiltering"></div>
+
+
+CollaborativeFiltering
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CollaborativeFiltering' onclick="if(!document.getElementById('CollaborativeFiltering')){window.location.href='https://w3id.org/ssbd/CollaborativeFiltering'; return false;}">https://w3id.org/ssbd/CollaborativeFiltering</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CollaborativeFiltering</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A widely used recommender system model that primarily operates by leveraging similarities between users and items based on past interactions (like ratings or purchases).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#RecommenderSystem' onclick="if(!document.getElementById('RecommenderSystem')){window.location.href='https://w3id.org/ssbd/RecommenderSystem'; return false;}">RemommenderSystem</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Computation"></div>
+
+
+Computation
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Computation' onclick="if(!document.getElementById('Computation')){window.location.href='https://w3id.org/ssbd/Computation'; return false;}">https://w3id.org/ssbd/Computation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Computation</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Copmutation</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#Thing'>Thing</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#DataProcessing' onclick="if(!document.getElementById('DataProcessing')){window.location.href='https://w3id.org/emmo/hume#DataProcessing'; return false;}">DataProcessing</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ComputerVision"></div>
+
+
+ComputerVision
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ComputerVision' onclick="if(!document.getElementById('ComputerVision')){window.location.href='https://w3id.org/ssbd/ComputerVision'; return false;}">https://w3id.org/ssbd/ComputerVision</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ComputerVision</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">MachineVision</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI system that is able to acquire, understand and use digital images to recognize activities, objects, and images.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value"></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PerceptionModel' onclick="if(!document.getElementById('PerceptionModel')){window.location.href='https://w3id.org/ssbd/PerceptionModel'; return false;}">PerceptionModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ObjectDetection' onclick="if(!document.getElementById('ObjectDetection')){window.location.href='https://w3id.org/ssbd/ObjectDetection'; return false;}">ObjectDetection</a>, <a href='#ImageClassification' onclick="if(!document.getElementById('ImageClassification')){window.location.href='https://w3id.org/ssbd/ImageClassification'; return false;}">ImageClassification</a>, <a href='#ImageSegmentation' onclick="if(!document.getElementById('ImageSegmentation')){window.location.href='https://w3id.org/ssbd/ImageSegmentation'; return false;}">ImageSegmentation</a>, <a href='#TargetTracking' onclick="if(!document.getElementById('TargetTracking')){window.location.href='https://w3id.org/ssbd/TargetTracking'; return false;}">TargetTracking</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ContentExtraction"></div>
+
+
+ContentExtraction
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ContentExtraction' onclick="if(!document.getElementById('ContentExtraction')){window.location.href='https://w3id.org/ssbd/ContentExtraction'; return false;}">https://w3id.org/ssbd/ContentExtraction</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ContentExtraction</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A natural language model tha tinvolves analyzing text to move beyond keyword matching, identifying the "who, what, and why" behind user input by extracting entities, themes, and semantic relationships.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageUnderstanding' onclick="if(!document.getElementById('NaturalLanguageUnderstanding')){window.location.href='https://w3id.org/ssbd/NaturalLanguageUnderstanding'; return false;}">NaturalLanguageUnderstanding</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ContinuumModel"></div>
+
+
+ContinuumModel
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ContinuumModel' onclick="if(!document.getElementById('ContinuumModel')){window.location.href='https://w3id.org/emmo/hume#ContinuumModel'; return false;}">https://w3id.org/emmo/hume#ContinuumModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ContinuumModel</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialsModel' onclick="if(!document.getElementById('MaterialsModel')){window.location.href='https://w3id.org/emmo/hume#MaterialsModel'; return false;}">MaterialsModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A physics-based model based on a physics equation describing the behaviour of continuum volume.
+
+
+
+.. raw:: html
+
+   <div id="ConvolutionNeuralNetwork"></div>
+
+
+ConvolutionNeuralNetwork
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ConvolutionNeuralNetwork' onclick="if(!document.getElementById('ConvolutionNeuralNetwork')){window.location.href='https://w3id.org/ssbd/ConvolutionNeuralNetwork'; return false;}">https://w3id.org/ssbd/ConvolutionNeuralNetwork</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ConvolutionNeuralNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A type of deep learning based on feedforward neural network that learns features via filter (or kernel) optimization.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CumulativeHypergeometricTest"></div>
+
+
+CumulativeHypergeometricTest
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CumulativeHypergeometricTest' onclick="if(!document.getElementById('CumulativeHypergeometricTest')){window.location.href='https://w3id.org/emmo/hume#CumulativeHypergeometricTest'; return false;}">https://w3id.org/emmo/hume#CumulativeHypergeometricTest</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">CumulativeHypergeometricTest</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A statistical test that determines the statistical significance (p-value) of observing `k` or more/fewer successes in a sample drawn without replacement from a finite population. It tests if a subpopulation is over- or under-represented, often calculating `P(X>=k)` or `P(X<=k)`. It is essential for small populations where sampling changes probabilities.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#StatisticalTest' onclick="if(!document.getElementById('StatisticalTest')){window.location.href='https://w3id.org/emmo/hume#StatisticalTest'; return false;}">StatisticalTest</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DataBasedModel"></div>
+
+
+DataBasedModel
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DataBasedModel' onclick="if(!document.getElementById('DataBasedModel')){window.location.href='https://w3id.org/emmo/hume#DataBasedModel'; return false;}">https://w3id.org/emmo/hume#DataBasedModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DataBasedModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A mathematical model based on observed data, measurements, or experimental results.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DataProcessing"></div>
+
+
+DataProcessing
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DataProcessing' onclick="if(!document.getElementById('DataProcessing')){window.location.href='https://w3id.org/emmo/hume#DataProcessing'; return false;}">https://w3id.org/emmo/hume#DataProcessing</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DataProcessing</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A computation that provides a data output following the elaboration of some input data, using a data processing application.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Computation' onclick="if(!document.getElementById('Computation')){window.location.href='https://w3id.org/ssbd/Computation'; return false;}">Computation</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='https://w3id.org/ssbd/hasParticipant'>hasParticipant</a> some <a href='#DataProcessingSoftware' onclick="if(!document.getElementById('DataProcessingSoftware')){window.location.href='https://w3id.org/emmo/hume#DataProcessingSoftware'; return false;}">DataProcessingSoftware</a></li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DataProcessingSoftware"></div>
+
+
+DataProcessingSoftware
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DataProcessingSoftware' onclick="if(!document.getElementById('DataProcessingSoftware')){window.location.href='https://w3id.org/emmo/hume#DataProcessingSoftware'; return false;}">https://w3id.org/emmo/hume#DataProcessingSoftware</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DataProcessingSoftware</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">DataProcessingApplication</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A software program aimed for data processing.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Software' onclick="if(!document.getElementById('Software')){window.location.href='https://w3id.org/ssbd/Software'; return false;}">Software</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Restrictions</span></td>
+    <td class="element-table-value"><div class="restriction-list"><ul><li><a href='https://w3id.org/ssbd/implementsModel'>implementsModel</a> some <a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></li></ul></div></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DecisionTree"></div>
+
+
+DecisionTree
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DecisionTree' onclick="if(!document.getElementById('DecisionTree')){window.location.href='https://w3id.org/ssbd/DecisionTree'; return false;}">https://w3id.org/ssbd/DecisionTree</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DecisionTree</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A non-parametric, supervised learning algorithm used for both classification and regression tasks.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Classification' onclick="if(!document.getElementById('Classification')){window.location.href='https://w3id.org/ssbd/Classification'; return false;}">Classification</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DeepFeedForwardNetwork"></div>
+
+
+DeepFeedForwardNetwork
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DeepFeedForwardNetwork' onclick="if(!document.getElementById('DeepFeedForwardNetwork')){window.location.href='https://w3id.org/ssbd/DeepFeedForwardNetwork'; return false;}">https://w3id.org/ssbd/DeepFeedForwardNetwork</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DeepFeedForwardNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Foundational deep learning model that approximate complex functions by mapping inputs to outputs through multiple, unidirectional hidden layers.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DeepLearningModel"></div>
+
+
+DeepLearningModel
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">https://w3id.org/ssbd/DeepLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DeepLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Machine learning based on artificial neural networks with multiple layers (often hundreds) that simulate the human brain's structure to learn complex, non-linear patterns from vast datasets.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Deep learning powers modern AI in image recognition, NLP, and generative models, outperforming traditional algorithms.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ArtificialNeuralNetwork' onclick="if(!document.getElementById('ArtificialNeuralNetwork')){window.location.href='https://w3id.org/ssbd/ArtificialNeuralNetwork'; return false;}">ArtificialNeuralNetwork</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#TransformerAI' onclick="if(!document.getElementById('TransformerAI')){window.location.href='https://w3id.org/ssbd/TransformerAI'; return false;}">TransformerAI</a>, <a href='#SiameseNeuralNetwork' onclick="if(!document.getElementById('SiameseNeuralNetwork')){window.location.href='https://w3id.org/ssbd/SiameseNeuralNetwork'; return false;}">SiameseNeuralNetwork</a>, <a href='#DeepFeedForwardNetwork' onclick="if(!document.getElementById('DeepFeedForwardNetwork')){window.location.href='https://w3id.org/ssbd/DeepFeedForwardNetwork'; return false;}">DeepFeedForwardNetwork</a>, <a href='#ConvolutionNeuralNetwork' onclick="if(!document.getElementById('ConvolutionNeuralNetwork')){window.location.href='https://w3id.org/ssbd/ConvolutionNeuralNetwork'; return false;}">ConvolutionNeuralNetwork</a>, <a href='#GraphNeuralNetwork' onclick="if(!document.getElementById('GraphNeuralNetwork')){window.location.href='https://w3id.org/ssbd/GraphNeuralNetwork'; return false;}">GraphNeuralNetwork</a>, <a href='#GenerativeAdversarialNetwork' onclick="if(!document.getElementById('GenerativeAdversarialNetwork')){window.location.href='https://w3id.org/ssbd/GenerativeAdversarialNetwork'; return false;}">GenerativeAdversarialNetwork</a>, <a href='#GenerativeAIModel' onclick="if(!document.getElementById('GenerativeAIModel')){window.location.href='https://w3id.org/emmo/hume#GenerativeAIModel'; return false;}">GenerativeAIModel</a>, <a href='#RecurrentNeuralNetwork' onclick="if(!document.getElementById('RecurrentNeuralNetwork')){window.location.href='https://w3id.org/ssbd/RecurrentNeuralNetwork'; return false;}">RecurrentNeuralNetwork</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DimensionalityReduction"></div>
+
+
+DimensionalityReduction
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DimensionalityReduction' onclick="if(!document.getElementById('DimensionalityReduction')){window.location.href='https://w3id.org/ssbd/DimensionalityReduction'; return false;}">https://w3id.org/ssbd/DimensionalityReduction</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DimensionalityReduction</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI model that transforms high-dimensional datasets into lower-dimensional representations while preserving essential information, mitigating the "curse of dimensionality.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value"></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#PrincipalComponentAnalysis' onclick="if(!document.getElementById('PrincipalComponentAnalysis')){window.location.href='https://w3id.org/ssbd/PrincipalComponentAnalysis'; return false;}">PrincipalComponentAnalysis</a>, <a href='#Autoencoder' onclick="if(!document.getElementById('Autoencoder')){window.location.href='https://w3id.org/ssbd/Autoencoder'; return false;}">Autoencoder</a>, <a href='#TDistributedStochasticNeighborEmbedding' onclick="if(!document.getElementById('TDistributedStochasticNeighborEmbedding')){window.location.href='https://w3id.org/ssbd/TDistributedStochasticNeighborEmbedding'; return false;}">TDistributedStochasticNeighborEmbedding</a>, <a href='#LinearDiscriminantAnalysis' onclick="if(!document.getElementById('LinearDiscriminantAnalysis')){window.location.href='https://w3id.org/ssbd/LinearDiscriminantAnalysis'; return false;}">LinearDiscriminantAnalysis</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="DynamicProgramming"></div>
+
+
+DynamicProgramming
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#DynamicProgramming' onclick="if(!document.getElementById('DynamicProgramming')){window.location.href='https://w3id.org/ssbd/DynamicProgramming'; return false;}">https://w3id.org/ssbd/DynamicProgramming</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DynamicProgramming</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">, A reinforced learning model for solving complex problems by breaking them down into smaller, simpler subproblems and storing the results to avoid redundant calculations.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ReinforcedLearningModel' onclick="if(!document.getElementById('ReinforcedLearningModel')){window.location.href='https://w3id.org/ssbd/ReinforcedLearningModel'; return false;}">ReinforcedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ElectronicModel"></div>
+
+
+ElectronicModel
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ElectronicModel' onclick="if(!document.getElementById('ElectronicModel')){window.location.href='https://w3id.org/emmo/hume#ElectronicModel'; return false;}">https://w3id.org/emmo/hume#ElectronicModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ElectronicModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A physics-based model based on a physics equation describing the behaviour of electrons.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialsModel' onclick="if(!document.getElementById('MaterialsModel')){window.location.href='https://w3id.org/emmo/hume#MaterialsModel'; return false;}">MaterialsModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   Density functional theory.
+   Hartree-Fock.
+
+
+
+.. raw:: html
+
+   <div id="EnsembleLearningModel"></div>
+
+
+EnsembleLearningModel
+^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#EnsembleLearningModel' onclick="if(!document.getElementById('EnsembleLearningModel')){window.location.href='https://w3id.org/ssbd/EnsembleLearningModel'; return false;}">https://w3id.org/ssbd/EnsembleLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">EnsembleLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A machine learning model that combines multiple individual models (often called base learners or weak learners) to produce a single, more accurate, and robust predictive model.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ExtraTreesClassifier' onclick="if(!document.getElementById('ExtraTreesClassifier')){window.location.href='https://w3id.org/ssbd/ExtraTreesClassifier'; return false;}">ExtraTreesClassifier</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ExpertSystem"></div>
+
+
+ExpertSystem
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ExpertSystem' onclick="if(!document.getElementById('ExpertSystem')){window.location.href='https://w3id.org/ssbd/ExpertSystem'; return false;}">https://w3id.org/ssbd/ExpertSystem</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ExpertSystem</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI system that contains manually inputted rules and data to copy human decision-making abilities.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value"></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#KnowledgeRepresentation' onclick="if(!document.getElementById('KnowledgeRepresentation')){window.location.href='https://w3id.org/ssbd/KnowledgeRepresentation'; return false;}">KnowledgeRepresentation</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ExtraTreesClassifier"></div>
+
+
+ExtraTreesClassifier
+^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ExtraTreesClassifier' onclick="if(!document.getElementById('ExtraTreesClassifier')){window.location.href='https://w3id.org/ssbd/ExtraTreesClassifier'; return false;}">https://w3id.org/ssbd/ExtraTreesClassifier</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ExtraTreesClassifier</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An ensemble learning model that builds multiple decision trees by choosing random splits for each node, rather than searching for the most discriminative threshold like Random Forest.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Classification' onclick="if(!document.getElementById('Classification')){window.location.href='https://w3id.org/ssbd/Classification'; return false;}">Classification</a>, <a href='#EnsembleLearningModel' onclick="if(!document.getElementById('EnsembleLearningModel')){window.location.href='https://w3id.org/ssbd/EnsembleLearningModel'; return false;}">EnsembleLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="FunctionalIcon"></div>
+   <div id="FunctionalModel"></div>
+
+FunctionalModel
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#FunctionalIcon' onclick="if(!document.getElementById('FunctionalIcon')){window.location.href='https://w3id.org/emmo/hume#FunctionalIcon'; return false;}">https://w3id.org/emmo/hume#FunctionalIcon</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">FunctionalModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">FunctionalIcon</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A model that imitates one representative character of the object. It share external similarities with the object, but not necessarily the same internal logical structure.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A model that focusing WHAT the object does., This subclass of model inspired by Peirceian category (c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Model' onclick="if(!document.getElementById('Model')){window.location.href='https://w3id.org/ssbd/Model'; return false;}">Model</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Replica' onclick="if(!document.getElementById('Replica')){window.location.href='https://w3id.org/emmo/hume#Replica'; return false;}">Replica</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A data based model is only a functional model, since it provide the same relations between the properties of the object (e.g., it can predict some properties as function of others) but is not considering the internal mechanisms (i.e., it can ignore the physics).
+
+
+
+.. raw:: html
+
+   <div id="GenerativeAIModel"></div>
+
+
+GenerativeAIModel
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#GenerativeAIModel' onclick="if(!document.getElementById('GenerativeAIModel')){window.location.href='https://w3id.org/emmo/hume#GenerativeAIModel'; return false;}">https://w3id.org/emmo/hume#GenerativeAIModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">GenerativeAIModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">GenerativeArtificialIntelligenceModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An AI model that can generate new content, like text, images or code.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ModernGenerativeAIModel' onclick="if(!document.getElementById('ModernGenerativeAIModel')){window.location.href='https://w3id.org/ssbd/ModernGenerativeAIModel'; return false;}">ModernGenerativeAIModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   Chatbots
+
+
+
+.. raw:: html
+
+   <div id="GenerativeAdversarialNetwork"></div>
+
+
+GenerativeAdversarialNetwork
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#GenerativeAdversarialNetwork' onclick="if(!document.getElementById('GenerativeAdversarialNetwork')){window.location.href='https://w3id.org/ssbd/GenerativeAdversarialNetwork'; return false;}">https://w3id.org/ssbd/GenerativeAdversarialNetwork</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">GenerativeAdversarialNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A deep learning framework where two neural networks, the generator and discriminator, compete against each other to create new, synthetic instances of data (images, music, text) that resemble training data.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="GraphBasedLearningModel"></div>
+
+
+GraphBasedLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#GraphBasedLearningModel' onclick="if(!document.getElementById('GraphBasedLearningModel')){window.location.href='https://w3id.org/ssbd/GraphBasedLearningModel'; return false;}">https://w3id.org/ssbd/GraphBasedLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">GraphBasedLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">GraphBasedAlgorithm</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A semi-superviced machine learning paradigm that analyzes data structured as nodes and edges, exploiting topological relationships rather than treating data points as independent.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#SemiSupervicedLearningModel' onclick="if(!document.getElementById('SemiSupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/SemiSupervicedLearningModel'; return false;}">SemiSupervicedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="GraphNeuralNetwork"></div>
+
+
+GraphNeuralNetwork
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#GraphNeuralNetwork' onclick="if(!document.getElementById('GraphNeuralNetwork')){window.location.href='https://w3id.org/ssbd/GraphNeuralNetwork'; return false;}">https://w3id.org/ssbd/GraphNeuralNetwork</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">GraphNeuralNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Deep learning model designed to analyze data represented as graphs with nodes (entities) and edges (relationships).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="HeuristicLearningModel"></div>
+
+
+HeuristicLearningModel
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#HeuristicLearningModel' onclick="if(!document.getElementById('HeuristicLearningModel')){window.location.href='https://w3id.org/ssbd/HeuristicLearningModel'; return false;}">https://w3id.org/ssbd/HeuristicLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">HeuristicLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">HeuristicMethod</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">, An experience-based, discovery-oriented reinforced learning model to problem-solving that uses "rules of thumb," intuition, and mental shortcuts to find satisfactory solutions quickly when optimal ones are impractical.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value"></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ReinforcedLearningModel' onclick="if(!document.getElementById('ReinforcedLearningModel')){window.location.href='https://w3id.org/ssbd/ReinforcedLearningModel'; return false;}">ReinforcedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ImageClassification"></div>
+
+
+ImageClassification
+^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ImageClassification' onclick="if(!document.getElementById('ImageClassification')){window.location.href='https://w3id.org/ssbd/ImageClassification'; return false;}">https://w3id.org/ssbd/ImageClassification</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ImageClassification</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A core computer vision task that assigns a predefined label or category to an entire image based on its visual content.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ComputerVision' onclick="if(!document.getElementById('ComputerVision')){window.location.href='https://w3id.org/ssbd/ComputerVision'; return false;}">ComputerVision</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ImageSegmentation"></div>
+
+
+ImageSegmentation
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ImageSegmentation' onclick="if(!document.getElementById('ImageSegmentation')){window.location.href='https://w3id.org/ssbd/ImageSegmentation'; return false;}">https://w3id.org/ssbd/ImageSegmentation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ImageSegmentation</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Computer vision algorithm for partitioning a digital image into distinct, meaningful regions at the pixel level to identify object boundaries and simplify image analysis.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ComputerVision' onclick="if(!document.getElementById('ComputerVision')){window.location.href='https://w3id.org/ssbd/ComputerVision'; return false;}">ComputerVision</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Information"></div>
+
+
+Information
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Information' onclick="if(!document.getElementById('Information')){window.location.href='https://w3id.org/ssbd/Information'; return false;}">https://w3id.org/ssbd/Information</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Information</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#Thing'>Thing</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="KnowledgeRepresentation"></div>
+
+
+KnowledgeRepresentation
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#KnowledgeRepresentation' onclick="if(!document.getElementById('KnowledgeRepresentation')){window.location.href='https://w3id.org/ssbd/KnowledgeRepresentation'; return false;}">https://w3id.org/ssbd/KnowledgeRepresentation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">KnowledgeRepresentation</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value">Liu HC, You JX, Li Z, Tian G (2017) Fuzzy Petri nets for knowledge representation and reasoning: A literature review. Eng Appl Artif Intell 60:45–56.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Represent facts in the format of reusable knowledge. It combines a series of rules to simulate how a human brain functions through artificial means. It can make inferences and judgments based on knowledge provided by one or more experts and simulate human experts' decision-making process.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ExpertSystem' onclick="if(!document.getElementById('ExpertSystem')){window.location.href='https://w3id.org/ssbd/ExpertSystem'; return false;}">ExpertSystem</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="LargeLanguageModel"></div>
+
+
+LargeLanguageModel
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#LargeLanguageModel' onclick="if(!document.getElementById('LargeLanguageModel')){window.location.href='https://w3id.org/ssbd/LargeLanguageModel'; return false;}">https://w3id.org/ssbd/LargeLanguageModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">LargeLanguageModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">LLM</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A specialized subset of Generative Artificial Intelligence that is fundamentally defined by its use of transformer architecture (specifically encoders, decoders, or both) to process and generate human-like text by predicting the next token in a sequence.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ModernGenerativeAIModel' onclick="if(!document.getElementById('ModernGenerativeAIModel')){window.location.href='https://w3id.org/ssbd/ModernGenerativeAIModel'; return false;}">ModernGenerativeAIModel</a>, <a href='#TextGeneration' onclick="if(!document.getElementById('TextGeneration')){window.location.href='https://w3id.org/ssbd/TextGeneration'; return false;}">TextGeneration</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="LinearDiscriminantAnalysis"></div>
+
+
+LinearDiscriminantAnalysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#LinearDiscriminantAnalysis' onclick="if(!document.getElementById('LinearDiscriminantAnalysis')){window.location.href='https://w3id.org/ssbd/LinearDiscriminantAnalysis'; return false;}">https://w3id.org/ssbd/LinearDiscriminantAnalysis</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">LinearDiscriminantAnalysis</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A dimensionality reduction model used in classification tasks to find a feature subspace that maximizes class separability.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DimensionalityReduction' onclick="if(!document.getElementById('DimensionalityReduction')){window.location.href='https://w3id.org/ssbd/DimensionalityReduction'; return false;}">DimensionalityReduction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Logic"></div>
+
+
+Logic
+^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Logic' onclick="if(!document.getElementById('Logic')){window.location.href='https://w3id.org/ssbd/Logic'; return false;}">https://w3id.org/ssbd/Logic</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Logic</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">DeductiveReasoning</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A AI system based on generic rules of the reasoning behind different cases of problem-solving.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   If A=B and B=C, then A=C
+
+
+
+.. raw:: html
+
+   <div id="LogisticRegressionModel"></div>
+
+
+LogisticRegressionModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#LogisticRegressionModel' onclick="if(!document.getElementById('LogisticRegressionModel')){window.location.href='https://w3id.org/ssbd/LogisticRegressionModel'; return false;}">https://w3id.org/ssbd/LogisticRegressionModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">LogisticRegressionModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A fundamental supervised machine learning algorithm used for classification, predicting the probability of a categorical dependent variable.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#RegressionModel' onclick="if(!document.getElementById('RegressionModel')){window.location.href='https://w3id.org/ssbd/RegressionModel'; return false;}">RegressionModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="LowDensitySeparationModel"></div>
+
+
+LowDensitySeparationModel
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#LowDensitySeparationModel' onclick="if(!document.getElementById('LowDensitySeparationModel')){window.location.href='https://w3id.org/ssbd/LowDensitySeparationModel'; return false;}">https://w3id.org/ssbd/LowDensitySeparationModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">LowDensitySeparationModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A semi-supervised model where the decision boundary between classes is placed in a low-density region of the data distribution.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#SemiSupervicedLearningModel' onclick="if(!document.getElementById('SemiSupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/SemiSupervicedLearningModel'; return false;}">SemiSupervicedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MachineLearningModel"></div>
+
+
+MachineLearningModel
+^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">https://w3id.org/emmo/hume#MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MachineLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value">Hutter F, Kotthoff L, Vanschoren J (2019) Automated Machine Learning. Springer, New York.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI model that learns progressively by discovering implicit patterns and performing an intellectual task without explicit instructions in advance.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a>, <a href='#DataBasedModel' onclick="if(!document.getElementById('DataBasedModel')){window.location.href='https://w3id.org/emmo/hume#DataBasedModel'; return false;}">DataBasedModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#SemiSupervicedLearningModel' onclick="if(!document.getElementById('SemiSupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/SemiSupervicedLearningModel'; return false;}">SemiSupervicedLearningModel</a>, <a href='#ArtificialNeuralNetwork' onclick="if(!document.getElementById('ArtificialNeuralNetwork')){window.location.href='https://w3id.org/ssbd/ArtificialNeuralNetwork'; return false;}">ArtificialNeuralNetwork</a>, <a href='#ReinforcedLearningModel' onclick="if(!document.getElementById('ReinforcedLearningModel')){window.location.href='https://w3id.org/ssbd/ReinforcedLearningModel'; return false;}">ReinforcedLearningModel</a>, <a href='#SupervisedLearningModel' onclick="if(!document.getElementById('SupervisedLearningModel')){window.location.href='https://w3id.org/ssbd/SupervisedLearningModel'; return false;}">SupervisedLearningModel</a>, <a href='#DimensionalityReduction' onclick="if(!document.getElementById('DimensionalityReduction')){window.location.href='https://w3id.org/ssbd/DimensionalityReduction'; return false;}">DimensionalityReduction</a>, <a href='#EnsembleLearningModel' onclick="if(!document.getElementById('EnsembleLearningModel')){window.location.href='https://w3id.org/ssbd/EnsembleLearningModel'; return false;}">EnsembleLearningModel</a>, <a href='#UnsupervicedLearningModel' onclick="if(!document.getElementById('UnsupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/UnsupervicedLearningModel'; return false;}">UnsupervicedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MachineTranslation"></div>
+
+
+MachineTranslation
+^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MachineTranslation' onclick="if(!document.getElementById('MachineTranslation')){window.location.href='https://w3id.org/ssbd/MachineTranslation'; return false;}">https://w3id.org/ssbd/MachineTranslation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MachineTranslation</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A natural language understanding model that enables machine translation to move beyond word-for-word substitution by analyzing intent, context, and semantic meaning.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageUnderstanding' onclick="if(!document.getElementById('NaturalLanguageUnderstanding')){window.location.href='https://w3id.org/ssbd/NaturalLanguageUnderstanding'; return false;}">NaturalLanguageUnderstanding</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MaterialsModel"></div>
+
+
+MaterialsModel
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MaterialsModel' onclick="if(!document.getElementById('MaterialsModel')){window.location.href='https://w3id.org/emmo/hume#MaterialsModel'; return false;}">https://w3id.org/emmo/hume#MaterialsModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MaterialsModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A solvable set of one Physics Equation and one or more Materials Relations.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PhysicsBasedModel' onclick="if(!document.getElementById('PhysicsBasedModel')){window.location.href='https://w3id.org/emmo/hume#PhysicsBasedModel'; return false;}">PhysicsBasedModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#AtomisticModel' onclick="if(!document.getElementById('AtomisticModel')){window.location.href='https://w3id.org/emmo/hume#AtomisticModel'; return false;}">AtomisticModel</a>, <a href='#ElectronicModel' onclick="if(!document.getElementById('ElectronicModel')){window.location.href='https://w3id.org/emmo/hume#ElectronicModel'; return false;}">ElectronicModel</a>, <a href='#MesoscopicModel' onclick="if(!document.getElementById('MesoscopicModel')){window.location.href='https://w3id.org/emmo/hume#MesoscopicModel'; return false;}">MesoscopicModel</a>, <a href='#ContinuumModel' onclick="if(!document.getElementById('ContinuumModel')){window.location.href='https://w3id.org/emmo/hume#ContinuumModel'; return false;}">ContinuumModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MathematicalModel"></div>
+
+
+MathematicalModel
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">https://w3id.org/emmo/hume#MathematicalModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MathematicalModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An analogical model expressed in mathematical language.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A mathematical model can be defined as a description of a system using mathematical concepts and language to facilitate proper explanation of a system or to study the effects of different components and to make predictions on patterns of behaviour.<br><br>Abramowitz and Stegun, 1968</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#AnalogicalIcon' onclick="if(!document.getElementById('AnalogicalIcon')){window.location.href='https://w3id.org/emmo/hume#AnalogicalIcon'; return false;}">AnalogicalModel</a>, <a href='#Information' onclick="if(!document.getElementById('Information')){window.location.href='https://w3id.org/ssbd/Information'; return false;}">Information</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#PhysicsBasedModel' onclick="if(!document.getElementById('PhysicsBasedModel')){window.location.href='https://w3id.org/emmo/hume#PhysicsBasedModel'; return false;}">PhysicsBasedModel</a>, <a href='#ArtificialIntelligenceModel' onclick="if(!document.getElementById('ArtificialIntelligenceModel')){window.location.href='https://w3id.org/emmo/hume#ArtificialIntelligenceModel'; return false;}">ArtificialIntelligenceModel</a>, <a href='#QSARModel' onclick="if(!document.getElementById('QSARModel')){window.location.href='https://w3id.org/ssbd/QSARModel'; return false;}">QSARModel</a>, <a href='#DataBasedModel' onclick="if(!document.getElementById('DataBasedModel')){window.location.href='https://w3id.org/emmo/hume#DataBasedModel'; return false;}">DataBasedModel</a>, <a href='#StatisticalModel' onclick="if(!document.getElementById('StatisticalModel')){window.location.href='https://w3id.org/emmo/hume#StatisticalModel'; return false;}">StatisticalModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MesoscopicModel"></div>
+
+
+MesoscopicModel
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MesoscopicModel' onclick="if(!document.getElementById('MesoscopicModel')){window.location.href='https://w3id.org/emmo/hume#MesoscopicModel'; return false;}">https://w3id.org/emmo/hume#MesoscopicModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MesoscopicModel</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MaterialsModel' onclick="if(!document.getElementById('MaterialsModel')){window.location.href='https://w3id.org/emmo/hume#MaterialsModel'; return false;}">MaterialsModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A physics-based model based on a physics equation describing the behaviour of mesoscopic entities, i.e. a set of bounded atoms like a molecule, bead or nanoparticle.
+
+
+
+.. raw:: html
+
+   <div id="Model"></div>
+
+
+Model
+^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Model' onclick="if(!document.getElementById('Model')){window.location.href='https://w3id.org/ssbd/Model'; return false;}">https://w3id.org/ssbd/Model</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Model</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#Thing'>Thing</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#FunctionalIcon' onclick="if(!document.getElementById('FunctionalIcon')){window.location.href='https://w3id.org/emmo/hume#FunctionalIcon'; return false;}">FunctionalModel</a>, <a href='#ResemblanceIcon' onclick="if(!document.getElementById('ResemblanceIcon')){window.location.href='https://w3id.org/emmo/hume#ResemblanceIcon'; return false;}">ResemblanceModel</a>, <a href='#AnalogicalIcon' onclick="if(!document.getElementById('AnalogicalIcon')){window.location.href='https://w3id.org/emmo/hume#AnalogicalIcon'; return false;}">AnalogicalModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ModernGenerativeAIModel"></div>
+
+
+ModernGenerativeAIModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ModernGenerativeAIModel' onclick="if(!document.getElementById('ModernGenerativeAIModel')){window.location.href='https://w3id.org/ssbd/ModernGenerativeAIModel'; return false;}">https://w3id.org/ssbd/ModernGenerativeAIModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ModernGenerativeAIModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Generative AI based on the transformer architecture.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#GenerativeAIModel' onclick="if(!document.getElementById('GenerativeAIModel')){window.location.href='https://w3id.org/emmo/hume#GenerativeAIModel'; return false;}">GenerativeAIModel</a>, <a href='#TransformerAI' onclick="if(!document.getElementById('TransformerAI')){window.location.href='https://w3id.org/ssbd/TransformerAI'; return false;}">TransformerAI</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#LargeLanguageModel' onclick="if(!document.getElementById('LargeLanguageModel')){window.location.href='https://w3id.org/ssbd/LargeLanguageModel'; return false;}">LargeLanguageModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="MonteCarloLearningModel"></div>
+
+
+MonteCarloLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#MonteCarloLearningModel' onclick="if(!document.getElementById('MonteCarloLearningModel')){window.location.href='https://w3id.org/ssbd/MonteCarloLearningModel'; return false;}">https://w3id.org/ssbd/MonteCarloLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">MonteCarloLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">MonteCarloMethod</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A model-free reinforcement learning model that estimates value functions by averaging total returns from complete episodes of experience.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ReinforcedLearningModel' onclick="if(!document.getElementById('ReinforcedLearningModel')){window.location.href='https://w3id.org/ssbd/ReinforcedLearningModel'; return false;}">ReinforcedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NaiveBayes"></div>
+
+
+NaiveBayes
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NaiveBayes' onclick="if(!document.getElementById('NaiveBayes')){window.location.href='https://w3id.org/ssbd/NaiveBayes'; return false;}">https://w3id.org/ssbd/NaiveBayes</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NaiveBayes</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A family of supervised learning algorithms used for classification problems, such as spam detection and sentiment analysis.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Classification' onclick="if(!document.getElementById('Classification')){window.location.href='https://w3id.org/ssbd/Classification'; return false;}">Classification</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NaturalLanguageClassification"></div>
+
+
+NaturalLanguageClassification
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageClassification' onclick="if(!document.getElementById('NaturalLanguageClassification')){window.location.href='https://w3id.org/ssbd/NaturalLanguageClassification'; return false;}">https://w3id.org/ssbd/NaturalLanguageClassification</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NaturalLanguageClassification</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A natural language understandig model that automatically assigns predefined categories, tags, or labels to unstructured text.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageUnderstanding' onclick="if(!document.getElementById('NaturalLanguageUnderstanding')){window.location.href='https://w3id.org/ssbd/NaturalLanguageUnderstanding'; return false;}">NaturalLanguageUnderstanding</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NaturalLanguageGeneration"></div>
+
+
+NaturalLanguageGeneration
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageGeneration' onclick="if(!document.getElementById('NaturalLanguageGeneration')){window.location.href='https://w3id.org/ssbd/NaturalLanguageGeneration'; return false;}">https://w3id.org/ssbd/NaturalLanguageGeneration</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NaturalLanguageGeneration</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A subfield of natural language processing (NLP) that automatically converts structured data or input into human-like written or spoken text.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageProcessingModel' onclick="if(!document.getElementById('NaturalLanguageProcessingModel')){window.location.href='https://w3id.org/emmo/hume#NaturalLanguageProcessingModel'; return false;}">NaturalLanguageProcessingModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#TextGeneration' onclick="if(!document.getElementById('TextGeneration')){window.location.href='https://w3id.org/ssbd/TextGeneration'; return false;}">TextGeneration</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NaturalLanguageProcessingModel"></div>
+
+
+NaturalLanguageProcessingModel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageProcessingModel' onclick="if(!document.getElementById('NaturalLanguageProcessingModel')){window.location.href='https://w3id.org/emmo/hume#NaturalLanguageProcessingModel'; return false;}">https://w3id.org/emmo/hume#NaturalLanguageProcessingModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NaturalLanguageProcessingModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An AI model that understands and generates human language.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PerceptionModel' onclick="if(!document.getElementById('PerceptionModel')){window.location.href='https://w3id.org/ssbd/PerceptionModel'; return false;}">PerceptionModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageUnderstanding' onclick="if(!document.getElementById('NaturalLanguageUnderstanding')){window.location.href='https://w3id.org/ssbd/NaturalLanguageUnderstanding'; return false;}">NaturalLanguageUnderstanding</a>, <a href='#NaturalLanguageGeneration' onclick="if(!document.getElementById('NaturalLanguageGeneration')){window.location.href='https://w3id.org/ssbd/NaturalLanguageGeneration'; return false;}">NaturalLanguageGeneration</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   Chatbots
+
+
+
+.. raw:: html
+
+   <div id="NaturalLanguageUnderstanding"></div>
+
+
+NaturalLanguageUnderstanding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageUnderstanding' onclick="if(!document.getElementById('NaturalLanguageUnderstanding')){window.location.href='https://w3id.org/ssbd/NaturalLanguageUnderstanding'; return false;}">https://w3id.org/ssbd/NaturalLanguageUnderstanding</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">NaturalLanguageUnderstanding</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A subfield natural language processing (NLP) that enables machines to comprehend the intent, sentiment, and context behind human language.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageProcessingModel' onclick="if(!document.getElementById('NaturalLanguageProcessingModel')){window.location.href='https://w3id.org/emmo/hume#NaturalLanguageProcessingModel'; return false;}">NaturalLanguageProcessingModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#QuestionAnswering' onclick="if(!document.getElementById('QuestionAnswering')){window.location.href='https://w3id.org/ssbd/QuestionAnswering'; return false;}">QuestionAnswering</a>, <a href='#NaturalLanguageClassification' onclick="if(!document.getElementById('NaturalLanguageClassification')){window.location.href='https://w3id.org/ssbd/NaturalLanguageClassification'; return false;}">NaturalLanguageClassification</a>, <a href='#ContentExtraction' onclick="if(!document.getElementById('ContentExtraction')){window.location.href='https://w3id.org/ssbd/ContentExtraction'; return false;}">ContentExtraction</a>, <a href='#MachineTranslation' onclick="if(!document.getElementById('MachineTranslation')){window.location.href='https://w3id.org/ssbd/MachineTranslation'; return false;}">MachineTranslation</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ObjectDetection"></div>
+
+
+ObjectDetection
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ObjectDetection' onclick="if(!document.getElementById('ObjectDetection')){window.location.href='https://w3id.org/ssbd/ObjectDetection'; return false;}">https://w3id.org/ssbd/ObjectDetection</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ObjectDetection</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A computer vision model that combines image classification and localization to identify, label, and locate multiple objects within images or videos.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ComputerVision' onclick="if(!document.getElementById('ComputerVision')){window.location.href='https://w3id.org/ssbd/ComputerVision'; return false;}">ComputerVision</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PerceptionModel"></div>
+
+
+PerceptionModel
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PerceptionModel' onclick="if(!document.getElementById('PerceptionModel')){window.location.href='https://w3id.org/ssbd/PerceptionModel'; return false;}">https://w3id.org/ssbd/PerceptionModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PerceptionModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">KnowledgeBasedInferenceEngine</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI model that interact with the external world and process sensory information.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ArtificialIntelligenceModel' onclick="if(!document.getElementById('ArtificialIntelligenceModel')){window.location.href='https://w3id.org/emmo/hume#ArtificialIntelligenceModel'; return false;}">ArtificialIntelligenceModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ComputerVision' onclick="if(!document.getElementById('ComputerVision')){window.location.href='https://w3id.org/ssbd/ComputerVision'; return false;}">ComputerVision</a>, <a href='#NaturalLanguageProcessingModel' onclick="if(!document.getElementById('NaturalLanguageProcessingModel')){window.location.href='https://w3id.org/emmo/hume#NaturalLanguageProcessingModel'; return false;}">NaturalLanguageProcessingModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PhysicsBasedModel"></div>
+
+
+PhysicsBasedModel
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PhysicsBasedModel' onclick="if(!document.getElementById('PhysicsBasedModel')){window.location.href='https://w3id.org/emmo/hume#PhysicsBasedModel'; return false;}">https://w3id.org/emmo/hume#PhysicsBasedModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PhysicsBasedModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A mathematical model based on a fundamental physics theory which defines the relations between physics quantities of an entity.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#MaterialsModel' onclick="if(!document.getElementById('MaterialsModel')){window.location.href='https://w3id.org/emmo/hume#MaterialsModel'; return false;}">MaterialsModel</a>, <a href='#PhysicsEquation' onclick="if(!document.getElementById('PhysicsEquation')){window.location.href='https://w3id.org/emmo/hume#PhysicsEquation'; return false;}">PhysicsEquation</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PhysicsEquation"></div>
+
+
+PhysicsEquation
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PhysicsEquation' onclick="if(!document.getElementById('PhysicsEquation')){window.location.href='https://w3id.org/emmo/hume#PhysicsEquation'; return false;}">https://w3id.org/emmo/hume#PhysicsEquation</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PhysicsEquation</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An 'equation' that stands for a 'physical_law' by mathematically defining the relations between physics_quantities.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PhysicsBasedModel' onclick="if(!document.getElementById('PhysicsBasedModel')){window.location.href='https://w3id.org/emmo/hume#PhysicsBasedModel'; return false;}">PhysicsBasedModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   The Newton's equation of motion.
+   The Schrödinger equation.
+   The Navier-Stokes equation.
+
+
+
+.. raw:: html
+
+   <div id="PlanningModel"></div>
+
+
+PlanningModel
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PlanningModel' onclick="if(!document.getElementById('PlanningModel')){window.location.href='https://w3id.org/ssbd/PlanningModel'; return false;}">https://w3id.org/ssbd/PlanningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PlanningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">Planning</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">System for intelligent planning and scheduling of tasks.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PredictionLearningModel"></div>
+
+
+PredictionLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PredictionLearningModel' onclick="if(!document.getElementById('PredictionLearningModel')){window.location.href='https://w3id.org/ssbd/PredictionLearningModel'; return false;}">https://w3id.org/ssbd/PredictionLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PredictionLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">PredictiveModelling</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A branch of supervised learning that uses historical data, statistical algorithms, and data mining techniques to identify patterns and forecast future outcomes.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#SupervisedLearningModel' onclick="if(!document.getElementById('SupervisedLearningModel')){window.location.href='https://w3id.org/ssbd/SupervisedLearningModel'; return false;}">SupervisedLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Bagging' onclick="if(!document.getElementById('Bagging')){window.location.href='https://w3id.org/ssbd/Bagging'; return false;}">Bagging</a>, <a href='#RandomForest' onclick="if(!document.getElementById('RandomForest')){window.location.href='https://w3id.org/ssbd/RandomForest'; return false;}">RandomForest</a>, <a href='#XGBoostRegessor' onclick="if(!document.getElementById('XGBoostRegessor')){window.location.href='https://w3id.org/ssbd/XGBoostRegessor'; return false;}">XGBoostRegressor</a>, <a href='#Boosting' onclick="if(!document.getElementById('Boosting')){window.location.href='https://w3id.org/ssbd/Boosting'; return false;}">Boosting</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PrincipalComponentAnalysis"></div>
+
+
+PrincipalComponentAnalysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PrincipalComponentAnalysis' onclick="if(!document.getElementById('PrincipalComponentAnalysis')){window.location.href='https://w3id.org/ssbd/PrincipalComponentAnalysis'; return false;}">https://w3id.org/ssbd/PrincipalComponentAnalysis</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">PrincipalComponentAnalysis</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">linear feature extraction model that transforms data into a new set of variables (principal components) that maximize variance.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DimensionalityReduction' onclick="if(!document.getElementById('DimensionalityReduction')){window.location.href='https://w3id.org/ssbd/DimensionalityReduction'; return false;}">DimensionalityReduction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ProbabilityModel"></div>
+
+
+ProbabilityModel
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ProbabilityModel' onclick="if(!document.getElementById('ProbabilityModel')){window.location.href='https://w3id.org/ssbd/ProbabilityModel'; return false;}">https://w3id.org/ssbd/ProbabilityModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ProbabilityModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">InductiveReasoning</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value">Anastasopoulos A, Chiang D, Duong L (2016) An unsupervised probability model for speech-to-translation alignment of low-resource languages. arXiv preprint arXiv:1609.08139.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">AI system based on the probabilistic relationships between variables based on mathematical models.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">Generalizes from specific observations, identifying patterns to predict outcomes (probabilistic).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#CognitionAndLearningModel' onclick="if(!document.getElementById('CognitionAndLearningModel')){window.location.href='https://w3id.org/ssbd/CognitionAndLearningModel'; return false;}">CognitionAndLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="QSARModel"></div>
+
+
+QSARModel
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#QSARModel' onclick="if(!document.getElementById('QSARModel')){window.location.href='https://w3id.org/ssbd/QSARModel'; return false;}">https://w3id.org/ssbd/QSARModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">QSARModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">seeAlso</span></td>
+    <td class="element-table-value"><a href='https://www.oecd.org/en/topics/sub-issues/assessment-of-chemicals/quantitative-structure-activity-relationships-project.html'>https://www.oecd.org/en/topics/sub-issues/assessment-of-chemicals/quantitative-structure-activity-relationships-project.html</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A mathematical model (often a statistical correlation) relating one or more quantitative parameters derived from chemical structure to a quantitative measure of a property or activity (e.g. related to physical-chemical properties, ecotoxicology, environmental fate and transport, and human health hazards). QSARs are quantitative models yielding a continuous or categorical result.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">The aim of a QSAR model is typically to reduce time, monetary cost and needed animal testing., To facilitate practical application of (Q)SAR approaches in regulatory contexts by governments and industry and to improve their regulatory acceptance, the OECD (Q)SAR project has developed various outcomes such as the principles for the validation of (Q)SAR models, guidance documents as well as the QSAR Toolbox.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="QuestionAnswering"></div>
+
+
+QuestionAnswering
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#QuestionAnswering' onclick="if(!document.getElementById('QuestionAnswering')){window.location.href='https://w3id.org/ssbd/QuestionAnswering'; return false;}">https://w3id.org/ssbd/QuestionAnswering</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">QuestionAnswering</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A subfield of natural language processing and information retrieval that focuses on building systems capable of automatically answering questions posed by humans in natural language.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageUnderstanding' onclick="if(!document.getElementById('NaturalLanguageUnderstanding')){window.location.href='https://w3id.org/ssbd/NaturalLanguageUnderstanding'; return false;}">NaturalLanguageUnderstanding</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="RandomForest"></div>
+
+
+RandomForest
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#RandomForest' onclick="if(!document.getElementById('RandomForest')){window.location.href='https://w3id.org/ssbd/RandomForest'; return false;}">https://w3id.org/ssbd/RandomForest</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">RandomForest</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A prediction learning model for classification and regression that builds multiple decision trees during training.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PredictionLearningModel' onclick="if(!document.getElementById('PredictionLearningModel')){window.location.href='https://w3id.org/ssbd/PredictionLearningModel'; return false;}">PredictionLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="RecurrentNeuralNetwork"></div>
+
+
+RecurrentNeuralNetwork
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#RecurrentNeuralNetwork' onclick="if(!document.getElementById('RecurrentNeuralNetwork')){window.location.href='https://w3id.org/ssbd/RecurrentNeuralNetwork'; return false;}">https://w3id.org/ssbd/RecurrentNeuralNetwork</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">RecurrentNeuralNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Neural network designed for sequential or time-series data, featuring feedback connections that allow information to persist.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="RegressionModel"></div>
+
+
+RegressionModel
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#RegressionModel' onclick="if(!document.getElementById('RegressionModel')){window.location.href='https://w3id.org/ssbd/RegressionModel'; return false;}">https://w3id.org/ssbd/RegressionModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">RegressionModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A supervised learning model used to predict continuous, numerical output values based on labeled training data.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#SupervisedLearningModel' onclick="if(!document.getElementById('SupervisedLearningModel')){window.location.href='https://w3id.org/ssbd/SupervisedLearningModel'; return false;}">SupervisedLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#StepwiseRegressionModel' onclick="if(!document.getElementById('StepwiseRegressionModel')){window.location.href='https://w3id.org/ssbd/StepwiseRegressionModel'; return false;}">StepwiseRegressionModel</a>, <a href='#LogisticRegressionModel' onclick="if(!document.getElementById('LogisticRegressionModel')){window.location.href='https://w3id.org/ssbd/LogisticRegressionModel'; return false;}">LogisticRegressionModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="ReinforcedLearningModel"></div>
+
+
+ReinforcedLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ReinforcedLearningModel' onclick="if(!document.getElementById('ReinforcedLearningModel')){window.location.href='https://w3id.org/ssbd/ReinforcedLearningModel'; return false;}">https://w3id.org/ssbd/ReinforcedLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ReinforcedLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">ReinforcementLearning</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A machine learning model where an intelligent "agent" learns to make optimal, sequential decisions by interacting with an environment, using trial-and-error to maximize cumulative rewards.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#HeuristicLearningModel' onclick="if(!document.getElementById('HeuristicLearningModel')){window.location.href='https://w3id.org/ssbd/HeuristicLearningModel'; return false;}">HeuristicLearningModel</a>, <a href='#MonteCarloLearningModel' onclick="if(!document.getElementById('MonteCarloLearningModel')){window.location.href='https://w3id.org/ssbd/MonteCarloLearningModel'; return false;}">MonteCarloLearningModel</a>, <a href='#DynamicProgramming' onclick="if(!document.getElementById('DynamicProgramming')){window.location.href='https://w3id.org/ssbd/DynamicProgramming'; return false;}">DynamicProgramming</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="RecommenderSystem"></div>
+   <div id="RemommenderSystem"></div>
+
+RemommenderSystem
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#RecommenderSystem' onclick="if(!document.getElementById('RecommenderSystem')){window.location.href='https://w3id.org/ssbd/RecommenderSystem'; return false;}">https://w3id.org/ssbd/RecommenderSystem</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">RemommenderSystem</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">Recommendation</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A information filtering system using supervised learning to suggest items most relevant to a particular user.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#SupervisedLearningModel' onclick="if(!document.getElementById('SupervisedLearningModel')){window.location.href='https://w3id.org/ssbd/SupervisedLearningModel'; return false;}">SupervisedLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#CollaborativeFiltering' onclick="if(!document.getElementById('CollaborativeFiltering')){window.location.href='https://w3id.org/ssbd/CollaborativeFiltering'; return false;}">CollaborativeFiltering</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Replica"></div>
+
+
+Replica
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Replica' onclick="if(!document.getElementById('Replica')){window.location.href='https://w3id.org/emmo/hume#Replica'; return false;}">https://w3id.org/emmo/hume#Replica</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Replica</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A model that not only resembles the object, but also can express some of the object's functions.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#FunctionalIcon' onclick="if(!document.getElementById('FunctionalIcon')){window.location.href='https://w3id.org/emmo/hume#FunctionalIcon'; return false;}">FunctionalModel</a>, <a href='#ResemblanceIcon' onclick="if(!document.getElementById('ResemblanceIcon')){window.location.href='https://w3id.org/emmo/hume#ResemblanceIcon'; return false;}">ResemblanceModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A small scale replica of a plane tested in a wind gallery shares the same functionality in terms of aerodynamic behaviour of the bigger one.
+
+   Pinocchio is a functional model of a boy since it imitates the external behaviour without having the internal biological structure of a human being (it is made of magic wood...).
+
+
+
+.. raw:: html
+
+   <div id="ResemblanceIcon"></div>
+   <div id="ResemblanceModel"></div>
+
+ResemblanceModel
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#ResemblanceIcon' onclick="if(!document.getElementById('ResemblanceIcon')){window.location.href='https://w3id.org/emmo/hume#ResemblanceIcon'; return false;}">https://w3id.org/emmo/hume#ResemblanceIcon</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ResemblanceModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">ResemblanceIcon</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A model that mimics the spatial or temporal shape of the object.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">A model that focus on WHERE/WHEN the object is, in the sense of spatial or temporal shape., The subclass of model inspired by Peirceian category a) the image, which depends on a simple quality (e.g. picture).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Model' onclick="if(!document.getElementById('Model')){window.location.href='https://w3id.org/ssbd/Model'; return false;}">Model</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Replica' onclick="if(!document.getElementById('Replica')){window.location.href='https://w3id.org/emmo/hume#Replica'; return false;}">Replica</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+.. admonition:: Example
+
+
+   A geographical map that imitates the shape of the landscape and its properties at a specific historical time.
+
+
+
+.. raw:: html
+
+   <div id="SelfTrainingModel"></div>
+
+
+SelfTrainingModel
+^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#SelfTrainingModel' onclick="if(!document.getElementById('SelfTrainingModel')){window.location.href='https://w3id.org/ssbd/SelfTrainingModel'; return false;}">https://w3id.org/ssbd/SelfTrainingModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">SelfTrainingModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A semi-supervised machine learning model that improves model performance by iteratively labeling unlabeled data.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#SemiSupervicedLearningModel' onclick="if(!document.getElementById('SemiSupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/SemiSupervicedLearningModel'; return false;}">SemiSupervicedLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="SemiSupervicedLearningModel"></div>
+
+
+SemiSupervicedLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#SemiSupervicedLearningModel' onclick="if(!document.getElementById('SemiSupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/SemiSupervicedLearningModel'; return false;}">https://w3id.org/ssbd/SemiSupervicedLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">SemiSupervicedLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A machine learning paradigm that trains models using a small amount of labeled data combined with a large volume of unlabeled data.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#SelfTrainingModel' onclick="if(!document.getElementById('SelfTrainingModel')){window.location.href='https://w3id.org/ssbd/SelfTrainingModel'; return false;}">SelfTrainingModel</a>, <a href='#GraphBasedLearningModel' onclick="if(!document.getElementById('GraphBasedLearningModel')){window.location.href='https://w3id.org/ssbd/GraphBasedLearningModel'; return false;}">GraphBasedLearningModel</a>, <a href='#LowDensitySeparationModel' onclick="if(!document.getElementById('LowDensitySeparationModel')){window.location.href='https://w3id.org/ssbd/LowDensitySeparationModel'; return false;}">LowDensitySeparationModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="SiameseNeuralNetwork"></div>
+
+
+SiameseNeuralNetwork
+^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#SiameseNeuralNetwork' onclick="if(!document.getElementById('SiameseNeuralNetwork')){window.location.href='https://w3id.org/ssbd/SiameseNeuralNetwork'; return false;}">https://w3id.org/ssbd/SiameseNeuralNetwork</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">SiameseNeuralNetwork</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Class of neural network architectures containing two or more identical subnetworks with shared weights.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="Software"></div>
+
+
+Software
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#Software' onclick="if(!document.getElementById('Software')){window.location.href='https://w3id.org/ssbd/Software'; return false;}">https://w3id.org/ssbd/Software</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">Software</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='http://www.w3.org/2002/07/owl#Thing'>Thing</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#DataProcessingSoftware' onclick="if(!document.getElementById('DataProcessingSoftware')){window.location.href='https://w3id.org/emmo/hume#DataProcessingSoftware'; return false;}">DataProcessingSoftware</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="StatisticalModel"></div>
+
+
+StatisticalModel
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#StatisticalModel' onclick="if(!document.getElementById('StatisticalModel')){window.location.href='https://w3id.org/emmo/hume#StatisticalModel'; return false;}">https://w3id.org/emmo/hume#StatisticalModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">StatisticalModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A mathematical model that embodies a set of statistical assumptions concerning the generation of sample data (and similar data from a larger population).</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MathematicalModel' onclick="if(!document.getElementById('MathematicalModel')){window.location.href='https://w3id.org/emmo/hume#MathematicalModel'; return false;}">MathematicalModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#StatisticalTest' onclick="if(!document.getElementById('StatisticalTest')){window.location.href='https://w3id.org/emmo/hume#StatisticalTest'; return false;}">StatisticalTest</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="StatisticalTest"></div>
+
+
+StatisticalTest
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#StatisticalTest' onclick="if(!document.getElementById('StatisticalTest')){window.location.href='https://w3id.org/emmo/hume#StatisticalTest'; return false;}">https://w3id.org/emmo/hume#StatisticalTest</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">StatisticalTest</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A statistical model for analyzing data to determine if research results are significant and to decide whether to reject the null hypothesis, assessing if findings occurred by chance.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#StatisticalModel' onclick="if(!document.getElementById('StatisticalModel')){window.location.href='https://w3id.org/emmo/hume#StatisticalModel'; return false;}">StatisticalModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#CumulativeHypergeometricTest' onclick="if(!document.getElementById('CumulativeHypergeometricTest')){window.location.href='https://w3id.org/emmo/hume#CumulativeHypergeometricTest'; return false;}">CumulativeHypergeometricTest</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="StepwiseRegressionModel"></div>
+
+
+StepwiseRegressionModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#StepwiseRegressionModel' onclick="if(!document.getElementById('StepwiseRegressionModel')){window.location.href='https://w3id.org/ssbd/StepwiseRegressionModel'; return false;}">https://w3id.org/ssbd/StepwiseRegressionModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">StepwiseRegressionModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A regression model of fitting regression models in which the choice of predictive variables is carried out by an automatic procedure.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#RegressionModel' onclick="if(!document.getElementById('RegressionModel')){window.location.href='https://w3id.org/ssbd/RegressionModel'; return false;}">RegressionModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="StructureManipulationModel"></div>
+
+
+StructureManipulationModel
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#StructureManipulationModel' onclick="if(!document.getElementById('StructureManipulationModel')){window.location.href='https://w3id.org/emmo/hume#StructureManipulationModel'; return false;}">https://w3id.org/emmo/hume#StructureManipulationModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">StructureManipulationModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A physics based model that manipulates atomic structures.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#AtomisticModel' onclick="if(!document.getElementById('AtomisticModel')){window.location.href='https://w3id.org/emmo/hume#AtomisticModel'; return false;}">AtomisticModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="SupervisedLearningModel"></div>
+
+
+SupervisedLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#SupervisedLearningModel' onclick="if(!document.getElementById('SupervisedLearningModel')){window.location.href='https://w3id.org/ssbd/SupervisedLearningModel'; return false;}">https://w3id.org/ssbd/SupervisedLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">SupervisedLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A machine learning paradigm where models are trained using labeled data (input data paired with the correct output) to learn mapping functions that predict outcomes for new, unseen data.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#RegressionModel' onclick="if(!document.getElementById('RegressionModel')){window.location.href='https://w3id.org/ssbd/RegressionModel'; return false;}">RegressionModel</a>, <a href='#PredictionLearningModel' onclick="if(!document.getElementById('PredictionLearningModel')){window.location.href='https://w3id.org/ssbd/PredictionLearningModel'; return false;}">PredictionLearningModel</a>, <a href='#RecommenderSystem' onclick="if(!document.getElementById('RecommenderSystem')){window.location.href='https://w3id.org/ssbd/RecommenderSystem'; return false;}">RemommenderSystem</a>, <a href='#Classification' onclick="if(!document.getElementById('Classification')){window.location.href='https://w3id.org/ssbd/Classification'; return false;}">Classification</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="SupportVectorMachine"></div>
+
+
+SupportVectorMachine
+^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#SupportVectorMachine' onclick="if(!document.getElementById('SupportVectorMachine')){window.location.href='https://w3id.org/ssbd/SupportVectorMachine'; return false;}">https://w3id.org/ssbd/SupportVectorMachine</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">SupportVectorMachine</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">SVM</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Supervised machine learning algorithms used for classification, regression, and outlier detection.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#Classification' onclick="if(!document.getElementById('Classification')){window.location.href='https://w3id.org/ssbd/Classification'; return false;}">Classification</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="TDistributedStochasticNeighborEmbedding"></div>
+
+
+TDistributedStochasticNeighborEmbedding
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#TDistributedStochasticNeighborEmbedding' onclick="if(!document.getElementById('TDistributedStochasticNeighborEmbedding')){window.location.href='https://w3id.org/ssbd/TDistributedStochasticNeighborEmbedding'; return false;}">https://w3id.org/ssbd/TDistributedStochasticNeighborEmbedding</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">TDistributedStochasticNeighborEmbedding</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">altLabel</span></td>
+    <td class="element-table-value">t-SNE</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A non-linear dimensionality reduction model excellent for visualizing high-dimensional data in 2D or 3D.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DimensionalityReduction' onclick="if(!document.getElementById('DimensionalityReduction')){window.location.href='https://w3id.org/ssbd/DimensionalityReduction'; return false;}">DimensionalityReduction</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="TargetTracking"></div>
+
+
+TargetTracking
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#TargetTracking' onclick="if(!document.getElementById('TargetTracking')){window.location.href='https://w3id.org/ssbd/TargetTracking'; return false;}">https://w3id.org/ssbd/TargetTracking</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">TargetTracking</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A computer vision model for automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#ComputerVision' onclick="if(!document.getElementById('ComputerVision')){window.location.href='https://w3id.org/ssbd/ComputerVision'; return false;}">ComputerVision</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="TextGeneration"></div>
+
+
+TextGeneration
+^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#TextGeneration' onclick="if(!document.getElementById('TextGeneration')){window.location.href='https://w3id.org/ssbd/TextGeneration'; return false;}">https://w3id.org/ssbd/TextGeneration</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">TextGeneration</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Natural language subfield that focuses on automatically producing human-like, coherent, and contextually relevant text or speech from structured or unstructured data.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#NaturalLanguageGeneration' onclick="if(!document.getElementById('NaturalLanguageGeneration')){window.location.href='https://w3id.org/ssbd/NaturalLanguageGeneration'; return false;}">NaturalLanguageGeneration</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#LargeLanguageModel' onclick="if(!document.getElementById('LargeLanguageModel')){window.location.href='https://w3id.org/ssbd/LargeLanguageModel'; return false;}">LargeLanguageModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="TransformerAI"></div>
+
+
+TransformerAI
+^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#TransformerAI' onclick="if(!document.getElementById('TransformerAI')){window.location.href='https://w3id.org/ssbd/TransformerAI'; return false;}">https://w3id.org/ssbd/TransformerAI</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">TransformerAI</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Deep-learning architecture introduced by Google in 2017 that power modern generative AI like ChatGPT and Gemini.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value"></td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#DeepLearningModel' onclick="if(!document.getElementById('DeepLearningModel')){window.location.href='https://w3id.org/ssbd/DeepLearningModel'; return false;}">DeepLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#ModernGenerativeAIModel' onclick="if(!document.getElementById('ModernGenerativeAIModel')){window.location.href='https://w3id.org/ssbd/ModernGenerativeAIModel'; return false;}">ModernGenerativeAIModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="UnsupervicedLearningModel"></div>
+
+
+UnsupervicedLearningModel
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#UnsupervicedLearningModel' onclick="if(!document.getElementById('UnsupervicedLearningModel')){window.location.href='https://w3id.org/ssbd/UnsupervicedLearningModel'; return false;}">https://w3id.org/ssbd/UnsupervicedLearningModel</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">UnsupervicedLearningModel</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">A type of machine learning that analyzes and clusters unlabeled datasets to discover hidden patterns, structures, or relationships without human intervention.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#MachineLearningModel' onclick="if(!document.getElementById('MachineLearningModel')){window.location.href='https://w3id.org/emmo/hume#MachineLearningModel'; return false;}">MachineLearningModel</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#Clustering' onclick="if(!document.getElementById('Clustering')){window.location.href='https://w3id.org/ssbd/Clustering'; return false;}">Clustering</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="XGBoostRegessor"></div>
+   <div id="XGBoostRegressor"></div>
+
+XGBoostRegressor
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#XGBoostRegessor' onclick="if(!document.getElementById('XGBoostRegessor')){window.location.href='https://w3id.org/ssbd/XGBoostRegessor'; return false;}">https://w3id.org/ssbd/XGBoostRegessor</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">XGBoostRegressor</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">An optimized machine learning algorithm that uses an ensemble of decision trees within a gradient boosting framework to predict continuous numerical values.</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">scopeNote</span></td>
+    <td class="element-table-value">XGBoost Regressor is widely used in data science competitions and real-world applications due to its speed, performance, and features like built-in regularization and automatic handling of missing values.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">subClassOf</span></td>
+    <td class="element-table-value"><a href='#PredictionLearningModel' onclick="if(!document.getElementById('PredictionLearningModel')){window.location.href='https://w3id.org/ssbd/PredictionLearningModel'; return false;}">PredictionLearningModel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+

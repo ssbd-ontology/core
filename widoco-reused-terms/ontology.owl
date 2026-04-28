@@ -1,0 +1,896 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ssbd/core/reused-terms#"
+     xml:base="https://w3id.org/ssbd/core/reused-terms"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/widoco/vocab#">
+    <owl:Ontology rdf:about="https://w3id.org/ssbd/core/reused-terms">
+        <owl:versionIRI rdf:resource="https://w3id.org/ssbd/core/0.0.1/reused-terms"/>
+        <terms:abstract xml:lang="en">Terms from standard vocabularies reused by the SSbD Core Ontology.</terms:abstract>
+        <terms:title xml:lang="en">Reused terms</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format">
+        <vann:usageNote xml:lang="en">dcat:mediaType SHOULD be used if the type of the distribution is defined by [IANA](https://www.w3.org/TR/vocab-dcat-3/#bib-iana-media-types).</vann:usageNote>
+        <skos:definition xml:lang="en">The file format of the Distribution.</skos:definition>
+        <skos:prefLabel xml:lang="en">format</skos:prefLabel>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <vann:usageNote xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</vann:usageNote>
+        <skos:definition xml:lang="en">URI or other unique identifier of the resource being described.</skos:definition>
+        <skos:prefLabel xml:lang="en">identifier</skos:prefLabel>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:comment xml:lang="en">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</rdfs:comment>
+        <skos:definition xml:lang="en">A related resource from which the described resource is derived.</skos:definition>
+        <skos:prefLabel>source</skos:prefLabel>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:comment>Further information about the subject resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+        <rdfs:label>seeAlso</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <vann:usageNote xml:lang="en">This property can be repeated for parallel language versions of the description.</vann:usageNote>
+        <skos:definition xml:lang="en">A free-text account of the resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">definition</skos:prefLabel>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <skos:altLabel xml:lang="en">scope note</skos:altLabel>
+        <skos:definition xml:lang="en">A note that helps to clarify the meaning and/or the use of a concept.</skos:definition>
+        <skos:prefLabel xml:lang="en">scopeNote</skos:prefLabel>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL">
+        <vann:usageNote xml:lang="en">The resource at the access URL may contain information about how to get the Dataset.</vann:usageNote>
+        <skos:definition xml:lang="en">A URL that gives access to a Distribution of the Dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred.</skos:definition>
+        <skos:prefLabel xml:lang="en">accessURL</skos:prefLabel>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword">
+        <skos:definition xml:lang="en">A keyword or tag describing the resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">keyword</skos:prefLabel>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#version -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#version">
+        <vann:usageNote xml:lang="en">DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]&apos;s Best Practice 7: Provide a version indicator.</vann:usageNote>
+        <skos:definition xml:lang="en">Version indicator (name or identifier) of a resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">version</skos:prefLabel>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#category -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#component -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#constraints -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#constraints"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#dm -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#dm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#inverse -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#inverse"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#n -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#n"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#introduction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#introduction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/accessRights">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <vann:usageNote xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies. The following preferred Rights Statement individuals are defined: `accr:PUBLIC`, `accr:NON_PUBLIC`, `accr:CONFIDENTIAL`, `accr:RESTRICTED`, `accr:SENSITIVE`</vann:usageNote>
+        <skos:definition xml:lang="en">Information about who can access the resource or an indication of its security status.</skos:definition>
+        <skos:prefLabel xml:lang="en">accessRights</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <skos:definition xml:lang="en">An entity responsible for producing the resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">creator</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+        <skos:definition xml:lang="en">A licence under which the resource is made available.</skos:definition>
+        <skos:prefLabel xml:lang="en">license</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/rightsHolder">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:description xml:lang="en">A person or organization owning or managing rights over the resource.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">rightsHolder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#theme">
+        <rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="en">theme</rdfs:label>
+        <skos:definition xml:lang="en">A main category of the resource. A resource can have multiple themes.</skos:definition>
+        <skos:editorialNote xml:lang="en">Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog.</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>used</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:inverse>wasUsedBy</prov:inverse>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasAssociatedWith</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:inverse>wasAssociateFor</prov:inverse>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">Attribution is the ascribing of an entity to an agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasAttributedTo</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">Attribution is the ascribing of an entity to an agent.</prov:definition>
+        <prov:inverse>contributed</prov:inverse>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInformedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasInformedBy</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:inverse>informed</prov:inverse>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/emmo/application/datadoc#curator -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/emmo/application/datadoc#curator">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <vann:usageNote xml:lang="en">Use `ddoc:curationDate` to refer to the date of curation.</vann:usageNote>
+        <skos:definition xml:lang="en">The agent that curated the resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">curator</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/datamodel#datamodel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/emmo/domain/datamodel#datamodel">
+        <rdfs:range rdf:resource="https://w3id.org/emmo/domain/datamodel#DataModel"/>
+        <skos:altLabel xml:lang="en">datamodelIRI</skos:altLabel>
+        <skos:definition xml:lang="en">URI of a data model describing the datum/properties of a dataset.</skos:definition>
+        <skos:prefLabel xml:lang="en">datamodel</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <skos:altLabel xml:lang="en">issued</skos:altLabel>
+        <skos:definition xml:lang="en">The date of formal issuance (e.g., publication) of the resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">releaseDate</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <skos:definition xml:lang="en">A URL that is a direct link to a downloadable file in a given format. The format is indicated by the distribution&apos;s &apos;dterms:format&apos; and/or &apos;dcat:mediaType&apos;.</skos:definition>
+        <skos:prefLabel xml:lang="en">downloadURL</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/datamodel#datumDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/emmo/domain/datamodel#datumDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition xml:lang="en">Human-readable description of the datum/property.</skos:definition>
+        <skos:prefLabel xml:lang="en">datumDescription</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/datamodel#datumName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/emmo/domain/datamodel#datumName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition xml:lang="en">Name of the datum/property.</skos:definition>
+        <skos:prefLabel xml:lang="en">datumName</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Typically the variable name used in a program or web interface. A string without spaces.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/datamodel#datumShape -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/emmo/domain/datamodel#datumShape">
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON"/>
+        <skos:definition xml:lang="en">Unit of the datum/property.</skos:definition>
+        <skos:prefLabel xml:lang="en">datumShape</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Leave empty if scalar.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">List of the dimension names if the datum/property is multi-dimensional. Leave empty if it is a scalar.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/datamodel#datumType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/emmo/domain/datamodel#datumType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition xml:lang="en">Type of the datum/property.</skos:definition>
+        <skos:prefLabel xml:lang="en">datumType</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Use one of bool, int, float, string. For int and float the number of bits can be added. E.g. int32, float64.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/datamodel#datumUnit -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/emmo/domain/datamodel#datumUnit">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <skos:definition xml:lang="en">Unit of the datum/property.</skos:definition>
+        <skos:prefLabel xml:lang="en">datumUnit</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Leave empty if dimensionless.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Use standard SI symbols.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/LicenseDocument -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LicenseDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/RightsStatement -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/RightsStatement"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <vann:usageNote xml:lang="en">This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.</vann:usageNote>
+        <skos:definition xml:lang="en">A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</skos:definition>
+        <skos:prefLabel xml:lang="en">Distribution</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource">
+        <rdfs:comment xml:lang="en">Resource published or curated by a single agent.</rdfs:comment>
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+        <skos:definition xml:lang="en">Resource published or curated by a single agent.</skos:definition>
+        <skos:prefLabel xml:lang="en">Resource</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. The instances of this class SHOULD be included in a catalog. The instances of this class SHOULD be included in a catalog. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dcterms:type property to indicate the specific type.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Activity</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Agent</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:definition xml:lang="en">An agent is something that bears some form of responsibility for a activity taking place, for the existence of an entity, or for another agent&apos;s aprovctivity. </prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Entity</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition xml:lang="en">An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. </prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <rdfs:comment>A document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- https://w3id.org/emmo/domain/datamodel#DataModel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/emmo/domain/datamodel#DataModel">
+        <skos:definition xml:lang="en">A data model describing the datum/properties of a dataset.</skos:definition>
+        <skos:prefLabel xml:lang="en">DataModel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emmo/hume#IntentionalAgent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/emmo/hume#IntentionalAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <skos:definition xml:lang="en">An agent that is driven by the intention to reach a defined objective in driving a process.</skos:definition>
+        <skos:prefLabel xml:lang="en">IntentionalAgent</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Intentionality will, as of today, normally apply to humans or decision systems designed by humans aimed for reaching a defined objective.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emmo/hume#UnintentionalAgent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/emmo/hume#UnintentionalAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <skos:definition xml:lang="en">An agent that is driven by the law of physics rather than the intention to reach a defined objective.</skos:definition>
+        <skos:example xml:lang="en">A catalyst.</skos:example>
+        <skos:prefLabel xml:lang="en">UnintentionalAgent</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL -->
+
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <vann:usageNote xml:lang="en">Disclosure of this data could cause damage to interested parties such as public administrations and businesses. It may refer to personal and professional information as well as to information in the context of business, commerce or trade.</vann:usageNote>
+        <rdfs:isDefinedBy rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right"/>
+        <skos:definition xml:lang="en">Information that is not disclosed.</skos:definition>
+        <skos:prefLabel xml:lang="en">confidential</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC -->
+
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <vann:usageNote xml:lang="en">This category may include resources that contain sensitive or personal information.</vann:usageNote>
+        <rdfs:isDefinedBy rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right"/>
+        <skos:definition xml:lang="en">Not publicly accessible for privacy, security or other reasons.</skos:definition>
+        <skos:prefLabel xml:lang="en">non-public</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/access-right/PUBLIC -->
+
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/access-right/PUBLIC">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <vann:usageNote xml:lang="en">Permissible obstacles include registration and request for API keys, as long as anyone can request such registration and/or API keys.</vann:usageNote>
+        <rdfs:isDefinedBy rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right"/>
+        <skos:definition xml:lang="en">Publicly accessible by everyone.</skos:definition>
+        <skos:prefLabel xml:lang="en">public</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/access-right/RESTRICTED -->
+
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/access-right/RESTRICTED">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <vann:usageNote xml:lang="en">This category may include resources that require payment, resources shared under non-disclosure agreements, resources for which the publisher or owner has not yet decided if they can be publicly released.</vann:usageNote>
+        <rdfs:isDefinedBy rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right"/>
+        <skos:definition xml:lang="en">Only available under certain conditions.</skos:definition>
+        <skos:prefLabel xml:lang="en">restricted</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/access-right/SENSITIVE -->
+
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/access-right/SENSITIVE">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <rdfs:isDefinedBy rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right"/>
+        <skos:definition xml:lang="en">Sensitive non-classified (SNC) information, information whose unauthorised disclosure could cause damage to the Commission or other interested parties such as businesses, companies, intellectual property or personal data but which is not EU classified information.</skos:definition>
+        <skos:prefLabel xml:lang="en">sensitive</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/LicenseDocument -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/LicenseDocument">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-14T00:00:00</terms:issued>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/RightsStatement -->
+
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/RightsStatement">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-14T00:00:00</terms:issued>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument">
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>
+        <rdfs:comment>A legal document giving official permission to do something with a resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">License Document</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/RightsStatement">
+        <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Rights Statement</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+        <vann:usageNote xml:lang="en">This property can be repeated for parallel language versions of the name.</vann:usageNote>
+        <skos:definition xml:lang="en">A name given to the resource.</skos:definition>
+        <skos:prefLabel xml:lang="en">title</skos:prefLabel>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1007 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ssbd:DcatDistributionShape a sh:NodeShape ;
+    sh:node ssbd:DcatResourceShape ;
+    sh:property [ sh:datatype xsd:anyURI ;
+            sh:path dcat:accessURL ],
+        [ sh:path dcterms:format ],
+        [ sh:datatype xsd:anyURI ;
+            sh:path dcat:downloadURL ] ;
+    sh:targetClass dcat:Distribution .
+
+ssbd:DctermsLicenseDocumentShape a sh:NodeShape ;
+    sh:node ssbd:DctermsRightsStatementShape ;
+    sh:targetClass dcterms:LicenseDocument .
+
+ssbd:SsbdAbductiveReasoningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdCognitionAndLearningModelShape ;
+    sh:targetClass ssbd:AbductiveReasoningModel .
+
+ssbd:SsbdAcidificationImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:AcidificationImpactAssessment .
+
+ssbd:SsbdAcuteToxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:AcuteToxicityAssessment .
+
+ssbd:SsbdAdaboostShape a sh:NodeShape ;
+    sh:node ssbd:SsbdClassificationShape ;
+    sh:targetClass ssbd:Adaboost .
+
+ssbd:SsbdAdvancedMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:AdvancedMaterial .
+
+ssbd:SsbdAmbientAirQualityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdExposureAssessmentEnvironmentShape ;
+    sh:targetClass ssbd:AmbientAirQualityAssessment .
+
+ssbd:SsbdAnalogicalReasoningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdCognitionAndLearningModelShape ;
+    sh:targetClass ssbd:AnalogicalReasoningModel .
+
+ssbd:SsbdAquaticToxicityFreshwaterShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalRiskAssessmentShape ;
+    sh:targetClass ssbd:AquaticToxicityFreshwater .
+
+ssbd:SsbdAquaticToxicityMarineShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalRiskAssessmentShape ;
+    sh:targetClass ssbd:AquaticToxicityMarine .
+
+ssbd:SsbdAutoencoderShape a sh:NodeShape ;
+    sh:node ssbd:SsbdArtificialNeuralNetworkShape,
+        ssbd:SsbdDimensionalityReductionShape ;
+    sh:targetClass ssbd:Autoencoder .
+
+ssbd:SsbdBaggingShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPredictionLearningModelShape ;
+    sh:targetClass ssbd:Bagging .
+
+ssbd:SsbdBehaviorModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:BehaviorModel .
+
+ssbd:SsbdBioaccumulationAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdExposureAssessmentEnvironmentShape ;
+    sh:targetClass ssbd:BioaccumulationAssessment .
+
+ssbd:SsbdBiocompatibleMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:BiocompatibleMaterial .
+
+ssbd:SsbdBiodegradabilityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdExposureAssessmentEnvironmentShape ;
+    sh:targetClass ssbd:BiodegradabilityAssessment .
+
+ssbd:SsbdBiodiversityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:BiodiversityAssessment .
+
+ssbd:SsbdBooleanDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSymbolicDataShape ;
+    sh:targetClass ssbd:BooleanData .
+
+ssbd:SsbdBoostingShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPredictionLearningModelShape ;
+    sh:targetClass ssbd:Boosting .
+
+ssbd:SsbdBulkModulusAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdMechanicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:BulkModulusAssessment .
+
+ssbd:SsbdByteDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdShortDataShape ;
+    sh:targetClass ssbd:ByteData .
+
+ssbd:SsbdCarcinogenicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:CarcinogenicityAssessment .
+
+ssbd:SsbdClusteringShape a sh:NodeShape ;
+    sh:node ssbd:SsbdUnsupervicedLearningModelShape ;
+    sh:targetClass ssbd:Clustering .
+
+ssbd:SsbdCollaborativeFilteringShape a sh:NodeShape ;
+    sh:node ssbd:SsbdRecommenderSystemShape ;
+    sh:targetClass ssbd:CollaborativeFiltering .
+
+ssbd:SsbdComputationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdProcessShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:Software ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasSoftware ] ;
+    sh:targetClass ssbd:Computation .
+
+ssbd:SsbdComputationalToolShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSoftwareShape ;
+    sh:targetClass ssbd:ComputationalTool .
+
+ssbd:SsbdContentExtractionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:ContentExtraction .
+
+ssbd:SsbdConvolutionNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDeepLearningModelShape ;
+    sh:targetClass ssbd:ConvolutionNeuralNetwork .
+
+ssbd:SsbdDatasetShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDataShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:Datum ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasPart ],
+        [ sh:or ( [ sh:class ssbd:Datum ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasDatum ] ;
+    sh:targetClass ssbd:Dataset .
+
+ssbd:SsbdDateDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSymbolicDataShape ;
+    sh:targetClass ssbd:DateData .
+
+ssbd:SsbdDateTimeDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSymbolicDataShape ;
+    sh:targetClass ssbd:DateTimeData .
+
+ssbd:SsbdDatumShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDataShape ;
+    sh:targetClass ssbd:Datum .
+
+ssbd:SsbdDecisionTreeShape a sh:NodeShape ;
+    sh:node ssbd:SsbdClassificationShape ;
+    sh:targetClass ssbd:DecisionTree .
+
+ssbd:SsbdDeepFeedForwardNetworkShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDeepLearningModelShape ;
+    sh:targetClass ssbd:DeepFeedForwardNetwork .
+
+ssbd:SsbdDensityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPhysicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:DensityAssessment .
+
+ssbd:SsbdDescriptionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSignShape ;
+    sh:property [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isDescriptionOf ] ;
+    sh:targetClass ssbd:Description .
+
+ssbd:SsbdDevelopmentalNeurotoxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:DevelopmentalNeurotoxicityAssessment .
+
+ssbd:SsbdDomainOfApplicabilityStatusShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPropertyShape ;
+    sh:targetClass ssbd:DomainOfApplicabilityStatus .
+
+ssbd:SsbdDoubleDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNumericalDataShape ;
+    sh:targetClass ssbd:DoubleData .
+
+ssbd:SsbdDynamicProgrammingShape a sh:NodeShape ;
+    sh:node ssbd:SsbdReinforcedLearningModelShape ;
+    sh:targetClass ssbd:DynamicProgramming .
+
+ssbd:SsbdEconomicDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:EconomicDimension .
+
+ssbd:SsbdEconomicSustainabilityDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:EconomicSustainabilityDimension .
+
+ssbd:SsbdElectronicMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:ElectronicMaterial .
+
+ssbd:SsbdEndocrineToxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:EndocrineToxicityAssessment .
+
+ssbd:SsbdEnergyMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:EnergyMaterial .
+
+ssbd:SsbdEnvironmentalDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:EnvironmentalDimension .
+
+ssbd:SsbdEnvironmentalExternalitiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdExternalitiesAssessmentShape ;
+    sh:targetClass ssbd:EnvironmentalExternalitiesAssessment .
+
+ssbd:SsbdEnvironmentalSustainabilityDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:EnvironmentalSustainabilityDimension .
+
+ssbd:SsbdExpertSystemShape a sh:NodeShape ;
+    sh:node ssbd:SsbdKnowledgeRepresentationShape ;
+    sh:targetClass ssbd:ExpertSystem .
+
+ssbd:SsbdExposureAssessmentHumanHealthShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:ExposureAssessmentHumanHealth .
+
+ssbd:SsbdExtraTreesClassifierShape a sh:NodeShape ;
+    sh:node ssbd:SsbdClassificationShape,
+        ssbd:SsbdEnsembleLearningModelShape ;
+    sh:targetClass ssbd:ExtraTreesClassifier .
+
+ssbd:SsbdFairRenumerationAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdWorkerSocialResponsibilityAssessmentShape ;
+    sh:targetClass ssbd:FairRenumerationAssessment .
+
+ssbd:SsbdFlammabiityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdIntrinsicChemicalHazardAssessmentShape ;
+    sh:targetClass ssbd:FlammabiityAssessment .
+
+ssbd:SsbdFloatDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNumericalDataShape ;
+    sh:targetClass ssbd:FloatData .
+
+ssbd:SsbdFossilFuelEnergyConsumptionAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnergyConsumptionAssessmentShape ;
+    sh:targetClass ssbd:FossilFuelEnergyConsumptionAssessment .
+
+ssbd:SsbdFreshwaterAquaticEcotoxicityImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:FreshwaterAquaticEcotoxicityImpactAssessment .
+
+ssbd:SsbdFreshwaterEutrophicationImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:FreshwaterEutrophicationImpactAssessment .
+
+ssbd:SsbdFunctionalityDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:FunctionalityDimension .
+
+ssbd:SsbdGenerativeAdversarialNetworkShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDeepLearningModelShape ;
+    sh:targetClass ssbd:GenerativeAdversarialNetwork .
+
+ssbd:SsbdGenotoxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:GenotoxicityAssessment .
+
+ssbd:SsbdGlassTransitionTemperatureAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdThermalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:GlassTransitionTemperatureAssessment .
+
+ssbd:SsbdGlobalWarmingAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:GlobalWarmingAssessment .
+
+ssbd:SsbdGraphBasedLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSemiSupervicedLearningModelShape ;
+    sh:targetClass ssbd:GraphBasedLearningModel .
+
+ssbd:SsbdGraphNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDeepLearningModelShape ;
+    sh:targetClass ssbd:GraphNeuralNetwork .
+
+ssbd:SsbdHHRAAirPollutionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHumanHealthRiskAssessmentShape ;
+    sh:targetClass ssbd:HHRAAirPollution .
+
+ssbd:SsbdHHRAChemicalSubstancesShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHumanHealthRiskAssessmentShape ;
+    sh:targetClass ssbd:HHRAChemicalSubstances .
+
+ssbd:SsbdHHRAIndoorAirPollutionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHumanHealthRiskAssessmentShape ;
+    sh:targetClass ssbd:HHRAIndoorAirPollution .
+
+ssbd:SsbdHHRASoilPollutionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHumanHealthRiskAssessmentShape ;
+    sh:targetClass ssbd:HHRASoilPollution .
+
+ssbd:SsbdHHRAWaterPollutionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHumanHealthRiskAssessmentShape ;
+    sh:targetClass ssbd:HHRAWaterPollution .
+
+ssbd:SsbdHazardCharacterisationEnvironmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardAssessmentEnvironmentShape ;
+    sh:targetClass ssbd:HazardCharacterisationEnvironment .
+
+ssbd:SsbdHazardCharacterisationHumanHealthShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardAssessmentHumanHealthShape ;
+    sh:targetClass ssbd:HazardCharacterisationHumanHealth .
+
+ssbd:SsbdHazardIdentificationEnvironmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:HazardIdentificationEnvironment .
+
+ssbd:SsbdHepatotoxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:HepatotoxicityAssessment .
+
+ssbd:SsbdHeuristicLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdReinforcedLearningModelShape ;
+    sh:targetClass ssbd:HeuristicLearningModel .
+
+ssbd:SsbdHumanToxicityCancerImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:HumanToxicityCancerImpactAssessment .
+
+ssbd:SsbdHumanToxicityNonCancerImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:HumanToxicityNonCancerImpactAssessment .
+
+ssbd:SsbdImageClassificationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdComputerVisionShape ;
+    sh:targetClass ssbd:ImageClassification .
+
+ssbd:SsbdImageSegmentationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdComputerVisionShape ;
+    sh:targetClass ssbd:ImageSegmentation .
+
+ssbd:SsbdImmunotoxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:ImmunotoxicityAssessment .
+
+ssbd:SsbdInformationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDataShape,
+        ssbd:SsbdSignShape ;
+    sh:targetClass ssbd:Information .
+
+ssbd:SsbdInterpreterShape a sh:NodeShape ;
+    sh:node ssbd:ProvAgentShape ;
+    sh:targetClass ssbd:Interpreter .
+
+ssbd:SsbdIrritationAndCorrosionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:IrritationAndCorrosion .
+
+ssbd:SsbdLargeLanguageModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdModernGenerativeAIModelShape,
+        ssbd:SsbdTextGenerationShape ;
+    sh:targetClass ssbd:LargeLanguageModel .
+
+ssbd:SsbdLinearDiscriminantAnalysisShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionalityReductionShape ;
+    sh:targetClass ssbd:LinearDiscriminantAnalysis .
+
+ssbd:SsbdLogicShape a sh:NodeShape ;
+    sh:node ssbd:SsbdCognitionAndLearningModelShape ;
+    sh:targetClass ssbd:Logic .
+
+ssbd:SsbdLogisticRegressionModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdRegressionModelShape ;
+    sh:targetClass ssbd:LogisticRegressionModel .
+
+ssbd:SsbdLowDensitySeparationModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSemiSupervicedLearningModelShape ;
+    sh:targetClass ssbd:LowDensitySeparationModel .
+
+ssbd:SsbdMachineTranslationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:MachineTranslation .
+
+ssbd:SsbdMacroMoleculeShape a sh:NodeShape ;
+    sh:targetClass ssbd:MacroMolecule .
+
+ssbd:SsbdMagneticMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:MagneticMaterial .
+
+ssbd:SsbdMarineAquaticEcotoxicityImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:MarineAquaticEcotoxicityImpactAssessment .
+
+ssbd:SsbdMarineEutrophicationImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:MarineEutrophicationImpactAssessment .
+
+ssbd:SsbdMaterialProcessShape a sh:NodeShape ;
+    sh:node ssbd:SsbdProcessShape ;
+    sh:targetClass ssbd:MaterialProcess .
+
+ssbd:SsbdMatterShape a sh:NodeShape ;
+    sh:node ssbd:ProvEntityShape ;
+    sh:targetClass ssbd:Matter .
+
+ssbd:SsbdMeasurementShape a sh:NodeShape ;
+    sh:node ssbd:SsbdProcessShape ;
+    sh:targetClass ssbd:Measurement .
+
+ssbd:SsbdMicroMoleculeShape a sh:NodeShape ;
+    sh:targetClass ssbd:MicroMolecule .
+
+ssbd:SsbdModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSignShape ;
+    sh:targetClass ssbd:Model .
+
+ssbd:SsbdMonteCarloLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdReinforcedLearningModelShape ;
+    sh:targetClass ssbd:MonteCarloLearningModel .
+
+ssbd:SsbdMutagenicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:MutagenicityAssessment .
+
+ssbd:SsbdNaiveBayesShape a sh:NodeShape ;
+    sh:node ssbd:SsbdClassificationShape ;
+    sh:targetClass ssbd:NaiveBayes .
+
+ssbd:SsbdNanoCompositeShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNanoStructuredMaterialShape ;
+    sh:targetClass ssbd:NanoComposite .
+
+ssbd:SsbdNanoParticleShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNanoObjectShape ;
+    sh:targetClass ssbd:NanoParticle .
+
+ssbd:SsbdNanoPlateShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNanoObjectShape ;
+    sh:targetClass ssbd:NanoPlate .
+
+ssbd:SsbdNanoRodShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNanoFiberShape ;
+    sh:targetClass ssbd:NanoRod .
+
+ssbd:SsbdNanoTubeShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNanoFiberShape ;
+    sh:targetClass ssbd:NanoTube .
+
+ssbd:SsbdNaturalLanguageClassificationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:NaturalLanguageClassification .
+
+ssbd:SsbdNeurotoxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:NeurotoxicityAssessment .
+
+ssbd:SsbdNonGenotoxicCarcinogenicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:NonGenotoxicCarcinogenicityAssessment .
+
+ssbd:SsbdObjectDetectionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdComputerVisionShape ;
+    sh:targetClass ssbd:ObjectDetection .
+
+ssbd:SsbdOccupationalNonfatalInjuriesRateShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafeWorkingConditionsAssessmentShape ;
+    sh:targetClass ssbd:OccupationalNonfatalInjuriesRate .
+
+ssbd:SsbdOpticalMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:OpticalMaterial .
+
+ssbd:SsbdOxidisingPropetiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdIntrinsicChemicalHazardAssessmentShape ;
+    sh:targetClass ssbd:OxidisingPropetiesAssessment .
+
+ssbd:SsbdParticipantShape a sh:NodeShape ;
+    sh:node ssbd:ProvAgentShape,
+        ssbd:SsbdObjectShape ;
+    sh:targetClass ssbd:Participant .
+
+ssbd:SsbdPhotochemicalOzoneFormationAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:PhotochemicalOzoneFormationAssessment .
+
+ssbd:SsbdPlanningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdCognitionAndLearningModelShape ;
+    sh:targetClass ssbd:PlanningModel .
+
+ssbd:SsbdPoissonsRatioAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdMechanicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:PoissonsRatioAssessment .
+
+ssbd:SsbdPrenatalDevelopmentalToxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:PrenatalDevelopmentalToxicityAssessment .
+
+ssbd:SsbdPrincipalComponentAnalysisShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionalityReductionShape ;
+    sh:targetClass ssbd:PrincipalComponentAnalysis .
+
+ssbd:SsbdProbabilityModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdCognitionAndLearningModelShape ;
+    sh:targetClass ssbd:ProbabilityModel .
+
+ssbd:SsbdProfilerShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSoftwareShape ;
+    sh:targetClass ssbd:Profiler .
+
+ssbd:SsbdProteinShape a sh:NodeShape ;
+    sh:targetClass ssbd:Protein .
+
+ssbd:SsbdQSARModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:QSARModel .
+
+ssbd:SsbdQSARSoftwareShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSoftwareShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:QSARModel ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:implementsModel ] ;
+    sh:targetClass ssbd:QSARSoftware .
+
+ssbd:SsbdQuestionAnsweringShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNaturalLanguageUnderstandingShape ;
+    sh:targetClass ssbd:QuestionAnswering .
+
+ssbd:SsbdRandomForestShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPredictionLearningModelShape ;
+    sh:targetClass ssbd:RandomForest .
+
+ssbd:SsbdRecurrentNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDeepLearningModelShape ;
+    sh:targetClass ssbd:RecurrentNeuralNetwork .
+
+ssbd:SsbdReliabilityDocumentShape a sh:NodeShape ;
+    sh:node ssbd:FoafDocumentShape ;
+    sh:targetClass ssbd:ReliabilityDocument .
+
+ssbd:SsbdRenalToxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:RenalToxicityAssessment .
+
+ssbd:SsbdRenewableEnergyConsumptionAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnergyConsumptionAssessmentShape ;
+    sh:targetClass ssbd:RenewableEnergyConsumptionAssessment .
+
+ssbd:SsbdReproductiveToxicityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:ReproductiveToxicityAssessment .
+
+ssbd:SsbdResourceAssessmentFossilFuelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:ResourceAssessmentFossilFuel .
+
+ssbd:SsbdResourceAssessmentLandShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:ResourceAssessmentLand .
+
+ssbd:SsbdResourceAssessmentMineralsShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:ResourceAssessmentMinerals .
+
+ssbd:SsbdResourceAssessmentWaterShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:ResourceAssessmentWater .
+
+ssbd:SsbdSSbDAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:SpecifiedAssessment ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasPart ],
+        [ sh:or ( [ sh:class ssbd:SSbDDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:SSbDAssessment .
+
+ssbd:SsbdSafetyDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:SafetyDimension .
+
+ssbd:SsbdSedimentToxicityShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalRiskAssessmentShape ;
+    sh:targetClass ssbd:SedimentToxicity .
+
+ssbd:SsbdSelfTrainingModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSemiSupervicedLearningModelShape ;
+    sh:targetClass ssbd:SelfTrainingModel .
+
+ssbd:SsbdSiameseNeuralNetworkShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDeepLearningModelShape ;
+    sh:targetClass ssbd:SiameseNeuralNetwork .
+
+ssbd:SsbdSkinAndRespiratorySensitisationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardIdentificationHumanHealthShape ;
+    sh:targetClass ssbd:SkinAndRespiratorySensitisation .
+
+ssbd:SsbdSocialDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:SocialDimension .
+
+ssbd:SsbdSocialExternalitiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdExternalitiesAssessmentShape ;
+    sh:targetClass ssbd:SocialExternalitiesAssessment .
+
+ssbd:SsbdSocialSustainabilityDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:SocialSustainabilityDimension .
+
+ssbd:SsbdSoilQualityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdExposureAssessmentEnvironmentShape ;
+    sh:targetClass ssbd:SoilQualityAssessment .
+
+ssbd:SsbdStepwiseRegressionModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdRegressionModelShape ;
+    sh:targetClass ssbd:StepwiseRegressionModel .
+
+ssbd:SsbdStratosphericOzoneLayerDepletionAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:StratosphericOzoneLayerDepletionAssessment .
+
+ssbd:SsbdStructuralMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:StructuralMaterial .
+
+ssbd:SsbdSupportVectorMachineShape a sh:NodeShape ;
+    sh:node ssbd:SsbdClassificationShape ;
+    sh:targetClass ssbd:SupportVectorMachine .
+
+ssbd:SsbdSustainabilityDimensionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSSbDDimensionShape ;
+    sh:targetClass ssbd:SustainabilityDimension .
+
+ssbd:SsbdTDistributedStochasticNeighborEmbeddingShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDimensionalityReductionShape ;
+    sh:targetClass ssbd:TDistributedStochasticNeighborEmbedding .
+
+ssbd:SsbdTargetTrackingShape a sh:NodeShape ;
+    sh:node ssbd:SsbdComputerVisionShape ;
+    sh:targetClass ssbd:TargetTracking .
+
+ssbd:SsbdTerrestrialEutrophicationImpactAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLifeCycleImpactAssessmentCategoryShape ;
+    sh:targetClass ssbd:TerrestrialEutrophicationImpactAssessment .
+
+ssbd:SsbdTerrestrialToxicityShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalRiskAssessmentShape ;
+    sh:targetClass ssbd:TerrestrialToxicity .
+
+ssbd:SsbdTierLevelShape a sh:NodeShape ;
+    sh:node ssbd:ProvEntityShape ;
+    sh:targetClass ssbd:TierLevel .
+
+ssbd:SsbdTimeDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSymbolicDataShape ;
+    sh:targetClass ssbd:TimeData .
+
+ssbd:SsbdToxicityShape a sh:NodeShape ;
+    sh:node ssbd:SsbdIndicatorShape ;
+    sh:targetClass ssbd:Toxicity .
+
+ssbd:SsbdWaterQualityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdExposureAssessmentEnvironmentShape ;
+    sh:targetClass ssbd:WaterQualityAssessment .
+
+ssbd:SsbdWorkingHoursAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdWorkerSocialResponsibilityAssessmentShape ;
+    sh:targetClass ssbd:WorkingHoursAssessment .
+
+ssbd:SsbdXGBoostRegessorShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPredictionLearningModelShape ;
+    sh:targetClass ssbd:XGBoostRegessor .
+
+ssbd:SsbdYoungsModulusAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdMechanicalPropertiesAssessmentShape ;
+    sh:targetClass ssbd:YoungsModulusAssessment .
+
+ssbd:DcatResourceShape a sh:NodeShape ;
+    sh:node ssbd:ProvEntityShape ;
+    sh:property [ sh:or ( [ sh:class foaf:Document ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:documentation ],
+        [ sh:datatype rdf:langString ;
+            sh:path dcterms:title ],
+        [ sh:datatype rdf:langString ;
+            sh:path skos:definition ],
+        [ sh:or ( [ sh:class foaf:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:creator ],
+        [ sh:path dcat:version ],
+        [ sh:or ( [ sh:class foaf:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path <https://w3id.org/emmo/application/datadoc#curator> ],
+        [ sh:or ( [ sh:class dcterms:RightsStatement ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:accessRights ],
+        [ sh:datatype xsd:dateTime ;
+            sh:path dcterms:issued ],
+        [ sh:or ( [ sh:class dcterms:LicenseDocument ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path dcterms:license ] ;
+    sh:targetClass dcat:Resource .
+
+ssbd:DctermsRightsStatementShape a sh:NodeShape ;
+    sh:node ssbd:FoafDocumentShape ;
+    sh:targetClass dcterms:RightsStatement .
+
+ssbd:ProvActivityShape a sh:NodeShape ;
+    sh:property [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasAssociatedWith ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:used ],
+        [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:wasInformedBy ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasOutput ],
+        [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasInformedBy ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:used ],
+        [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:wasAssociatedWith ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasInput ] ;
+    sh:targetClass prov:Activity .
+
+ssbd:SsbdEconomicSustainabilityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSustainabilityAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:EconomicSustainabilityDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:EconomicSustainabilityAssessment .
+
+ssbd:SsbdEnsembleLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:EnsembleLearningModel .
+
+ssbd:SsbdHazardAssessmentEnvironmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:HazardAssessmentEnvironment .
+
+ssbd:SsbdIndicatorShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPropertyShape ;
+    sh:targetClass ssbd:Indicator .
+
+ssbd:SsbdIntDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdLongDataShape ;
+    sh:targetClass ssbd:IntData .
+
+ssbd:SsbdIntegerDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNumericalDataShape ;
+    sh:targetClass ssbd:IntegerData .
+
+ssbd:SsbdKnowledgeRepresentationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdCognitionAndLearningModelShape ;
+    sh:targetClass ssbd:KnowledgeRepresentation .
+
+ssbd:SsbdLongDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdIntegerDataShape ;
+    sh:targetClass ssbd:LongData .
+
+ssbd:SsbdModernGenerativeAIModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdTransformerAIShape ;
+    sh:targetClass ssbd:ModernGenerativeAIModel .
+
+ssbd:SsbdNanoStructuredMaterialShape a sh:NodeShape ;
+    sh:targetClass ssbd:NanoStructuredMaterial .
+
+ssbd:SsbdNaturalLanguageGenerationShape a sh:NodeShape ;
+    sh:targetClass ssbd:NaturalLanguageGeneration .
+
+ssbd:SsbdObjectShape a sh:NodeShape ;
+    sh:node ssbd:ProvEntityShape ;
+    sh:targetClass ssbd:Object .
+
+ssbd:SsbdOccupationalHealthandSafetyAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSocialSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:OccupationalHealthandSafetyAssessment .
+
+ssbd:SsbdPerceptionModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:PerceptionModel .
+
+ssbd:SsbdPhysicalPropertiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdFunctionalityAssessmentShape ;
+    sh:targetClass ssbd:PhysicalPropertiesAssessment .
+
+ssbd:SsbdRecommenderSystemShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSupervisedLearningModelShape ;
+    sh:targetClass ssbd:RecommenderSystem .
+
+ssbd:SsbdSafeWorkingConditionsAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdOccupationalHealthandSafetyAssessmentShape ;
+    sh:targetClass ssbd:SafeWorkingConditionsAssessment .
+
+ssbd:SsbdShortDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdIntDataShape ;
+    sh:targetClass ssbd:ShortData .
+
+ssbd:SsbdTextGenerationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNaturalLanguageGenerationShape ;
+    sh:targetClass ssbd:TextGeneration .
+
+ssbd:SsbdThermalPropertiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdFunctionalityAssessmentShape ;
+    sh:targetClass ssbd:ThermalPropertiesAssessment .
+
+ssbd:SsbdTransformerAIShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDeepLearningModelShape ;
+    sh:targetClass ssbd:TransformerAI .
+
+ssbd:SsbdUnsupervicedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:UnsupervicedLearningModel .
+
+ssbd:FoafDocumentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDataShape ;
+    sh:targetClass foaf:Document .
+
+ssbd:ProvAgentShape a sh:NodeShape ;
+    sh:property [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:attributed ] ;
+    sh:targetClass prov:Agent .
+
+ssbd:SsbdArtificialNeuralNetworkShape a sh:NodeShape ;
+    sh:targetClass ssbd:ArtificialNeuralNetwork .
+
+ssbd:SsbdAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdProcessShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:SSbDDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:Assessment .
+
+ssbd:SsbdEnergyConsumptionAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:EnergyConsumptionAssessment .
+
+ssbd:SsbdExternalitiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEconomicSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:ExternalitiesAssessment .
+
+ssbd:SsbdHazardAssessmentHumanHealthShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:HazardAssessmentHumanHealth .
+
+ssbd:SsbdIntrinsicChemicalHazardAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:IntrinsicChemicalHazardAssessment .
+
+ssbd:SsbdNanoFiberShape a sh:NodeShape ;
+    sh:node ssbd:SsbdNanoObjectShape ;
+    sh:targetClass ssbd:NanoFiber .
+
+ssbd:SsbdPropertyShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSignShape ;
+    sh:property [ sh:path ssbd:hasMeasurementUnit ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isPropertyOf ] ;
+    sh:targetClass ssbd:Property .
+
+ssbd:SsbdRegressionModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSupervisedLearningModelShape ;
+    sh:targetClass ssbd:RegressionModel .
+
+ssbd:SsbdSocialSustainabilityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSustainabilityAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:SocialSustainabilityDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:SocialSustainabilityAssessment .
+
+ssbd:SsbdWorkerSocialResponsibilityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSocialSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:WorkerSocialResponsibilityAssessment .
+
+ssbd:SsbdFunctionalityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSpecifiedAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:FunctionalityDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:FunctionalityAssessment .
+
+ssbd:SsbdMechanicalPropertiesAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdFunctionalityAssessmentShape ;
+    sh:targetClass ssbd:MechanicalPropertiesAssessment .
+
+ssbd:SsbdNanoObjectShape a sh:NodeShape ;
+    sh:targetClass ssbd:NanoObject .
+
+ssbd:SsbdNumericalDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSymbolicDataShape ;
+    sh:targetClass ssbd:NumericalData .
+
+ssbd:SsbdReinforcedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:ReinforcedLearningModel .
+
+ssbd:SsbdSemiSupervicedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:SemiSupervicedLearningModel .
+
+ssbd:SsbdSoftwareShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDataShape ;
+    sh:property [ sh:datatype xsd:boolean ;
+            sh:path ssbd:hasAPI ],
+        [ sh:or ( [ sh:class ssbd:Software ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isSubmoduleOf ],
+        [ sh:or ( [ sh:class ssbd:Model ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:implementsModel ],
+        [ sh:datatype xsd:boolean ;
+            sh:path ssbd:hasGUI ],
+        [ sh:or ( [ sh:class ssbd:Software ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:priorRelease ] ;
+    sh:targetClass ssbd:Software .
+
+ssbd:SsbdSpecifiedAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdAssessmentShape ;
+    sh:targetClass ssbd:SpecifiedAssessment .
+
+ssbd:SsbdSustainabilityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSpecifiedAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:SustainabilityDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:SustainabilityAssessment .
+
+ssbd:SsbdComputerVisionShape a sh:NodeShape ;
+    sh:node ssbd:SsbdPerceptionModelShape ;
+    sh:targetClass ssbd:ComputerVision .
+
+ssbd:SsbdDimensionalityReductionShape a sh:NodeShape ;
+    sh:targetClass ssbd:DimensionalityReduction .
+
+ssbd:SsbdEnvironmentalRiskAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:EnvironmentalRiskAssessment .
+
+ssbd:SsbdNaturalLanguageUnderstandingShape a sh:NodeShape ;
+    sh:targetClass ssbd:NaturalLanguageUnderstanding .
+
+ssbd:SsbdPredictionLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSupervisedLearningModelShape ;
+    sh:targetClass ssbd:PredictionLearningModel .
+
+ssbd:SsbdProcessShape a sh:NodeShape ;
+    sh:node ssbd:ProvActivityShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:Process ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:hasSubProcess ] ;
+    sh:targetClass ssbd:Process .
+
+ssbd:SsbdSignShape a sh:NodeShape ;
+    sh:node ssbd:ProvEntityShape ;
+    sh:property [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:standsFor ],
+        [ sh:or ( [ sh:class ssbd:Interpreter ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isInterpretedBy ] ;
+    sh:targetClass ssbd:Sign .
+
+ssbd:SsbdSupervisedLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:SupervisedLearningModel .
+
+ssbd:SsbdClassificationShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSupervisedLearningModelShape ;
+    sh:targetClass ssbd:Classification .
+
+ssbd:SsbdExposureAssessmentEnvironmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:ExposureAssessmentEnvironment .
+
+ssbd:SsbdHumanHealthRiskAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSafetyAssessmentShape ;
+    sh:targetClass ssbd:HumanHealthRiskAssessment .
+
+ssbd:SsbdSymbolicDataShape a sh:NodeShape ;
+    sh:node ssbd:SsbdDataShape ;
+    sh:targetClass ssbd:SymbolicData .
+
+ssbd:SsbdCognitionAndLearningModelShape a sh:NodeShape ;
+    sh:targetClass ssbd:CognitionAndLearningModel .
+
+ssbd:SsbdDataShape a sh:NodeShape ;
+    sh:node ssbd:ProvEntityShape ;
+    sh:property [ sh:path ssbd:hasDataValue ] ;
+    sh:targetClass ssbd:Data .
+
+ssbd:ProvEntityShape a sh:NodeShape ;
+    sh:property [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:participatesTo ],
+        [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasAttributedTo ],
+        [ sh:or ( [ sh:class prov:Activity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasGeneratedBy ],
+        [ sh:or ( [ sh:class prov:Agent ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path prov:wasAttributedTo ],
+        [ sh:or ( [ sh:class prov:Entity ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:wasDerivedBy ],
+        [ sh:or ( [ sh:class ssbd:Matter ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:chemicalClass ],
+        [ sh:or ( [ sh:class ssbd:Sign ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:isRepresentedBy ],
+        [ sh:or ( [ sh:class ssbd:TierLevel ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:tierLevel ] ;
+    sh:targetClass prov:Entity .
+
+ssbd:SsbdDeepLearningModelShape a sh:NodeShape ;
+    sh:node ssbd:SsbdArtificialNeuralNetworkShape ;
+    sh:targetClass ssbd:DeepLearningModel .
+
+ssbd:SsbdEnvironmentalSustainabilityAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSustainabilityAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:EnvironmentalSustainabilityDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:EnvironmentalSustainabilityAssessment .
+
+ssbd:SsbdSafetyAssessmentShape a sh:NodeShape ;
+    sh:node ssbd:SsbdSpecifiedAssessmentShape ;
+    sh:property [ sh:or ( [ sh:class ssbd:SafetyDimension ] [ sh:nodeKind sh:IRI ] ) ;
+            sh:path ssbd:assesses ] ;
+    sh:targetClass ssbd:SafetyAssessment .
+
+ssbd:SsbdSSbDDimensionShape a sh:NodeShape ;
+    sh:node ssbd:ProvEntityShape ;
+    sh:targetClass ssbd:SSbDDimension .
+
+ssbd:SsbdLifeCycleImpactAssessmentCategoryShape a sh:NodeShape ;
+    sh:node ssbd:SsbdEnvironmentalSustainabilityAssessmentShape ;
+    sh:targetClass ssbd:LifeCycleImpactAssessmentCategory .
+
+ssbd:SsbdHazardIdentificationHumanHealthShape a sh:NodeShape ;
+    sh:node ssbd:SsbdHazardAssessmentHumanHealthShape ;
+    sh:targetClass ssbd:HazardIdentificationHumanHealth .
+

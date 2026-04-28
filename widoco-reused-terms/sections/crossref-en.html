@@ -1,0 +1,1283 @@
+<h2 id="crossreference" class="list">Cross-reference for Reused terms classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Reused terms.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#DataModel" title="https://w3id.org/emmo/domain/datamodel#DataModel">DataModel</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#Distribution" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Document" title="http://xmlns.com/foaf/0.1/Document">Document</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a></li>
+  <li><a href="#https://w3id.org/emmo/hume#IntentionalAgent" title="https://w3id.org/emmo/hume#IntentionalAgent">IntentionalAgent</a></li>
+  <li><a href="#http://purl.org/dc/terms/LicenseDocument" title="http://purl.org/dc/terms/LicenseDocument"> <span>License Document</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a></li>
+  <li><a href="#https://w3id.org/emmo/hume#UnintentionalAgent" title="https://w3id.org/emmo/hume#UnintentionalAgent">UnintentionalAgent</a></li>
+ </ul>
+ <div class="entity" id="http://www.w3.org/ns/prov#Activity">
+  <h3>Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Activity</p>
+  <div class="comment">
+   <span class="markdown">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">wasAssociatedWith</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasInformedBy" title="http://www.w3.org/ns/prov#wasInformedBy">wasInformedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#wasInformedBy" title="http://www.w3.org/ns/prov#wasInformedBy">wasInformedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#Agent">
+  <h3>Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Agent</p>
+  <div class="comment">
+   <span class="markdown">An agent is something that bears some form of responsibility for a activity taking place, for the existence of an entity, or for another agent's aprovctivity. </span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/emmo/hume#IntentionalAgent" title="https://w3id.org/emmo/hume#IntentionalAgent">IntentionalAgent</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/emmo/hume#UnintentionalAgent" title="https://w3id.org/emmo/hume#UnintentionalAgent">UnintentionalAgent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">wasAssociatedWith</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">wasAttributedTo</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#DataModel">
+  <h3>DataModel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#DataModel</p>
+  <div class="comment">
+   <span class="markdown">A data model describing the datum/properties of a dataset.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/emmo/domain/datamodel#datamodel" title="https://w3id.org/emmo/domain/datamodel#datamodel">datamodel</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#Distribution">
+  <h3>Distribution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#Distribution</p>
+  <div class="comment">
+   <span class="markdown">A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/dcat#accessURL" target="_blank" title="http://www.w3.org/ns/dcat#accessURL">accessURL</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://www.w3.org/ns/dcat#downloadURL" title="http://www.w3.org/ns/dcat#downloadURL">downloadURL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="http://purl.org/dc/terms/format" target="_blank" title="http://purl.org/dc/terms/format">format</a> <sup class="type-ap" title="annotation property">ap</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Document">
+  <h3>Document<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Document</p>
+  <div class="comment">
+   <span class="markdown">A document.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Organization" target="_blank" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="http://xmlns.com/foaf/0.1/Project" target="_blank" title="http://xmlns.com/foaf/0.1/Project">Project</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#Entity">
+  <h3>Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Entity</p>
+  <div class="comment">
+   <span class="markdown">An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. </span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">wasAttributedTo</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/hume#IntentionalAgent">
+  <h3>IntentionalAgent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/hume#IntentionalAgent</p>
+  <div class="comment">
+   <span class="markdown">An agent that is driven by the intention to reach a defined objective in driving a process.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/LicenseDocument">
+  <h3>License Document<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/LicenseDocument</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/RightsStatement" target="_blank" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/LicenseDocument">named individual</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#Resource">
+  <h3>Resource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#Resource</p>
+  <div class="comment">
+   <span class="markdown">Resource published or curated by a single agent.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Resource published or curated by a single agent.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/dcat#Distribution" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights">accessRights</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/emmo/application/datadoc#curator" title="https://w3id.org/emmo/application/datadoc#curator">curator</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">releaseDate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">title</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="http://www.w3.org/ns/dcat#version" target="_blank" title="http://www.w3.org/ns/dcat#version">version</a> <sup class="type-ap" title="annotation property">ap</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/hume#UnintentionalAgent">
+  <h3>UnintentionalAgent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/hume#UnintentionalAgent</p>
+  <div class="comment">
+   <span class="markdown">An agent that is driven by the law of physics rather than the intention to reach a defined objective.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>A catalyst.</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights">accessRights</a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a></li>
+  <li><a href="#https://w3id.org/emmo/application/datadoc#curator" title="https://w3id.org/emmo/application/datadoc#curator">curator</a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#datamodel" title="https://w3id.org/emmo/domain/datamodel#datamodel">datamodel</a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a></li>
+  <li><a href="#http://purl.org/dc/terms/rightsHolder" title="http://purl.org/dc/terms/rightsHolder">rightsHolder</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">theme</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">wasAssociatedWith</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">wasAttributedTo</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasInformedBy" title="http://www.w3.org/ns/prov#wasInformedBy">wasInformedBy</a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/accessRights">
+  <h3>accessRights<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/accessRights</p>
+  <div class="comment">
+   <span class="markdown">Information about who can access the resource or an indication of its security status.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.org/dc/terms/RightsStatement" target="_blank" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+  <div class="comment">
+   <span class="markdown">An entity responsible for producing the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/application/datadoc#curator">
+  <h3>curator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/application/datadoc#curator</p>
+  <div class="comment">
+   <span class="markdown">The agent that curated the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#datamodel">
+  <h3>datamodel<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#datamodel</p>
+  <div class="comment">
+   <span class="markdown">URI of a data model describing the datum/properties of a dataset.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/emmo/domain/datamodel#DataModel" title="https://w3id.org/emmo/domain/datamodel#DataModel">DataModel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+  <div class="comment">
+   <span class="markdown">A licence under which the resource is made available.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/LicenseDocument" title="http://purl.org/dc/terms/LicenseDocument">License Document</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/rightsHolder">
+  <h3>rightsHolder<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/rightsHolder</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#theme">
+  <h3>theme<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#theme</p>
+  <div class="comment">
+   <span class="markdown">A main category of the resource. A resource can have multiple themes.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A main category of the resource. A resource can have multiple themes.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending.
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/TR/vocab-dcat/">http://www.w3.org/TR/vocab-dcat/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#used">
+  <h3>used<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#used</p>
+  <div class="comment">
+   <span class="markdown">A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven .</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedWith">
+  <h3>wasAssociatedWith<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAssociatedWith</p>
+  <div class="comment">
+   <span class="markdown">An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasAttributedTo">
+  <h3>wasAttributedTo<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAttributedTo</p>
+  <div class="comment">
+   <span class="markdown">Attribution is the ascribing of an entity to an agent.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Attribution is the ascribing of an entity to an agent.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasInformedBy">
+  <h3>wasInformedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasInformedBy</p>
+  <div class="comment">
+   <span class="markdown">An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#datumDescription" title="https://w3id.org/emmo/domain/datamodel#datumDescription">datumDescription</a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#datumName" title="https://w3id.org/emmo/domain/datamodel#datumName">datumName</a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#datumShape" title="https://w3id.org/emmo/domain/datamodel#datumShape">datumShape</a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#datumType" title="https://w3id.org/emmo/domain/datamodel#datumType">datumType</a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#datumUnit" title="https://w3id.org/emmo/domain/datamodel#datumUnit">datumUnit</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#downloadURL" title="http://www.w3.org/ns/dcat#downloadURL">downloadURL</a></li>
+  <li><a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">releaseDate</a></li>
+ </ul>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#datumDescription">
+  <h3>datumDescription<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#datumDescription</p>
+  <div class="comment">
+   <span class="markdown">Human-readable description of the datum/property.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#datumName">
+  <h3>datumName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#datumName</p>
+  <div class="comment">
+   <span class="markdown">Name of the datum/property.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#datumShape">
+  <h3>datumShape<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#datumShape</p>
+  <div class="comment">
+   <span class="markdown">Unit of the datum/property.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON">J S O N</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#datumType">
+  <h3>datumType<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#datumType</p>
+  <div class="comment">
+   <span class="markdown">Type of the datum/property.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#datumUnit">
+  <h3>datumUnit<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#datumUnit</p>
+  <div class="comment">
+   <span class="markdown">Unit of the datum/property.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#downloadURL">
+  <h3>downloadURL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#downloadURL</p>
+  <div class="comment">
+   <span class="markdown">A URL that is a direct link to a downloadable file in a given format. The format is indicated by the distribution's 'dterms:format' and/or 'dcat:mediaType'.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Distribution" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/issued">
+  <h3>releaseDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+  <div class="comment">
+   <span class="markdown">The date of formal issuance (e.g., publication) of the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract"> <span>abstract</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#accessURL" title="http://www.w3.org/ns/dcat#accessURL">accessURL</a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#altLabel" title="http://www.w3.org/2004/02/skos/core#altLabel"> <span>alt Label</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/prov#category" title="http://www.w3.org/ns/prov#category"> <span>category</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/prov#component" title="http://www.w3.org/ns/prov#component"> <span>component</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/prov#constraints" title="http://www.w3.org/ns/prov#constraints"> <span>constraints</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition">definition</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#definition" title="http://www.w3.org/ns/prov#definition"> <span>definition</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">description</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#dm" title="http://www.w3.org/ns/prov#dm"> <span>dm</span> </a></li>
+  <li><a href="#http://purl.org/ontology/bibo/doi" title="http://purl.org/ontology/bibo/doi"> <span>doi</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#editorialNote" title="http://www.w3.org/2004/02/skos/core#editorialNote"> <span>editorial Note</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example"> <span>example</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/format" title="http://purl.org/dc/terms/format">format</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage"> <span>homepage</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">identifier</a></li>
+  <li><a href="#https://w3id.org/widoco/vocab#introduction" title="https://w3id.org/widoco/vocab#introduction"> <span>introduction</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/prov#inverse" title="http://www.w3.org/ns/prov#inverse"> <span>inverse</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#keyword" title="http://www.w3.org/ns/dcat#keyword">keyword</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/logo" title="http://xmlns.com/foaf/0.1/logo"> <span>logo</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/prov#n" title="http://www.w3.org/ns/prov#n"> <span>n</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#note" title="http://www.w3.org/2004/02/skos/core#note"> <span>note</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#prefLabel" title="http://www.w3.org/2004/02/skos/core#prefLabel"> <span>pref Label</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote">scopeNote</a></li>
+  <li><a href="#http://www.w3.org/2000/01/rdf-schema#seeAlso" title="http://www.w3.org/2000/01/rdf-schema#seeAlso">seeAlso</a></li>
+  <li><a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">source</a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/usageNote" title="http://purl.org/vocab/vann/usageNote"> <span>usage Note</span> </a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#version" title="http://www.w3.org/ns/dcat#version">version</a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/abstract">
+  <h3>abstract<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#accessURL">
+  <h3>accessURL<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#accessURL</p>
+  <div class="comment">
+   <span class="markdown">A URL that gives access to a Distribution of the Dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Distribution" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#altLabel">
+  <h3>alt Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#altLabel</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#category">
+  <h3>category<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#category</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#component">
+  <h3>component<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#component</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#constraints">
+  <h3>constraints<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#constraints</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+  <h3>definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+  <div class="comment">
+   <span class="markdown">A free-text account of the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">lang String</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#definition">
+  <h3>definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#definition</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+  <div class="comment">
+   <span class="markdown">An account of the resource.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#dm">
+  <h3>dm<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#dm</p>
+ </div>
+ <div class="entity" id="http://purl.org/ontology/bibo/doi">
+  <h3>doi<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/bibo/doi</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#editorialNote">
+  <h3>editorial Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#editorialNote</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
+  <h3>example<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/format">
+  <h3>format<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/format</p>
+  <div class="comment">
+   <span class="markdown">The file format of the Distribution.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Distribution" title="http://www.w3.org/ns/dcat#Distribution">Distribution</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/homepage">
+  <h3>homepage<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/homepage</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/identifier">
+  <h3>identifier<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/identifier</p>
+  <div class="comment">
+   <span class="markdown">URI or other unique identifier of the resource being described.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/Agent" target="_blank" title="http://xmlns.com/foaf/0.1/Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/widoco/vocab#introduction">
+  <h3>introduction<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/widoco/vocab#introduction</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#inverse">
+  <h3>inverse<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#inverse</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#keyword">
+  <h3>keyword<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#keyword</p>
+  <div class="comment">
+   <span class="markdown">A keyword or tag describing the resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">lang String</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/logo">
+  <h3>logo<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/logo</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#n">
+  <h3>n<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#n</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#note">
+  <h3>note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#note</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote">scopeNote</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#prefLabel">
+  <h3>pref Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#prefLabel</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#scopeNote">
+  <h3>scopeNote<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#scopeNote</p>
+  <div class="comment">
+   <span class="markdown">A note that helps to clarify the meaning and/or the use of a concept.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core">http://www.w3.org/2004/02/skos/core</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+  <h3>seeAlso<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#seeAlso</p>
+  <div class="comment">
+   <span class="markdown">Further information about the subject resource.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2000/01/rdf-schema#">http://www.w3.org/2000/01/rdf-schema#</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/source">
+  <h3>source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/source</p>
+  <div class="comment">
+   <span class="markdown">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A related resource from which the described resource is derived.</span>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">lang String</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/usageNote">
+  <h3>usage Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/usageNote</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#version">
+  <h3>version<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#version</p>
+  <div class="comment">
+   <span class="markdown">Version indicator (name or identifier) of a resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL" title="http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL">confidential</a></li>
+  <li><a href="#http://purl.org/dc/terms/LicenseDocument" title="http://purl.org/dc/terms/LicenseDocument"> <span>License Document</span> </a></li>
+  <li><a href="#http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC" title="http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC">non-public</a></li>
+  <li><a href="#http://publications.europa.eu/resource/authority/access-right/PUBLIC" title="http://publications.europa.eu/resource/authority/access-right/PUBLIC">public</a></li>
+  <li><a href="#http://publications.europa.eu/resource/authority/access-right/RESTRICTED" title="http://publications.europa.eu/resource/authority/access-right/RESTRICTED">restricted</a></li>
+  <li><a href="#http://purl.org/dc/terms/RightsStatement" title="http://purl.org/dc/terms/RightsStatement"> <span>Rights Statement</span> </a></li>
+  <li><a href="#http://publications.europa.eu/resource/authority/access-right/SENSITIVE" title="http://publications.europa.eu/resource/authority/access-right/SENSITIVE">sensitive</a></li>
+ </ul>
+ <div class="entity" id="http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL">
+  <h3>confidential<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL</p>
+  <div class="comment">
+   <span class="markdown">Information that is not disclosed.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right">https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/RightsStatement" target="_blank" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/vocab/vann/usageNote" target="_blank" title="http://purl.org/vocab/vann/usageNote">usage Note</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Disclosure of this data could cause damage to interested parties such as public administrations and businesses. It may refer to personal and professional information as well as to information in the context of business, commerce or trade."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Information that is not disclosed."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"confidential"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/LicenseDocument">
+  <h3>License Document<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/LicenseDocument</p>
+  <dl class="description">
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">releaseDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2008-01-14T00:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/LicenseDocument">class</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC">
+  <h3>non-public<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</p>
+  <div class="comment">
+   <span class="markdown">Not publicly accessible for privacy, security or other reasons.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right">https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/RightsStatement" target="_blank" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/vocab/vann/usageNote" target="_blank" title="http://purl.org/vocab/vann/usageNote">usage Note</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"This category may include resources that contain sensitive or personal information."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Not publicly accessible for privacy, security or other reasons."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"non-public"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://publications.europa.eu/resource/authority/access-right/PUBLIC">
+  <h3>public<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://publications.europa.eu/resource/authority/access-right/PUBLIC</p>
+  <div class="comment">
+   <span class="markdown">Publicly accessible by everyone.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right">https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/RightsStatement" target="_blank" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/vocab/vann/usageNote" target="_blank" title="http://purl.org/vocab/vann/usageNote">usage Note</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Permissible obstacles include registration and request for API keys, as long as anyone can request such registration and/or API keys."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Publicly accessible by everyone."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"public"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://publications.europa.eu/resource/authority/access-right/RESTRICTED">
+  <h3>restricted<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://publications.europa.eu/resource/authority/access-right/RESTRICTED</p>
+  <div class="comment">
+   <span class="markdown">Only available under certain conditions.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right">https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/RightsStatement" target="_blank" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://purl.org/vocab/vann/usageNote" target="_blank" title="http://purl.org/vocab/vann/usageNote">usage Note</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"This category may include resources that require payment, resources shared under non-disclosure agreements, resources for which the publisher or owner has not yet decided if they can be publicly released."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Only available under certain conditions."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"restricted"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/RightsStatement">
+  <h3>Rights Statement<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/RightsStatement</p>
+  <dl class="description">
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">releaseDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2008-01-14T00:00:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a> </span>
+   </dd>
+   <dt>
+    is also defined as
+   </dt>
+   <dd>
+    class
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://publications.europa.eu/resource/authority/access-right/SENSITIVE">
+  <h3>sensitive<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://publications.europa.eu/resource/authority/access-right/SENSITIVE</p>
+  <div class="comment">
+   <span class="markdown">Sensitive non-classified (SNC) information, information whose unauthorised disclosure could cause damage to the Commission or other interested parties such as businesses, companies, intellectual property or personal data but which is not EU classified information.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right">https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/RightsStatement" target="_blank" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Sensitive non-classified (SNC) information, information whose unauthorised disclosure could cause damage to the Commission or other interested parties such as businesses, companies, intellectual property or personal data but which is not EU classified information."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"sensitive"@en</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
