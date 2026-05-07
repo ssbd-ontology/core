@@ -189,16 +189,18 @@ def get_concept(ts, iri):  # pylint: disable=redefined-outer-name
 
 
 def mklabel(s: str, isclass: bool) -> str:
-    """Return string `s` converted to a prefLabel."""
-    cleaned = s.replace("+", "Plus").replace("-", "Minus")
-    lst = [x for x in re.split("[ /_]+", cleaned) if x]
-    first = lst[0]
-    if isclass:
-        first = first[0].upper() + first[1:]
-    else:
-        first = first.lower()
+    """Return string `s` converted to a prefLabel.
 
-    return "".join([first] + [e[0].upper() + e[1:] for e in lst[1:]]).replace("'", "")
+    Classes: words separated by spaces, each word capitalised.
+    Properties: words separated by spaces, all lower case.
+    """
+    cleaned = s.replace("+", "Plus").replace("-", "Minus").replace("'", "")
+    words = [x for x in re.split(r"[ /_]+", cleaned) if x]
+    if isclass:
+        words = [w[0].upper() + w[1:] for w in words]
+    else:
+        words = [w.lower() for w in words]
+    return " ".join(words)
 
 
 # Create new triplestore
