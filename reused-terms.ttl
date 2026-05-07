@@ -196,7 +196,7 @@ dcterms:rightsHolder a owl:ObjectProperty ;
 ### Data properties
 
 dcterms:issued a owl:DatatypeProperty ;
-    skos:prefLabel "releaseDate"@en ;
+    skos:prefLabel "release date"@en ;
     skos:altLabel "issued"@en ;
     skos:definition "The date of formal issuance (e.g., publication) of the resource."@en ;
     rdfs:domain dcat:Resource ;
@@ -286,19 +286,19 @@ dcat:Distribution a owl:Class ;
     vann:usageNote "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en .
 
 dm:DataModel a owl:Class ;
-    skos:prefLabel "DataModel"@en ;
+    skos:prefLabel "Data Model"@en ;
     skos:definition "A data model describing the datum/properties of a dataset."@en .
 
 emmo:IntentionalAgent a owl:Class ;
     rdfs:subClassOf prov:Agent ;
-    skos:prefLabel "IntentionalAgent"@en ;
+    skos:prefLabel "Intentional Agent"@en ;
     skos:definition "An agent that is driven by the intention to reach a defined objective in driving a process."@en ;
     skos:scopeNote "Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation"@en ;
     skos:scopeNote "Intentionality will, as of today, normally apply to humans or decision systems designed by humans aimed for reaching a defined objective."@en .
 
 emmo:UnintentionalAgent a owl:Class ;
     rdfs:subClassOf prov:Agent ;
-    skos:prefLabel "UnintentionalAgent"@en ;
+    skos:prefLabel "Unintentional Agent"@en ;
     skos:definition "An agent that is driven by the law of physics rather than the intention to reach a defined objective."@en ;
     skos:example "A catalyst."@en .
 
@@ -306,14 +306,14 @@ emmo:UnintentionalAgent a owl:Class ;
 ### Properties
 
 dcterms:accessRights a owl:ObjectProperty ;
-    skos:prefLabel "accessRights"@en ;
+    skos:prefLabel "access rights"@en ;
     skos:definition "Information about who can access the resource or an indication of its security status."@en ;
     vann:usageNote "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies. The following preferred Rights Statement individuals are defined: `accr:PUBLIC`, `accr:NON_PUBLIC`, `accr:CONFIDENTIAL`, `accr:RESTRICTED`, `accr:SENSITIVE`"@en ;
     rdfs:domain dcat:Resource ;
     rdfs:range dcterms:RightsStatement .
 
 dcat:accessURL a owl:AnnotationProperty ;
-    skos:prefLabel "accessURL"@en ;
+    skos:prefLabel "access url"@en ;
     skos:definition "A URL that gives access to a Distribution of the Dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred."@en ;
     vann:usageNote "The resource at the access URL may contain information about how to get the Dataset."@en ;
     rdfs:domain dcat:Distribution ;
@@ -339,33 +339,33 @@ dm:datamodel a owl:ObjectProperty ;
     rdfs:range dm:DataModel .
 
 dm:datumName a owl:DatatypeProperty ;
-    skos:prefLabel "datumName"@en ;
+    skos:prefLabel "datum name"@en ;
     skos:definition "Name of the datum/property."@en ;
     skos:scopeNote "Typically the variable name used in a program or web interface. A string without spaces."@en ;
     rdfs:range xsd:string .
 
 dm:datumType a owl:DatatypeProperty ;
-    skos:prefLabel "datumType"@en ;
+    skos:prefLabel "datum type"@en ;
     skos:definition "Type of the datum/property."@en ;
     skos:scopeNote "Use one of bool, int, float, string. For int and float the number of bits can be added. E.g. int32, float64."@en ;
     rdfs:range xsd:string .
 
 dm:datumUnit a owl:DatatypeProperty ;
-    skos:prefLabel "datumUnit"@en ;
+    skos:prefLabel "datum unit"@en ;
     skos:definition "Unit of the datum/property."@en ;
     skos:scopeNote "Use standard SI symbols."@en ;
     skos:scopeNote "Leave empty if dimensionless."@en ;
     rdfs:range xsd:string .
 
 dm:datumShape a owl:DatatypeProperty ;
-    skos:prefLabel "datumShape"@en ;
+    skos:prefLabel "datum shape"@en ;
     skos:definition "Unit of the datum/property."@en ;
     skos:scopeNote "List of the dimension names if the datum/property is multi-dimensional. Leave empty if it is a scalar."@en ;
     skos:scopeNote "Leave empty if scalar."@en ;
     rdfs:range rdf:JSON .
 
 dm:datumDescription a owl:DatatypeProperty ;
-    skos:prefLabel "datumDescription"@en ;
+    skos:prefLabel "datum description"@en ;
     skos:definition "Human-readable description of the datum/property."@en ;
     rdfs:range xsd:string .
 
@@ -377,7 +377,7 @@ skos:definition a owl:AnnotationProperty ;
     rdfs:range rdf:langString .
 
 dcat:downloadURL a owl:DatatypeProperty ;
-    skos:prefLabel "downloadURL"@en ;
+    skos:prefLabel "download url"@en ;
     skos:definition "A URL that is a direct link to a downloadable file in a given format. The format is indicated by the distribution's 'dterms:format' and/or 'dcat:mediaType'."@en ;
     rdfs:domain dcat:Distribution ;
     rdfs:range xsd:anyURI .
@@ -422,7 +422,7 @@ dcterms:source a owl:AnnotationProperty ;
 
 skos:scopeNote a owl:AnnotationProperty ;
     skos:altLabel "scope note"@en ;
-    skos:prefLabel "scopeNote"@en ;
+    skos:prefLabel "scope note"@en ;
     rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
     rdfs:subPropertyOf skos:note ;
     skos:definition "A note that helps to clarify the meaning and/or the use of a concept."@en .

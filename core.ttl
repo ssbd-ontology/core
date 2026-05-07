@@ -95,19 +95,19 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :hasDataValue rdf:type owl:DatatypeProperty ;
     rdfs:domain :Data ;
-    skos:prefLabel "hasDataValue"@en ;
+    skos:prefLabel "has data value"@en ;
     skos:definition "Relates a data individual to its literal value."@en .
 
 :hasAPI a owl:DatatypeProperty ;
     rdfs:domain :Software ;
     rdfs:range xsd:boolean ;
-    skos:prefLabel "hasAPI"@en ;
+    skos:prefLabel "has api"@en ;
     skos:definition "Whether the software has an API."@en .
 
 :hasGUI a owl:DatatypeProperty ;
     rdfs:domain :Software ;
     rdfs:range xsd:boolean ;
-    skos:prefLabel "hasGUI"@en ;
+    skos:prefLabel "has gui"@en ;
     skos:definition "Whether the software has a GUI."@en .
 
 
@@ -130,69 +130,69 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :nonOverlaps rdf:type owl:ObjectProperty, owl:SymmetricProperty, owl:IrreflexiveProperty ;
     rdfs:subPropertyOf :parthood ;
-    skos:prefLabel "nonOverlaps"@en ;
+    skos:prefLabel "non overlaps"@en ;
     owl:propertyDisjointWith :overlaps ;
     skos:definition "The relation between two individuals that does not share any parts."@en .
 
 :isOvercrossedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty ;
     rdfs:subPropertyOf :overlaps ;
-    skos:prefLabel "isOvercrossedBy"@en ;
+    skos:prefLabel "is overcrossed by"@en ;
     owl:propertyDisjointWith :hasPart ;
     skos:definition "The relation between an entity that overlaps another without having it as part."@en .
 
 :hasPart rdf:type owl:ObjectProperty, owl:ReflexiveProperty ;
     rdfs:subPropertyOf dcterms:hasPart, :overlaps ;
-    skos:prefLabel "hasPart"@en ;
+    skos:prefLabel "has part"@en ;
     skos:scopeNote "OWL2 does not allow non-simple (e.g. transitive) properties to appear in disjoint property axioms. We therefore implement the transitivity of hasPart using SWRL rules instead of asserting it with owl:TransitiveProperty."@en ;
     skos:definition "The primitive relation that express the concept of an entity being part of another one."@en .
 
 :hasProperPart rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasPart ;
     owl:propertyDisjointWith :equalsTo ;
-    skos:prefLabel "hasProperPart"@en ;
+    skos:prefLabel "has proper part"@en ;
     skos:definition "The relation between an entity and one of its parts, when both entities are distinct."@en .
 
 :equalsTo rdf:type owl:ObjectProperty, owl:SymmetricProperty ;
     rdfs:subPropertyOf :hasPart, [ owl:inverseOf :hasPart ] ;
-    skos:prefLabel "equalsTo"@en ;
+    skos:prefLabel "equals to"@en ;
     skos:definition "The relation between two indeviduals representing the same entity."@en ;
     skos:editorialNote "The main purpose of this relation is to locically define hasProperPart." .
 
 :hasParticipant rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasProperPart ;
-    skos:prefLabel "hasParticipant"@en ;
+    skos:prefLabel "has participant"@en ;
     skos:definition "The relation between a process and an object participating to it, i.e. that is relevant to the process itself."@en ;
     skos:scopeNote "Participation is a parthood relation - you must be part of the process to contribute to it. A participant whose 4D extension is totally contained within the process."@en .
 
 :hasDatum rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasProperPart ;
-    skos:prefLabel "hasDatum"@en ;
+    skos:prefLabel "has datum"@en ;
     rdfs:domain :Dataset ;
     rdfs:range :Datum ;
     skos:definition "Relates a dataset to its datum."@en .
 
 :hasSpatialPart rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasProperPart ;
-    skos:prefLabel "hasSpatialPart"@en ;
+    skos:prefLabel "has spatial part"@en ;
     skos:definition "A proper part of a whole, whose parts always cover the full temporal extension of the whole within a spatial interval."@en ;
     skos:scopeNote "The part is connected with the rest item or members with hasContact relations only (no hasNext)."@en .
 
 :hasTemporalPart rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasProperPart ;
-    skos:prefLabel "hasTemporalPart"@en ;
+    skos:prefLabel "has temporal part"@en ;
     skos:definition "A relation that identify a proper item part of the whole, whose parts always cover the full spatial extension of the whole within a time interval."@en ;
     skos:scopeNote "A temporal part of an item cannot both cause and be caused by any other proper part of the item."@en .
 
 :hasJunctionPart rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasProperPart ;
-    skos:prefLabel "hasJunctionPart"@en ;
+    skos:prefLabel "has junction part"@en ;
     skos:altLabel "hasSpatioTemporalPart"@en ;
     skos:definition "The part is connected with the rest item or members with both hasNext (or its inverse) and hasContact relations."@en .
 
 
 :participatesTo rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :isOvercrossedBy ;
-    skos:prefLabel "participatesTo"@en ;
+    skos:prefLabel "participates to"@en ;
     rdfs:domain prov:Entity ;
     rdfs:range prov:Activity ;
     skos:scopeNote "The entity through overlaps the activity."@en ;
@@ -200,7 +200,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :hasInput rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :isOvercrossedBy ;
-    skos:prefLabel "hasInput"@en ;
+    skos:prefLabel "has input"@en ;
     rdfs:domain prov:Activity ;
     rdfs:range prov:Entity ;
     skos:scopeNote "The activity A proper overlaps the entity E, where the non-overlapping part of E causes A."@en ;
@@ -208,7 +208,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :hasOutput rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :isOvercrossedBy ;
-    skos:prefLabel "hasOutput"@en ;
+    skos:prefLabel "has output"@en ;
     rdfs:domain prov:Activity ;
     rdfs:range prov:Entity ;
     skos:scopeNote "The activity A proper overlaps the entity E, where the non-overlapping part of E is caused by A."@en ;
@@ -225,7 +225,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :wasGeneratedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf prov:wasGeneratedBy,  [ owl:inverseOf :hasOutput ], :isOvercrossedBy ;
-    skos:prefLabel "wasGeneratedBy"@en ;
+    skos:prefLabel "was generated by"@en ;
     rdfs:domain prov:Entity ;
     rdfs:range prov:Activity ;
     skos:scopeNote "The activity A proper overlaps the entity E, where the non-overlapping part of E is caused by A."@en ;
@@ -233,7 +233,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :wasAssociatedWith rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf prov:wasAssociatedWith, :isOvercrossedBy ;
-    skos:prefLabel "wasAssociatedWith"@en ;
+    skos:prefLabel "was associated with"@en ;
     rdfs:domain prov:Activity ;
     rdfs:range prov:Agent ;
     skos:scopeNote "The activity is through overlapped by the agent."@en ;
@@ -241,21 +241,21 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :performedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf [ owl:inverseOf :participatesTo ], :wasAssociatedWith ;
-    skos:prefLabel "performedBy"@en ;
+    skos:prefLabel "performed by"@en ;
     skos:altLabel "hasIntentionalAgent"@en ;
     rdfs:range emmo:IntentionalAgent ;
     skos:definition "Relates an activity to an intentional agent that drives the process."@en .
 
 :performedWith rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf [ owl:inverseOf :participatesTo ], :wasAssociatedWith ;
-    skos:prefLabel "performedWith"@en ;
+    skos:prefLabel "performed with"@en ;
     skos:altLabel "hasUnintentionalAgent"@en ;
     rdfs:range emmo:UnintentionalAgent ;
     skos:definition "Relates an activity to an unintentional agent that drives the process."@en .
 
 :hasSoftware rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :performedBy ;
-    skos:prefLabel "hasSoftware"@en ;
+    skos:prefLabel "has software"@en ;
     skos:altLabel "hasSoftwareAgent"@en ;
     rdfs:domain :Computation ;
     rdfs:range :Software ;
@@ -263,7 +263,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :hasSubProcess rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasProperPart ;
-    skos:prefLabel "hasSubProcess"@en ;
+    skos:prefLabel "has sub process"@en ;
     rdfs:domain :Process ;
     rdfs:range :Process ;
     skos:definition "The relation between a process and one of its process parts."@en .
@@ -279,7 +279,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :parthood, [ owl:inverseOf :hasProperPart ] ;
     rdfs:domain :Software ;
     rdfs:range :Software ;
-    skos:prefLabel "isSubmoduleOf"@en ;
+    skos:prefLabel "is submodule of"@en ;
     skos:altLabel "isSoftwareSubmoduleOf"@en ;
     skos:definition "A parthood relation that relates a submodule of a software to the software."@en .
 
@@ -292,37 +292,37 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :causedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty ;
     rdfs:subPropertyOf :causal, prov:wasInfluencedBy ;
-    skos:prefLabel "causedBy"@en ;
+    skos:prefLabel "caused by"@en ;
     skos:definition "A relation between an entity that causally affects the subject."@en ;
     skos:example "John yesterday is the cause of John today, is an example of temporal-like causality. The desk supporting my laptop is a space-like causality."@en .
 
 :isAfter rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :causedBy ;
-    skos:prefLabel "isAfter"@en ;
+    skos:prefLabel "is after"@en ;
     skos:definition "A one-directional relation between an entity that affects the subject."@en .
 
 :processedFrom rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :isAfter ;
-    skos:prefLabel "processedFrom"@en ;
+    skos:prefLabel "processed from"@en ;
     skos:definition "Indirect relation that relates the output of an activity to its input."@en .
 
 :wasInformedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :isAfter, prov:wasInformedBy ;
-    skos:prefLabel "wasInformedBy"@en ;
+    skos:prefLabel "was informed by"@en ;
     skos:definition "A one-directional relation between an activity that affects the subject activity."@en ;
     rdfs:domain prov:Activity ;
     rdfs:range prov:Activity .
 
 :wasDerivedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :processedFrom, prov:wasDerivedBy ;
-    skos:prefLabel "wasDerivedBy"@en ;
+    skos:prefLabel "was derived by"@en ;
     skos:definition "Indirect relation that relates the output entity of an activity to its input entity."@en ;
     rdfs:domain prov:Entity ;
     rdfs:range prov:Entity .
 
 :wasAttributedTo rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf prov:wasAttributedTo, :causedBy ;
-    skos:prefLabel "wasAttributedTo"@en ;
+    skos:prefLabel "was attributed to"@en ;
     rdfs:domain prov:Entity ;
     rdfs:range prov:Agent ;
     skos:definition "Relates an entity to an agent via an activity that both the entity and agent participates to."@en ;
@@ -341,7 +341,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :priorRelease rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :causedBy ;
-    skos:prefLabel "priorRelease"@en ;
+    skos:prefLabel "prior release"@en ;
     rdfs:domain :Software ;
     rdfs:range :Software ;
     skos:definition "Direct relation that relates a software to the most resent earlier release of the software."@en ;
@@ -359,7 +359,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :isInterpretedBy rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :semiotical ;
-    skos:prefLabel "isInterpretedBy"@en ;
+    skos:prefLabel "is interpreted by"@en ;
     skos:definition "Connects a sign (e.g. a property) to an interpreter."@en ;
     rdfs:domain :Sign ;
     rdfs:range :Interpreter .
@@ -367,26 +367,26 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 :isRepresentedBy rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :semiotical ;
     owl:inverseOf :standsFor ;
-    skos:prefLabel "isRepresentedBy"@en ;
+    skos:prefLabel "is represented by"@en ;
     skos:definition "Connects an entity to a sign that stands for the entity."@en ;
     rdfs:domain prov:Entity ;
     rdfs:range :Sign .
 
 :hasProperty rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :isRepresentedBy ;
-    skos:prefLabel "hasProperty"@en ;
+    skos:prefLabel "has property"@en ;
     skos:definition "Connects a thing to one of its properties."@en ;
     rdfs:range :Property .
 
 :hasDescription rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :isRepresentedBy ;
-    skos:prefLabel "hasDescription"@en ;
+    skos:prefLabel "has description"@en ;
     skos:definition "Connects a thing to a description (i.e. collection of properties) of the thing."@en ;
     rdfs:range :Description .
 
 :hasMeasurementUnit rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :hasDescription ;
-    skos:prefLabel "hasUnit"@en ;
+    skos:prefLabel "has unit"@en ;
     skos:definition "Connects a property to its unit."@en ;
     skos:scopeNote "`ssbd:hasMeasurementUnit` is intended to refer to a unit in an existing unit ontology, like QUDT or EMMO."@en ;
     rdfs:domain :Property .
@@ -394,7 +394,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 :standsFor rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :semiotical ;
     owl:inverseOf :isRepresentedBy ;
-    skos:prefLabel "standsFor"@en ;
+    skos:prefLabel "stands for"@en ;
     skos:definition "Connects a sign (e.g. a property) to an entity (a 'referent')."@en ;
     rdfs:domain :Sign ;
     rdfs:range prov:Entity .
@@ -402,7 +402,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 :isDescriptionOf rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
     owl:inverseOf :hasDescription ;
-    skos:prefLabel "isDescriptionOf"@en ;
+    skos:prefLabel "is description of"@en ;
     skos:definition "Connects a description to an entity."@en ;
     rdfs:domain :Description ;
     rdfs:range prov:Entity .
@@ -410,14 +410,14 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 :isPropertyOf rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
     owl:inverseOf :hasProperty ;
-    skos:prefLabel "isPropertyOf"@en ;
+    skos:prefLabel "is property of"@en ;
     skos:definition "Connects a property to an entity."@en ;
     rdfs:domain :Property ;
     rdfs:range prov:Entity .
 
 :implementsModel rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :standsFor ;
-    skos:prefLabel "implementsModel"@en ;
+    skos:prefLabel "implements model"@en ;
     rdfs:domain :Software ;
     rdfs:range :Model ;
     skos:definition "Relates a software to the model it implements."@en ;
@@ -425,7 +425,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :tierLevel a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasProperty ;
-    skos:prefLabel "tierLevel"@en ;
+    skos:prefLabel "tier level"@en ;
     rdfs:domain prov:Entity ;
     rdfs:range :TierLevel ;
     skos:definition "Relate an entity to an SSbD tier level."@en ;
@@ -435,7 +435,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :standsFor ;
     rdfs:domain prov:Entity ;
     rdfs:range :Matter ;
-    skos:prefLabel "chemicalClass"@en ;
+    skos:prefLabel "chemical class"@en ;
     skos:definition "Relates an entity to a chemical class that the entity is relevant for."@en ;
     vann:usageNote "Choose one of subclasses of ssbd:Matter."@en .
 
@@ -462,7 +462,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :MaterialProcess rdf:type owl:Class ;
     rdfs:subClassOf :Process ;
-    skos:prefLabel "MaterialProcess"@en ;
+    skos:prefLabel "Material Process"@en ;
     skos:definition "A process that has material as input and output."@en .
 
 :Measurement rdf:type owl:Class ;
@@ -500,14 +500,14 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     ] ;
      skos:definition "An assessment of the safety and sustainability of chemicals and materials across their life cycle. Assesses one or more ssbd dimension, through one ore more SSbDSpecifiedAssessments"@en ;
      rdfs:altLabel "SSbD Assessment"@en ;
-     skos:prefLabel "SSbDAssessment"@en .
+     skos:prefLabel "S Sb D Assessment"@en .
 
 
 ###  https://w3id.org/ssbd/SpecifiedAssessment
 :SpecifiedAssessment rdf:type owl:Class ;
      rdfs:subClassOf ssbd:Assessment ;
      skos:definition "An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact."@en ;
-     skos:prefLabel "SpecifiedAssessment"@en .
+     skos:prefLabel "Specified Assessment"@en .
 
 
 
@@ -531,7 +531,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
                    skos:definition "Safe and sustainable by design (SSbD) can be described as an approach that focuses on providing a function (or service), while avoiding onerous environmental footprints and chemical properties that may be harmful to human health or the environment.  In essence, the SSbD approach aims to identifying and minimizing, at an early phase of the innovation process, the impacts concerning safety for humans and the environment and for sustainability, minimizing the environmental footprint, in particular regarding climate change and resource use and, protecting ecosystems and biodiversity, taking a lifecycle perspective. The SSbD approach addresses the safety and sustainability of the material/ chemical/ product and associated processes along the whole life cycle, including all the steps of the research and development (R&D) phase, production, use, recycling, and disposal."@en ;
                    dcterms:source "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf" ;
                    skos:altLabel "Safe and Sustainable by Design Dimension" ;
-                   skos:prefLabel "SSbDDimension"@en ;
+                   skos:prefLabel "S Sb D Dimension"@en ;
                    skos:scopeNote "The superclass of all dimensions relevant for SSbD assessments." .
 
 
@@ -549,7 +549,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
 
 :ComputationalTool rdf:type owl:Class ;
     rdfs:subClassOf :Software ;
-    skos:prefLabel "ComputationalTool"@en ;
+    skos:prefLabel "Computational Tool"@en ;
     skos:definition "A software that performs a computation."@en ;
     skos:example "Gromacs is a computational tool that solves Newton's equations of motion."@en .
 
@@ -565,7 +565,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
         owl:onProperty :implementsModel ;
         owl:someValuesFrom :QSARModel
     ] ;
-    skos:prefLabel "QSARSoftware"@en ;
+    skos:prefLabel "QSAR Software"@en ;
     skos:definition "A software implementing a QSAR model."@en .
 
 :Datum rdf:type owl:Class ;
@@ -586,7 +586,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
 
 :ReliabilityDocument rdf:type owl:Class ;
     rdfs:subClassOf foaf:Document ;
-    skos:prefLabel "ReliabilityDocument"@en ;
+    skos:prefLabel "Reliability Document"@en ;
     skos:definition "xxx"@en ;
     vann:usageNote "xxx"@en .
 
@@ -595,78 +595,78 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     rdfs:subClassOf :Data ;
     rdfs:seeAlso <https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Datatype_Maps> ;
     rdfs:seeAlso <https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#built-in-datatypes> ;
-    skos:prefLabel "SymbolicData"@en ;
+    skos:prefLabel "Symbolic Data"@en ;
     skos:definition "The class for entities which stands for a specific data format expressed using a symbolic encoding."@en .
 
 :NumericalData rdf:type owl:Class ;
     rdfs:subClassOf :SymbolicData ;
-    skos:prefLabel "NumericalData"@en ;
+    skos:prefLabel "Numerical Data"@en ;
     skos:definition "A symbolic data representing a numerical value."@en .
 
 :FloatData rdf:type owl:Class ;
     rdfs:subClassOf :NumericalData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#float> ;
-    skos:prefLabel "FloatData"@en ;
+    skos:prefLabel "Float Data"@en ;
     skos:definition "A symbolic data representing a 32-bit floating point numbers incl. ±Inf, ±0, NaN."@en .
 
 :DoubleData rdf:type owl:Class ;
     rdfs:subClassOf :NumericalData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#double> ;
-    skos:prefLabel "DoubleData"@en ;
+    skos:prefLabel "Double Data"@en ;
     skos:definition "A symbolic data representing a 64-bit floating point numbers incl. ±Inf, ±0, NaN."@en .
 
 :IntegerData rdf:type owl:Class ;
     rdfs:subClassOf :NumericalData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#integer> ;
-    skos:prefLabel "IntegerData"@en ;
+    skos:prefLabel "Integer Data"@en ;
     skos:definition "A data representing an arbritrary sized integer number."@en .
 
 :LongData rdf:type owl:Class ;
     rdfs:subClassOf :IntegerData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#long> ;
-    skos:prefLabel "LongData"@en ;
+    skos:prefLabel "Long Data"@en ;
     skos:definition "A data representing a 64-bit integer number."@en .
 
 :IntData rdf:type owl:Class ;
     rdfs:subClassOf :LongData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#int> ;
-    skos:prefLabel "IntData"@en ;
+    skos:prefLabel "Int Data"@en ;
     skos:definition "A data representing a 32-bit integer number."@en .
 
 :ShortData rdf:type owl:Class ;
     rdfs:subClassOf :IntData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#short> ;
-    skos:prefLabel "ShortData"@en ;
+    skos:prefLabel "Short Data"@en ;
     skos:definition "A data representing a 16-bit integer number."@en .
 
 :ByteData rdf:type owl:Class ;
     rdfs:subClassOf :ShortData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#byte> ;
-    skos:prefLabel "ByteData"@en ;
+    skos:prefLabel "Byte Data"@en ;
     skos:definition "A data representing a 8-bit integer number."@en .
 
 :BooleanData rdf:type owl:Class ;
     rdfs:subClassOf :SymbolicData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#boolean> ;
-    skos:prefLabel "BooleanData"@en ;
+    skos:prefLabel "Boolean Data"@en ;
     skos:definition "A symbolic data representing a boolean number."@en .
 
 :DateData rdf:type owl:Class ;
     rdfs:subClassOf :SymbolicData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#date> ;
-    skos:prefLabel "DateData"@en ;
+    skos:prefLabel "Date Data"@en ;
     skos:definition "A symbolic data representing date. Format: YYYY-MM-DD (followed by an optional time zone offset, e.g. +01:00 for Central Europe)."@en .
 
 :TimeData rdf:type owl:Class ;
     rdfs:subClassOf :SymbolicData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#time> ;
-    skos:prefLabel "TimeData"@en ;
+    skos:prefLabel "Time Data"@en ;
     skos:definition "A symbolic data representing time. Format: hh:mm:ss (followed by an optional time zone offset, e.g. +01:00 for Central Europe)."@en .
 
 :DateTimeData rdf:type owl:Class ;
     rdfs:subClassOf :SymbolicData ;
     rdfs:seeAlso <https://www.w3.org/TR/xmlschema11-2/#dateTime> ;
-    skos:prefLabel "DateTimeData"@en ;
+    skos:prefLabel "Date Time Data"@en ;
     skos:definition "A symbolic data representing datetime. Format: YYYY-MM-DDThh:mm:ss (followed by an optional time zone offset, e.g. +01:00 for Central Europe)."@en .
 
 
@@ -727,7 +727,7 @@ An architectural floor plan is a model of a house.
 
 :DomainOfApplicabilityStatus rdf:type owl:Class ;
     rdfs:subClassOf :Property ;
-    skos:prefLabel "DomainOfApplicabilityStatus"@en ;
+    skos:prefLabel "Domain Of Applicability Status"@en ;
     skos:definition "A result of a model or software indicating whether an input is within the applicability domain of the model or software. Applicability domain refers to the range of conditions and limitations within which a model can be reliably applied. It is a critical factor in determining the accuracy and validity of a model, as it defines the scope of its predictions and identifies potential sources of uncertainty. The process of defining the applicability domain involves assessing the model's performance under different conditions and establishing the boundaries of its predictive capabilities."@en ;
     skos:scopeNote "It should take one of the following values: ssbd:undefined; ssbd:outOfDomain; ssbd:inDomain."@en .
 
@@ -746,7 +746,7 @@ An architectural floor plan is a model of a house.
 ## Tier level
 :TierLevel rdf:type owl:Class ;
     rdfs:subClassOf prov:Entity ;
-    skos:prefLabel "TierLevel"@en ;
+    skos:prefLabel "Tier Level"@en ;
     skos:definition "Represent a tiered, iterative framework for evaluating chemical and material safety from early innovation to production."@en ;
     skos:scopeNote "This approach typically involves a three-tier system-ranging from qualitative, early-stage, in silico, and in vitro screening to, finally, advanced, quantitative, in vivo testing."@en .
 
