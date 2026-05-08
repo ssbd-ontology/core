@@ -244,14 +244,14 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:prefLabel "performedBy"@en ;
     skos:altLabel "hasIntentionalAgent"@en ;
     rdfs:range emmo:IntentionalAgent ;
-    skos:definition "Relates an activity to an intentional agent that drives the process."@en .
+    skos:definition "Relates an activity to an intentional agent that drives the activity."@en .
 
 :performedWith rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf [ owl:inverseOf :participatesTo ], :wasAssociatedWith ;
     skos:prefLabel "performedWith"@en ;
     skos:altLabel "hasUnintentionalAgent"@en ;
     rdfs:range emmo:UnintentionalAgent ;
-    skos:definition "Relates an activity to an unintentional agent that drives the process."@en .
+    skos:definition "Relates an activity to an unintentional agent that drives the activity."@en .
 
 :hasSoftware rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :performedBy ;
