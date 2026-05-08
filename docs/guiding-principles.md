@@ -42,6 +42,8 @@ NB! This naming convention is chosen for human readability, also of IRIs. We sho
 
 ### Preferred labels (`skos:prefLabel`)
 
+All concepts defined in the ontology should have a unique `skos:prefLabels` within the namespace.
+
 Human-readable preferred labels are set using `skos:prefLabel` and follow different conventions depending on the term type:
 
 - **Classes** (`owl:Class`): words are separated by spaces, each word capitalised.
