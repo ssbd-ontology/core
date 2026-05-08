@@ -500,7 +500,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     ] ;
      skos:definition "An assessment of the safety and sustainability of chemicals and materials across their life cycle. Assesses one or more ssbd dimension, through one ore more SSbDSpecifiedAssessments"@en ;
      rdfs:altLabel "SSbD Assessment"@en ;
-     skos:prefLabel "S Sb D Assessment"@en .
+     skos:prefLabel "SSbD Assessment"@en .
 
 
 ###  https://w3id.org/ssbd/SpecifiedAssessment
