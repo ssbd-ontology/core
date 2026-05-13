@@ -274,8 +274,8 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :isOvercrossedBy ;
     skos:prefLabel "assesses"@en ;
     rdfs:domain :Assessment ;
-    rdfs:range :SSbDDimension ;
-    skos:definition "Relates an assessment to a SSbD dimension."@en .
+    rdfs:range prov:Entity ;
+    skos:definition "Relates an assessment to the entity it assesses. Can e.g. be a semantically defined thematic area."@en .
 
 :isSubmoduleOf rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :parthood, [ owl:inverseOf :hasProperPart ] ;
@@ -484,6 +484,10 @@ The root of the SSbD Core Ontology is shown below. More information can be found
         a owl:Restriction ;
         owl:onProperty :hasOutput ;
         owl:someValuesFrom :Property
+    ] , [
+        a owl:Restriction ;
+        owl:onProperty :assesses ;
+        owl:someValuesFrom prov:Entity
     ] ;
     skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process."@en ;
     skos:prefLabel "Assessment"@en .
@@ -530,7 +534,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
 ###  https://w3id.org/ssbd/SSbDDimension
 :SSbDDimension rdf:type owl:Class ;
                    rdfs:subClassOf prov:Entity ;
-                   skos:definition "The superclass of all dimensions relevant for SSbD assessments. Such dimensions are thematic areas."@en ;
+                   skos:definition "The superclass of all dimensions relevant for SSbD assessments. Such dimensions can be considered thematic areas."@en ;
                    dcterms:source "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf" ;
                    skos:altLabel "Safe and Sustainable by Design Dimension" ;
                    skos:prefLabel "SSbDDimension"@en .
