@@ -20,7 +20,7 @@
 # General mappings for classes
 emmo:PhysicalQuantity rdfs:subClassOf ssbd:Property .  # property
 cheminf:CHEMINF_000000 rdfs:subClassOf emmo:ChemicalEntity .  # chemical entity
-cheminf:CHEMINF_000123 rdfs:subClassOf ssbd:Indicator .  # chemical descriptor
+cheminf:CHEMINF_000123 rdfs:subClassOf ssbd:Property .  # chemical descriptor
 cheminf:CHEMINF_000266 rdfs:subClassOf emmo:ChemicalSubstance .  # chemical substance
 obo:CHEBI_23367 rdfs:subClassOf emmo:MolecularEntity .  # molecular entity
 obo:CHEBI_33250 rdfs:subClassOf emmo:Atom .  # atom
