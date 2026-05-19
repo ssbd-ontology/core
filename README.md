@@ -1,3 +1,13 @@
+[![CI tests](https://github.com/ssbd-ontology/core/workflows/CI%20tests/badge.svg)](https://github.com/ssbd-ontology/core/actions)
+[![Documentation](https://img.shields.io/badge/documentation-informational?logo=githubpages)](https://ssbd-ontology.github.io/core/index.html)
+<!--
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7811078.svg)](https://doi.org/10.5281/zenodo.7811078)
+-->
+[![DOI](https://zenodo.org/badge/1189817701.svg)](https://doi.org/10.5281/zenodo.20289313)
+
+
+
+
 # The SSbD Core Ontology
 
 SSbD Core Ontology provides semantic annotations for the [Safe and Sustainable by Design](https://research-and-innovation.ec.europa.eu/research-area/industrial-research-and-innovation/chemicals-and-advanced-materials/safe-and-sustainable-design_en) (SSbD) approach to guide the innovation process for chemicals and materials. It adheres to the recommendations specified by DCAT-AP 3.0.1 as implemented in Tripper, and builds on PROV-O for provenance. It is constructed to be easily aligned with EMMO.
