@@ -1,10 +1,9 @@
 [![CI tests](https://github.com/ssbd-ontology/core/workflows/CI%20tests/badge.svg)](https://github.com/ssbd-ontology/core/actions)
 [![Documentation](https://img.shields.io/badge/documentation-informational?logo=githubpages)](https://ssbd-ontology.github.io/core/index.html)
 <!--
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7811078.svg)](https://doi.org/10.5281/zenodo.7811078)
--->
 [![DOI](https://zenodo.org/badge/1189817701.svg)](https://doi.org/10.5281/zenodo.20289313)
-
+-->
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20289313-blue)](https://doi.org/10.5281/zenodo.20289313)
 
 
 
