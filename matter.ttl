@@ -197,6 +197,7 @@ emmo:ElementalSubstance rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#Fluid
 emmo:Fluid rdf:type owl:Class ;
     rdfs:subClassOf emmo:StateOfMatter ;
+    owl:disjointWith emmo:Solid ;
     skos:example "Gas, liquid, plasma,"@en ;
     skos:prefLabel "Fluid"@en ;
     skos:definition "A continuum that has no fixed shape and yields easily to external pressure."@en .
@@ -205,6 +206,7 @@ emmo:Fluid rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#Gas
 emmo:Gas rdf:type owl:Class ;
     rdfs:subClassOf emmo:Fluid ;
+    owl:disjointWith emmo:Plasma, emmo:Liquid ;
     skos:prefLabel "Gas"@en ;
     skos:definition "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en .
 
@@ -225,8 +227,8 @@ emmo:IonAtom rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#Liquid
 emmo:Liquid rdf:type owl:Class ;
-            rdfs:subClassOf emmo:CondensedMatter ,
-    emmo:Fluid ;
+    rdfs:subClassOf emmo:CondensedMatter, emmo:Fluid ;
+    owl:disjointWith emmo:Gas, emmo:Plasma ;
     skos:prefLabel "Liquid"@en ;
     skos:definition "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en .
 
@@ -391,6 +393,7 @@ The term phase is sometimes used as a synonym for state of matter, but there can
 ###  https://w3id.org/emmo/hume#Plasma
 emmo:Plasma rdf:type owl:Class ;
     rdfs:subClassOf emmo:Fluid ;
+    owl:disjointWith emmo:Gas, emmo:Liquid ;
     skos:prefLabel "Plasma"@en ;
     skos:definition "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en .
 
@@ -421,6 +424,7 @@ emmo:Powder rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#Solid
 emmo:Solid rdf:type owl:Class ;
     rdfs:subClassOf emmo:CondensedMatter ;
+    owl:disjointWith emmo:Fluid ;
     skos:prefLabel "Solid"@en ;
     skos:definition "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
 
