@@ -67,6 +67,8 @@ skos:example rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
 rdfs:label rdf:type owl:AnnotationProperty .
 
 
