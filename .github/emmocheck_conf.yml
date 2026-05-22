@@ -11,7 +11,12 @@ enable:
 test_number_of_labels:
   exceptions:
     - ssbd.Software
-    - ssbd.Computation
+    - ssbd.Information
+    - ssbd.Model
+ 
+test_number_of_rdfslabels:
+  exceptions:
+    - ssbd.Software
     - ssbd.Information
     - ssbd.Model
     
