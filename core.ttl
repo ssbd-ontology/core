@@ -218,8 +218,9 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 
 :outputsIndicator rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :hasOutput ;
-    rdfs:label "outputsIndicator"@en ;
+    rdfs:label "outputs Indicator"@en ;
     rdfs:domain prov:Assessment ;
+    skos:prefLabel "outputsIndicator"@en ;
     rdfs:range :Property ;
     skos:scopeNote "By referring to a Property as object it is is possible to search the KB for indicators as outputs."@en ;
     skos:definition "An output property of the Assessment that is intended to be an indicator in the given context."@en .
