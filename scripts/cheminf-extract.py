@@ -268,6 +268,7 @@ triples = []
 labels = set()
 for s, p, o in ts.triples(predicate=RDFS.label):
     label = str(o)
+    triples.append((s, RDFS.label, en(label)))
     if label not in labels:
         labels.add(label)
         if not ts.has(s, SKOS.prefLabel):
@@ -297,6 +298,7 @@ for s, p, o in triples:
                 try:
                     definition = ts.value(s, a)
                 except UniquenessError:
+                    print('unique value error for', s, a)
                     pass
                 else:
                     if definition and (a != RDFS.label or " " in definition):
