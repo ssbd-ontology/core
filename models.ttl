@@ -358,12 +358,6 @@ ssbd:CollaborativeFiltering rdf:type owl:Class ;
                             skos:prefLabel "Collaborative Filtering"@en .
 
 
-###  https://w3id.org/ssbd/Computation
-ssbd:Computation rdf:type owl:Class ;
-             skos:definition "Copmutation"@en ;
-	         skos:prefLabel "Computation"@en .
-
-
 ###  https://w3id.org/ssbd/ComputerVision
 ssbd:ComputerVision rdf:type owl:Class ;
                     rdfs:subClassOf ssbd:PerceptionModel ;

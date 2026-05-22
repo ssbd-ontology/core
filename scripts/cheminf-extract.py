@@ -132,6 +132,7 @@ annotation_mappings = {
     DCTERMS.description: SKOS.definition,  # The SSbD ontology elucidate classes with skos.definition
     "http://purl.org/dc/elements/1.1/source": DCTERMS.source,
     "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/source": DCTERMS.source,
+    #"http://www.semanticweb.org/ontologies/cheminf.owl#short_name": SKOS.altLabel,
 }
 
 # Annotations that should be language strings
@@ -141,7 +142,6 @@ lang_annotations = [
     SKOS.altLabel,
     RDFS.label,
     RDFS.comment,
-    #CHEMOWL.short_name,
 ]
 
 
