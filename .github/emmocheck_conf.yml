@@ -7,6 +7,8 @@ skip:
 
 enable:
   - test_number_of_rdfslabels
+  - test_class_preflabel
+  - test_property_preflabel
 
 test_number_of_labels:
   exceptions:
