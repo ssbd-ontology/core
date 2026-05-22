@@ -732,6 +732,7 @@ An architectural floor plan is a model of a house.
     skos:prefLabel "IndicatorEvalation"@en ;
     skos:definition "An assessment that takes an indicator as input and produces a quantitative output that can be used to guide decisions."@en ;
     skos:scopeNote "The produced output is a sign, that is either a single property or a collection of properties, (i.e. a description)."@en ;
+    skos:scopeNote "IndicatorEvaluation is only expected to be used at individual level to avoid making the input property an indicator in a general scope."@en ;
     skos:scopeNote "The IndicatorEvaluation class was introduced to provide a logically concise definition of Indicator such that it is possible for a reasoner to infer that any property that is input to an IndicatorEvaluation must be an Indicator."@en .
 
 :Toxicity rdf:type owl:Class ;
