@@ -497,7 +497,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
         owl:onProperty :assesses ;
         owl:someValuesFrom prov:Entity
     ] ;
-    skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process. The resuls of an assessment is one or more properties."@en ;
+    skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process. The result of an assessment is one or more properties."@en ;
     skos:prefLabel "Assessment"@en .
 
 
