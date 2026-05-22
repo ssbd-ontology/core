@@ -216,6 +216,14 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:scopeNote "The activity A proper overlaps the entity E, where the non-overlapping part of E is caused by A."@en ;
     skos:definition "Relates an activity to an entity that is the output of the activity."@en .
 
+:outputsIndicator rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+    rdfs:subPropertyOf :hasOutput ;
+    skos:prefLabel "outputsIndicator"@en ;
+    rdfs:domain prov:Assessment ;
+    rdfs:range :Property ;
+    skos:scopeNote "By referring to a Property as object it is is possible to search the KB for indicators as outputs."@en ;
+    skos:definition "An output property of the Assessment that is intended to be an indicator in the given context."@en .
+
 :used rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf prov:used, :hasInput ;
     skos:prefLabel "used"@en ;
@@ -489,7 +497,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
         owl:onProperty :assesses ;
         owl:someValuesFrom prov:Entity
     ] ;
-    skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process."@en ;
+    skos:definition "The process of evaluating the quality, performance, impact or other properties of a substance, product, or process. The result of an assessment is one or more properties."@en ;
     skos:prefLabel "Assessment"@en .
 
 
