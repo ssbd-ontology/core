@@ -35,8 +35,8 @@ The SSbD Core Ontology follows consistent naming conventions for IRIs and human-
 
 ### IRI local names
 
-Local names in IRIs (the fragment after the namespace) use **UpperCamelCase** for classes and **lowerCamelCase** for properties.
-Examples: `ssbd:MaterialProcess`, `ssbd:hasPart`.
+Local names in IRIs (the fragment after the namespace) use **UpperCamelCase** for classes, **lowerCamelCase** for properties and **snake_case** for individuals.
+Examples: `ssbd:MaterialProcess`, `ssbd:hasPart`, `ns:my_individual`.
 
 NB! This naming convention is chosen for human readability, also of IRIs. We should consder moving to alphanumeric names in the future if we want to make the IRIs more compact and machine-friendly, but for now we prioritise human readability.
 
