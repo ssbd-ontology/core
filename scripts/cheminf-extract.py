@@ -128,12 +128,18 @@ ignored_terms = [
 annotation_mappings = {
     "http://purl.org/dc/elements/1.1/creator": DCTERMS.creator,
     "http://purl.org/dc/elements/1.1/date": DCTERMS.date,
+    "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/date": DCTERMS.date,
     "http://purl.org/dc/elements/1.1/description": SKOS.definition,
     DCTERMS.description: SKOS.definition,  # The SSbD ontology elucidate classes with skos.definition
     "http://purl.org/dc/elements/1.1/source": DCTERMS.source,
     "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/source": DCTERMS.source,
     #"http://www.semanticweb.org/ontologies/cheminf.owl#short_name": SKOS.altLabel,
 }
+
+dc_date_predicates = [
+    "http://purl.org/dc/elements/1.1/date",
+    "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/date",
+]
 
 # Annotations that should be language strings
 lang_annotations = [
@@ -278,15 +284,16 @@ ts.add_triples(triples)
 
 
 # Update class annotations for consistent use of Dublin Core and SKOS
-triples_remove = []
-triples_add = []
 for pred_from, pred_to in annotation_mappings.items():
     triples = list(ts.triples(predicate=pred_from))
-    triples_remove.extend(triples)
-    triples_add.extend((s, pred_to, o) for s, p, o in triples)
-for s, p, o in triples_remove:
-    ts.remove(s, p, o)
-ts.add_triples(triples_add)
+    if triples:
+        # Remove by predicate to avoid missing typed-literal matches.
+        ts.remove(predicate=pred_from)
+        ts.add_triples((s, pred_to, o) for s, p, o in triples)
+
+# Defensive cleanup: eliminate legacy dc:date after normalization to dcterms:date.
+for predicate in dc_date_predicates:
+    ts.remove(predicate=predicate)
 
 
 # If a class lack skos:definition, use rdfs:comment or rdfs:label as fallback

@@ -2,7 +2,6 @@
 @prefix : <http://semanticscience.org/resource/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix chemowl: <http://www.semanticweb.org/ontologies/cheminf.owl#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix oboowl: <http://www.geneontology.org/formats/oboInOwl#> .
@@ -1594,7 +1593,6 @@ where p is the partial pressure of the solute in the gas above the solution, c i
 :CHEMINF_000523 a owl:Class ;
     rdfs:label "ACD/Labs index name"@en ;
     obo:IAO_0000118 "index name"^^xsd:string ;
-    dc:date "2022-07-11 08:20:10+00:00"^^xsd:dateTime ;
     dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
     dcterms:date "2022-07-11T08:20:10+00:00"^^xsd:dateTime ;
     dcterms:source "https://www.acdlabs.com/products/name/"^^xsd:anyURI ;
@@ -1604,7 +1602,6 @@ where p is the partial pressure of the solute in the gas above the solution, c i
 
 :CHEMINF_000524 a owl:Class ;
     rdfs:label "InChI with fixedH layer"@en ;
-    dc:date "2022-07-11 08:22:02+00:00"^^xsd:dateTime ;
     dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
     dcterms:date "2022-07-11T08:22:02+00:00"^^xsd:dateTime ;
     dcterms:source "https://doi.org/10.1186%2Fs13321-015-0068-4"^^xsd:anyURI ;
@@ -2151,7 +2148,6 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
 :CHEMINF_000057 a owl:Class ;
     rdfs:label "file"@en,
         "melt mass flow rate"@en ;
-    dc:date "2017-02-09 14:29:12+00:00"^^xsd:dateTime ;
     dcterms:creator <http://orcid.org/0000-0003-3465-8786> ;
     dcterms:date "2017-02-09T14:29:12+00:00"^^xsd:dateTime ;
     rdfs:subClassOf :CHEMINF_000025 ;
@@ -2431,7 +2427,6 @@ SC#N
 
 :CHEMINF_000519 a owl:Class ;
     rdfs:label "absolute configuration stereochemical descriptor"@en ;
-    dc:date "2022-07-11 08:01:45+00:00"^^xsd:dateTime ;
     dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
     dcterms:date "2022-07-11T08:01:45+00:00"^^xsd:dateTime ;
     dcterms:source "https://doi.org/10.1351/goldbook.A00020"^^xsd:anyURI ;
@@ -2720,7 +2715,6 @@ HBA>=10
 
 :CHEMINF_000520 a owl:Class ;
     rdfs:label "relative configuration stereochemical descriptor"@en ;
-    dc:date "2022-07-11 08:04:08+00:00"^^xsd:dateTime ;
     dcterms:creator <http://orcid.org/0000-0002-4378-6061> ;
     dcterms:date "2022-07-11T08:04:08+00:00"^^xsd:dateTime ;
     dcterms:source "https://doi.org/10.1351/goldbook.R05260"^^xsd:anyURI ;
