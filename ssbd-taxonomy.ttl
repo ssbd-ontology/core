@@ -182,7 +182,8 @@ ssbd:EnergyConsumptionAssessment rdf:type owl:Class ;
 ssbd:EnvironmentalDimension rdf:type owl:Class ;
                             rdfs:subClassOf ssbd:SSbDDimension ;
                             skos:definition "The dimension of environmental impact in the context of SSbD assessments."@en ;
-                            skos:prefLabel "EnvironmentalDimension"@en .
+                            skos:prefLabel "EnvironmentalDimension"@en ;
+                            rdfs:label "Environmental Dimension"@en .
 
 
 ###  https://w3id.org/ssbd/EnvironmentalExternalitiesAssessment
@@ -726,7 +727,8 @@ ssbd:SkinAndRespiratorySensitisation rdf:type owl:Class ;
 ssbd:SocialDimension rdf:type owl:Class ;
                      rdfs:subClassOf ssbd:SSbDDimension ;
                      skos:definition "The dimension of social impact in the context of SSbD assessments."@en ;
-                     skos:prefLabel "SocialDimension"@en .
+                     skos:prefLabel "SocialDimension"@en ;
+                     rdfs:label "Social Dimension"@en .
 
 
 ###  https://w3id.org/ssbd/SocialExternalitiesAssessment
