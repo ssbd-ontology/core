@@ -30,49 +30,58 @@
 
 <https://orcid.org/0000-0002-1560-809X> a foaf:Person ;
     skos:prefLabel "JesperFriis" ;
+    rdfs:label "Jesper Friis"@en ;
     foaf:name "Jesper Friis" ;
     foaf:workplaceHomepage <https://www.sintef.no/en/> .
 
 <https://orcid.org/0000-0001-8869-3718> a foaf:Person ;
     skos:prefLabel "FrancescaBleken" ;
+    rdfs:label "Francesca Bleken"@en ;
     foaf:name "Francesca Lønstad Bleken" ;
     foaf:workplaceHomepage <https://www.sintef.no/en/> .
 
 
 <https://orcid.org/0000-0002-1849-5246> a foaf:Person ;
     skos:prefLabel "ThomasExner" ;
+    rdfs:label "Thomas Exner"@en ;
     foaf:name "Thomas Exner" ;
     foaf:workplaceHomepage <https://sevenpastnine.com/> .
 
 <https://orcid.org/0000-0002-8053-8198> a foaf:Person ;
     skos:prefLabel "JohDokler" ;
+    rdfs:label "Joh Dokler"@en ;
     foaf:name "Joh Dokler" ;
     foaf:workplaceHomepage <https://sevenpastnine.com/> .
 
 <https://orcid.org/0000-0003-4250-4584> a foaf:Person ;
     skos:prefLabel "IseultLynch" ;
+    rdfs:label "Iseult Lynch"@en ;
     foaf:name "Iseult Lynch" ;
     foaf:workplaceHomepage <https://www.birmingham.ac.uk/> .
 
 <https://orcid.org/0000-0002-2705-2068> a foaf:Person ;
     skos:prefLabel "DominicRuss" ;
+    rdfs:label "Dominic Russ"@en ;
     foaf:name "Dominic Russ" ;
     foaf:workplaceHomepage <https://www.birmingham.ac.uk/> .
 
 <https://orcid.org/0000-0002-0719-4907> a foaf:Person ;
     skos:prefLabel "AlexeHaywood" ;
+    rdfs:label "Alexe Haywood"@en ;
     foaf:name "Alexe Haywood" ;
     foaf:workplaceHomepage <https://www.birmingham.ac.uk/> .
 
 
 <https://orcid.org/0000-0002-6396-0848> a foaf:Person ;
     skos:prefLabel "IndraniMahapatra" ;
+    rdfs:label "Indrani Mahapatra"@en ;
     foaf:name "Indrani Mahapatra" ;
     foaf:workplaceHomepage <https://www.birmingham.ac.uk/> .
 
 
 <https://orcid.org/0000-0002-3372-4801> a foaf:Person ;
     skos:prefLabel "HuiYang" ;
+    rdfs:label "Hui Yang"@en ;
     foaf:name "Hui Yang" ;
     foaf:workplaceHomepage <https://www.birmingham.ac.uk/> .
 

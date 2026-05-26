@@ -9,7 +9,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+-*'
       - master
       - main
-      - fix-workflow
+      - rdfs_label
 
 permissions:
   contents: write

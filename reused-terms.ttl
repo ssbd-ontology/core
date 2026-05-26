@@ -79,6 +79,8 @@ widoco:introduction rdf:type owl:AnnotationProperty .
 ###  http://purl.org/dc/terms/source
 dcterms:source rdf:type owl:AnnotationProperty .
 
+### http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
 
 #
 # Datatypes
@@ -208,6 +210,7 @@ dcterms:issued a owl:DatatypeProperty ;
 #
 prov:Activity a owl:Class ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+    skos:prefLabel "Activity" ;
     rdfs:label "Activity" ;
     owl:disjointWith prov:Entity ;
     prov:category "starting-point" ;
@@ -221,6 +224,7 @@ prov:Agent a owl:Class ;
     rdfs:subClassOf foaf:Agent ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
     rdfs:label "Agent" ;
+    skos:prefLabel "Agent"@en ;
     #owl:disjointWith prov:InstantaneousEvent ;
     prov:category "starting-point" ;
     prov:component "agents-responsibility" ;
@@ -231,6 +235,7 @@ prov:Agent a owl:Class ;
 prov:Entity a owl:Class ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
     rdfs:label "Entity" ;
+    skos:prefLabel "Entity" ;
     #owl:disjointWith prov:InstantaneousEvent ;
     prov:category "starting-point" ;
     prov:component "entities-activities" ;
@@ -257,12 +262,14 @@ dcterms:LicenseDocument a owl:Class ;
     dcterms:issued "2008-01-14T00:00:00"^^xsd:dateTime ;
     rdfs:comment "A legal document giving official permission to do something with a resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-    rdfs:label "License Document"@en ;
+    skos:prefLabel "LicenseDocument"@en ;
+    rdfs:label "license document"@en ;
     rdfs:subClassOf dcterms:RightsStatement .
 
 dcat:Resource a owl:Class ;
     rdfs:comment "Resource published or curated by a single agent."@en ;
-    rdfs:label "Resource"@en ;
+    rdfs:label "resource"@en ;
+    skos:prefLabel "Resource"@en ;
     skos:scopeNote "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. The instances of this class SHOULD be included in a catalog. The instances of this class SHOULD be included in a catalog. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dcterms:type property to indicate the specific type."@en .
 
 
@@ -272,26 +279,22 @@ dcat:Resource a owl:Class ;
 
 ### Classes
 
-dcterms:LicenseDocument a owl:Class ;
-    rdfs:comment "A legal document giving official permission to do something with a resource." .
-
-dcat:Resource a owl:Class ;
-    skos:prefLabel "Resource"@en ;
-    skos:definition "Resource published or curated by a single agent."@en .
-
 dcat:Distribution a owl:Class ;
     rdfs:subClassOf dcat:Resource ;
     skos:prefLabel "Distribution"@en ;
+    rdfs:label "distribution"@en ;
     skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ;
     vann:usageNote "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en .
 
 dm:DataModel a owl:Class ;
     skos:prefLabel "DataModel"@en ;
+    rdfs:label "datamodel"@en ;
     skos:definition "A data model describing the datum/properties of a dataset."@en .
 
 emmo:IntentionalAgent a owl:Class ;
     rdfs:subClassOf prov:Agent ;
     skos:prefLabel "IntentionalAgent"@en ;
+    rdfs:label "intentional agent"@en ;
     skos:definition "An agent that is driven by the intention to reach a defined objective in driving a process."@en ;
     skos:scopeNote "Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation"@en ;
     skos:scopeNote "Intentionality will, as of today, normally apply to humans or decision systems designed by humans aimed for reaching a defined objective."@en .
@@ -299,6 +302,7 @@ emmo:IntentionalAgent a owl:Class ;
 emmo:UnintentionalAgent a owl:Class ;
     rdfs:subClassOf prov:Agent ;
     skos:prefLabel "UnintentionalAgent"@en ;
+    rdfs:label "unintentional agent"@en ;
     skos:definition "An agent that is driven by the law of physics rather than the intention to reach a defined objective."@en ;
     skos:example "A catalyst."@en .
 

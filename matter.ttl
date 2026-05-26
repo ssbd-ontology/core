@@ -46,6 +46,7 @@ emmo:AmorphousMaterial rdf:type owl:Class ;
                        skos:altLabel "NonCrystallineMaterial"@en ;
                        skos:definition "A solid lacking a repeating, ordered atomic structure (long-range order)."@en ;
                        skos:prefLabel "AmorphousMaterial"@en ;
+                       rdfs:label "amorphous material"@en ;
                        skos:scopeNote "A amorphous material resembles a frozen liquid with atoms arranged randomly, unlike crystalline solids with periodic patterns, leading to properties like no sharp melting point, irregular shapes, and isotropic characteristics (uniform properties in all directions)."@en .
 
 
@@ -54,6 +55,7 @@ emmo:ArtificialMaterial rdf:type owl:Class ;
                         rdfs:subClassOf emmo:MaterialByOrigin ;
                         skos:definition "Any substance engineered or created by humans, often to mimic or improve upon natural materials."@en ;
                         skos:prefLabel "ArtificialMaterial"@en ;
+                        rdfs:label "artificial material"@en ;
                         skos:scopeNote "Artificial materials are typically engineered through chemical synthesis from natural raw materials like oil or coal, resulting in polymers such as plastics, nylon, or polyester, designed for specific, enhanced properties like strength, durability, or moldability not found in nature."@en .
 
 
@@ -62,6 +64,7 @@ emmo:Atom rdf:type owl:Class ;
     rdfs:subClassOf emmo:MolecularEntity ;
     skos:altLabel "ChemicalElement"@en ;
     skos:prefLabel "Atom"@en ;
+    rdfs:label "atom"@en ;
     skos:definition """A standalone atom has direct part one 'nucleus' and one 'electron_cloud'.
 
 An O 'atom' within an O₂ 'molecule' is an 'e-bonded_atom'.
@@ -77,6 +80,7 @@ emmo:BondedAtom rdf:type owl:Class ;
                 rdfs:subClassOf emmo:Atom ;
                 skos:definition "A bonded atom that shares at least one electron to the atom-based entity of which is part of."@en ;
                 skos:prefLabel "BondedAtom"@en ;
+                rdfs:label "bonded atom"@en ;
                 skos:scopeNote """A real bond between atoms is always something hybrid between covalent, metallic and ionic.
 
 In general, metallic and ionic bonds have atoms sharing electrons."""@en ,
@@ -90,6 +94,7 @@ emmo:CeramicMaterial rdf:type owl:Class ;
                      skos:altLabel "Ceramic"@en ;
                      skos:definition "An inorganic non-metallic solid made from elements (metals, non-metals, semi-metals like silicon) combined into compounds (oxides, carbides, nitrides) that are typically hard, strong, brittle, corrosion-resistant, and good insulators."@en ;
                      skos:prefLabel "CeramicMaterial"@en ;
+                     rdfs:label "ceramic material"@en ;
                      skos:scopeNote "Ceramic materials are hardened by intense heat and typically used from pottery and tiles to advanced electronics and aerospace parts."@en .
 
 
@@ -98,6 +103,7 @@ emmo:CeramicMaterial rdf:type owl:Class ;
 emmo:ChemicalCompound rdf:type owl:Class ;
     rdfs:subClassOf emmo:ChemicalSubstance ;
     skos:prefLabel "ChemicalCompound"@en ;
+    rdfs:label "chemical compound"@en ;
     skos:definition "A chemical substance composed of many identical molecules (or molecular entities) composed of atoms from more than one element held together by chemical bonds."@en ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Chemical_compound"@en .
 
@@ -105,6 +111,7 @@ emmo:ChemicalCompound rdf:type owl:Class ;
 emmo:InorganicCompound rdf:type owl:Class ;
     rdfs:subClassOf emmo:ChemicalCompound ;
     skos:prefLabel "InorganicCompound"@en ;
+    rdfs:label "inorganic compound"@en ;
     skos:definition "A chemical compound that is not organic."@en ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Inorganic_compound"@en .
 
@@ -112,6 +119,7 @@ emmo:InorganicCompound rdf:type owl:Class ;
 emmo:OrganicCompound rdf:type owl:Class ;
     rdfs:subClassOf emmo:ChemicalCompound ;
     skos:prefLabel "OrganicCompound"@en ;
+    rdfs:label "organic compound"@en ;
     skos:definition "A chemical compound containing carbon atoms."@en ;
     skos:scopeNote "The definition of organic compound is based on the IUPAC Gold Book. However, sometimes an organic compound is defined as a chemical compound that contains a carbon-hydrogen or carbon-carbon bond. Also, some carbon-containing compounds are typically not classified as organic, like carbides, carbonates, and cyanides."@en ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Organic_compound"@en .
@@ -127,7 +135,8 @@ In the EMMO we force the adoption of a more strict categorization based on mereo
 
 The class Material hosts the subclasses for which a substance can be identified without necessarily considering its nature of molecule/atom or substance (e.g. hydrocarbon is the class of both hydrocarbon molecules or gases)."""@en ;
     skos:definition "The union of ChemicalSubstance and MolecularEntity."@en ;
-    skos:prefLabel "ChemicalEntity"@en .
+    skos:prefLabel "ChemicalEntity"@en ;
+    rdfs:label "chemical entity"@en .
 
 ###  https://w3id.org/emmo/hume#ChemicalSubstance
 emmo:ChemicalSubstance rdf:type owl:Class ;
@@ -137,6 +146,7 @@ emmo:ChemicalSubstance rdf:type owl:Class ;
     skos:scopeNote "A chemical substance is always composed of more than one molecular entity. It lays in the continuum or mesoscopic domain."@en ;
     rdfs:subClassOf emmo:Substance ;
     skos:prefLabel "ChemicalSubstance"@en ;
+    rdfs:label "chemical substance"@en ;
     skos:definition "Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of."@en ;
     rdfs:seeAlso "https://doi.org/10.1351/goldbook.C01039"@en .
 
@@ -145,6 +155,7 @@ emmo:ChemicalSubstance rdf:type owl:Class ;
 emmo:CompactMaterial rdf:type owl:Class ;
                      rdfs:subClassOf emmo:MaterialByCompactness, emmo:Solid ;
                      skos:prefLabel "CompactMaterial"@en ;
+                     rdfs:label "compact material"@en ;
     skos:definition "A solid material whose particles are closely and firmly packed together, resulting in a high density, solid structure without significant internal voids or cavities."@en .
 
 ###  https://w3id.org/emmo/hume#CompositeMaterial
@@ -152,13 +163,15 @@ emmo:CompositeMaterial rdf:type owl:Class ;
                        rdfs:subClassOf emmo:MaterialByType ;
                        skos:altLabel "Composite"@en ;
                        skos:definition "A material that contains two or more constituent materials."@en ;
-                       skos:prefLabel "CompositeMaterial"@en .
+                       skos:prefLabel "CompositeMaterial"@en ;
+                       rdfs:label "composite material"@en .
 
 
 ###  https://w3id.org/emmo/hume#CondensedMatter
 emmo:CondensedMatter rdf:type owl:Class ;
     rdfs:subClassOf emmo:StateOfMatter ;
     skos:prefLabel "CondensedMatter"@en ;
+    rdfs:label "condensed matter"@en ;
     skos:definition "Solid or liquid matter."@en ;
     skos:scopeNote "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en .
 
@@ -168,6 +181,7 @@ emmo:ContinuumSubstance rdf:type owl:Class ;
                         rdfs:subClassOf emmo:Substance ;
     owl:disjointWith emmo:MesoscopicSubstance ;
     skos:prefLabel "ContinuumSubstance"@en ;
+    rdfs:label "continuum substance"@en ;
     skos:definition """A state that is a collection of sufficiently large number of other parts such that:
 - it is the bearer of qualities that can exists only by the fact that it is a sum of parts
 - the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1"""@en ;
@@ -182,6 +196,7 @@ A single continuum individual can be the whole fluid in a pipe."""@en,
 emmo:CrystallineMaterial rdf:type owl:Class ;
                          rdfs:subClassOf emmo:MaterialByStructure , emmo:Solid ;
     skos:prefLabel "CrystallineMaterial"@en ;
+    rdfs:label "crystalline material"@en ;
     skos:definition "A solid where atoms, ions, or molecules are arranged in a highly ordered, repeating, three-dimensional pattern, forming a crystal lattice that extends throughout the substance, giving it characteristic geometric shapes and distinct physical properties like sharp melting points, unlike amorphous solids with random structures."@en .
 
 
@@ -190,6 +205,7 @@ emmo:ElementalSubstance rdf:type owl:Class ;
                         rdfs:subClassOf emmo:ChemicalSubstance ;
     skos:altLabel "PureSubstance"@en ;
     skos:prefLabel "ElementalSubstance"@en ;
+    rdfs:label "elemental substance"@en ;
     skos:definition "A chemical substance composed of atoms with the same number of protons in the atomic nucleus."@en ;
     rdfs:seeAlso "https://doi.org/10.1351/goldbook.C01022"@en .
 
@@ -200,6 +216,7 @@ emmo:Fluid rdf:type owl:Class ;
     owl:disjointWith emmo:Solid ;
     skos:example "Gas, liquid, plasma,"@en ;
     skos:prefLabel "Fluid"@en ;
+    rdfs:label "fluid"@en ;
     skos:definition "A continuum that has no fixed shape and yields easily to external pressure."@en .
 
 
@@ -208,6 +225,7 @@ emmo:Gas rdf:type owl:Class ;
     rdfs:subClassOf emmo:Fluid ;
     owl:disjointWith emmo:Plasma, emmo:Liquid ;
     skos:prefLabel "Gas"@en ;
+    rdfs:label "gas"@en ;
     skos:definition "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en .
 
 
@@ -215,6 +233,7 @@ emmo:Gas rdf:type owl:Class ;
 emmo:GranularMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByCompactness ;
     skos:prefLabel "GranularMaterial"@en ;
+    rdfs:label "granular material"@en ;
     skos:definition "A granular material is a conglomeration of discrete solid, macroscopic particles that are  large enough to avoid thermal motion fluctuations, and characterized by a loss of energy whenever the particles interact."@en .
 
 
@@ -222,6 +241,7 @@ emmo:GranularMaterial rdf:type owl:Class ;
 emmo:IonAtom rdf:type owl:Class ;
     rdfs:subClassOf emmo:StandaloneAtom ;
     skos:prefLabel "IonAtom"@en ;
+    rdfs:label "ion atom"@en ;
     skos:definition "A standalone atom with an unbalanced number of electrons with respect to its atomic number."@en .
 
 
@@ -230,19 +250,22 @@ emmo:Liquid rdf:type owl:Class ;
     rdfs:subClassOf emmo:CondensedMatter, emmo:Fluid ;
     owl:disjointWith emmo:Gas, emmo:Plasma ;
     skos:prefLabel "Liquid"@en ;
+    rdfs:label "liquid"@en ;
     skos:definition "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en .
 
 
 ###  https://w3id.org/emmo/hume#ManufacturedMaterial
 emmo:ManufacturedMaterial rdf:type owl:Class ;
                           rdfs:subClassOf emmo:ArtificialMaterial ;
-                          skos:prefLabel "ManufacturedMaterial"@en .
+                          skos:prefLabel "ManufacturedMaterial"@en ;
+                          rdfs:label "manufactured material"@en .
 
 
 ###  https://w3id.org/emmo/hume#Material
 emmo:Material rdf:type owl:Class ;
     rdfs:subClassOf emmo:Substance ;
     skos:prefLabel "Material"@en ;
+    rdfs:label "material"@en ;
     skos:definition "The class of individuals standing for an amount of ordinary matter substance."@en ;
     skos:scopeNote "A instance of a material (e.g. nitrogen) can represent any state of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en,
         "A material may be either a mesoscopic or a continuum substance."@en,
@@ -252,53 +275,61 @@ emmo:Material rdf:type owl:Class ;
 ###  https://w3id.org/emmo/hume#MaterialByClassicalMaterialsScience
 emmo:MaterialByClassicalMaterialsScience rdf:type owl:Class ;
                                          rdfs:subClassOf emmo:Material ;
-                                         skos:prefLabel "MaterialByClassicalMaterialsScience"@en .
+                                         skos:prefLabel "MaterialByClassicalMaterialsScience"@en ;
+                                         rdfs:label "material by classical materials science"@en .
 
 
 
 ###  https://w3id.org/emmo/hume#MaterialByCompactness
 emmo:MaterialByCompactness rdf:type owl:Class ;
     rdfs:subClassOf emmo:Material ;
-    skos:prefLabel "MaterialByCompactness"@en .
+    skos:prefLabel "MaterialByCompactness"@en ;
+    rdfs:label "material by compactness"@en .
 
 
 ###  https://w3id.org/emmo/hume#MaterialByForceResponse
 emmo:MaterialByForceResponse rdf:type owl:Class ;
                              rdfs:subClassOf emmo:Material  ;
-                             skos:prefLabel "MaterialByForceResponse"@en .
+                             skos:prefLabel "MaterialByForceResponse"@en ;
+                             rdfs:label "material by force response"@en .
 
 
 
 ###  https://w3id.org/emmo/hume#MaterialByFunction
 emmo:MaterialByFunction rdf:type owl:Class ;
                         rdfs:subClassOf emmo:Material ;
-                        skos:prefLabel "MaterialByFunction"@en .
+                        skos:prefLabel "MaterialByFunction"@en ;
+                        rdfs:label "material by function"@en .
 
 
 
 ###  https://w3id.org/emmo/hume#MaterialByOrigin
 emmo:MaterialByOrigin rdf:type owl:Class ;
     rdfs:subClassOf emmo:Material ;
-    skos:prefLabel "MaterialByOrigin"@en .
+    skos:prefLabel "MaterialByOrigin"@en ;
+    rdfs:label "material by origin"@en .
 
 
 ###  https://w3id.org/emmo/hume#MaterialBySize
 emmo:MaterialBySize rdf:type owl:Class ;
     rdfs:subClassOf emmo:Material ;
-    skos:prefLabel "MaterialBySize"@en .
+    skos:prefLabel "MaterialBySize"@en ;
+    rdfs:label "material by size"@en .
 
 
 ###  https://w3id.org/emmo/hume#MaterialByStructure
 emmo:MaterialByStructure rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByClassicalMaterialsScience ;
-    skos:prefLabel "MaterialByStructure"@en .
+    skos:prefLabel "MaterialByStructure"@en ;
+    rdfs:label "material by structure"@en .
 
 
 ###  https://w3id.org/emmo/hume#MaterialByType
 emmo:MaterialByType rdf:type owl:Class ;
                     rdfs:subClassOf emmo:MaterialByClassicalMaterialsScience ;
                     skos:definition "Categorisation of matter by its type."@en ;
-                    skos:prefLabel "MaterialByType"@en .
+                    skos:prefLabel "MaterialByType"@en ;
+                    rdfs:label "material by type"@en .
 
 
 
@@ -310,6 +341,7 @@ emmo:MesoscopicSubstance rdf:type owl:Class ;
 quantum dot,
 carbon nanotupe"""@en ;
                          skos:prefLabel "MesoscopicSubstance"@en ;
+                         rdfs:label "mesoscopic substance"@en ;
                          skos:scopeNote "Mesoscopic substances typically exist on a length scale between atoms and molecules and macroscopic (bulk) substances. They are typically in the range of some nanometers to about a micrometer and often exhibit unique physical properties due to their size and shape."@en .
 
 
@@ -319,6 +351,7 @@ emmo:MetallicMaterial rdf:type owl:Class ;
     skos:scopeNote
     "Metallic materials are known for their shiny luster, excellent electrical/thermal conductivity, malleability (shapable by hammering), and ductility (can be drawn into wires), due to metallic bonding (shared electrons); they often form alloys (like steel from iron/carbon) to enhance these properties for diverse applications."@en ;
     skos:prefLabel "MetallicMaterial"@en ;
+    rdfs:label "metallic material"@en ;
     skos:definition "Inorganic substance, consisting of one or more metallic elements."@en .
 
 
@@ -326,6 +359,7 @@ emmo:MetallicMaterial rdf:type owl:Class ;
 emmo:Mixture rdf:type owl:Class ;
     rdfs:subClassOf emmo:ContinuumSubstance ;
     skos:prefLabel "Mixture"@en ;
+    rdfs:label "mixture"@en ;
     skos:definition "A continuum substance made up of two or more different substances which are physically (not chemically) combined."@en .
 
 
@@ -333,6 +367,7 @@ emmo:Mixture rdf:type owl:Class ;
 emmo:MolecularEntity rdf:type owl:Class ;
     rdfs:subClassOf emmo:ChemicalEntity ;
     skos:prefLabel "MolecularEntity"@en ;
+    rdfs:label "molecular entity"@en ;
     skos:scopeNote """Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
 
 Note that the name of a compound may refer to the respective molecular entity or to the chemical species,"""@en ;
@@ -347,6 +382,7 @@ emmo:Molecule rdf:type owl:Class ;
               rdfs:subClassOf emmo:MolecularEntity ;
     skos:example "H₂0, C₆H₁₂O₆, CH₄"@en ;
     skos:prefLabel "Molecule"@en ;
+    rdfs:label "molecule"@en ;
     skos:definition "An atom-based state defined by an exact number of e-bonded atomic species and an electron cloud made of the shared electrons."@en ;
     skos:scopeNote """An entity is called essential if removing one direct part will lead to a change in entity class.
 An entity is called redundant if removing one direct part will not lead to a change in entity class."""@en,
@@ -359,6 +395,7 @@ e.g. you cannot remove H from H₂0 without changing the molecule type (essentia
 emmo:NanoMaterial rdf:type owl:Class ;
                   rdfs:subClassOf emmo:MaterialBySize ;
     skos:prefLabel "NanoMaterial"@en ;
+    rdfs:label "nano material"@en ;
     skos:definition "Material with any external dimension in the nanoscale or having internal structure or surface structure in the nanoscale, i.e. in the range of 1-100 nm."@en ;
     skos:scopeNote "The above definition comes from ISO 80004-1:2023."@en ;
     owl:seeAlso <https://www.iso.org/obp/ui/en/#iso:std:iso:80004:-1:ed-1:v1:en> .
@@ -368,6 +405,7 @@ emmo:NanoMaterial rdf:type owl:Class ;
 emmo:NaturalMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByOrigin ;
     skos:prefLabel "NaturalMaterial"@en ;
+    rdfs:label "natural material"@en ;
     skos:definition "A Material occurring in nature, without the need of human intervention."@en .
 
 
@@ -376,6 +414,7 @@ emmo:NeutralAtom rdf:type owl:Class ;
                  rdfs:subClassOf emmo:StandaloneAtom ;
     owl:disjointWith emmo:IonAtom ;
     skos:prefLabel "NeutralAtom"@en ;
+    rdfs:label "neutral atom"@en ;
     skos:definition "A standalone atom that has no net charge."@en .
 
 
@@ -384,6 +423,7 @@ emmo:PhaseOfMatter rdf:type owl:Class ;
     rdfs:subClassOf emmo:ContinuumSubstance ;
     skos:altLabel "Phase"@en ;
     skos:prefLabel "PhaseOfMatter"@en ;
+    rdfs:label "phase of matter"@en ;
     skos:definition "A matter object throughout which all physical properties of a material are essentially uniform."@en ;
     skos:scopeNote """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
 
@@ -395,6 +435,7 @@ emmo:Plasma rdf:type owl:Class ;
     rdfs:subClassOf emmo:Fluid ;
     owl:disjointWith emmo:Gas, emmo:Liquid ;
     skos:prefLabel "Plasma"@en ;
+    rdfs:label "plasma"@en ;
     skos:definition "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en .
 
 
@@ -402,13 +443,15 @@ emmo:Plasma rdf:type owl:Class ;
 emmo:PolyAtomicEntity rdf:type owl:Class ;
     rdfs:subClassOf emmo:MolecularEntity ;
     skos:definition "An entity made of two or more bonded atoms."@en ;
-    skos:prefLabel "PolyAtomicEntity"@en .
+    skos:prefLabel "PolyAtomicEntity"@en ;
+    rdfs:label "poly atomic entity"@en .
 
 
 ###  https://w3id.org/emmo/hume#PolymericMaterial
 emmo:PolymericMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByType ;
     skos:prefLabel "PolymericMaterial"@en ;
+    rdfs:label "polymeric material"@en ;
     skos:definition "A substance made of macromolecules formed by linking many smaller, repeating chemical units called monomers into long chains or networks, resulting in unique properties like toughness, elasticity, or flexibility, found in both natural forms (like DNA, protein) and synthetic plastics, rubbers, and fibers."@en .
 
 
@@ -418,6 +461,7 @@ emmo:Powder rdf:type owl:Class ;
     rdfs:subClassOf emmo:GranularMaterial ;
     rdfs:isDefinedBy "Duran, J., Reisinger A., Sands, Powders, and Grains: An Introduction to the Physics of Granular Materials. November 1999, Springer-Verlag New York, Inc., New York, ISBN 0-387-98656-1."@en ;
     skos:prefLabel "Powder"@en ;
+    rdfs:label "powder"@en ;
     skos:definition "A powder is a granular material composed of many very fine dry solid particles that may flow freely when shaken or tilted."@en .
 
 
@@ -426,6 +470,7 @@ emmo:Solid rdf:type owl:Class ;
     rdfs:subClassOf emmo:CondensedMatter ;
     owl:disjointWith emmo:Fluid ;
     skos:prefLabel "Solid"@en ;
+    rdfs:label "solid"@en ;
     skos:definition "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
 
 
@@ -434,6 +479,7 @@ emmo:Solid rdf:type owl:Class ;
 emmo:StandaloneAtom rdf:type owl:Class ;
     rdfs:subClassOf emmo:Atom ;
     skos:prefLabel "StandaloneAtom"@en ;
+    rdfs:label "standalone atom"@en ;
     skos:definition "An atom that does not share electrons with other atoms."@en .
 
 
@@ -441,6 +487,7 @@ emmo:StandaloneAtom rdf:type owl:Class ;
 emmo:StateOfMatter rdf:type owl:Class ;
     rdfs:subClassOf emmo:ContinuumSubstance ;
     skos:prefLabel "StateOfMatter"@en ;
+    rdfs:label "state of matter"@en ;
     skos:definition "A superclass made as the disjoint union of all the form under which matter can exist."@en ;
     skos:scopeNote "In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma."@en ;
     owl:seeAlso <https://en.wikipedia.org/wiki/State_of_matter> .
@@ -451,6 +498,7 @@ emmo:Substance rdf:type owl:Class ;
     skos:example "A litre of water."@en,
         "A pen can be classified as a substance (although it has parts with different properties) since it can be identified as being solid."@en ;
     skos:prefLabel "Substance"@en ;
+    rdfs:label "substance"@en ;
     skos:definition "A matter entity characterised by the fact that it possesses some homogeneous properties or identification criteria."@en .
 
 
@@ -458,12 +506,14 @@ emmo:Substance rdf:type owl:Class ;
 ssbd:AdvancedMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:ArtificialMaterial , emmo:MaterialByFunction ;
     skos:prefLabel "AdvancedMaterial"@en ;
+    rdfs:label "advanced material"@en ;
     skos:definition "A designed material tailored to simultaneously meet two or more pre-defined criteria."@en .
 
 ###  https://w3id.org/ssbd/MacroMolecule
 ssbd:MacroMolecule rdf:type owl:Class ;
     rdfs:subClassOf emmo:Molecule ;
     skos:prefLabel "MacroMolecule"@en ;
+    rdfs:label "macro molecule"@en ;
     skos:definition "A molecule with a specific weight larger than 5000 dalton."@en ;
     owl:seeAlso <https://en.wikipedia.org/wiki/Macromolecule> , <https://doi.org/10.1351/goldbook.M03667> .
 
@@ -471,6 +521,7 @@ ssbd:MacroMolecule rdf:type owl:Class ;
 ssbd:MicroMolecule rdf:type owl:Class ;
     rdfs:subClassOf emmo:Molecule ;
     skos:prefLabel "SmallMolecule"@en ;
+    rdfs:label "small molecule"@en ;
     skos:altLabel "MicroMolecule"@en ;
     skos:definition "A molecule with a specific weight smaller than 1000 dalton."@en ;
     owl:seeAlso <https://en.wikipedia.org/wiki/Small_molecule> .
@@ -479,6 +530,7 @@ ssbd:MicroMolecule rdf:type owl:Class ;
 ssbd:Protein rdf:type owl:Class ;
     rdfs:subClassOf emmo:Molecule ;
     skos:prefLabel "Protein"@en ;
+    rdfs:label "protein"@en ;
     skos:definition "A large molecule made of long chains of amino acids."@en ;
     owl:seeAlso <https://en.wikipedia.org/wiki/Protein> .
 
@@ -486,42 +538,49 @@ ssbd:Protein rdf:type owl:Class ;
 ssbd:StructuralMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByFunction ;
     skos:prefLabel "StructuralMaterial"@en ;
+    rdfs:label "structural material"@en ;
     skos:definition "A material Designed to bear loads and provide mechanical strength, stiffness, and durability (e.g., steel for bridges, concrete for buildings, aerospace alloys)."@en .
 
 ###  https://w3id.org/ssbd/ElectronicMaterial
 ssbd:ElectronicMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByFunction ;
     skos:prefLabel "ElectronicMaterial"@en ;
+    rdfs:label "electronic material"@en ;
     skos:definition "A material for electronic applications, like silicon used in computer chips, solar cells, and circuits."@en .
 
 ###  https://w3id.org/ssbd/MagneticMaterial
 ssbd:MagneticMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByFunction ;
     skos:prefLabel "MagneticMaterial"@en ;
+    rdfs:label "magnetic material"@en ;
     skos:definition "A material for magnetic applications, like for data storage, motors, and transformers (e.g., iron, ferrite)."@en .
 
 ###  https://w3id.org/ssbd/OpticalMaterial
 ssbd:OpticalMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByFunction ;
     skos:prefLabel "OpticalMaterial"@en ;
+    rdfs:label "optical material"@en ;
     skos:definition "A material for optical applications. Designed for specific interactions with light, such as fiber optics, lasers, or transparent coatings."@en .
 
 ###  https://w3id.org/ssbd/EnergyMaterial
 ssbd:EnergyMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByFunction ;
     skos:prefLabel "EnergyMaterial"@en ;
+    rdfs:label "energy material"@en ;
     skos:definition "A material for energy applications, including energy generation, storage, and conversion, such as batteries, supercapacitors, and fuel cells."@en .
 
 ###  https://w3id.org/ssbd/BiocompatibleMaterial
 ssbd:BiocompatibleMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:MaterialByFunction ;
     skos:prefLabel "BiocompatibleMaterial"@en ;
+    rdfs:label "biocompatible material"@en ;
     skos:definition "Material designed to be biocompatible for implantation in the body, such as artificial joints or tissue scaffolds."@en .
 
 ###  https://w3id.org/ssbd/NanoObject
 ssbd:NanoObject rdf:type owl:Class ;
     rdfs:subClassOf emmo:NanoMaterial ;
     skos:prefLabel "NanoObject"@en ;
+    rdfs:label "nano object"@en ;
     skos:definition "Material with any external dimension in the nanoscale, i.e. in the range of 1-100 nm."@en ;
     owl:seeAlso <https://www.iso.org/obp/ui/en/#iso:std:iso:80004:-1:ed-1:v1:en> .
 
@@ -529,6 +588,7 @@ ssbd:NanoObject rdf:type owl:Class ;
 ssbd:NanoParticle rdf:type owl:Class ;
     rdfs:subClassOf ssbd:NanoObject ;
     skos:prefLabel "NanoParticle"@en ;
+    rdfs:label "nano particle"@en ;
     skos:definition "A material with all dimensions in the range of 1-100 nm."@en ;
     skos:scopeNote "Nanoparticles are often considered to be 0-dimensional nanomaterials."@en ;
     owl:seeAlso <https://doi.org/10.3390/membranes10100297>, <https://en.wikipedia.org/wiki/Nanoparticle> ,
@@ -538,6 +598,7 @@ ssbd:NanoParticle rdf:type owl:Class ;
 ssbd:NanoFiber rdf:type owl:Class ;
     rdfs:subClassOf ssbd:NanoObject ;
     skos:prefLabel "NanoFiber"@en ;
+    rdfs:label "nano fiber"@en ;
     skos:definition "A material with two dimensions in the range of 1-100 nm."@en ;
     skos:scopeNote "Nanofibers are often considered to be 1-dimensional nanomaterials."@en ;
     owl:seeAlso <https://doi.org/10.3390/membranes10100297>, <https://en.wikipedia.org/wiki/Nanofiber> ,
@@ -547,6 +608,7 @@ ssbd:NanoFiber rdf:type owl:Class ;
 ssbd:NanoPlate rdf:type owl:Class ;
     rdfs:subClassOf ssbd:NanoObject ;
     skos:prefLabel "NanoPlate"@en ;
+    rdfs:label "nano plate"@en ;
     skos:definition "A material with one dimension in the range of 1-100 nm."@en ;
     skos:scopeNote "Nanoplates are often considered to be 2-dimensional nanomaterials."@en ;
     owl:seeAlso <https://doi.org/10.3390/membranes10100297> ,
@@ -556,6 +618,7 @@ ssbd:NanoPlate rdf:type owl:Class ;
 ssbd:NanoStructuredMaterial rdf:type owl:Class ;
     rdfs:subClassOf emmo:NanoMaterial ;
     skos:prefLabel "NanoStructuredMaterial"@en ;
+    rdfs:label "nano structured material"@en ;
     skos:definition "A material with at least one physically or chemically distinct region with at least one dimension in the range of 1-100 nm."@en ;
     skos:scopeNote "Nanostructured materials are considered to be 3-dimensional nanomaterials."@en ;
     owl:seeAlso <https://doi.org/10.3390/membranes10100297> ,
@@ -565,6 +628,7 @@ ssbd:NanoStructuredMaterial rdf:type owl:Class ;
 ssbd:NanoTube rdf:type owl:Class ;
     rdfs:subClassOf ssbd:NanoFiber ;
     skos:prefLabel "NanoTube"@en ;
+    rdfs:label "nano tube"@en ;
     skos:definition "A hollow nanofiber."@en ;
     owl:seeAlso <https://en.wikipedia.org/wiki/Nanotube> .
 
@@ -572,6 +636,7 @@ ssbd:NanoTube rdf:type owl:Class ;
 ssbd:NanoRod rdf:type owl:Class ;
     rdfs:subClassOf ssbd:NanoFiber ;
     skos:prefLabel "NanoRod"@en ;
+    rdfs:label "nano rod"@en ;
     skos:definition "A solid nanofiber."@en ;
     owl:seeAlso <https://en.wikipedia.org/wiki/Nanorod> .
 
@@ -579,6 +644,7 @@ ssbd:NanoRod rdf:type owl:Class ;
 ssbd:NanoComposite rdf:type owl:Class ;
     rdfs:subClassOf ssbd:NanoStructuredMaterial , emmo:CompositeMaterial ;
     skos:prefLabel "NanoComposite"@en ;
+    rdfs:label "nano composite"@en ;
     skos:definition "A composite material with at least one physically or chemically distinct region or collection of regions having at least one dimension in the range of 1-100 nm."@en ;
     owl:seeAlso <https://en.wikipedia.org/wiki/Nanocomposite> .
 
