@@ -638,7 +638,7 @@ ssbd:NaiveBayes rdf:type owl:Class ;
                 rdfs:subClassOf ssbd:Classification ;
                 skos:definition "A family of supervised learning algorithms used for classification problems, such as spam detection and sentiment analysis."@en ;
                 skos:prefLabel "NaiveBayes"@en ;
-                rdfs:label "naive bayes"@en .
+                rdfs:label "Naive Bayes"@en .
 
 
 ###  https://w3id.org/ssbd/NaturalLanguageClassification
@@ -790,7 +790,7 @@ ssbd:SiameseNeuralNetwork rdf:type owl:Class ;
                           rdfs:subClassOf ssbd:DeepLearningModel ;
                           skos:definition "Class of neural network architectures containing two or more identical subnetworks with shared weights."@en ;
                           skos:prefLabel "SiameseNeuralNetwork"@en ;
-                          rdfs:label "siamese neural network"@en .
+                          rdfs:label "Siamese neural network"@en .
 
 
 ###  https://w3id.org/ssbd/Software

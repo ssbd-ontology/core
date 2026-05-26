@@ -599,7 +599,7 @@ ssbd:PhysicalPropertiesAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/PoissonsRatioAssessment
 ssbd:PoissonsRatioAssessment rdf:type owl:Class ;
                              rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
-                             rdfs:label "poisson's ratio assessment"@en ;
+                             rdfs:label "Poisson's ratio assessment"@en ;
                              skos:definition "Assessment of Poisson's ratio of materials."@en ;
                              skos:prefLabel "PoissonsRatioAssessment"@en ;
                              skos:scopeNote "Poisson's ratio offers the fundamental metric by which to compare the performance of any material's resistance to distort under mechanical load rather than to alter in volume."@en .
@@ -854,7 +854,7 @@ ssbd:WorkingHoursAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/YoungsModulusAssessment
 ssbd:YoungsModulusAssessment rdf:type owl:Class ;
                              rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
-                             rdfs:label "young's modulus assessment"@en ;
+                             rdfs:label "Young's modulus assessment"@en ;
                              skos:definition "Assessment of Young's modulus of materials."@en ;
                              skos:prefLabel "YoungsModulusAssessment"@en .
 
