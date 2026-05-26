@@ -95,10 +95,10 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 #    Data properties
 #################################################################
 
-:hasDataValue rdf:type owl:DatatypeProperty ;
+:dataValue rdf:type owl:DatatypeProperty ;
     rdfs:domain :Data ;
-    skos:prefLabel "hasDataValue"@en ;
-    rdfs:label "has data value"@en ;
+    skos:prefLabel "dataValue"@en ;
+    rdfs:label "data value"@en ;
     skos:definition "Relates a data individual to its literal value."@en .
 
 :hasAPI a owl:DatatypeProperty ;
