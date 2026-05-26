@@ -30,7 +30,7 @@ obo:CHEBI_36357 rdfs:subClassOf emmo:PolyAtomicEntity .  # polyatomic entity
 obo:IAO_0000136 rdfs:subPropertyOf ssbd:isPropertyOf .  # is about
 semonto:is_output_or rdfs:subPropertyOf prov:wasGeneratedBy .  # is_output_of
 obo:RO_0000056 rdfs:subPropertyOf ssbd:participatesTo .  # participates_in
-cheminf:CHEMINF_000012 rdfs:subPropertyOf ssbd:hasDataValue .  # has value
+cheminf:CHEMINF_000012 rdfs:subPropertyOf ssbd:dataValue .  # has value
 
 
 
