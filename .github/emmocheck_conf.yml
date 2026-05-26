@@ -2,13 +2,9 @@
 
 skip:
   - test_description
-  - test_class_label
-  - test_object_property_label
 
 enable:
   - test_number_of_rdfslabels
-  - test_class_preflabel
-  - test_property_preflabel
 
 test_number_of_labels:
   exceptions:
