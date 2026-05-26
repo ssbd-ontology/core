@@ -95,9 +95,10 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 #    Data properties
 #################################################################
 
-:hasDataValue rdf:type owl:DatatypeProperty ;
+:dataValue rdf:type owl:DatatypeProperty ;
     rdfs:domain :Data ;
-    skos:prefLabel "hasDataValue"@en ;
+    skos:prefLabel "dataValue"@en ;
+    skos:hasLabel "hasDataValue"@en ;
     rdfs:label "has data value"@en ;
     skos:definition "Relates a data individual to its literal value."@en .
 
@@ -356,7 +357,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:scopeNote "This relation connects PROV-O with causal theory of the SSbD Core Ontology"@en ;
     rdfs:domain prov:Activity ;
     rdfs:range prov:Activity .
-    
+
 :wasDerivedFrom rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :processedFrom, prov:wasDerivedFrom ;
     skos:prefLabel "wasDerivedFrom"@en ;
