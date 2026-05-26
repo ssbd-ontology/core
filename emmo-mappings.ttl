@@ -23,7 +23,7 @@
 ssbd:dataValue rdfs:subClassOf emmo:dataValue .
 ssbd:parthood rdfs:subClassOf emmo:mereological .
 ssbd:overlaps rdfs:subClassOf emmo:overlaps .
-ssbd:notOverlaps rdfs:subClassOf emmo:notOverlaps .  # FIX spelling in figure
+ssbd:notOverlaps rdfs:subClassOf emmo:notOverlaps .
 ssbd:isOvercrossedBy rdfs:subClassOf emmo:isOvercrossedBy .
 ssbd:properOverlaps rdfs:subClassOf emmo:properOverlaps .
 ssbd:hasPart rdfs:subClassOf emmo:hasPart .
@@ -53,8 +53,8 @@ ssbd:hasProperty rdfs:subClassOf emmo:hasProperty .
 ssbd:hasDescription rdfs:subClassOf emmo:hasDescription .
 ssbd:hasMeasurementUnit rdfs:subClassOf emmo:hasMeasurementUnit .
 ssbd:standsFor rdfs:subClassOf emmo:standsFor .
-ssbd:isDescriptionFor rdfs:subClassOf emmo:isDescriptionFor .  ## FIX spelling in figure
-ssbd:isPropertyFor rdfs:subClassOf emmo:isPropertyFor .  ## FIX spelling in figure
+ssbd:isDescriptionFor rdfs:subClassOf emmo:isDescriptionFor .
+ssbd:isPropertyFor rdfs:subClassOf emmo:isPropertyFor .
 ssbd:Process rdfs:subClassOf emmo:Process .
 ssbd:MaterialProcess rdfs:subClassOf emmo:MaterialProcess .
 ssbd:Measurement rdfs:subClassOf emmo:Measurement .
