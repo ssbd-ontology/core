@@ -98,7 +98,6 @@ The root of the SSbD Core Ontology is shown below. More information can be found
 :dataValue rdf:type owl:DatatypeProperty ;
     rdfs:domain :Data ;
     skos:prefLabel "dataValue"@en ;
-    skos:altLabel "hasDataValue"@en ;
     rdfs:label "has data value"@en ;
     skos:definition "Relates a data individual to its literal value."@en .
 
