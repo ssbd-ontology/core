@@ -645,7 +645,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
         owl:someValuesFrom :QSARModel
     ] ;
     skos:prefLabel "QSARSoftware"@en ;
-    rdfs:label "q s a r software"@en ;
+    rdfs:label "QSAR software"@en ;
     skos:definition "A software implementing a QSAR model."@en .
 
 :Datum rdf:type owl:Class ;
@@ -666,12 +666,6 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     skos:definition "Encoded data made of more than one datum."@en ;
     vann:usageNote "A collection of (more than one) datum, published or curated by a single agent, and available for access or download in one or more representations."@en .
 
-:ReliabilityDocument rdf:type owl:Class ;
-    rdfs:subClassOf foaf:Document ;
-    skos:prefLabel "ReliabilityDocument"@en ;
-    rdfs:label "reliability document"@en ;
-    skos:definition "xxx"@en ;
-    vann:usageNote "xxx"@en .
 
 
 :SymbolicData rdf:type owl:Class ;
@@ -925,15 +919,15 @@ dcat:theme rdfs:subPropertyOf :hasProperty .
 
 ### TierLevel individuals
 :tierlevel1 a :TierLevel ;
-    skos:prefLabel "ideation/design"@en ;
+    skos:prefLabel "ideation"@en ;
     rdfs:label "ideation/design"@en .
 
 :tierlevel2 a :TierLevel ;
-    skos:prefLabel "lab phase/development"@en ;
+    skos:prefLabel "lab_phase"@en ;
     rdfs:label "lab phase/development"@en .
 
 :tierlevel3 a :TierLevel ;
-    skos:prefLabel "up-scaling/production"@en ;
+    skos:prefLabel "upscaling"@en ;
     rdfs:label "up-scaling/production"@en .
 
 :undefined a :DomainOfApplicabilityStatus ;

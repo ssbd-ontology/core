@@ -305,7 +305,6 @@ for s, p, o in triples:
                 try:
                     definition = ts.value(s, a)
                 except UniquenessError:
-                    print('unique value error for', s, a)
                     pass
                 else:
                     if definition and (a != RDFS.label or " " in definition):

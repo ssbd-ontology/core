@@ -345,7 +345,7 @@ ssbd:GlobalWarmingAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/HHRAAirPollution
 ssbd:HHRAAirPollution rdf:type owl:Class ;
                       rdfs:subClassOf ssbd:HumanHealthRiskAssessment ;
-                      rdfs:label "hhra air pollution"@en ;
+                      rdfs:label "HHRA air pollution"@en ;
                       skos:definition "Assessment of human health risks from air pollutants."@en ;
                       skos:prefLabel "HHRAAirPollution"@en .
 
@@ -353,7 +353,7 @@ ssbd:HHRAAirPollution rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/HHRAChemicalSubstances
 ssbd:HHRAChemicalSubstances rdf:type owl:Class ;
                             rdfs:subClassOf ssbd:HumanHealthRiskAssessment ;
-                            rdfs:label "hhra chemical substances"@en ;
+                            rdfs:label "HHRA chemical substances"@en ;
                             skos:definition "Assessment of human health risks from pesticides, cosmetics, chemicals in flame retardants, etc. This can include dermal exposures, in addition to inhalation and ingestion exposure routes."@en ;
                             skos:prefLabel "HHRAChemicalSubstances"@en .
 
@@ -361,7 +361,7 @@ ssbd:HHRAChemicalSubstances rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/HHRAIndoorAirPollution
 ssbd:HHRAIndoorAirPollution rdf:type owl:Class ;
                             rdfs:subClassOf ssbd:HumanHealthRiskAssessment ;
-                            rdfs:label "hhra indoor air pollution"@en ;
+                            rdfs:label "HHRA indoor air pollution"@en ;
                             skos:definition "Assessment of human health risks from indoor air pollutants."@en ;
                             skos:prefLabel "HHRAIndoorAirPollution"@en .
 
@@ -369,7 +369,7 @@ ssbd:HHRAIndoorAirPollution rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/HHRASoilPollution
 ssbd:HHRASoilPollution rdf:type owl:Class ;
                        rdfs:subClassOf ssbd:HumanHealthRiskAssessment ;
-                       rdfs:label "hhra  soil pollution"@en ;
+                       rdfs:label "HHRA  soil pollution"@en ;
                        skos:definition "Assessment of human health risks from pollutants in soil."@en ;
                        skos:prefLabel "HHRASoilPollution"@en .
 
@@ -377,7 +377,7 @@ ssbd:HHRASoilPollution rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/HHRAWaterPollution
 ssbd:HHRAWaterPollution rdf:type owl:Class ;
                         rdfs:subClassOf ssbd:HumanHealthRiskAssessment ;
-                        rdfs:label "hhra water pollution"@en ;
+                        rdfs:label "HHRA water pollution"@en ;
                         skos:definition "Assessment of human health risks from pollutants in  water."@en ;
                         skos:prefLabel "HHRAWaterPollution"@en .
 
@@ -445,6 +445,7 @@ ssbd:HepatotoxicityAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/HumanHealthRiskAssessment
 ssbd:HumanHealthRiskAssessment rdf:type owl:Class ;
                                rdfs:subClassOf ssbd:SafetyAssessment ;
+                               skos:altLabel "HHRA"@en ;
                                rdfs:label "human health risk assessment"@en ;
                                skos:definition "Human Health Risk Assessment integrates hazard and exposure information to estimate the likelihood and severity of harm to human health under specific use conditions."@en ;
                                skos:prefLabel "HumanHealthRiskAssessment"@en .
@@ -598,7 +599,7 @@ ssbd:PhysicalPropertiesAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/PoissonsRatioAssessment
 ssbd:PoissonsRatioAssessment rdf:type owl:Class ;
                              rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
-                             rdfs:label "poisson's ratio assessment"@en ;
+                             rdfs:label "Poisson's ratio assessment"@en ;
                              skos:definition "Assessment of Poisson's ratio of materials."@en ;
                              skos:prefLabel "PoissonsRatioAssessment"@en ;
                              skos:scopeNote "Poisson's ratio offers the fundamental metric by which to compare the performance of any material's resistance to distort under mechanical load rather than to alter in volume."@en .
@@ -853,7 +854,7 @@ ssbd:WorkingHoursAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/YoungsModulusAssessment
 ssbd:YoungsModulusAssessment rdf:type owl:Class ;
                              rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
-                             rdfs:label "young's modulus assessment"@en ;
+                             rdfs:label "Young's modulus assessment"@en ;
                              skos:definition "Assessment of Young's modulus of materials."@en ;
                              skos:prefLabel "YoungsModulusAssessment"@en .
 

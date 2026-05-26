@@ -176,7 +176,7 @@ emmo:GenerativeAIModel rdf:type owl:Class ;
                   skos:definition "An AI model that can generate new content, like text, images or code."@en ;
                   skos:example "Chatbots"@en ;
                   skos:prefLabel "GenerativeAIModel"@en ;
-                  rdfs:label "generative a i model"@en .
+                  rdfs:label "generative AI model"@en .
 
 
 ###  https://w3id.org/emmo/hume#MachineLearningModel
@@ -621,7 +621,7 @@ ssbd:ModernGenerativeAIModel rdf:type owl:Class ;
                                         ssbd:TransformerAI ;
                         skos:definition "Generative AI based on the transformer architecture."@en ;
                         skos:prefLabel "ModernGenerativeAIModel"@en ;
-                        rdfs:label "modern generative a i model"@en .
+                        rdfs:label "modern generative AI model"@en .
 
 
 ###  https://w3id.org/ssbd/MonteCarloLearningModel
@@ -630,7 +630,7 @@ ssbd:MonteCarloLearningModel rdf:type owl:Class ;
                         skos:altLabel "MonteCarloMethod"@en ;
                         skos:definition "A model-free reinforcement learning model that estimates value functions by averaging total returns from complete episodes of experience."@en ;
                         skos:prefLabel "MonteCarloLearningModel"@en ;
-                        rdfs:label "monte carlo learning model"@en .
+                        rdfs:label "Monte Carlo learning model"@en .
 
 
 ###  https://w3id.org/ssbd/NaiveBayes
@@ -638,7 +638,7 @@ ssbd:NaiveBayes rdf:type owl:Class ;
                 rdfs:subClassOf ssbd:Classification ;
                 skos:definition "A family of supervised learning algorithms used for classification problems, such as spam detection and sentiment analysis."@en ;
                 skos:prefLabel "NaiveBayes"@en ;
-                rdfs:label "naive bayes"@en .
+                rdfs:label "Naive Bayes"@en .
 
 
 ###  https://w3id.org/ssbd/NaturalLanguageClassification
@@ -790,7 +790,7 @@ ssbd:SiameseNeuralNetwork rdf:type owl:Class ;
                           rdfs:subClassOf ssbd:DeepLearningModel ;
                           skos:definition "Class of neural network architectures containing two or more identical subnetworks with shared weights."@en ;
                           skos:prefLabel "SiameseNeuralNetwork"@en ;
-                          rdfs:label "siamese neural network"@en .
+                          rdfs:label "Siamese neural network"@en .
 
 
 ###  https://w3id.org/ssbd/Software
@@ -830,7 +830,7 @@ ssbd:TDistributedStochasticNeighborEmbedding rdf:type owl:Class ;
                                              skos:altLabel "t-SNE"@en ;
                                              skos:definition "A non-linear dimensionality reduction model excellent for visualizing high-dimensional data in 2D or 3D."@en ;
                                              skos:prefLabel "TDistributedStochasticNeighborEmbedding"@en ;
-                                             rdfs:label "t distributed stochastic neighbor embedding"@en .
+                                             rdfs:label "t-distributed stochastic neighbor embedding"@en .
 
 
 ###  https://w3id.org/ssbd/TargetTracking
@@ -854,7 +854,7 @@ ssbd:TransformerAI rdf:type owl:Class ;
                    rdfs:subClassOf ssbd:DeepLearningModel ;
                    skos:definition "Deep-learning architecture introduced by Google in 2017 that power modern generative AI like ChatGPT and Gemini."@en ;
                    skos:prefLabel "TransformerAI"@en ;
-                   rdfs:label "transformer a i"@en ;
+                   rdfs:label "transformer AI"@en ;
                    skos:scopeNote ""@en .
 
 
@@ -871,7 +871,7 @@ ssbd:XGBoostRegessor rdf:type owl:Class ;
                      rdfs:subClassOf ssbd:PredictionLearningModel ;
                      skos:definition "An optimized machine learning algorithm that uses an ensemble of decision trees within a gradient boosting framework to predict continuous numerical values."@en ;
                      skos:prefLabel "XGBoostRegressor"@en ;
-                     rdfs:label "x g boost regressor"@en ;
+                     rdfs:label "XGBoost regressor"@en ;
                      skos:scopeNote "XGBoost Regressor is widely used in data science competitions and real-world applications due to its speed, performance, and features like built-in regularization and automatic handling of missing values."@en .
 
 
@@ -879,7 +879,7 @@ ssbd:QSARModel a owl:Class ;
     rdfs:subClassOf emmo:MathematicalModel ;
     skos:definition "A mathematical model (often a statistical correlation) relating one or more quantitative parameters derived from chemical structure to a quantitative measure of a property or activity (e.g. related to physical-chemical properties, ecotoxicology, environmental fate and transport, and human health hazards). QSARs are quantitative models yielding a continuous or categorical result."@en ;
     skos:prefLabel "QSARModel"@en ;
-    rdfs:label "q s a r model"@en ;
+    rdfs:label "QSAR model"@en ;
     skos:scopeNote "The aim of a QSAR model is typically to reduce time, monetary cost and needed animal testing."@en ;
     skos:scopeNote "To facilitate practical application of (Q)SAR approaches in regulatory contexts by governments and industry and to improve their regulatory acceptance, the OECD (Q)SAR project has developed various outcomes such as the principles for the validation of (Q)SAR models, guidance documents as well as the QSAR Toolbox."@en ;
     rdfs:seeAlso <https://www.oecd.org/en/topics/sub-issues/assessment-of-chemicals/quantitative-structure-activity-relationships-project.html> .
