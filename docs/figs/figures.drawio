@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" compressed="false" modified="2026-05-26T20:04:32.358Z" etag="dWXRj8Ww0aHV1mTld5aL" version="20.7.4" type="device" pages="8">
+<mxfile host="Electron" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" compressed="false" modified="2026-05-26T20:22:44.275Z" etag="N1XVivMzzOlTP6zPVcGR" version="20.7.4" type="device" pages="8">
   <diagram id="c_qGwFVzFrKK_DlR2sme" name="taxonomy">
     <mxGraphModel dx="1430" dy="1827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -7704,14 +7704,14 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="MrRNGo0Gcc3VEPdrA_27-50" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#6C8EBF;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="190" y="1070" width="1240" height="480" as="geometry" />
+          <mxGeometry x="190" y="1070" width="1240" height="560" as="geometry" />
         </mxCell>
         <mxCell id="MrRNGo0Gcc3VEPdrA_27-49" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#6C8EBF;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="-80" y="120" width="1520" height="610" as="geometry" />
         </mxCell>
-        <UserObject label="ssbd:hasSoftware" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasSoftware" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-188">
-          <mxCell style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#dae8fc;" parent="1" source="g9ciRkEffJNN25uIRPH2-103" target="g9ciRkEffJNN25uIRPH2-187" edge="1">
-            <mxGeometry x="0.5563" y="2" relative="1" as="geometry">
+        <UserObject label="ssbd:hasSoftware some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasSoftware" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-188">
+          <mxCell style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#dae8fc;" parent="1" source="g9ciRkEffJNN25uIRPH2-101" target="g9ciRkEffJNN25uIRPH2-187" edge="1">
+            <mxGeometry x="0.7818" y="5" relative="1" as="geometry">
               <mxPoint as="offset" />
               <mxPoint x="660" y="552" as="sourcePoint" />
               <mxPoint x="758" y="520" as="targetPoint" />
@@ -8059,22 +8059,22 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-187" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="480" y="680" width="30" height="30" as="geometry" />
+          <mxGeometry x="477.5" y="690" width="30" height="30" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:implementsModel some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#implementsModel" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-190">
           <mxCell style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="g9ciRkEffJNN25uIRPH2-187" target="g9ciRkEffJNN25uIRPH2-195" edge="1">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="490" y="770" as="sourcePoint" />
-              <mxPoint x="690" y="695" as="targetPoint" />
+              <mxPoint x="487.5" y="780" as="sourcePoint" />
+              <mxPoint x="687.5" y="705" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-191" value="kb:toxicity_software" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#6C8EBF;" parent="1" vertex="1">
-          <mxGeometry x="430" y="710" width="130" height="20" as="geometry" />
+          <mxGeometry x="427.5" y="720" width="130" height="20" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:Software" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Software" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-193">
           <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-            <mxGeometry x="335" y="680" width="90" height="30" as="geometry" />
+            <mxGeometry x="332.5" y="690" width="90" height="30" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="Fh-3N-XveRNxlcmQh6kS-7" value="isA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="g9ciRkEffJNN25uIRPH2-195" target="Fh-3N-XveRNxlcmQh6kS-6" edge="1">
@@ -8082,13 +8082,13 @@
         </mxCell>
         <UserObject label="ssbd:DecisionTree" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-195">
           <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-            <mxGeometry x="707.5" y="680" width="110" height="30" as="geometry" />
+            <mxGeometry x="705" y="690" width="110" height="30" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-197" value="a" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="g9ciRkEffJNN25uIRPH2-187" target="g9ciRkEffJNN25uIRPH2-193" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="760" y="700" as="sourcePoint" />
-            <mxPoint x="787" y="745" as="targetPoint" />
+            <mxPoint x="757.5" y="710" as="sourcePoint" />
+            <mxPoint x="784.5" y="755" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Fh-3N-XveRNxlcmQh6kS-4" value="isA" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Fh-3N-XveRNxlcmQh6kS-1" target="g9ciRkEffJNN25uIRPH2-99" edge="1">
@@ -8109,7 +8109,7 @@
         </UserObject>
         <UserObject label="ssbd:Model" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="Fh-3N-XveRNxlcmQh6kS-6">
           <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-            <mxGeometry x="892.5" y="680" width="110" height="30" as="geometry" />
+            <mxGeometry x="890" y="690" width="80" height="30" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:hasMeasurementUnit" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasMeasurementUnit" linkTarget="_blank" id="Fh-3N-XveRNxlcmQh6kS-9">
@@ -8227,13 +8227,14 @@
         </mxCell>
         <UserObject label="ssbd:isPropertyFor some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isPropertyFor" linkTarget="_blank" id="Fh-3N-XveRNxlcmQh6kS-64">
           <mxCell style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Fh-3N-XveRNxlcmQh6kS-62" target="Fh-3N-XveRNxlcmQh6kS-15" edge="1">
-            <mxGeometry relative="1" as="geometry">
+            <mxGeometry x="0.8343" y="-25" relative="1" as="geometry">
               <Array as="points">
                 <mxPoint x="1140" y="1540" />
                 <mxPoint x="465" y="1540" />
               </Array>
               <mxPoint x="745" y="1550" as="sourcePoint" />
               <mxPoint x="464.99999999999955" y="1509.9999999999995" as="targetPoint" />
+              <mxPoint as="offset" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -8515,6 +8516,53 @@
             <mxPoint x="20" y="139.38999999999987" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="CoB325k9k35IXaWfLdoS-1" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="751.25" y="1580" width="30" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:implementsModel some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#implementsModel" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-2">
+          <mxCell style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CoB325k9k35IXaWfLdoS-1" target="CoB325k9k35IXaWfLdoS-6">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="761.25" y="1670" as="sourcePoint" />
+              <mxPoint x="961.25" y="1595" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="CoB325k9k35IXaWfLdoS-3" value="kb:toxicity_software" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="701.25" y="1610" width="130" height="20" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Software" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Software" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-4">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+            <mxGeometry x="606.25" y="1580" width="90" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="CoB325k9k35IXaWfLdoS-5" value="isA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CoB325k9k35IXaWfLdoS-6" target="CoB325k9k35IXaWfLdoS-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:DecisionTree" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-6">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+            <mxGeometry x="978.75" y="1580" width="110" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="CoB325k9k35IXaWfLdoS-7" value="a" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CoB325k9k35IXaWfLdoS-1" target="CoB325k9k35IXaWfLdoS-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1031.25" y="1600" as="sourcePoint" />
+            <mxPoint x="1058.25" y="1645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="ssbd:Model" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-8">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+            <mxGeometry x="1163.75" y="1580" width="76.25" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:hasSoftware some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasSoftware" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-9">
+          <mxCell style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#dae8fc;" edge="1" parent="1" source="Fh-3N-XveRNxlcmQh6kS-42" target="CoB325k9k35IXaWfLdoS-1">
+            <mxGeometry x="0.7818" y="5" relative="1" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint x="813.2366238306395" y="1413.0164316231346" as="sourcePoint" />
+              <mxPoint x="650" y="1700" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
