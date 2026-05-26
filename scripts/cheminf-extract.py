@@ -136,7 +136,8 @@ annotation_mappings = {
     #"http://www.semanticweb.org/ontologies/cheminf.owl#short_name": SKOS.altLabel,
 }
 
-dc_date_predicates = [
+# Legacy annotations that should be removed after the above mappings are applied
+legacy_predicates = [
     "http://purl.org/dc/elements/1.1/date",
     "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/date",
 ]
@@ -274,7 +275,6 @@ triples = []
 labels = set()
 for s, p, o in ts.triples(predicate=RDFS.label):
     label = str(o)
-    triples.append((s, RDFS.label, en(label)))
     if label not in labels:
         labels.add(label)
         if not ts.has(s, SKOS.prefLabel):
@@ -291,8 +291,8 @@ for pred_from, pred_to in annotation_mappings.items():
         ts.remove(predicate=pred_from)
         ts.add_triples((s, pred_to, o) for s, p, o in triples)
 
-# Defensive cleanup: eliminate legacy dc:date after normalization to dcterms:date.
-for predicate in dc_date_predicates:
+# Defensive cleanup: eliminate legacy predicates after the above normalisation
+for predicate in legacy_predicates:
     ts.remove(predicate=predicate)
 
 
@@ -309,7 +309,8 @@ for s, p, o in triples:
                     pass
                 else:
                     if definition and (a != RDFS.label or " " in definition):
-                        ts.remove(s, a, definition)
+                        if a != RDFS.label:
+                            ts.remove(s, a, definition)
                         definition = definition[0].upper() + definition[1:]
                         ts.add((s, SKOS.definition, en(definition)))
 

@@ -48,6 +48,7 @@ obo:RO_0000056 a owl:ObjectProperty ;
     rdfs:label "R stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000005 ;
     owl:disjointWith :CHEMINF_000034 ;
+    skos:definition "R stereochemical descriptor"@en ;
     skos:prefLabel "RStereochemicalDescriptor"@en .
 
 :CHEMINF_000008 a owl:Class ;
@@ -102,12 +103,14 @@ obo:RO_0000056 a owl:ObjectProperty ;
     rdfs:label "+ stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000048 ;
     owl:disjointWith :CHEMINF_000050 ;
+    skos:definition "+ stereochemical descriptor"@en ;
     skos:prefLabel "PlusStereochemicalDescriptor"@en .
 
 :CHEMINF_000052 a owl:Class ;
     rdfs:label "D stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000051 ;
     owl:disjointWith :CHEMINF_000053 ;
+    skos:definition "D stereochemical descriptor"@en ;
     skos:prefLabel "DStereochemicalDescriptor"@en .
 
 :CHEMINF_000055 a owl:Class ;
@@ -161,11 +164,13 @@ obo:RO_0000056 a owl:ObjectProperty ;
 :CHEMINF_000081 a owl:Class ;
     rdfs:label "cis stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000080 ;
+    skos:definition "Cis stereochemical descriptor"@en ;
     skos:prefLabel "CisStereochemicalDescriptor"@en .
 
 :CHEMINF_000082 a owl:Class ;
     rdfs:label "trans stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000080 ;
+    skos:definition "Trans stereochemical descriptor"@en ;
     skos:prefLabel "TransStereochemicalDescriptor"@en .
 
 :CHEMINF_000084 a owl:Class ;
@@ -174,6 +179,7 @@ obo:RO_0000056 a owl:ObjectProperty ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000083 ;
+    skos:definition "Atomic mass descriptor"@en ;
     skos:prefLabel "AtomicMassDescriptor"@en .
 
 :CHEMINF_000090 a owl:Class ;
@@ -324,6 +330,7 @@ The formal charge of any atom in a molecule can be calculated by the following e
 :CHEMINF_000141 a owl:Class ;
     rdfs:label "PubChem substance identifier (SID)"@en ;
     rdfs:subClassOf :CHEMINF_000302 ;
+    skos:definition "PubChem substance identifier (SID)"@en ;
     skos:prefLabel "PubChemSubstanceIdentifier(SID)"@en .
 
 :CHEMINF_000149 a owl:Class ;
@@ -493,6 +500,7 @@ The formal charge of any atom in a molecule can be calculated by the following e
 :CHEMINF_000178 a owl:Class ;
     rdfs:label "collection of 3D atomic coordinates"@en ;
     rdfs:subClassOf :CHEMINF_000177 ;
+    skos:definition "Collection of 3D atomic coordinates"@en ;
     skos:prefLabel "CollectionOf3DAtomicCoordinates"@en .
 
 :CHEMINF_000179 a owl:Class ;
@@ -510,6 +518,7 @@ The formal charge of any atom in a molecule can be calculated by the following e
     skos:prefLabel "FragmentComplexityDescriptor"@en .
 
 :CHEMINF_000181 a owl:Class ;
+    rdfs:label "vertex adjacency matrix descriptor"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
@@ -544,16 +553,19 @@ The formal charge of any atom in a molecule can be calculated by the following e
     skos:prefLabel "MLogPDescriptor"@en .
 
 :CHEMINF_000188 a owl:Class ;
+    rdfs:label "maximal ratio of length to breadth descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000189 ;
     skos:definition "Maximal ratio of length to breadth descriptor"@en ;
     skos:prefLabel "MaximalRatioOfLengthToBreadthDescriptor"@en .
 
 :CHEMINF_000190 a owl:Class ;
+    rdfs:label "minimal ratio of length to breadth descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000189 ;
     skos:definition "Minimal ratio of length to breadth descriptor"@en ;
     skos:prefLabel "MinimalRatioOfLengthToBreadthDescriptor"@en .
 
 :CHEMINF_000191 a owl:Class ;
+    rdfs:label "ionization energy descriptor"@en ;
     obo:IAO_0000115 """An ionization energy descriptor is a descriptor that describes the minimum amount of energy required to remove an electron (to an infinite distance) from an atom or molecule in a gaseous state. 
 
 X + energy → X+ + e-
@@ -567,6 +579,7 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "IonizationEnergyDescriptor"@en .
 
 :CHEMINF_000192 a owl:Class ;
+    rdfs:label "eccentric connectivity index descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000092 ;
     skos:altLabel "EccentricConnectivityIndex"@en ;
     skos:definition "Eccentric connectivity index descriptor"@en ;
@@ -583,6 +596,7 @@ The term 'ionization potential' has historically been used but is now no longer 
     rdfs:label "molecular weight calculated by pipeline pilot"@en ;
     obo:IAO_0000115 "A molecular weight descriptor calculated by a relevant module of the Pipeline Pilot software tool. "^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000216 ;
+    skos:definition "Molecular weight calculated by pipeline pilot"@en ;
     skos:prefLabel "MolecularWeightCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000199 a owl:Class ;
@@ -622,6 +636,7 @@ The term 'ionization potential' has historically been used but is now no longer 
 :CHEMINF_000226 a owl:Class ;
     rdfs:label "bond charge density descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000231 ;
+    skos:definition "Bond charge density descriptor"@en ;
     skos:prefLabel "BondChargeDensityDescriptor"@en .
 
 :CHEMINF_000232 a owl:Class ;
@@ -637,6 +652,7 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "AromaticAtomCount"@en .
 
 :CHEMINF_000234 a owl:Class ;
+    rdfs:label "PubChem conformer identifier"@en ;
     rdfs:subClassOf :CHEMINF_000140 ;
     skos:definition "PubChem conformer identifier"@en ;
     skos:prefLabel "PubChemConformerIdentifier"@en .
@@ -724,7 +740,8 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "Melting point descriptor specifies the temperature at which a chemical substance undergoes the transition from solid to liquid state under standard conditions."@en ;
+    skos:definition "Melting point descriptor"@en,
+        "Melting point descriptor specifies the temperature at which a chemical substance undergoes the transition from solid to liquid state under standard conditions."@en ;
     skos:prefLabel "MeltingPointDescriptor"@en .
 
 :CHEMINF_000260 a owl:Class ;
@@ -751,6 +768,7 @@ The term 'ionization potential' has historically been used but is now no longer 
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000231 ;
+    skos:definition "Atomic charge density descriptor"@en ;
     skos:prefLabel "AtomicChargeDensityDescriptor"@en .
 
 :CHEMINF_000265 a owl:Class ;
@@ -766,6 +784,7 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "EffectiveRotorCount"@en .
 
 :CHEMINF_000269 a owl:Class ;
+    rdfs:label "conformer volume descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000242 ;
     skos:definition "Conformer volume descriptor"@en ;
     skos:prefLabel "ConformerVolumeDescriptor"@en .
@@ -773,96 +792,115 @@ The term 'ionization potential' has historically been used but is now no longer 
 :CHEMINF_000271 a owl:Class ;
     rdfs:label "alanine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Alanine count"@en ;
     skos:prefLabel "AlanineCount"@en .
 
 :CHEMINF_000272 a owl:Class ;
     rdfs:label "arginine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Arginine count"@en ;
     skos:prefLabel "ArginineCount"@en .
 
 :CHEMINF_000273 a owl:Class ;
     rdfs:label "asparagine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Asparagine count"@en ;
     skos:prefLabel "AsparagineCount"@en .
 
 :CHEMINF_000274 a owl:Class ;
     rdfs:label "aspartate count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Aspartate count"@en ;
     skos:prefLabel "AspartateCount"@en .
 
 :CHEMINF_000275 a owl:Class ;
     rdfs:label "cysteine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Cysteine count"@en ;
     skos:prefLabel "CysteineCount"@en .
 
 :CHEMINF_000276 a owl:Class ;
     rdfs:label "phenylalanine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Phenylalanine count"@en ;
     skos:prefLabel "PhenylalanineCount"@en .
 
 :CHEMINF_000277 a owl:Class ;
     rdfs:label "glutamate count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Glutamate count"@en ;
     skos:prefLabel "GlutamateCount"@en .
 
 :CHEMINF_000278 a owl:Class ;
     rdfs:label "glutamine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Glutamine count"@en ;
     skos:prefLabel "GlutamineCount"@en .
 
 :CHEMINF_000279 a owl:Class ;
     rdfs:label "glycine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Glycine count"@en ;
     skos:prefLabel "GlycineCount"@en .
 
 :CHEMINF_000281 a owl:Class ;
     rdfs:label "isoleucine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Isoleucine count"@en ;
     skos:prefLabel "IsoleucineCount"@en .
 
 :CHEMINF_000282 a owl:Class ;
     rdfs:label "proline count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Proline count"@en ;
     skos:prefLabel "ProlineCount"@en .
 
 :CHEMINF_000283 a owl:Class ;
     rdfs:label "leucine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Leucine count"@en ;
     skos:prefLabel "LeucineCount"@en .
 
 :CHEMINF_000284 a owl:Class ;
     rdfs:label "lysine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Lysine count"@en ;
     skos:prefLabel "LysineCount"@en .
 
 :CHEMINF_000285 a owl:Class ;
     rdfs:label "methionine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Methionine count"@en ;
     skos:prefLabel "MethionineCount"@en .
 
 :CHEMINF_000286 a owl:Class ;
     rdfs:label "serine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Serine count"@en ;
     skos:prefLabel "SerineCount"@en .
 
 :CHEMINF_000287 a owl:Class ;
     rdfs:label "threonine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Threonine count"@en ;
     skos:prefLabel "ThreonineCount"@en .
 
 :CHEMINF_000288 a owl:Class ;
     rdfs:label "tyrosine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Tyrosine count"@en ;
     skos:prefLabel "TyrosineCount"@en .
 
 :CHEMINF_000289 a owl:Class ;
     rdfs:label "valine count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Valine count"@en ;
     skos:prefLabel "ValineCount"@en .
 
 :CHEMINF_000290 a owl:Class ;
     rdfs:label "tryptophan count"@en ;
     rdfs:subClassOf :CHEMINF_000270 ;
+    skos:definition "Tryptophan count"@en ;
     skos:prefLabel "TryptophanCount"@en .
 
 :CHEMINF_000291 a owl:Class ;
@@ -908,31 +946,37 @@ The term 'ionization potential' has historically been used but is now no longer 
     skos:prefLabel "BasicGroupCount"@en .
 
 :CHEMINF_000296 a owl:Class ;
+    rdfs:label "hybridization descriptor (VSEPR)"@en ;
     rdfs:subClassOf :CHEMINF_000095 ;
     skos:definition "Hybridization descriptor (VSEPR)"@en ;
     skos:prefLabel "HybridizationDescriptor(VSEPR)"@en .
 
 :CHEMINF_000297 a owl:Class ;
+    rdfs:label "inductive atomic hardness"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
     skos:definition "Inductive atomic hardness"@en ;
     skos:prefLabel "InductiveAtomicHardness"@en .
 
 :CHEMINF_000298 a owl:Class ;
+    rdfs:label "TPSA (fragments)"@en ;
     rdfs:subClassOf :CHEMINF_000152 ;
     skos:definition "TPSA (fragments)"@en ;
     skos:prefLabel "TPSA(fragments)"@en .
 
 :CHEMINF_000299 a owl:Class ;
+    rdfs:label "VABC volume descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000242 ;
     skos:definition "VABC volume descriptor"@en ;
     skos:prefLabel "VABCVolumeDescriptor"@en .
 
 :CHEMINF_000303 a owl:Class ;
+    rdfs:label "GenBank Protein Identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
     skos:definition "GenBank Protein Identifier"@en ;
     skos:prefLabel "GenBankProteinIdentifier"@en .
 
 :CHEMINF_000304 a owl:Class ;
+    rdfs:label "GenBank Nucleotide Identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
     skos:definition "GenBank Nucleotide Identifier"@en ;
     skos:prefLabel "GenBankNucleotideIdentifier"@en .
@@ -940,46 +984,55 @@ The term 'ionization potential' has historically been used but is now no longer 
 :CHEMINF_000305 a owl:Class ;
     rdfs:label "ALogP calculated by Pipeline Pilot"@en ;
     rdfs:subClassOf :CHEMINF_000295 ;
+    skos:definition "ALogP calculated by Pipeline Pilot"@en ;
     skos:prefLabel "ALogPCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000308 a owl:Class ;
     rdfs:label "polar surface area descriptor calculated by Pipeline Pilot"@en ;
     rdfs:subClassOf :CHEMINF_000307 ;
+    skos:definition "Polar surface area descriptor calculated by Pipeline Pilot"@en ;
     skos:prefLabel "PolarSurfaceAreaDescriptorCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000309 a owl:Class ;
     rdfs:label "hydrogen bond acceptor count calculated by pipeline pilot"@en ;
     rdfs:subClassOf :CHEMINF_000245 ;
+    skos:definition "Hydrogen bond acceptor count calculated by pipeline pilot"@en ;
     skos:prefLabel "HydrogenBondAcceptorCountCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000310 a owl:Class ;
     rdfs:label "hydrogen bond donor count calculated by pipeline pilot"@en ;
     rdfs:subClassOf :CHEMINF_000244 ;
+    skos:definition "Hydrogen bond donor count calculated by pipeline pilot"@en ;
     skos:prefLabel "HydrogenBondDonorCountCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000311 a owl:Class ;
     rdfs:label "rotatable bond count calculated by pipeline pilot"@en ;
     rdfs:subClassOf :CHEMINF_000254 ;
+    skos:definition "Rotatable bond count calculated by pipeline pilot"@en ;
     skos:prefLabel "RotatableBondCountCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000314 a owl:Class ;
     rdfs:label "rule of five violations calculated by pipeline pilot"@en ;
     rdfs:subClassOf :CHEMINF_000312 ;
+    skos:definition "Rule of five violations calculated by pipeline pilot"@en ;
     skos:prefLabel "RuleOfFiveViolationsCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000317 a owl:Class ;
     rdfs:label "rule of three passes calculated by pipeline pilot"@en ;
     rdfs:subClassOf :CHEMINF_000315 ;
+    skos:definition "Rule of three passes calculated by pipeline pilot"@en ;
     skos:prefLabel "RuleOfThreePassesCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000319 a owl:Class ;
     rdfs:label "medchem friendly descriptor calculated by pipeline pilot"@en ;
     rdfs:subClassOf :CHEMINF_000318 ;
+    skos:definition "Medchem friendly descriptor calculated by pipeline pilot"@en ;
     skos:prefLabel "MedchemFriendlyDescriptorCalculatedByPipelinePilot"@en .
 
 :CHEMINF_000321 a owl:Class ;
     rdfs:label "logP calculated by ACD/Labs PhysChem software"@en ;
     rdfs:subClassOf :CHEMINF_000251 ;
+    skos:definition "LogP calculated by ACD/Labs PhysChem software"@en ;
     skos:prefLabel "LogPCalculatedByACDLabsPhysChemSoftware"@en .
 
 :CHEMINF_000323 a owl:Class ;
@@ -987,6 +1040,7 @@ The term 'ionization potential' has historically been used but is now no longer 
     obo:IAO_0000115 """ACD_LogD(pH7.4)
 Distribution Coefficient calculated at pH7.4"""^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000322 ;
+    skos:definition "LogD calculated at pH 7.4 by ACD/Labs PhysChem software"@en ;
     skos:prefLabel "LogDCalculatedAtPH7.4ByACDLabsPhysChemSoftware"@en .
 
 :CHEMINF_000324 a owl:Class ;
@@ -994,6 +1048,7 @@ Distribution Coefficient calculated at pH7.4"""^^xsd:string ;
     obo:IAO_0000115 """Most acidic pKa of the molecule
 """^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000195 ;
+    skos:definition "Most acidic pKa calculated by ACD/Labs PhysChem software library"@en ;
     skos:prefLabel "MostAcidicPKaCalculatedByACDLabsPhysChemSoftwareLibrary"@en .
 
 :CHEMINF_000325 a owl:Class ;
@@ -1001,6 +1056,7 @@ Distribution Coefficient calculated at pH7.4"""^^xsd:string ;
     obo:IAO_0000115 """Most basic pKa of the molecule
 """^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000195 ;
+    skos:definition "Most basic pKa calculated by ACD/Labs PhysChem software library"@en ;
     skos:prefLabel "MostBasicPKaCalculatedByACDLabsPhysChemSoftwareLibrary"@en .
 
 :CHEMINF_000327 a owl:Class ;
@@ -1012,34 +1068,41 @@ Neutral (N) ACD_MOST_ApKa >6.5 and ACD_MOST_BpKa<8.5
 Zwitterion (ZW)	ACD_MOST_ApKa <6.5 and ACD_MOST_BpKa>8.5
 """^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000326 ;
+    skos:definition "Molecular species at pH 7.4 calculated by ACD/Labs PhysChem software"@en ;
     skos:prefLabel "MolecularSpeciesAtPH7.4CalculatedByACDLabsPhysChemSoftware"@en .
 
 :CHEMINF_000334 a owl:Class ;
+    rdfs:label "molecular weight calculated by the pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000216 ;
     skos:definition "Molecular weight calculated by the pubchem software library"@en ;
     skos:prefLabel "MolecularWeightCalculatedByThePubchemSoftwareLibrary"@en .
 
 :CHEMINF_000335 a owl:Class ;
+    rdfs:label "molecular formula calculated by the pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000042 ;
     skos:definition "Molecular formula calculated by the pubchem software library"@en ;
     skos:prefLabel "MolecularFormulaCalculatedByThePubchemSoftwareLibrary"@en .
 
 :CHEMINF_000336 a owl:Class ;
+    rdfs:label "total formal charge calculated by the pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000268 ;
     skos:definition "Total formal charge calculated by the pubchem software library"@en ;
     skos:prefLabel "TotalFormalChargeCalculatedByThePubchemSoftwareLibrary"@en .
 
 :CHEMINF_000337 a owl:Class ;
+    rdfs:label "monoisotopic mass calculated by the pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000218 ;
     skos:definition "Monoisotopic mass calculated by the pubchem software library"@en ;
     skos:prefLabel "MonoisotopicMassCalculatedByThePubchemSoftwareLibrary"@en .
 
 :CHEMINF_000338 a owl:Class ;
+    rdfs:label "exact mass calculated by pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000217 ;
     skos:definition "Exact mass calculated by pubchem software library"@en ;
     skos:prefLabel "ExactMassCalculatedByPubchemSoftwareLibrary"@en .
 
 :CHEMINF_000339 a owl:Class ;
+    rdfs:label "pubchem depositor-supplied molecular entity name"@en ;
     obo:IAO_0000115 "A molecular entity name that has been supplied by a depositor to the PubChem database. This is just a molecular entity name with additional provenance associated. "^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000043 ;
     skos:definition "Pubchem depositor-supplied molecular entity name"@en ;
@@ -1166,51 +1229,61 @@ Zwitterion (ZW)	ACD_MOST_ApKa <6.5 and ACD_MOST_BpKa>8.5
     skos:prefLabel "SurfaceTensionCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000369 a owl:Class ;
+    rdfs:label "covalent unit count generated by pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000280 ;
     skos:definition "Covalent unit count generated by pubchem software library"@en ;
     skos:prefLabel "CovalentUnitCountGeneratedByPubchemSoftwareLibrary"@en .
 
 :CHEMINF_000370 a owl:Class ;
+    rdfs:label "defined atom stereocenter count generated by the pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000206 ;
     skos:definition "Defined atom stereocenter count generated by the pubchem software library"@en ;
     skos:prefLabel "DefinedAtomStereocenterCountGeneratedByThePubchemSoftwareLibrary"@en .
 
 :CHEMINF_000371 a owl:Class ;
+    rdfs:label "defined bond stereocenter count generated by pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000214 ;
     skos:definition "Defined bond stereocenter count generated by pubchem software library"@en ;
     skos:prefLabel "DefinedBondStereocenterCountGeneratedByPubchemSoftwareLibrary"@en .
 
 :CHEMINF_000372 a owl:Class ;
+    rdfs:label "isotope atom count generated by pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000301 ;
     skos:definition "Isotope atom count generated by pubchem software library"@en ;
     skos:prefLabel "IsotopeAtomCountGeneratedByPubchemSoftwareLibrary"@en .
 
 :CHEMINF_000373 a owl:Class ;
+    rdfs:label "heavy atom count generated by pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000300 ;
     skos:definition "Heavy atom count generated by pubchem software library"@en ;
     skos:prefLabel "HeavyAtomCountGeneratedByPubchemSoftwareLibrary"@en .
 
 :CHEMINF_000374 a owl:Class ;
+    rdfs:label "undefined atom stereocenter count generated by the pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000212 ;
     skos:definition "Undefined atom stereocenter count generated by the pubchem software library"@en ;
     skos:prefLabel "UndefinedAtomStereocenterCountGeneratedByThePubchemSoftwareLibrary"@en .
 
 :CHEMINF_000375 a owl:Class ;
+    rdfs:label "undefined bond stereocenter count generated by the pubchem software library"@en ;
     rdfs:subClassOf :CHEMINF_000215 ;
     skos:definition "Undefined bond stereocenter count generated by the pubchem software library"@en ;
     skos:prefLabel "UndefinedBondStereocenterCountGeneratedByThePubchemSoftwareLibrary"@en .
 
 :CHEMINF_000376 a owl:Class ;
+    rdfs:label "canonical smiles generated by OEChem"@en ;
     rdfs:subClassOf :CHEMINF_000007 ;
     skos:definition "Canonical smiles generated by OEChem"@en ;
     skos:prefLabel "CanonicalSmilesGeneratedByOEChem"@en .
 
 :CHEMINF_000379 a owl:Class ;
+    rdfs:label "isomeric SMILES generated by OEChem"@en ;
     rdfs:subClassOf :CHEMINF_000032 ;
     skos:definition "Isomeric SMILES generated by OEChem"@en ;
     skos:prefLabel "IsomericSMILESGeneratedByOEChem"@en .
 
 :CHEMINF_000381 a owl:Class ;
+    rdfs:label "aromatic cycle count"@en ;
     obo:IAO_0000115 "A descriptor that specifies the integer count of aromatic cycles in a given molecular entity."^^xsd:string ;
     obo:IAO_0000118 "aromatic rings"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000380 ;
@@ -1218,51 +1291,61 @@ Zwitterion (ZW)	ACD_MOST_ApKa <6.5 and ACD_MOST_BpKa>8.5
     skos:prefLabel "AromaticCycleCount"@en .
 
 :CHEMINF_000382 a owl:Class ;
+    rdfs:label "IUPAC Name generated by LexiChem"@en ;
     rdfs:subClassOf :CHEMINF_000107 ;
     skos:definition "IUPAC Name generated by LexiChem"@en ;
     skos:prefLabel "IUPACNameGeneratedByLexiChem"@en .
 
 :CHEMINF_000387 a owl:Class ;
+    rdfs:label "hydrogen bond donor count calculated by cactvs"@en ;
     rdfs:subClassOf :CHEMINF_000244 ;
     skos:definition "Hydrogen bond donor count calculated by cactvs"@en ;
     skos:prefLabel "HydrogenBondDonorCountCalculatedByCactvs"@en .
 
 :CHEMINF_000388 a owl:Class ;
+    rdfs:label "hydrogen bond acceptor count calculated by cactvs"@en ;
     rdfs:subClassOf :CHEMINF_000245 ;
     skos:definition "Hydrogen bond acceptor count calculated by cactvs"@en ;
     skos:prefLabel "HydrogenBondAcceptorCountCalculatedByCactvs"@en .
 
 :CHEMINF_000389 a owl:Class ;
+    rdfs:label "rotatable bond count calculated by cactvs"@en ;
     rdfs:subClassOf :CHEMINF_000254 ;
     skos:definition "Rotatable bond count calculated by cactvs"@en ;
     skos:prefLabel "RotatableBondCountCalculatedByCactvs"@en .
 
 :CHEMINF_000390 a owl:Class ;
+    rdfs:label "structure complexity calculated by cactvs"@en ;
     rdfs:subClassOf :CHEMINF_000219 ;
     skos:definition "Structure complexity calculated by cactvs"@en ;
     skos:prefLabel "StructureComplexityCalculatedByCactvs"@en .
 
 :CHEMINF_000391 a owl:Class ;
+    rdfs:label "tautomer count calculated by cactvs"@en ;
     rdfs:subClassOf :CHEMINF_000202 ;
     skos:definition "Tautomer count calculated by cactvs"@en ;
     skos:prefLabel "TautomerCountCalculatedByCactvs"@en .
 
 :CHEMINF_000392 a owl:Class ;
+    rdfs:label "TPSA calculated by cactvs"@en ;
     rdfs:subClassOf :CHEMINF_000174 ;
     skos:definition "TPSA calculated by cactvs"@en ;
     skos:prefLabel "TPSACalculatedByCactvs"@en .
 
 :CHEMINF_000395 a owl:Class ;
+    rdfs:label "xlogp3 calculated by the xlogp3 software"@en ;
     rdfs:subClassOf :CHEMINF_000186 ;
     skos:definition "Xlogp3 calculated by the xlogp3 software"@en ;
     skos:prefLabel "Xlogp3CalculatedByTheXlogp3Software"@en .
 
 :CHEMINF_000396 a owl:Class ;
+    rdfs:label "InChI calculated by library version 1.0.4"@en ;
     rdfs:subClassOf :CHEMINF_000113 ;
     skos:definition "InChI calculated by library version 1.0.4"@en ;
     skos:prefLabel "InChICalculatedByLibraryVersion1.0.4"@en .
 
 :CHEMINF_000399 a owl:Class ;
+    rdfs:label "InChIKey generated by software version 1.0.4"@en ;
     rdfs:subClassOf :CHEMINF_000059 ;
     skos:definition "InChIKey generated by software version 1.0.4"@en ;
     skos:prefLabel "InChIKeyGeneratedBySoftwareVersion1.0.4"@en .
@@ -1316,6 +1399,7 @@ Zwitterion (ZW)	ACD_MOST_ApKa <6.5 and ACD_MOST_BpKa>8.5
     skos:prefLabel "ChEMBLIdentifier"@en .
 
 :CHEMINF_000430 a owl:Class ;
+    rdfs:label "structural alert count"@en ;
     obo:IAO_0000115 """The number of structural alerts, that is, unwanted features as defined according to the procedure followed in Brenk et al., 2008. 
 Brenk R, et al. Lessons learnt from assembling screening libraries for drug discovery for neglected diseases. Chem Med Chem. 2008;3:435–444. """^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000209 ;
@@ -1323,6 +1407,7 @@ Brenk R, et al. Lessons learnt from assembling screening libraries for drug disc
     skos:prefLabel "StructuralAlertCount"@en .
 
 :CHEMINF_000431 a owl:Class ;
+    rdfs:label "weighted quantitative estimate of drug-likeness"@en ;
     obo:IAO_0000115 """A descriptor which gives a quantitative estimate of drug likeness according to the procedure outlined in Bickerton et al., 2012. 
 
 http://www.ncbi.nlm.nih.gov/pubmed/22270643
@@ -1480,12 +1565,14 @@ where p is the partial pressure of the solute in the gas above the solution, c i
         "EuropeanCommunityNumber"@en .
 
 :CHEMINF_000448 a owl:Class ;
+    rdfs:label "metal atom count"@en ;
     obo:IAO_0000115 "A descriptor that specifies the integer count of metal atoms in a given chemical entity. "^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000263 ;
     skos:definition "Metal atom count"@en ;
     skos:prefLabel "MetalAtomCount"@en .
 
 :CHEMINF_000449 a owl:Class ;
+    rdfs:label "oxygen atom count"@en ;
     obo:IAO_0000115 "A descriptor that specifies the integer count of oxygen atoms in a given chemical entity. "^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000263 ;
     skos:definition "Oxygen atom count"@en ;
@@ -1496,6 +1583,7 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     obo:IAO_0000115 "A molecular entity name in the ChemSpider database which has not been validated by a curator."^^xsd:string ;
     obo:IAO_0000117 "Person: Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000043 ;
+    skos:definition "ChemSpider unvalidated synonym"@en ;
     skos:prefLabel "ChemSpiderUnvalidatedSynonym"@en .
 
 :CHEMINF_000467 a owl:Class ;
@@ -1503,27 +1591,32 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     obo:IAO_0000115 "A chemical database identifier which has been validated by a curator."^^xsd:string ;
     obo:IAO_0000117 "Person: Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000464 ;
+    skos:definition "Validated chemical database identifier"@en ;
     skos:prefLabel "ValidatedChemicalDatabaseIdentifier"@en .
 
 :CHEMINF_000476 a owl:Class ;
     rdfs:label "ChemSpider title"@en ;
     obo:IAO_0000115 "A ChemSpider validated synonym that has been identified as a title by the ChemSpider software."^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000465 ;
+    skos:definition "ChemSpider title"@en ;
     skos:prefLabel "ChemSpiderTitle"@en .
 
 :CHEMINF_000484 a owl:Class ;
     rdfs:label "average molecular weight descriptor calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     obo:IAO_0000117 "Person: Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000216 ;
+    skos:definition "Average molecular weight descriptor calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     skos:prefLabel "AverageMolecularWeightDescriptorCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000485 a owl:Class ;
     rdfs:label "monoisotopic molecular weight descriptor calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     obo:IAO_0000117 "Person: Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000218 ;
+    skos:definition "Monoisotopic molecular weight descriptor calculated by ACD/Labs PhysChem software library version 12.01"@en ;
     skos:prefLabel "MonoisotopicMolecularWeightDescriptorCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000487 a owl:Class ;
+    rdfs:label "energy band gap"@en ;
     obo:IAO_0000115 "A descriptor that describes the energy range in a solid where no electron states can exist. In graphs of the electron band structure of solids, the band gap generally refers to the energy difference (in electron volts) between the top of the valence band and the bottom of the conduction band in insulators and semiconductors. [http://en.wikipedia.org/wiki/Band_gap]"^^xsd:string ;
     obo:IAO_0000118 "band gap"^^xsd:string,
         "energy gap"^^xsd:string ;
@@ -1532,6 +1625,7 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     skos:prefLabel "EnergyBandGap"@en .
 
 :CHEMINF_000488 a owl:Class ;
+    rdfs:label "metal element mass descriptor"@en ;
     obo:IAO_0000115 "A descriptor describing the mass of the metal element component of a composite substance. "^^xsd:string ;
     obo:IAO_0000118 "metal element mass"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000083 ;
@@ -1545,6 +1639,7 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     skos:prefLabel "MolecularFormulaCalculatedByACDLabsPhysChemSoftwareLibraryVersion12.01"@en .
 
 :CHEMINF_000496 a owl:Class ;
+    rdfs:label "partition coefficient"@en ;
     obo:IAO_0000115 "The ratio of a dissolved substance in a two-phase system, giving a measure of the difference in solubility of the substance in the two phases."^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
     skos:definition "Partition coefficient"@en ;
@@ -1553,16 +1648,19 @@ where p is the partial pressure of the solute in the gas above the solution, c i
 :CHEMINF_000511 a owl:Class ;
     rdfs:label "numeric chemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
+    skos:definition "Numeric chemical descriptor"@en ;
     skos:prefLabel "NumericChemicalDescriptor"@en .
 
 :CHEMINF_000512 a owl:Class ;
     rdfs:label "textual chemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
+    skos:definition "Textual chemical descriptor"@en ;
     skos:prefLabel "TextualChemicalDescriptor"@en .
 
 :CHEMINF_000513 a owl:Class ;
     rdfs:label "chemical substance descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
+    skos:definition "Chemical substance descriptor"@en ;
     skos:prefLabel "ChemicalSubstanceDescriptor"@en .
 
 :CHEMINF_000516 a owl:Class ;
@@ -1613,12 +1711,14 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     rdfs:label "ChEBI name"@en ;
     obo:IAO_0000115 "A ChEBI name is a preferred name annotated by the ChEBI database.  The ChEBI name has the additional feature that it is unique within the ChEBI dataset. "^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000044 ;
+    skos:definition "ChEBI name"@en ;
     skos:prefLabel "ChEBIName"@en .
 
 :CHEMINF_000561 a owl:Class ;
     rdfs:label "drug trade name"@en ;
     obo:IAO_0000115 "Trade name of a drug compound."^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000043 ;
+    skos:definition "Drug trade name"@en ;
     skos:prefLabel "DrugTradeName"@en .
 
 :CHEMINF_000562 a owl:Class ;
@@ -1626,6 +1726,7 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     obo:IAO_0000115 "International Non-proprietary Name, defined by the WHO."^^xsd:string ;
     chemowl:short_name "INN"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000043 ;
+    skos:definition "International Non-proprietary Name"@en ;
     skos:prefLabel "InternationalNonMinusproprietaryName"@en .
 
 :CHEMINF_000563 a owl:Class ;
@@ -1661,57 +1762,68 @@ where p is the partial pressure of the solute in the gas above the solution, c i
     skos:prefLabel "EuropeanRegistryOfMaterialsIdentifier"@en .
 
 :CHEMINF_000570 a owl:Class ;
+    rdfs:label "SwissLipids identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
     skos:definition "SwissLipids identifier"@en ;
     skos:prefLabel "SwissLipidsIdentifier"@en .
 
 :CHEMINF_000571 a owl:Class ;
+    rdfs:label "MolMeDB identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
     skos:definition "MolMeDB identifier"@en ;
     skos:prefLabel "MolMeDBIdentifier"@en .
 
 :CHEMINF_000572 a owl:Class ;
+    rdfs:label "PDB ligand identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
     skos:definition "PDB ligand identifier"@en ;
     skos:prefLabel "PDBLigandIdentifier"@en .
 
 :CHEMINF_000573 a owl:Class ;
+    rdfs:label "PDB structure identifier"@en ;
     chemowl:short_name "PDB identifier"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000464 ;
     skos:definition "PDB structure identifier"@en ;
     skos:prefLabel "PDBStructureIdentifier"@en .
 
 :CHEMINF_000802 a owl:Class ;
+    rdfs:label "number of rule of five violations calculated by RDKit software library version 2015_09_2"@en ;
     rdfs:subClassOf :CHEMINF_000312 ;
     skos:definition "Number of rule of five violations calculated by RDKit software library version 2015_09_2"@en ;
     skos:prefLabel "NumberOfRuleOfFiveViolationsCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
 
 :CHEMINF_000803 a owl:Class ;
+    rdfs:label "hydrogen bond acceptor count calculated by RDKit software library version 2015_09_2"@en ;
     rdfs:subClassOf :CHEMINF_000245 ;
     skos:definition "Hydrogen bond acceptor count calculated by RDKit software library version 2015_09_2"@en ;
     skos:prefLabel "HydrogenBondAcceptorCountCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
 
 :CHEMINF_000804 a owl:Class ;
+    rdfs:label "hydrogen bond donor count calculated by RDKit software library version 2015_09_2"@en ;
     rdfs:subClassOf :CHEMINF_000244 ;
     skos:definition "Hydrogen bond donor count calculated by RDKit software library version 2015_09_2"@en ;
     skos:prefLabel "HydrogenBondDonorCountCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
 
 :CHEMINF_000805 a owl:Class ;
+    rdfs:label "logP descriptor calculated by RDKit software library version 2015_09_2"@en ;
     rdfs:subClassOf :CHEMINF_000251 ;
     skos:definition "LogP descriptor calculated by RDKit software library version 2015_09_2"@en ;
     skos:prefLabel "LogPDescriptorCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
 
 :CHEMINF_000806 a owl:Class ;
+    rdfs:label "molecular formula calculated by RDKit software library version 2015_09_2"@en ;
     rdfs:subClassOf :CHEMINF_000042 ;
     skos:definition "Molecular formula calculated by RDKit software library version 2015_09_2"@en ;
     skos:prefLabel "MolecularFormulaCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
 
 :CHEMINF_000807 a owl:Class ;
+    rdfs:label "average molecular weight calculated by RDKit software library version 2015_09_2"@en ;
     rdfs:subClassOf :CHEMINF_000216 ;
     skos:definition "Average molecular weight calculated by RDKit software library version 2015_09_2"@en ;
     skos:prefLabel "AverageMolecularWeightCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
 
 :CHEMINF_000808 a owl:Class ;
+    rdfs:label "total polar surface area calculated by RDKit software library version 2015_09_2"@en ;
     rdfs:subClassOf :CHEMINF_000307 ;
     skos:definition "Total polar surface area calculated by RDKit software library version 2015_09_2"@en ;
     skos:prefLabel "TotalPolarSurfaceAreaCalculatedByRDKitSoftwareLibraryVersion2015092"@en .
@@ -2118,6 +2230,7 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
 :CHEMINF_000034 a owl:Class ;
     rdfs:label "S stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000005 ;
+    skos:definition "S stereochemical descriptor"@en ;
     skos:prefLabel "SStereochemicalDescriptor"@en .
 
 :CHEMINF_000041 a owl:Class ;
@@ -2129,11 +2242,13 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
 :CHEMINF_000050 a owl:Class ;
     rdfs:label "- stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000048 ;
+    skos:definition "- stereochemical descriptor"@en ;
     skos:prefLabel "MinusStereochemicalDescriptor"@en .
 
 :CHEMINF_000053 a owl:Class ;
     rdfs:label "L stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000051 ;
+    skos:definition "L stereochemical descriptor"@en ;
     skos:prefLabel "LStereochemicalDescriptor"@en .
 
 :CHEMINF_000056 a owl:Class ;
@@ -2186,16 +2301,19 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
 :CHEMINF_000140 a owl:Class ;
     rdfs:label "PubChem compound identifier (CID)"@en ;
     rdfs:subClassOf :CHEMINF_000302 ;
+    skos:definition "PubChem compound identifier (CID)"@en ;
     skos:prefLabel "PubChemCompoundIdentifier(CID)"@en .
 
 :CHEMINF_000146 a owl:Class ;
     rdfs:label "topological surface area descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
+    skos:definition "Topological surface area descriptor"@en ;
     skos:prefLabel "TopologicalSurfaceAreaDescriptor"@en .
 
 :CHEMINF_000152 a owl:Class ;
     rdfs:label "topological polar surface area descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000146 ;
+    skos:definition "Topological polar surface area descriptor"@en ;
     skos:prefLabel "TopologicalPolarSurfaceAreaDescriptor"@en .
 
 :CHEMINF_000174 a owl:Class ;
@@ -2207,6 +2325,7 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
 :CHEMINF_000177 a owl:Class ;
     rdfs:label "collection of 3D coordinates"@en ;
     rdfs:subClassOf :CHEMINF_000085 ;
+    skos:definition "Collection of 3D coordinates"@en ;
     skos:prefLabel "CollectionOf3DCoordinates"@en .
 
 :CHEMINF_000186 a owl:Class ;
@@ -2223,21 +2342,25 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
     skos:prefLabel "TautomerCount"@en .
 
 :CHEMINF_000206 a owl:Class ;
+    rdfs:label "defined atom stereocenter count"@en ;
     rdfs:subClassOf :CHEMINF_000205 ;
     skos:definition "Defined atom stereocenter count"@en ;
     skos:prefLabel "DefinedAtomStereocenterCount"@en .
 
 :CHEMINF_000212 a owl:Class ;
+    rdfs:label "undefined atom stereocenter count"@en ;
     rdfs:subClassOf :CHEMINF_000205 ;
     skos:definition "Undefined atom stereocenter count"@en ;
     skos:prefLabel "UndefinedAtomStereocenterCount"@en .
 
 :CHEMINF_000214 a owl:Class ;
+    rdfs:label "defined bond stereocenter count"@en ;
     rdfs:subClassOf :CHEMINF_000213 ;
     skos:definition "Defined bond stereocenter count"@en ;
     skos:prefLabel "DefinedBondStereocenterCount"@en .
 
 :CHEMINF_000215 a owl:Class ;
+    rdfs:label "undefined bond stereocenter count"@en ;
     rdfs:subClassOf :CHEMINF_000213 ;
     skos:definition "Undefined bond stereocenter count"@en ;
     skos:prefLabel "UndefinedBondStereocenterCount"@en .
@@ -2275,7 +2398,8 @@ A service for browsing and searching CHEMINF can be found [here](https://ontobee
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom :CHEMINF_000266 ],
         :CHEMINF_000025 ;
-    skos:definition "The boiling point descriptor indicates the temperature at which a chemical substance undergoes a state transition from liquid to gas, at standard conditions."@en ;
+    skos:definition "Boiling point descriptor"@en,
+        "The boiling point descriptor indicates the temperature at which a chemical substance undergoes a state transition from liquid to gas, at standard conditions."@en ;
     skos:prefLabel "BoilingPointDescriptor"@en .
 
 :CHEMINF_000268 a owl:Class ;
@@ -2326,6 +2450,7 @@ RTB <=3
 PSA<=60
 """^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
+    skos:definition "Rule of three passes descriptor"@en ;
     skos:prefLabel "RuleOfThreePassesDescriptor"@en .
 
 :CHEMINF_000318 a owl:Class ;
@@ -2355,15 +2480,18 @@ C(=O)-S-C(=S)
 SC#N
 """^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
+    skos:definition "Medchem friendly descriptor"@en ;
     skos:prefLabel "MedchemFriendlyDescriptor"@en .
 
 :CHEMINF_000326 a owl:Class ;
     rdfs:label "molecular species at pH 7.4 descriptor"@en ;
     obo:IAO_0000115 "Molecular Species is a description of the predominant form of the molecule at pH7.4.  "^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
+    skos:definition "Molecular species at pH 7.4 descriptor"@en ;
     skos:prefLabel "MolecularSpeciesAtPH7.4Descriptor"@en .
 
 :CHEMINF_000380 a owl:Class ;
+    rdfs:label "cycle count"@en ;
     obo:IAO_0000115 "A descriptor that specifies the integer count of cycles in a given molecular entity."^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000209 ;
     skos:definition "Cycle count"@en ;
@@ -2423,6 +2551,7 @@ SC#N
     obo:IAO_0000115 "A preferred name in ChemSpider by virtue of having been validated by a curator."^^xsd:string ;
     obo:IAO_0000117 "Person: Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000044 ;
+    skos:definition "ChemSpider validated synonym"@en ;
     skos:prefLabel "ChemSpiderValidatedSynonym"@en .
 
 :CHEMINF_000519 a owl:Class ;
@@ -2445,6 +2574,7 @@ SC#N
 :CHEMINF_000005 a owl:Class ;
     rdfs:label "RS stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000519 ;
+    skos:definition "RS stereochemical descriptor"@en ;
     skos:prefLabel "RSStereochemicalDescriptor"@en .
 
 :CHEMINF_000027 a owl:Class ;
@@ -2471,6 +2601,7 @@ SC#N
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_33250 ],
         :CHEMINF_000520 ;
+    skos:definition "+/- stereochemical descriptor"@en ;
     skos:prefLabel "PlusMinusStereochemicalDescriptor"@en .
 
 :CHEMINF_000051 a owl:Class ;
@@ -2479,6 +2610,7 @@ SC#N
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000520 ;
+    skos:definition "DL stereochemical descriptor"@en ;
     skos:prefLabel "DLStereochemicalDescriptor"@en .
 
 :CHEMINF_000064 a owl:Class ;
@@ -2492,7 +2624,8 @@ SC#N
 :CHEMINF_000080 a owl:Class ;
     rdfs:label "cis-trans stereochemical descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000520 ;
-    skos:definition "Descriptors which show the relationship between two ligands attached to separate atoms that are connected by a double bond or are contained in a ring. The two ligands are said to be located cis to each other if they lie on the same side of a plane. If they are on opposite sides, their relative position is described as trans. The appropriate reference plane of a double bond is perpendicular to that of the relevant s-bonds and passes through the double bond.[source:IUPAC Gold Book - http://goldbook.iupac.org/C01092.html]"@en ;
+    skos:definition "Cis-trans stereochemical descriptor"@en,
+        "Descriptors which show the relationship between two ligands attached to separate atoms that are connected by a double bond or are contained in a ring. The two ligands are said to be located cis to each other if they lie on the same side of a plane. If they are on opposite sides, their relative position is described as trans. The appropriate reference plane of a double bond is perpendicular to that of the relevant s-bonds and passes through the double bond.[source:IUPAC Gold Book - http://goldbook.iupac.org/C01092.html]"@en ;
     skos:prefLabel "CisMinustransStereochemicalDescriptor"@en .
 
 :CHEMINF_000113 a owl:Class ;
@@ -2512,12 +2645,14 @@ SC#N
     skos:prefLabel "PetitjeanShapeIndex"@en .
 
 :CHEMINF_000189 a owl:Class ;
+    rdfs:label "ratio of length to breadth descriptor"@en ;
     obo:IAO_0000115 "A descriptor characterizing the ratio of the length to the breadth of a given entity."^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000093 ;
     skos:definition "Ratio of length to breadth descriptor"@en ;
     skos:prefLabel "RatioOfLengthToBreadthDescriptor"@en .
 
 :CHEMINF_000193 a owl:Class ;
+    rdfs:label "equilibrium constant"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
     skos:definition "Equilibrium constant"@en ;
     skos:prefLabel "EquilibriumConstant"@en .
@@ -2530,11 +2665,13 @@ SC#N
     skos:prefLabel "PKa"@en .
 
 :CHEMINF_000203 a owl:Class ;
+    rdfs:label "stereocenter count"@en ;
     rdfs:subClassOf :CHEMINF_000209 ;
     skos:definition "Stereocenter count"@en ;
     skos:prefLabel "StereocenterCount"@en .
 
 :CHEMINF_000205 a owl:Class ;
+    rdfs:label "atom stereocenter count"@en ;
     rdfs:subClassOf :CHEMINF_000203 ;
     owl:disjointWith :CHEMINF_000213 ;
     skos:definition "Atom stereocenter count"@en ;
@@ -2583,6 +2720,7 @@ SC#N
     skos:prefLabel "VolumeDescriptor"@en .
 
 :CHEMINF_000302 a owl:Class ;
+    rdfs:label "PubChem Identifier"@en ;
     rdfs:subClassOf :CHEMINF_000464 ;
     skos:definition "PubChem Identifier"@en ;
     skos:prefLabel "PubChemIdentifier"@en .
@@ -2591,6 +2729,7 @@ SC#N
     rdfs:label "logD descriptor"@en ;
     obo:IAO_0000115 "octanol-water distribution coefficient calculated at a given pH. "^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
+    skos:definition "LogD descriptor"@en ;
     skos:prefLabel "LogDDescriptor"@en .
 
 :CHEMINF_000413 a owl:Class ;
@@ -2617,6 +2756,7 @@ obo:CHEBI_36357 a owl:Class ;
     rdfs:label "polyatomic entity"@en ;
     oboowl:hasAlternativeId "CHEBI:36357"^^xsd:string ;
     rdfs:subClassOf obo:CHEBI_23367 ;
+    skos:definition "Polyatomic entity"@en ;
     skos:prefLabel "PolyatomicEntity"@en .
 
 :CHEMINF_000042 a owl:Class ;
@@ -2640,6 +2780,7 @@ obo:CHEBI_36357 a owl:Class ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_23367 ],
         :CHEMINF_000025 ;
+    skos:definition "Mass descriptor"@en ;
     skos:prefLabel "MassDescriptor"@en .
 
 :CHEMINF_000088 a owl:Class ;
@@ -2650,6 +2791,7 @@ obo:CHEBI_36357 a owl:Class ;
             owl:onProperty obo:IAO_0000136 ;
             owl:someValuesFrom obo:CHEBI_36357 ],
         :CHEMINF_000083 ;
+    skos:definition "Molecular mass descriptor"@en ;
     skos:prefLabel "MolecularMassDescriptor"@en .
 
 :CHEMINF_000131 a owl:Class ;
@@ -2680,6 +2822,7 @@ obo:CHEBI_36357 a owl:Class ;
     skos:prefLabel "DissociationEnergyDescriptor"@en .
 
 :CHEMINF_000213 a owl:Class ;
+    rdfs:label "bond stereocenter count"@en ;
     rdfs:subClassOf :CHEMINF_000203 ;
     skos:definition "Bond stereocenter count"@en ;
     skos:prefLabel "BondStereocenterCount"@en .
@@ -2700,6 +2843,7 @@ obo:CHEBI_36357 a owl:Class ;
 :CHEMINF_000307 a owl:Class ;
     rdfs:label "polar surface area descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000229 ;
+    skos:definition "Polar surface area descriptor"@en ;
     skos:prefLabel "PolarSurfaceAreaDescriptor"@en .
 
 :CHEMINF_000312 a owl:Class ;
@@ -2711,6 +2855,7 @@ HBD>=5
 HBA>=10
 """^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000025 ;
+    skos:definition "Rule of five violations descriptor"@en ;
     skos:prefLabel "RuleOfFiveViolationsDescriptor"@en .
 
 :CHEMINF_000520 a owl:Class ;
@@ -2804,11 +2949,13 @@ HBA>=10
 :CHEMINF_000094 a owl:Class ;
     rdfs:label "charge delocalization descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000087 ;
+    skos:definition "Charge delocalization descriptor"@en ;
     skos:prefLabel "ChargeDelocalizationDescriptor"@en .
 
 :CHEMINF_000136 a owl:Class ;
     rdfs:label "constitutional descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
+    skos:definition "Constitutional descriptor"@en ;
     skos:prefLabel "ConstitutionalDescriptor"@en .
 
 :CHEMINF_000043 a owl:Class ;
@@ -2867,12 +3014,14 @@ obo:CHEBI_33250 a owl:Class ;
     obo:IAO_0000115 "An identifying descriptor which is used within a particular database system to identify a chemical system."^^xsd:string ;
     obo:IAO_0000117 "Person: Colin Batchelor"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000061 ;
+    skos:definition "Chemical database identifier"@en ;
     skos:prefLabel "ChemicalDatabaseIdentifier"@en .
 
 :CHEMINF_000266 a owl:Class ;
     rdfs:label "chemical substance"@en ;
     rdfs:subClassOf :CHEMINF_000000 ;
-    skos:definition "Chemical substance constitutes matter of constant composition, that may contain a collection of molecular entities. [IUPAC: http://goldbook.iupac.org/C01039.html]"@en ;
+    skos:definition "Chemical substance"@en,
+        "Chemical substance constitutes matter of constant composition, that may contain a collection of molecular entities. [IUPAC: http://goldbook.iupac.org/C01039.html]"@en ;
     skos:prefLabel "ChemicalSubstance"@en .
 
 :CHEMINF_000092 a owl:Class ;
@@ -2884,6 +3033,7 @@ obo:CHEBI_33250 a owl:Class ;
 :CHEMINF_000087 a owl:Class ;
     rdfs:label "electronic descriptor"@en ;
     rdfs:subClassOf :CHEMINF_000123 ;
+    skos:definition "Electronic descriptor"@en ;
     skos:prefLabel "ElectronicDescriptor"@en .
 
 :CHEMINF_000229 a owl:Class ;
@@ -2905,6 +3055,7 @@ obo:CHEBI_23367 a owl:Class ;
     rdfs:label "molecular entity"@en ;
     oboowl:hasAlternativeId "CHEBI:23367"^^xsd:string ;
     rdfs:subClassOf :CHEMINF_000000 ;
+    skos:definition "Molecular entity"@en ;
     skos:prefLabel "MolecularEntity"@en .
 
 obo:IAO_0000136 a owl:ObjectProperty ;
