@@ -9,7 +9,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+-*'
       - master
       - main
-      - rdfs_label
+      - rdfs_label_context
 
 permissions:
   contents: write
@@ -48,8 +48,8 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install \
-            "EMMOntoPy[ontodoc,ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@ontokit_dev" \
-            "tripper[datadoc] @ git+https://github.com/EMMC-ASBL/tripper.git@master"
+            "EMMOntoPy[ontodoc,ontokit] @ git+https://github.com/emmo-repo/EMMOntoPy.git@master" \
+            "tripper[datadoc] @ git+https://github.com/EMMC-ASBL/tripper.git@prefLabel_first"
 
     - name: List installed Python modules
       run: |
