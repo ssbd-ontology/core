@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" compressed="false" modified="2026-05-26T17:51:51.879Z" etag="uzeHKw--bXflezb31cNS" version="20.7.4" type="device" pages="8">
+<mxfile host="Electron" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" compressed="false" modified="2026-05-26T18:24:02.779Z" etag="aW6KpKstLuctu0wLw0HZ" version="20.7.4" type="device" pages="8">
   <diagram id="c_qGwFVzFrKK_DlR2sme" name="taxonomy">
     <mxGraphModel dx="1430" dy="1827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -7699,7 +7699,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="RAyFkQ9FqU9dfNTjD9SU" name="example">
-    <mxGraphModel dx="2127" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2257" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -7997,9 +7997,9 @@
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-143" value="150^^xsd:float" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="1345" y="545" width="90" height="20" as="geometry" />
+          <mxGeometry x="1305" y="545" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="g9ciRkEffJNN25uIRPH2-144" value="ssbd:hasDataValue" style="endArrow=classic;html=1;rounded=0;" parent="1" source="g9ciRkEffJNN25uIRPH2-137" target="g9ciRkEffJNN25uIRPH2-143" edge="1">
+        <mxCell id="g9ciRkEffJNN25uIRPH2-144" value="ssbd:dataValue" style="endArrow=classic;html=1;rounded=0;" parent="1" source="g9ciRkEffJNN25uIRPH2-137" target="g9ciRkEffJNN25uIRPH2-143" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1060" y="630" as="sourcePoint" />
             <mxPoint x="1110" y="580" as="targetPoint" />
@@ -8246,9 +8246,9 @@
           </mxCell>
         </UserObject>
         <mxCell id="Fh-3N-XveRNxlcmQh6kS-68" value="150^^xsd:float" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="1335" y="1485" width="90" height="20" as="geometry" />
+          <mxGeometry x="1295" y="1485" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Fh-3N-XveRNxlcmQh6kS-69" value="ssbd:hasDataValue" style="endArrow=classic;html=1;rounded=0;" parent="1" source="Fh-3N-XveRNxlcmQh6kS-62" target="Fh-3N-XveRNxlcmQh6kS-68" edge="1">
+        <mxCell id="Fh-3N-XveRNxlcmQh6kS-69" value="ssbd:dataValue" style="endArrow=classic;html=1;rounded=0;" parent="1" source="Fh-3N-XveRNxlcmQh6kS-62" target="Fh-3N-XveRNxlcmQh6kS-68" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1050" y="1570" as="sourcePoint" />
             <mxPoint x="1100" y="1520" as="targetPoint" />
