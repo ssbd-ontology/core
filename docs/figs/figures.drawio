@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" compressed="false" modified="2026-05-26T21:56:04.818Z" etag="AOVN1PYs3LUipdJ3_6l6" version="20.7.4" type="device" pages="8">
+<mxfile host="Electron" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/20.7.4 Chrome/106.0.5249.199 Electron/21.3.3 Safari/537.36" compressed="false" modified="2026-05-26T22:18:18.251Z" etag="c_6_rTrgUmbVshklHBYB" version="20.7.4" type="device" pages="8">
   <diagram id="c_qGwFVzFrKK_DlR2sme" name="taxonomy">
     <mxGraphModel dx="1430" dy="1827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -7699,12 +7699,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="RAyFkQ9FqU9dfNTjD9SU" name="example">
-    <mxGraphModel dx="1243" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1430" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="MrRNGo0Gcc3VEPdrA_27-50" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#6C8EBF;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="190" y="1070" width="1240" height="560" as="geometry" />
+          <mxGeometry x="190" y="1070" width="1240" height="500" as="geometry" />
         </mxCell>
         <mxCell id="MrRNGo0Gcc3VEPdrA_27-49" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#6C8EBF;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="40" y="120" width="1520" height="610" as="geometry" />
@@ -8499,59 +8499,12 @@
             <mxPoint x="20" y="139.38999999999987" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CoB325k9k35IXaWfLdoS-1" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="751.25" y="1580" width="30" height="30" as="geometry" />
-        </mxCell>
-        <UserObject label="ssbd:implementsModel some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#implementsModel" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-2">
-          <mxCell style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="CoB325k9k35IXaWfLdoS-1" target="CoB325k9k35IXaWfLdoS-6" edge="1">
-            <mxGeometry relative="1" as="geometry">
-              <mxPoint x="761.25" y="1670" as="sourcePoint" />
-              <mxPoint x="961.25" y="1595" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <mxCell id="CoB325k9k35IXaWfLdoS-3" value="kb:toxicity_software" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#6C8EBF;" parent="1" vertex="1">
-          <mxGeometry x="701.25" y="1610" width="130" height="20" as="geometry" />
-        </mxCell>
-        <UserObject label="ssbd:Software" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Software" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-4">
-          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-            <mxGeometry x="606.25" y="1580" width="90" height="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="CoB325k9k35IXaWfLdoS-5" value="isA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="CoB325k9k35IXaWfLdoS-6" target="CoB325k9k35IXaWfLdoS-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <UserObject label="ssbd:DecisionTree" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-6">
-          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-            <mxGeometry x="978.75" y="1580" width="110" height="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <mxCell id="CoB325k9k35IXaWfLdoS-7" value="a" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="CoB325k9k35IXaWfLdoS-1" target="CoB325k9k35IXaWfLdoS-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1031.25" y="1600" as="sourcePoint" />
-            <mxPoint x="1058.25" y="1645" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <UserObject label="ssbd:Model" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-8">
-          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-            <mxGeometry x="1163.75" y="1580" width="76.25" height="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="ssbd:hasSoftware value" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasSoftware" linkTarget="_blank" id="CoB325k9k35IXaWfLdoS-9">
-          <mxCell style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#dae8fc;" parent="1" source="Fh-3N-XveRNxlcmQh6kS-42" target="CoB325k9k35IXaWfLdoS-1" edge="1">
-            <mxGeometry x="0.7818" y="5" relative="1" as="geometry">
-              <mxPoint as="offset" />
-              <mxPoint x="813.2366238306395" y="1413.0164316231346" as="sourcePoint" />
-              <mxPoint x="650" y="1700" as="targetPoint" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
         <UserObject label="emmo:MassFraction" link="https://w3id.org/emmo#MeasurementUnit" id="83fel9kizJCo_z6Nmftd-1">
-          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
             <mxGeometry x="1400" y="600" width="120.77" height="30" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="83fel9kizJCo_z6Nmftd-2" value="isA" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-137" target="83fel9kizJCo_z6Nmftd-1">
+        <mxCell id="83fel9kizJCo_z6Nmftd-2" value="isA" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" parent="1" source="g9ciRkEffJNN25uIRPH2-137" target="83fel9kizJCo_z6Nmftd-1" edge="1">
           <mxGeometry x="0.4062" y="-1" relative="1" as="geometry">
             <mxPoint x="1302.8230237032412" y="440.95506233646665" as="sourcePoint" />
             <mxPoint x="1387.5051699634341" y="388.90589493169523" as="targetPoint" />
@@ -8559,11 +8512,11 @@
           </mxGeometry>
         </mxCell>
         <UserObject label="emmo:MassFraction" link="https://w3id.org/emmo#MeasurementUnit" id="83fel9kizJCo_z6Nmftd-3">
-          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
             <mxGeometry x="1267.82" y="1530" width="124.37" height="30" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="83fel9kizJCo_z6Nmftd-4" value="isA" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" edge="1" parent="1" target="83fel9kizJCo_z6Nmftd-3" source="Fh-3N-XveRNxlcmQh6kS-62">
+        <mxCell id="83fel9kizJCo_z6Nmftd-4" value="isA" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" parent="1" source="Fh-3N-XveRNxlcmQh6kS-62" target="83fel9kizJCo_z6Nmftd-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1210.000914866408" y="1621.530145476323" as="sourcePoint" />
             <mxPoint x="1306.875169963434" y="1658.9058949316952" as="targetPoint" />
