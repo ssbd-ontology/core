@@ -79,6 +79,8 @@ widoco:introduction rdf:type owl:AnnotationProperty .
 ###  http://purl.org/dc/terms/source
 dcterms:source rdf:type owl:AnnotationProperty .
 
+### http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
 
 #
 # Datatypes
