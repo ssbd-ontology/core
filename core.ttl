@@ -320,13 +320,15 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :isAfter, prov:wasInformedBy ;
     skos:prefLabel "wasInformedBy"@en ;
     skos:definition "A one-directional relation between an activity that affects the subject activity."@en ;
+    skos:scopeNote "This relation connects PROV-O with causal theory of the SSbD Core Ontology"@en ;
     rdfs:domain prov:Activity ;
     rdfs:range prov:Activity .
 
-:wasDerivedBy rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
-    rdfs:subPropertyOf :processedFrom, prov:wasDerivedBy ;
-    skos:prefLabel "wasDerivedBy"@en ;
+:wasDerivedFrom rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
+    rdfs:subPropertyOf :processedFrom, prov:wasDerivedFrom ;
+    skos:prefLabel "wasDerivedFrom"@en ;
     skos:definition "Indirect relation that relates the output entity of an activity to its input entity."@en ;
+    skos:scopeNote "This relation connects PROV-O with causal theory of the SSbD Core Ontology"@en ;
     rdfs:domain prov:Entity ;
     rdfs:range prov:Entity .
 
@@ -337,6 +339,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:range prov:Agent ;
     skos:definition "Relates an entity to an agent via an activity that both the entity and agent participates to."@en ;
     skos:scopeNote "The activity is through overlapped by the agent and overcrossed by the entity."@en ;
+    skos:scopeNote "This relation connects PROV-O with causal theory of the SSbD Core Ontology"@en ;
     owl:inverseOf :attributed .
 
 :attributed rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
