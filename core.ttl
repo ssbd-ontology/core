@@ -500,13 +500,13 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:definition "Relates a software to the model it implements."@en ;
     skos:scopeNote "Semiotically a software can be seen as an executable sign that stands for the model it implements."@en .
 
-:tierLevel a owl:ObjectProperty ;
+:inTierLevel a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasProperty ;
-    skos:prefLabel "tierLevel"@en ;
-    rdfs:label "tier level"@en ;
+    skos:prefLabel "inTierLevel"@en ;
+    rdfs:label "in tier level"@en ;
     rdfs:domain prov:Entity ;
     rdfs:range :TierLevel ;
-    skos:definition "Relate an entity to an SSbD tier level."@en ;
+    skos:definition "Relate an entity to an SSbD tier level (class)."@en ;
     vann:usageNote "Should be one of: ssbd:tierlevel1 (ideation/design), ssbd:tierlevel2 (lab phase/development), ssbd:tierlevel3 (up-scaling/production)"@en .
 
 :chemicalClass rdf:type owl:ObjectProperty ;
