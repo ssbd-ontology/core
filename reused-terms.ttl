@@ -45,6 +45,8 @@ foaf:homepage rdf:type owl:AnnotationProperty .
 ###  http://xmlns.com/foaf/0.1/logo
 foaf:logo rdf:type owl:AnnotationProperty .
 
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/abstract
 dcterms:abstract rdf:type owl:AnnotationProperty .
