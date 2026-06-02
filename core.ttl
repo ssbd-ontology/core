@@ -909,11 +909,10 @@ An architectural floor plan is a model of a house.
 ### Question: should we duplicate these classes instead?
 dm:DataModel rdfs:subClassOf :Data .
 foaf:Document rdfs:subClassOf :Data .
-prov:Agent rdfs:subClassOf foaf:Agent .
-dcat:Resource rdfs:subClassOf prov:Entity .
+dcat:Resource rdfs:subClassOf :Object .
 foaf:Organization rdfs:subClassOf :Object .
 foaf:Person rdfs:subClassOf :Object .
-foaf:Project rdfs:subClassOf prov:Entity .
+foaf:Project rdfs:subClassOf prov:Object .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
 emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
 emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
