@@ -191,7 +191,7 @@ dcterms:description a owl:AnnotationProperty ;
     rdfs:label "description"@en .
 
 dcterms:rightsHolder a owl:ObjectProperty ;
-    rdfs:range foaf:Agent ;
+    rdfs:range prov:Agent ;
     dcterms:description "A person or organization owning or managing rights over the resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "rightsHolder"@en .
@@ -328,14 +328,14 @@ dcterms:creator a owl:ObjectProperty ;
     skos:prefLabel "creator"@en ;
     skos:definition "An entity responsible for producing the resource."@en ;
     rdfs:domain dcat:Resource ;
-    rdfs:range foaf:Agent .
+    rdfs:range prov:Agent .
 
 ddoc:curator a owl:ObjectProperty ;
     skos:prefLabel "curator"@en ;
     skos:definition "The agent that curated the resource."@en ;
     vann:usageNote "Use `ddoc:curationDate` to refer to the date of curation."@en ;
     rdfs:domain dcat:Resource ;
-    rdfs:range foaf:Agent .
+    rdfs:range prov:Agent .
 
 dm:datamodel a owl:ObjectProperty ;
     skos:prefLabel "datamodel"@en ;

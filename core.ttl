@@ -912,7 +912,7 @@ foaf:Document rdfs:subClassOf :Data .
 dcat:Resource rdfs:subClassOf :Data .
 foaf:Organization rdfs:subClassOf :Object .
 foaf:Person rdfs:subClassOf :Object .
-foaf:Project rdfs:subClassOf prov:Object .
+foaf:Project rdfs:subClassOf :Object .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
 emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
 emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
