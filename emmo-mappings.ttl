@@ -1,0 +1,87 @@
+@prefix : <https://w3id.org/ssbd/chebi-mappings#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo/hume#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+
+<https://w3id.org/ssbd/core/emmo-mappings> rdf:type owl:Ontology ;
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/emmo-mappings> ;
+    owl:imports
+        <https://w3id.org/ssbd/core/0.0.1> ;
+    dcterms:abstract "Mapping SSbD Core Ontology to EMMO."@en ;
+    dcterms:title "EMMO mappings"@en .
+
+
+ssbd:dataValue rdfs:subClassOf emmo:dataValue .
+ssbd:parthood rdfs:subClassOf emmo:mereological .
+ssbd:overlaps rdfs:subClassOf emmo:overlaps .
+ssbd:notOverlaps rdfs:subClassOf emmo:notOverlaps .
+ssbd:isOvercrossedBy rdfs:subClassOf emmo:isOvercrossedBy .
+ssbd:properOverlaps rdfs:subClassOf emmo:properOverlaps .
+ssbd:hasPart rdfs:subClassOf emmo:hasPart .
+ssbd:hasProperPart rdfs:subClassOf emmo:hasProperPart .
+ssbd:equalsTo rdfs:subClassOf emmo:equalsTo .
+ssbd:hasParticipant rdfs:subClassOf emmo:hasParticipant .
+ssbd:hasDatum rdfs:subClassOf emmo:hasDatum .
+ssbd:hasSpatialPart rdfs:subClassOf emmo:hasSpatialPart .
+ssbd:hasTemporalPart rdfs:subClassOf emmo:hasTemporalPart .
+ssbd:hasJunctionPart rdfs:subClassOf emmo:hasJunctionPart .
+ssbd:participatesTo rdfs:subClassOf emmo:participatesTo .
+ssbd:hasInput rdfs:subClassOf emmo:hasInput .
+ssbd:hasOutput rdfs:subClassOf emmo:hasOutput .
+ssbd:isOutputOf rdfs:subClassOf emmo:isOutputOf .
+ssbd:performedBy rdfs:subClassOf emmo:hasIntentionalAgent .
+ssbd:performedWith rdfs:subClassOf emmo:hasUnintentionalAgent .
+ssbd:hasSubProcess rdfs:subClassOf emmo:hasSubProcess .
+ssbd:causal rdfs:subClassOf emmo:causal .
+ssbd:causedBy rdfs:subClassOf emmo:causedBy .
+ssbd:isAfter rdfs:subClassOf emmo:isAfter .
+ssbd:processedFrom rdfs:subClassOf emmo:processedFrom .
+ssbd:attributed rdfs:subClassOf [ owl:inverseOf emmo:hasAgent ] .
+ssbd:semiotical rdfs:subClassOf emmo:semiotical .
+ssbd:isInterpretedBy rdfs:subClassOf emmo:isInterpretedBy .
+ssbd:isRepresentedBy rdfs:subClassOf emmo:isRepresentedBy .
+ssbd:hasProperty rdfs:subClassOf emmo:hasProperty .
+ssbd:hasDescription rdfs:subClassOf emmo:hasDescription .
+ssbd:hasMeasurementUnit rdfs:subClassOf emmo:hasMeasurementUnit .
+ssbd:standsFor rdfs:subClassOf emmo:standsFor .
+ssbd:isDescriptionFor rdfs:subClassOf emmo:isDescriptionFor .
+ssbd:isPropertyFor rdfs:subClassOf emmo:isPropertyFor .
+ssbd:Process rdfs:subClassOf emmo:Process .
+ssbd:MaterialProcess rdfs:subClassOf emmo:MaterialProcess .
+ssbd:Measurement rdfs:subClassOf emmo:Measurement .
+ssbd:Computation rdfs:subClassOf emmo:Computation .
+ssbd:Matter rdfs:subClassOf emmo:Matter .
+ssbd:Data rdfs:subClassOf emmo:Data .
+ssbd:Software rdfs:subClassOf emmo:Software .
+ssbd:Datum rdfs:subClassOf emmo:Datum .
+ssbd:Dataset rdfs:subClassOf emmo:Dataset .
+ssbd:SymbolicData rdfs:subClassOf emmo:SymbolicData .
+ssbd:NumericalData rdfs:subClassOf emmo:NumericalData .
+ssbd:FloatData rdfs:subClassOf emmo:FloatData .
+ssbd:DoubleData rdfs:subClassOf emmo:DoubleData .
+ssbd:IntegerData rdfs:subClassOf emmo:IntegerData .
+ssbd:LongData rdfs:subClassOf emmo:LongData .
+ssbd:IntData rdfs:subClassOf emmo:IntData .
+ssbd:ShortData rdfs:subClassOf emmo:ShortData .
+ssbd:ByteData rdfs:subClassOf emmo:ByteData .
+ssbd:BooleanData rdfs:subClassOf emmo:BooleanData .
+ssbd:DateData rdfs:subClassOf emmo:DateData .
+ssbd:TimeData rdfs:subClassOf emmo:TimeData .
+ssbd:DateTimeData rdfs:subClassOf emmo:DateTimeData .
+ssbd:Sign rdfs:subClassOf emmo:Sign .
+ssbd:Information rdfs:subClassOf emmo:Information .
+ssbd:Model rdfs:subClassOf emmo:Icon .
+ssbd:Property rdfs:subClassOf emmo:Property .
+ssbd:Description rdfs:subClassOf emmo:Description .
+ssbd:Object rdfs:subClassOf emmo:Object .
+ssbd:Participant rdfs:subClassOf emmo:Participant .
+ssbd:Interpreter rdfs:subClassOf emmo:Interpreter .

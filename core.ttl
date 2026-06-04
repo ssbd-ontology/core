@@ -135,10 +135,10 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     owl:propertyDisjointWith :nonOverlaps ;
     skos:definition "The relation between two individuals representing entities that share at least one of their parts."@en .
 
-:nonOverlaps rdf:type owl:ObjectProperty, owl:SymmetricProperty, owl:IrreflexiveProperty ;
+:notOverlaps rdf:type owl:ObjectProperty, owl:SymmetricProperty, owl:IrreflexiveProperty ;
     rdfs:subPropertyOf :parthood ;
-    skos:prefLabel "nonOverlaps"@en ;
-    rdfs:label "non overlaps"@en ;
+    skos:prefLabel "notOverlaps"@en ;
+    rdfs:label "not overlaps"@en ;
     owl:propertyDisjointWith :overlaps ;
     skos:definition "The relation between two individuals that does not share any parts."@en .
 
@@ -473,20 +473,20 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:domain :Sign ;
     rdfs:range prov:Entity .
 
-:isDescriptionOf rdf:type owl:ObjectProperty ;
+:isDescriptionFor rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
     owl:inverseOf :hasDescription ;
-    skos:prefLabel "isDescriptionOf"@en ;
-    rdfs:label "is description of"@en ;
+    skos:prefLabel "isDescriptionFor"@en ;
+    rdfs:label "is description for"@en ;
     skos:definition "Connects a description to an entity."@en ;
     rdfs:domain :Description ;
     rdfs:range prov:Entity .
 
-:isPropertyOf rdf:type owl:ObjectProperty ;
+:isPropertyFor rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
     owl:inverseOf :hasProperty ;
-    skos:prefLabel "isPropertyOf"@en ;
-    rdfs:label "is property of"@en ;
+    skos:prefLabel "isPropertyFor"@en ;
+    rdfs:label "is property for"@en ;
     skos:definition "Connects a property to an entity."@en ;
     rdfs:domain :Property ;
     rdfs:range prov:Entity .
