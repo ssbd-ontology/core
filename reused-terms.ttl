@@ -223,7 +223,6 @@ prov:Activity a owl:Class ;
     prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity"^^xsd:anyURI .
 #
 prov:Agent a owl:Class ;
-    rdfs:subClassOf foaf:Agent ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
     rdfs:label "Agent" ;
     skos:prefLabel "Agent"@en ;
