@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" compressed="false" pages="8">
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" compressed="false" version="29.3.6" pages="8">
   <diagram id="c_qGwFVzFrKK_DlR2sme" name="taxonomy">
     <mxGraphModel dx="2979" dy="1752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -7214,7 +7214,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="RAyFkQ9FqU9dfNTjD9SU" name="example">
-    <mxGraphModel dx="2510" dy="696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2182" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -7222,8 +7222,8 @@
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-103" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-187">
             <mxGeometry relative="1" x="0.5563" y="2" as="geometry">
               <mxPoint as="offset" />
-              <mxPoint x="660" y="552" as="sourcePoint" />
-              <mxPoint x="758" y="520" as="targetPoint" />
+              <mxPoint x="760" y="1222" as="sourcePoint" />
+              <mxPoint x="858" y="1190" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -7231,50 +7231,50 @@
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-137" style="endArrow=classic;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="g9ciRkEffJNN25uIRPH2-175">
             <mxGeometry height="50" relative="1" width="50" x="-0.1128" y="1" as="geometry">
               <mxPoint as="offset" />
-              <mxPoint x="1098" y="563" as="sourcePoint" />
-              <mxPoint x="1325" y="536" as="targetPoint" />
+              <mxPoint x="1198" y="1233" as="sourcePoint" />
+              <mxPoint x="1425" y="1206" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-176" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(236, 236, 236);&quot;&gt;emmo:MilliGramPerKilogram&lt;/span&gt;" vertex="1">
-          <mxGeometry height="20" width="170" x="1210" y="490" as="geometry" />
+          <mxGeometry height="20" width="170" x="1310" y="1160" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-1" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-37" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#d5e8d4;" target="4nh34a1vux3v6rsnNnBF-26" value="ssbd:wasDerivedFrom">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="785" y="1920" />
-              <mxPoint x="385" y="1920" />
+              <mxPoint x="885" y="2590" />
+              <mxPoint x="485" y="2590" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-2" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-32" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-10">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="785" y="1730" />
-              <mxPoint x="385" y="1730" />
+              <mxPoint x="885" y="2400" />
+              <mxPoint x="485" y="2400" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-3" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="210" y="1850" as="sourcePoint" />
-            <mxPoint x="210" y="1770" as="targetPoint" />
+            <mxPoint x="310" y="2520" as="sourcePoint" />
+            <mxPoint x="310" y="2440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="185" y="1850" as="geometry" />
+          <mxGeometry height="30" width="30" x="285" y="2520" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" value="isA">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="210" y="1740" as="sourcePoint" />
-            <mxPoint x="210" y="1690" as="targetPoint" />
+            <mxPoint x="310" y="2410" as="sourcePoint" />
+            <mxPoint x="310" y="2360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:ChemicalSubstance" vertex="1">
-          <mxGeometry height="30" width="150" x="125" y="1740" as="geometry" />
+          <mxGeometry height="30" width="150" x="225" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Matter" vertex="1">
-          <mxGeometry height="30" width="120" x="140" y="1660" as="geometry" />
+          <mxGeometry height="30" width="120" x="240" y="2330" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-8" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-28" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-12" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -7283,42 +7283,42 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Dataset" vertex="1">
-          <mxGeometry height="30" width="120" x="325" y="1660" as="geometry" />
+          <mxGeometry height="30" width="120" x="425" y="2330" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-11" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-12" value="isA">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="284" y="1750" as="sourcePoint" />
-            <mxPoint x="284" y="1710" as="targetPoint" />
+            <mxPoint x="384" y="2420" as="sourcePoint" />
+            <mxPoint x="384" y="2380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="prov:Entity" vertex="1">
-          <mxGeometry height="30" width="120" x="235" y="1490" as="geometry" />
+          <mxGeometry height="30" width="120" x="335" y="2160" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="prov:Activity" vertex="1">
-          <mxGeometry height="30" width="120" x="525" y="1490" as="geometry" />
+          <mxGeometry height="30" width="120" x="625" y="2160" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-14" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-15" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-13" value="iA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Process" vertex="1">
-          <mxGeometry height="30" width="120" x="525" y="1580" as="geometry" />
+          <mxGeometry height="30" width="120" x="625" y="2250" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Computation" vertex="1">
-          <mxGeometry height="30" width="120" x="525" y="1660" as="geometry" />
+          <mxGeometry height="30" width="120" x="625" y="2330" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="uob:SpecificToxicityComputation" vertex="1">
-          <mxGeometry height="30" width="190" x="490" y="1740" as="geometry" />
+          <mxGeometry height="30" width="190" x="590" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-18" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="585" y="1770" as="targetPoint" />
+            <mxPoint x="685" y="2440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-19" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="570" y="1850" as="geometry" />
+          <mxGeometry height="30" width="30" x="670" y="2520" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-20" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:toxicity_computation" vertex="1">
-          <mxGeometry height="10" width="60" x="555" y="1880" as="geometry" />
+          <mxGeometry height="10" width="60" x="655" y="2550" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-21" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-23" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-10" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -7326,57 +7326,57 @@
         <mxCell id="4nh34a1vux3v6rsnNnBF-22" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-23" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-6" value="ssbd:isDescriptionOf some">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="285" y="1790" />
-              <mxPoint x="285" y="1790" />
+              <mxPoint x="385" y="2460" />
+              <mxPoint x="385" y="2460" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="uob:ToxicityComputationInput" vertex="1">
-          <mxGeometry height="30" width="190" x="290" y="1740" as="geometry" />
+          <mxGeometry height="30" width="190" x="390" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-24" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4nh34a1vux3v6rsnNnBF-23" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="385" y="1770" as="targetPoint" />
+            <mxPoint x="485" y="2440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-25" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-26" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;" target="4nh34a1vux3v6rsnNnBF-4" value="emmo:isDescriptionOf">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="370" y="1850" as="geometry" />
+          <mxGeometry height="30" width="30" x="470" y="2520" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-27" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:dataset1" vertex="1">
-          <mxGeometry height="20" width="60" x="355" y="1880" as="geometry" />
+          <mxGeometry height="20" width="60" x="455" y="2550" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Data" vertex="1">
-          <mxGeometry height="30" width="120" x="325" y="1580" as="geometry" />
+          <mxGeometry height="30" width="120" x="425" y="2250" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-29" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-19" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-26" value="prov:used">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="2050" as="sourcePoint" />
-            <mxPoint x="225" y="1875" as="targetPoint" />
+            <mxPoint x="620" y="2720" as="sourcePoint" />
+            <mxPoint x="325" y="2545" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-30" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-17" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-23" value="ssbd:hasInput some">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
-              <mxPoint x="517" y="1790" />
-              <mxPoint x="453" y="1790" />
+              <mxPoint x="617" y="2460" />
+              <mxPoint x="553" y="2460" />
             </Array>
-            <mxPoint x="540" y="1860" as="sourcePoint" />
-            <mxPoint x="590" y="1810" as="targetPoint" />
+            <mxPoint x="640" y="2530" as="sourcePoint" />
+            <mxPoint x="690" y="2480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-31" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-32" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-67" value="ssbd:hasDatum some">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="893" y="1755" as="sourcePoint" />
+            <mxPoint x="993" y="2425" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="uob:ToxicityComputationOutput" vertex="1">
-          <mxGeometry height="30" width="190" x="690" y="1740" as="geometry" />
+          <mxGeometry height="30" width="190" x="790" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="10" width="10" x="580" y="1720" as="geometry" />
+          <mxGeometry height="10" width="10" x="680" y="2390" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-34" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-17" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-16" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -7384,35 +7384,35 @@
         <mxCell id="4nh34a1vux3v6rsnNnBF-35" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-32" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;startFill=1;startArrow=classic;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-17" value="ssbd:hasOutput some">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
-              <mxPoint x="717" y="1790" />
-              <mxPoint x="653" y="1790" />
+              <mxPoint x="817" y="2460" />
+              <mxPoint x="753" y="2460" />
             </Array>
-            <mxPoint x="580" y="1720" as="sourcePoint" />
-            <mxPoint x="630" y="1670" as="targetPoint" />
+            <mxPoint x="680" y="2390" as="sourcePoint" />
+            <mxPoint x="730" y="2340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-36" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="785" y="1770" as="targetPoint" />
+            <mxPoint x="885" y="2440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-37" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="770" y="1850" as="geometry" />
+          <mxGeometry height="30" width="30" x="870" y="2520" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-38" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:dataset2" vertex="1">
-          <mxGeometry height="20" width="60" x="755" y="1880" as="geometry" />
+          <mxGeometry height="20" width="60" x="855" y="2550" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-39" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-37" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-19" value="prov:wasGeneratedBy">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="950" y="1920" as="sourcePoint" />
-            <mxPoint x="880" y="1840" as="targetPoint" />
+            <mxPoint x="1050" y="2590" as="sourcePoint" />
+            <mxPoint x="980" y="2510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-40" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-41" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-48" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-41" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Property" vertex="1">
-          <mxGeometry height="30" width="120" x="1010" y="1580" as="geometry" />
+          <mxGeometry height="30" width="120" x="1110" y="2250" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-42" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-44" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-41" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -7421,90 +7421,90 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-44" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Toxicity" vertex="1">
-          <mxGeometry height="30" width="120" x="1010" y="1660" as="geometry" />
+          <mxGeometry height="30" width="120" x="1110" y="2330" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-45" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ssbd:Datum" vertex="1">
-          <mxGeometry height="30" width="120" x="880" y="1660" as="geometry" />
+          <mxGeometry height="30" width="120" x="980" y="2330" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=default;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="10" width="10" x="580" y="1640" as="geometry" />
+          <mxGeometry height="10" width="10" x="680" y="2310" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-47" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-16" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-15" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-48" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="prov:Entity" vertex="1">
-          <mxGeometry height="30" width="120" x="1010" y="1490" as="geometry" />
+          <mxGeometry height="30" width="120" x="1110" y="2160" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-49" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-51" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4nh34a1vux3v6rsnNnBF-67" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1070" y="1750" as="targetPoint" />
+            <mxPoint x="1170" y="2420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-50" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-51" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;" target="4nh34a1vux3v6rsnNnBF-19" value="emmo:isInterpretedBy">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1070" y="1920" />
-              <mxPoint x="585" y="1920" />
+              <mxPoint x="1170" y="2590" />
+              <mxPoint x="685" y="2590" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-51" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="1055" y="1850" as="geometry" />
+          <mxGeometry height="30" width="30" x="1155" y="2520" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-52" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-37" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-51" value="ssbd:hasDatum">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="835" y="1751" as="sourcePoint" />
-            <mxPoint x="994" y="1697" as="targetPoint" />
+            <mxPoint x="935" y="2421" as="sourcePoint" />
+            <mxPoint x="1094" y="2367" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-53" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-51" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;" target="4nh34a1vux3v6rsnNnBF-4" value="emmo:standsFor">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1070" y="1950" />
-              <mxPoint x="200" y="1950" />
+              <mxPoint x="1170" y="2620" />
+              <mxPoint x="300" y="2620" />
             </Array>
-            <mxPoint x="805" y="1920" as="sourcePoint" />
-            <mxPoint x="370" y="1920" as="targetPoint" />
+            <mxPoint x="905" y="2590" as="sourcePoint" />
+            <mxPoint x="470" y="2590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-54" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:paracetamol" vertex="1">
-          <mxGeometry height="20" width="60" x="170" y="1880" as="geometry" />
+          <mxGeometry height="20" width="60" x="270" y="2550" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-55" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:computed_lethalDose50" vertex="1">
-          <mxGeometry height="20" width="60" x="1040" y="1880" as="geometry" />
+          <mxGeometry height="20" width="60" x="1140" y="2550" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-56" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="emmo:FloatData" vertex="1">
-          <mxGeometry height="30" width="120" x="1181" y="1660" as="geometry" />
+          <mxGeometry height="30" width="120" x="1281" y="2330" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-57" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="150^^xsd:float" vertex="1">
-          <mxGeometry height="20" width="90" x="1310" y="1855" as="geometry" />
+          <mxGeometry height="20" width="90" x="1410" y="2525" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-58" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-51" style="endArrow=classic;html=1;rounded=0;" target="4nh34a1vux3v6rsnNnBF-57" value="ssbd:hasDataValue">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="980" y="1940" as="sourcePoint" />
-            <mxPoint x="1030" y="1890" as="targetPoint" />
+            <mxPoint x="1080" y="2610" as="sourcePoint" />
+            <mxPoint x="1130" y="2560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-59" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-60" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;fillColor=#ffe6cc;strokeColor=#d79b00;" target="4nh34a1vux3v6rsnNnBF-62" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-60" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="emmo:MilliGramPerKilogram" vertex="1">
-          <mxGeometry height="30" width="180" x="1310" y="1740" as="geometry" />
+          <mxGeometry height="30" width="180" x="1410" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-61" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-62" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;fillColor=#ffe6cc;" target="4nh34a1vux3v6rsnNnBF-63" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-62" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="emmo:MassFractionUnit" vertex="1">
-          <mxGeometry height="30" width="180" x="1310" y="1660" as="geometry" />
+          <mxGeometry height="30" width="180" x="1410" y="2330" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-63" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="emmo:MeasurementUnit" vertex="1">
-          <mxGeometry height="30" width="180" x="1310" y="1580" as="geometry" />
+          <mxGeometry height="30" width="180" x="1410" y="2250" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-64" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-51" style="endArrow=classic;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="4nh34a1vux3v6rsnNnBF-60" value="ssbd:hasMeasurememtUnit some">
           <mxGeometry height="50" relative="1" width="50" x="0.2657" y="-8" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="1093" y="1873" as="sourcePoint" />
-            <mxPoint x="1320" y="1846" as="targetPoint" />
+            <mxPoint x="1193" y="2543" as="sourcePoint" />
+            <mxPoint x="1420" y="2516" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-65" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-67" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-44" value="isA">
@@ -7514,19 +7514,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="uob:LethalDose50" vertex="1">
-          <mxGeometry height="30" width="130" x="1005" y="1740" as="geometry" />
+          <mxGeometry height="30" width="130" x="1105" y="2410" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-68" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;span style=&quot;color: rgb(10, 10, 10); font-family: &amp;quot;Google Sans&amp;quot;, Arial, sans-serif; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-weight: bolder;&quot; data-processed=&quot;true&quot; class=&quot;Yjhzub&quot;&gt;LethalDose50&lt;/span&gt;&lt;span style=&quot;color: rgb(10, 10, 10); font-family: &amp;quot;Google Sans&amp;quot;, Arial, sans-serif; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;: The dose of a substance (e.g., in mg/kg of test animal weight) that kills 50% of a test population, indicating acute toxicity.&lt;/span&gt;" vertex="1">
-          <mxGeometry height="50" width="350" x="1160" y="1520" as="geometry" />
+          <mxGeometry height="50" width="350" x="1260" y="2190" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-69" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-67" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" target="4nh34a1vux3v6rsnNnBF-68" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="980" y="1820" as="sourcePoint" />
-            <mxPoint x="1030" y="1770" as="targetPoint" />
+            <mxPoint x="1080" y="2490" as="sourcePoint" />
+            <mxPoint x="1130" y="2440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-70" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="140" width="185" x="10" y="1490" as="geometry" />
+          <mxGeometry height="140" width="185" x="110" y="2160" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-71" parent="4nh34a1vux3v6rsnNnBF-70" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;shadow=1;" value="&lt;b&gt;Legend&lt;/b&gt;" vertex="1">
           <mxGeometry height="140" width="185" as="geometry" />
@@ -7571,14 +7571,14 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-82" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Paracetamol example based on EMMO&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="610" x="480" y="1440" as="geometry" />
+          <mxGeometry height="30" width="610" x="580" y="2110" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:wasDerivedFrom" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#wasDerivedFrom" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-83">
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-119" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#d5e8d4;" target="4nh34a1vux3v6rsnNnBF-107">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="785" y="1320" />
-                <mxPoint x="385" y="1320" />
+                <mxPoint x="885" y="1990" />
+                <mxPoint x="485" y="1990" />
               </Array>
             </mxGeometry>
           </mxCell>
@@ -7587,19 +7587,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-85" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="185" y="1250" as="geometry" />
+          <mxGeometry height="30" width="30" x="285" y="1920" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-86" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-88" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:ChemicalSubstance" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#ChemicalSubstance" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-87">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="150" x="125" y="1140" as="geometry" />
+            <mxGeometry height="30" width="150" x="225" y="1810" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:Matter" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Matter" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-88">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="140" y="1060" as="geometry" />
+            <mxGeometry height="30" width="120" x="240" y="1730" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-89" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-109" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-93" value="isA">
@@ -7610,23 +7610,23 @@
         </mxCell>
         <UserObject label="ssbd:Dataset" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Dataset" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-91">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="325" y="1060" as="geometry" />
+            <mxGeometry height="30" width="120" x="425" y="1730" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-92" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-88" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-93" value="isA">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="284" y="1150" as="sourcePoint" />
-            <mxPoint x="284" y="1110" as="targetPoint" />
+            <mxPoint x="384" y="1820" as="sourcePoint" />
+            <mxPoint x="384" y="1780" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-93">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="120" x="235" y="890" as="geometry" />
+            <mxGeometry height="30" width="120" x="335" y="1560" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="prov:Activity" link="https://www.w3.org/TR/prov-o/#Activity" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-94">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="120" x="525" y="890" as="geometry" />
+            <mxGeometry height="30" width="120" x="625" y="1560" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-95" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-96" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-94" value="iA">
@@ -7634,27 +7634,27 @@
         </mxCell>
         <UserObject label="ssbd:Process" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Process" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-96">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="525" y="980" as="geometry" />
+            <mxGeometry height="30" width="120" x="625" y="1650" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:Computation" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Computation" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-97">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="525" y="1060" as="geometry" />
+            <mxGeometry height="30" width="120" x="625" y="1730" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-98" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="uob:SpecificToxicityComputation" vertex="1">
-          <mxGeometry height="30" width="190" x="490" y="1140" as="geometry" />
+          <mxGeometry height="30" width="190" x="590" y="1810" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-99" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-100" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="585" y="1170" as="targetPoint" />
+            <mxPoint x="685" y="1840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-100" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="570" y="1250" as="geometry" />
+          <mxGeometry height="30" width="30" x="670" y="1920" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-101" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:toxicity_computation" vertex="1">
-          <mxGeometry height="10" width="60" x="555" y="1280" as="geometry" />
+          <mxGeometry height="10" width="60" x="655" y="1950" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-102" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-104" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-91" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -7663,39 +7663,39 @@
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-104" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-87">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="285" y="1190" />
-                <mxPoint x="285" y="1190" />
+                <mxPoint x="385" y="1860" />
+                <mxPoint x="385" y="1860" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-104" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="uob:ToxicityComputationInput" vertex="1">
-          <mxGeometry height="30" width="190" x="290" y="1140" as="geometry" />
+          <mxGeometry height="30" width="190" x="390" y="1810" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-105" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-107" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4nh34a1vux3v6rsnNnBF-104" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="385" y="1170" as="targetPoint" />
+            <mxPoint x="485" y="1840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-106" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-107" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;" target="4nh34a1vux3v6rsnNnBF-85" value="ssbd:isDescriptionOf">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-107" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="370" y="1250" as="geometry" />
+          <mxGeometry height="30" width="30" x="470" y="1920" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-108" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:dataset1" vertex="1">
-          <mxGeometry height="20" width="60" x="355" y="1280" as="geometry" />
+          <mxGeometry height="20" width="60" x="455" y="1950" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:Data" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Data" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-109">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="325" y="980" as="geometry" />
+            <mxGeometry height="30" width="120" x="425" y="1650" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="prov:used" link="https://www.w3.org/TR/prov-o/#used" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-110">
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-100" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-107">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="520" y="1450" as="sourcePoint" />
-              <mxPoint x="225" y="1275" as="targetPoint" />
+              <mxPoint x="620" y="2120" as="sourcePoint" />
+              <mxPoint x="325" y="1945" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -7703,18 +7703,18 @@
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-98" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-104">
             <mxGeometry height="50" relative="1" width="50" as="geometry">
               <Array as="points">
-                <mxPoint x="517" y="1190" />
-                <mxPoint x="453" y="1190" />
+                <mxPoint x="617" y="1860" />
+                <mxPoint x="553" y="1860" />
               </Array>
-              <mxPoint x="540" y="1260" as="sourcePoint" />
-              <mxPoint x="590" y="1210" as="targetPoint" />
+              <mxPoint x="640" y="1930" as="sourcePoint" />
+              <mxPoint x="690" y="1880" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:hasDatum some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasDatum" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-112">
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-114" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-147">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="893" y="1155" as="sourcePoint" />
+              <mxPoint x="993" y="1825" as="sourcePoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -7722,10 +7722,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-114" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="uob:ToxicityComputationOutput" vertex="1">
-          <mxGeometry height="30" width="190" x="690" y="1140" as="geometry" />
+          <mxGeometry height="30" width="190" x="790" y="1810" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="10" width="10" x="580" y="1120" as="geometry" />
+          <mxGeometry height="10" width="10" x="680" y="1790" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-116" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-98" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-97" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -7734,30 +7734,30 @@
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-114" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;startFill=1;startArrow=classic;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-98">
             <mxGeometry height="50" relative="1" width="50" as="geometry">
               <Array as="points">
-                <mxPoint x="717" y="1190" />
-                <mxPoint x="653" y="1190" />
+                <mxPoint x="817" y="1860" />
+                <mxPoint x="753" y="1860" />
               </Array>
-              <mxPoint x="580" y="1120" as="sourcePoint" />
-              <mxPoint x="630" y="1070" as="targetPoint" />
+              <mxPoint x="680" y="1790" as="sourcePoint" />
+              <mxPoint x="730" y="1740" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-118" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-119" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="785" y="1170" as="targetPoint" />
+            <mxPoint x="885" y="1840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-119" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="770" y="1250" as="geometry" />
+          <mxGeometry height="30" width="30" x="870" y="1920" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-120" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:dataset2" vertex="1">
-          <mxGeometry height="20" width="60" x="755" y="1280" as="geometry" />
+          <mxGeometry height="20" width="60" x="855" y="1950" as="geometry" />
         </mxCell>
         <UserObject label="prov:wasGeneratedBy" link="https://www.w3.org/TR/prov-o/#wasGeneratedBy" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-121">
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-119" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-100">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="950" y="1320" as="sourcePoint" />
-              <mxPoint x="880" y="1240" as="targetPoint" />
+              <mxPoint x="1050" y="1990" as="sourcePoint" />
+              <mxPoint x="980" y="1910" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -7766,7 +7766,7 @@
         </mxCell>
         <UserObject label="ssbd:Property" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Property" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-123">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="1010" y="980" as="geometry" />
+            <mxGeometry height="30" width="120" x="1110" y="1650" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-124" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-126" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-123" value="isA">
@@ -7777,7 +7777,7 @@
         </mxCell>
         <UserObject label="ssbd:Toxicity" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Toxicity" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-126">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="1010" y="1060" as="geometry" />
+            <mxGeometry height="30" width="120" x="1110" y="1730" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-127" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-128" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-167" value="isA">
@@ -7785,88 +7785,88 @@
         </mxCell>
         <UserObject label="ssbd:Datum" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Datum" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-128">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="880" y="1060" as="geometry" />
+            <mxGeometry height="30" width="120" x="980" y="1730" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-129" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=default;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="10" width="10" x="580" y="1040" as="geometry" />
+          <mxGeometry height="10" width="10" x="680" y="1710" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-130" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-97" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-96" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-131">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="120" x="900" y="890" as="geometry" />
+            <mxGeometry height="30" width="120" x="1000" y="1560" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-132" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-134" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4nh34a1vux3v6rsnNnBF-147" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1070" y="1150" as="targetPoint" />
+            <mxPoint x="1170" y="1820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <UserObject label="ssbd:isInterpretedBy" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isInterpretedBy" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-133">
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-134" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;" target="4nh34a1vux3v6rsnNnBF-100">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="1070" y="1320" />
-                <mxPoint x="585" y="1320" />
+                <mxPoint x="1170" y="1990" />
+                <mxPoint x="685" y="1990" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-134" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="1055" y="1250" as="geometry" />
+          <mxGeometry height="30" width="30" x="1155" y="1920" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-135" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-119" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="4nh34a1vux3v6rsnNnBF-134" value="ssbd:hasDatum">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="835" y="1151" as="sourcePoint" />
-            <mxPoint x="994" y="1097" as="targetPoint" />
+            <mxPoint x="935" y="1821" as="sourcePoint" />
+            <mxPoint x="1094" y="1767" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <UserObject label="ssbd:standsFor" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#standsFor" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-136">
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-134" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;" target="4nh34a1vux3v6rsnNnBF-85">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="1070" y="1350" />
-                <mxPoint x="200" y="1350" />
+                <mxPoint x="1170" y="2020" />
+                <mxPoint x="300" y="2020" />
               </Array>
-              <mxPoint x="805" y="1320" as="sourcePoint" />
-              <mxPoint x="370" y="1320" as="targetPoint" />
+              <mxPoint x="905" y="1990" as="sourcePoint" />
+              <mxPoint x="470" y="1990" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-137" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:paracetamol" vertex="1">
-          <mxGeometry height="20" width="60" x="170" y="1280" as="geometry" />
+          <mxGeometry height="20" width="60" x="270" y="1950" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-138" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="uob:computed_lethalDose50" vertex="1">
-          <mxGeometry height="20" width="60" x="1040" y="1280" as="geometry" />
+          <mxGeometry height="20" width="60" x="1140" y="1950" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:FloatData" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#FloatData" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-139">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="1170" y="1060" as="geometry" />
+            <mxGeometry height="30" width="120" x="1270" y="1730" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-140" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="150^^xsd:float" vertex="1">
-          <mxGeometry height="20" width="90" x="1265" y="1255" as="geometry" />
+          <mxGeometry height="20" width="90" x="1365" y="1925" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-141" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-134" style="endArrow=classic;html=1;rounded=0;" target="4nh34a1vux3v6rsnNnBF-140" value="ssbd:hasDataValue">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="980" y="1340" as="sourcePoint" />
-            <mxPoint x="1030" y="1290" as="targetPoint" />
+            <mxPoint x="1080" y="2010" as="sourcePoint" />
+            <mxPoint x="1130" y="1960" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-142" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="unit:MilliGM-PER-KiloGM" vertex="1">
-          <mxGeometry height="30" width="180" x="1265" y="1140" as="geometry" />
+          <mxGeometry height="30" width="180" x="1365" y="1810" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-143" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="qudt:Unit" vertex="1">
-          <mxGeometry height="30" width="100" x="1305" y="1060" as="geometry" />
+          <mxGeometry height="30" width="100" x="1405" y="1730" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:hasUnit" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasUnit" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-144">
           <mxCell edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-134" style="endArrow=classic;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="4nh34a1vux3v6rsnNnBF-142">
             <mxGeometry height="50" relative="1" width="50" x="0.2674" y="-8" as="geometry">
               <mxPoint as="offset" />
-              <mxPoint x="1093" y="1273" as="sourcePoint" />
-              <mxPoint x="1320" y="1246" as="targetPoint" />
+              <mxPoint x="1193" y="1943" as="sourcePoint" />
+              <mxPoint x="1420" y="1916" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -7877,19 +7877,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-147" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="uob:LethalDose50" vertex="1">
-          <mxGeometry height="30" width="130" x="1005" y="1140" as="geometry" />
+          <mxGeometry height="30" width="130" x="1105" y="1810" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-148" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="&lt;span style=&quot;color: rgb(10, 10, 10); font-family: &amp;quot;Google Sans&amp;quot;, Arial, sans-serif; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); font-weight: bolder;&quot; data-processed=&quot;true&quot; class=&quot;Yjhzub&quot;&gt;LethalDose50&lt;/span&gt;&lt;span style=&quot;color: rgb(10, 10, 10); font-family: &amp;quot;Google Sans&amp;quot;, Arial, sans-serif; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;: The dose of a substance (e.g., in mg/kg of test animal weight) that kills 50% of a test population, indicating acute toxicity.&lt;/span&gt;" vertex="1">
-          <mxGeometry height="50" width="350" x="1100" y="920" as="geometry" />
+          <mxGeometry height="50" width="350" x="1200" y="1590" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-149" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-147" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" target="4nh34a1vux3v6rsnNnBF-148" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="980" y="1220" as="sourcePoint" />
-            <mxPoint x="1030" y="1170" as="targetPoint" />
+            <mxPoint x="1080" y="1890" as="sourcePoint" />
+            <mxPoint x="1130" y="1840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-150" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="140" width="185" x="10" y="890" as="geometry" />
+          <mxGeometry height="140" width="185" x="110" y="1560" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-151" parent="4nh34a1vux3v6rsnNnBF-150" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;shadow=1;" value="&lt;b&gt;Legend&lt;/b&gt;" vertex="1">
           <mxGeometry height="140" width="185" as="geometry" />
@@ -7934,12 +7934,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-162" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Paracetamol example&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="610" x="480" y="840" as="geometry" />
+          <mxGeometry height="30" width="610" x="580" y="1510" as="geometry" />
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-163" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-142" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4nh34a1vux3v6rsnNnBF-143" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1044" y="1269" as="sourcePoint" />
-            <mxPoint x="1166" y="1179" as="targetPoint" />
+            <mxPoint x="1144" y="1939" as="sourcePoint" />
+            <mxPoint x="1266" y="1849" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="4nh34a1vux3v6rsnNnBF-164" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-165" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-167" value="isA">
@@ -7947,7 +7947,7 @@
         </mxCell>
         <UserObject label="ssbd:Dataset" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Dataset" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-165">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="725" y="1060" as="geometry" />
+            <mxGeometry height="30" width="120" x="825" y="1730" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="4nh34a1vux3v6rsnNnBF-166" edge="1" parent="1" source="4nh34a1vux3v6rsnNnBF-167" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="4nh34a1vux3v6rsnNnBF-131" value="isA">
@@ -7955,22 +7955,22 @@
         </mxCell>
         <UserObject label="ssbd:Data" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Data" linkTarget="_blank" id="4nh34a1vux3v6rsnNnBF-167">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="800" y="980" as="geometry" />
+            <mxGeometry height="30" width="120" x="900" y="1650" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-1" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Version 1&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="110" x="15" y="1380" as="geometry" />
+          <mxGeometry height="30" width="110" x="115" y="2050" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-2" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Version 2&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="110" x="15" y="770" as="geometry" />
+          <mxGeometry height="30" width="110" x="115" y="1440" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:wasDerivedFrom" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#wasDerivedFrom" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-86">
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-122" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#d5e8d4;" target="g9ciRkEffJNN25uIRPH2-110">
             <mxGeometry relative="1" x="0.5146" y="-10" as="geometry">
               <mxPoint as="offset" />
               <Array as="points">
-                <mxPoint x="790" y="610" />
-                <mxPoint x="385" y="610" />
+                <mxPoint x="890" y="1280" />
+                <mxPoint x="485" y="1280" />
               </Array>
             </mxGeometry>
           </mxCell>
@@ -7979,19 +7979,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-88" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="185" y="540" as="geometry" />
+          <mxGeometry height="30" width="30" x="285" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-89" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-172" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-91" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="chebi:paracetamol" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#ChemicalSubstance" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-90">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="150" x="125" y="430" as="geometry" />
+            <mxGeometry height="30" width="150" x="225" y="1100" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:Matter" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Matter" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-91">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="140" y="270" as="geometry" />
+            <mxGeometry height="30" width="120" x="240" y="940" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-92" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-112" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-96" value="isA">
@@ -8002,23 +8002,23 @@
         </mxCell>
         <UserObject label="ssbd:Dataset" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Dataset" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-94">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="325" y="350" as="geometry" />
+            <mxGeometry height="30" width="120" x="425" y="1020" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-95" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-91" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-96" value="isA">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="284" y="440" as="sourcePoint" />
-            <mxPoint x="284" y="400" as="targetPoint" />
+            <mxPoint x="384" y="1110" as="sourcePoint" />
+            <mxPoint x="384" y="1070" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-96">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="120" x="235" y="180" as="geometry" />
+            <mxGeometry height="30" width="120" x="335" y="850" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="prov:Activity" link="https://www.w3.org/TR/prov-o/#Activity" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-97">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="120" x="525" y="180" as="geometry" />
+            <mxGeometry height="30" width="120" x="625" y="850" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-98" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-99" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-97" value="iA">
@@ -8026,24 +8026,24 @@
         </mxCell>
         <UserObject label="ssbd:Process" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Process" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-99">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="525" y="270" as="geometry" />
+            <mxGeometry height="30" width="120" x="625" y="940" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:Computation" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Computation" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-100">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="525" y="350" as="geometry" />
+            <mxGeometry height="30" width="120" x="625" y="1020" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-101" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kb:SpecificToxicityComputation" vertex="1">
-          <mxGeometry height="30" width="190" x="490" y="430" as="geometry" />
+          <mxGeometry height="30" width="190" x="590" y="1100" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-102" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-103" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="585" y="460" as="targetPoint" />
+            <mxPoint x="685" y="1130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-103" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="570" y="540" as="geometry" />
+          <mxGeometry height="30" width="30" x="670" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-105" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-107" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-94" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -8052,39 +8052,39 @@
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-107" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-90">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="285" y="480" />
-                <mxPoint x="285" y="480" />
+                <mxPoint x="385" y="1150" />
+                <mxPoint x="385" y="1150" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-107" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kb:ToxicityComputationInput" vertex="1">
-          <mxGeometry height="30" width="190" x="290" y="430" as="geometry" />
+          <mxGeometry height="30" width="190" x="390" y="1100" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-108" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-110" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g9ciRkEffJNN25uIRPH2-107" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="385" y="460" as="targetPoint" />
+            <mxPoint x="485" y="1130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-109" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-110" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;" target="g9ciRkEffJNN25uIRPH2-88" value="ssbd:isDescriptionOf">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-110" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="370" y="540" as="geometry" />
+          <mxGeometry height="30" width="30" x="470" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-111" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="kb:dataset1" vertex="1">
-          <mxGeometry height="20" width="60" x="355" y="570" as="geometry" />
+          <mxGeometry height="20" width="60" x="455" y="1240" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:Data" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Data" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-112">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="325" y="270" as="geometry" />
+            <mxGeometry height="30" width="120" x="425" y="940" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="prov:used" link="https://www.w3.org/TR/prov-o/#used" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-113">
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-103" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-110">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="520" y="740" as="sourcePoint" />
-              <mxPoint x="225" y="565" as="targetPoint" />
+              <mxPoint x="620" y="1410" as="sourcePoint" />
+              <mxPoint x="325" y="1235" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -8092,18 +8092,18 @@
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-101" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-107">
             <mxGeometry height="50" relative="1" width="50" as="geometry">
               <Array as="points">
-                <mxPoint x="517" y="480" />
-                <mxPoint x="453" y="480" />
+                <mxPoint x="617" y="1150" />
+                <mxPoint x="553" y="1150" />
               </Array>
-              <mxPoint x="540" y="550" as="sourcePoint" />
-              <mxPoint x="590" y="500" as="targetPoint" />
+              <mxPoint x="640" y="1220" as="sourcePoint" />
+              <mxPoint x="690" y="1170" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:hasDatum some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasDatum" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-115">
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-117" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-150">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="898" y="445" as="sourcePoint" />
+              <mxPoint x="998" y="1115" as="sourcePoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -8111,10 +8111,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-117" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kb:ToxicityComputationOutput" vertex="1">
-          <mxGeometry height="30" width="190" x="695" y="430" as="geometry" />
+          <mxGeometry height="30" width="190" x="795" y="1100" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-118" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="10" width="10" x="580" y="410" as="geometry" />
+          <mxGeometry height="10" width="10" x="680" y="1080" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-119" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-101" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-100" value="isA">
           <mxGeometry relative="1" as="geometry" />
@@ -8123,30 +8123,30 @@
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-117" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;startFill=1;startArrow=classic;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-101">
             <mxGeometry height="50" relative="1" width="50" as="geometry">
               <Array as="points">
-                <mxPoint x="753" y="480" />
-                <mxPoint x="652" y="480" />
+                <mxPoint x="853" y="1150" />
+                <mxPoint x="752" y="1150" />
               </Array>
-              <mxPoint x="580" y="410" as="sourcePoint" />
-              <mxPoint x="630" y="360" as="targetPoint" />
+              <mxPoint x="680" y="1080" as="sourcePoint" />
+              <mxPoint x="730" y="1030" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-121" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-122" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="790" y="460" as="targetPoint" />
+            <mxPoint x="890" y="1130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-122" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="775" y="540" as="geometry" />
+          <mxGeometry height="30" width="30" x="875" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-123" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="kb:dataset2" vertex="1">
-          <mxGeometry height="20" width="60" x="760" y="570" as="geometry" />
+          <mxGeometry height="20" width="60" x="860" y="1240" as="geometry" />
         </mxCell>
         <UserObject label="prov:wasGeneratedBy" link="https://www.w3.org/TR/prov-o/#wasGeneratedBy" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-124">
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-122" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-103">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="950" y="610" as="sourcePoint" />
-              <mxPoint x="880" y="530" as="targetPoint" />
+              <mxPoint x="1050" y="1280" as="sourcePoint" />
+              <mxPoint x="980" y="1200" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
@@ -8155,7 +8155,7 @@
         </mxCell>
         <UserObject label="ssbd:Property" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Property" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-126">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="1015" y="270" as="geometry" />
+            <mxGeometry height="30" width="120" x="1115" y="940" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-127" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-129" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-126" value="isA">
@@ -8166,7 +8166,7 @@
         </mxCell>
         <UserObject label="ssbd:Toxicity" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Toxicity" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-129">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="1015" y="350" as="geometry" />
+            <mxGeometry height="30" width="120" x="1115" y="1020" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-130" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-131" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-170" value="isA">
@@ -8174,79 +8174,79 @@
         </mxCell>
         <UserObject label="ssbd:Datum" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Datum" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-131">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="885" y="350" as="geometry" />
+            <mxGeometry height="30" width="120" x="985" y="1020" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-132" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=default;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
-          <mxGeometry height="10" width="10" x="580" y="330" as="geometry" />
+          <mxGeometry height="10" width="10" x="680" y="1000" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-133" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-100" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-99" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-134">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="120" x="905" y="180" as="geometry" />
+            <mxGeometry height="30" width="120" x="1005" y="850" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-135" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-137" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g9ciRkEffJNN25uIRPH2-150" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1075" y="440" as="targetPoint" />
+            <mxPoint x="1175" y="1110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <UserObject label="ssbd:isInterpretedBy" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isInterpretedBy" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-136">
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-137" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;" target="g9ciRkEffJNN25uIRPH2-103">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="1075" y="610" />
-                <mxPoint x="585" y="610" />
+                <mxPoint x="1175" y="1280" />
+                <mxPoint x="685" y="1280" />
               </Array>
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-137" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="1060" y="540" as="geometry" />
+          <mxGeometry height="30" width="30" x="1160" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-138" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-122" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="g9ciRkEffJNN25uIRPH2-137" value="ssbd:hasDatum">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="840" y="441" as="sourcePoint" />
-            <mxPoint x="999" y="387" as="targetPoint" />
+            <mxPoint x="940" y="1111" as="sourcePoint" />
+            <mxPoint x="1099" y="1057" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <UserObject label="ssbd:standsFor" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#standsFor" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-139">
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-137" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;" target="g9ciRkEffJNN25uIRPH2-88">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
-                <mxPoint x="1075" y="640" />
-                <mxPoint x="200" y="640" />
+                <mxPoint x="1175" y="1310" />
+                <mxPoint x="300" y="1310" />
               </Array>
-              <mxPoint x="805" y="610" as="sourcePoint" />
-              <mxPoint x="370" y="610" as="targetPoint" />
+              <mxPoint x="905" y="1280" as="sourcePoint" />
+              <mxPoint x="470" y="1280" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-140" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="kb:paracetamol" vertex="1">
-          <mxGeometry height="20" width="60" x="170" y="570" as="geometry" />
+          <mxGeometry height="20" width="60" x="270" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-141" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="kb:computed_lethalDose50" vertex="1">
-          <mxGeometry height="20" width="60" x="1045" y="570" as="geometry" />
+          <mxGeometry height="20" width="60" x="1145" y="1240" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:FloatData" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#FloatData" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-142">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="1145" y="350" as="geometry" />
+            <mxGeometry height="30" width="120" x="1245" y="1020" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-143" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="150^^xsd:float" vertex="1">
-          <mxGeometry height="20" width="90" x="1270" y="545" as="geometry" />
+          <mxGeometry height="20" width="90" x="1370" y="1215" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-144" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-137" style="endArrow=classic;html=1;rounded=0;" target="g9ciRkEffJNN25uIRPH2-143" value="ssbd:hasDataValue">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="985" y="630" as="sourcePoint" />
-            <mxPoint x="1035" y="580" as="targetPoint" />
+            <mxPoint x="1085" y="1300" as="sourcePoint" />
+            <mxPoint x="1135" y="1250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <UserObject label="emmo:MeasurementUnit" link="https://w3id.org/emmo#MeasurementUnit" id="g9ciRkEffJNN25uIRPH2-146">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
-            <mxGeometry height="30" width="150" x="1190" y="410" as="geometry" />
+            <mxGeometry height="30" width="150" x="1290" y="1080" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-148" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-150" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-129" value="isA">
@@ -8256,10 +8256,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-150" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ssbd:LethalDose50" vertex="1">
-          <mxGeometry height="30" width="130" x="1010" y="430" as="geometry" />
+          <mxGeometry height="30" width="130" x="1110" y="1100" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-153" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="210" width="185" x="-70" y="220" as="geometry" />
+          <mxGeometry height="210" width="185" x="30" y="890" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-154" parent="g9ciRkEffJNN25uIRPH2-153" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;shadow=1;" value="&lt;b&gt;Legend&lt;/b&gt;" vertex="1">
           <mxGeometry height="210" width="185" as="geometry" />
@@ -8334,14 +8334,14 @@
           <mxGeometry height="10" width="10" x="35" y="195" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-165" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Paracetamol example&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="610" x="480" y="130" as="geometry" />
+          <mxGeometry height="30" width="610" x="580" y="800" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-167" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-168" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-170" value="isA">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:Dataset" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Dataset" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-168">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="730" y="350" as="geometry" />
+            <mxGeometry height="30" width="120" x="830" y="1020" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-169" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-170" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-134" value="isA">
@@ -8349,76 +8349,897 @@
         </mxCell>
         <UserObject label="ssbd:Data" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Data" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-170">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="120" x="805" y="270" as="geometry" />
+            <mxGeometry height="30" width="120" x="905" y="940" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-171" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Version 3&lt;/font&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="30" width="110" x="15" y="60" as="geometry" />
+          <mxGeometry height="30" width="110" x="115" y="730" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:ChemicalSubstance" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#ChemicalSubstance" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-172">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="150" x="125" y="350" as="geometry" />
+            <mxGeometry height="30" width="150" x="225" y="1020" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-173" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-90" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="g9ciRkEffJNN25uIRPH2-172" value="isA">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint y="370" as="sourcePoint" />
-            <mxPoint y="320" as="targetPoint" />
+            <mxPoint x="100" y="1040" as="sourcePoint" />
+            <mxPoint x="100" y="990" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-175" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="1250" y="465" as="geometry" />
+          <mxGeometry height="30" width="30" x="1350" y="1135" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-177" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-175" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g9ciRkEffJNN25uIRPH2-146" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1030" y="595" as="sourcePoint" />
-            <mxPoint x="1030" y="515" as="targetPoint" />
+            <mxPoint x="1130" y="1265" as="sourcePoint" />
+            <mxPoint x="1130" y="1185" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-187" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="480" y="680" as="geometry" />
+          <mxGeometry height="30" width="30" x="580" y="1350" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-189" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="30" width="30" x="690" y="680" as="geometry" />
+          <mxGeometry height="30" width="30" x="790" y="1350" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:implementsModel" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#implementsModel" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-190">
           <mxCell edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-187" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;" target="g9ciRkEffJNN25uIRPH2-189">
             <mxGeometry relative="1" as="geometry">
-              <mxPoint x="490" y="770" as="sourcePoint" />
-              <mxPoint x="630" y="730" as="targetPoint" />
+              <mxPoint x="590" y="1440" as="sourcePoint" />
+              <mxPoint x="730" y="1400" as="targetPoint" />
             </mxGeometry>
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-191" parent="1" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="kb:toxicity_software" vertex="1">
-          <mxGeometry height="10" width="130" x="425" y="710" as="geometry" />
+          <mxGeometry height="10" width="130" x="525" y="1380" as="geometry" />
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-192" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="kb:toxicity_model" vertex="1">
-          <mxGeometry height="10" width="130" x="660" y="710" as="geometry" />
+          <mxGeometry height="10" width="130" x="760" y="1380" as="geometry" />
         </mxCell>
         <UserObject label="ssbd:Software" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Software" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-193">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="90" x="350" y="680" as="geometry" />
+            <mxGeometry height="30" width="90" x="450" y="1350" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="ssbd:DecisionTree" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="g9ciRkEffJNN25uIRPH2-195">
           <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
-            <mxGeometry height="30" width="110" x="760" y="680" as="geometry" />
+            <mxGeometry height="30" width="110" x="860" y="1350" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="g9ciRkEffJNN25uIRPH2-196" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-189" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g9ciRkEffJNN25uIRPH2-195" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="610" as="sourcePoint" />
-            <mxPoint x="520" y="530" as="targetPoint" />
+            <mxPoint x="620" y="1280" as="sourcePoint" />
+            <mxPoint x="620" y="1200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-197" edge="1" parent="1" source="g9ciRkEffJNN25uIRPH2-187" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="g9ciRkEffJNN25uIRPH2-193" value="a">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="760" y="700" as="sourcePoint" />
-            <mxPoint x="787" y="745" as="targetPoint" />
+            <mxPoint x="860" y="1370" as="sourcePoint" />
+            <mxPoint x="887" y="1415" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="g9ciRkEffJNN25uIRPH2-104" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="kb:toxicity_computation" vertex="1">
-          <mxGeometry height="10" width="60" x="555" y="570" as="geometry" />
+          <mxGeometry height="10" width="60" x="655" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#6C8EBF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="610" width="1520" x="30" y="40" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:hasSoftware" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasSoftware" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-2">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-21" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-73">
+            <mxGeometry relative="1" x="0.5563" y="2" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint x="770" y="472" as="sourcePoint" />
+              <mxPoint x="868" y="440" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:hasMeasurementUnit" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasMeasurementUnit" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-3">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-53" style="endArrow=classic;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="Vzmr7JIsjYxTK2KFVbB7-71">
+            <mxGeometry height="50" relative="1" width="50" x="-0.1128" y="1" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint x="1283" y="483" as="sourcePoint" />
+              <mxPoint x="1510" y="456" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=#FFFFFF;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;font color=&quot;#6c8ebf&quot;&gt;emmo:MilliGramPerKilogram&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="170" x="1375" y="415" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:wasDerivedFrom" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#wasDerivedFrom" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-5">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-38" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#d5e8d4;dashed=1;" target="Vzmr7JIsjYxTK2KFVbB7-26">
+            <mxGeometry relative="1" x="0.0179" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="975" y="530" />
+                <mxPoint x="495" y="530" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-6" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-69" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-8" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="chebi:paracetamol" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#ChemicalSubstance" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-7">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="150" x="235" y="350" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:Matter" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Matter" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-8">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="250" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-9" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-28" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-13" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-10" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-11" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-28" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Dataset" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Dataset" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-11">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="435" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-12" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-13" value="isA">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="360" as="sourcePoint" />
+            <mxPoint x="394" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-13">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="120" x="345" y="90" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="prov:Activity" link="https://www.w3.org/TR/prov-o/#Activity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-14">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="120" x="650" y="90" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-15" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-16" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-14" value="iA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Process" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Process" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-16">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="650" y="150" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:Computation" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Computation" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-17">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="580" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-18" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-83" value="isA">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kb:AcuteToxicityComputation" vertex="1">
+          <mxGeometry height="30" width="190" x="600" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-20" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-21" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="680" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-22" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-24" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-11" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:isDescriptionOf some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isDescriptionFor" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-23">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-24" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;curved=1;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="395" y="400" />
+                <mxPoint x="395" y="400" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kb:ToxicityComputationInput" vertex="1">
+          <mxGeometry height="30" width="190" x="400" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-25" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-24" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="495" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="480" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-27" parent="1" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;" value="&lt;font color=&quot;#6c8ebf&quot;&gt;pink:paracetamol_dataset&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="70" x="410" y="465" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Data" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Data" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-28">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="435" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="prov:used" link="https://www.w3.org/TR/prov-o/#used" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-29">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-21" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-26">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="630" y="660" as="sourcePoint" />
+              <mxPoint x="335" y="485" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:hasInput some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasInput" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-30">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-19" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-24">
+            <mxGeometry height="50" relative="1" width="50" as="geometry">
+              <Array as="points">
+                <mxPoint x="627" y="400" />
+                <mxPoint x="563" y="400" />
+              </Array>
+              <mxPoint x="650" y="470" as="sourcePoint" />
+              <mxPoint x="700" y="420" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:hasDatum some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasDatum" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-31">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-33" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-63">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1083" y="365" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-32" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-33" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kb:ToxicityComputationOutput" vertex="1">
+          <mxGeometry height="30" width="190" x="880" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="690" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-35" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-19" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-17" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:hasOutput some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasOutput" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-36">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-33" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;startFill=1;startArrow=classic;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-19">
+            <mxGeometry height="50" relative="1" width="50" as="geometry">
+              <Array as="points">
+                <mxPoint x="907" y="400" />
+                <mxPoint x="763" y="400" />
+              </Array>
+              <mxPoint x="690" y="330" as="sourcePoint" />
+              <mxPoint x="740" y="280" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-37" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="975" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-38" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="960" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-39" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;" value="&lt;font color=&quot;#6c8ebf&quot;&gt;pink:computed_dataset&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="60" x="980" y="447.5" as="geometry" />
+        </mxCell>
+        <UserObject label="prov:wasGeneratedBy" link="https://www.w3.org/TR/prov-o/#wasGeneratedBy" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-40">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-38" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-21">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1060" y="530" as="sourcePoint" />
+              <mxPoint x="990" y="450" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-41" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-42" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-50" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Property" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Property" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-42">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="1200" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-43" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-45" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-42" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-44" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-63" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;dashed=1;" target="Vzmr7JIsjYxTK2KFVbB7-47" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Toxicity" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Toxicity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-45">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="1200" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-46" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-47" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-68" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Datum" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Datum" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-47">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="1070" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=default;strokeColor=#FFFFFF;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="690" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-49" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-17" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-16" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-50">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="120" x="1090" y="90" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-51" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-63" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="ssbd:isInterpretedBy" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isInterpretedBy" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-52">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-53" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" target="Vzmr7JIsjYxTK2KFVbB7-21">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1260" y="530" />
+                <mxPoint x="695" y="530" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-53" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="1245" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-54" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-38" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-53" value="ssbd:hasDatum">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1025" y="361" as="sourcePoint" />
+            <mxPoint x="1184" y="307" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="ssbd:isPropertyOf" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isPropertyOf" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-55">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-53" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="Vzmr7JIsjYxTK2KFVbB7-7">
+            <mxGeometry relative="1" x="0.35" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1260" y="560" />
+                <mxPoint x="490" y="540" />
+                <mxPoint x="310" y="560" />
+              </Array>
+              <mxPoint x="915" y="530" as="sourcePoint" />
+              <mxPoint x="310" y="490" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-56" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" value="&lt;font color=&quot;#6c8ebf&quot;&gt;pink:computed_lethalDose50&lt;/font&gt;" vertex="1">
+          <mxGeometry height="15" width="60" x="1315" y="480" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:FloatData" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#FloatData" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-57">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="1330" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="150^^xsd:float" vertex="1">
+          <mxGeometry height="20" width="90" x="1415" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-59" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-53" style="endArrow=classic;html=1;rounded=0;" target="Vzmr7JIsjYxTK2KFVbB7-58" value="ssbd:dataValue">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1170" y="550" as="sourcePoint" />
+            <mxPoint x="1220" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="emmo:MeasurementUnit" link="https://w3id.org/emmo#MeasurementUnit" id="Vzmr7JIsjYxTK2KFVbB7-60">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="150" x="1375" y="330" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-61" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-63" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-45" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-62" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-63" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-57" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-63" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ssbd:LethalDose50" vertex="1">
+          <mxGeometry height="30" width="130" x="1195" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-64" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Paracetamol example with activity individual&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="610" x="435" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-65" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-66" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-68" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Dataset" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Dataset" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-66">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="915" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-67" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-68" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-50" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Data" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Data" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-68">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="990" y="190" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:ChemicalSubstance" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#ChemicalSubstance" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-69">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="150" x="235" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-70" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-69" value="isA">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="290" as="sourcePoint" />
+            <mxPoint x="110" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-71" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="1435" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-72" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-71" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-60" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1215" y="515" as="sourcePoint" />
+            <mxPoint x="1215" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-73" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="590" y="600" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:implementsModel some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#implementsModel" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-74">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-73" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;fillColor=#f8cecc;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Vzmr7JIsjYxTK2KFVbB7-78">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="600" y="690" as="sourcePoint" />
+              <mxPoint x="800" y="615" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-75" parent="1" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#6C8EBF;" value="pink:toxicity_software" vertex="1">
+          <mxGeometry height="20" width="130" x="540" y="630" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Software" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Software" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-76">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="90" x="445" y="600" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-77" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Vzmr7JIsjYxTK2KFVbB7-84" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:DecisionTree" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-78">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="110" x="817.5" y="600" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-79" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-73" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-76" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="620" as="sourcePoint" />
+            <mxPoint x="897" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-80" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-81" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-16" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Assessment" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Process" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-81">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="110" x="700" y="210" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-82" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-83" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-81" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:AcuteToxicityAssessment" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Computation" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-83">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="180" x="710" y="270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:Model" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#DecisionTree" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-84">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="110" x="1002.5" y="600" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-85" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;" value="&lt;font color=&quot;#6c8ebf&quot;&gt;pink:toxicity_computation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="15" width="95" x="700" y="450" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:isOutputOf some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isOutputOf" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-86">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-83" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=1;startArrow=classic;fillColor=#dae8fc;dashed=1;" target="Vzmr7JIsjYxTK2KFVbB7-33">
+            <mxGeometry height="50" relative="1" width="50" x="0.0026" y="6" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint x="920.0000000000005" y="720" as="sourcePoint" />
+              <mxPoint x="1010.0000000000005" y="785" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-87" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="230" width="185" x="1340" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-88" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;shadow=1;" value="&lt;b&gt;Legend&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="185" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-89" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="a" vertex="1">
+          <mxGeometry height="20" width="30" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-90" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="rdf:type" vertex="1">
+          <mxGeometry height="20" width="90" x="72" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-91" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="isA" vertex="1">
+          <mxGeometry height="20" width="30" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-92" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="rdfs:subClassOf" vertex="1">
+          <mxGeometry height="20" width="90" x="72" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-93" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="parthood relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-94" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="causal relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-95" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="semiotic relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-96" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="endArrow=classic;html=1;rounded=0;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#f8cecc;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="119.58000000000004" as="sourcePoint" />
+            <mxPoint x="20" y="119.58000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-97" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="endArrow=classic;html=1;rounded=0;strokeColor=#82b366;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#d5e8d4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="99.58000000000004" as="sourcePoint" />
+            <mxPoint x="20" y="99.58000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-98" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#dae8fc;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="79.58000000000004" as="sourcePoint" />
+            <mxPoint x="20" y="79.58000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-99" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="PINK class" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-100" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="generated class" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-101" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="external class" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-102" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="individual" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="210" as="geometry" />
+        </mxCell>
+        <UserObject label="" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-103">
+          <mxCell parent="Vzmr7JIsjYxTK2KFVbB7-87" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="10" width="40" x="20" y="155" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-104">
+          <mxCell parent="Vzmr7JIsjYxTK2KFVbB7-87" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
+            <mxGeometry height="10" width="40" x="20" y="175" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-105">
+          <mxCell parent="Vzmr7JIsjYxTK2KFVbB7-87" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="10" width="40" x="20" y="195" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-106" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="35" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-107" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="inferred relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-108" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-87" style="endArrow=classic;html=1;rounded=0;strokeColor=#999999;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#f8cecc;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="139.38999999999987" as="sourcePoint" />
+            <mxPoint x="20" y="139.38999999999987" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-109" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#6C8EBF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="480" width="1240" x="1940" y="55" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:hasMeasurementUnit" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasMeasurementUnit" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-110">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-132" style="endArrow=classic;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="Vzmr7JIsjYxTK2KFVbB7-169">
+            <mxGeometry height="50" relative="1" width="50" x="-0.1128" y="1" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint x="2913" y="488" as="sourcePoint" />
+              <mxPoint x="3140" y="461" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-111" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=#6C8EBF;labelBackgroundColor=default;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;emmo:MilliGramPerKilogram&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="170" x="3010" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-112" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-167" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-114" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="chebi:paracetamol" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#ChemicalSubstance" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-113">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="150" x="2140" y="355" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:Matter" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Matter" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-114">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2155" y="195" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-115" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-114" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-116" value="isA">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2299" y="365" as="sourcePoint" />
+            <mxPoint x="2299" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-116">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="120" x="2155" y="105" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="prov:Activity" link="https://www.w3.org/TR/prov-o/#Activity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-117">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="120" x="2360" y="105" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:hasDatum some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasDatum" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-118">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-120" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-142">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="2713" y="370" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-119" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-120" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-164">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-120" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="kb:ToxicityComputationOutput" vertex="1">
+          <mxGeometry height="30" width="190" x="2510" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-121" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-122" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2605" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-122" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="2590" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-123" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-124" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-130" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Property" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Property" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-124">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2830" y="195" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-125" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-127" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-124" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-126" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-142" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;dashed=1;" target="Vzmr7JIsjYxTK2KFVbB7-129" value="isA&lt;div&gt;&lt;br&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.082" y="3" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="ssbd:Toxicity" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Toxicity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-127">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2830" y="275" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-128" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-129" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-166" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Datum" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Datum" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-129">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2700" y="275" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="prov:Entity" link="https://www.w3.org/TR/prov-o/#Entity" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-130">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="120" x="2720" y="105" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-131" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-132" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-142" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2890" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-132" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="2875" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-133" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-122" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;startArrow=none;startFill=0;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-132" value="ssbd:hasDatum">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2655" y="366" as="sourcePoint" />
+            <mxPoint x="2814" y="312" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="ssbd:isPropertyOf" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isPropertyOf" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-134">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-132" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;curved=1;fillColor=#f8cecc;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="Vzmr7JIsjYxTK2KFVbB7-113">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="2890" y="525" />
+                <mxPoint x="2215" y="525" />
+              </Array>
+              <mxPoint x="2495" y="535" as="sourcePoint" />
+              <mxPoint x="2214.9999999999995" y="494.99999999999955" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-135" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#6C8EBF;" value="pink:computed_lethalDose50" vertex="1">
+          <mxGeometry height="20" width="60" x="2945" y="485" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:FloatData" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#FloatData" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-136">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2960" y="275" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-137" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="150^^xsd:float" vertex="1">
+          <mxGeometry height="20" width="90" x="3050" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-138" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-132" style="endArrow=classic;html=1;rounded=0;" target="Vzmr7JIsjYxTK2KFVbB7-137" value="ssbd:dataValue">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2800" y="555" as="sourcePoint" />
+            <mxPoint x="2850" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="emmo:MeasurementUnit" link="https://w3id.org/emmo#MeasurementUnit" id="Vzmr7JIsjYxTK2KFVbB7-139">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="30" width="150" x="3005" y="335" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-140" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-142" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-127" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-141" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-142" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-136" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-142" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ssbd:LethalDose50" vertex="1">
+          <mxGeometry height="30" width="130" x="2825" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-163" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-164" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-166" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Dataset" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Dataset" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-164">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2545" y="275" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-165" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-166" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-130" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Data" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Data" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-166">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2620" y="195" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:ChemicalSubstance" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#ChemicalSubstance" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-167">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="150" x="2140" y="275" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-168" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-113" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" target="Vzmr7JIsjYxTK2KFVbB7-167" value="isA">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2015" y="295" as="sourcePoint" />
+            <mxPoint x="2015" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-169" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="3065" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-170" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-169" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-139" value="a">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2845" y="520" as="sourcePoint" />
+            <mxPoint x="2845" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-171" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-172" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-117" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:Assessment" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Process" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-172">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="120" x="2360" y="195" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-173" edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-174" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Vzmr7JIsjYxTK2KFVbB7-172" value="isA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:AcuteToxicityAssessment" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#Computation" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-174">
+          <mxCell parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="30" width="180" x="2330" y="275" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-175" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Paracetamol example without activity individual&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="610" x="2290" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-176" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#6C8EBF;labelBackgroundColor=default;" value="pink:computed_dataset" vertex="1">
+          <mxGeometry height="20" width="60" x="2577" y="495" as="geometry" />
+        </mxCell>
+        <UserObject label="ssbd:isOutputOf some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#isOutputOf" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-177">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-174" style="endArrow=none;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;curved=1;startFill=1;startArrow=classic;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-120">
+            <mxGeometry height="50" relative="1" width="50" x="-0.4839" y="10" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint x="2320.004855787278" y="389.99660171779806" as="sourcePoint" />
+              <mxPoint x="2124.355144212722" y="389.99660171779806" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ssbd:isDescriptionOf some" link="https://ssbd-ontology.github.io/core/widoco/index-en.html#hasOutput" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-178">
+          <mxCell edge="1" parent="1" source="Vzmr7JIsjYxTK2KFVbB7-113" style="endArrow=none;html=1;rounded=0;strokeColor=#B85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;edgeStyle=orthogonalEdgeStyle;curved=1;startFill=1;startArrow=classic;fillColor=#dae8fc;" target="Vzmr7JIsjYxTK2KFVbB7-120">
+            <mxGeometry height="50" relative="1" width="50" x="-0.1818" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint x="2430" y="315" as="sourcePoint" />
+              <mxPoint x="2520" y="380" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-179" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Version 4&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-181" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="230" width="185" x="2980" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-182" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;shadow=1;" value="&lt;b&gt;Legend&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="185" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-183" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="a" vertex="1">
+          <mxGeometry height="20" width="30" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-184" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="rdf:type" vertex="1">
+          <mxGeometry height="20" width="90" x="72" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-185" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" value="isA" vertex="1">
+          <mxGeometry height="20" width="30" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-186" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="rdfs:subClassOf" vertex="1">
+          <mxGeometry height="20" width="90" x="72" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-187" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="parthood relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-188" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="causal relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-189" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="semiotic relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-190" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="endArrow=classic;html=1;rounded=0;strokeColor=#b85450;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#f8cecc;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="119.58000000000004" as="sourcePoint" />
+            <mxPoint x="20" y="119.58000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-191" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="endArrow=classic;html=1;rounded=0;strokeColor=#82b366;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#d5e8d4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="99.58000000000004" as="sourcePoint" />
+            <mxPoint x="20" y="99.58000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-192" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#dae8fc;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="79.58000000000004" as="sourcePoint" />
+            <mxPoint x="20" y="79.58000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-193" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="PINK class" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-194" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="generated class" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-195" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="external class" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-196" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="individual" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="210" as="geometry" />
+        </mxCell>
+        <UserObject label="" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-197">
+          <mxCell parent="Vzmr7JIsjYxTK2KFVbB7-181" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+            <mxGeometry height="10" width="40" x="20" y="155" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-198">
+          <mxCell parent="Vzmr7JIsjYxTK2KFVbB7-181" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
+            <mxGeometry height="10" width="40" x="20" y="175" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" linkTarget="_blank" id="Vzmr7JIsjYxTK2KFVbB7-199">
+          <mxCell parent="Vzmr7JIsjYxTK2KFVbB7-181" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1">
+            <mxGeometry height="10" width="40" x="20" y="195" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-200" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="35" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-201" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="inferred relation" vertex="1">
+          <mxGeometry height="20" width="103" x="72" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Vzmr7JIsjYxTK2KFVbB7-202" edge="1" parent="Vzmr7JIsjYxTK2KFVbB7-181" style="endArrow=classic;html=1;rounded=0;strokeColor=#999999;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=#f8cecc;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="65" y="139.38999999999987" as="sourcePoint" />
+            <mxPoint x="20" y="139.38999999999987" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
