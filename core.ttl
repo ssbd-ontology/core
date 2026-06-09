@@ -501,7 +501,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:prefLabel "inTierLevel"@en ;
     rdfs:label "in tier level"@en ;
     rdfs:range :TierLevel ;
-    skos:definition "Relate a thing to an SSbD tier level (class)."@en ;
+    skos:definition "Relate a thing to an SSbD tier level."@en ;
     vann:usageNote "Should be one of: ssbd:tierlevel1 (ideation/design), ssbd:tierlevel2 (lab phase/development), ssbd:tierlevel3 (up-scaling/production)"@en .
 
 :chemicalClass rdf:type owl:ObjectProperty ;

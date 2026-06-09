@@ -552,7 +552,7 @@ ssbd:NeurotoxicityAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/NonGenotoxicCarcinogenicityAssessment
 ssbd:NonGenotoxicCarcinogenicityAssessment rdf:type owl:Class ;
                                            rdfs:subClassOf ssbd:HazardIdentificationHumanHealth ;
-                                           rdfs:label "non-genotoxic carcinogenicity  assessment"@en ;
+                                           rdfs:label "non-genotoxic carcinogenicity assessment"@en ;
                                            skos:definition "Non-genotoxic carcinogenicity (NGTxC) assessment identifies cancer-causing agents that act through non-DNA-damaging mechanisms, such as hormonal effects, chronic inflammation, or epigenetic changes rather than direct mutation."@en ;
                                            skos:prefLabel "NonGenotoxicCarcinogenicityAssessment"@en .
 
