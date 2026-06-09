@@ -409,10 +409,10 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :causedBy ;
     skos:prefLabel "priorRelease"@en ;
     rdfs:label "prior release"@en ;
-    rdfs:domain :Software ;
-    rdfs:range :Software ;
-    skos:definition "Direct relation that relates a software to the most resent earlier release of the software."@en ;
-    skos:scopeNote "Useful for tracking the provenance of software releases."@en .
+    rdfs:domain dcat:Resource ;
+    rdfs:range dcat:Resource ;
+    skos:definition "Relates a resource to its most resent earlier release."@en ;
+    vann:usageNote "Useful for tracking the provenance of software and dataset releases."@en .
 
 
 ### Semiotic relations
@@ -421,7 +421,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:prefLabel "semiotical"@en ;
     rdfs:label "semiotical"@en ;
     skos:definition "The base of all semiotic relations."@en ;
-    skos:scopeNote "Semiotic relations take part in a triadic semiotic meaning-making process, where an 'interpreter' connects a 'sign' (e.g. a property) to an entity (called 'referent')."@en ;
+    skos:scopeNote "Semiotic relations take part in a triadic semiotic meaning-making process, where an 'interpreter' connects a 'sign' (e.g. a property) to a 'thing' (aka 'referent')."@en ;
     skos:scopeNote "The semiotic relations in the SSbD Core Ontology are inspirred by EMMO, which in turn is based on the semiotic theory by Charles Sanders Peirce (1839-1914)."@en ;
     skos:scopeNote "Semiotic relations can be seen as shortcuts that replaces a series of complex causal relations with a single relation."@en .
 
@@ -438,8 +438,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     owl:inverseOf :standsFor ;
     skos:prefLabel "isRepresentedBy"@en ;
     rdfs:label "is represented by"@en ;
-    skos:definition "Connects an entity to a sign that stands for the entity."@en ;
-    rdfs:domain prov:Entity ;
+    skos:definition "Connects a thing to a sign that stands for the thing."@en ;
     rdfs:range :Sign .
 
 :hasProperty rdf:type owl:ObjectProperty ;
@@ -469,27 +468,24 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     owl:inverseOf :isRepresentedBy ;
     skos:prefLabel "standsFor"@en ;
     rdfs:label "stands for"@en ;
-    skos:definition "Connects a sign (e.g. a property) to an entity (a 'referent')."@en ;
-    rdfs:domain :Sign ;
-    rdfs:range prov:Entity .
+    skos:definition "Connects a sign (e.g. a property) to a thing (a 'referent')."@en ;
+    rdfs:domain :Sign .
 
 :isDescriptionFor rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
     owl:inverseOf :hasDescription ;
     skos:prefLabel "isDescriptionFor"@en ;
     rdfs:label "is description for"@en ;
-    skos:definition "Connects a description to an entity."@en ;
-    rdfs:domain :Description ;
-    rdfs:range prov:Entity .
+    skos:definition "Connects a description to a thing."@en ;
+    rdfs:domain :Description .
 
 :isPropertyFor rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
     owl:inverseOf :hasProperty ;
     skos:prefLabel "isPropertyFor"@en ;
     rdfs:label "is property for"@en ;
-    skos:definition "Connects a property to an entity."@en ;
-    rdfs:domain :Property ;
-    rdfs:range prov:Entity .
+    skos:definition "Connects a property to a thing."@en ;
+    rdfs:domain :Property .
 
 :implementsModel rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :standsFor ;
@@ -500,22 +496,20 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:definition "Relates a software to the model it implements."@en ;
     skos:scopeNote "Semiotically a software can be seen as an executable sign that stands for the model it implements."@en .
 
-:tierLevel a owl:ObjectProperty ;
+:inTierLevel a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasProperty ;
-    skos:prefLabel "tierLevel"@en ;
-    rdfs:label "tier level"@en ;
-    rdfs:domain prov:Entity ;
+    skos:prefLabel "inTierLevel"@en ;
+    rdfs:label "in tier level"@en ;
     rdfs:range :TierLevel ;
-    skos:definition "Relate an entity to an SSbD tier level."@en ;
+    skos:definition "Relate a thing to an SSbD tier level (class)."@en ;
     vann:usageNote "Should be one of: ssbd:tierlevel1 (ideation/design), ssbd:tierlevel2 (lab phase/development), ssbd:tierlevel3 (up-scaling/production)"@en .
 
 :chemicalClass rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf :standsFor ;
-    rdfs:domain prov:Entity ;
     rdfs:range :Matter ;
     skos:prefLabel "chemicalClass"@en ;
     rdfs:label "chemical class"@en ;
-    skos:definition "Relates an entity to a chemical class that the entity is relevant for."@en ;
+    skos:definition "Relates a thing to a chemical class that the thing is relevant for."@en ;
     vann:usageNote "Choose one of subclasses of ssbd:Matter."@en .
 
 :documentation a owl:ObjectProperty ;
@@ -670,7 +664,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     skos:prefLabel "Datum"@en ;
     rdfs:label "datum"@en ;
     skos:definition "A self-consistent encoded data entity."@en ;
-    vann:usageNote "Datum is the building block of datasets."@en .
+    skos:scopeNote "Datum is the building block of datasets."@en .
 
 :Dataset rdf:type owl:Class ;
     rdfs:subClassOf :Data, [
@@ -681,7 +675,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     skos:prefLabel "Dataset"@en ;
     rdfs:label "dataset"@en ;
     skos:definition "Encoded data made of more than one datum."@en ;
-    vann:usageNote "A collection of (more than one) datum, published or curated by a single agent, and available for access or download in one or more representations."@en .
+    skos:scopeNote "A collection of (more than one) datum, published or curated by a single agent, and available for access or download in one or more representations."@en .
 
 
 
@@ -909,11 +903,10 @@ An architectural floor plan is a model of a house.
 ### Question: should we duplicate these classes instead?
 dm:DataModel rdfs:subClassOf :Data .
 foaf:Document rdfs:subClassOf :Data .
-prov:Agent rdfs:subClassOf foaf:Agent .
-dcat:Resource rdfs:subClassOf prov:Entity .
+dcat:Resource rdfs:subClassOf :Data .
 foaf:Organization rdfs:subClassOf :Object .
 foaf:Person rdfs:subClassOf :Object .
-foaf:Project rdfs:subClassOf prov:Entity .
+foaf:Project rdfs:subClassOf :Object .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
 emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
 emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .

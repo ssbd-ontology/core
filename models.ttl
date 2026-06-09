@@ -66,13 +66,14 @@ emmo:AnalogicalIcon rdf:type owl:Class ;
 
 ###  https://w3id.org/emmo/hume#ArtificialIntelligenceModel
 emmo:ArtificialIntelligenceModel rdf:type owl:Class ;
-                            rdfs:subClassOf emmo:MathematicalModel ;
-                            rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png"^^xsd:anyURI ;
-                            skos:altLabel "ArtificialIntelligence"@en ;
-                            skos:definition """A machine-based system that perceives its environment, pursues goals, adapts to feedback/change and provides information/takes action."""@en ;
-                            skos:prefLabel "ArtificialIntelligenceModel"@en ;
-                            rdfs:label "artificial intelligence model"@en .
-
+    rdfs:subClassOf emmo:MathematicalModel ;
+    rdfs:seeAlso "https://www.researchgate.net/publication/350296216/figure/fig3/AS:11431281115851476@1675133526198/The-brief-classification-of-AI.png" ;
+    skos:altLabel "ArtificialIntelligence"@en ;
+    skos:definition """A machine-based system that perceives its environment, pursues goals, adapts to feedback/change and provides information/takes action."""@en ;
+    skos:prefLabel "ArtificialIntelligenceModel"@en ;
+    rdfs:label "artificial intelligence model"@en ;
+    rdfs:isDefinedBy <https://doi.org/10.1007/s00170-021-06882-1> ;
+    skos:scopeNote "The ArtificialIntelligenceModel branch is modelled after Wang et al. Artificial intelligence in product lifecycle management (2021) Int J Adv Manuf Technol 114, 771-796, DOI: 10.1007/s00170-021-06882-1."@en .
 
 ###  https://w3id.org/emmo/hume#AtomicInteractionModel
 emmo:AtomicInteractionModel rdf:type owl:Class ;

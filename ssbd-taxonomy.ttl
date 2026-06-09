@@ -838,9 +838,9 @@ ssbd:WaterQualityAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/WorkerSocialResponsibilityAssessment
 ssbd:WorkerSocialResponsibilityAssessment rdf:type owl:Class ;
                                           rdfs:subClassOf ssbd:SocialSustainabilityAssessment ;
-                                          rdfs:label "worker social responsibility"@en ;
+                                          rdfs:label "worker social responsibility assessment"@en ;
                                           skos:definition "Assessing whether workers are given fair renumeration, have decent working hours or as per regulations, are allowed freedom of association and form collective bargaining , etc."@en ;
-                                          skos:prefLabel "SocialSustainabilityAssessment"@en .
+                                          skos:prefLabel "WorkerSocialResponsibilityAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/WorkingHoursAssessment

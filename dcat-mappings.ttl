@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/ssbd/chebi-mappings#> .
+@prefix : <https://w3id.org/ssbd/dcat-mappings#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -24,5 +24,3 @@
 dcat:Dataset rdfs:subClassOf ssbd:Data .
 ssbd:Dataset rdfs:subClassOf dcat:Dataset .
 dcat:Resource rdfs:subClassOf prov:Entity .
-#     skos:prefLabel "Resource" ;
-#     skos:definition "Resource published or curated by an agent." .

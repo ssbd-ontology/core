@@ -77,6 +77,45 @@ Below are some example templates that are used for documenting ssbd related reso
 Note that these are just examples and that you can create your own templates based on the properties that are relevant for your use case. 
 The important thing is to make sure that the columns are named according to the specifications above and that the values are filled according to the definitions of the properties in the ssbd core ontology.
 
+### Expected minimum annotations by resource type
+
+The matrix below summarises which annotations where chosen as the minimum expected for each resource type in the PINK project (and this tutorial).
+
+| Property | Type | Software release (individual) | Computation type (class) | Dataset type (class) | Agent (individual) |
+|---|---|---|---|---|---|
+| @id | annotation | X | X | X | X |
+| @type | annotation | X | X | X | X |
+| accessRights | object | X |  |  |  |
+| chemicalClass | object | X |  |  |  |
+| creator | object | X |  |  |  |
+| curator | object | X |  | X |  |
+| datamodel | object | X |  | X |  |
+| description | annotation | X |  | X |  |
+| distribution.accessURL | annotation | X |  |  |  |
+| distribution.downloadURL | data type | X |  |  |  |
+| documentation | object | X |  |  |  |
+| format | annotation | X |  | X |  |
+| hasAPI | data type | X |  |  |  |
+| hasGUI | data type | X |  |  |  |
+| hasInput | object |  | X |  |  |
+| hasOutput | object |  | X |  |  |
+| hasSoftware | object |  | X |  |  |
+| implementsModel | object | X |  |  |  |
+| isSubmoduleOf | object | X |  |  |  |
+| keyword | annotation | X |  | X |  |
+| label | annotation |  |  | X |  |
+| license | object | X |  |  |  |
+| name | annotation |  |  |  | X |
+| priorRelease | object | X |  |  |  |
+| releaseDate | data type | X |  |  |  |
+| rightsHolder | object | X |  |  |  |
+| scopeNote | annotation |  |  | X |  |
+| subClassOf | object |  | X | X |  |
+| theme | object |  |  | X |  |
+| inTierLevel | object | X |  |  |  |
+| title | annotation | X | X |  |  |
+| version | annotation | X |  |  |  |
+
 
 > [!NOTE]
 > Another point: here prefixes (the term before the colon) are set to 'pink', because these tables are examples within the pink project. 
