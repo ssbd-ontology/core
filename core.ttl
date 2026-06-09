@@ -409,10 +409,10 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :causedBy ;
     skos:prefLabel "priorRelease"@en ;
     rdfs:label "prior release"@en ;
-    rdfs:domain :Software ;
-    rdfs:range :Software ;
-    skos:definition "Direct relation that relates a software to the most resent earlier release of the software."@en ;
-    skos:scopeNote "Useful for tracking the provenance of software releases."@en .
+    rdfs:domain dcat:Resource ;
+    rdfs:range dcat:Resource ;
+    skos:definition "Relates a resource to its most resent earlier release."@en ;
+    vann:usageNote "Useful for tracking the provenance of software and dataset releases."@en .
 
 
 ### Semiotic relations
@@ -500,13 +500,13 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:definition "Relates a software to the model it implements."@en ;
     skos:scopeNote "Semiotically a software can be seen as an executable sign that stands for the model it implements."@en .
 
-:tierLevel a owl:ObjectProperty ;
+:inTierLevel a owl:ObjectProperty ;
     rdfs:subPropertyOf :hasProperty ;
-    skos:prefLabel "tierLevel"@en ;
-    rdfs:label "tier level"@en ;
+    skos:prefLabel "inTierLevel"@en ;
+    rdfs:label "in tier level"@en ;
     rdfs:domain prov:Entity ;
     rdfs:range :TierLevel ;
-    skos:definition "Relate an entity to an SSbD tier level."@en ;
+    skos:definition "Relate an entity to an SSbD tier level (class)."@en ;
     vann:usageNote "Should be one of: ssbd:tierlevel1 (ideation/design), ssbd:tierlevel2 (lab phase/development), ssbd:tierlevel3 (up-scaling/production)"@en .
 
 :chemicalClass rdf:type owl:ObjectProperty ;
@@ -670,7 +670,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     skos:prefLabel "Datum"@en ;
     rdfs:label "datum"@en ;
     skos:definition "A self-consistent encoded data entity."@en ;
-    vann:usageNote "Datum is the building block of datasets."@en .
+    skos:scopeNote "Datum is the building block of datasets."@en .
 
 :Dataset rdf:type owl:Class ;
     rdfs:subClassOf :Data, [
@@ -681,7 +681,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     skos:prefLabel "Dataset"@en ;
     rdfs:label "dataset"@en ;
     skos:definition "Encoded data made of more than one datum."@en ;
-    vann:usageNote "A collection of (more than one) datum, published or curated by a single agent, and available for access or download in one or more representations."@en .
+    skos:scopeNote "A collection of (more than one) datum, published or curated by a single agent, and available for access or download in one or more representations."@en .
 
 
 
@@ -909,11 +909,10 @@ An architectural floor plan is a model of a house.
 ### Question: should we duplicate these classes instead?
 dm:DataModel rdfs:subClassOf :Data .
 foaf:Document rdfs:subClassOf :Data .
-prov:Agent rdfs:subClassOf foaf:Agent .
-dcat:Resource rdfs:subClassOf prov:Entity .
+dcat:Resource rdfs:subClassOf :Data .
 foaf:Organization rdfs:subClassOf :Object .
 foaf:Person rdfs:subClassOf :Object .
-foaf:Project rdfs:subClassOf prov:Entity .
+foaf:Project rdfs:subClassOf :Object .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
 emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
 emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
