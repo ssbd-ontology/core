@@ -68,7 +68,8 @@ Practical introduction to documenting your resources with table-based templates.
 
 ## Attributions and credits
 
-The SSbD Core Ontology was initially created as part of the HEU PINK project.
+The SSbD Core Ontology was initially created as part of the HEU [PINK] project.
+Community involvement is highly appreciated.
 
 ### Lead authors are:
 
@@ -82,7 +83,7 @@ The SSbD Core Ontology was initially created as part of the HEU PINK project.
 
 ### Contributing projects
 
-- The [PINK] project, EU’s Horizon Europe Research and Innovation programme grant agreement No. 101137809. <img src="https://ssbd-ontology.github.io/core/authors/docs/figs/pink-logo.png", width="120">
+- The [PINK] project, EU’s Horizon Europe Research and Innovation programme grant agreement No. 101137809. <a href="https://pink-project.eu/about/"><img alt="pink logo" src="https://github.com/ssbd-ontology/core/blob/authors/docs/figs/pink-logo.png", width="120"></a>
 
 
 [PINK]: https://pink-project.eu/about/
