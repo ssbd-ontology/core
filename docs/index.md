@@ -65,3 +65,24 @@ Practical introduction to documenting your resources with table-based templates.
 ```
 
 ````
+
+## Attributions and credits
+
+The SSbD Core Ontology was initially created as part of the HEU PINK project.
+
+### Lead authors are:
+
+- Thomas Exner, 7P9, Germany
+- Jesper Friis, SINTEF, Norway
+- Francesca L. Bleken, SINTEF, Norway
+- Alexe Haywood, University of Birmingham, UK
+- Indrani Mahapatra, University of Birmingham, UK
+- Dominic Russ, University of Birmingham, UK
+- Hui Yang, University of Birmingham, UK
+
+### Contributing projects
+
+- The [PINK] project, EU’s Horizon Europe Research and Innovation programme grant agreement No. 101137809. <img src="https://ssbd-ontology.github.io/core/authors/docs/figs/pink-logo.png", width="120">
+
+
+[PINK]: https://pink-project.eu/about/
