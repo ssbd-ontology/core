@@ -83,7 +83,7 @@ Community involvement is highly appreciated.
 
 ### Contributing projects
 
-- The [PINK] project, EU’s Horizon Europe Research and Innovation programme grant agreement No. 101137809. <a href="https://pink-project.eu/about/"><img alt="pink logo" src="https://github.com/ssbd-ontology/core/blob/authors/docs/figs/pink-logo.png" width="120"></a>
+- The [PINK] project, EU’s Horizon Europe Research and Innovation programme grant agreement No. 101137809. <a href="https://pink-project.eu/about/"><img alt="pink logo" src="https://ssbd-ontology.github.io/core/docs/figs/pink-logo.png" width="120"></a>
 
 
 [PINK]: https://pink-project.eu/about/
