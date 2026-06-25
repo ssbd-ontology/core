@@ -9,7 +9,7 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+-*'
       - master
       - main
-      - fixes_during_review
+      - authors
 
 permissions:
   contents: write
