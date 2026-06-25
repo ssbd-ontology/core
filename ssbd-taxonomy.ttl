@@ -100,7 +100,7 @@ ssbd:BiodiversityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BulkModulusAssessment
 ssbd:BulkModulusAssessment rdf:type owl:Class ;
-                           rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
+                           rdfs:subClassOf ssbd:MechanicalPropertyAssessment ;
                            rdfs:label "bulk modulus assessment"@en ;
                            skos:definition "Assessment of bulk modulus of materials."@en ;
                            skos:prefLabel "BulkModulusAssessment"@en .
@@ -118,7 +118,7 @@ ssbd:CarcinogenicityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/DensityAssessment
 ssbd:DensityAssessment rdf:type owl:Class ;
-                       rdfs:subClassOf ssbd:PhysicalPropertiesAssessment ;
+                       rdfs:subClassOf ssbd:PhysicoChemicalPropertyAssessment ;
                        rdfs:label "density assessment"@en ;
                        skos:definition "Assessment of density of chemicals and materials."@en ;
                        skos:prefLabel "DensityAssessment"@en .
@@ -327,7 +327,7 @@ ssbd:GenotoxicityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/GlassTransitionTemperatureAssessment
 ssbd:GlassTransitionTemperatureAssessment rdf:type owl:Class ;
-                                          rdfs:subClassOf ssbd:ThermalPropertiesAssessment ;
+                                          rdfs:subClassOf ssbd:ThermadynamicPropertyAssessment ;
                                           rdfs:label "glass transition temperature assessment"@en ;
                                           skos:definition "Assessment of glass transition temperature of materials."@en ;
                                           skos:prefLabel "GlassTransitionTemperatureAssessment"@en .
@@ -521,13 +521,12 @@ ssbd:MarineEutrophicationImpactAssessment rdf:type owl:Class ;
                                           skos:scopeNote "This is a LCA impact category." .
 
 
-###  https://w3id.org/ssbd/MechanicalPropertiesAssessment
-ssbd:MechanicalPropertiesAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/MechanicalPropertyAssessment
+ssbd:MechanicalPropertyAssessment rdf:type owl:Class ;
                                     rdfs:subClassOf ssbd:FunctionalityAssessment ;
-                                    rdfs:label "mechanical properties assessment"@en ;
-                                    skos:definition "Assessment of mechanical properties of chemicals and materials."@en ,
-                                                    "Assessment of mechanical properties of materials."@en ;
-                                    skos:prefLabel "MechanicalPropertiesAssessment"@en .
+                                    rdfs:label "mechanical property assessment"@en ;
+                                    skos:definition "Assessment of mechanical properties of chemicals and materials."@en ;
+                                    skos:prefLabel "MechanicalPropertyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/MutagenicityAssessment
@@ -577,7 +576,7 @@ ssbd:OxidisingPropetiesAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:IntrinsicChemicalHazardAssessment ;
                                   rdfs:label "oxidising properties assessment"@en ;
                                   skos:definition "Assessment of oxidising properties of chemicals."@en ;
-                                  skos:prefLabel "OxidisingPropertiesAssessment"@en .
+                                  skos:prefLabel "OxidisingPropertyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/PhotochemicalOzoneFormationAssessment
@@ -588,17 +587,42 @@ ssbd:PhotochemicalOzoneFormationAssessment rdf:type owl:Class ;
                                            skos:prefLabel "PhotochemicalOzoneFormationImpactCategory"@en .
 
 
-###  https://w3id.org/ssbd/PhysicalPropertiesAssessment
-ssbd:PhysicalPropertiesAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/PhysicoChemicalPropertyAssessment
+ssbd:PhysicoChemicalPropertyAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:FunctionalityAssessment ;
-                                  rdfs:label "physical properties assessment"@en ;
-                                  skos:definition "Assessment of physical properties of chemicals and materials."@en ;
-                                  skos:prefLabel "PhysicalPropertiesAssessment"@en .
+                                  rdfs:label "physicochemical property assessment"@en ;
+                                  skos:definition "Assessment of physicochemical properties of chemicals and materials."@en ;
+                                  skos:prefLabel "PhysicoChemicalPropertyAssessment"@en .
+
+
+###  https://w3id.org/ssbd/ElectromagneticPropertyAssessment
+ssbd:ElectroMagneticPropertyAssessment rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:FunctionalityAssessment ;
+                                  rdfs:label "electromagnetic properties assessment"@en ;
+                                  skos:definition "Assessment of electromagnetic properties of chemicals and materials."@en ;
+                                  skos:prefLabel "ElectromagneticPropertyAssessment"@en .
+
+
+###  https://w3id.org/ssbd/ThermodynamicPropertyAssessment
+ssbd:ThermodynamicPorpertyAssessment rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:FunctionalityAssessment ;
+                                  rdfs:label "thermodynamic property assessment"@en ;
+                                  skos:definition "Assessment of thermodynamic properties of chemicals and materials."@en ;
+                                  skos:prefLabel "ThermodynamicPropertyAssessment"@en .
+
+###  https://w3id.org/ssbd/LightAndRadiationPropertyAssessment
+ssbd:LightAndRadiationPropertyAssessment rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:FunctionalityAssessment ;
+                                  rdfs:label "light and radiation property assessment"@en ;
+                                  skos:definition "Assessment of light and radiation (optical) properties of chemicals and materials."@en ;
+                                  skos:prefLabel "LightAndRadiationPropertyAssessment"@en .
+
+
 
 
 ###  https://w3id.org/ssbd/PoissonsRatioAssessment
 ssbd:PoissonsRatioAssessment rdf:type owl:Class ;
-                             rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
+                             rdfs:subClassOf ssbd:MechanicalPropertyAssessment ;
                              rdfs:label "Poisson's ratio assessment"@en ;
                              skos:definition "Assessment of Poisson's ratio of materials."@en ;
                              skos:prefLabel "PoissonsRatioAssessment"@en ;
@@ -819,12 +843,12 @@ ssbd:TerrestrialToxicity rdf:type owl:Class ;
                          skos:prefLabel "TerrestrialToxicity"@en .
 
 
-###  https://w3id.org/ssbd/ThermalPropertiesAssessment
-ssbd:ThermalPropertiesAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/ThermalPropertyAssessment
+ssbd:ThermalPropertyAssessment rdf:type owl:Class ;
                                  rdfs:subClassOf ssbd:FunctionalityAssessment ;
-                                 rdfs:label "thermal properties assessment"@en ;
+                                 rdfs:label "thermal property assessment"@en ;
                                  skos:definition "Assessment of thermal properties of chemicals and materials."@en ;
-                                 skos:prefLabel "ThermalPropertiesAssessment"@en .
+                                 skos:prefLabel "ThermalPropertyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/WaterQualityAssessment
@@ -853,7 +877,7 @@ ssbd:WorkingHoursAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/YoungsModulusAssessment
 ssbd:YoungsModulusAssessment rdf:type owl:Class ;
-                             rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
+                             rdfs:subClassOf ssbd:MechanicalPropertyAssessment ;
                              rdfs:label "Young's modulus assessment"@en ;
                              skos:definition "Assessment of Young's modulus of materials."@en ;
                              skos:prefLabel "YoungsModulusAssessment"@en .
