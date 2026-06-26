@@ -34,7 +34,7 @@ ssbd:AcidificationImpactAssessment rdf:type owl:Class ;
                                    rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
                                    rdfs:label "acidification impact assessment"@en ;
                                    skos:definition "The acidification impact assessment in a Life Cycle Assessment (LCA) provides assessment of the environmental damage caused by acidifying emissions, such as sulphur and nitrogen compounds released into the air."@en ;
-                                   skos:prefLabel "AcidificationImpactCategory"@en ;
+                                   skos:prefLabel "AcidificationImpactAssessment"@en ;
                                    skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -91,7 +91,7 @@ ssbd:BiodegradabilityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BiodiversityAssessment
 ssbd:BiodiversityAssessment rdf:type owl:Class ;
-                            rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
+                            rdfs:subClassOf ssbd:EnvironmentalQualityAssessment ;
                             dcterms:source "https://doi.org/10.3732/ajb.1000296" ;
                             rdfs:label "biodiversity assessment"@en ;
                             skos:definition "Biodiversity assessments typically consist of identifying species and evaluating one or more metrics: (1) species richness (number of species), (2) evenness (ratio of various species), and/or (3) character diversity (phenotypic difference)."@en ;
@@ -315,7 +315,7 @@ ssbd:FreshwaterEutrophicationImpactAssessment rdf:type owl:Class ;
                                               rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
                                               rdfs:label "freshwater eutrophication impact assessment"@en ;
                                               skos:definition "Freshwater Eutrophication  in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential impacts of nutrient enrichment which causes detrimental overgrowth of biomass in freshwater ecosystems, leading to oxygen depletion and loss of species."@en ;
-                                              skos:prefLabel "FreshwaterEutrophicationImpactCategory"@en ;
+                                              skos:prefLabel "FreshwaterEutrophicationImpactAssessment"@en ;
                                               skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -524,9 +524,9 @@ ssbd:IrritationAndCorrosion rdf:type owl:Class ;
 ssbd:LifeCycleImpactAssessmentCategorisation rdf:type owl:Class ;
                                        rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
                                        dcterms:source "https://www.iso.org/obp/ui/en/#iso:std:iso:14040:ed-2:v1:en" ;
-                                       rdfs:label "life cycle assessment impact assessment categorisation"@en ;
+                                       rdfs:label "life cycle impact assessment categorisation"@en ;
                                        skos:definition "A LCA impact category is a class representing environmental issues of concern to which life cycle inventory analysis results may be assigned based on some common quality or qualities."@en ;
-                                       skos:prefLabel "LifeCycleAssessmentImpactAssessmentCategorisation"@en .
+                                       skos:prefLabel "LifeCycleImpactAssessmentCategorisation"@en .
 
 
 ###  https://w3id.org/ssbd/MarineAquaticEcotoxicityImpactAssessment
@@ -541,9 +541,9 @@ ssbd:MarineAquaticEcotoxicityImpactAssessment rdf:type owl:Class ;
 ###  https://w3id.org/ssbd/MarineEutrophicationImpactAssessment
 ssbd:MarineEutrophicationImpactAssessment rdf:type owl:Class ;
                                           rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
-                                          rdfs:label "marine eutrophication impact category"@en ;
+                                          rdfs:label "marine eutrophication impact assessment"@en ;
                                           skos:definition "Marine Eutrophication in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential impacts of nutrient enrichment in marine ecosystems leading to hypoxic waters causing far-reaching impacts, such as loss of biodiversity, habitat degradation, coral bleaching."@en ;
-                                          skos:prefLabel "MarineEutrophicationImpactCategory"@en ;
+                                          skos:prefLabel "MarineEutrophicationImpactAssessment"@en ;
                                           skos:scopeNote "This is a LCA impact category." .
 
 
