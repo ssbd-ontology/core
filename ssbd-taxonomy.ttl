@@ -353,9 +353,10 @@ ssbd:GenotoxicityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/GlassTransitionTemperatureAssessment
 ssbd:GlassTransitionTemperatureAssessment rdf:type owl:Class ;
-                                          rdfs:subClassOf ssbd:ThermadynamicPropertyAssessment ;
+                                          rdfs:subClassOf ssbd:ThermodynamicPropertyAssessment ;
                                           rdfs:label "glass transition temperature assessment"@en ;
                                           skos:definition "Assessment of glass transition temperature of materials."@en ;
+                                          skos:scopeNote "Quantities defined in ISO 80000-5 are typically evaluated in an thermodynamic property assessment."@en .
                                           skos:prefLabel "GlassTransitionTemperatureAssessment"@en .
 
 
@@ -618,19 +619,21 @@ ssbd:PhysicoChemicalPropertyAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:FunctionalityAssessment ;
                                   rdfs:label "physicochemical property assessment"@en ;
                                   skos:definition "Assessment of physicochemical properties of chemicals and materials."@en ;
+                                  skos:scopeNote "Quantities defined in ISO 80000-9 are typically evaluated in an physicochemical property assessment."@en .
                                   skos:prefLabel "PhysicoChemicalPropertyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/ElectromagneticPropertyAssessment
 ssbd:ElectroMagneticPropertyAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:FunctionalityAssessment ;
-                                  rdfs:label "electromagnetic properties assessment"@en ;
+                                  rdfs:label "electromagnetic property assessment"@en ;
                                   skos:definition "Assessment of electromagnetic properties of chemicals and materials."@en ;
+                                  skos:scopeNote "Quantities defined in ISO 80000-6 are typically evaluated in an electromagnetic property assessment."@en .
                                   skos:prefLabel "ElectromagneticPropertyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/ThermodynamicPropertyAssessment
-ssbd:ThermodynamicPorpertyAssessment rdf:type owl:Class ;
+ssbd:ThermodynamicPropertyAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:FunctionalityAssessment ;
                                   rdfs:label "thermodynamic property assessment"@en ;
                                   skos:definition "Assessment of thermodynamic properties of chemicals and materials."@en ;
@@ -641,6 +644,7 @@ ssbd:LightAndRadiationPropertyAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:FunctionalityAssessment ;
                                   rdfs:label "light and radiation property assessment"@en ;
                                   skos:definition "Assessment of light and radiation (optical) properties of chemicals and materials."@en ;
+                                  skos:scopeNote "Quantities defined in ISO 80000-7 are typically evaluated in a light and radiation property assessment."@en .
                                   skos:prefLabel "LightAndRadiationPropertyAssessment"@en .
 
 
@@ -651,6 +655,7 @@ ssbd:PoissonsRatioAssessment rdf:type owl:Class ;
                              rdfs:subClassOf ssbd:MechanicalPropertyAssessment ;
                              rdfs:label "Poisson's ratio assessment"@en ;
                              skos:definition "Assessment of Poisson's ratio of materials."@en ;
+                             skos:scopeNote "Quantities defined in ISO 80000-4 are typically evaluated in a mechanical property assessment."@en .
                              skos:prefLabel "PoissonsRatioAssessment"@en ;
                              skos:scopeNote "Poisson's ratio offers the fundamental metric by which to compare the performance of any material's resistance to distort under mechanical load rather than to alter in volume."@en .
 
