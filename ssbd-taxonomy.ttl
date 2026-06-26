@@ -253,7 +253,7 @@ ssbd:ExternalitiesAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/FairRenumerationAssessment
 ssbd:FairRenumerationAssessment rdf:type owl:Class ;
-                                rdfs:subClassOf ssbd:WorkerSocialResponsibilityAssessment ;
+                                rdfs:subClassOf ssbd:WorkerWelfareAssessment ;
                                 rdfs:label "fair renumeration"@en ;
                                 skos:definition "Assessing whether employees are paid as per their skills, experience, responsibilities, and performance. Fair pay ensures a decent lifestyle, to the extent that it covers the material, cultural and social needs generally perceived by people."@en ;
                                 skos:prefLabel "FairRenumerationAssessment"@en .
@@ -592,7 +592,7 @@ ssbd:OccupationalHealthandSafetyAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/OccupationalNonfatalInjuriesRate
 ssbd:OccupationalNonfatalInjuriesRate rdf:type owl:Class ;
-                                      rdfs:subClassOf ssbd:SafeWorkingConditionsAssessment ;
+                                      rdfs:subClassOf ssbd:WorkplaceSafetyAssessment ;
                                       rdfs:label "occupational non-fatal injuries rate"@en ;
                                       skos:prefLabel "OccupationalNonfatalInjuriesRate"@en .
 
@@ -726,12 +726,12 @@ ssbd:WaterResourceDepletionImpactAssessment rdf:type owl:Class ;
 
 
 
-###  https://w3id.org/ssbd/SafeWorkingConditionsAssessment
-ssbd:SafeWorkingConditionsAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/WorkplaceSafetyAssessment
+ssbd:WorkplaceSafetyAssessment rdf:type owl:Class ;
                                      rdfs:subClassOf ssbd:OccupationalHealthandSafetyAssessment ;
-                                     rdfs:label "safe working conditions assessment"@en ;
+                                     rdfs:label "workplace safety assessment"@en ;
                                      skos:definition "Assessing safety performance in manufacturing  facilities using various Key Performance Indicators, such as Lost Time Injury  Frequency Rate (LTIFR), near-miss reporting rates."@en ;
-                                     skos:prefLabel "SafeWorkingConditionsAssessment"@en .
+                                     skos:prefLabel "WorkplaceSafetyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/SafetyAssessment
@@ -894,17 +894,17 @@ ssbd:WaterQualityAssessment rdf:type owl:Class ;
                             skos:prefLabel "WaterQualityAssessment"@en .
 
 
-###  https://w3id.org/ssbd/WorkerSocialResponsibilityAssessment
-ssbd:WorkerSocialResponsibilityAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/WorkerWelfareAssessment
+ssbd:WorkerWelfareAssessment rdf:type owl:Class ;
                                           rdfs:subClassOf ssbd:SocialSustainabilityAssessment ;
-                                          rdfs:label "worker social responsibility assessment"@en ;
-                                          skos:definition "Assessing whether workers are given fair renumeration, have decent working hours or as per regulations, are allowed freedom of association and form collective bargaining , etc."@en ;
-                                          skos:prefLabel "WorkerSocialResponsibilityAssessment"@en .
+                                          rdfs:label "worker welfare assessment"@en ;
+                                          skos:definition "A systematic evaluation of workplace conditions, labour rights, and employee well-being (e.g. fair renumeration, decent working hours as per regulations, freedom of association and form collective bargaining)."@en ;
+                                          skos:prefLabel "WorkerWelfareAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/WorkingHoursAssessment
 ssbd:WorkingHoursAssessment rdf:type owl:Class ;
-                            rdfs:subClassOf ssbd:WorkerSocialResponsibilityAssessment ;
+                            rdfs:subClassOf ssbd:WorkerWelfareAssessment ;
                             rdfs:label "working hours"@en ;
                             skos:definition "Assessing whether employees and workers are working as per the laws."@en ;
                             skos:prefLabel "WorkingHoursAssessment"@en .
