@@ -293,6 +293,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:prefLabel "performedBy"@en ;
     rdfs:label "performed by"@en ;
     skos:altLabel "hasIntentionalAgent"@en ;
+    rdfs:domain prov:Activity ;
     rdfs:range emmo:IntentionalAgent ;
     skos:definition "Relates an activity to an intentional agent that drives the activity."@en .
 
@@ -301,6 +302,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:prefLabel "performedWith"@en ;
     rdfs:label "performed with"@en ;
     skos:altLabel "hasUnintentionalAgent"@en ;
+    rdfs:domain prov:Activity ;
     rdfs:range emmo:UnintentionalAgent ;
     skos:definition "Relates an activity to an unintentional agent that drives the activity."@en .
 
@@ -350,7 +352,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :causal, prov:wasInfluencedBy ;
     skos:prefLabel "causedBy"@en ;
     rdfs:label "caused by"@en ;
-    skos:definition "A relation between an owl:Thin (entity, activity or agent) that causally affects the subject."@en ;
+    skos:definition "A relation between an owl:Thing (entity, activity or agent) that causally affects the subject."@en ;
     skos:example "John yesterday is the cause of John today, is an example of temporal-like causality. The desk supporting my laptop is a space-like causality."@en .
 
 :isAfter rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
