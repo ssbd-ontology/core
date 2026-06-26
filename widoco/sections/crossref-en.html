@@ -1,0 +1,3100 @@
+<h2 id="crossreference" class="list">Cross-reference for SSbD Core Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by SSbD Core Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#/Assessment" title="https://w3id.org/ssbd/Assessment">assessment</a></li>
+  <li><a href="#/BooleanData" title="https://w3id.org/ssbd/BooleanData">boolean data</a></li>
+  <li><a href="#/ByteData" title="https://w3id.org/ssbd/ByteData">byte data</a></li>
+  <li><a href="#https://w3id.org/emmo/hume#ChemicalEntity" title="https://w3id.org/emmo/hume#ChemicalEntity"> <span>Chemical Entity</span> </a></li>
+  <li><a href="#/Computation" title="https://w3id.org/ssbd/Computation">computation</a></li>
+  <li><a href="#/ComputationalTool" title="https://w3id.org/ssbd/ComputationalTool">computational tool</a></li>
+  <li><a href="#/Data" title="https://w3id.org/ssbd/Data">data</a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#DataModel" title="https://w3id.org/emmo/domain/datamodel#DataModel"> <span>Data Model</span> </a></li>
+  <li><a href="#/Dataset" title="https://w3id.org/ssbd/Dataset">dataset</a></li>
+  <li><a href="#/DateData" title="https://w3id.org/ssbd/DateData">date data</a></li>
+  <li><a href="#/DateTimeData" title="https://w3id.org/ssbd/DateTimeData">date time data</a></li>
+  <li><a href="#/Datum" title="https://w3id.org/ssbd/Datum">datum</a></li>
+  <li><a href="#/Description" title="https://w3id.org/ssbd/Description">description</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Document" title="http://xmlns.com/foaf/0.1/Document"> <span>Document</span> </a></li>
+  <li><a href="#/DomainOfApplicabilityStatus" title="https://w3id.org/ssbd/DomainOfApplicabilityStatus">domain of applicability status</a></li>
+  <li><a href="#/DoubleData" title="https://w3id.org/ssbd/DoubleData">double data</a></li>
+  <li><a href="#/FloatData" title="https://w3id.org/ssbd/FloatData">float data</a></li>
+  <li><a href="#/Indicator" title="https://w3id.org/ssbd/Indicator">indicator</a></li>
+  <li><a href="#/IndicatorAssessment" title="https://w3id.org/ssbd/IndicatorAssessment">indicator assessment</a></li>
+  <li><a href="#/Information" title="https://w3id.org/ssbd/Information">information</a></li>
+  <li><a href="#/IntData" title="https://w3id.org/ssbd/IntData">int data</a></li>
+  <li><a href="#/IntegerData" title="https://w3id.org/ssbd/IntegerData">integer data</a></li>
+  <li><a href="#https://w3id.org/emmo/hume#IntentionalAgent" title="https://w3id.org/emmo/hume#IntentionalAgent"> <span>Intentional Agent</span> </a></li>
+  <li><a href="#/Interpreter" title="https://w3id.org/ssbd/Interpreter">interpreter</a></li>
+  <li><a href="#/LongData" title="https://w3id.org/ssbd/LongData">long data</a></li>
+  <li><a href="#/MaterialProcess" title="https://w3id.org/ssbd/MaterialProcess">material process</a></li>
+  <li><a href="#/Matter" title="https://w3id.org/ssbd/Matter">matter</a></li>
+  <li><a href="#/Measurement" title="https://w3id.org/ssbd/Measurement">measurement</a></li>
+  <li><a href="#/Model" title="https://w3id.org/ssbd/Model">model</a></li>
+  <li><a href="#/NumericalData" title="https://w3id.org/ssbd/NumericalData">numerical data</a></li>
+  <li><a href="#/Object" title="https://w3id.org/ssbd/Object">object</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Organization" title="http://xmlns.com/foaf/0.1/Organization"> <span>Organization</span> </a></li>
+  <li><a href="#/Participant" title="https://w3id.org/ssbd/Participant">participant</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person"> <span>Person</span> </a></li>
+  <li><a href="#/Process" title="https://w3id.org/ssbd/Process">process</a></li>
+  <li><a href="#/Profiler" title="https://w3id.org/ssbd/Profiler">profiler</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/Project" title="http://xmlns.com/foaf/0.1/Project"> <span>Project</span> </a></li>
+  <li><a href="#/Property" title="https://w3id.org/ssbd/Property">property</a></li>
+  <li><a href="#/QSARSoftware" title="https://w3id.org/ssbd/QSARSoftware">QSAR software</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource"> <span>Resource</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/RightsStatement" title="http://purl.org/dc/terms/RightsStatement"> <span>Rights Statement</span> </a></li>
+  <li><a href="#/ShortData" title="https://w3id.org/ssbd/ShortData">short data</a></li>
+  <li><a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a></li>
+  <li><a href="#/Software" title="https://w3id.org/ssbd/Software">software</a></li>
+  <li><a href="#/SpecifiedAssessment" title="https://w3id.org/ssbd/SpecifiedAssessment">specified assessment</a></li>
+  <li><a href="#/SSbDAssessment" title="https://w3id.org/ssbd/SSbDAssessment">SSbD assessment</a></li>
+  <li><a href="#/SSbDDimension" title="https://w3id.org/ssbd/SSbDDimension">SSbD dimension</a></li>
+  <li><a href="#https://w3id.org/emmo/hume#Substance" title="https://w3id.org/emmo/hume#Substance"> <span>Substance</span> </a></li>
+  <li><a href="#/SymbolicData" title="https://w3id.org/ssbd/SymbolicData">symbolic data</a></li>
+  <li><a href="#/TierLevel" title="https://w3id.org/ssbd/TierLevel">tier level</a></li>
+  <li><a href="#/TimeData" title="https://w3id.org/ssbd/TimeData">time data</a></li>
+  <li><a href="#/Toxicity" title="https://w3id.org/ssbd/Toxicity">toxicity</a></li>
+  <li><a href="#https://w3id.org/emmo/hume#UnintentionalAgent" title="https://w3id.org/emmo/hume#UnintentionalAgent"> <span>Unintentional Agent</span> </a></li>
+ </ul>
+ <div class="entity" id="/Assessment">
+  <h3>assessment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Assessment</p>
+  <div class="comment">
+   <span class="markdown">The process of evaluating the quality, performance, impact or other properties of a substance, product, or process. The result of an assessment is one or more properties.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Process" title="https://w3id.org/ssbd/Process">process</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/SSbDAssessment" title="https://w3id.org/ssbd/SSbDAssessment">SSbD assessment</a> <sup class="type-c" title="class">c</sup>, <a href="#/IndicatorAssessment" title="https://w3id.org/ssbd/IndicatorAssessment">indicator assessment</a> <sup class="type-c" title="class">c</sup>, <a href="#/SpecifiedAssessment" title="https://w3id.org/ssbd/SpecifiedAssessment">specified assessment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/assesses" title="https://w3id.org/ssbd/assesses">assesses</a> <sup class="type-op" title="object property">op</sup>, <a href="#/outputsIndicator" title="https://w3id.org/ssbd/outputsIndicator">outputs indicator</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/BooleanData">
+  <h3>boolean data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/BooleanData</p>
+  <div class="comment">
+   <span class="markdown">A symbolic data representing a boolean number.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/SymbolicData" title="https://w3id.org/ssbd/SymbolicData">symbolic data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/ByteData">
+  <h3>byte data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/ByteData</p>
+  <div class="comment">
+   <span class="markdown">A data representing a 8-bit integer number.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/ShortData" title="https://w3id.org/ssbd/ShortData">short data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/hume#ChemicalEntity">
+  <h3>Chemical Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/hume#ChemicalEntity</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Matter" title="https://w3id.org/ssbd/Matter">matter</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Computation">
+  <h3>computation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Computation</p>
+  <div class="comment">
+   <span class="markdown">A process that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Process" title="https://w3id.org/ssbd/Process">process</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/hasSoftware" title="https://w3id.org/ssbd/hasSoftware">has software</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/ComputationalTool">
+  <h3>computational tool<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/ComputationalTool</p>
+  <div class="comment">
+   <span class="markdown">A software that performs a computation.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>Gromacs is a computational tool that solves Newton's equations of motion.</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Data">
+  <h3>data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Data</p>
+  <div class="comment">
+   <span class="markdown">Contrast from variation of properties that is encoded by an agent and that can be decoded by another agent according to a specific rule.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/emmo/domain/datamodel#DataModel" title="https://w3id.org/emmo/domain/datamodel#DataModel">Data Model</a> <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Document" title="http://xmlns.com/foaf/0.1/Document">Document</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>, <a href="#/Dataset" title="https://w3id.org/ssbd/Dataset">dataset</a> <sup class="type-c" title="class">c</sup>, <a href="#/Datum" title="https://w3id.org/ssbd/Datum">datum</a> <sup class="type-c" title="class">c</sup>, <a href="#/Information" title="https://w3id.org/ssbd/Information">information</a> <sup class="type-c" title="class">c</sup>, <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>, <a href="#/SymbolicData" title="https://w3id.org/ssbd/SymbolicData">symbolic data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/dataValue" title="https://w3id.org/ssbd/dataValue">data value</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#DataModel">
+  <h3>Data Model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#DataModel</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Dataset">
+  <h3>dataset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Dataset</p>
+  <div class="comment">
+   <span class="markdown">Encoded data made of more than one datum.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/hasDatum" title="https://w3id.org/ssbd/hasDatum">has datum</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/DateData">
+  <h3>date data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/DateData</p>
+  <div class="comment">
+   <span class="markdown">A symbolic data representing date. Format: YYYY-MM-DD (followed by an optional time zone offset, e.g. +01:00 for Central Europe).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/SymbolicData" title="https://w3id.org/ssbd/SymbolicData">symbolic data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/DateTimeData">
+  <h3>date time data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/DateTimeData</p>
+  <div class="comment">
+   <span class="markdown">A symbolic data representing datetime. Format: YYYY-MM-DDThh:mm:ss (followed by an optional time zone offset, e.g. +01:00 for Central Europe).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/SymbolicData" title="https://w3id.org/ssbd/SymbolicData">symbolic data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Datum">
+  <h3>datum<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Datum</p>
+  <div class="comment">
+   <span class="markdown">A self-consistent encoded data entity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/hasDatum" title="https://w3id.org/ssbd/hasDatum">has datum</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Description">
+  <h3>description<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Description</p>
+  <div class="comment">
+   <span class="markdown">A collection of properties that depicts an object.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/isDescriptionFor" title="https://w3id.org/ssbd/isDescriptionFor">is description for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/hasDescription" title="https://w3id.org/ssbd/hasDescription">has description</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Document">
+  <h3>Document<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Document</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/RightsStatement" title="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/documentation" title="https://w3id.org/ssbd/documentation">documentation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/DomainOfApplicabilityStatus">
+  <h3>domain of applicability status<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/DomainOfApplicabilityStatus</p>
+  <div class="comment">
+   <span class="markdown">A result of a model or software indicating whether an input is within the applicability domain of the model or software. Applicability domain refers to the range of conditions and limitations within which a model can be reliably applied. It is a critical factor in determining the accuracy and validity of a model, as it defines the scope of its predictions and identifies potential sources of uncertainty. The process of defining the applicability domain involves assessing the model's performance under different conditions and establishing the boundaries of its predictive capabilities.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#/inDomain" title="https://w3id.org/ssbd/inDomain">in domain</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/outOfDomain" title="https://w3id.org/ssbd/outOfDomain">out of domain</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/undefined" title="https://w3id.org/ssbd/undefined">undefined</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/DoubleData">
+  <h3>double data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/DoubleData</p>
+  <div class="comment">
+   <span class="markdown">A symbolic data representing a 64-bit floating point numbers incl. ±Inf, ±0, NaN.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/NumericalData" title="https://w3id.org/ssbd/NumericalData">numerical data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/FloatData">
+  <h3>float data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/FloatData</p>
+  <div class="comment">
+   <span class="markdown">A symbolic data representing a 32-bit floating point numbers incl. ±Inf, ±0, NaN.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/NumericalData" title="https://w3id.org/ssbd/NumericalData">numerical data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Indicator">
+  <h3>indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Indicator</p>
+  <div class="comment">
+   <span class="markdown">A property that provides information about the state of a system. It simplifies complex realities into measurable values that can guide decisions.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>A thriving rhododhendron plant is and indicator of acidic soil.</pre>
+   </dd>
+   <dd>
+    <pre>Red cabbage turning green/yellow is an indicator of an alkaline solution.</pre>
+   </dd>
+   <dd>
+    <pre>The property pH is an indicator in a context when pH is indicative for something of particular interest.</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/IndicatorAssessment">
+  <h3>indicator assessment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/IndicatorAssessment</p>
+  <div class="comment">
+   <span class="markdown">An assessment that takes an indicator as input and produces a quantitative output that can be used to guide decisions.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Assessment" title="https://w3id.org/ssbd/Assessment">assessment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Information">
+  <h3>information<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Information</p>
+  <div class="comment">
+   <span class="markdown">Data with meaning (semiotic sign).</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Luciano Floridi, Information - A Very Short Introduction, Oxford University Press (2010) ISBN: 9780199551378
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>, <a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/IntData">
+  <h3>int data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/IntData</p>
+  <div class="comment">
+   <span class="markdown">A data representing a 32-bit integer number.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/LongData" title="https://w3id.org/ssbd/LongData">long data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/ShortData" title="https://w3id.org/ssbd/ShortData">short data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/IntegerData">
+  <h3>integer data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/IntegerData</p>
+  <div class="comment">
+   <span class="markdown">A data representing an arbritrary sized integer number.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/NumericalData" title="https://w3id.org/ssbd/NumericalData">numerical data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/LongData" title="https://w3id.org/ssbd/LongData">long data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/hume#IntentionalAgent">
+  <h3>Intentional Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/hume#IntentionalAgent</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/performedBy" title="https://w3id.org/ssbd/performedBy">performed by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Interpreter">
+  <h3>interpreter<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Interpreter</p>
+  <div class="comment">
+   <span class="markdown">The agent that connects the sign to an entity in a semiotic (meaning-making) process.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>A person (interpreter) that measures the length (sign) of an pencil (object).</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/providesInterpretation" title="https://w3id.org/ssbd/providesInterpretation">provides interpretation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/isInterpretedBy" title="https://w3id.org/ssbd/isInterpretedBy">is interpreted by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/LongData">
+  <h3>long data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/LongData</p>
+  <div class="comment">
+   <span class="markdown">A data representing a 64-bit integer number.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/IntegerData" title="https://w3id.org/ssbd/IntegerData">integer data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/IntData" title="https://w3id.org/ssbd/IntData">int data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/MaterialProcess">
+  <h3>material process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/MaterialProcess</p>
+  <div class="comment">
+   <span class="markdown">A process that has material as input and output.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Process" title="https://w3id.org/ssbd/Process">process</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Matter">
+  <h3>matter<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Matter</p>
+  <div class="comment">
+   <span class="markdown">An entity that possess mass and occupies volume.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/emmo/hume#ChemicalEntity" title="https://w3id.org/emmo/hume#ChemicalEntity">Chemical Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/emmo/hume#Substance" title="https://w3id.org/emmo/hume#Substance">Substance</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/chemicalClass" title="https://w3id.org/ssbd/chemicalClass">chemical class</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Measurement">
+  <h3>measurement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Measurement</p>
+  <div class="comment">
+   <span class="markdown">An observation that results in a quantitative comparison of a 'property' of an 'object' with a standard reference based on a well defined mesurement procedure.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Process" title="https://w3id.org/ssbd/Process">process</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Model">
+  <h3>model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Model</p>
+  <div class="comment">
+   <span class="markdown">A useful simplified description of a selected part of the world.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>Newton's law of motion is a model for how a body will move when subjected to forces.
+A mouse can be seen as a model for a human (e.g. in medicine).
+An architectural floor plan is a model of a house.
+</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/implementsModel" title="https://w3id.org/ssbd/implementsModel">implements model</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/NumericalData">
+  <h3>numerical data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/NumericalData</p>
+  <div class="comment">
+   <span class="markdown">A symbolic data representing a numerical value.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/SymbolicData" title="https://w3id.org/ssbd/SymbolicData">symbolic data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/DoubleData" title="https://w3id.org/ssbd/DoubleData">double data</a> <sup class="type-c" title="class">c</sup>, <a href="#/FloatData" title="https://w3id.org/ssbd/FloatData">float data</a> <sup class="type-c" title="class">c</sup>, <a href="#/IntegerData" title="https://w3id.org/ssbd/IntegerData">integer data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Object">
+  <h3>object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Object</p>
+  <div class="comment">
+   <span class="markdown">An entity that has a temporal extension.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://xmlns.com/foaf/0.1/Organization" title="http://xmlns.com/foaf/0.1/Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#http://xmlns.com/foaf/0.1/Project" title="http://xmlns.com/foaf/0.1/Project">Project</a> <sup class="type-c" title="class">c</sup>, <a href="#/Participant" title="https://w3id.org/ssbd/Participant">participant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Organization">
+  <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Organization</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Object" title="https://w3id.org/ssbd/Object">object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Participant">
+  <h3>participant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Participant</p>
+  <div class="comment">
+   <span class="markdown">An object that participates to a process.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>A student during an examination. The student exists both before and after the examination.</pre>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>, <a href="#/Object" title="https://w3id.org/ssbd/Object">object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Object" title="https://w3id.org/ssbd/Object">object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Process">
+  <h3>process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Process</p>
+  <div class="comment">
+   <span class="markdown">An activity with temporal parts.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/Assessment" title="https://w3id.org/ssbd/Assessment">assessment</a> <sup class="type-c" title="class">c</sup>, <a href="#/Computation" title="https://w3id.org/ssbd/Computation">computation</a> <sup class="type-c" title="class">c</sup>, <a href="#/MaterialProcess" title="https://w3id.org/ssbd/MaterialProcess">material process</a> <sup class="type-c" title="class">c</sup>, <a href="#/Measurement" title="https://w3id.org/ssbd/Measurement">measurement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/hasSubProcess" title="https://w3id.org/ssbd/hasSubProcess">has sub process</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/hasSubProcess" title="https://w3id.org/ssbd/hasSubProcess">has sub process</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Profiler">
+  <h3>profiler<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Profiler</p>
+  <div class="comment">
+   <span class="markdown">A software that identify the affiliation of the target chemical(s) to preliminary defined categories (functional groups/alerts).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/Project">
+  <h3>Project<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Project</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Object" title="https://w3id.org/ssbd/Object">object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Property">
+  <h3>property<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Property</p>
+  <div class="comment">
+   <span class="markdown">An "atomic" sign that stands for a characteristic of an object that can be observed or detected in a semiotic process.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/DomainOfApplicabilityStatus" title="https://w3id.org/ssbd/DomainOfApplicabilityStatus">domain of applicability status</a> <sup class="type-c" title="class">c</sup>, <a href="#/Indicator" title="https://w3id.org/ssbd/Indicator">indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#/Toxicity" title="https://w3id.org/ssbd/Toxicity">toxicity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/hasMeasurementUnit" title="https://w3id.org/ssbd/hasMeasurementUnit">has unit</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isPropertyFor" title="https://w3id.org/ssbd/isPropertyFor">is property for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a> <sup class="type-op" title="object property">op</sup>, <a href="#/outputsIndicator" title="https://w3id.org/ssbd/outputsIndicator">outputs indicator</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/QSARSoftware">
+  <h3>QSAR software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/QSARSoftware</p>
+  <div class="comment">
+   <span class="markdown">A software implementing a QSAR model.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#Resource">
+  <h3>Resource<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#Resource</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/documentation" title="https://w3id.org/ssbd/documentation">documentation</a> <sup class="type-op" title="object property">op</sup>, <a href="#/priorRelease" title="https://w3id.org/ssbd/priorRelease">prior release</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/priorRelease" title="https://w3id.org/ssbd/priorRelease">prior release</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/RightsStatement">
+  <h3>Rights Statement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/RightsStatement</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://xmlns.com/foaf/0.1/Document" title="http://xmlns.com/foaf/0.1/Document">Document</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/ShortData">
+  <h3>short data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/ShortData</p>
+  <div class="comment">
+   <span class="markdown">A data representing a 16-bit integer number.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/IntData" title="https://w3id.org/ssbd/IntData">int data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/ByteData" title="https://w3id.org/ssbd/ByteData">byte data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Sign">
+  <h3>sign<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Sign</p>
+  <div class="comment">
+   <span class="markdown">A sign that stands for an entity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/Description" title="https://w3id.org/ssbd/Description">description</a> <sup class="type-c" title="class">c</sup>, <a href="#/Information" title="https://w3id.org/ssbd/Information">information</a> <sup class="type-c" title="class">c</sup>, <a href="#/Model" title="https://w3id.org/ssbd/Model">model</a> <sup class="type-c" title="class">c</sup>, <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/isInterpretedBy" title="https://w3id.org/ssbd/isInterpretedBy">is interpreted by</a> <sup class="type-op" title="object property">op</sup>, <a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Software">
+  <h3>software<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Software</p>
+  <div class="comment">
+   <span class="markdown">All or part of the programs, procedures, rules, and associated documentation of an information processing system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/QSARSoftware" title="https://w3id.org/ssbd/QSARSoftware">QSAR software</a> <sup class="type-c" title="class">c</sup>, <a href="#/ComputationalTool" title="https://w3id.org/ssbd/ComputationalTool">computational tool</a> <sup class="type-c" title="class">c</sup>, <a href="#/Profiler" title="https://w3id.org/ssbd/Profiler">profiler</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#/hasAPI" title="https://w3id.org/ssbd/hasAPI">has API</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#/hasGUI" title="https://w3id.org/ssbd/hasGUI">has GUI</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#/implementsModel" title="https://w3id.org/ssbd/implementsModel">implements model</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isSubmoduleOf" title="https://w3id.org/ssbd/isSubmoduleOf">is submodule of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/hasSoftware" title="https://w3id.org/ssbd/hasSoftware">has software</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isSubmoduleOf" title="https://w3id.org/ssbd/isSubmoduleOf">is submodule of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/SpecifiedAssessment">
+  <h3>specified assessment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/SpecifiedAssessment</p>
+  <div class="comment">
+   <span class="markdown">An assessment that is focused on a specific aspect or dimension of safety and sustainability, such as functionality, safety, or environmental impact.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Assessment" title="https://w3id.org/ssbd/Assessment">assessment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/SSbDAssessment">
+  <h3>SSbD assessment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/SSbDAssessment</p>
+  <div class="comment">
+   <span class="markdown">An assessment of the safety and sustainability of chemicals and materials across their life cycle. Assesses one or more ssbd dimension, through one ore more SSbDSpecifiedAssessments</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Assessment" title="https://w3id.org/ssbd/Assessment">assessment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/SSbDDimension">
+  <h3>SSbD dimension<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/SSbDDimension</p>
+  <div class="comment">
+   <span class="markdown">The superclass of all dimensions relevant for SSbD assessments. Such dimensions can be considered thematic areas.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/hume#Substance">
+  <h3>Substance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/hume#Substance</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Matter" title="https://w3id.org/ssbd/Matter">matter</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/SymbolicData">
+  <h3>symbolic data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/SymbolicData</p>
+  <div class="comment">
+   <span class="markdown">The class for entities which stands for a specific data format expressed using a symbolic encoding.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#/BooleanData" title="https://w3id.org/ssbd/BooleanData">boolean data</a> <sup class="type-c" title="class">c</sup>, <a href="#/DateData" title="https://w3id.org/ssbd/DateData">date data</a> <sup class="type-c" title="class">c</sup>, <a href="#/DateTimeData" title="https://w3id.org/ssbd/DateTimeData">date time data</a> <sup class="type-c" title="class">c</sup>, <a href="#/NumericalData" title="https://w3id.org/ssbd/NumericalData">numerical data</a> <sup class="type-c" title="class">c</sup>, <a href="#/TimeData" title="https://w3id.org/ssbd/TimeData">time data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/TierLevel">
+  <h3>tier level<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/TierLevel</p>
+  <div class="comment">
+   <span class="markdown">Represent a tiered, iterative framework for evaluating chemical and material safety from early innovation to production.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/inTierLevel" title="https://w3id.org/ssbd/inTierLevel">in tier level</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#/tierlevel1" title="https://w3id.org/ssbd/tierlevel1">ideation/design</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/tierlevel2" title="https://w3id.org/ssbd/tierlevel2">lab phase/development</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#/tierlevel3" title="https://w3id.org/ssbd/tierlevel3">up-scaling/production</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/TimeData">
+  <h3>time data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/TimeData</p>
+  <div class="comment">
+   <span class="markdown">A symbolic data representing time. Format: hh:mm:ss (followed by an optional time zone offset, e.g. +01:00 for Central Europe).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/SymbolicData" title="https://w3id.org/ssbd/SymbolicData">symbolic data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/Toxicity">
+  <h3>toxicity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/Toxicity</p>
+  <div class="comment">
+   <span class="markdown">A descriptor for a substance to cause harmful health effects.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/hume#UnintentionalAgent">
+  <h3>Unintentional Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/hume#UnintentionalAgent</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#/performedWith" title="https://w3id.org/ssbd/performedWith">performed with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights"> <span>access Rights</span> </a></li>
+  <li><a href="#/assesses" title="https://w3id.org/ssbd/assesses">assesses</a></li>
+  <li><a href="#/attributed" title="https://w3id.org/ssbd/attributed">attributed</a></li>
+  <li><a href="#/causal" title="https://w3id.org/ssbd/causal">causal</a></li>
+  <li><a href="#/causedBy" title="https://w3id.org/ssbd/causedBy">caused by</a></li>
+  <li><a href="#/chemicalClass" title="https://w3id.org/ssbd/chemicalClass">chemical class</a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#https://w3id.org/emmo/application/datadoc#curator" title="https://w3id.org/emmo/application/datadoc#curator"> <span>curator</span> </a></li>
+  <li><a href="#https://w3id.org/emmo/domain/datamodel#datamodel" title="https://w3id.org/emmo/domain/datamodel#datamodel"> <span>datamodel</span> </a></li>
+  <li><a href="#/documentation" title="https://w3id.org/ssbd/documentation">documentation</a></li>
+  <li><a href="#/equalsTo" title="https://w3id.org/ssbd/equalsTo">equals to</a></li>
+  <li><a href="#/hasDatum" title="https://w3id.org/ssbd/hasDatum">has datum</a></li>
+  <li><a href="#/hasDescription" title="https://w3id.org/ssbd/hasDescription">has description</a></li>
+  <li><a href="#/hasInput" title="https://w3id.org/ssbd/hasInput">has input</a></li>
+  <li><a href="#/hasJunctionPart" title="https://w3id.org/ssbd/hasJunctionPart">has junction part</a></li>
+  <li><a href="#/hasOutput" title="https://w3id.org/ssbd/hasOutput">has output</a></li>
+  <li><a href="#/hasPart" title="https://w3id.org/ssbd/hasPart">has part</a></li>
+  <li><a href="#/hasParticipant" title="https://w3id.org/ssbd/hasParticipant">has participant</a></li>
+  <li><a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a></li>
+  <li><a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a></li>
+  <li><a href="#/hasSoftware" title="https://w3id.org/ssbd/hasSoftware">has software</a></li>
+  <li><a href="#/hasSpatialPart" title="https://w3id.org/ssbd/hasSpatialPart">has spatial part</a></li>
+  <li><a href="#/hasSubProcess" title="https://w3id.org/ssbd/hasSubProcess">has sub process</a></li>
+  <li><a href="#/hasTemporalPart" title="https://w3id.org/ssbd/hasTemporalPart">has temporal part</a></li>
+  <li><a href="#/hasMeasurementUnit" title="https://w3id.org/ssbd/hasMeasurementUnit">has unit</a></li>
+  <li><a href="#/implementsModel" title="https://w3id.org/ssbd/implementsModel">implements model</a></li>
+  <li><a href="#/inTierLevel" title="https://w3id.org/ssbd/inTierLevel">in tier level</a></li>
+  <li><a href="#/isAfter" title="https://w3id.org/ssbd/isAfter">is after</a></li>
+  <li><a href="#/isDescriptionFor" title="https://w3id.org/ssbd/isDescriptionFor">is description for</a></li>
+  <li><a href="#/isInterpretedBy" title="https://w3id.org/ssbd/isInterpretedBy">is interpreted by</a></li>
+  <li><a href="#/isOutputOf" title="https://w3id.org/ssbd/isOutputOf">is output of</a></li>
+  <li><a href="#/isOvercrossedBy" title="https://w3id.org/ssbd/isOvercrossedBy">is overcrossed by</a></li>
+  <li><a href="#/isPropertyFor" title="https://w3id.org/ssbd/isPropertyFor">is property for</a></li>
+  <li><a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a></li>
+  <li><a href="#/isSubmoduleOf" title="https://w3id.org/ssbd/isSubmoduleOf">is submodule of</a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#/notOverlaps" title="https://w3id.org/ssbd/notOverlaps">not overlaps</a></li>
+  <li><a href="#/outputsIndicator" title="https://w3id.org/ssbd/outputsIndicator">outputs indicator</a></li>
+  <li><a href="#/overlaps" title="https://w3id.org/ssbd/overlaps">overlaps</a></li>
+  <li><a href="#/parthood" title="https://w3id.org/ssbd/parthood">parthood</a></li>
+  <li><a href="#/participatesTo" title="https://w3id.org/ssbd/participatesTo">participates to</a></li>
+  <li><a href="#/performedBy" title="https://w3id.org/ssbd/performedBy">performed by</a></li>
+  <li><a href="#/performedWith" title="https://w3id.org/ssbd/performedWith">performed with</a></li>
+  <li><a href="#/priorRelease" title="https://w3id.org/ssbd/priorRelease">prior release</a></li>
+  <li><a href="#/processedFrom" title="https://w3id.org/ssbd/processedFrom">processed from</a></li>
+  <li><a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a></li>
+  <li><a href="#/providesInterpretation" title="https://w3id.org/ssbd/providesInterpretation">provides interpretation</a></li>
+  <li><a href="#http://purl.org/dc/terms/rightsHolder" title="http://purl.org/dc/terms/rightsHolder"> <span>rights Holder</span> </a></li>
+  <li><a href="#/semiotical" title="https://w3id.org/ssbd/semiotical">semiotical</a></li>
+  <li><a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a></li>
+  <li><a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme"> <span>theme</span> </a></li>
+  <li><a href="#/used" title="https://w3id.org/ssbd/used">used</a></li>
+  <li><a href="#/wasAssociatedWith" title="https://w3id.org/ssbd/wasAssociatedWith">was associated with</a></li>
+  <li><a href="#/wasAttributedTo" title="https://w3id.org/ssbd/wasAttributedTo">was attributed to</a></li>
+  <li><a href="#/wasDerivedFrom" title="https://w3id.org/ssbd/wasDerivedFrom">was derived from</a></li>
+  <li><a href="#/wasGeneratedBy" title="https://w3id.org/ssbd/wasGeneratedBy">was generated by</a></li>
+  <li><a href="#/wasInformedBy" title="https://w3id.org/ssbd/wasInformedBy">was informed by</a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/accessRights">
+  <h3>access Rights<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/accessRights</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/assesses">
+  <h3>assesses<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/assesses</p>
+  <div class="comment">
+   <span class="markdown">Relates an assessment to the entity it assesses. Can e.g. be a semantically defined thematic area.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Assessment" title="https://w3id.org/ssbd/Assessment">assessment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/attributed">
+  <h3>attributed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/attributed</p>
+  <div class="comment">
+   <span class="markdown">Relates an agent to an entity via an activity that both the agent and entity participates to.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/causedBy" title="https://w3id.org/ssbd/causedBy">caused by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/wasAttributedTo" title="https://w3id.org/ssbd/wasAttributedTo">was attributed to</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/causal">
+  <h3>causal<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/causal</p>
+  <div class="comment">
+   <span class="markdown">The root of all causal SSbD relations.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/causedBy" title="https://w3id.org/ssbd/causedBy">caused by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/causedBy">
+  <h3>caused by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/causedBy</p>
+  <div class="comment">
+   <span class="markdown">A relation between an entity that causally affects the subject.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>John yesterday is the cause of John today, is an example of temporal-like causality. The desk supporting my laptop is a space-like causality.</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/causal" title="https://w3id.org/ssbd/causal">causal</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/attributed" title="https://w3id.org/ssbd/attributed">attributed</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isAfter" title="https://w3id.org/ssbd/isAfter">is after</a> <sup class="type-op" title="object property">op</sup>, <a href="#/priorRelease" title="https://w3id.org/ssbd/priorRelease">prior release</a> <sup class="type-op" title="object property">op</sup>, <a href="#/wasAttributedTo" title="https://w3id.org/ssbd/wasAttributedTo">was attributed to</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/chemicalClass">
+  <h3>chemical class<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/chemicalClass</p>
+  <div class="comment">
+   <span class="markdown">Relates a thing to a chemical class that the thing is relevant for.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Matter" title="https://w3id.org/ssbd/Matter">matter</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/wasAttributedTo" title="https://w3id.org/ssbd/wasAttributedTo">was attributed to</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/application/datadoc#curator">
+  <h3>curator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/application/datadoc#curator</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/wasAttributedTo" title="https://w3id.org/ssbd/wasAttributedTo">was attributed to</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/emmo/domain/datamodel#datamodel">
+  <h3>datamodel<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/emmo/domain/datamodel#datamodel</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasDescription" title="https://w3id.org/ssbd/hasDescription">has description</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/documentation">
+  <h3>documentation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/documentation</p>
+  <div class="comment">
+   <span class="markdown">Relates a resource to a page or document documenting this resource.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a> <sup class="type-op" title="object property">op</sup>, <a href="http://xmlns.com/foaf/0.1/page" target="_blank" title="http://xmlns.com/foaf/0.1/page">page</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://xmlns.com/foaf/0.1/Document" title="http://xmlns.com/foaf/0.1/Document">Document</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/equalsTo">
+  <h3>equals to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/equalsTo</p>
+  <div class="comment">
+   <span class="markdown">The relation between two indeviduals representing the same entity.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    The main purpose of this relation is to locically define hasProperPart.
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> symmetric</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasPart" title="https://w3id.org/ssbd/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasDatum">
+  <h3>has datum<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasDatum</p>
+  <div class="comment">
+   <span class="markdown">Relates a dataset to its datum.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Dataset" title="https://w3id.org/ssbd/Dataset">dataset</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Datum" title="https://w3id.org/ssbd/Datum">datum</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasDescription">
+  <h3>has description<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasDescription</p>
+  <div class="comment">
+   <span class="markdown">Connects a thing to a description (i.e. collection of properties) of the thing.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/emmo/domain/datamodel#datamodel" title="https://w3id.org/emmo/domain/datamodel#datamodel">datamodel</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasMeasurementUnit" title="https://w3id.org/ssbd/hasMeasurementUnit">has unit</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Description" title="https://w3id.org/ssbd/Description">description</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/isDescriptionFor" title="https://w3id.org/ssbd/isDescriptionFor">is description for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasInput">
+  <h3>has input<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasInput</p>
+  <div class="comment">
+   <span class="markdown">Relates an activity to an entity that is input to the activity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/used" title="https://w3id.org/ssbd/used">used</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasJunctionPart">
+  <h3>has junction part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasJunctionPart</p>
+  <div class="comment">
+   <span class="markdown">The part is connected with the rest item or members with both hasNext (or its inverse) and hasContact relations.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasOutput">
+  <h3>has output<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasOutput</p>
+  <div class="comment">
+   <span class="markdown">Relates an activity to an entity that is the output of the activity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/outputsIndicator" title="https://w3id.org/ssbd/outputsIndicator">outputs indicator</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/isOutputOf" title="https://w3id.org/ssbd/isOutputOf">is output of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasPart">
+  <h3>has part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasPart</p>
+  <div class="comment">
+   <span class="markdown">The primitive relation that express the concept of an entity being part of another one.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> reflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/dc/terms/hasPart" target="_blank" title="http://purl.org/dc/terms/hasPart">has Part</a> <sup class="type-op" title="object property">op</sup>, <a href="#/overlaps" title="https://w3id.org/ssbd/overlaps">overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/equalsTo" title="https://w3id.org/ssbd/equalsTo">equals to</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasParticipant">
+  <h3>has participant<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasParticipant</p>
+  <div class="comment">
+   <span class="markdown">The relation between a process and an object participating to it, i.e. that is relevant to the process itself.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasProperPart">
+  <h3>has proper part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasProperPart</p>
+  <div class="comment">
+   <span class="markdown">The relation between an entity and one of its parts, when both entities are distinct.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasPart" title="https://w3id.org/ssbd/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/hasDatum" title="https://w3id.org/ssbd/hasDatum">has datum</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasJunctionPart" title="https://w3id.org/ssbd/hasJunctionPart">has junction part</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasParticipant" title="https://w3id.org/ssbd/hasParticipant">has participant</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasSpatialPart" title="https://w3id.org/ssbd/hasSpatialPart">has spatial part</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasSubProcess" title="https://w3id.org/ssbd/hasSubProcess">has sub process</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasTemporalPart" title="https://w3id.org/ssbd/hasTemporalPart">has temporal part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasProperty">
+  <h3>has property<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasProperty</p>
+  <div class="comment">
+   <span class="markdown">Connects a thing to one of its properties.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/accessRights" title="http://purl.org/dc/terms/accessRights">access Rights</a> <sup class="type-op" title="object property">op</sup>, <a href="#/inTierLevel" title="https://w3id.org/ssbd/inTierLevel">in tier level</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">license</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">theme</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/isPropertyFor" title="https://w3id.org/ssbd/isPropertyFor">is property for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasSoftware">
+  <h3>has software<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasSoftware</p>
+  <div class="comment">
+   <span class="markdown">Relates a computation to the software used to perform the computation.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/performedBy" title="https://w3id.org/ssbd/performedBy">performed by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Computation" title="https://w3id.org/ssbd/Computation">computation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasSpatialPart">
+  <h3>has spatial part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasSpatialPart</p>
+  <div class="comment">
+   <span class="markdown">A proper part of a whole, whose parts always cover the full temporal extension of the whole within a spatial interval.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasSubProcess">
+  <h3>has sub process<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasSubProcess</p>
+  <div class="comment">
+   <span class="markdown">The relation between a process and one of its process parts.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Process" title="https://w3id.org/ssbd/Process">process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Process" title="https://w3id.org/ssbd/Process">process</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasTemporalPart">
+  <h3>has temporal part<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasTemporalPart</p>
+  <div class="comment">
+   <span class="markdown">A relation that identify a proper item part of the whole, whose parts always cover the full spatial extension of the whole within a time interval.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperPart" title="https://w3id.org/ssbd/hasProperPart">has proper part</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasMeasurementUnit">
+  <h3>has unit<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasMeasurementUnit</p>
+  <div class="comment">
+   <span class="markdown">Connects a property to its unit.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasDescription" title="https://w3id.org/ssbd/hasDescription">has description</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/implementsModel">
+  <h3>implements model<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/implementsModel</p>
+  <div class="comment">
+   <span class="markdown">Relates a software to the model it implements.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Model" title="https://w3id.org/ssbd/Model">model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/inTierLevel">
+  <h3>in tier level<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/inTierLevel</p>
+  <div class="comment">
+   <span class="markdown">Relate a thing to an SSbD tier level.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/TierLevel" title="https://w3id.org/ssbd/TierLevel">tier level</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isAfter">
+  <h3>is after<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isAfter</p>
+  <div class="comment">
+   <span class="markdown">A one-directional relation between an entity that affects the subject.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/causedBy" title="https://w3id.org/ssbd/causedBy">caused by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/processedFrom" title="https://w3id.org/ssbd/processedFrom">processed from</a> <sup class="type-op" title="object property">op</sup>, <a href="#/wasInformedBy" title="https://w3id.org/ssbd/wasInformedBy">was informed by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isDescriptionFor">
+  <h3>is description for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isDescriptionFor</p>
+  <div class="comment">
+   <span class="markdown">Connects a description to a thing.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Description" title="https://w3id.org/ssbd/Description">description</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/hasDescription" title="https://w3id.org/ssbd/hasDescription">has description</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isInterpretedBy">
+  <h3>is interpreted by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isInterpretedBy</p>
+  <div class="comment">
+   <span class="markdown">Connects a sign (e.g. a property) to an interpreter.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/semiotical" title="https://w3id.org/ssbd/semiotical">semiotical</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Interpreter" title="https://w3id.org/ssbd/Interpreter">interpreter</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isOutputOf">
+  <h3>is output of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isOutputOf</p>
+  <div class="comment">
+   <span class="markdown">The inverse of hasOutput. Relates an entity to an activity of which the entity is an output.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/wasGeneratedBy" title="https://w3id.org/ssbd/wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/hasOutput" title="https://w3id.org/ssbd/hasOutput">has output</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isOvercrossedBy">
+  <h3>is overcrossed by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isOvercrossedBy</p>
+  <div class="comment">
+   <span class="markdown">The relation between an entity that overlaps another without having it as part.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/overlaps" title="https://w3id.org/ssbd/overlaps">overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isPropertyFor">
+  <h3>is property for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isPropertyFor</p>
+  <div class="comment">
+   <span class="markdown">Connects a property to a thing.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isRepresentedBy">
+  <h3>is represented by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isRepresentedBy</p>
+  <div class="comment">
+   <span class="markdown">Connects a thing to a sign that stands for the thing.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/semiotical" title="https://w3id.org/ssbd/semiotical">semiotical</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/documentation" title="https://w3id.org/ssbd/documentation">documentation</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasDescription" title="https://w3id.org/ssbd/hasDescription">has description</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/rightsHolder" title="http://purl.org/dc/terms/rightsHolder">rights Holder</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/isSubmoduleOf">
+  <h3>is submodule of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/isSubmoduleOf</p>
+  <div class="comment">
+   <span class="markdown">A parthood relation that relates a submodule of a software to the software.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/parthood" title="https://w3id.org/ssbd/parthood">parthood</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/notOverlaps">
+  <h3>not overlaps<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/notOverlaps</p>
+  <div class="comment">
+   <span class="markdown">The relation between two individuals that does not share any parts.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> symmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/parthood" title="https://w3id.org/ssbd/parthood">parthood</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/outputsIndicator">
+  <h3>outputs indicator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/outputsIndicator</p>
+  <div class="comment">
+   <span class="markdown">An output property of the Assessment that is intended to be an indicator in the given context.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasOutput" title="https://w3id.org/ssbd/hasOutput">has output</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Assessment" title="https://w3id.org/ssbd/Assessment">assessment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#/Property" title="https://w3id.org/ssbd/Property">property</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/overlaps">
+  <h3>overlaps<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/overlaps</p>
+  <div class="comment">
+   <span class="markdown">The relation between two individuals representing entities that share at least one of their parts.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> symmetric, reflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/parthood" title="https://w3id.org/ssbd/parthood">parthood</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/hasPart" title="https://w3id.org/ssbd/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isOvercrossedBy" title="https://w3id.org/ssbd/isOvercrossedBy">is overcrossed by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/parthood">
+  <h3>parthood<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/parthood</p>
+  <div class="comment">
+   <span class="markdown">The root of SSbD parthood relations.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/isSubmoduleOf" title="https://w3id.org/ssbd/isSubmoduleOf">is submodule of</a> <sup class="type-op" title="object property">op</sup>, <a href="#/notOverlaps" title="https://w3id.org/ssbd/notOverlaps">not overlaps</a> <sup class="type-op" title="object property">op</sup>, <a href="#/overlaps" title="https://w3id.org/ssbd/overlaps">overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/participatesTo">
+  <h3>participates to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/participatesTo</p>
+  <div class="comment">
+   <span class="markdown">Relation an entity to an activity that it interacts with.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/performedBy">
+  <h3>performed by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/performedBy</p>
+  <div class="comment">
+   <span class="markdown">Relates an activity to an intentional agent that drives the activity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/wasAssociatedWith" title="https://w3id.org/ssbd/wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/hasSoftware" title="https://w3id.org/ssbd/hasSoftware">has software</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/emmo/hume#IntentionalAgent" title="https://w3id.org/emmo/hume#IntentionalAgent">Intentional Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/performedWith">
+  <h3>performed with<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/performedWith</p>
+  <div class="comment">
+   <span class="markdown">Relates an activity to an unintentional agent that drives the activity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/wasAssociatedWith" title="https://w3id.org/ssbd/wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/emmo/hume#UnintentionalAgent" title="https://w3id.org/emmo/hume#UnintentionalAgent">Unintentional Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/priorRelease">
+  <h3>prior release<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/priorRelease</p>
+  <div class="comment">
+   <span class="markdown">Relates a resource to its most resent earlier release.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/causedBy" title="https://w3id.org/ssbd/causedBy">caused by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/dcat#Resource" title="http://www.w3.org/ns/dcat#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/processedFrom">
+  <h3>processed from<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/processedFrom</p>
+  <div class="comment">
+   <span class="markdown">Indirect relation that relates the output of an activity to its input.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isAfter" title="https://w3id.org/ssbd/isAfter">is after</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/wasDerivedFrom" title="https://w3id.org/ssbd/wasDerivedFrom">was derived from</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/properOverlaps">
+  <h3>proper overlaps<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/properOverlaps</p>
+  <div class="comment">
+   <span class="markdown">The relation between two entities that overlaps and neither of them is a part of the other.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isOvercrossedBy" title="https://w3id.org/ssbd/isOvercrossedBy">is overcrossed by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/assesses" title="https://w3id.org/ssbd/assesses">assesses</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasInput" title="https://w3id.org/ssbd/hasInput">has input</a> <sup class="type-op" title="object property">op</sup>, <a href="#/hasOutput" title="https://w3id.org/ssbd/hasOutput">has output</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isOutputOf" title="https://w3id.org/ssbd/isOutputOf">is output of</a> <sup class="type-op" title="object property">op</sup>, <a href="#/participatesTo" title="https://w3id.org/ssbd/participatesTo">participates to</a> <sup class="type-op" title="object property">op</sup>, <a href="#/wasAssociatedWith" title="https://w3id.org/ssbd/wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/providesInterpretation">
+  <h3>provides interpretation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/providesInterpretation</p>
+  <div class="comment">
+   <span class="markdown">A relation that connects the interpreter to the referent in a semiotic process.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/semiotical" title="https://w3id.org/ssbd/semiotical">semiotical</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Interpreter" title="https://w3id.org/ssbd/Interpreter">interpreter</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/rightsHolder">
+  <h3>rights Holder<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/rightsHolder</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/semiotical">
+  <h3>semiotical<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/semiotical</p>
+  <div class="comment">
+   <span class="markdown">The base of all semiotic relations.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/isInterpretedBy" title="https://w3id.org/ssbd/isInterpretedBy">is interpreted by</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a> <sup class="type-op" title="object property">op</sup>, <a href="#/providesInterpretation" title="https://w3id.org/ssbd/providesInterpretation">provides interpretation</a> <sup class="type-op" title="object property">op</sup>, <a href="#/standsFor" title="https://w3id.org/ssbd/standsFor">stands for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/standsFor">
+  <h3>stands for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/standsFor</p>
+  <div class="comment">
+   <span class="markdown">Connects a sign (e.g. a property) to a thing (a 'referent').</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/semiotical" title="https://w3id.org/ssbd/semiotical">semiotical</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/chemicalClass" title="https://w3id.org/ssbd/chemicalClass">chemical class</a> <sup class="type-op" title="object property">op</sup>, <a href="#/implementsModel" title="https://w3id.org/ssbd/implementsModel">implements model</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isDescriptionFor" title="https://w3id.org/ssbd/isDescriptionFor">is description for</a> <sup class="type-op" title="object property">op</sup>, <a href="#/isPropertyFor" title="https://w3id.org/ssbd/isPropertyFor">is property for</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Sign" title="https://w3id.org/ssbd/Sign">sign</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/isRepresentedBy" title="https://w3id.org/ssbd/isRepresentedBy">is represented by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/dcat#theme">
+  <h3>theme<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#theme</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasProperty" title="https://w3id.org/ssbd/hasProperty">has property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/used">
+  <h3>used<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/used</p>
+  <div class="comment">
+   <span class="markdown">Relates an activity to an entity that it used.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>For example, :baking :used :spoon, :egg, :oven .</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/hasInput" title="https://w3id.org/ssbd/hasInput">has input</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/prov#used" target="_blank" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/wasAssociatedWith">
+  <h3>was associated with<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/wasAssociatedWith</p>
+  <div class="comment">
+   <span class="markdown">Relates an activity to an agent that had some (unspecified) responsibility for the occurence of this activity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/properOverlaps" title="https://w3id.org/ssbd/properOverlaps">proper overlaps</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/prov#wasAssociatedWith" target="_blank" title="http://www.w3.org/ns/prov#wasAssociatedWith">was Associated With</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#/performedBy" title="https://w3id.org/ssbd/performedBy">performed by</a> <sup class="type-op" title="object property">op</sup>, <a href="#/performedWith" title="https://w3id.org/ssbd/performedWith">performed with</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/wasAttributedTo">
+  <h3>was attributed to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/wasAttributedTo</p>
+  <div class="comment">
+   <span class="markdown">Relates an entity to an agent via an activity that both the entity and agent participates to.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/causedBy" title="https://w3id.org/ssbd/causedBy">caused by</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/prov#wasAttributedTo" target="_blank" title="http://www.w3.org/ns/prov#wasAttributedTo">was Attributed To</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/emmo/application/datadoc#curator" title="https://w3id.org/emmo/application/datadoc#curator">curator</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#/attributed" title="https://w3id.org/ssbd/attributed">attributed</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/wasDerivedFrom">
+  <h3>was derived from<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/wasDerivedFrom</p>
+  <div class="comment">
+   <span class="markdown">Indirect relation that relates the output entity of an activity to its input entity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/processedFrom" title="https://w3id.org/ssbd/processedFrom">processed from</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/prov#wasDerivedFrom" target="_blank" title="http://www.w3.org/ns/prov#wasDerivedFrom">was Derived From</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/wasGeneratedBy">
+  <h3>was generated by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/wasGeneratedBy</p>
+  <div class="comment">
+   <span class="markdown">Relates an entity to the activity it was generated from.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isOutputOf" title="https://w3id.org/ssbd/isOutputOf">is output of</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/prov#wasGeneratedBy" target="_blank" title="http://www.w3.org/ns/prov#wasGeneratedBy">was Generated By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/wasInformedBy">
+  <h3>was informed by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/wasInformedBy</p>
+  <div class="comment">
+   <span class="markdown">A one-directional relation between an activity that affects the subject activity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> asymmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#/isAfter" title="https://w3id.org/ssbd/isAfter">is after</a> <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/prov#wasInformedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInformedBy">was Informed By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#/dataValue" title="https://w3id.org/ssbd/dataValue">data value</a></li>
+  <li><a href="#/hasAPI" title="https://w3id.org/ssbd/hasAPI">has API</a></li>
+  <li><a href="#/hasGUI" title="https://w3id.org/ssbd/hasGUI">has GUI</a></li>
+ </ul>
+ <div class="entity" id="/dataValue">
+  <h3>data value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/dataValue</p>
+  <div class="comment">
+   <span class="markdown">Relates a data individual to its literal value.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Data" title="https://w3id.org/ssbd/Data">data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasAPI">
+  <h3>has API<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasAPI</p>
+  <div class="comment">
+   <span class="markdown">Whether the software has an API.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="/hasGUI">
+  <h3>has GUI<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/hasGUI</p>
+  <div class="comment">
+   <span class="markdown">Whether the software has a GUI.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#/Software" title="https://w3id.org/ssbd/Software">software</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract"> <span>abstract</span> </a></li>
+  <li><a href="#http://www.w3.org/2000/01/rdf-schema#altLabel" title="http://www.w3.org/2000/01/rdf-schema#altLabel"> <span>alt Label</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#altLabel" title="http://www.w3.org/2004/02/skos/core#altLabel"> <span>alt Label</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation"> <span>bibliographic Citation</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#definition" title="http://www.w3.org/2004/02/skos/core#definition"> <span>definition</span> </a></li>
+  <li><a href="#http://purl.org/ontology/bibo/doi" title="http://purl.org/ontology/bibo/doi"> <span>doi</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#editorialNote" title="http://www.w3.org/2004/02/skos/core#editorialNote"> <span>editorial Note</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#example" title="http://www.w3.org/2004/02/skos/core#example"> <span>example</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/hasFormat" title="http://purl.org/dc/terms/hasFormat"> <span>has Format</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage"> <span>homepage</span> </a></li>
+  <li><a href="#https://w3id.org/widoco/vocab#introduction" title="https://w3id.org/widoco/vocab#introduction"> <span>introduction</span> </a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/logo" title="http://xmlns.com/foaf/0.1/logo"> <span>logo</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#prefLabel" title="http://www.w3.org/2004/02/skos/core#prefLabel"> <span>pref Label</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher"> <span>publisher</span> </a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote"> <span>scope Note</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source"> <span>source</span> </a></li>
+  <li><a href="#http://data.europa.eu/r5r/status" title="http://data.europa.eu/r5r/status"> <span>status</span> </a></li>
+  <li><a href="#http://purl.org/ontology/bibo/status" title="http://purl.org/ontology/bibo/status"> <span>status</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/usageNote" title="http://purl.org/vocab/vann/usageNote"> <span>usage Note</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/terms/abstract">
+  <h3>abstract<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#altLabel">
+  <h3>alt Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#altLabel</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#altLabel">
+  <h3>alt Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#altLabel</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/bibliographicCitation">
+  <h3>bibliographic Citation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/created">
+  <h3>created<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#definition">
+  <h3>definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#definition</p>
+ </div>
+ <div class="entity" id="http://purl.org/ontology/bibo/doi">
+  <h3>doi<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/bibo/doi</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#editorialNote">
+  <h3>editorial Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#editorialNote</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#example">
+  <h3>example<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#example</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/hasFormat">
+  <h3>has Format<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/hasFormat</p>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/homepage">
+  <h3>homepage<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/homepage</p>
+ </div>
+ <div class="entity" id="https://w3id.org/widoco/vocab#introduction">
+  <h3>introduction<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/widoco/vocab#introduction</p>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/logo">
+  <h3>logo<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/logo</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#prefLabel">
+  <h3>pref Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#prefLabel</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/publisher">
+  <h3>publisher<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#scopeNote">
+  <h3>scope Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#scopeNote</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/source">
+  <h3>source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/source</p>
+ </div>
+ <div class="entity" id="http://data.europa.eu/r5r/status">
+  <h3>status<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://data.europa.eu/r5r/status</p>
+ </div>
+ <div class="entity" id="http://purl.org/ontology/bibo/status">
+  <h3>status<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/bibo/status</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/usageNote">
+  <h3>usage Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/usageNote</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#/core/core" title="https://w3id.org/ssbd/core/core"> <span>core</span> </a></li>
+  <li><a href="#/tierlevel1" title="https://w3id.org/ssbd/tierlevel1">ideation/design</a></li>
+  <li><a href="#/inDomain" title="https://w3id.org/ssbd/inDomain">in domain</a></li>
+  <li><a href="#/tierlevel2" title="https://w3id.org/ssbd/tierlevel2">lab phase/development</a></li>
+  <li><a href="#/outOfDomain" title="https://w3id.org/ssbd/outOfDomain">out of domain</a></li>
+  <li><a href="#/undefined" title="https://w3id.org/ssbd/undefined">undefined</a></li>
+  <li><a href="#/tierlevel3" title="https://w3id.org/ssbd/tierlevel3">up-scaling/production</a></li>
+ </ul>
+ <div class="entity" id="/core/core">
+  <h3>core<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/core/core</p>
+  <dl class="description">
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0001-8869-3718" target="_blank" title="https://orcid.org/0000-0001-8869-3718">0000 0001 8869 3718</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0002-0719-4907" target="_blank" title="https://orcid.org/0000-0002-0719-4907">0000 0002 0719 4907</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0002-1560-809X" target="_blank" title="https://orcid.org/0000-0002-1560-809X">0000 0002 1560 809 X</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0002-1849-5246" target="_blank" title="https://orcid.org/0000-0002-1849-5246">0000 0002 1849 5246</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0002-2705-2068" target="_blank" title="https://orcid.org/0000-0002-2705-2068">0000 0002 2705 2068</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0002-3372-4801" target="_blank" title="https://orcid.org/0000-0002-3372-4801">0000 0002 3372 4801</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0002-6396-0848" target="_blank" title="https://orcid.org/0000-0002-6396-0848">0000 0002 6396 0848</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-op" title="object property">op</sup> <a href="https://orcid.org/0000-0002-8053-8198" target="_blank" title="https://orcid.org/0000-0002-8053-8198">0000 0002 8053 8198</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/tierlevel1">
+  <h3>ideation/design<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/tierlevel1</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#/TierLevel" title="https://w3id.org/ssbd/TierLevel">tier level</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"ideation"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/inDomain">
+  <h3>in domain<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/inDomain</p>
+  <div class="comment">
+   <span class="markdown">The input is within the valid domain.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#/DomainOfApplicabilityStatus" title="https://w3id.org/ssbd/DomainOfApplicabilityStatus">domain of applicability status</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The input is within the valid domain."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"inDomain"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/tierlevel2">
+  <h3>lab phase/development<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/tierlevel2</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#/TierLevel" title="https://w3id.org/ssbd/TierLevel">tier level</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"lab_phase"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/outOfDomain">
+  <h3>out of domain<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/outOfDomain</p>
+  <div class="comment">
+   <span class="markdown">The input is outside the valid doamin.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#/DomainOfApplicabilityStatus" title="https://w3id.org/ssbd/DomainOfApplicabilityStatus">domain of applicability status</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The input is outside the valid doamin."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"outOfDomain"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/undefined">
+  <h3>undefined<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/undefined</p>
+  <div class="comment">
+   <span class="markdown">The applicability of the given input is undefined.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#/DomainOfApplicabilityStatus" title="https://w3id.org/ssbd/DomainOfApplicabilityStatus">domain of applicability status</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"The applicability of the given input is undefined."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"undefined"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="/tierlevel3">
+  <h3>up-scaling/production<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ssbd/tierlevel3</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#/TierLevel" title="https://w3id.org/ssbd/TierLevel">tier level</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"upscaling"@en</span>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
+ <h3 id="swrlrules" class="list">SWRL rules</h3>
+ <ul class="hlist">
+  <li><a href="#d4e2788">Rule #1</a></li>
+  <li><a href="#d4e2863">Rule #2</a></li>
+  <li><a href="#d4e2938">Rule #3</a></li>
+  <li><a href="#d4e3013">Rule #4</a></li>
+  <li><a href="#d4e3088">Rule #5</a></li>
+ </ul>
+ <div class="entity" id="d4e2788">
+  <h3>Rule #1<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#/hasPart" title="https://w3id.org/ssbd/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>(?x,?y) , <a href="#/hasPart" title="https://w3id.org/ssbd/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>(?y,?z) -&gt; <a href="#/hasPart" title="https://w3id.org/ssbd/hasPart">has part</a> <sup class="type-op" title="object property">op</sup>(?x,?z)</p>
+ </div>
+ <div class="entity" id="d4e2863">
+  <h3>Rule #2<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#/used" title="https://w3id.org/ssbd/used">used</a> <sup class="type-op" title="object property">op</sup>(?x,?y) , <a href="#/wasGeneratedBy" title="https://w3id.org/ssbd/wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>(?y,?z) -&gt; <a href="#/wasInformedBy" title="https://w3id.org/ssbd/wasInformedBy">was informed by</a> <sup class="type-op" title="object property">op</sup>(?x,?z)</p>
+ </div>
+ <div class="entity" id="d4e2938">
+  <h3>Rule #3<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#/wasGeneratedBy" title="https://w3id.org/ssbd/wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>(?x,?y) , <a href="#/used" title="https://w3id.org/ssbd/used">used</a> <sup class="type-op" title="object property">op</sup>(?y,?z) -&gt; <a href="#/processedFrom" title="https://w3id.org/ssbd/processedFrom">processed from</a> <sup class="type-op" title="object property">op</sup>(?x,?z)</p>
+ </div>
+ <div class="entity" id="d4e3013">
+  <h3>Rule #4<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#/wasGeneratedBy" title="https://w3id.org/ssbd/wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>(?x,?y) , <a href="#/wasAssociatedWith" title="https://w3id.org/ssbd/wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>(?y,?z) -&gt; <a href="#/wasAttributedTo" title="https://w3id.org/ssbd/wasAttributedTo">was attributed to</a> <sup class="type-op" title="object property">op</sup>(?x,?z)</p>
+ </div>
+ <div class="entity" id="d4e3088">
+  <h3>Rule #5<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#/wasAssociatedWith" title="https://w3id.org/ssbd/wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>(?y,?x) , <a href="#/used" title="https://w3id.org/ssbd/used">used</a> <sup class="type-op" title="object property">op</sup>(?y,?z) -&gt; <a href="#/attributed" title="https://w3id.org/ssbd/attributed">attributed</a> <sup class="type-op" title="object property">op</sup>(?x,?z)</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
