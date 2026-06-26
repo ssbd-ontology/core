@@ -487,6 +487,15 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:definition "Connects a property to a thing."@en ;
     rdfs:domain :Property .
 
+
+:providesInterpretation rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :semiotical ;
+    skos:prefLabel "providesInterpretation"@en ;
+    rdfs:label "provides interpretation"@en ;
+    skos:definition "A relation that connects the interpreter to the referent in a semiotic process."@en ;
+    rdfs:domain :Interpreter .
+
+
 :implementsModel rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
     rdfs:subPropertyOf :standsFor ;
     skos:prefLabel "implementsModel"@en ;
