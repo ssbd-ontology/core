@@ -74,7 +74,7 @@ ssbd:AquaticToxicityMarine rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BioaccumulationAssessment
 ssbd:BioaccumulationAssessment rdf:type owl:Class ;
-                               rdfs:subClassOf ssbd:ExposureAssessmentEnvironment ;
+                               rdfs:subClassOf ssbd:IntrinsicChemicalHazardAssessment ;
                                rdfs:label "bioaccumulation assessment"@en ;
                                skos:definition "Assessing the bioaccumulation potential of a chemical."@en ;
                                skos:prefLabel "BioaccumulationAssessment"@en ;
@@ -83,7 +83,7 @@ ssbd:BioaccumulationAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BiodegradabilityAssessment
 ssbd:BiodegradabilityAssessment rdf:type owl:Class ;
-                                rdfs:subClassOf ssbd:ExposureAssessmentEnvironment ;
+                                rdfs:subClassOf ssbd:IntrinsicChemicalHazardAssessment ;
                                 rdfs:label "biodegradability assessment"@en ;
                                 skos:definition "Assessing the biodegradability of a chemical or material."@en ;
                                 skos:prefLabel "BiodegradabilityAssessment"@en .
@@ -507,7 +507,7 @@ ssbd:ImmunotoxicityAssessment rdf:type owl:Class ;
 ssbd:IntrinsicChemicalHazardAssessment rdf:type owl:Class ;
                                        rdfs:subClassOf ssbd:SafetyAssessment ;
                                        rdfs:label "intrinsic chemical hazard assessment"@en ;
-                                       skos:definition "Intrinsic Chemical Hazard Assessment is the systematic process of identifying and characterising the inherent harmful properties of a chemical substance, independent of exposure scenarios. This assessment focuses on the substance's capacity to cause adverse effects on human health or the environment under any circumstances."@en ;
+                                       skos:definition "Intrinsic Chemical Hazard Assessment is the systematic process of identifying and characterising the inherent harmful properties of a chemical substance, independent of exposure scenarios. This assessment focuses on the substance's capacity to cause adverse effects on human health or the environment when placed in environmental conditions that trigger it."@en ;
                                        skos:prefLabel "IntrinsicChemicalHazardAssessment"@en .
 
 
