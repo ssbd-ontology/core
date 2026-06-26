@@ -350,7 +350,7 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     rdfs:subPropertyOf :causal, prov:wasInfluencedBy ;
     skos:prefLabel "causedBy"@en ;
     rdfs:label "caused by"@en ;
-    skos:definition "A relation between an entity that causally affects the subject."@en ;
+    skos:definition "A relation between an owl:Thin (entity, activity or agent) that causally affects the subject."@en ;
     skos:example "John yesterday is the cause of John today, is an example of temporal-like causality. The desk supporting my laptop is a space-like causality."@en .
 
 :isAfter rdf:type owl:ObjectProperty, owl:IrreflexiveProperty, owl:AsymmetricProperty ;
