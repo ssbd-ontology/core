@@ -6,10 +6,12 @@ ROOTDIR="$(dirname -- "$(dirname -- "$THISDIR")")"
 
 ontograph \
     --root=Model \
-    --leaves=StatisticalModel,DataBasedModel,PhysicsBasedModel \
+    --leaves=StatisticalModel,DataBasedModel,PhysicsBasedModel,ArtificialIntelligenceModel \
+    --exclude=QSARModel \
     --format=png \
     "$ROOTDIR/models.ttl" \
     "$THISDIR/models-top.png"
+
 
 ontograph \
     --root=PhysicsBasedModel \

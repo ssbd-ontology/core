@@ -21,4 +21,9 @@ test_number_of_rdfslabels:
     - ssbd.Software
     - ssbd.Information
     - ssbd.Model
+
+test_unique_labels:
+  labels:
+    - label
+    - prefLabel
     

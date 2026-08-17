@@ -1,0 +1,101 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo/hume#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix chebi: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix iana: <https://www.iana.org/assignments/media-types/> .
+@prefix kb: <https://pink-project.eu/kb/> .
+
+
+<https://w3id.org/ssbd/core/docs/paracetamol-example> a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/docs/paracetamol-example> ;
+    owl:imports
+        <https://w3id.org/ssbd/core/0.0.1> ;
+    dcterms:abstract "Example of how a modelling case for the toxicity of paracetamol can be represented in the knowledge base."@en ;
+    dcterms:title "Paracetamol example"@en .
+
+
+kb:ToxicityComputationInput a owl:Class ;
+    rdfs:subClassOf ssbd:Dataset, dcat:Dataset ;
+    skos:prefLabel "ToxicityComputationInput"@en ;
+    rdfs:label "toxicity computation input"@en ;
+    skos:definition "Paracetamol dataset that can be used as input to a acute toxicity computation."@en ;
+    dcat:distribution .
+
+kb:ToxicityComputationOutput a owl:Class ;
+    rdfs:subClassOf ssbd:Dataset, dcat:Dataset, [
+        a owl:Restriction ;
+        owl:onProperty :isOutputOf ;
+        owl:someValuesFrom ssbd:AcuteToxicityAssessment
+    ] ;
+    skos:prefLabel "ToxicityComputationOutput"@en ;
+    rdfs:label "toxicity computation output"@en ;
+    skos:definition "Output dataset from an acute toxicity computation."@en .
+
+kb:AcuteToxicityComputation a owl:Class ;
+    rdfs:subClassOf ssbd:Computation, ssbd:AcuteToxicityAssessment, [
+        a owl:Restriction ;
+        owl:onProperty :hasInput ;
+        owl:someValuesFrom ssbd:ToxicityComputationInput
+    ] , [
+        a owl:Restriction ;
+        owl:onProperty :hasOutput ;
+        owl:someValuesFrom ssbd:ToxicityComputationOutput
+    ] , [
+        a owl:Restriction ;
+        owl:onProperty :hasSoftware ;
+        owl:hasValue kb:toxicity_software
+    ] ;
+    skos:prefLabel "AcuteToxicityComputation"@en ;
+    rdfs:label "acute toxicity computation"@en ;
+    skos:definition "Computation of acute toxicity."@en .
+
+kb:paracetamol_dataset a kb:ToxicityComputationInput, [
+        a owl:Restriction ;
+        owl:onProperty :isDescriptionFor ;
+        owl:someValuesFrom chebi:paracetamol
+    ] ;
+    dcterms:title "Toxicity computation input."@en ;
+    dcterms:description "Input dataset for an acute toxicity computation."@en ;
+    dcterms:rightsHolder <https://ror.org/03cx6bg69> ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcat:downloadURL "https://pink-project.eu/data/paracetamol.csv"^^xsd:anyURI ;
+        dcat:mediaType iana:text/csv
+    ].
+
+kb:computed_dataset a kb:ToxicityComputationOutput ;
+    dcterms:title "Toxicity computation input."@en ;
+    dcterms:description "Input dataset for an acute toxicity computation."@en ;
+    prov:wasGeneratedBy kb:acute_toxicity_computation ;
+    ssbd:hasDatum kb:computed_lethalDose50 ;
+    dcterms:rightsHolder <https://ror.org/03cx6bg69> ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcat:downloadURL "https://pink-project.eu/data/computed_dataset.csv"^^xsd:anyURI ;
+        dcat:mediaType iana:text/csv
+    ].
+
+kb:toxicity_software a ssbd:Software , [
+        a owl:Restriction ;
+        owl:onProperty ssbd:implementsModel ;
+        owl:someValuesFrom ssbd:DecisionTree
+    ] ;
+    dcterms:title "Toxicity software."@en ;
+    dcterms:description "A software for calculating acute toxicity of different chemical compounds."@en ;
+    dcterms:rightsHolder <https://ror.org/03cx6bg69> ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> .
+
+kb:acute_toxicity_computation a kb:AcoteToxicityComputation ;
+    prov:used kb:paracetamol_dataset .
+
+kb:computed_lethal_dose50 a ssbd:LethalDose50, emmo:MassFraction ;
+    ssbd:hasMeasurementUnit emmo:MilliGramPerKilogram ;
+    ssbd:dataValue "150"^^xsd:float .

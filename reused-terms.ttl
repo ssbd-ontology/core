@@ -45,6 +45,8 @@ foaf:homepage rdf:type owl:AnnotationProperty .
 ###  http://xmlns.com/foaf/0.1/logo
 foaf:logo rdf:type owl:AnnotationProperty .
 
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/abstract
 dcterms:abstract rdf:type owl:AnnotationProperty .
@@ -189,7 +191,7 @@ dcterms:description a owl:AnnotationProperty ;
     rdfs:label "description"@en .
 
 dcterms:rightsHolder a owl:ObjectProperty ;
-    rdfs:range foaf:Agent ;
+    rdfs:range prov:Agent ;
     dcterms:description "A person or organization owning or managing rights over the resource."@en ;
     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
     rdfs:label "rightsHolder"@en .
@@ -221,7 +223,6 @@ prov:Activity a owl:Class ;
     prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity"^^xsd:anyURI .
 #
 prov:Agent a owl:Class ;
-    rdfs:subClassOf foaf:Agent ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
     rdfs:label "Agent" ;
     skos:prefLabel "Agent"@en ;
@@ -270,7 +271,8 @@ dcat:Resource a owl:Class ;
     rdfs:comment "Resource published or curated by a single agent."@en ;
     rdfs:label "resource"@en ;
     skos:prefLabel "Resource"@en ;
-    skos:scopeNote "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. The instances of this class SHOULD be included in a catalog. The instances of this class SHOULD be included in a catalog. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dcterms:type property to indicate the specific type."@en .
+    skos:scopeNote "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. The instances of this class SHOULD be included in a catalog. The instances of this class SHOULD be included in a catalog. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dcterms:type property to indicate the specific type."@en ;
+    skos:scopeNote "The dcat:Resource is a much narrower concept than rdf:Resource. A rdf:Resource is anything that can be identified with an IRI.  In the context of SSbD, we consider a dcat:Resource to be data (encoded contrast) that can be identified with a unique IRI."@en .
 
 
 # -------------------------------------
@@ -327,14 +329,14 @@ dcterms:creator a owl:ObjectProperty ;
     skos:prefLabel "creator"@en ;
     skos:definition "An entity responsible for producing the resource."@en ;
     rdfs:domain dcat:Resource ;
-    rdfs:range foaf:Agent .
+    rdfs:range prov:Agent .
 
 ddoc:curator a owl:ObjectProperty ;
     skos:prefLabel "curator"@en ;
     skos:definition "The agent that curated the resource."@en ;
     vann:usageNote "Use `ddoc:curationDate` to refer to the date of curation."@en ;
     rdfs:domain dcat:Resource ;
-    rdfs:range foaf:Agent .
+    rdfs:range prov:Agent .
 
 dm:datamodel a owl:ObjectProperty ;
     skos:prefLabel "datamodel"@en ;

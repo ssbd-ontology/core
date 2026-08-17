@@ -106,13 +106,13 @@ The `:attributed` and `:wasAttributedTo` are the inverse of each other.
 
 
 ### Semiotic relations
-Semiotic relations take part in a triadic [semiotic] meaning-making process, where an 'interpreter' connects a 'sign' (e.g. a property) to an entity (called 'referent').
+Semiotic relations take part in a triadic [semiotic] meaning-making process, where an 'interpreter' connects a 'sign' (e.g. a property) to a 'thing' (also called 'referent').
 The semiotic relations in the SSbD Core Ontology are inspirred by EMMO, which in turn is based on the semiotic theory by Charles Sanders Peirce (1839-1914).
 Semiotic relations can be seen as shortcuts that replaces a series of complex causal interactions with a single relation.
 
 <a href="figs/semiotic-relations.svg"><img src="figs/semiotic-relations.svg" alt="Semiotic relations" /></a>
 
-An important use of semiotics is to support the scientific view that a property is not an intrinsic quality of an entity, but something that is measured or determined by an interpreter.
+An important use of semiotics is to support the scientific view that a property is not an intrinsic quality of a  thing, but something that is measured or determined by an interpreter.
 
 For example, to determine the toxicity of a chemical substance you have to measure (or calculate or estimate) it. And the result depends on how it is measured/calculated/estimated.
 
