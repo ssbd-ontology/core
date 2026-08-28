@@ -31,10 +31,10 @@ ssbd:assesses rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/ssbd/AcidificationImpactAssessment
 ssbd:AcidificationImpactAssessment rdf:type owl:Class ;
-                                   rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                   rdfs:label "acidification impact category"@en ;
-                                   skos:definition "The acidification impact category in a Life Cycle Assessment (LCA) provides assessment of the environmental damage caused by acidifying emissions, such as sulphur and nitrogen compounds released into the air."@en ;
-                                   skos:prefLabel "AcidificationImpactCategory"@en ;
+                                   rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                   rdfs:label "acidification impact assessment"@en ;
+                                   skos:definition "The acidification impact assessment in a Life Cycle Assessment (LCA) provides assessment of the environmental damage caused by acidifying emissions, such as sulphur and nitrogen compounds released into the air."@en ;
+                                   skos:prefLabel "AcidificationImpactAssessment"@en ;
                                    skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -49,7 +49,7 @@ ssbd:AcuteToxicityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/AmbientAirQualityAssessment
 ssbd:AmbientAirQualityAssessment rdf:type owl:Class ;
-                                 rdfs:subClassOf ssbd:ExposureAssessmentEnvironment ;
+                                 rdfs:subClassOf ssbd:EnvironmentalQualityAssessment ;
                                  rdfs:label "ambient air quality assessment"@en ;
                                  skos:definition "Assessing the concentration of air pollutants in ambient air."@en ;
                                  skos:prefLabel "AmbientAirQualityAssessment"@en .
@@ -74,7 +74,7 @@ ssbd:AquaticToxicityMarine rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BioaccumulationAssessment
 ssbd:BioaccumulationAssessment rdf:type owl:Class ;
-                               rdfs:subClassOf ssbd:ExposureAssessmentEnvironment ;
+                               rdfs:subClassOf ssbd:IntrinsicChemicalHazardAssessment ;
                                rdfs:label "bioaccumulation assessment"@en ;
                                skos:definition "Assessing the bioaccumulation potential of a chemical."@en ;
                                skos:prefLabel "BioaccumulationAssessment"@en ;
@@ -83,7 +83,7 @@ ssbd:BioaccumulationAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BiodegradabilityAssessment
 ssbd:BiodegradabilityAssessment rdf:type owl:Class ;
-                                rdfs:subClassOf ssbd:ExposureAssessmentEnvironment ;
+                                rdfs:subClassOf ssbd:IntrinsicChemicalHazardAssessment ;
                                 rdfs:label "biodegradability assessment"@en ;
                                 skos:definition "Assessing the biodegradability of a chemical or material."@en ;
                                 skos:prefLabel "BiodegradabilityAssessment"@en .
@@ -91,7 +91,7 @@ ssbd:BiodegradabilityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BiodiversityAssessment
 ssbd:BiodiversityAssessment rdf:type owl:Class ;
-                            rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
+                            rdfs:subClassOf ssbd:EnvironmentalQualityAssessment ;
                             dcterms:source "https://doi.org/10.3732/ajb.1000296" ;
                             rdfs:label "biodiversity assessment"@en ;
                             skos:definition "Biodiversity assessments typically consist of identifying species and evaluating one or more metrics: (1) species richness (number of species), (2) evenness (ratio of various species), and/or (3) character diversity (phenotypic difference)."@en ;
@@ -100,7 +100,7 @@ ssbd:BiodiversityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/BulkModulusAssessment
 ssbd:BulkModulusAssessment rdf:type owl:Class ;
-                           rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
+                           rdfs:subClassOf ssbd:MechanicalPropertyAssessment ;
                            rdfs:label "bulk modulus assessment"@en ;
                            skos:definition "Assessment of bulk modulus of materials."@en ;
                            skos:prefLabel "BulkModulusAssessment"@en .
@@ -118,7 +118,7 @@ ssbd:CarcinogenicityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/DensityAssessment
 ssbd:DensityAssessment rdf:type owl:Class ;
-                       rdfs:subClassOf ssbd:PhysicalPropertiesAssessment ;
+                       rdfs:subClassOf ssbd:PhysicoChemicalPropertyAssessment ;
                        rdfs:label "density assessment"@en ;
                        skos:definition "Assessment of density of chemicals and materials."@en ;
                        skos:prefLabel "DensityAssessment"@en .
@@ -172,9 +172,9 @@ ssbd:EndocrineToxicityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/EnergyConsumptionAssessment
 ssbd:EnergyConsumptionAssessment rdf:type owl:Class ;
-                                 rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
+                                 rdfs:subClassOf ssbd:LifeCycleInventoryAnalysis ;
                                  rdfs:label "energy consumption assessment"@en ;
-                                 skos:definition "Assessing the energy consumption during the life cycle of chemicals and materials."@en ;
+                                 skos:definition "Assessing the energy consumption during the life cycle of a product."@en ;
                                  skos:prefLabel "EnergyConsumptionAssessment"@en .
 
 
@@ -253,7 +253,7 @@ ssbd:ExternalitiesAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/FairRenumerationAssessment
 ssbd:FairRenumerationAssessment rdf:type owl:Class ;
-                                rdfs:subClassOf ssbd:WorkerSocialResponsibilityAssessment ;
+                                rdfs:subClassOf ssbd:WorkerWelfareAssessment ;
                                 rdfs:label "fair renumeration"@en ;
                                 skos:definition "Assessing whether employees are paid as per their skills, experience, responsibilities, and performance. Fair pay ensures a decent lifestyle, to the extent that it covers the material, cultural and social needs generally perceived by people."@en ;
                                 skos:prefLabel "FairRenumerationAssessment"@en .
@@ -267,29 +267,55 @@ ssbd:FlammabiityAssessment rdf:type owl:Class ;
                            skos:prefLabel "FlammabilityAssessment"@en .
 
 
+
+###  https://w3id.org/ssbd/WaterConsumptionAssessment
+ssbd:WaterConsumptionAssessment rdf:type owl:Class ;
+                           rdfs:subClassOf ssbd:LifeCycleInventoryAnalysis ;
+                           rdfs:label "water consumption assessment"@en ;
+                           skos:definition "Assessing the consumption of water during the life cycle of a product."@en ;
+                           skos:prefLabel "WaterConsumptionAssessment"@en .
+
+
+###  https://w3id.org/ssbd/RawMaterialsConsumptionAssessment
+ssbd:RawMaterialsConsumptionAssessment rdf:type owl:Class ;
+                           rdfs:subClassOf ssbd:LifeCycleInventoryAnalysis ;
+                           rdfs:label "raw materials consumption assessment"@en ;
+                           skos:definition "Assessing the consumption of raw materials during the life cycle of a product."@en ;
+                           skos:prefLabel "RawMaterialsConsumptionAssessment"@en .
+
+
+###  https://w3id.org/ssbd/EnvironmentalQualityAssessment
+ssbd:EnvironmentalQualityAssessment rdf:type owl:Class ;
+                           rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
+                           rdfs:label "environmental quality assessment"@en ;
+                           skos:definition "Monitoring of air, water, soil , biodiversity, etc. to assess environmental quality."@en ;
+                           skos:prefLabel "EnvironmentalQualityAssessment"@en .
+
+
+
 ###  https://w3id.org/ssbd/FossilFuelEnergyConsumptionAssessment
 ssbd:FossilFuelEnergyConsumptionAssessment rdf:type owl:Class ;
                                            rdfs:subClassOf ssbd:EnergyConsumptionAssessment ;
                                            rdfs:label "fossil fuel energy consumption assessment"@en ;
-                                           skos:definition "Assessing the non-renewable energy consumption during the life cycle of chemicals and materials."@en ;
+                                           skos:definition "Assessing the non-renewable energy consumption during the life cycle of a product."@en ;
                                            skos:prefLabel "FossilFuelEnergyConsumptionAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/FreshwaterAquaticEcotoxicityImpactAssessment
 ssbd:FreshwaterAquaticEcotoxicityImpactAssessment rdf:type owl:Class ;
-                                                  rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                                  rdfs:label "freshwater aquatic ecotoxicity impact category"@en ;
+                                                  rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                                  rdfs:label "freshwater aquatic ecotoxicity impact assessment"@en ;
                                                   skos:definition "Freshwater aquatic ecotoxicity in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential toxic effects of chemical emissions (from product manufacturing, use, or disposal) on freshwater ecosystems."@en ;
-                                                  skos:prefLabel "FreshwaterAquaticEcotoxicityImpactCategory"@en ;
-                                                  skos:scopeNote "This is a LCA impact category."@en .
+                                                  skos:prefLabel "FreshwaterAquaticEcotoxicityImpactAssessment"@en ;
+                                                  skos:scopeNote "This is an LCA impact category."@en .
 
 
 ###  https://w3id.org/ssbd/FreshwaterEutrophicationImpactAssessment
 ssbd:FreshwaterEutrophicationImpactAssessment rdf:type owl:Class ;
-                                              rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                              rdfs:label "freshwater eutrophication impact category"@en ;
+                                              rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                              rdfs:label "freshwater eutrophication impact assessment"@en ;
                                               skos:definition "Freshwater Eutrophication  in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential impacts of nutrient enrichment which causes detrimental overgrowth of biomass in freshwater ecosystems, leading to oxygen depletion and loss of species."@en ;
-                                              skos:prefLabel "FreshwaterEutrophicationImpactCategory"@en ;
+                                              skos:prefLabel "FreshwaterEutrophicationImpactAssessment"@en ;
                                               skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -327,18 +353,18 @@ ssbd:GenotoxicityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/GlassTransitionTemperatureAssessment
 ssbd:GlassTransitionTemperatureAssessment rdf:type owl:Class ;
-                                          rdfs:subClassOf ssbd:ThermalPropertiesAssessment ;
+                                          rdfs:subClassOf ssbd:ThermodynamicPropertyAssessment ;
                                           rdfs:label "glass transition temperature assessment"@en ;
                                           skos:definition "Assessment of glass transition temperature of materials."@en ;
                                           skos:prefLabel "GlassTransitionTemperatureAssessment"@en .
 
 
-###  https://w3id.org/ssbd/GlobalWarmingAssessment
-ssbd:GlobalWarmingAssessment rdf:type owl:Class ;
-                             rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                             rdfs:label "global warming potential (gwp 100) impact category"@en ;
+###  https://w3id.org/ssbd/GlobalWarmingImpactAssessment
+ssbd:GlobalWarmingImpactAssessment rdf:type owl:Class ;
+                             rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                             rdfs:label "global warming impact assessment"@en ;
                              skos:definition "Global Warming Potential (GWP) impact category measures the potential increase in global temperature caused by greenhouse gas (GHG) emissions (e.g., methane) over  the time frame of 100 years."@en ;
-                             skos:prefLabel "GlobalWarmingPotenial100"@en ;
+                             skos:prefLabel "GlobalWarmingImpactAssessment"@en ;
                              skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -453,19 +479,19 @@ ssbd:HumanHealthRiskAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/HumanToxicityCancerImpactAssessment
 ssbd:HumanToxicityCancerImpactAssessment rdf:type owl:Class ;
-                                         rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                         rdfs:label "human carcinogenic toxicity impact category"@en ;
+                                         rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                         rdfs:label "human carcinogenic toxicity impact assessment"@en ;
                                          skos:definition "Evaluating cancer risks caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil)."@en ;
-                                         skos:prefLabel "HumanToxicityCancerImpactCategory"@en ;
+                                         skos:prefLabel "HumanToxicityCancerImpactAssessment"@en ;
                                          skos:scopeNote "This is a LCA impact category."@en .
 
 
 ###  https://w3id.org/ssbd/HumanToxicityNonCancerImpactAssessment
 ssbd:HumanToxicityNonCancerImpactAssessment rdf:type owl:Class ;
-                                            rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                            rdfs:label "human noncarcinogenic toxicity impact category"@en ;
+                                            rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                            rdfs:label "human noncarcinogenic toxicity impact assessment"@en ;
                                             skos:definition "Evaluating the adverse health effects on human, excluding cancer, caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil)."@en ;
-                                            skos:prefLabel "HumanToxicityNonCancerImpactCategory"@en ;
+                                            skos:prefLabel "HumanToxicityNonCancerImpactAssessment"@en ;
                                             skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -481,7 +507,7 @@ ssbd:ImmunotoxicityAssessment rdf:type owl:Class ;
 ssbd:IntrinsicChemicalHazardAssessment rdf:type owl:Class ;
                                        rdfs:subClassOf ssbd:SafetyAssessment ;
                                        rdfs:label "intrinsic chemical hazard assessment"@en ;
-                                       skos:definition "Intrinsic Chemical Hazard Assessment is the systematic process of identifying and characterising the inherent harmful properties of a chemical substance, independent of exposure scenarios. This assessment focuses on the substance's capacity to cause adverse effects on human health or the environment under any circumstances."@en ;
+                                       skos:definition "Intrinsic Chemical Hazard Assessment is the systematic process of identifying and characterising the inherent harmful properties of a chemical substance, independent of exposure scenarios. This assessment focuses on the substance's capacity to cause adverse effects on human health or the environment when placed in environmental conditions that trigger it."@en ;
                                        skos:prefLabel "IntrinsicChemicalHazardAssessment"@en .
 
 
@@ -494,40 +520,40 @@ ssbd:IrritationAndCorrosion rdf:type owl:Class ;
                             skos:scopeNote """Skin corrosion refers to the production of irreversible damage to the skin; namely, visible necrosis  through the epidermis and into the dermis occurring after exposure to a substance or mixture. Skin irritation refers to the production of reversible damage to the skin occurring after exposure to a  substance or mixture. https://unece.org/transport/dangerous-goods/ghs-rev11-2025"""@en .
 
 
-###  https://w3id.org/ssbd/LifeCycleImpactAssessmentCategory
-ssbd:LifeCycleImpactAssessmentCategory rdf:type owl:Class ;
+###  https://w3id.org/ssbd/LifeCycleImpactAssessmentCategorisation
+ssbd:LifeCycleImpactAssessmentCategorisation rdf:type owl:Class ;
                                        rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
                                        dcterms:source "https://www.iso.org/obp/ui/en/#iso:std:iso:14040:ed-2:v1:en" ;
-                                       rdfs:label "life cycle assessment impact category"@en ;
-                                       skos:definition "A LCA impact category is a class representing environmental issues of concern (including resource use) to which life cycle inventory analysis results may be assigned based on some common quality or qualities."@en ;
-                                       skos:prefLabel "LifeCycleAssessmentImpactCategory"@en .
+                                       rdfs:label "life cycle impact assessment categorisation"@en ;
+                                       skos:definition "A LCA impact category is a class representing environmental issues of concern to which life cycle inventory analysis results may be assigned based on some common quality or qualities."@en ;
+                                       skos:prefLabel "LifeCycleImpactAssessmentCategorisation"@en .
 
 
 ###  https://w3id.org/ssbd/MarineAquaticEcotoxicityImpactAssessment
 ssbd:MarineAquaticEcotoxicityImpactAssessment rdf:type owl:Class ;
-                                              rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                              rdfs:label "marine aquatic ecotoxicity impact category"@en ;
+                                              rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                              rdfs:label "marine aquatic ecotoxicity impact assessment"@en ;
                                               skos:definition "Marine aquatic ecotoxicity in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential toxic effects of chemical emissions (from product manufacturing, use, or disposal) on marine ecosystems."@en ;
-                                              skos:prefLabel "MarineAquaticEcotoxicityImpactCategory"@en ;
+                                              skos:prefLabel "MarineAquaticEcotoxicityImpactAssessment"@en ;
                                               skos:scopeNote "This is a LCA impact category." .
 
 
 ###  https://w3id.org/ssbd/MarineEutrophicationImpactAssessment
 ssbd:MarineEutrophicationImpactAssessment rdf:type owl:Class ;
-                                          rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                          rdfs:label "marine eutrophication impact category"@en ;
+                                          rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                          rdfs:label "marine eutrophication impact assessment"@en ;
                                           skos:definition "Marine Eutrophication in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential impacts of nutrient enrichment in marine ecosystems leading to hypoxic waters causing far-reaching impacts, such as loss of biodiversity, habitat degradation, coral bleaching."@en ;
-                                          skos:prefLabel "MarineEutrophicationImpactCategory"@en ;
+                                          skos:prefLabel "MarineEutrophicationImpactAssessment"@en ;
                                           skos:scopeNote "This is a LCA impact category." .
 
 
-###  https://w3id.org/ssbd/MechanicalPropertiesAssessment
-ssbd:MechanicalPropertiesAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/MechanicalPropertyAssessment
+ssbd:MechanicalPropertyAssessment rdf:type owl:Class ;
                                     rdfs:subClassOf ssbd:FunctionalityAssessment ;
-                                    rdfs:label "mechanical properties assessment"@en ;
-                                    skos:definition "Assessment of mechanical properties of chemicals and materials."@en ,
-                                                    "Assessment of mechanical properties of materials."@en ;
-                                    skos:prefLabel "MechanicalPropertiesAssessment"@en .
+                                    rdfs:label "mechanical property assessment"@en ;
+                                    skos:definition "Assessment of mechanical properties of chemicals and materials."@en ;
+                                    skos:scopeNote "Quantities defined in ISO 80000-4 are typically evaluated in a mechanical property assessment."@en ;
+                                    skos:prefLabel "MechanicalPropertyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/MutagenicityAssessment
@@ -567,7 +593,7 @@ ssbd:OccupationalHealthandSafetyAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/OccupationalNonfatalInjuriesRate
 ssbd:OccupationalNonfatalInjuriesRate rdf:type owl:Class ;
-                                      rdfs:subClassOf ssbd:SafeWorkingConditionsAssessment ;
+                                      rdfs:subClassOf ssbd:WorkplaceSafetyAssessment ;
                                       rdfs:label "occupational non-fatal injuries rate"@en ;
                                       skos:prefLabel "OccupationalNonfatalInjuriesRate"@en .
 
@@ -577,28 +603,57 @@ ssbd:OxidisingPropetiesAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:IntrinsicChemicalHazardAssessment ;
                                   rdfs:label "oxidising properties assessment"@en ;
                                   skos:definition "Assessment of oxidising properties of chemicals."@en ;
-                                  skos:prefLabel "OxidisingPropertiesAssessment"@en .
+                                  skos:prefLabel "OxidisingPropertyAssessment"@en .
 
 
-###  https://w3id.org/ssbd/PhotochemicalOzoneFormationAssessment
-ssbd:PhotochemicalOzoneFormationAssessment rdf:type owl:Class ;
-                                           rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                           rdfs:label "photochemical ozone formation impact category"@en ;
+###  https://w3id.org/ssbd/PhotochemicalOzoneFormationImpactAssessment
+ssbd:PhotochemicalOzoneFormationImpactAssessment rdf:type owl:Class ;
+                                           rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                           rdfs:label "photochemical ozone formation impact assessment"@en ;
                                            skos:definition "This measures the potential of emissions like volatile organic compounds (VOCs) to form ground-level ozone, impacting human health and vegetation."@en ;
-                                           skos:prefLabel "PhotochemicalOzoneFormationImpactCategory"@en .
+                                           skos:prefLabel "PhotochemicalOzoneFormationImpactAssessment"@en .
 
 
-###  https://w3id.org/ssbd/PhysicalPropertiesAssessment
-ssbd:PhysicalPropertiesAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/PhysicoChemicalPropertyAssessment
+ssbd:PhysicoChemicalPropertyAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:FunctionalityAssessment ;
-                                  rdfs:label "physical properties assessment"@en ;
-                                  skos:definition "Assessment of physical properties of chemicals and materials."@en ;
-                                  skos:prefLabel "PhysicalPropertiesAssessment"@en .
+                                  rdfs:label "physicochemical property assessment"@en ;
+                                  skos:definition "Assessment of physicochemical properties of chemicals and materials."@en ;
+                                  skos:scopeNote "Quantities defined in ISO 80000-9 are typically evaluated in an physicochemical property assessment."@en ;
+                                  skos:prefLabel "PhysicoChemicalPropertyAssessment"@en .
+
+
+###  https://w3id.org/ssbd/ElectromagneticPropertyAssessment
+ssbd:ElectroMagneticPropertyAssessment rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:FunctionalityAssessment ;
+                                  rdfs:label "electromagnetic property assessment"@en ;
+                                  skos:definition "Assessment of electromagnetic properties of chemicals and materials."@en ;
+                                  skos:scopeNote "Quantities defined in ISO 80000-6 are typically evaluated in an electromagnetic property assessment."@en ;
+                                  skos:prefLabel "ElectromagneticPropertyAssessment"@en .
+
+
+###  https://w3id.org/ssbd/ThermodynamicPropertyAssessment
+ssbd:ThermodynamicPropertyAssessment rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:FunctionalityAssessment ;
+                                  rdfs:label "thermodynamic property assessment"@en ;
+                                  skos:definition "Assessment of thermodynamic properties of chemicals and materials."@en ;
+                                  skos:scopeNote "Quantities defined in ISO 80000-5 are typically evaluated in a thermodynamic property assessment."@en ;
+                                  skos:prefLabel "ThermodynamicPropertyAssessment"@en .
+
+###  https://w3id.org/ssbd/LightAndRadiationPropertyAssessment
+ssbd:LightAndRadiationPropertyAssessment rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:FunctionalityAssessment ;
+                                  rdfs:label "light and radiation property assessment"@en ;
+                                  skos:definition "Assessment of light and radiation (optical) properties of chemicals and materials."@en ;
+                                  skos:scopeNote "Quantities defined in ISO 80000-7 are typically evaluated in a light and radiation property assessment."@en ;
+                                  skos:prefLabel "LightAndRadiationPropertyAssessment"@en .
+
+
 
 
 ###  https://w3id.org/ssbd/PoissonsRatioAssessment
 ssbd:PoissonsRatioAssessment rdf:type owl:Class ;
-                             rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
+                             rdfs:subClassOf ssbd:MechanicalPropertyAssessment ;
                              rdfs:label "Poisson's ratio assessment"@en ;
                              skos:definition "Assessment of Poisson's ratio of materials."@en ;
                              skos:prefLabel "PoissonsRatioAssessment"@en ;
@@ -625,7 +680,7 @@ ssbd:RenalToxicityAssessment rdf:type owl:Class ;
 ssbd:RenewableEnergyConsumptionAssessment rdf:type owl:Class ;
                                           rdfs:subClassOf ssbd:EnergyConsumptionAssessment ;
                                           rdfs:label "renewable energy consumption assessment"@en ;
-                                          skos:definition "Assessing the renewable energy consumption during the life cycle of chemicals and materials."@en ;
+                                          skos:definition "Assessing the renewable energy consumption during the life cycle of a product."@en ;
                                           skos:prefLabel "RenewableEnergyConsumptionAssessment"@en .
 
 
@@ -639,49 +694,49 @@ ssbd:ReproductiveToxicityAssessment rdf:type owl:Class ;
                                     skos:scopeNote """Reproductive toxicity includes adverse effects on sexual function and fertility in adult males and females as well as developmental toxicity in the offspring."""@en .
 
 
-###  https://w3id.org/ssbd/ResourceAssessmentFossilFuel
-ssbd:ResourceAssessmentFossilFuel rdf:type owl:Class ;
-                                  rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
-                                  rdfs:label "fossil fuel resource scarcity"@en ;
+###  https://w3id.org/ssbd/FossilResourcesScarcityImpactAssessment
+ssbd:FossilResourcesScarcityImpactAssessment rdf:type owl:Class ;
+                                  rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                  rdfs:label "fossil resources scarcity impact assessment"@en ;
                                   skos:definition "Measuring the depletion of finite, non-renewable hydrocarbon resources (coal, oil, natural gas)."@en ;
-                                  skos:prefLabel "ResourceAssessmentFossilFuel"@en ;
+                                  skos:prefLabel "FossilResourcesScarcityImpactAssessment"@en ;
                                   skos:scopeNote "This is a LCA impact category."@en .
 
 
-###  https://w3id.org/ssbd/ResourceAssessmentLand
-ssbd:ResourceAssessmentLand rdf:type owl:Class ;
-                            rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
-                            rdfs:label "land use"@en ;
+###  https://w3id.org/ssbd/LandUseChangeImpactAssessment
+ssbd:LandUseChangeImpactAssessment rdf:type owl:Class ;
+                            rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                            rdfs:label "land use change impact assessment"@en ;
                             skos:definition "Assessing the changes in soil quality  due to change in land use."@en ;
-                            skos:prefLabel "ResourceAssessmentLand"@en ;
+                            skos:prefLabel "LandUseChangeImpactAssessment"@en ;
                             skos:scopeNote "This is a LCA impact category."@en .
 
 
-###  https://w3id.org/ssbd/ResourceAssessmentMinerals
-ssbd:ResourceAssessmentMinerals rdf:type owl:Class ;
-                                rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
-                                rdfs:label "minerals resource assessment"@en ;
+###  https://w3id.org/ssbd/MineralResourcesScarcityImpactAssessment
+ssbd:MineralResourcesScarcityImpactAssessment rdf:type owl:Class ;
+                                rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                rdfs:label "mineral resources scarcity impact assessment"@en ;
                                 skos:definition "Assessing surplus ore potential."@en ;
-                                skos:prefLabel "ResourceAssessmentMinerals"@en ;
+                                skos:prefLabel "MineralResourcesScarcityImpactAssessment"@en ;
                                 skos:scopeNote "This is a LCA impact category."@en .
 
 
-###  https://w3id.org/ssbd/ResourceAssessmentWater
-ssbd:ResourceAssessmentWater rdf:type owl:Class ;
-                             rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
-                             rdfs:label "water resource assessment"@en ;
+###  https://w3id.org/ssbd/WaterResourceDepletionImpactAssessment
+ssbd:WaterResourceDepletionImpactAssessment rdf:type owl:Class ;
+                             rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                             rdfs:label "water resource depletion impact assessment"@en ;
                              skos:definition "Quantification of the reduction in  freshwater availability and assessing impact of water stress on human health."@en ;
-                             skos:prefLabel "ResourceAssessmentWater"@en ;
+                             skos:prefLabel "WaterResourceDepletionImpactAssessment"@en ;
                              skos:scopeNote "This is a LCA impact category."@en .
 
 
 
-###  https://w3id.org/ssbd/SafeWorkingConditionsAssessment
-ssbd:SafeWorkingConditionsAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/WorkplaceSafetyAssessment
+ssbd:WorkplaceSafetyAssessment rdf:type owl:Class ;
                                      rdfs:subClassOf ssbd:OccupationalHealthandSafetyAssessment ;
-                                     rdfs:label "safe working conditions assessment"@en ;
+                                     rdfs:label "workplace safety assessment"@en ;
                                      skos:definition "Assessing safety performance in manufacturing  facilities using various Key Performance Indicators, such as Lost Time Injury  Frequency Rate (LTIFR), near-miss reporting rates."@en ;
-                                     skos:prefLabel "SafeWorkingConditionsAssessment"@en .
+                                     skos:prefLabel "WorkplaceSafetyAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/SafetyAssessment
@@ -764,18 +819,27 @@ ssbd:SocialSustainabilityDimension rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/SoilQualityAssessment
 ssbd:SoilQualityAssessment rdf:type owl:Class ;
-                           rdfs:subClassOf ssbd:ExposureAssessmentEnvironment ;
+                           rdfs:subClassOf ssbd:EnvironmentalQualityAssessment ;
                            rdfs:label "soil quality assessment"@en ;
                            skos:definition "Assessing the concentration of pollutants in soil."@en ;
                            skos:prefLabel "SoilQualityAssessment"@en .
 
 
-###  https://w3id.org/ssbd/StratosphericOzoneLayerDepletionAssessment
-ssbd:StratosphericOzoneLayerDepletionAssessment rdf:type owl:Class ;
-                                                rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                                rdfs:label "stratospheric ozone layer depletion impact category"@en ;
+###  https://w3id.org/ssbd/LifeCycleInventoryAnalysis
+ssbd:LifeCycleInventoryAnalysis rdf:type owl:Class ;
+                           rdfs:subClassOf ssbd:EnvironmentalSustainabilityAssessment ;
+                           rdfs:label "life cycle inventory analysis"@en ;
+                           skos:definition "Phase of life cycle assessment involving the compilation and quantification of inputs and outputs for a product throughout its life cycle."@en ;
+                           skos:prefLabel "LifeCycleInventoryAnalysis"@en .
+
+
+
+###  https://w3id.org/ssbd/StratosphericOzoneLayerDepletionImpactAssessment
+ssbd:StratosphericOzoneLayerDepletionImpactAssessment rdf:type owl:Class ;
+                                                rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                                rdfs:label "stratospheric ozone layer depletion impact assessment"@en ;
                                                 skos:definition "Ozone layer depletion impact category consists of quantitative assessment of potential destruction of the stratospheric ozone layer primarily caused by ozone-depleting substances (ODSs) such as CFCs and HCFCs, which release chlorine or bromine atoms that accelerate the breakdown of ozone molecules."@en ;
-                                                skos:prefLabel "StratosphericOzoneLayerDepletionImpactCategory"@en ;
+                                                skos:prefLabel "StratosphericOzoneLayerDepletionImpactAssessment"@en ;
                                                 skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -803,10 +867,10 @@ ssbd:SustainabilityDimension rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/TerrestrialEutrophicationImpactAssessment
 ssbd:TerrestrialEutrophicationImpactAssessment rdf:type owl:Class ;
-                                               rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategory ;
-                                               rdfs:label "terrestrial eutrophication impact category"@en ;
+                                               rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                               rdfs:label "terrestrial eutrophication impact assessment"@en ;
                                                skos:definition "Terrestrial Eutrophication  in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential impacts of nutrient enrichment in soils."@en ;
-                                               skos:prefLabel "TerrestrialEutrophicationImpactCategory"@en ;
+                                               skos:prefLabel "TerrestrialEutrophicationImpactAssessment"@en ;
                                                skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -819,33 +883,25 @@ ssbd:TerrestrialToxicity rdf:type owl:Class ;
                          skos:prefLabel "TerrestrialToxicity"@en .
 
 
-###  https://w3id.org/ssbd/ThermalPropertiesAssessment
-ssbd:ThermalPropertiesAssessment rdf:type owl:Class ;
-                                 rdfs:subClassOf ssbd:FunctionalityAssessment ;
-                                 rdfs:label "thermal properties assessment"@en ;
-                                 skos:definition "Assessment of thermal properties of chemicals and materials."@en ;
-                                 skos:prefLabel "ThermalPropertiesAssessment"@en .
-
-
 ###  https://w3id.org/ssbd/WaterQualityAssessment
 ssbd:WaterQualityAssessment rdf:type owl:Class ;
-                            rdfs:subClassOf ssbd:ExposureAssessmentEnvironment ;
+                            rdfs:subClassOf ssbd:EnvironmentalQualityAssessment ;
                             rdfs:label "water quality assessment"@en ;
                             skos:definition "Assessing the concentration of water pollutants in water."@en ;
                             skos:prefLabel "WaterQualityAssessment"@en .
 
 
-###  https://w3id.org/ssbd/WorkerSocialResponsibilityAssessment
-ssbd:WorkerSocialResponsibilityAssessment rdf:type owl:Class ;
+###  https://w3id.org/ssbd/WorkerWelfareAssessment
+ssbd:WorkerWelfareAssessment rdf:type owl:Class ;
                                           rdfs:subClassOf ssbd:SocialSustainabilityAssessment ;
-                                          rdfs:label "worker social responsibility assessment"@en ;
-                                          skos:definition "Assessing whether workers are given fair renumeration, have decent working hours or as per regulations, are allowed freedom of association and form collective bargaining , etc."@en ;
-                                          skos:prefLabel "WorkerSocialResponsibilityAssessment"@en .
+                                          rdfs:label "worker welfare assessment"@en ;
+                                          skos:definition "A systematic evaluation of workplace conditions, labour rights, and employee well-being (e.g. fair renumeration, decent working hours as per regulations, freedom of association and form collective bargaining)."@en ;
+                                          skos:prefLabel "WorkerWelfareAssessment"@en .
 
 
 ###  https://w3id.org/ssbd/WorkingHoursAssessment
 ssbd:WorkingHoursAssessment rdf:type owl:Class ;
-                            rdfs:subClassOf ssbd:WorkerSocialResponsibilityAssessment ;
+                            rdfs:subClassOf ssbd:WorkerWelfareAssessment ;
                             rdfs:label "working hours"@en ;
                             skos:definition "Assessing whether employees and workers are working as per the laws."@en ;
                             skos:prefLabel "WorkingHoursAssessment"@en .
@@ -853,7 +909,7 @@ ssbd:WorkingHoursAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/YoungsModulusAssessment
 ssbd:YoungsModulusAssessment rdf:type owl:Class ;
-                             rdfs:subClassOf ssbd:MechanicalPropertiesAssessment ;
+                             rdfs:subClassOf ssbd:MechanicalPropertyAssessment ;
                              rdfs:label "Young's modulus assessment"@en ;
                              skos:definition "Assessment of Young's modulus of materials."@en ;
                              skos:prefLabel "YoungsModulusAssessment"@en .
