@@ -155,7 +155,8 @@ ssbd:EconomicSustainabilityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/EconomicSustainabilityDimension
 ssbd:EconomicSustainabilityDimension rdf:type owl:Class ;
-                                     rdfs:subClassOf ssbd:SSbDDimension ;
+                                     rdfs:subClassOf ssbd:SustainabilityDimension ,
+                                                     ssbd:EconomicDimension ;
                                      rdfs:label "economic sustainability dimension"@en ;
                                      skos:definition "The dimension of economic sustainability within the SSbD framework."@en ;
                                      skos:prefLabel "EconomicSustainabilityDimension"@en .
@@ -220,7 +221,8 @@ ssbd:EnvironmentalSustainabilityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/EnvironmentalSustainabilityDimension
 ssbd:EnvironmentalSustainabilityDimension rdf:type owl:Class ;
-                                          rdfs:subClassOf ssbd:SSbDDimension ;
+                                          rdfs:subClassOf ssbd:SustainabilityDimension ,
+                                                          ssbd:EnvironmentalDimension ;
                                           rdfs:label "environmental sustainability dimension"@en ;
                                           skos:definition "The dimension of environmental sustainability within the  SSbD framework of chemicals and materials."@en ;
                                           skos:prefLabel "EnvironmentalSustainabilityDimension"@en .
@@ -811,7 +813,8 @@ ssbd:SocialSustainabilityAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/ssbd/SocialSustainabilityDimension
 ssbd:SocialSustainabilityDimension rdf:type owl:Class ;
-                                   rdfs:subClassOf ssbd:SSbDDimension ;
+                                   rdfs:subClassOf ssbd:SustainabilityDimension ,
+                                                   ssbd:SocialDimension ;
                                    rdfs:label "social sustainability dimension"@en ;
                                    skos:definition "The dimension of social sustainability  within the SSbD framework for chemicals and materials."@en ;
                                    skos:prefLabel "SocialSustainabilityDimension"@en .
