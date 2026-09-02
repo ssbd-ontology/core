@@ -1,0 +1,10 @@
+
+.. toctree::
+   :includehidden:
+   :hidden:
+
+   Reference Index <core.rst>
+
+.. include:: docs/index.md
+   :parser: myst_parser.sphinx_
+
