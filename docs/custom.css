@@ -5,20 +5,3 @@
 /* 2. Add your custom changes below */
 
 /* Widen the main article area on desktop while keeping sidebars compact. */
-@media (min-width: 1200px) {
-    .bd-page-width {
-        max-width: 116rem;
-    }
-
-    .bd-main .bd-content .bd-article-container {
-        max-width: 92em;
-    }
-
-    .bd-sidebar-primary {
-        width: clamp(14rem, 20vw, 18rem);
-    }
-
-    .bd-sidebar-secondary {
-        width: 14rem;
-    }
-}
