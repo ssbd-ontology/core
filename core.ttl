@@ -29,6 +29,7 @@
         <https://w3id.org/ssbd/core/0.0.1/matter> ,
         <https://w3id.org/ssbd/core/0.0.1/models> ,
         <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings> ,
+        <https://w3id.org/ssbd/core/0.0.1/biological-descriptors> ,
         <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy> ;
     dcatap:status "Under Development" ;
     dcterms:abstract """The SSbD Core Ontology provides the semantic basis for safe and sustainability by design.
@@ -848,14 +849,6 @@ An architectural floor plan is a model of a house.
     skos:scopeNote "The produced output is a sign, that is either a single property or a collection of properties, (i.e. a description)."@en ;
     skos:scopeNote "IndicatorAssessment is only expected to be used at individual level to avoid making the input property an indicator in a general scope."@en ;
     skos:scopeNote "The IndicatorAssessment class was introduced to provide a logically concise definition of Indicator such that it is possible for a reasoner to infer that any property that is input to an IndicatorAssessment must be an Indicator."@en .
-
-:Toxicity rdf:type owl:Class ;
-    rdfs:subClassOf :Property ;
-    skos:prefLabel "Toxicity"@en ;
-    rdfs:label "toxicity"@en ;
-    skos:definition "A descriptor for a substance to cause harmful health effects."@en ;
-    skos:scopeNote "The helth effects can strike a single cell, a group of cells, an organ system, or the entire body. A toxic effect may be visible damage, or a decrease in performance or function measurable only by a test."@en ;
-    skos:scopeNote "Toxicity is always related to a given measurement procedure. Hence, the user is expected to define spesific subclasses defining the measurement procedure that the toxicity is measured according to."@en .
 
 :Description rdf:type owl:Class ;
     rdfs:subClassOf :Sign ;
