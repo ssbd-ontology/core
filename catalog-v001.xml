@@ -13,6 +13,7 @@
     <uri name="https://w3id.org/ssbd/core/0.0.1/dcat-mappings"           uri="./dcat-mappings.ttl"/>
     <uri name="https://w3id.org/ssbd/core/0.0.1/cheminf-mappings"        uri="./cheminf-mappings.ttl"/>
     <uri name="https://w3id.org/ssbd/core/0.0.1/biological-descriptors"  uri="./biological-descriptors.ttl"/>
+    <uri name="https://w3id.org/ssbd/core/0.0.1/physical-descriptors"    uri="./physical-descriptors.ttl"/>
     <uri name="https://w3id.org/emmo/application/datadoc/0.0.1"          uri="./ddoc.ttl"/>
 
   </group>

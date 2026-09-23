@@ -30,6 +30,7 @@
         <https://w3id.org/ssbd/core/0.0.1/models> ,
         <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings> ,
         <https://w3id.org/ssbd/core/0.0.1/biological-descriptors> ,
+        <https://w3id.org/ssbd/core/0.0.1/physical-descriptors> ,
         <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy> ;
     dcatap:status "Under Development" ;
     dcterms:abstract """The SSbD Core Ontology provides the semantic basis for safe and sustainability by design.
@@ -915,6 +916,7 @@ foaf:Project rdfs:subClassOf :Object .
 dcterms:RightsStatement rdfs:subClassOf foaf:Document .
 emmo:IntentionalAgent rdfs:subClassOf prov:Agent .
 emmo:UnintentionalAgent rdfs:subClassOf prov:Agent .
+emmo:PhysicalConstant rdfs:subClassOf emmo:PhysicalQuantity .
 :SSbDDimension rdfs:subClassOf prov:Entity .
 
 dcterms:rightsHolder rdfs:subPropertyOf :isRepresentedBy .

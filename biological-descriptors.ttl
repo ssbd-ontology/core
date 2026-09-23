@@ -160,3 +160,9 @@ Biological descriptors (often referred to or overlapping with molecular or bioac
     skos:prefLabel "ChemicalExposureDescriptor"@en ;
     rdfs:subClassOf :BiologicalDescriptor ;
     skos:definition "Descriptor for the effect of exposure to a chemical."@en .
+
+:StructuralAlertPersistentPotential a owl:Class ;
+    rdfs:label "structural alert persistent potential"@en ;
+    skos:prefLabel "StructuralAlertPersistentPotential"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "The inherent and continuous likelihood to cause adverse effects or remain hazardous due to the permanent presence of a toxicophore (structural alert) within its molecular framework."@en .
