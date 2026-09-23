@@ -77,46 +77,65 @@ Below are some example templates that are used for documenting ssbd related reso
 Note that these are just examples and that you can create your own templates based on the properties that are relevant for your use case. 
 The important thing is to make sure that the columns are named according to the specifications above and that the values are filled according to the definitions of the properties in the ssbd core ontology.
 
-### Expected minimum annotations by resource type
 
-The matrix below summarises which annotations where chosen as the minimum expected for each resource type in the PINK project (and this tutorial).
+### Expected annotations by resource type
 
-| Property | Type | Software release (individual) | Computation type (class) | Dataset type (class) | Agent (individual) |
-|---|---|---|---|---|---|
-| @id | annotation | X | X | X | X |
-| @type | annotation | X | X | X | X |
-| accessRights | object | X |  |  |  |
-| chemicalClass | object | X |  |  |  |
-| creator | object | X |  |  |  |
-| curator | object | X |  | X |  |
-| datamodel | object | X |  | X |  |
-| description | annotation | X |  | X |  |
-| distribution.accessURL | annotation | X |  |  |  |
-| distribution.downloadURL | data type | X |  |  |  |
-| documentation | object | X |  |  |  |
-| format | annotation | X |  | X |  |
-| hasAPI | data type | X |  |  |  |
-| hasGUI | data type | X |  |  |  |
-| hasInput | object |  | X |  |  |
-| hasOutput | object |  | X |  |  |
-| hasSoftware | object |  | X |  |  |
-| implementsModel | object | X |  |  |  |
-| isSubmoduleOf | object | X |  |  |  |
-| keyword | annotation | X |  | X |  |
-| label | annotation |  |  | X |  |
-| license | object | X |  |  |  |
-| name | annotation |  |  |  | X |
-| priorRelease | object | X |  |  |  |
-| releaseDate | data type | X |  |  |  |
-| rightsHolder | object | X |  |  |  |
-| scopeNote | annotation |  |  | X |  |
-| subClassOf | object |  | X | X |  |
-| theme | object |  |  | X |  |
-| inTierLevel | object | X |  |  |  |
-| title | annotation | X | X |  |  |
-| version | annotation | X |  |  |  |
+The matrix below describes the expected annotations for each resource type.
+
+* **Required**: must be provided for every resource of this type.
+* **Recommended**: should normally be provided, but may be omitted when unavailable or irrelevant.
+* **Optional**: may be provided when useful.
+* **Conditional**: should be provided when the stated condition applies.
+* **—**: not normally applicable to this resource type.
 
 
+| Property                   | Type              | Value kind                | Software release<br>(individual) | Computation type<br>(class)  | Dataset type<br>(class) | Dataset<br>(ind.)      | Agent<br>(ind.)    | Guidance                                                                                                                                                                                                          |
+| -------------------------- | ----------------- | ------------------------- | -------------------------------  | ----------------             | ----------------------- | ------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `@id`                      |                   | IRI                       | Required                         | Required                     | Required                | Required     | Required | Globally unique identifier for the resource. Use a persistent, resolvable IRI when possible.                                                                                                                      |
+| `@type`                    |                   | IRI                       | Required                         | Required                     | Required                | Required     | Required | Use `owl:Class` for classes. For individuals, the ontology class it is an instance of. More than one `@type` may be used for individuals.                                                                         |
+| `accessRights`             | object            | Rights statement IRI      | Recommended                      | —                            | —                       | Recommended  | —        | Information about access to the resource. One of:  CONFIDENTIAL, NON_PUBLIC, PUBLIC, RESTRICTED, SENSITIVE, from [EU structured vocabulary on rights]. |
+| `chemicalClass`            | object            | Matter/chemical-class IRI | Conditional                      | —                            | —                       | Conditional  | —        | Use when the software or dataset is relevant to a particular chemical, substance, material, or chemical class.                                                                                                    |
+| `creator`                  | object            | Agent IRI                 | Recommended                      | Optional                     | Optional                | Required     | —        | Agent responsible for creating or producing the resource.                                                                                                                                                         |
+| `curator`                  | object            | Agent IRI                 | Required                         | Required                     | Required                | Required     | —        | Agent responsible for curating the resource entry in the knowledge base.                                                                                                                                          |
+| `datamodel`                | object            | Data-model IRI            | —                                | —                            | Recommended             | —            | —        | Data model describing the structure, fields, properties, units, and shapes of the data handled by the resource. The datamodel connected to a dataset is obtained from the datasettype it is an inddividual of.    |
+| `description`              | annotation        | Literal                   | Required                         | Required                     | Required                | Required     | —        | Human-readable description of the resource.                                                                                                                                                                       |
+| `distribution.accessURL`   | nested annotation | URL                       | Recommended                      | —                            | —                       | Conditional  | —        | URL providing access to a distribution. Tripper converts the nested property into an annotation on a generated `dcat:Distribution` blank node.                                                                    |
+| `distribution.downloadURL` | nested data type  | URL                       | Recommended                      | —                            | —                       | Conditional  | —        | Direct link to a downloadable file. Recommended when the resource has a directly downloadable representation.                                                                                                     |
+| `distribution.format`      | nested annotation | Literal                   | —                                | —                            | —                       | Optional     | —        | Format of the distribution. Use distribution.mediaType if format exists in [IANA].                                                                                                                                |
+| `distribution.mediaType`   | nested annotation | Media-type literal        | —                                | —                            | —                       | Recommended  | —        | Format of the distribution, for example `text/csv` or `application/json`. Mediatype options can be found at [IANA].                                                                                               |
+| `distribution.releaseDate` | nested data type  | `xsd:dateTime`            | Optional                         | —                            | —                       | Optional     | —        | Date on which this particular distribution was formally issued.                                                                                                                                                   |
+| `documentation`            | object            | Document URL              | Recommended                      | —                            | —                       | —            | —        | Page or document describing how to understand or use the resource, such as a README, protocol, manual, or data paper.                                                                                             |
+| `hasAPI`                   | data type         | `xsd:boolean`             | Recommended                      | —                            | —                       | —            | —        | Indicates whether the software provides an application programming interface. Use `true` or `false`.                                                                                                              |
+| `hasGUI`                   | data type         | `xsd:boolean`             | Recommended                      | —                            | —                       | —            | —        | Indicates whether the software provides a graphical user interface. Use `true` or `false`.                                                                                                                        |
+| `hasInput`                 | object            | Entity/dataset-type IRI   | —                                | Recommended                  | —                       | —            | —        | Type of entity or dataset accepted as input by the computation.                                                                                                                                                   |
+| `hasOutput`                | object            | Entity/dataset-type IRI   | —                                | Recommended                  | —                       | —            | —        | Type of entity or dataset produced by the computation.                                                                                                                                                            |
+| `hasSoftware`              | object            | Software IRI              | —                                | Recommended                  | —                       | —            | —        | Software implemenitiation that can perform the computation.                                                                                                                                                       |
+| `implementsModel`          | object            | Model IRI                 | Recommended                      | —                            | —                       | —            | —        | Model implemented by the software release.                                                                                                                                                                        |
+| `inTierLevel`              | object            | Tier-level IRI            | Recommended                      | —                            | —                       | —            | —        | Tier level assigned to the software release according to the applicable SSbD tier scheme (ssbd:tierlevel1, ssbd:tierlevel2, ssbd:tierlevel3).                                                                     |
+| `isSubmoduleOf`            | object            | Software IRI              | Conditional                      | —                            | —                       | —            | —        | Use when the documented software is a module or component of another software resource.                                                                                                                           |
+| `keyword`                  | annotation        | Literal                   | Recommended                      | Recommended                  | Recommended             | Recommended  | —        | Search keyword or tag.                                                                                                                                                                                            |
+| `label`                    | annotation        | Literal                   | Optional                         | Optional                     | Optional                | Optional     | Optional | Short human-readable label.                                                                                                                                                                                       |
+| `license`                  | object            | Licence-document IRI      | Recommended                      | —                            | —                       | Required     | —        | Licence under which the resource is made available or may be reused.                                                                                                                                              |
+| `name`                     | annotation        | Literal                   | —                                | —                            | —                       | —            | Required | Human-readable name of the person, organisation, or other agent.                                                                                                                                                  |
+| `priorRelease`             | object            | Software-release IRI      | Conditional                      | —                            | —                       | —            | —        | Previous software release from which the documented release follows.                                                                                                                                              |
+| `wasDerivedFrom`           | object            | Entity or dataset IRI     | —                                | —                            | —                       | Conditional  | —        | Upstream dataset or entity from which the dataset was processed or derived.                                                                                                                                       |
+| `publisher`                | object            | Agent IRI                 | Recommended                      | —                            | —                       | Recommended  | —        | Agent responsible for making the resource available. This may differ from its creator.                                                                                                                            |
+| `releaseDate`              | data type         | `xsd:dateTime`            | Recommended                      | —                            | —                       | Recommended  | —        | Date of formal issuance or publication. Use an ISO 8601 value compatible with `xsd:dateTime`.                                                                                                                     |
+| `rightsHolder`             | object            | Agent IRI                 | Recommended                      | —                            | —                       | Recommended  | —        | Person or organisation owning or managing rights over the resource.                                                                                                                                               |
+| `scopeNote`                | annotation        | Literal                   | —                                | Optional                     | Optional                | —            | —        | Clarifies the intended meaning, boundaries, or use of a resource.                                                                                                                                                 |
+| `subClassOf`               | object            | Class IRI                 | —                                | Required                     | Required                | —            | —        | Parent class of the documented class. Individuals must not use `subClassOf`. Particularly important for computation types: the type of assessment (see SSbD core ontology, Assessments module) must be specified. |
+| `theme`                    | object            | Concept IRI               | Optional                         | Optional                     | Recommended             | Recommended  | —        | Main controlled category or SSbD thematic area of the resource.                                                                                                                                                   |
+| `title`                    | annotation        | Literal                   | Required                         | Required                     | Optional                | Required     | —        | Human-readable title of the resource. For dataset-type classes, `label` is preferred.                                                                                                                             |
+| `version`                  | annotation        | Literal                   | Required                         | —                            | —                       | Recommended  | —        | Version name or identifier.                                                                                                                                                                                       |
+| `wasGeneratedBy`           | object            | IRI                       | —                                | —                            | —                       | Required     | —        | The process that generated the resource (typically a dataset). Particularly important to define assessments, either as types or individuals.                                                                      |
+
+
+#### Notes on dataset distributions
+
+Properties beginning with `distribution.` are entered as columns in the dataset table. Tripper converts these nested columns into properties on a generated            `dcat:Distribution` blank node.
+
+
+## Example tables
 > [!NOTE]
 > Another point: here prefixes (the term before the colon) are set to 'pink', because these tables are examples within the pink project. 
 > Typically, each provider, even within a project has their own prefix (which is short for their own namespace).
@@ -159,3 +178,5 @@ The matrix below summarises which annotations where chosen as the minimum expect
 
 [Reference Documentation]: https://ssbd-ontology.github.io/core/docs/reference-documentation.html
 [Internationalized Resource Identifier]: https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier
+[IANA]: https://www.iana.org/assignments/media-types
+[EU structured vocabulary on rights]: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right 
