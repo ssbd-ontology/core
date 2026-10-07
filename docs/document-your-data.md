@@ -49,7 +49,7 @@ In Figure 4 below some examples of tables and how they are related are shown.
 
 <figure>
   <a href="https://ssbd-ontology.github.io/core/docs/figs/tables.png"><img src="https://ssbd-ontology.github.io/core/docs/figs/tables.png" alt="Examples of tables for documenting resources and how they are related."/></a>
-  <figcaption>Examples of tables for documenting resources and how they are related.</figcaption>
+  <figcaption>Figure 4. Examples of tables for documenting resources and how they are related.</figcaption>
 </figure>
 
 
