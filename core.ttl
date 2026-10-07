@@ -638,7 +638,8 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     rdfs:subClassOf prov:Entity ;
     skos:prefLabel "Data"@en ;
     rdfs:label "data"@en ;
-    skos:definition "Contrast from variation of properties that is encoded by an agent and that can be decoded by another agent according to a specific rule."@en .
+    skos:definition "Contrast from variation of properties that is encoded by an agent and that can be decoded by another agent according to a specific rule."@en ;
+    rdfs:seeAlso """Luciano Floridi, "Information - A very Short Introduction", Oxford University Press., (2010) ISBN 978-0199551378"""@en .
 
 :Software rdf:type owl:Class ;
     rdfs:subClassOf :Data ;
