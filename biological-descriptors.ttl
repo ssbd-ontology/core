@@ -1,0 +1,168 @@
+@prefix : <https://w3id.org/ssbd/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
+@prefix widoco: <https://w3id.org/widoco/vocab#> .
+
+
+<https://w3id.org/ssbd/core/biological-descriptors> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/biological-descriptors> ;
+                               dcterms:abstract """
+This module is a part of the [SSbD Core Ontology](https://w3id.org/ssbd).
+
+Biological descriptors (often referred to or overlapping with molecular or bioactivity descriptors in computational biology and cheminformatics) are quantitative values or qualitative markers that capture and translate the biological or structural characteristics of a molecule, organism, or system into a format suitable for computational analysis.
+"""@en ;
+    dcterms:title "Biological descriptors"@en ;
+    widoco:introduction """
+This module is a part of the [SSbD Core Ontology](https://w3id.org/ssbd).
+
+Biological descriptors (often referred to or overlapping with molecular or bioactivity descriptors in computational biology and cheminformatics) are quantitative values or qualitative markers that capture and translate the biological or structural characteristics of a molecule, organism, or system into a format suitable for computational analysis.
+"""@en .
+
+
+:BiologicalDescriptor a owl:Class ;
+    rdfs:label "biological descriptor"@en ;
+    skos:prefLabel "BiologicalDescriptor"@en ;
+    rdfs:subClassOf ssbd:Property ;
+    skos:definition "A biological descriptor is a property that capture and translate the biological or structural characteristics of a molecule, organism, or system into a format suitable for computational analysis."@en .
+
+:Toxicity rdf:type owl:Class ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:prefLabel "Toxicity"@en ;
+    rdfs:label "toxicity"@en ;
+    skos:definition "A descriptor for a substance to cause harmful health effects."@en ;
+    skos:scopeNote "The helth effects can strike a single cell, a group of cells, an organ system, or the entire body. A toxic effect may be visible damage, or a decrease in performance or function measurable only by a test."@en ;
+    skos:scopeNote "Toxicity is always related to a given measurement procedure. Hence, the user is expected to define spesific subclasses defining the measurement procedure that the toxicity is measured according to."@en .
+
+:AffectedFeaturesOfGeneExpression a owl:Class ;
+    rdfs:subClassOf :ChemicalExposureDescriptor ;
+    skos:prefLabel "AffectedFeaturesOfGeneExpression"@en ;
+    skos:definition "Affected pathways and features of gene expression."@en .
+
+:BenchmarkDose a owl:Class ;
+    rdfs:label "benchmark dose"@en ;
+    skos:prefLabel "BenchmarkDose"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:altLabel "BMD"@en ;
+    skos:definition "A specific dose or concentration of a substance that produces a predefined, measurable change, known as the benchmark response (BMR), in the rate or severity of an adverse health effect compared to a background."@en ;
+    skos:scopeNote "The dose is typically the concentration, amount, or intensity of a chemical, drug, or environmental stressor that is matched with high-throughput molecular changes." .
+
+:BioActivity a owl:Class ;
+    rdfs:label "bio activity"@en ;
+    skos:prefLabel "BioActivity"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "Difference of activity between a controlled reference and the experiment. It encomapsses beneficial and non-beneficial physiological responses, such as tissue regeneration, metabolic changes, toxicity pathways, and defence mechanisms."@en ;
+    skos:scopeNote "BioActivity refers to the ability of a substance, compound, or material to produce a specific biological effect or interact with living tissues, organisms, or cells. It encompasses beneficial physiological responses, such as tissue regeneration or metabolic changes, often demonstrated in scientific studies." .
+
+:CytotoxicityDescriptor a owl:Class ;
+    rdfs:label "cytotoxicity descriptor"@en ;
+    skos:prefLabel "CytotoxicityDescriptor"@en ;
+    rdfs:seeAlso "https://www.epa.gov/comptox-tools/chemicals-dashboard-help-basic-search" ;
+    rdfs:subClassOf :Toxicity ;
+    skos:altLabel "EC50; IC50; probability estimate for exceeding a BMD"@en ;
+    skos:definition "A quantitative descriptor representing the estimated probability that a material, substance, or product induces loss of cell viability or cell death under defined exposure conditions, as derived from dose–response modelling of in vitro cell-based assays."@en ;
+    skos:scopeNote "This descriptor captures cytotoxic effects inferred from mechanistically relevant cell models (e.g., metabolic activity assays, membrane integrity assays, apoptosis/necrosis markers) and expressed as a probability metric (e.g., probability of exceeding a predefined cytotoxicity threshold at a given concentration and exposure duration). It does not directly represent organism-level toxicity but serves as a hazard-relevant input for higher-tier risk assessment and SSbD safety dimension scoring." .
+
+:LethalDose50 a owl:Class ;
+    rdfs:label "letal dose 50"@en ;
+    skos:prefLabel "LethalDose50"@en ;
+    rdfs:subClassOf :AcuteToxicity ;
+    skos:altLabel "LD50"@en ;
+    skos:definition "The dose of a substance (e.g., in mg/kg of test animal weight) that kills 50% of a test population, indicating acute toxicity."@en ;
+    skos:scopeNote "Lethal dose is characterized by sudden onset, severe symptoms, and is generally assessed via LD50 measurements." .
+
+:MutagenicityDescriptor a owl:Class ;
+    rdfs:label "mutagenicity descriptor"@en ;
+    skos:prefLabel "MutagenicityDescriptor"@en ;
+    rdfs:seeAlso "https://doi.org/10.1080/17435390.2017.1382601" ;
+    rdfs:subClassOf :CarcinogenicityDescriptor ;
+    skos:altLabel "mutagenic; non-mutagenic; further testing needed"@en ;
+    skos:definition "A composite descriptor representing the weighted probability that a material or substance induces heritable genetic alterations, derived from a structured Weight-of-Evidence (WoE) evaluation that integrates assay category, biological system relevance, study quality, and inter-study concordance thresholds."@en ;
+    skos:scopeNote "This descriptor reflects mutation-related effects detected in validated or mechanistically relevant cell models (e.g., gene mutation assays, micronucleus assays, comet assay with Fpg/Ogg1 modification when mutation-relevant) and translated into a probabilistic measure. It does not equate to carcinogenicity but represents an upstream mechanistic hazard indicator." .
+
+:SkinReationPotential a owl:Class ;
+    rdfs:label "skin reation potential"@en ;
+    skos:prefLabel "SkinReationPotential"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "Probability of a drug causing skin reaction."@en .
+
+:StructuralAlertCarcinogenicity a owl:Class ;
+    rdfs:label "structural alerts for carcinogenicity"@en ;
+    skos:prefLabel "StructuralAlertCarcinogenicity"@en ;
+    rdfs:subClassOf :CarcinogenicityDescriptor ;
+    skos:definition "Structural alert for Genotoxic and non-genotoxic carcinogenicity"@en ;
+    skos:scopeNote "Relates carcinogenicity to molecular functional groups or substructures." .
+
+:TranscriptomicEffectOfExposure a owl:Class ;
+    skos:prefLabel "TranscriptomicEffectOfExposure"@en ;
+    rdfs:subClassOf :ChemicalExposureDescriptor ;
+    skos:definition "Descriptor for transcriptomic effect of exposure to a chemical."@en .
+
+:GeneEnrichmentStatisticalSignificance a owl:Class ;
+    rdfs:label "statistical significance for a term"@en ;
+    skos:prefLabel "GeneEnrichmentStatisticalSignificance"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "Statistical significance for a term in gene enrichment, ie a p-value."@en .
+
+:TranscriptGeneExpressionEffectSize a owl:Class ;
+    rdfs:label "effect size for a gene"@en ;
+    skos:prefLabel "TranscriptGeneExpressionEffectSize"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "Effect size for a gene in a transcriptomics expression analysis, ie beta term from regression."@en .
+
+:TranscriptGeneExpressionStatisticalSignificance a owl:Class ;
+    rdfs:label "statistical significance for a gene"@en ;
+    skos:prefLabel "TranscriptGeneExpressionStatisticalSignificance"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "Statistical significance for a gene in a transcriptomics expression analysis, ie a p-value per gene tested."@en .
+
+:AgonisticActivity a owl:Class ;
+    rdfs:label "agonistic activity"@en ;
+    skos:prefLabel "AgonisticActivity"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "Chemical binding to a cell receptor to trigger a biological response."@en .
+
+:CarcinogenicityDescriptor a owl:Class ;
+    rdfs:label "carcinogenicity descriptor"@en ;
+    skos:prefLabel "CarcinogenicityDescriptor"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "An indicator of the probability of a substance (including chemicals, physical agents (like radiation), or biological agents (like viruses)) to induce, increase the incidence, or accelerate the development of cancerous tumors."@en .
+
+:FemaleMouseInvivoCarcinogenicityDescriptor a owl:Class ;
+    rdfs:label "female mouse in vivo carcinogenicity descriptor"@en ;
+    skos:prefLabel "FemaleMouseInvivoCarcinogenicityDescriptor"@en ;
+    rdfs:subClassOf :InVivoCarcinogenicityDescriptor ;
+    skos:definition "Carcinogenicity in female mice in vivo, positive or negative based on a standardized/validated test method."@en .
+
+:GonadotropinReleasingAgonisticActivity a owl:Class ;
+    rdfs:label "gonadotropin-releasing activity"@en ;
+    skos:prefLabel "GonadotropinReleasingAgonisticActivity"@en ;
+    rdfs:subClassOf :AgonisticActivity ;
+    skos:definition "Agonistic activity to the gonadotropin-releasing hormone receptor."@en .
+
+:InVivoCarcinogenicityDescriptor a owl:Class ;
+    rdfs:label "in vivo carcinogenicity descriptor"@en ;
+    skos:prefLabel "InVivoCarcinogenicityDescriptor"@en ;
+    rdfs:subClassOf :CarcinogenicityDescriptor ;
+    skos:definition "Descriptor for in vivo carcinogenicity based on a standardized/validated test method."@en .
+
+:AcuteToxicity a owl:Class ;
+    rdfs:label "acute toxicity"@en ;
+    skos:prefLabel "AcuteToxicity"@en ;
+    rdfs:subClassOf :Toxicity ;
+    skos:definition "Probability of adverse health effects occurring rapidly (usually within 14 days) after a single exposure, or multiple exposures within a short time (typically less than 24 hours) to a substance."@en .
+
+:ChemicalExposureDescriptor a owl:Class ;
+    rdfs:label "chemical exposure descriptor"@en ;
+    skos:prefLabel "ChemicalExposureDescriptor"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "Descriptor for the effect of exposure to a chemical."@en .
+
+:StructuralAlertPersistentPotential a owl:Class ;
+    rdfs:label "structural alert persistent potential"@en ;
+    skos:prefLabel "StructuralAlertPersistentPotential"@en ;
+    rdfs:subClassOf :BiologicalDescriptor ;
+    skos:definition "The inherent and continuous likelihood to cause adverse effects or remain hazardous due to the permanent presence of a toxicophore (structural alert) within its molecular framework."@en .
