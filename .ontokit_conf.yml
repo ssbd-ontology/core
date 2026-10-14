@@ -12,33 +12,40 @@ REFERENCE_SUBSECTIONS: all
 #
 # Optional: additional reference indices for `ontokit docs`.
 REFERENCE_INDICES:
-  - ontology_file: build/core-squashed.ttl
-    title: Properties Index
+  - title: Properties Index
+    ontology_files: 
+      - build/core-squashed.ttl
     docfile: properties.rst
     # iri_regex: https://example.org/other
     imported: false
     recursive: false
     subsections: annotation_properties,object_properties,data_properties
-  - ontology_file: ssbd-taxonomy.ttl
-    title: SSbDAssessments Index
+  - title: SSbDAssessments Index
+    ontology_files: 
+      - ssbd-taxonomy.ttl
     docfile: ssbdtaxonomy.rst
     imported: false
     recursive: false
     subsections: classes 
-  - ontology_file: models.ttl
-    title: Models Index
+  - title: Models Index
+    ontology_files: 
+      - models.ttl
     docfile: models.rst
     imported: false
     recursive: false
     subsections: classes
-  - ontology_file: matter.ttl
-    title: Matter Index
+  - title: Matter Index
+    ontology_file: 
+      - matter.ttl
     docfile: matter.rst
     imported: false
     recursive: false
     subsections: classes
-  - ontology_file: cheminf.ttl
-    title: CHEMINF descriptors Index
+  - title: Descriptors/Indicators
+    ontology_files: 
+      - cheminf.ttl
+      - physical-descriptors.ttl
+      - biological-descriptors.ttl 
     docfile: cheminf.rst
     imported: false
     recursive: false
