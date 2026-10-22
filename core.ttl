@@ -342,6 +342,41 @@ The root of the SSbD Core Ontology is shown below. More information can be found
     skos:altLabel "isSoftwareSubmoduleOf"@en ;
     skos:definition "A parthood relation that relates a submodule of a software to the software."@en .
 
+:hasFlow rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:hasPart ;
+    rdf:type owl:AsymmetricProperty ,
+             owl:IrreflexiveProperty ;
+    rdfs:domain ssbd:LCI ;
+    rdfs:range ssbd:Flow ;
+    rdfs:label "has flow"@en ;
+    skos:prefLabel "has flow"@en .
+
+:hasSourceNode rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf dcterms:hasPart ;
+     rdf:type owl:AsymmetricProperty ,
+              owl:IrreflexiveProperty ;
+     rdfs:domain ssbd:Flow ;
+     rdfs:range ssbd:Node ;
+     rdfs:label "has source node"@en ;
+     skos:prefLabel "has source node"@en .
+
+:hasTargetNode rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:hasPart ;
+    rdf:type owl:AsymmetricProperty ,
+          owl:IrreflexiveProperty ;
+    rdfs:domain ssbd:Flow ;
+    rdfs:range ssbd:Node ;
+    rdfs:label "has target node"@en ;
+    skos:prefLabel "has target node"@en .
+
+:hasUnitProcesses rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:hasPart ;
+    rdf:type owl:AsymmetricProperty ,
+             owl:IrreflexiveProperty ;
+    rdfs:domain ssbd:LCI ;
+    rdfs:range ssbd:UnitProcessNode ;
+    rdfs:label "has unit processes"@en ;
+    skos:prefLabel "has unit processes"@en .
 
 ### Causal relations
 :causal rdf:type owl:ObjectProperty ;
@@ -626,12 +661,12 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
 
 ###  https://w3id.org/ssbd/SSbDDimension
 :SSbDDimension rdf:type owl:Class ;
-                   rdfs:subClassOf prov:Entity ;
-                   skos:definition "The superclass of all dimensions relevant for SSbD assessments. Such dimensions can be considered thematic areas."@en ;
-                   dcterms:source "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf" ;
-                   skos:altLabel "Safe and Sustainable by Design Dimension" ;
-                   skos:prefLabel "SSbDDimension"@en ;
-                   rdfs:label "SSbD dimension"@en .
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "The superclass of all dimensions relevant for SSbD assessments. Such dimensions can be considered thematic areas."@en ;
+    dcterms:source "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf" ;
+    skos:altLabel "Safe and Sustainable by Design Dimension" ;
+    skos:prefLabel "SSbDDimension"@en ;
+    rdfs:label "SSbD dimension"@en .
 
 
 
@@ -784,7 +819,58 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
     rdfs:label "date time data"@en ;
     skos:definition "A symbolic data representing datetime. Format: YYYY-MM-DDThh:mm:ss (followed by an optional time zone offset, e.g. +01:00 for Central Europe)."@en .
 
+:Node rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:Data ;
 
+:Flow rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:Data ;
+
+## LCA Data
+
+:LCAData rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:Data ;
+    rdfs:label "LCA Data"@en ;
+    skos:definition "A Data related to Life Cycle Assessment"@en ;
+    skos:prefLabel "LCA Data"@en .
+
+:BiosphereFlow rdf:type owl:Class ;
+     rdfs:subClassOf ssbd:LCAData , 
+                     ssbd:Flow ;
+     rdfs:label "Biosphere flow"@en ;
+     skos:definition "A biosphere elementary flow (e.g.: emission or resource extraction)."@en ;
+     skos:prefLabel "Biosphere flow"@en .
+
+:TechnosphereFlow rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:LCAData ,
+                    ssbd:Flow ;
+    rdfs:label "Technosphere flow"@en ;
+    skos:definition "A technosphere flow is a type of data that describes exchanges between nodes of an inventory."@en ;
+    skos:prefLabel "Flow Edge"@en .
+
+:LCI rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:LCAData ;
+    rdfs:label "Life Cycle Inventory"@en ;
+    skos:definition "An LCI is a type of Data containing processes and flows."@en ;
+    skos:prefLabel "Life Cycle Inventory"@en .
+
+:UnitProcessNode rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:LCAData ,
+                    ssbd:Node ;
+    rdfs:label "Unit Process Node"@en ;
+    skos:definition "A Unit process node represents a node in the inventory that can have different flow edges connected to it."@en ;
+    skos:prefLabel "Unit Process Node"@en .
+
+:BackgroundActivity rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:UnitProcessNode ;
+    rdfs:label "Background activity"@en ;
+    skos:definition "A background process activity that can be referenced by a foreground inventory node."@en ;
+    skos:prefLabel "Background activity"@en .
+
+:ForegroundActivity rdf:type owl:Class ;
+    rdfs:subClassOf :UnitProcessNode ;
+    rdfs:label "Foreground activity"@en ;
+    skos:definition "A foreground process activity."@en ;
+    skos:prefLabel "Foreground activity"@en .
 
 ## Sign
 :Sign rdf:type owl:Class ;
@@ -902,6 +988,14 @@ An architectural floor plan is a model of a house.
     rdfs:label "interpreter"@en ;
     skos:definition "The agent that connects the sign to an entity in a semiotic (meaning-making) process."@en ;
     skos:example "A person (interpreter) that measures the length (sign) of an pencil (object)."@en .
+
+:LLMAgent rdf:type owl:Class ;
+    rdfs:subClassOf prov:SoftwareAgent ,
+                    ssbd:Participant ,
+                    emmo:IntentionalAgent ;
+    rdfs:label "LLM Agent"@en ;
+    skos:definition "An LLM agent is a software agent driven by a large language model."@en ;
+    skos:prefLabel "LLM Agent"@en .
 
 
 ### Mappings
