@@ -317,7 +317,7 @@ ssbd:FreshwaterEutrophicationImpactAssessment rdf:type owl:Class ;
                                               rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
                                               rdfs:label "freshwater eutrophication impact assessment"@en ;
                                               skos:definition "Freshwater Eutrophication  in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential impacts of nutrient enrichment which causes detrimental overgrowth of biomass in freshwater ecosystems, leading to oxygen depletion and loss of species."@en ;
-                                              skos:prefLabel "FreshwaterEutrophicationImpactAssessment"@en ;
+                                              skos:prefLabel "EutrophicationFreshwaterImpactAssessment"@en ;
                                               skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -361,13 +361,13 @@ ssbd:GlassTransitionTemperatureAssessment rdf:type owl:Class ;
                                           skos:prefLabel "GlassTransitionTemperatureAssessment"@en .
 
 
-###  https://w3id.org/ssbd/GlobalWarmingImpactAssessment
-ssbd:GlobalWarmingImpactAssessment rdf:type owl:Class ;
-                             rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
-                             rdfs:label "global warming impact assessment"@en ;
-                             skos:definition "Global Warming Potential (GWP) impact category measures the potential increase in global temperature caused by greenhouse gas (GHG) emissions (e.g., methane) over  the time frame of 100 years."@en ;
-                             skos:prefLabel "GlobalWarmingImpactAssessment"@en ;
-                             skos:scopeNote "This is a LCA impact category."@en .
+###  https://w3id.org/ssbd/ClimateChangeImpactAssessment
+ssbd:ClimateChangeImpactAssessment rdf:type owl:Class ;
+                                   rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                   rdfs:label "climate change impact assessment"@en ;
+                                   skos:definition "Climate Change impact category measures the potential increase in global temperature caused by greenhouse gas (GHG) emissions (e.g., methane) over a fixed period of time (e.g., 100 years)."@en ;
+                                   skos:prefLabel "ClimateChangeImpactAssessment"@en ;
+                                   skos:scopeNote "This is a LCA impact category."@en .
 
 
 ###  https://w3id.org/ssbd/HHRAAirPollution
@@ -483,7 +483,7 @@ ssbd:HumanHealthRiskAssessment rdf:type owl:Class ;
 ssbd:HumanToxicityCancerImpactAssessment rdf:type owl:Class ;
                                          rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
                                          rdfs:label "human carcinogenic toxicity impact assessment"@en ;
-                                         skos:definition "Evaluating cancer risks caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil)."@en ;
+                                         skos:definition "Evaluating cancer risks caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil) throught the whole product life cycle."@en ;
                                          skos:prefLabel "HumanToxicityCancerImpactAssessment"@en ;
                                          skos:scopeNote "This is a LCA impact category."@en .
 
@@ -492,9 +492,9 @@ ssbd:HumanToxicityCancerImpactAssessment rdf:type owl:Class ;
 ssbd:HumanToxicityNonCancerImpactAssessment rdf:type owl:Class ;
                                             rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
                                             rdfs:label "human noncarcinogenic toxicity impact assessment"@en ;
-                                            skos:definition "Evaluating the adverse health effects on human, excluding cancer, caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil)."@en ;
+                                            skos:definition "Evaluating the adverse health effects on human, excluding cancer, caused by inhaling, ingesting, or absorbing chemical substances from environmental emissions (air, water, soil) throught the whole product life cycle."@en ;
                                             skos:prefLabel "HumanToxicityNonCancerImpactAssessment"@en ;
-                                            skos:scopeNote "This is a LCA impact category."@en .
+                                            skos:scopeNote "This is an LCA impact category."@en .
 
 
 ###  https://w3id.org/ssbd/ImmunotoxicityAssessment
@@ -511,6 +511,15 @@ ssbd:IntrinsicChemicalHazardAssessment rdf:type owl:Class ;
                                        rdfs:label "intrinsic chemical hazard assessment"@en ;
                                        skos:definition "Intrinsic Chemical Hazard Assessment is the systematic process of identifying and characterising the inherent harmful properties of a chemical substance, independent of exposure scenarios. This assessment focuses on the substance's capacity to cause adverse effects on human health or the environment when placed in environmental conditions that trigger it."@en ;
                                        skos:prefLabel "IntrinsicChemicalHazardAssessment"@en .
+
+
+###  https://w3id.org/ssbd/IonisingRadiationHumanHealthImpactAssessment
+ssbd:IonisingRadiationHumanHealthImpactAssessment rdf:type owl:Class ;
+                                                  rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                                  rdfs:label "ionising radiation human health impact assessment"@en ;
+                                                  skos:definition "Ionising radiation is an environmental impact category measuring the potential damage to human health caused by exposure to radionuclide emissions, expressed relative to Uranium-235."@en ;
+                                                  skos:prefLabel "IonisingRadiationHumanHealthImpactAssessment"@en ;
+                                                  skos:scopeNote "This is an LCA impact category."@en .
 
 
 ###  https://w3id.org/ssbd/IrritationAndCorrosion
@@ -615,6 +624,13 @@ ssbd:PhotochemicalOzoneFormationImpactAssessment rdf:type owl:Class ;
                                            skos:definition "This measures the potential of emissions like volatile organic compounds (VOCs) to form ground-level ozone, impacting human health and vegetation."@en ;
                                            skos:prefLabel "PhotochemicalOzoneFormationImpactAssessment"@en .
 
+###  https://w3id.org/ssbd/ParticulateMatterImpactAssessment
+ssbd:ParticulateMatterImpactAssessment rdf:type owl:Class ;
+                                       rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                       rdfs:label "particulate matter impact assessment"@en ;
+                                       skos:definition "Particulate matter in Life Cycle Assessment (LCA) is an environmental impact category measuring the potential incidence of disease in humans caused by emissions of primary particulate matter and of precursors of secondary particulate matter (e.g. NOx, SO2, NH3)."@en ;
+                                       skos:prefLabel "ParticulateMatterImpactAssessment"@en ;
+                                       skos:scopeNote "This is a LCA impact category."@en .
 
 ###  https://w3id.org/ssbd/PhysicoChemicalPropertyAssessment
 ssbd:PhysicoChemicalPropertyAssessment rdf:type owl:Class ;
@@ -697,11 +713,11 @@ ssbd:ReproductiveToxicityAssessment rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ssbd/FossilResourcesScarcityImpactAssessment
-ssbd:FossilResourcesScarcityImpactAssessment rdf:type owl:Class ;
+ssbd:ResourceUseFossilsImpactAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
-                                  rdfs:label "fossil resources scarcity impact assessment"@en ;
+                                  rdfs:label "resource use fossils impact assessment"@en ;
                                   skos:definition "Measuring the depletion of finite, non-renewable hydrocarbon resources (coal, oil, natural gas)."@en ;
-                                  skos:prefLabel "FossilResourcesScarcityImpactAssessment"@en ;
+                                  skos:prefLabel "ResourceUseFossilsImpactAssessment"@en ;
                                   skos:scopeNote "This is a LCA impact category."@en .
 
 
@@ -730,6 +746,24 @@ ssbd:WaterResourceDepletionImpactAssessment rdf:type owl:Class ;
                              skos:definition "Quantification of the reduction in  freshwater availability and assessing impact of water stress on human health."@en ;
                              skos:prefLabel "WaterResourceDepletionImpactAssessment"@en ;
                              skos:scopeNote "This is a LCA impact category."@en .
+
+
+###  https://w3id.org/ssbd/ResourceUseMineralsAndMetalsImpactAssessment
+ssbd:ResourceUseMineralsAndMetalsImpactAssessment rdf:type owl:Class ;
+                                                  rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                                                  rdfs:label "resource use minerals and metals impact assessment"@en ;
+                                                  skos:definition "Assessing surplus ore potential."@en ;
+                                                  skos:prefLabel "ResourceUseMineralsAndMetalsImpactAssessment"@en ;
+                                                  skos:scopeNote "This is a LCA impact category."@en .
+
+
+###  https://w3id.org/ssbd/WaterUseImpactAssessment
+ssbd:WaterUseImpactAssessment rdf:type owl:Class ;
+                              rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
+                              rdfs:label "water use impact assessment"@en ;
+                              skos:definition "Quantification of the reduction in  freshwater availability and assessing impact of water stress on human health."@en ;
+                              skos:prefLabel "WaterUseImpactAssessment"@en ;
+                              skos:scopeNote "This is a LCA impact category."@en .
 
 
 
