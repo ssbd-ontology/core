@@ -712,7 +712,7 @@ ssbd:ReproductiveToxicityAssessment rdf:type owl:Class ;
                                     skos:scopeNote """Reproductive toxicity includes adverse effects on sexual function and fertility in adult males and females as well as developmental toxicity in the offspring."""@en .
 
 
-###  https://w3id.org/ssbd/FossilResourcesScarcityImpactAssessment
+###  https://w3id.org/ssbd/ResourceUseFossilsImpactAssessment
 ssbd:ResourceUseFossilsImpactAssessment rdf:type owl:Class ;
                                   rdfs:subClassOf ssbd:LifeCycleImpactAssessmentCategorisation ;
                                   rdfs:label "resource use fossils impact assessment"@en ;

@@ -698,7 +698,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
                      owl:someValuesFrom ssbd:LargeLanguageModel
                    ] ;
     rdfs:label "LLM Software"@en ;
-    skos:definition "An LLM Software is a Software that implements at least one LLM inference."@en ;
+    skos:definition "An LLM Software is a Software that implements at least one LLM."@en ;
     skos:prefLabel "LLM Software"@en .
 
 :Datum rdf:type owl:Class ;
