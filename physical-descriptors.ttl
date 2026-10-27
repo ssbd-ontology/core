@@ -44,7 +44,7 @@ ssbd:BulkPolymerThermalProperty a owl:Class ;
 
 ssbd:HamakerConstant a owl:Class ;
     rdfs:label "hamaker constant"@en ;
-    rdfs:subClassOf ssbd:ElectricalPotentialDescriptor ;
+    rdfs:subClassOf ssbd:CondensedMatterPhysicsDescriptor ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Hamaker_constant" ;
     skos:definition "A physical constant that can be defined for a van der Waals (vdW) body–body interaction."@en ;
     skos:prefLabel "HamakerConstant"@en .
@@ -54,6 +54,12 @@ ssbd:PhysicalDescriptor a owl:Class ;
     rdfs:subClassOf ssbd:Property ;
     skos:definition "A descriptor for a physical properties of a material."@en ;
     skos:prefLabel "PhysicalDescriptor"@en .
+
+ssbd:CondensedMatterPhysicsDescriptor a owl:Class ;
+    rdfs:label "condensed matter physics descriptor"@en ;
+    rdfs:subClassOf ssbd:PhysicalDescriptor ;
+    skos:definition "A descriptor for condensed matter physics-related materials properties."@en ;
+    skos:prefLabel "CondensedMatterPhysicsDescriptor"@en .
 
 ssbd:SurfacePotentialDescriptor a owl:Class ;
     rdfs:label "surface potential descriptor"@en ;
