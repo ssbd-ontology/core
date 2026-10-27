@@ -26,7 +26,7 @@ The Physical Descriptors module provides a standardised vocabulary to describe, 
 
 ssbd:AdsorptionEnergyDescriptor a owl:Class ;
     rdfs:label "adsorption energy descriptor"@en ;
-    rdfs:subClassOf ssbd:PhysicalProperty ;
+    rdfs:subClassOf ssbd:PhysicalDescriptor ;
     skos:definition "A measurable or calculated physical property—specifically the energy change when a molecule binds to a surface—used to predict and quantify catalytic activity and material behavior."@en ;
     skos:prefLabel "AdsorptionEnergyDescriptor"@en .
 
@@ -44,6 +44,7 @@ ssbd:BulkPolymerThermalProperty a owl:Class ;
 
 ssbd:HamakerConstant a owl:Class ;
     rdfs:label "hamaker constant"@en ;
+    rdfs:subClassOf ssbd:CondensedMatterPhysicsDescriptor ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Hamaker_constant" ;
     skos:definition "A physical constant that can be defined for a van der Waals (vdW) body–body interaction."@en ;
     skos:prefLabel "HamakerConstant"@en .
@@ -53,6 +54,12 @@ ssbd:PhysicalDescriptor a owl:Class ;
     rdfs:subClassOf ssbd:Property ;
     skos:definition "A descriptor for a physical properties of a material."@en ;
     skos:prefLabel "PhysicalDescriptor"@en .
+
+ssbd:CondensedMatterPhysicsDescriptor a owl:Class ;
+    rdfs:label "condensed matter physics descriptor"@en ;
+    rdfs:subClassOf ssbd:PhysicalDescriptor ;
+    skos:definition "A descriptor for condensed matter physics-related materials properties."@en ;
+    skos:prefLabel "CondensedMatterPhysicsDescriptor"@en .
 
 ssbd:SurfacePotentialDescriptor a owl:Class ;
     rdfs:label "surface potential descriptor"@en ;
@@ -70,18 +77,18 @@ ssbd:ZetaPotential a owl:Class ;
 
 ssbd:MechanicalProperty a owl:Class ;
     rdfs:label "mechanical property"@en ;
-    rdfs:subClassOf ssbd:PhysicalProperty ;
+    rdfs:subClassOf ssbd:PhysicalDescriptor ;
     skos:definition "Mechanical property of a bulk structure."@en ;
     skos:prefLabel "MechanicalProperty"@en .
 
 ssbd:ThermalProperty a owl:Class ;
     rdfs:label "thermal property"@en ;
-    rdfs:subClassOf ssbd:PhysicalProperty ;
+    rdfs:subClassOf ssbd:PhysicalDescriptor ;
     skos:definition "Thermal property of a bulk structure."@en ;
     skos:prefLabel "ThermalProperty"@en .
 
 ssbd:ElectricalPotentialDescriptor a owl:Class ;
     rdfs:label "electric potential descriptor"@en ;
-    rdfs:subClassOf ssbd:PhysicalProperty ;
+    rdfs:subClassOf ssbd:PhysicalDescriptor ;
     skos:definition "A descriptor of the electrical potential between two given points in a static electric field."@en ;
     skos:prefLabel "ElectricalPotentialDescriptor"@en .
