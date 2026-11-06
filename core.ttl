@@ -626,7 +626,7 @@ emmo:ChemicalEntity rdfs:subClassOf :Matter .
 
 ###  https://w3id.org/ssbd/SSbDDimension
 :SSbDDimension rdf:type owl:Class ;
-                   rdfs:subClassOf prov:Entity ;
+                   rdfs:subClassOf :Sign ;
                    skos:definition "The superclass of all dimensions relevant for SSbD assessments. Such dimensions can be considered thematic areas."@en ;
                    dcterms:source "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/sustainability-and-safe-and-sustainable-by-design-working-descriptions-for-the-safer-innovation-approach_1ba68750/a9a80171-en.pdf" ;
                    skos:altLabel "Safe and Sustainable by Design Dimension" ;
@@ -880,10 +880,10 @@ An architectural floor plan is a model of a house.
 
 ## Tier level
 :TierLevel rdf:type owl:Class ;
-    rdfs:subClassOf prov:Entity ;
+    rdfs:subClassOf :Sign ;
     skos:prefLabel "TierLevel"@en ;
     rdfs:label "tier level"@en ;
-    skos:definition "Represent a tiered, iterative framework for evaluating chemical and material safety from early innovation to production."@en ;
+    skos:definition "A sign that represents a tiered, iterative framework for evaluating chemical and material safety from early innovation to production."@en ;
     skos:scopeNote "This approach typically involves a three-tier system-ranging from qualitative, early-stage, in silico, and in vitro screening to, finally, advanced, quantitative, in vivo testing."@en .
 
 
