@@ -1,0 +1,322 @@
+@prefix : <https://w3id.org/ssbd/lca-mappings#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ssbd: <https://w3id.org/ssbd/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix om2: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix bont: <http://ontology.bonsai.uno/core#> .
+@prefix oriont: <https://orienting.eu/oriont#> .
+
+
+<https://w3id.org/ssbd/core/lca-mappings> rdf:type owl:Ontology ;
+    owl:versionIRI <https://w3id.org/ssbd/core/0.0.1/lca-mappings> ;
+    owl:imports
+        <https://w3id.org/ssbd/core/0.0.1> ;
+    dcterms:abstract "Life Cycle Assessment (LCA) terms for the SSbD Core ontology mapped to the BONSAI and ORIENTING ontologies."@en ;
+    dcterms:title "LCA mappings"@en .
+
+skos:ConceptScheme rdf:type owl:Class ;
+    rdfs:label "Concept Scheme"@en ;
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
+
+om2:Measure rdf:type owl:Class ;
+    rdfs:label "measure"@en ;
+    rdfs:isDefinedBy <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+
+bont:Activity rdf:type owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme ;
+    rdfs:label "Activity"@en ;
+    skos:definition "The act of making or doing something which is defined both spatially and temporally."@en ;
+    rdfs:comment "This is one of the identifying dimensions of a datapoint. This class defines multiple properties on the type and direction of flows. ‘Process’ is a commonly used synonym in other LCA databases."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:ActivityType rdf:type owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme ;
+    rdfs:label "Activity Type"@en ;
+    skos:definition "The type of an activity, e.g. stock accumulation, steel production, etc."@en ;
+    rdfs:comment "This class includes the labels of activities. Includes both human activities and environmental mechanisms."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:Flow rdf:type owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme ,
+                    om2:Measure ;
+    rdfs:label "Flow"@en ;
+    skos:definition "An input or output of an entity to or from an instance of an Activity or a directional exchange of an entity between two instances of Activity."@en ;
+    rdfs:comment "This class contains the quantity of the entity (Flow Object) that is consumed as input or produced as output of an Activity."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:FlowObject rdf:type owl:Class ;
+    rdfs:subClassOf skos:ConceptScheme ;
+    rdfs:label "Flow Object"@en ;
+    skos:definition "The label of an entity that is produced or consumed by an activity or added to or removed from a stock accumulation."@en ;
+    rdfs:comment "A Flow Object identifies what is exchanged (e.g. steel, iron ore, CO2), while the Flow carries how much of it is exchanged."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:isInputOf rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+    rdfs:domain bont:Flow ;
+    rdfs:range bont:Activity ;
+    rdfs:label "input of"@en ;
+    skos:definition "Specifies the Activity that a Flow is an input to."@en ;
+    rdfs:comment "Functional: a Flow is an input to at most one Activity. A Flow exchanged between two activities is the output of one (isOutputOf) and the input of the other (isInputOf)."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:isOutputOf rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+    rdfs:domain bont:Flow ;
+    rdfs:range bont:Activity ;
+    rdfs:label "output of"@en ;
+    skos:definition "Specifies the Activity that a Flow is an output of."@en ;
+    rdfs:comment "Functional: a Flow is an output of at most one Activity."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:hasActivityType rdf:type owl:ObjectProperty ;
+    rdfs:domain bont:Activity ;
+    rdfs:range bont:ActivityType ;
+    rdfs:label "activity type"@en ;
+    skos:definition "Specifies the label of an Activity."@en ;
+    rdfs:comment "Relates an Activity (e.g. steel production in a given place and period) to its type (e.g. steel production)."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:hasObjectType rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+    rdfs:domain bont:Flow ;
+    rdfs:range bont:FlowObject ;
+    rdfs:label "object type"@en ;
+    skos:definition "Specifies the Flow Object consumed or produced."@en ;
+    rdfs:comment "Functional: each Flow exchanges exactly one kind of Flow Object."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+bont:hasDeterminingFlow rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ;
+    rdfs:domain bont:Activity ;
+    rdfs:range bont:Flow ;
+    rdfs:label "determining flow"@en ;
+    skos:definition "Specifies a specific flow object produced or consumed by an activity for which a change in demand or supply will affect the activity level (such as its production volume or extent)."@en ;
+    rdfs:comment "Corresponds to the reference flow (reference product) of a unit process in other LCA databases."@en ;
+    rdfs:isDefinedBy <http://ontology.bonsai.uno/core> .
+
+# This overlaps with the *Assessment classes of ssbd-taxonomy
+# oriont:SustainabilityTopic rdf:type owl:Class ;
+#     rdfs:label "Sustainability topic"@en ;
+#     skos:definition "A sustainability domain assessed by a method or methodology."@en ;
+#     rdfs:comment "Sustainability topics in ORIENTING include the three classic sustainability domains or pillars (LCA, social LCA and Life Cycle Costing) as well as (material) Criticality and (material) Circularity. (ORIENTING)"@en ;
+#     rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:Methodology rdf:type owl:Class ;
+    rdfs:label "Methodology"@en ;
+    skos:definition "A set of different methods."@en ;
+    rdfs:comment "Methodology is understood as a set of different methods, e.g. the Environmental Footprint (EF) methodology. (ORIENTING)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:MethodologyName rdf:type owl:Class ;
+    rdfs:label "Methodology name"@en ;
+    skos:definition "Name of the LCIA methodology/ies the method belongs to, if any."@en ;
+    rdfs:comment "Based on eILCD. Instances are linked to a Methodology through oriont:hasMethodologyName."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:Method rdf:type owl:Class ;
+    rdfs:label "Method"@en ;
+    skos:definition "A procedure, e.g. evaluating the sustainability performance of products regarding an individual aspect (e.g. climate change, child labour, investment costs) under a life cycle perspective."@en ;
+    rdfs:comment "A Method is contained in a Methodology and uses a Characterisation Model to calculate characterisation factors. (ORIENTING)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:MethodName rdf:type owl:Class ;
+    rdfs:label "MethodName"@en ;
+    skos:definition "Name of the method."@en ;
+    rdfs:comment "Composed as follows: \"LCIA methodology short name; Impact category/ies; midpoint/endpoint; Impact indicator; Source short name\". Not applicable components are left out. (based on eILCD)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:CharacterisationModel rdf:type owl:Class ;
+    rdfs:label "Characterisation model"@en ;
+    skos:definition "A model underlying an LCIA method used to calculate characterisation factors."@en ;
+    rdfs:comment "E.g. USEtox for toxicity impact categories. (ORIENTING)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:ImpactCategory rdf:type owl:Class ;
+    rdfs:label "Impact category"@en ;
+    skos:definition "Class representing environmental issues of concern to which life cycle inventory analysis results may be assigned."@en ;
+    rdfs:comment "For example climate change or acidification. (ISO 14040)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:ImpactCategoryName rdf:type owl:Class ;
+    rdfs:label "Impact category name"@en ;
+    skos:definition "Name of the impact category."@en ;
+    rdfs:comment "Instances are linked to an Impact Category through oriont:hasImpactCategoryName. (ORIENTING)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:ImpactCategoryIndicator rdf:type owl:Class ;
+    rdfs:label "Impact category indicator"@en ;
+    skos:definition "Quantifiable representation of an impact category."@en ;
+    rdfs:comment "E.g. the Comparative Toxic Unit for human (CTUh) for human toxicity. (ISO 14040)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:IndicatorName rdf:type owl:Class ;
+    rdfs:label "Indicator name"@en ;
+    skos:definition "Description of the meaning of the impact indicator."@en ;
+    rdfs:comment "Based on eILCD. Instances are linked to an Impact Category Indicator through oriont:hasIndicatorName."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:IndicatorUnit rdf:type owl:Class ;
+    rdfs:label "Impact category indicator unit"@en ;
+    skos:definition "Special unit used for impact category indicators."@en ;
+    rdfs:comment "Such as \"kg CO2 equivalent\" or \"mol N equivalent\". (ORIENTING)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:CFUnit rdf:type owl:Class ;
+    rdfs:label "Characterisation flow unit"@en ;
+    skos:definition "Unit of a characterisation factor."@en ;
+    rdfs:comment "Units of characterisation factors are given in the unit of the indicator quantified divided by the unit of the reference flow or property (if any); otherwise it is equivalent to the indicator unit. (ORIENTING)"@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+# Overlaps with the ssbd-taxonomy Assessment classes
+# oriont:assessesTopic rdf:type owl:ObjectProperty ;
+#     rdfs:domain oriont:Methodology ;
+#     rdfs:label "assesses sustainability topic"@en ;
+#     skos:definition "Specifies the sustainability topic that is assessed by a method or methodology."@en ;
+#     rdfs:comment "ORIONT also declares it as the inverse of both isAssessedByMethod and isAssessedByMethodology; these inverse axioms are not repeated in this stub."@en ;
+#     rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:containsMethod rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:Methodology ;
+    rdfs:range oriont:Method ;
+    rdfs:label "contains method"@en ;
+    skos:definition "Specifies the methods contained in a methodology."@en ;
+    rdfs:comment "ORIONT also lists LCSAMethodology as a domain; only the Methodology domain is repeated in this stub."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:hasMethodologyName rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:Methodology ;
+    rdfs:range oriont:MethodologyName ;
+    rdfs:label "has methodology name"@en ;
+    skos:definition "Specifies the name of a methodology."@en ;
+    rdfs:comment "Object property: the value is an individual of MethodologyName, not a literal."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:hasMethodName rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:Method ;
+    rdfs:range oriont:MethodName ;
+    rdfs:label "has method name"@en ;
+    skos:definition "Specifies the name of a method."@en ;
+    rdfs:comment "Object property: the value is an individual of MethodName, not a literal."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:usesModel rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:Method ;
+    rdfs:range oriont:CharacterisationModel ;
+    rdfs:label "uses characterisation model"@en ;
+    skos:definition "Specifies the characterisation model used by a method to calculate characterisation factors."@en ;
+    rdfs:comment "Links an LCIA method to the model it relies on, e.g. a toxicity method to USEtox."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:hasImpactCategoryName rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:ImpactCategory ;
+    rdfs:range oriont:ImpactCategoryName ;
+    rdfs:label "has impact category name"@en ;
+    skos:definition "Specifies the name of an impact category."@en ;
+    rdfs:comment "Object property: the value is an individual of ImpactCategoryName, not a literal."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:isAssessedByIndicator rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:ImpactCategory ;
+    rdfs:range oriont:ImpactCategoryIndicator ;
+    rdfs:label "is assessed by indicator"@en ;
+    skos:definition "Specifies the impact category indicator by which an impact category is assessed."@en ;
+    rdfs:comment "Inverse of oriont:assessesImpactCategory."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:hasIndicatorName rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:ImpactCategoryIndicator ;
+    rdfs:range oriont:IndicatorName ;
+    rdfs:label "has indicator name"@en ;
+    skos:definition "Specifies the name of an impact category indicator."@en ;
+    rdfs:comment "Object property: the value is an individual of IndicatorName, not a literal."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+oriont:hasIndicatorUnit rdf:type owl:ObjectProperty ;
+    rdfs:domain oriont:ImpactCategoryIndicator ;
+    rdfs:range oriont:IndicatorUnit ;
+    rdfs:label "has impact category indicator unit"@en ;
+    skos:definition "Specifies the unit of an impact category indicator."@en ;
+    rdfs:comment "E.g. CTUh for the Comparative Toxic Unit for human."@en ;
+    rdfs:isDefinedBy <https://orienting.eu/oriont> .
+
+:LCAData rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:Data ;
+    rdfs:label "LCA Data"@en ;
+    skos:definition "A Data related to Life Cycle Assessment."@en ;
+    skos:prefLabel "LCA Data"@en .
+
+:LCAActivity rdf:type owl:Class ;
+    owl:equivalentClass bont:Activity ;
+    rdfs:label "LCA Activity"@en ;
+    skos:definition "An LCA Activity represents making or doing something which is defined both spatially and temporally."@en ;
+    rdfs:comment "This is one of the identifying dimensions of a datapoint. This class defines multiple properties on the type and direction of flows. ‘Process’ is a commonly used synonym in other LCA databases."@en ;
+    skos:prefLabel "LCA Activity"@en .
+
+:LCAFlow rdf:type owl:Class ;
+    owl:equivalentClass bont:Flow ;
+    rdfs:label "LCA Flow"@en ;
+    skos:definition "An input or output of an entity to or from an instance of an LCA Activity or a directional exchange of an entity between two instances of LCA Activity."@en ;
+    skos:prefLabel "LCA Flow"@en .
+
+:LCADataset rdf:type owl:Class ;
+    rdfs:subClassOf ssbd:Dataset ,
+                    :LCAData ;
+    rdfs:label "LCA Dataset"@en ;
+    skos:definition "A Dataset related to Life Cycle Assessment containing data about flows and information of a single LCA Activity."@en ;
+    skos:prefLabel "LCA Dataset"@en .
+
+# This needs further discussion
+# :LCI rdf:type owl:Class ;
+#     rdfs:subClassOf :LCAData ;
+#     rdfs:label "Life Cycle Inventory"@en ;
+#     skos:definition "An LCI is a type of Data containing unit processes and the flows connecting them."@en ;
+#     skos:prefLabel "Life Cycle Inventory"@en .
+
+
+# Example with EF v3.1 taken from INSIGHT
+# TODO: Find semantic connection between ssbd:HumanToxicityNonCancerImpactAssessment and these Individuals
+
+:environmental-footprint-31-name a oriont:MethodologyName ;
+    rdfs:label "Environmental Footprint"@en .
+
+:environmental-footprint-31 a oriont:Methodology ;
+    rdfs:label "Environmental Footprint"@en ;
+    oriont:hasMethodologyName :environmental-footprint-31-name ;
+    oriont:containsMethod :method_7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8 .
+
+:method_7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8-name a oriont:MethodName ;
+    rdfs:label "EF 3.1; Human toxicity, non-cancer; midpoint; Comparative Toxic Unit for human (CTUh); USEtox 2.1"@en .
+
+:method_7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8 a oriont:Method ;
+    rdfs:label "EF 3.1 non-cancer human health effects"@en ;
+    oriont:hasMethodName :method_7cfdcfcf-b222-4b26-888a-a55f9fbf7ac8-name ;
+    oriont:usesModel :usetox-2-1 .
+
+:non-cancer-human-health-effects-name a oriont:ImpactCategoryName ;
+    rdfs:label "Non-cancer human health effects"@en .
+
+:non-cancer-human-health-effects a oriont:ImpactCategory ;
+    rdfs:label "Non-cancer human health effects"@en ;
+    oriont:hasImpactCategoryName :non-cancer-human-health-effects-name ;
+    oriont:isAssessedByIndicator :indicator_comparative-toxic-unit-for-human-ctuh .
+
+:ctuh a oriont:CFUnit ,
+        oriont:IndicatorUnit ;
+    rdfs:label "CTUh" .
+
+:indicator_comparative-toxic-unit-for-human-ctuh-name a oriont:IndicatorName ;
+    rdfs:label "Comparative Toxic Unit for human (CTUh)"@en .
+
+:indicator_comparative-toxic-unit-for-human-ctuh a oriont:ImpactCategoryIndicator ;
+    rdfs:label "Comparative Toxic Unit for human (CTUh)"@en ;
+    oriont:hasIndicatorName :indicator_comparative-toxic-unit-for-human-ctuh-name ;
+    oriont:hasIndicatorUnit :ctuh .
+
+:usetox-2-1 a oriont:CharacterisationModel ;
+    rdfs:label "USEtox 2.1™" ;
+    rdfs:comment "USEtox is the UNEP/SETAC scientific consensus model for characterizing human toxicological and ecotoxicological impacts of chemical emissions in life cycle assessment. It is based on existing LCIA toxicity characterization models. It includes all vital model elements of toxicological effects assessment."@en .
