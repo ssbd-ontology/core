@@ -1,0 +1,22 @@
+# Input file for testing redirections
+#
+# These redirections expect that you have started a local web server:
+#
+#     W3ID_PATH=PATH/TO/W3ID/REPO
+#     (cd "$W3ID_PATH)/tools/server && docker compose up -d)
+#
+# The redirections can then be tested using the redirectioncheck tool from EMMOntoPy:
+#
+#     pip install EMMOntoPy
+#     redirectioncheck expected_redirections.yaml
+#
+
+---
+redirections:
+
+  http://localhost:8080/ssbd:                  https://ssbd-ontology.github.io/core/core.ttl
+  http://localhost:8080/ssbd/:                 https://ssbd-ontology.github.io/core/core.ttl
+  http://localhost:8080/ssbd/0.0.1:            https://ssbd-ontology.github.io/core/versions/0.0.1/core.ttl
+  http://localhost:8080/ssbd/0.0.1/:           https://ssbd-ontology.github.io/core/versions/0.0.1/core.ttl
+
+  https://w3id.org/ssbd/Computation:           https://ssbd-ontology.github.io/core/core.ttl
