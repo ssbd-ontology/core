@@ -867,8 +867,8 @@ ssbd:UnsupervicedLearningModel rdf:type owl:Class ;
                           rdfs:label "unsuperviced learning model"@en .
 
 
-###  https://w3id.org/ssbd/XGBoostRegessor
-ssbd:XGBoostRegessor rdf:type owl:Class ;
+###  https://w3id.org/ssbd/XGBoostRegressor
+ssbd:XGBoostRegressor rdf:type owl:Class ;
                      rdfs:subClassOf ssbd:PredictionLearningModel ;
                      skos:definition "An optimized machine learning algorithm that uses an ensemble of decision trees within a gradient boosting framework to predict continuous numerical values."@en ;
                      skos:prefLabel "XGBoostRegressor"@en ;
