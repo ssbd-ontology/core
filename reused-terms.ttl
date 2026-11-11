@@ -233,6 +233,18 @@ prov:Agent a owl:Class ;
     prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
     prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent"^^xsd:anyURI .
 
+prov:SoftwareAgent
+    a owl:Class ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+    rdfs:label "SoftwareAgent" ;
+    skos:prefLabel "SoftwareAgent"@en ;
+    rdfs:subClassOf :Agent ;
+    prov:category "expanded" ;
+    prov:component "agents-responsibility" ;
+    prov:definition "A software agent is running software."@en ;
+    prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
+    prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types"^^xsd:anyURI .
+
 prov:Entity a owl:Class ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
     rdfs:label "Entity" ;
