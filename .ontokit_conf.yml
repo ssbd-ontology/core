@@ -20,6 +20,13 @@ REFERENCE_INDICES:
     imported: false
     recursive: false
     subsections: annotation_properties,object_properties,data_properties
+  - title: Individuals Index
+    ontology_files:
+      - build/core-squashed.ttl
+    docfile: individuals.rst
+    imported: false
+    recursive: false
+    subsections: individuals
   - title: SSbDAssessments Index
     ontology_files: 
       - ssbd-taxonomy.ttl
