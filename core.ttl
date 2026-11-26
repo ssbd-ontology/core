@@ -935,29 +935,29 @@ dcat:theme rdfs:subPropertyOf :hasProperty .
 #################################################################
 
 ### TierLevel individuals
-:tierlevel1 a :TierLevel ;
+:tierlevel1 a :TierLevel, owl:NamedIndividual ;
     skos:prefLabel "ideation"@en ;
     rdfs:label "ideation/design"@en .
 
-:tierlevel2 a :TierLevel ;
+:tierlevel2 a :TierLevel, owl:NamedIndividual ;
     skos:prefLabel "lab_phase"@en ;
     rdfs:label "lab phase/development"@en .
 
-:tierlevel3 a :TierLevel ;
+:tierlevel3 a :TierLevel, owl:NamedIndividual ;
     skos:prefLabel "upscaling"@en ;
     rdfs:label "up-scaling/production"@en .
 
-:undefined a :DomainOfApplicabilityStatus ;
+:undefined a :DomainOfApplicabilityStatus, owl:NamedIndividual ;
     skos:prefLabel "undefined"@en ;
     rdfs:label "undefined"@en ;
     skos:definition "The applicability of the given input is undefined."@en .
 
-:outOfDomain a :DomainOfApplicabilityStatus ;
+:outOfDomain a :DomainOfApplicabilityStatus, owl:NamedIndividual ;
     skos:prefLabel "outOfDomain"@en ;
     rdfs:label "out of domain"@en ;
     skos:definition "The input is outside the valid doamin."@en .
 
-:inDomain a :DomainOfApplicabilityStatus ;
+:inDomain a :DomainOfApplicabilityStatus, owl:NamedIndividual ;
     skos:prefLabel "inDomain"@en ;
     rdfs:label "in domain"@en ;
     skos:definition "The input is within the valid domain."@en .

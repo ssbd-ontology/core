@@ -26,10 +26,11 @@ It is not intended for production at the current stage.
 
 ### Reference documentation
 
-The generated reference indices include interlinked definitions of classes and properties, and include all annotations and relations included in the ontology.
+The generated reference indices include interlinked definitions of classes, properties and individuals, and include all annotations and relations included in the ontology.
 
-- [Main reference documentation] contains all classes and properties.
+- [Main reference documentation] contains all classes, properties and individuals.
 - [Property reference index] contains all properties, including their domains and ranges.
+- [Individuals reference index] contains all named individuals (e.g. tier levels, domain-of-applicability statuses, access rights and contributors).
 - [Models reference index], a sub-module of the ontology including categorisation of statistical, physics and data-based (AI) models.
 - [Matter reference index], a sub-module of the ontology including categorisation of substances, materials, molecules, etc.
 - [SSbD taxonomy reference index] contains classes within the SSbD Assessments module.
@@ -78,6 +79,7 @@ This process is explained in more detail in the [tutorial on documenting your da
 
 [Main reference documentation]: https://ssbd-ontology.github.io/core/core.html
 [Property reference index]: https://ssbd-ontology.github.io/core/properties.html
+[Individuals reference index]: https://ssbd-ontology.github.io/core/individuals.html
 [Matter reference index]: https://ssbd-ontology.github.io/core/matter.html
 [Models reference index]: https://ssbd-ontology.github.io/core/models.html
 [CHEMINF descriptors reference index]: https://ssbd-ontology.github.io/core/cheminf.html
