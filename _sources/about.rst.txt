@@ -1,0 +1,61 @@
+==================
+SSbD Core Ontology
+==================
+
+:Ontology IRI: `https://w3id.org/ssbd/core/core <https://w3id.org/ssbd/core/core>`__
+:Namespace: https://w3id.org/ssbd/core/core#
+:Version IRI: `https://w3id.org/ssbd/core/0.0.1/core <https://w3id.org/ssbd/core/0.0.1/core>`__
+:Version info: 0.0.1
+:Prior version: 0.0.0
+:Preferred namespace prefix: ssbd
+:Preferred namespace uri: `https://w3id.org/ssbd <https://w3id.org/ssbd>`__
+
+Abstract
+--------
+
+The SSbD Core Ontology provides the semantic basis for safe and sustainability by design.
+
+The SSbD Core Ontology expands on the annotation schema provided by tripper, which again expands on the DCAT-AP.
+
+Safe and sustainable by design (SSbD) can be described as an approach that focuses on providing a function (or service), while avoiding onerous environmental footprints and chemical properties that may be harmful to human health or the environment.  In essence, the SSbD approach aims to identifying and minimizing, at an early phase of the innovation process, the impacts concerning safety for humans and the environment and for sustainability, minimizing the environmental footprint, in particular regarding climate change and resource use and, protecting ecosystems and biodiversity, taking a lifecycle perspective. The SSbD approach addresses the safety and sustainability of the material/ chemical/ product and associated processes along the whole life cycle, including all the steps of the research and development (R&D) phase, production, use, recycling, and disposal.
+
+Details
+-------
+
+:creator:
+
+   - `FrancescaBleken <https://orcid.org/0000-0001-8869-3718>`__
+   - `AlexeHaywood <https://orcid.org/0000-0002-0719-4907>`__
+   - `JesperFriis <https://orcid.org/0000-0002-1560-809X>`__
+   - `ThomasExner <https://orcid.org/0000-0002-1849-5246>`__
+   - `DominicRuss <https://orcid.org/0000-0002-2705-2068>`__
+   - `HuiYang <https://orcid.org/0000-0002-3372-4801>`__
+   - `IndraniMahapatra <https://orcid.org/0000-0002-6396-0848>`__
+   - `JohDokler <https://orcid.org/0000-0002-8053-8198>`__
+
+:Contributor: `IseultLynch <https://orcid.org/0000-0003-4250-4584>`__
+:Publisher: `https://pink-project.eu <https://pink-project.eu>`__
+:license: `https://creativecommons.org/licenses/by/4.0/legalcode <https://creativecommons.org/licenses/by/4.0/legalcode>`__
+:Bibliographic citation: xxx
+:Created: 2025-09-08
+:Imports:
+
+   - `Biological descriptors <https://w3id.org/ssbd/core/0.0.1/biological-descriptors>`__
+   - `CHEMINF mappings <https://w3id.org/ssbd/core/0.0.1/cheminf-mappings>`__
+   - `Contributors (version 0.0.1) <https://w3id.org/ssbd/core/0.0.1/contributors>`__
+   - `Matter <https://w3id.org/ssbd/core/0.0.1/matter>`__
+   - `Models <https://w3id.org/ssbd/core/0.0.1/models>`__
+   - `Physical descriptors <https://w3id.org/ssbd/core/0.0.1/physical-descriptors>`__
+   - `SSbD Taxonomy <https://w3id.org/ssbd/core/0.0.1/ssbd-taxonomy>`__
+
+:Has format: `https://www.w3.org/TR/turtle <https://www.w3.org/TR/turtle>`__
+:Homepage: `https://ssbd-ontology.github.io/core <https://ssbd-ontology.github.io/core>`__
+:Logo: |image-39ea966e83|
+:Doi: tbd
+:Introduction: The SSbD Core Ontology has a modular structure and aims to cover the following features: \* Allow to categorise resources (datasets, models, software, etc) according to their SSbD dimensions and categories/sub-categories. \* Provenance, based on the [PROV-O](https://www.w3.org/TR/prov-o/) ontology. PROV-O is fully adapted by the SSbD Core Ontology, having the three top-level PROV-O classes, \*Activity\*, \*Entity\* and \*Agent\* in root. \* Extension of the basic PROV-O provenance to complex scientific workflows with spatial and temporal parts. \* Allow documentation of workflows that have not (yet) been executed. Such documentation is done at class-level. When executed individuals should be created for the evaluated activities and their input and output providing a full PROV-O provenance graph. \* Top-level taxonomy for (advanced) materials and chemicals based on [EMMO](https://emmc.eu/emmo/) with mappings to [ChEBI](https://www.ebi.ac.uk/chebi/) for chemicals. \* Categorisation models. \* Strong taxonomy for relations, which are grouped into: - [parthood relations](https://ssbd-ontology.github.io/core/docs/background.html#parthood-relations), based on mereology - [causal relations](https://ssbd-ontology.github.io/core/docs/background.html#causal-relations), based on causality - [semiotic relations](https://ssbd-ontology.github.io/core/docs/background.html#semiotic-relations), based on [Pierse semiotics](https://plato.stanford.edu/entries/peirce-semiotics/) Separate reference documentations exists for the following sub-modules: \* [ddoc](https://ssbd-ontology.github.io/core/widoco-ddoc/index-en.html): The Tripper data documentation vocabulary, with terms reused from other ontologies and vocabularies. Mainly [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), [FOAF](http://xmlns.com/foaf/spec/) and similar basic vocabularies. \* [reused-terms](https://ssbd-ontology.github.io/core/widoco-reused-terms/index-en.html): Additional reused terms by the SSbD Core Ontology ([DCAT](https://www.w3.org/TR/vocab-dcat-3/), [PROV-O](https://www.w3.org/TR/prov-o/), etc). \* [matter](https://ssbd-ontology.github.io/core/widoco-matter/index-en.html): Taxonomy for (advanced) materials and chemicals \* [models](https://ssbd-ontology.github.io/core/widoco-models/index-en.html): Taxonomy for models. The root of the SSbD Core Ontology is shown below. More information can be found in the [background](https://ssbd-ontology.github.io/core/docs/background.html) section.
+:Status: Under Development
+:Status: `http://purl.org/ontology/bibo/status/forthcoming <http://purl.org/ontology/bibo/status/forthcoming>`__
+
+.. |image-39ea966e83| image:: https://tess.elixir-europe.org/system/content_providers/images/000/000/777/original/pink-logo-orange-colorB-500.png
+   :alt: https://tess.elixir-europe.org/system/content_providers/images/000/000/777/original/pink-logo-orange-colorB-500.png
+   :height: 80px

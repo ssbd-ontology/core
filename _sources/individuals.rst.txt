@@ -1,0 +1,876 @@
+:orphan:
+
+
+=================
+Individuals Index
+=================
+
+
+
+Ssbd Core Ontology
+==================
+
+
+:IRI: `https://w3id.org/ssbd <https://w3id.org/ssbd>`__
+:Version: 0.0.1
+
+The SSbD Core Ontology provides the semantic basis for safe and sustainability by design.
+
+The SSbD Core Ontology expands on the annotation schema provided by tripper, which again expands on the DCAT-AP.
+
+Safe and sustainable by design (SSbD) can be described as an approach that focuses on providing a function (or service), while avoiding onerous environmental footprints and chemical properties that may be harmful to human health or the environment.  In essence, the SSbD approach aims to identifying and minimizing, at an early phase of the innovation process, the impacts concerning safety for humans and the environment and for sustainability, minimizing the environmental footprint, in particular regarding climate change and resource use and, protecting ecosystems and biodiversity, taking a lifecycle perspective. The SSbD approach addresses the safety and sustainability of the material/ chemical/ product and associated processes along the whole life cycle, including all the steps of the research and development (R&D) phase, production, use, recycling, and disposal.
+
+
+
+.. _ssbd-core-ontology-individuals:
+
+Individuals
+-----------
+
+.. raw:: html
+
+   <div id="0000-0002-0719-4907"></div>
+   <div id="AlexeHaywood"></div>
+
+AlexeHaywood
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0002-0719-4907' onclick="if(!document.getElementById('0000-0002-0719-4907')){window.location.href='https://orcid.org/0000-0002-0719-4907'; return false;}">https://orcid.org/0000-0002-0719-4907</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">AlexeHaywood</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Alexe Haywood</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Alexe Haywood</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0002-2705-2068"></div>
+   <div id="DominicRuss"></div>
+
+DominicRuss
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0002-2705-2068' onclick="if(!document.getElementById('0000-0002-2705-2068')){window.location.href='https://orcid.org/0000-0002-2705-2068'; return false;}">https://orcid.org/0000-0002-2705-2068</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">DominicRuss</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Dominic Russ</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Dominic Russ</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0001-8869-3718"></div>
+   <div id="FrancescaBleken"></div>
+
+FrancescaBleken
+^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0001-8869-3718' onclick="if(!document.getElementById('0000-0001-8869-3718')){window.location.href='https://orcid.org/0000-0001-8869-3718'; return false;}">https://orcid.org/0000-0001-8869-3718</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">FrancescaBleken</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Francesca Bleken</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Francesca Lønstad Bleken</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0002-3372-4801"></div>
+   <div id="HuiYang"></div>
+
+HuiYang
+^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0002-3372-4801' onclick="if(!document.getElementById('0000-0002-3372-4801')){window.location.href='https://orcid.org/0000-0002-3372-4801'; return false;}">https://orcid.org/0000-0002-3372-4801</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">HuiYang</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Hui Yang</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Hui Yang</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0002-6396-0848"></div>
+   <div id="IndraniMahapatra"></div>
+
+IndraniMahapatra
+^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0002-6396-0848' onclick="if(!document.getElementById('0000-0002-6396-0848')){window.location.href='https://orcid.org/0000-0002-6396-0848'; return false;}">https://orcid.org/0000-0002-6396-0848</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">IndraniMahapatra</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Indrani Mahapatra</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Indrani Mahapatra</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0003-4250-4584"></div>
+   <div id="IseultLynch"></div>
+
+IseultLynch
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0003-4250-4584' onclick="if(!document.getElementById('0000-0003-4250-4584')){window.location.href='https://orcid.org/0000-0003-4250-4584'; return false;}">https://orcid.org/0000-0003-4250-4584</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">IseultLynch</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Iseult Lynch</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Iseult Lynch</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0002-1560-809X"></div>
+   <div id="JesperFriis"></div>
+
+JesperFriis
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0002-1560-809X' onclick="if(!document.getElementById('0000-0002-1560-809X')){window.location.href='https://orcid.org/0000-0002-1560-809X'; return false;}">https://orcid.org/0000-0002-1560-809X</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">JesperFriis</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Jesper Friis</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Jesper Friis</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0002-8053-8198"></div>
+   <div id="JohDokler"></div>
+
+JohDokler
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0002-8053-8198' onclick="if(!document.getElementById('0000-0002-8053-8198')){window.location.href='https://orcid.org/0000-0002-8053-8198'; return false;}">https://orcid.org/0000-0002-8053-8198</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">JohDokler</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Joh Dokler</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Joh Dokler</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="0000-0002-1849-5246"></div>
+   <div id="ThomasExner"></div>
+
+ThomasExner
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#0000-0002-1849-5246' onclick="if(!document.getElementById('0000-0002-1849-5246')){window.location.href='https://orcid.org/0000-0002-1849-5246'; return false;}">https://orcid.org/0000-0002-1849-5246</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ThomasExner</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">Thomas Exner</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">name</span></td>
+    <td class="element-table-value">Thomas Exner</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://xmlns.com/foaf/0.1/Person'>Person</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="CONFIDENTIAL"></div>
+   <div id="confidential"></div>
+
+confidential
+^^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#CONFIDENTIAL' onclick="if(!document.getElementById('CONFIDENTIAL')){window.location.href='http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL'; return false;}">http://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">confidential</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Information that is not disclosed.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://purl.org/dc/terms/RightsStatement'>Rights Statement</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="tierlevel1"></div>
+   <div id="ideation"></div>
+
+ideation
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#tierlevel1' onclick="if(!document.getElementById('tierlevel1')){window.location.href='https://w3id.org/ssbd/tierlevel1'; return false;}">https://w3id.org/ssbd/tierlevel1</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">ideation</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">ideation/design</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/ssbd/TierLevel'>TierLevel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="inDomain"></div>
+
+
+inDomain
+^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#inDomain' onclick="if(!document.getElementById('inDomain')){window.location.href='https://w3id.org/ssbd/inDomain'; return false;}">https://w3id.org/ssbd/inDomain</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">inDomain</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">in domain</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">The input is within the valid domain.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/ssbd/DomainOfApplicabilityStatus'>DomainOfApplicabilityStatus</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="tierlevel2"></div>
+   <div id="lab_phase"></div>
+
+lab_phase
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#tierlevel2' onclick="if(!document.getElementById('tierlevel2')){window.location.href='https://w3id.org/ssbd/tierlevel2'; return false;}">https://w3id.org/ssbd/tierlevel2</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">lab_phase</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">lab phase/development</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/ssbd/TierLevel'>TierLevel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="NON_PUBLIC"></div>
+   <div id="non-public"></div>
+
+non-public
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#NON_PUBLIC' onclick="if(!document.getElementById('NON_PUBLIC')){window.location.href='http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC'; return false;}">http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">non-public</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Not publicly accessible for privacy, security or other reasons.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://purl.org/dc/terms/RightsStatement'>Rights Statement</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="outOfDomain"></div>
+
+
+outOfDomain
+^^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#outOfDomain' onclick="if(!document.getElementById('outOfDomain')){window.location.href='https://w3id.org/ssbd/outOfDomain'; return false;}">https://w3id.org/ssbd/outOfDomain</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">outOfDomain</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">out of domain</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">The input is outside the valid doamin.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/ssbd/DomainOfApplicabilityStatus'>DomainOfApplicabilityStatus</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="PUBLIC"></div>
+   <div id="public"></div>
+
+public
+^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#PUBLIC' onclick="if(!document.getElementById('PUBLIC')){window.location.href='http://publications.europa.eu/resource/authority/access-right/PUBLIC'; return false;}">http://publications.europa.eu/resource/authority/access-right/PUBLIC</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">public</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Publicly accessible by everyone.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://purl.org/dc/terms/RightsStatement'>Rights Statement</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="RESTRICTED"></div>
+   <div id="restricted"></div>
+
+restricted
+^^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#RESTRICTED' onclick="if(!document.getElementById('RESTRICTED')){window.location.href='http://publications.europa.eu/resource/authority/access-right/RESTRICTED'; return false;}">http://publications.europa.eu/resource/authority/access-right/RESTRICTED</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">restricted</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Only available under certain conditions.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://purl.org/dc/terms/RightsStatement'>Rights Statement</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="SENSITIVE"></div>
+   <div id="sensitive"></div>
+
+sensitive
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#SENSITIVE' onclick="if(!document.getElementById('SENSITIVE')){window.location.href='http://publications.europa.eu/resource/authority/access-right/SENSITIVE'; return false;}">http://publications.europa.eu/resource/authority/access-right/SENSITIVE</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">sensitive</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">Sensitive non-classified (SNC) information, information whose unauthorised disclosure could cause damage to the Commission or other interested parties such as businesses, companies, intellectual property or personal data but which is not EU classified information.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='http://purl.org/dc/terms/RightsStatement'>Rights Statement</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="undefined"></div>
+
+
+undefined
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#undefined' onclick="if(!document.getElementById('undefined')){window.location.href='https://w3id.org/ssbd/undefined'; return false;}">https://w3id.org/ssbd/undefined</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">undefined</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">undefined</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">definition</span></td>
+    <td class="element-table-value">The applicability of the given input is undefined.</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/ssbd/DomainOfApplicabilityStatus'>DomainOfApplicabilityStatus</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
+
+.. raw:: html
+
+   <div id="tierlevel3"></div>
+   <div id="upscaling"></div>
+
+upscaling
+^^^^^^^^^
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">IRI</span></td>
+    <td class="element-table-value"><a href='#tierlevel3' onclick="if(!document.getElementById('tierlevel3')){window.location.href='https://w3id.org/ssbd/tierlevel3'; return false;}">https://w3id.org/ssbd/tierlevel3</a></td>
+  </tr>
+  <tr>
+    <th class="element-table-annotations" colspan="2">Annotations</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">prefLabel</span></td>
+    <td class="element-table-value">upscaling</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">label</span></td>
+    <td class="element-table-value">up-scaling/production</td>
+  </tr>
+  <tr>
+    <th class="element-table-formal-description" colspan="2">Formal description</th>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Instance of</span></td>
+    <td class="element-table-value"><a href='https://w3id.org/ssbd/TierLevel'>TierLevel</a></td>
+  </tr>
+  </table>
+
+  </table>
+
+
+
